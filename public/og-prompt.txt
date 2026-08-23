@@ -1,0 +1,15 @@
+Use case: ads-marketing
+Asset type: 1200×630 social preview card for a personal AI product research portfolio
+Primary request: Create one polished editorial research-card image that represents a rigorous study of AI agent verification and failed auto-approval.
+Scene/backdrop: flat warm ivory paper background with a precise black editorial grid, one deep forest-green data block, and restrained cobalt-blue accents; no photography.
+Subject: abstract evidence motif made from 140 tiny structured marks, with zero marks crossing an approval threshold; one compact inset showing 15 correct versus 23 failed challenge passes.
+Style/medium: high-end research journal cover meets modern data-science portfolio; crisp typography, sophisticated and minimal, generous whitespace, subtle paper texture.
+Composition/framing: landscape, safe margins for link-unfurl crops, left-aligned headline, data motif on the right.
+Text (verbatim):
+“MUDIT GURNANI”
+“AI PRODUCT RESEARCH”
+“Can an AI Agent Test Another AI Agent?”
+“0 / 140 approved”
+“Evidence before confidence.”
+Constraints: render every line exactly as written and fully legible; preserve the fraction spacing; use only the listed text; no logos, no badges, no model-company names, no watermark.
+Avoid: generic robot imagery, glowing AI brains, gradients, stock-photo style, futuristic neon, invented numbers, extra text.

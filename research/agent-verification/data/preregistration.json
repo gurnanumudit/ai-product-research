@@ -1,0 +1,91 @@
+{
+  "analysis_splits": {
+    "test": 35,
+    "validation": 8
+  },
+  "attempt_matrix": {
+    "generator_roles": 2,
+    "new_generation_attempts": 172,
+    "repetitions_per_task_system": 2
+  },
+  "authorization_receipt_sha256": "ed7a4b18927b98205baf725b2e512fe8b206643119b4455a97d9f10d7c38cf36",
+  "budget": "data/empirical/verification_confirmatory_budget_proposal_v0_4.json",
+  "challenge_contract": {
+    "approval_signal": "valid contained challenge with controller rerun exit code zero",
+    "candidate_patch": "applied_and_staged_before_challenge",
+    "controller_checks": [
+      "declared test files exist",
+      "declared command references a declared test file",
+      "staged candidate diff is byte-identical after challenge",
+      "no working-tree source diff exists outside challenge root",
+      "no untracked file exists outside challenge root",
+      "controller directly reruns the declared command"
+    ],
+    "interpretation": "evidence_not_proof",
+    "network": "disabled inside task container",
+    "runner": "src/evals_to_outcomes/verification_challenge_runner.py",
+    "test_root": ".eto_challenge/",
+    "version": "independent-executable-challenge-v0.1"
+  },
+  "development_evidence": {
+    "allowed_use": "challenge implementation, prompt freezing, failure taxonomy, and mechanical debugging",
+    "prohibited_use": "confirmatory validation or test inference",
+    "source": "completed eight-repository feasibility study"
+  },
+  "frozen_at": "2026-08-20T07:08:13.859378Z",
+  "held_out_primary_gate": {
+    "confidence": 0.95,
+    "interval": "Wilson",
+    "maximum_failure_upper_bound": 0.1,
+    "minimum_accepted_task_clusters": 35,
+    "minimum_auto_accepted_patches": 35,
+    "must_pass": [
+      "patch escaped-failure upper bound at or below 0.10",
+      "task-exposure failure upper bound at or below 0.10"
+    ],
+    "patch_failure_definition": "auto-accepted patch fails official executable grading",
+    "task_exposure_failure_definition": "any auto-accepted patch in the task cluster fails"
+  },
+  "model_visible_exclusions": [
+    "generator identity during verification",
+    "generator and sandbox cost during verification",
+    "gold patch",
+    "official hidden tests",
+    "official outcome",
+    "other verifier outputs"
+  ],
+  "new_repositories": 43,
+  "new_task_manifest": "data/empirical/verification_confirmatory_task_manifest_candidate_v0_2.json",
+  "new_tasks": 43,
+  "objective": "Determine whether controller-rerun independent executable challenges can support coding-agent patch auto-approval and when no-deliverable retry or generator escalation is preferable under explicit cost and escaped-failure constraints.",
+  "platform_control": "data/empirical/verification_confirmatory_platform_control_candidate_v0_1.json",
+  "preregistration_version": "verification-confirmatory-preregistration-v0.1-draft",
+  "secondary_analyses": [
+    "retry once after no deliverable",
+    "cheap generator then strong generator after no deliverable",
+    "comprehensive test every submitted patch",
+    "within-task repeated-attempt agreement",
+    "challenge validity, catch rate, cost, latency, and mutation rejection",
+    "oracle hidden-outcome routing clearly labeled nondeployable"
+  ],
+  "status": "frozen_for_confirmatory_execution",
+  "test_outcomes_may_open_only_after": [
+    "exact budget approval",
+    "all manifests frozen",
+    "complete test pre-outcome evidence frozen",
+    "validation outcomes opened and one policy locked",
+    "test evidence matrix identity and leakage audit passed"
+  ],
+  "validation_policy_menu": [
+    "reject_all",
+    "independent_challenge_pass",
+    "challenge_and_observed_tests_pass"
+  ],
+  "validation_selection": {
+    "fallback": "reject_all",
+    "maximum_observed_escaped_failures": 0,
+    "minimum_accepted_task_clusters": 4,
+    "minimum_auto_accepted": 8,
+    "tie_break": "maximum coverage, then lowest cost per safe acceptance, then the simpler challenge-pass-only policy"
+  }
+}
