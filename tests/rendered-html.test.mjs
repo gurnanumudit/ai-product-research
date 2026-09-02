@@ -85,9 +85,24 @@ test("removes starter artifacts and keeps publication assets", async () => {
 
   assert.doesNotMatch(page, /SkeletonPreview|codex-preview/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview/);
+  assert.match(layout, /images: \[\{ url: "\/og\.png"/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
+  assert.doesNotMatch(packageJson, /drizzle/);
   await access(new URL("../public/og.png", import.meta.url));
   await access(new URL("../public/og-research-note.png", import.meta.url));
   await access(new URL("../public/verification-confirmatory.png", import.meta.url));
   await assert.rejects(access(new URL("../app/_sites-preview/SkeletonPreview.tsx", import.meta.url)));
+  await assert.rejects(access(new URL("../app/chatgpt-auth.ts", import.meta.url)));
+  await assert.rejects(access(new URL("../db/index.ts", import.meta.url)));
+  await assert.rejects(access(new URL("../drizzle/meta/_journal.json", import.meta.url)));
+  await assert.rejects(access(new URL("../examples/d1/app/api/notes/route.ts", import.meta.url)));
+  await assert.rejects(access(new URL("../public/og-prompt.txt", import.meta.url)));
+  await assert.rejects(
+    access(
+      new URL(
+        "../research/agent-verification/figures/verification-confirmatory.png",
+        import.meta.url,
+      ),
+    ),
+  );
 });
