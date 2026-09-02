@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     type: "website",
     title: "Mudit Gurnani — Research & Writing",
     description: "Experiments and essays about AI, products, and questions worth testing.",
-    images: [{ url: "/og-research-note.png", width: 1730, height: 909 }],
+    images: [{ url: "/og.png", width: 1730, height: 909 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mudit Gurnani — Research & Writing",
     description: "Experiments and essays about AI, products, and questions worth testing.",
-    images: ["/og-research-note.png"],
+    images: ["/og.png"],
   },
 };
 

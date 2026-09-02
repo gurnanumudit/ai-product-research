@@ -1,39 +1,41 @@
-# Mudit Gurnani — AI Product Research
+# AI Product Research
 
-Source for Mudit Gurnani's research portfolio website and the public materials behind each
-published study.
+The public source for Mudit Gurnani's research website. It is intentionally small: the site, the
+assets it serves, and the evidence package behind the published research note.
 
-## Included pages
+## Published work
 
-- `/` — the public research index
-- `/research/agent-verification` — the complete Article 1 public narrative
+- `/` — research index
+- `/research/agent-verification` — *The Test Passed. The Patch Was Still Wrong.*
+- [`research/agent-verification`](research/agent-verification/README.md) — frozen aggregate,
+  study rules, technical note, and a zero-dependency consistency check
 
-The reproducibility materials for Article 1 live in
-[`research/agent-verification`](research/agent-verification/README.md).
+## Repository map
 
-Only work ready for a public audience appears on the website. Unfinished studies, credentials,
-private runtime state, and raw working directories are intentionally excluded from this repository.
+| Path | Purpose |
+| --- | --- |
+| `app/` | Website pages and styles |
+| `public/` | Images served by the website |
+| `research/agent-verification/` | Public evidence for the published study |
+| `tests/` | Rendered-page and publication-boundary checks |
 
-## Local use
+## Run locally
 
-Requires Node.js `>=22.13.0`.
+Requires Node.js `>=22.13.0` and Python 3.11 or newer.
 
 ```bash
 npm install
 npm run dev
 npm test
+python3 research/agent-verification/reproduce.py
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the final public origin before deployment so Open Graph and X image
-URLs use the correct host. `.env.example` shows the local value.
-
-## Evidence-linked assets
-
-- `public/verification-confirmatory.png` is copied from the reproducible Article 1 figure.
-- `public/og.png` is the generated social-preview image.
-- `public/og-prompt.txt` preserves the exact generation prompt.
+Set `NEXT_PUBLIC_SITE_URL` to the public origin before deployment. `.env.example` contains the
+local default.
 
 ## Publication boundary
 
-This repository contains publication-ready source and public study materials. Website deployment
-and a custom domain remain separate steps.
+This is a reader-facing repository, not a research workspace or artifact archive. It excludes
+credentials, provider traces, cached repositories, private runtime state, unfinished studies, and
+internal operating records. The included Python check validates the published numbers against the
+frozen public aggregate; it does not recreate the model runs or official benchmark grading.

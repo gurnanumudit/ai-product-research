@@ -1,7 +1,7 @@
 # The Test Passed. The Patch Was Still Wrong.
 
-Public study materials for Mudit Gurnani's research note on whether one AI coding agent can safely
-verify another agent's patch.
+Public evidence for a bounded study of whether one AI coding agent could safely approve another
+agent's patch.
 
 ## The experiment
 
@@ -27,13 +27,14 @@ actually correct; 23 were still wrong.
 The practical conclusion is deliberately narrow: this verifier's pass was useful evidence, but it
 was not safe as an automatic release gate.
 
-## What is included
+## Public evidence
 
 - [`data/confirmatory-analysis.json`](data/confirmatory-analysis.json) — frozen aggregate analysis
 - [`data/preregistration.json`](data/preregistration.json) — frozen study rules
-- [`docs/methodology.md`](docs/methodology.md) — offline reproduction notes
+- [`docs/methodology.md`](docs/methodology.md) — design and public verification note
 - [`docs/results.md`](docs/results.md) — technical result brief
-- [`figures/verification-confirmatory.png`](figures/verification-confirmatory.png) — final study figure
+- [`../../public/verification-confirmatory.png`](../../public/verification-confirmatory.png) — figure
+  used by the website
 - [`reproduce.py`](reproduce.py) — zero-dependency check of the article's headline numbers
 
 Run the public check with Python 3.11 or newer:
@@ -42,6 +43,8 @@ Run the public check with Python 3.11 or newer:
 python3 research/agent-verification/reproduce.py
 ```
 
-This public package contains processed results and analysis materials. It does not contain API
-credentials, private runtime databases, cached repositories, raw provider traces, or unfinished
-studies.
+The check confirms that the article's counts and rates agree with the frozen public aggregate. It
+does not rerun patch generation, verifier calls, or official benchmark grading.
+
+This package intentionally excludes API credentials, private runtime databases, cached
+repositories, raw provider traces, and unfinished studies.
