@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "terminal_hashes_verified": 1736,
+  "canonical_decisions_verified": 1692,
+  "invalid_flags_verified": 44,
+  "label_report_hashes_and_values_verified": 60,
+  "roster_patch_bindings_verified": 60,
+  "original_roster_orders_verified": 2,
+  "original_svg_geometry_text_and_style_verified": [
+    "figure-1-approval.svg",
+    "figure-2-benchmark-approval.svg",
+    "figure-3-source-effect.svg"
+  ],
+  "source_sha256": {
+    "benchmark-scoring.json": "5c5c46988ad57a7d5841fadf3f5c274ee6522245cfc21091e1e3ae402dca6226",
+    "article-statistics.json": "620c5f2ac0adfa2ebf20b7ec11c97d9f404224dc7bc146ed15145a0da70feefd",
+    "figure-data.json": "8d053cfb553aff181507861d08d9e5d5f515fb482631dd2593c8c0a69bee3f87",
+    "analyze_article.py": "327a7776e0d6c0f7228bee6abe86fb04131ce4ace6b7daea3266c5b8bb0f2d27",
+    "build_figures.py": "0d813b1d95d27205b18efaf332db4b8d1892726d617a72de996d075419b49f0b"
+  },
+  "caveat": "Full prompts/logs and license clearance are not reproduced by this audit."
+}

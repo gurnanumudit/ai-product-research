@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="650" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
+<title id="title">Test evidence reduced benchmark-incorrect approvals</title><desc id="desc">Same15benchmark-failing tasks acrossall3models andno-report/summary/full-report conditions. No-report approvals3/30Sonnet and2/30Terra/Gemini; summaries andfullreports each0/30. Zero-event intervals remainpositive.</desc>
+<rect width="1440" height="650" fill="#FFFFFF"/>
+<text x="40" y="53" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start">Test evidence reduced benchmark-incorrect approvals</text>
+<text x="40" y="95" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Same 15 tasks across all three scenarios and all three reviewers · 30 reviews per point</text>
+<text x="40" y="159" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start">Claude Sonnet 5</text>
+<line x1="218.0" y1="201" x2="218.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="218.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">0%</text>
+<line x1="302.0" y1="201" x2="302.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="302.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">25%</text>
+<line x1="386.0" y1="201" x2="386.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="386.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">50%</text>
+<text x="40" y="245" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">No report</text>
+<line x1="220.06703363655276" y1="239" x2="352.13207704915845" y2="239" stroke="#A64B2A" stroke-width="3"/>
+<line x1="220.06703363655276" y1="233" x2="220.06703363655276" y2="245" stroke="#A64B2A" stroke-width="2"/>
+<line x1="352.13207704915845" y1="233" x2="352.13207704915845" y2="245" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="251.6" cy="239" r="7" fill="#A64B2A"/>
+<text x="403" y="242" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">3/30</text>
+<text x="403" y="267" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">10.0%</text>
+<text x="40" y="337" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Factual summary</text>
+<line x1="218.0" y1="331" x2="303.1196703878937" y2="331" stroke="#A64B2A" stroke-width="3"/>
+<line x1="218.0" y1="325" x2="218.0" y2="337" stroke="#A64B2A" stroke-width="2"/>
+<line x1="303.1196703878937" y1="325" x2="303.1196703878937" y2="337" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="218.0" cy="331" r="7" fill="#A64B2A"/>
+<text x="403" y="334" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="403" y="359" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="40" y="429" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Full report</text>
+<line x1="218.0" y1="423" x2="303.1196703878937" y2="423" stroke="#A64B2A" stroke-width="3"/>
+<line x1="218.0" y1="417" x2="218.0" y2="429" stroke="#A64B2A" stroke-width="2"/>
+<line x1="303.1196703878937" y1="417" x2="303.1196703878937" y2="429" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="218.0" cy="423" r="7" fill="#A64B2A"/>
+<text x="403" y="426" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="403" y="451" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="506" y="159" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start">GPT 5.6 Terra</text>
+<line x1="684.0" y1="201" x2="684.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="684.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">0%</text>
+<line x1="768.0" y1="201" x2="768.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="768.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">25%</text>
+<line x1="852.0" y1="201" x2="852.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="852.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">50%</text>
+<text x="506" y="245" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">No report</text>
+<line x1="684.2816466125486" y1="239" x2="803.7947176838668" y2="239" stroke="#006D77" stroke-width="3"/>
+<line x1="684.2816466125486" y1="233" x2="684.2816466125486" y2="245" stroke="#006D77" stroke-width="2"/>
+<line x1="803.7947176838668" y1="233" x2="803.7947176838668" y2="245" stroke="#006D77" stroke-width="2"/>
+<circle cx="706.4" cy="239" r="7" fill="#006D77"/>
+<text x="869" y="242" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">2/30</text>
+<text x="869" y="267" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">6.7%</text>
+<text x="506" y="337" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Factual summary</text>
+<line x1="684.0" y1="331" x2="769.1196703878937" y2="331" stroke="#006D77" stroke-width="3"/>
+<line x1="684.0" y1="325" x2="684.0" y2="337" stroke="#006D77" stroke-width="2"/>
+<line x1="769.1196703878937" y1="325" x2="769.1196703878937" y2="337" stroke="#006D77" stroke-width="2"/>
+<circle cx="684.0" cy="331" r="7" fill="#006D77"/>
+<text x="869" y="334" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="869" y="359" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="506" y="429" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Full report</text>
+<line x1="684.0" y1="423" x2="769.1196703878937" y2="423" stroke="#006D77" stroke-width="3"/>
+<line x1="684.0" y1="417" x2="684.0" y2="429" stroke="#006D77" stroke-width="2"/>
+<line x1="769.1196703878937" y1="417" x2="769.1196703878937" y2="429" stroke="#006D77" stroke-width="2"/>
+<circle cx="684.0" cy="423" r="7" fill="#006D77"/>
+<text x="869" y="426" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="869" y="451" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="972" y="159" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start">Gemini 3.8 Flash</text>
+<line x1="1150.0" y1="201" x2="1150.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="1150.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">0%</text>
+<line x1="1234.0" y1="201" x2="1234.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="1234.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">25%</text>
+<line x1="1318.0" y1="201" x2="1318.0" y2="452" stroke="#DDE5E5" stroke-width="1"/>
+<text x="1318.0" y="485" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle">50%</text>
+<text x="972" y="245" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">No report</text>
+<line x1="1150.2816466125487" y1="239" x2="1269.7947176838668" y2="239" stroke="#6654A3" stroke-width="3"/>
+<line x1="1150.2816466125487" y1="233" x2="1150.2816466125487" y2="245" stroke="#6654A3" stroke-width="2"/>
+<line x1="1269.7947176838668" y1="233" x2="1269.7947176838668" y2="245" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1172.4" cy="239" r="7" fill="#6654A3"/>
+<text x="1335" y="242" fill="#6654A3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">2/30</text>
+<text x="1335" y="267" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">6.7%</text>
+<text x="972" y="337" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Factual summary</text>
+<line x1="1150.0" y1="331" x2="1235.1196703878936" y2="331" stroke="#6654A3" stroke-width="3"/>
+<line x1="1150.0" y1="325" x2="1150.0" y2="337" stroke="#6654A3" stroke-width="2"/>
+<line x1="1235.1196703878936" y1="325" x2="1235.1196703878936" y2="337" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1150.0" cy="331" r="7" fill="#6654A3"/>
+<text x="1335" y="334" fill="#6654A3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="1335" y="359" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="972" y="429" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="start">Full report</text>
+<line x1="1150.0" y1="423" x2="1235.1196703878936" y2="423" stroke="#6654A3" stroke-width="3"/>
+<line x1="1150.0" y1="417" x2="1150.0" y2="429" stroke="#6654A3" stroke-width="2"/>
+<line x1="1235.1196703878936" y1="417" x2="1235.1196703878936" y2="429" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1150.0" cy="423" r="7" fill="#6654A3"/>
+<text x="1335" y="426" fill="#6654A3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start">0/30</text>
+<text x="1335" y="451" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">0.0%</text>
+<text x="720" y="536" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle">Approval of benchmark-incorrect patches</text>
+<text x="40" y="589" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Whiskers: conservative 95% task-level sensitivity intervals. Zero observed approvals does not mean zero risk.</text>
+<text x="40" y="619" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Shared complete-case cohort; no missing responses imputed. No further observed reduction is not equivalence.</text>
+</svg>

@@ -1,41 +1,39 @@
 # AI Product Research
 
-The public source for Mudit Gurnani's research website. It is intentionally small: the site, the
-assets it serves, and the evidence package behind the published research note.
+Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani), exploring how AI works, where it falls short, and what makes it useful in everyday work.
 
-## Published work
+[Read the website](https://mudit-gurnani-research.muditgurnani.chatgpt.site/)
 
-- `/` — research index
-- `/research/agent-verification` — *The Test Passed. The Patch Was Still Wrong.*
-- [`research/agent-verification`](research/agent-verification/README.md) — frozen aggregate,
-  study rules, technical note, and a zero-dependency consistency check
+## Current research
 
-## Repository map
+### How AI reviewers use test evidence
 
-| Path | Purpose |
+We gave three AI reviewers the same proposed software fixes under five evidence scenarios. Test reports reduced faulty approvals on matched tasks, while reviewers differed in which benchmark-passing fixes they accepted. Changing a report's stated source did not produce a consistent follow-up increase in approval.
+
+[Read the article](https://mudit-gurnani-research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) · [Study code, data and methods](research/ai-reviewers-test-evidence/README.md)
+
+The study contains 60 tasks and 1,692 usable reviews. Its offline supplement reproduces the numerical results from saved classifications, not the original model experiment or independent software verification.
+
+## Repository
+
+| Folder | Contents |
 | --- | --- |
-| `app/` | Website pages and styles |
-| `public/` | Images served by the website |
-| `research/agent-verification/` | Public evidence for the published study |
-| `tests/` | Rendered-page and publication-boundary checks |
+| [site/](site/README.md) | Website source, article, and web assets |
+| [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Current study: methods, derived observations, analysis, and figures |
+| [research/agent-verification/](research/agent-verification/README.md) | Preserved earlier exploratory study, separate from the current article |
 
-## Run locally
+Each new study gets its own folder. Private execution logs, credentials, cached repositories and unfinished experiments are not part of this repository. Earlier website versions remain recoverable in Git history.
 
-Requires Node.js `>=22.13.0` and Python 3.11 or newer.
+## Reproduce the current results
 
-```bash
-npm install
-npm run dev
-npm test
-python3 research/agent-verification/reproduce.py
+Python 3.10 or later, no dependencies or model calls:
+
+```sh
+python3 research/ai-reviewers-test-evidence/reproduce.py
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the public origin before deployment. `.env.example` contains the
-local default.
+For website setup, see [site/README.md](site/README.md).
 
-## Publication boundary
+## License and attribution
 
-This is a reader-facing repository, not a research workspace or artifact archive. It excludes
-credentials, provider traces, cached repositories, private runtime state, unfinished studies, and
-internal operating records. The included Python check validates the published numbers against the
-frozen public aggregate; it does not recreate the model runs or official benchmark grading.
+Original software is covered by the existing [MIT license](LICENSE). Third-party materials retain their own rights and attribution; see the study's [provenance and release scope](research/ai-reviewers-test-evidence/PROVENANCE.md). Numerical reproduction is deliberately distinguished from end-to-end experimental reproduction.

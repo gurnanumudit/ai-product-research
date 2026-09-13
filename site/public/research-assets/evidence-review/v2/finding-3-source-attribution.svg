@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" role="img" aria-labelledby="title desc">
+<title id="title">The early source-label effect weakened in the follow-up</title><desc id="desc">Original paired source-attribution results, with initial andfollow-up points, originalbootstrap intervals andtaskcounts. Modelpalette remainsconsistent; hollowcircles indicateinitialphase andsquaresfollowup.</desc>
+<rect width="1440" height="800" fill="#FFFFFF"/>
+<text x="40" y="53" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start">The early source-label effect weakened in the follow-up</text>
+<text x="40" y="95" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Change only the report’s assigned source: separate evaluator versus the system that produced the patch</text>
+<circle cx="47" cy="138" r="7" fill="#192D33"/>
+<circle cx="47" cy="138" r="4" fill="#FFFFFF"/>
+<text x="68" y="145" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Initial 20-task phase</text>
+<rect x="380" y="131" width="14" height="14" fill="#192D33"/>
+<text x="408" y="145" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">40-task follow-up</text>
+<line x1="370.0" y1="185" x2="370.0" y2="602" stroke="#DDE5E5" stroke-width="1"/>
+<text x="370.0" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">-20</text>
+<line x1="505.4545454545455" y1="185" x2="505.4545454545455" y2="602" stroke="#DDE5E5" stroke-width="1"/>
+<text x="505.4545454545455" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">-10</text>
+<line x1="640.909090909091" y1="185" x2="640.909090909091" y2="602" stroke="#192D33" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="640.909090909091" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">0</text>
+<line x1="776.3636363636363" y1="185" x2="776.3636363636363" y2="602" stroke="#DDE5E5" stroke-width="1"/>
+<text x="776.3636363636363" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+10</text>
+<line x1="911.8181818181819" y1="185" x2="911.8181818181819" y2="602" stroke="#DDE5E5" stroke-width="1"/>
+<text x="911.8181818181819" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+20</text>
+<line x1="1047.2727272727273" y1="185" x2="1047.2727272727273" y2="602" stroke="#DDE5E5" stroke-width="1"/>
+<text x="1047.2727272727273" y="642" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+30</text>
+<text x="40" y="228" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start">Claude Sonnet 5</text>
+<line x1="640.909090909091" y1="207" x2="1047.2727272727275" y2="207" stroke="#A64B2A" stroke-width="3"/>
+<line x1="640.909090909091" y1="201" x2="640.909090909091" y2="213" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1047.2727272727275" y1="201" x2="1047.2727272727275" y2="213" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="776.3636363636365" cy="207" r="7" fill="#A64B2A"/>
+<circle cx="776.3636363636365" cy="207" r="4" fill="#FFFFFF"/>
+<text x="1165" y="213" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+10.0 pp · 10 tasks</text>
+<line x1="471.5909090909092" y1="242" x2="640.909090909091" y2="242" stroke="#A64B2A" stroke-width="3"/>
+<line x1="471.5909090909092" y1="236" x2="471.5909090909092" y2="248" stroke="#A64B2A" stroke-width="2"/>
+<line x1="640.909090909091" y1="236" x2="640.909090909091" y2="248" stroke="#A64B2A" stroke-width="2"/>
+<rect x="570.4147727272729" y="235" width="14" height="14" fill="#A64B2A"/>
+<text x="1165" y="248" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-4.7 pp · 32 tasks</text>
+<text x="40" y="338" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start">GPT 5.6 Terra</text>
+<line x1="708.6363636363637" y1="317" x2="1013.409090909091" y2="317" stroke="#006D77" stroke-width="3"/>
+<line x1="708.6363636363637" y1="311" x2="708.6363636363637" y2="323" stroke="#006D77" stroke-width="2"/>
+<line x1="1013.409090909091" y1="311" x2="1013.409090909091" y2="323" stroke="#006D77" stroke-width="2"/>
+<circle cx="844.0909090909092" cy="317" r="7" fill="#006D77"/>
+<circle cx="844.0909090909092" cy="317" r="4" fill="#FFFFFF"/>
+<text x="1165" y="323" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+15.0 pp · 20 tasks</text>
+<line x1="584.4696969696971" y1="352" x2="791.4141414141415" y2="352" stroke="#006D77" stroke-width="3"/>
+<line x1="584.4696969696971" y1="346" x2="584.4696969696971" y2="358" stroke="#006D77" stroke-width="2"/>
+<line x1="791.4141414141415" y1="346" x2="791.4141414141415" y2="358" stroke="#006D77" stroke-width="2"/>
+<rect x="671.5353535353536" y="345" width="14" height="14" fill="#006D77"/>
+<text x="1165" y="358" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+2.8 pp · 36 tasks</text>
+<text x="40" y="448" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start">Gemini 3.8 Flash</text>
+<line x1="533.9712918660288" y1="427" x2="819.1387559808613" y2="427" stroke="#6654A3" stroke-width="3"/>
+<line x1="533.9712918660288" y1="421" x2="533.9712918660288" y2="433" stroke="#6654A3" stroke-width="2"/>
+<line x1="819.1387559808613" y1="421" x2="819.1387559808613" y2="433" stroke="#6654A3" stroke-width="2"/>
+<circle cx="676.5550239234451" cy="427" r="7" fill="#6654A3"/>
+<circle cx="676.5550239234451" cy="427" r="4" fill="#FFFFFF"/>
+<text x="1165" y="433" fill="#6654A3" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+2.6 pp · 19 tasks</text>
+<line x1="544.1558441558443" y1="462" x2="698.9610389610391" y2="462" stroke="#6654A3" stroke-width="3"/>
+<line x1="544.1558441558443" y1="456" x2="544.1558441558443" y2="468" stroke="#6654A3" stroke-width="2"/>
+<line x1="698.9610389610391" y1="456" x2="698.9610389610391" y2="468" stroke="#6654A3" stroke-width="2"/>
+<rect x="614.5584415584416" y="455" width="14" height="14" fill="#6654A3"/>
+<text x="1165" y="468" fill="#6654A3" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-1.4 pp · 35 tasks</text>
+<text x="40" y="558" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start">Three-model mean</text>
+<text x="40" y="585" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">Common complete tasks</text>
+<line x1="640.909090909091" y1="537" x2="891.7508417508418" y2="537" stroke="#192D33" stroke-width="3"/>
+<line x1="640.909090909091" y1="531" x2="640.909090909091" y2="543" stroke="#192D33" stroke-width="2"/>
+<line x1="891.7508417508418" y1="531" x2="891.7508417508418" y2="543" stroke="#192D33" stroke-width="2"/>
+<circle cx="741.2457912457913" cy="537" r="7" fill="#192D33"/>
+<circle cx="741.2457912457913" cy="537" r="4" fill="#FFFFFF"/>
+<text x="1165" y="543" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+7.4 pp · 9 tasks</text>
+<line x1="577.4147727272729" y1="572" x2="676.1837121212122" y2="572" stroke="#192D33" stroke-width="3"/>
+<line x1="577.4147727272729" y1="566" x2="577.4147727272729" y2="578" stroke="#192D33" stroke-width="2"/>
+<line x1="676.1837121212122" y1="566" x2="676.1837121212122" y2="578" stroke="#192D33" stroke-width="2"/>
+<rect x="619.7992424242425" y="565" width="14" height="14" fill="#192D33"/>
+<text x="1165" y="578" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-1.0 pp · 32 tasks</text>
+<text x="720" y="686" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle">Separate evaluator − patch-producing system (approval percentage points)</text>
+<text x="40" y="741" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Whiskers: original 95% task-bootstrap stability intervals; both repeats required for each paired task/model.</text>
+<text x="40" y="773" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Task mix and Sonnet’s response constraint changed between phases. No equivalence or causal stage claim.</text>
+</svg>

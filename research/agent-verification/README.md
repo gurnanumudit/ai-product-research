@@ -1,5 +1,7 @@
 # The Test Passed. The Patch Was Still Wrong.
 
+Historical exploratory study, preserved for reference. This is a different experiment from the current [AI reviewers and test evidence study](../ai-reviewers-test-evidence/README.md); their samples and findings should not be combined.
+
 Public evidence for a bounded study of whether one AI coding agent could safely approve another
 agent's patch.
 
@@ -33,8 +35,8 @@ was not safe as an automatic release gate.
 - [`data/preregistration.json`](data/preregistration.json) — frozen study rules
 - [`docs/methodology.md`](docs/methodology.md) — design and public verification note
 - [`docs/results.md`](docs/results.md) — technical result brief
-- [`../../public/verification-confirmatory.png`](../../public/verification-confirmatory.png) — figure
-  used by the website
+- [`figures/verification-confirmatory.png`](figures/verification-confirmatory.png) — figure
+  from the earlier website
 - [`reproduce.py`](reproduce.py) — zero-dependency check of the article's headline numbers
 
 Run the public check with Python 3.11 or newer:

@@ -39,8 +39,3 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
-
-# Study regeneration and nested website dependencies
-**/node_modules/
-**/__pycache__/
-research/*/output/

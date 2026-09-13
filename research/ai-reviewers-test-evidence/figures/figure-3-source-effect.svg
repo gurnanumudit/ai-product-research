@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="830" viewBox="0 0 1440 830" role="img" aria-labelledby="title desc">
+<title id="title">The initial source-attribution signal weakened in the follow-up</title><desc id="desc">Paired E minus D approval effects in the original 20-task phase and 40-task follow-up, with task-resampling intervals and complete-task counts. No cross-phase pooling.</desc>
+<rect width="1440" height="830" fill="#FFFFFF"/>
+<text x="40" y="55" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start">The initial source-attribution signal weakened in the follow-up</text>
+<text x="40" y="94" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Change only the assigned source of the identical full report: separate evaluator (E) − patch producer (D)</text>
+<circle cx="47" cy="134" r="6" fill="#A64B2A"/>
+<text x="65" y="141" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Initial 20-task phase</text>
+<rect x="386" y="128" width="12" height="12" fill="#006D77"/>
+<text x="410" y="141" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">40-task follow-up</text>
+<line x1="370.0" y1="181" x2="370.0" y2="598" stroke="#DDE5E5" stroke-width="1"/>
+<text x="370.0" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">-20</text>
+<line x1="506.3636363636364" y1="181" x2="506.3636363636364" y2="598" stroke="#DDE5E5" stroke-width="1"/>
+<text x="506.3636363636364" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">-10</text>
+<line x1="642.7272727272727" y1="181" x2="642.7272727272727" y2="598" stroke="#192D33" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="642.7272727272727" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">0</text>
+<line x1="779.090909090909" y1="181" x2="779.090909090909" y2="598" stroke="#DDE5E5" stroke-width="1"/>
+<text x="779.090909090909" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+10</text>
+<line x1="915.4545454545455" y1="181" x2="915.4545454545455" y2="598" stroke="#DDE5E5" stroke-width="1"/>
+<text x="915.4545454545455" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+20</text>
+<line x1="1051.818181818182" y1="181" x2="1051.818181818182" y2="598" stroke="#DDE5E5" stroke-width="1"/>
+<text x="1051.818181818182" y="635" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle">+30</text>
+<text x="40" y="227" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">GPT 5.6 Terra</text>
+<line x1="710.909090909091" y1="207" x2="1017.7272727272727" y2="207" stroke="#A64B2A" stroke-width="3"/>
+<line x1="710.909090909091" y1="201" x2="710.909090909091" y2="213" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1017.7272727272727" y1="201" x2="1017.7272727272727" y2="213" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="847.2727272727273" cy="207" r="7" fill="#A64B2A"/>
+<text x="1170" y="213" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+15.0 pp · 20 tasks</text>
+<line x1="585.9090909090909" y1="242" x2="794.2424242424242" y2="242" stroke="#006D77" stroke-width="3"/>
+<line x1="585.9090909090909" y1="236" x2="585.9090909090909" y2="248" stroke="#006D77" stroke-width="2"/>
+<line x1="794.2424242424242" y1="236" x2="794.2424242424242" y2="248" stroke="#006D77" stroke-width="2"/>
+<rect x="673.6060606060605" y="235" width="14" height="14" fill="#006D77"/>
+<text x="1170" y="248" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+2.8 pp · 36 tasks</text>
+<text x="40" y="338" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Claude Sonnet 5</text>
+<line x1="642.7272727272727" y1="318" x2="1051.818181818182" y2="318" stroke="#A64B2A" stroke-width="3"/>
+<line x1="642.7272727272727" y1="312" x2="642.7272727272727" y2="324" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1051.818181818182" y1="312" x2="1051.818181818182" y2="324" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="779.090909090909" cy="318" r="7" fill="#A64B2A"/>
+<text x="1170" y="324" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+10.0 pp · 10 tasks</text>
+<line x1="472.27272727272725" y1="353" x2="642.7272727272727" y2="353" stroke="#006D77" stroke-width="3"/>
+<line x1="472.27272727272725" y1="347" x2="472.27272727272725" y2="359" stroke="#006D77" stroke-width="2"/>
+<line x1="642.7272727272727" y1="347" x2="642.7272727272727" y2="359" stroke="#006D77" stroke-width="2"/>
+<rect x="571.8068181818182" y="346" width="14" height="14" fill="#006D77"/>
+<text x="1170" y="359" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-4.7 pp · 32 tasks</text>
+<text x="40" y="449" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Gemini 3.8 Flash</text>
+<line x1="535.0717703349283" y1="429" x2="822.1531100478469" y2="429" stroke="#A64B2A" stroke-width="3"/>
+<line x1="535.0717703349283" y1="423" x2="535.0717703349283" y2="435" stroke="#A64B2A" stroke-width="2"/>
+<line x1="822.1531100478469" y1="423" x2="822.1531100478469" y2="435" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="678.6124401913876" cy="429" r="7" fill="#A64B2A"/>
+<text x="1170" y="435" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+2.6 pp · 19 tasks</text>
+<line x1="545.3246753246754" y1="464" x2="701.1688311688312" y2="464" stroke="#006D77" stroke-width="3"/>
+<line x1="545.3246753246754" y1="458" x2="545.3246753246754" y2="470" stroke="#006D77" stroke-width="2"/>
+<line x1="701.1688311688312" y1="458" x2="701.1688311688312" y2="470" stroke="#006D77" stroke-width="2"/>
+<rect x="616.2467532467533" y="457" width="14" height="14" fill="#006D77"/>
+<text x="1170" y="470" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-1.4 pp · 35 tasks</text>
+<text x="40" y="560" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Three-model mean</text>
+<text x="40" y="586" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">Common complete tasks only</text>
+<line x1="642.7272727272727" y1="540" x2="895.2525252525253" y2="540" stroke="#A64B2A" stroke-width="3"/>
+<line x1="642.7272727272727" y1="534" x2="642.7272727272727" y2="546" stroke="#A64B2A" stroke-width="2"/>
+<line x1="895.2525252525253" y1="534" x2="895.2525252525253" y2="546" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="743.7373737373737" cy="540" r="7" fill="#A64B2A"/>
+<text x="1170" y="546" fill="#A64B2A" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">+7.4 pp · 9 tasks</text>
+<line x1="578.8068181818182" y1="575" x2="678.2386363636364" y2="575" stroke="#006D77" stroke-width="3"/>
+<line x1="578.8068181818182" y1="569" x2="578.8068181818182" y2="581" stroke="#006D77" stroke-width="2"/>
+<line x1="678.2386363636364" y1="569" x2="678.2386363636364" y2="581" stroke="#006D77" stroke-width="2"/>
+<rect x="621.5227272727273" y="568" width="14" height="14" fill="#006D77"/>
+<text x="1170" y="581" fill="#006D77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start">-1.0 pp · 32 tasks</text>
+<text x="745.0" y="674" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle">E − D approval difference (percentage points)</text>
+<text x="40" y="718" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Whiskers: 95% task-bootstrap stability intervals on complete paired blocks; not population confidence intervals.</text>
+<text x="40" y="746" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Both repeats of D and E are required. Source labels are hypothetical; the full report body is unchanged.</text>
+<text x="40" y="774" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Phases differ in tasks; Sonnet also gained a native JSON constraint. Full-roster missingness bounds accompany the data.</text>
+<text x="40" y="802" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Phase 1: 37 invalid / 0 unattempted. Follow-up: 7 invalid / 64 unattempted. No pooled cross-phase effect is shown.</text>
+</svg>

@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920" role="img" aria-labelledby="title desc">
+<title id="title">Acceptance differs despite few benchmark-failing approvals</title><desc id="desc">Two panels show approval of benchmark-passing and benchmark-failing patches in follow-up common-task sets. Three colored points per scenario include task-level conservative intervals; zero observed approvals do not imply zero risk.</desc>
+<rect width="1440" height="920" fill="#FFFFFF"/>
+<text x="40" y="55" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" text-anchor="start">Acceptance differs despite few benchmark-failing approvals</text>
+<text x="40" y="94" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Follow-up · same tasks across all three models within each scenario · two usable repeats required</text>
+<circle cx="46" cy="133" r="6" fill="#006D77"/>
+<text x="64" y="140" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">GPT 5.6 Terra</text>
+<circle cx="406" cy="133" r="6" fill="#A64B2A"/>
+<text x="424" y="140" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Claude Sonnet 5</text>
+<circle cx="766" cy="133" r="6" fill="#6654A3"/>
+<text x="784" y="140" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="start">Gemini 3.8 Flash</text>
+<text x="40" y="196" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start">Benchmark-passing patches</text>
+<line x1="98" y1="554.0" x2="658" y2="554.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="82" y="560.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">0%</text>
+<line x1="98" y1="472.0" x2="658" y2="472.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="82" y="478.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">25%</text>
+<line x1="98" y1="390.0" x2="658" y2="390.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="82" y="396.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">50%</text>
+<line x1="98" y1="308.0" x2="658" y2="308.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="82" y="314.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">75%</text>
+<line x1="98" y1="226.0" x2="658" y2="226.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="82" y="232.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">100%</text>
+<line x1="120" y1="261.89467632278314" x2="120" y2="417.6743331160209" stroke="#006D77" stroke-width="2"/>
+<line x1="116" y1="261.89467632278314" x2="124" y2="261.89467632278314" stroke="#006D77" stroke-width="2"/>
+<line x1="116" y1="417.6743331160209" x2="124" y2="417.6743331160209" stroke="#006D77" stroke-width="2"/>
+<circle cx="120" cy="326.22222222222223" r="5" fill="#006D77"/>
+<line x1="138" y1="239.0575097492919" x2="138" y2="383.091549466683" stroke="#A64B2A" stroke-width="2"/>
+<line x1="134" y1="239.0575097492919" x2="142" y2="239.0575097492919" stroke="#A64B2A" stroke-width="2"/>
+<line x1="134" y1="383.091549466683" x2="142" y2="383.091549466683" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="138" cy="289.77777777777777" r="5" fill="#A64B2A"/>
+<line x1="156" y1="368.45179824110744" x2="156" y2="526.6239162438361" stroke="#6654A3" stroke-width="2"/>
+<line x1="152" y1="368.45179824110744" x2="160" y2="368.45179824110744" stroke="#6654A3" stroke-width="2"/>
+<line x1="152" y1="526.6239162438361" x2="160" y2="526.6239162438361" stroke="#6654A3" stroke-width="2"/>
+<circle cx="156" cy="462.8888888888889" r="5" fill="#6654A3"/>
+<text x="138" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">A</text>
+<text x="138" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">18 tasks</text>
+<text x="138" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">36 reviews</text>
+<line x1="240" y1="265.9197371296745" x2="240" y2="427.8074028929948" stroke="#006D77" stroke-width="2"/>
+<line x1="236" y1="265.9197371296745" x2="244" y2="265.9197371296745" stroke="#006D77" stroke-width="2"/>
+<line x1="236" y1="427.8074028929948" x2="244" y2="427.8074028929948" stroke="#006D77" stroke-width="2"/>
+<circle cx="240" cy="335.33333333333337" r="5" fill="#006D77"/>
+<line x1="258" y1="239.0575097492919" x2="258" y2="383.091549466683" stroke="#A64B2A" stroke-width="2"/>
+<line x1="254" y1="239.0575097492919" x2="262" y2="239.0575097492919" stroke="#A64B2A" stroke-width="2"/>
+<line x1="254" y1="383.091549466683" x2="262" y2="383.091549466683" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="258" cy="289.77777777777777" r="5" fill="#A64B2A"/>
+<line x1="276" y1="359.0029857827078" x2="276" y2="521.7998085583976" stroke="#6654A3" stroke-width="2"/>
+<line x1="272" y1="359.0029857827078" x2="280" y2="359.0029857827078" stroke="#6654A3" stroke-width="2"/>
+<line x1="272" y1="521.7998085583976" x2="280" y2="521.7998085583976" stroke="#6654A3" stroke-width="2"/>
+<circle cx="276" cy="453.77777777777777" r="5" fill="#6654A3"/>
+<text x="258" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">B</text>
+<text x="258" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">18 tasks</text>
+<text x="258" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">36 reviews</text>
+<line x1="360" y1="253.37608375616395" x2="360" y2="411.5482017588926" stroke="#006D77" stroke-width="2"/>
+<line x1="356" y1="253.37608375616395" x2="364" y2="253.37608375616395" stroke="#006D77" stroke-width="2"/>
+<line x1="356" y1="411.5482017588926" x2="364" y2="411.5482017588926" stroke="#006D77" stroke-width="2"/>
+<circle cx="360" cy="317.1111111111111" r="5" fill="#006D77"/>
+<line x1="378" y1="229.1184703208097" x2="378" y2="350.92876193210043" stroke="#A64B2A" stroke-width="2"/>
+<line x1="374" y1="229.1184703208097" x2="382" y2="229.1184703208097" stroke="#A64B2A" stroke-width="2"/>
+<line x1="374" y1="350.92876193210043" x2="382" y2="350.92876193210043" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="378" cy="262.44444444444446" r="5" fill="#A64B2A"/>
+<line x1="396" y1="312.92177490845893" x2="396" y2="481.46667256972256" stroke="#6654A3" stroke-width="2"/>
+<line x1="392" y1="312.92177490845893" x2="400" y2="312.92177490845893" stroke="#6654A3" stroke-width="2"/>
+<line x1="392" y1="481.46667256972256" x2="400" y2="481.46667256972256" stroke="#6654A3" stroke-width="2"/>
+<circle cx="396" cy="399.1111111111111" r="5" fill="#6654A3"/>
+<text x="378" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">C</text>
+<text x="378" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">18 tasks</text>
+<text x="378" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">36 reviews</text>
+<line x1="480" y1="260.2979247877157" x2="480" y2="429.52737242859257" stroke="#006D77" stroke-width="2"/>
+<line x1="476" y1="260.2979247877157" x2="484" y2="260.2979247877157" stroke="#006D77" stroke-width="2"/>
+<line x1="476" y1="429.52737242859257" x2="484" y2="429.52737242859257" stroke="#006D77" stroke-width="2"/>
+<circle cx="480" cy="332.11764705882354" r="5" fill="#006D77"/>
+<line x1="498" y1="226.121303368442" x2="498" y2="315.9248307332896" stroke="#A64B2A" stroke-width="2"/>
+<line x1="494" y1="226.121303368442" x2="502" y2="226.121303368442" stroke="#A64B2A" stroke-width="2"/>
+<line x1="494" y1="315.9248307332896" x2="502" y2="315.9248307332896" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="498" cy="235.6470588235294" r="5" fill="#A64B2A"/>
+<line x1="516" y1="287.1284859848701" x2="516" y2="462.801126704923" stroke="#6654A3" stroke-width="2"/>
+<line x1="512" y1="287.1284859848701" x2="520" y2="287.1284859848701" stroke="#6654A3" stroke-width="2"/>
+<line x1="512" y1="462.801126704923" x2="520" y2="462.801126704923" stroke="#6654A3" stroke-width="2"/>
+<circle cx="516" cy="370.70588235294116" r="5" fill="#6654A3"/>
+<text x="498" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">D</text>
+<text x="498" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">17 tasks</text>
+<text x="498" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">34 reviews</text>
+<line x1="600" y1="252.72214444025633" x2="600" y2="428.7305620091664" stroke="#006D77" stroke-width="2"/>
+<line x1="596" y1="252.72214444025633" x2="604" y2="252.72214444025633" stroke="#006D77" stroke-width="2"/>
+<line x1="596" y1="428.7305620091664" x2="604" y2="428.7305620091664" stroke="#006D77" stroke-width="2"/>
+<circle cx="600" cy="324.4" r="5" fill="#006D77"/>
+<line x1="618" y1="229.76069635911506" x2="618" y2="370.93444983315385" stroke="#A64B2A" stroke-width="2"/>
+<line x1="614" y1="229.76069635911506" x2="622" y2="229.76069635911506" stroke="#A64B2A" stroke-width="2"/>
+<line x1="614" y1="370.93444983315385" x2="622" y2="370.93444983315385" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="618" cy="269.73333333333335" r="5" fill="#A64B2A"/>
+<line x1="636" y1="296.91695797162265" x2="636" y2="483.08304202837746" stroke="#6654A3" stroke-width="2"/>
+<line x1="632" y1="296.91695797162265" x2="640" y2="296.91695797162265" stroke="#6654A3" stroke-width="2"/>
+<line x1="632" y1="483.08304202837746" x2="640" y2="483.08304202837746" stroke="#6654A3" stroke-width="2"/>
+<circle cx="636" cy="390.0" r="5" fill="#6654A3"/>
+<text x="618" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">E</text>
+<text x="618" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">15 tasks</text>
+<text x="618" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">30 reviews</text>
+<text x="750" y="196" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start">Benchmark-failing patches</text>
+<line x1="808" y1="554.0" x2="1368" y2="554.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="792" y="560.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">0%</text>
+<line x1="808" y1="472.0" x2="1368" y2="472.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="792" y="478.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">25%</text>
+<line x1="808" y1="390.0" x2="1368" y2="390.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="792" y="396.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">50%</text>
+<line x1="808" y1="308.0" x2="1368" y2="308.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="792" y="314.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">75%</text>
+<line x1="808" y1="226.0" x2="1368" y2="226.0" stroke="#DDE5E5" stroke-width="1"/>
+<text x="792" y="232.0" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="end">100%</text>
+<line x1="830" y1="437.0575374990824" x2="830" y2="553.7250592591787" stroke="#006D77" stroke-width="2"/>
+<line x1="826" y1="437.0575374990824" x2="834" y2="437.0575374990824" stroke="#006D77" stroke-width="2"/>
+<line x1="826" y1="553.7250592591787" x2="834" y2="553.7250592591787" stroke="#006D77" stroke-width="2"/>
+<circle cx="830" cy="532.1333333333333" r="5" fill="#006D77"/>
+<line x1="848" y1="423.0615438329644" x2="848" y2="551.9821814500318" stroke="#A64B2A" stroke-width="2"/>
+<line x1="844" y1="423.0615438329644" x2="852" y2="423.0615438329644" stroke="#A64B2A" stroke-width="2"/>
+<line x1="844" y1="551.9821814500318" x2="852" y2="551.9821814500318" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="848" cy="521.2" r="5" fill="#A64B2A"/>
+<line x1="866" y1="437.0575374990824" x2="866" y2="553.7250592591787" stroke="#6654A3" stroke-width="2"/>
+<line x1="862" y1="437.0575374990824" x2="870" y2="437.0575374990824" stroke="#6654A3" stroke-width="2"/>
+<line x1="862" y1="553.7250592591787" x2="870" y2="553.7250592591787" stroke="#6654A3" stroke-width="2"/>
+<circle cx="866" cy="532.1333333333333" r="5" fill="#6654A3"/>
+<text x="848" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">A</text>
+<text x="848" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">15 tasks</text>
+<text x="848" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">30 reviews</text>
+<line x1="950" y1="479.47047219563535" x2="950" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<line x1="946" y1="479.47047219563535" x2="954" y2="479.47047219563535" stroke="#006D77" stroke-width="2"/>
+<line x1="946" y1="554.0" x2="954" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<circle cx="950" cy="554.0" r="5" fill="#006D77"/>
+<line x1="968" y1="479.47047219563535" x2="968" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<line x1="964" y1="479.47047219563535" x2="972" y2="479.47047219563535" stroke="#A64B2A" stroke-width="2"/>
+<line x1="964" y1="554.0" x2="972" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="968" cy="554.0" r="5" fill="#A64B2A"/>
+<line x1="986" y1="479.47047219563535" x2="986" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<line x1="982" y1="479.47047219563535" x2="990" y2="479.47047219563535" stroke="#6654A3" stroke-width="2"/>
+<line x1="982" y1="554.0" x2="990" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<circle cx="986" cy="554.0" r="5" fill="#6654A3"/>
+<text x="968" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">B</text>
+<text x="968" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">17 tasks</text>
+<text x="968" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">34 reviews</text>
+<line x1="1070" y1="479.47047219563535" x2="1070" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<line x1="1066" y1="479.47047219563535" x2="1074" y2="479.47047219563535" stroke="#006D77" stroke-width="2"/>
+<line x1="1066" y1="554.0" x2="1074" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<circle cx="1070" cy="554.0" r="5" fill="#006D77"/>
+<line x1="1088" y1="479.47047219563535" x2="1088" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1084" y1="479.47047219563535" x2="1092" y2="479.47047219563535" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1084" y1="554.0" x2="1092" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="1088" cy="554.0" r="5" fill="#A64B2A"/>
+<line x1="1106" y1="479.47047219563535" x2="1106" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<line x1="1102" y1="479.47047219563535" x2="1110" y2="479.47047219563535" stroke="#6654A3" stroke-width="2"/>
+<line x1="1102" y1="554.0" x2="1110" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1106" cy="554.0" r="5" fill="#6654A3"/>
+<text x="1088" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">C</text>
+<text x="1088" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">17 tasks</text>
+<text x="1088" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">34 reviews</text>
+<line x1="1190" y1="479.47047219563535" x2="1190" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<line x1="1186" y1="479.47047219563535" x2="1194" y2="479.47047219563535" stroke="#006D77" stroke-width="2"/>
+<line x1="1186" y1="554.0" x2="1194" y2="554.0" stroke="#006D77" stroke-width="2"/>
+<circle cx="1190" cy="554.0" r="5" fill="#006D77"/>
+<line x1="1208" y1="479.47047219563535" x2="1208" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1204" y1="479.47047219563535" x2="1212" y2="479.47047219563535" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1204" y1="554.0" x2="1212" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="1208" cy="554.0" r="5" fill="#A64B2A"/>
+<line x1="1226" y1="479.47047219563535" x2="1226" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<line x1="1222" y1="479.47047219563535" x2="1230" y2="479.47047219563535" stroke="#6654A3" stroke-width="2"/>
+<line x1="1222" y1="554.0" x2="1230" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1226" cy="554.0" r="5" fill="#6654A3"/>
+<text x="1208" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">D</text>
+<text x="1208" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">17 tasks</text>
+<text x="1208" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">34 reviews</text>
+<line x1="1310" y1="464.07516926671053" x2="1310" y2="553.878696631558" stroke="#006D77" stroke-width="2"/>
+<line x1="1306" y1="464.07516926671053" x2="1314" y2="464.07516926671053" stroke="#006D77" stroke-width="2"/>
+<line x1="1306" y1="553.878696631558" x2="1314" y2="553.878696631558" stroke="#006D77" stroke-width="2"/>
+<circle cx="1310" cy="544.3529411764706" r="5" fill="#006D77"/>
+<line x1="1328" y1="479.47047219563535" x2="1328" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1324" y1="479.47047219563535" x2="1332" y2="479.47047219563535" stroke="#A64B2A" stroke-width="2"/>
+<line x1="1324" y1="554.0" x2="1332" y2="554.0" stroke="#A64B2A" stroke-width="2"/>
+<circle cx="1328" cy="554.0" r="5" fill="#A64B2A"/>
+<line x1="1346" y1="479.47047219563535" x2="1346" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<line x1="1342" y1="479.47047219563535" x2="1350" y2="479.47047219563535" stroke="#6654A3" stroke-width="2"/>
+<line x1="1342" y1="554.0" x2="1350" y2="554.0" stroke="#6654A3" stroke-width="2"/>
+<circle cx="1346" cy="554.0" r="5" fill="#6654A3"/>
+<text x="1328" y="588" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle">E</text>
+<text x="1328" y="617" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">17 tasks</text>
+<text x="1328" y="639" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="middle">34 reviews</text>
+<text x="40" y="683" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Whiskers: conservative 95% task-level sensitivity intervals; not independent-review or population intervals.</text>
+<text x="40" y="713" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">Matched within each scenario; denominators are per model. The task set can differ between scenarios.</text>
+<line x1="40" y1="740" x2="1400" y2="740" stroke="#DDE5E5" stroke-width="1"/>
+<text x="40" y="762" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">A  Issue + patch only     B  Factual summary     C  Full report, source unspecified</text>
+<text x="40" y="791" fill="#192D33" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="start">D  Full report attributed to patch-producing system     E  Identical report attributed to a separate evaluator</text>
+<text x="40" y="826" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">Source labels are hypothetical. Sonnet uses a native JSON constraint in the follow-up phase.</text>
+<text x="40" y="860" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">Post-hoc benchmark scoring. B–E use evidence from the same evaluation defining the labels, not independent verification.</text>
+<text x="40" y="890" fill="#53676C" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start">40 planned tasks · 7 invalid responses · 64 unattempted. Common-task subsets omit missing blocks; no imputation.</text>
+</svg>
