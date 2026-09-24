@@ -6,6 +6,13 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 ## Current research
 
+### When is more reasoning worth it?
+
+We compared three models at three reasoning settings on 134 analytical questions.
+The [study code, derived results and methods](research/reasoning-costs/README.md)
+reproduce the accuracy tables, cost comparisons and sensitivity checks offline.
+The accompanying article is still an unpublished review draft.
+
 ### How AI reviewers use test evidence
 
 We gave three AI reviewers the same proposed software fixes under five evidence scenarios. Test reports reduced faulty approvals on matched tasks, while reviewers differed in which benchmark-passing fixes they accepted. Changing a report's stated source did not produce a consistent follow-up increase in approval.
@@ -19,6 +26,7 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | Folder | Contents |
 | --- | --- |
 | [site/](site/README.md) | Website source, article, and web assets |
+| [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Current study: methods, derived observations, analysis, and figures |
 | [research/agent-verification/](research/agent-verification/README.md) | Preserved earlier exploratory study, separate from the current article |
 
@@ -30,6 +38,7 @@ Python 3.10 or later, no dependencies or model calls:
 
 ```sh
 python3 research/ai-reviewers-test-evidence/reproduce.py
+python3 research/reasoning-costs/reproduce.py
 ```
 
 For website setup, see [site/README.md](site/README.md).

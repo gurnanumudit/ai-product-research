@@ -1,0 +1,3632 @@
+{
+  "questions": 134,
+  "bands": {
+    "hard": 50,
+    "easy": 29,
+    "medium": 55
+  },
+  "sourceContexts": 24,
+  "excludedQuestions": [
+    "DSBench:00000030/question3",
+    "DSBench:00000032/question3",
+    "DSBench:00000034/question10",
+    "DSBench:00000039/question1",
+    "DSBench:00000043/question6"
+  ],
+  "points": [
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 17,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.5862068965517241,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.4921875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.84375,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 28,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.9655172413793104,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.9375,
+      "terminalCounts": {
+        "ordinary_answer": 28,
+        "infrastructure_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 20,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6896551724137931,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.6796875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.84375,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.890625,
+      "terminalCounts": {
+        "ordinary_answer": 28,
+        "infrastructure_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 23,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.7931034482758621,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.765625,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 26,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.896551724137931,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8671875,
+      "terminalCounts": {
+        "infrastructure_failure": 2,
+        "ordinary_answer": 27
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 28,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.509090909090909,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.4696969696969697,
+      "terminalCounts": {
+        "ordinary_answer": 54,
+        "provider_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 46,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8363636363636363,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8371212121212122,
+      "terminalCounts": {
+        "ordinary_answer": 55
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 47,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8787878787878788,
+      "terminalCounts": {
+        "ordinary_answer": 49,
+        "infrastructure_failure": 5,
+        "model_limit": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 36,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.6856060606060606,
+      "terminalCounts": {
+        "ordinary_answer": 49,
+        "model_limit": 1,
+        "provider_failure": 3,
+        "infrastructure_failure": 2
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 47,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.856060606060606,
+      "terminalCounts": {
+        "ordinary_answer": 54,
+        "infrastructure_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 49,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8909090909090909,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.9242424242424243,
+      "terminalCounts": {
+        "ordinary_answer": 53,
+        "infrastructure_failure": 2
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 34,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6181818181818182,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.6060606060606061,
+      "terminalCounts": {
+        "infrastructure_failure": 4,
+        "ordinary_answer": 51
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 45,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8181818181818182,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8484848484848484,
+      "terminalCounts": {
+        "infrastructure_failure": 6,
+        "ordinary_answer": 49
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 50,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.9090909090909091,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.9318181818181818,
+      "terminalCounts": {
+        "infrastructure_failure": 2,
+        "ordinary_answer": 52,
+        "model_limit_fallback_failed": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 18,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.36,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.3599702380952381,
+      "terminalCounts": {
+        "ordinary_answer": 45,
+        "infrastructure_failure": 2,
+        "provider_failure": 3
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 31,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.62,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.5945684523809524,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 3,
+        "provider_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 38,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.76,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.7075892857142857,
+      "terminalCounts": {
+        "ordinary_answer": 40,
+        "infrastructure_failure": 3,
+        "model_limit": 5,
+        "provider_failure": 2
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 25,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.5,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.4517113095238095,
+      "terminalCounts": {
+        "ordinary_answer": 39,
+        "infrastructure_failure": 1,
+        "provider_failure": 9,
+        "model_limit": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 34,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.68,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.5796874999999999,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "provider_failure": 1,
+        "model_limit": 3
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 41,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.82,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8218005952380952,
+      "terminalCounts": {
+        "ordinary_answer": 45,
+        "model_limit": 2,
+        "infrastructure_failure": 2,
+        "provider_failure": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 32,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.64,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.6070684523809524,
+      "terminalCounts": {
+        "ordinary_answer": 44,
+        "infrastructure_failure": 4,
+        "model_limit": 2
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 42,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.84,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8942708333333333,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 3,
+        "model_limit": 1
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 42,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.84,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.7708333333333334,
+      "terminalCounts": {
+        "ordinary_answer": 44,
+        "infrastructure_failure": 4,
+        "model_limit": 2
+      },
+      "model": null,
+      "pending": null,
+      "runtime": null
+    }
+  ],
+  "overall": [
+    {
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 63,
+      "n": 134,
+      "successRate": 0.4701492537313433,
+      "equalContextSuccessRate": 0.46118476430976435,
+      "terminalCounts": {
+        "ordinary_answer": 128,
+        "infrastructure_failure": 2,
+        "provider_failure": 4
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 102,
+      "n": 134,
+      "successRate": 0.7611940298507462,
+      "equalContextSuccessRate": 0.7338774651274651,
+      "terminalCounts": {
+        "ordinary_answer": 130,
+        "infrastructure_failure": 3,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 113,
+      "n": 134,
+      "successRate": 0.8432835820895522,
+      "equalContextSuccessRate": 0.8560846560846561,
+      "terminalCounts": {
+        "ordinary_answer": 117,
+        "infrastructure_failure": 9,
+        "model_limit": 6,
+        "provider_failure": 2
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 81,
+      "n": 134,
+      "successRate": 0.6044776119402985,
+      "equalContextSuccessRate": 0.6093374218374219,
+      "terminalCounts": {
+        "ordinary_answer": 117,
+        "infrastructure_failure": 3,
+        "provider_failure": 12,
+        "model_limit": 2
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 106,
+      "n": 134,
+      "successRate": 0.7910447761194029,
+      "equalContextSuccessRate": 0.7813116281866282,
+      "terminalCounts": {
+        "ordinary_answer": 129,
+        "provider_failure": 1,
+        "model_limit": 3,
+        "infrastructure_failure": 1
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 115,
+      "n": 134,
+      "successRate": 0.8582089552238806,
+      "equalContextSuccessRate": 0.8912022005772006,
+      "terminalCounts": {
+        "ordinary_answer": 126,
+        "model_limit": 2,
+        "infrastructure_failure": 5,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 89,
+      "n": 134,
+      "successRate": 0.664179104477612,
+      "equalContextSuccessRate": 0.6957641895141896,
+      "terminalCounts": {
+        "ordinary_answer": 124,
+        "infrastructure_failure": 8,
+        "model_limit": 2
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 113,
+      "n": 134,
+      "successRate": 0.8432835820895522,
+      "equalContextSuccessRate": 0.8717577561327561,
+      "terminalCounts": {
+        "ordinary_answer": 124,
+        "infrastructure_failure": 9,
+        "model_limit": 1
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 117,
+      "n": 134,
+      "successRate": 0.8731343283582089,
+      "equalContextSuccessRate": 0.8903439153439154,
+      "terminalCounts": {
+        "ordinary_answer": 123,
+        "infrastructure_failure": 8,
+        "model_limit": 2,
+        "model_limit_fallback_failed": 1
+      }
+    }
+  ],
+  "pairedChanges": [
+    {
+      "modelName": "Luna",
+      "band": "easy",
+      "before": "none",
+      "after": "low",
+      "n": 29,
+      "gained": 9,
+      "lost": 1,
+      "net": 8,
+      "percentagePoints": 27.586206896551722
+    },
+    {
+      "modelName": "Luna",
+      "band": "easy",
+      "before": "low",
+      "after": "high",
+      "n": 29,
+      "gained": 4,
+      "lost": 1,
+      "net": 3,
+      "percentagePoints": 10.344827586206897
+    },
+    {
+      "modelName": "Luna",
+      "band": "medium",
+      "before": "none",
+      "after": "low",
+      "n": 55,
+      "gained": 22,
+      "lost": 4,
+      "net": 18,
+      "percentagePoints": 32.72727272727273
+    },
+    {
+      "modelName": "Luna",
+      "band": "medium",
+      "before": "low",
+      "after": "high",
+      "n": 55,
+      "gained": 6,
+      "lost": 5,
+      "net": 1,
+      "percentagePoints": 1.8181818181818181
+    },
+    {
+      "modelName": "Luna",
+      "band": "hard",
+      "before": "none",
+      "after": "low",
+      "n": 50,
+      "gained": 20,
+      "lost": 7,
+      "net": 13,
+      "percentagePoints": 26
+    },
+    {
+      "modelName": "Luna",
+      "band": "hard",
+      "before": "low",
+      "after": "high",
+      "n": 50,
+      "gained": 11,
+      "lost": 4,
+      "net": 7,
+      "percentagePoints": 14
+    },
+    {
+      "modelName": "Luna",
+      "band": "all",
+      "before": "none",
+      "after": "low",
+      "n": 134,
+      "gained": 51,
+      "lost": 12,
+      "net": 39,
+      "percentagePoints": 29.104477611940297
+    },
+    {
+      "modelName": "Luna",
+      "band": "all",
+      "before": "low",
+      "after": "high",
+      "n": 134,
+      "gained": 21,
+      "lost": 10,
+      "net": 11,
+      "percentagePoints": 8.208955223880597
+    },
+    {
+      "modelName": "Terra",
+      "band": "easy",
+      "before": "none",
+      "after": "low",
+      "n": 29,
+      "gained": 6,
+      "lost": 1,
+      "net": 5,
+      "percentagePoints": 17.24137931034483
+    },
+    {
+      "modelName": "Terra",
+      "band": "easy",
+      "before": "low",
+      "after": "high",
+      "n": 29,
+      "gained": 4,
+      "lost": 4,
+      "net": 0,
+      "percentagePoints": 0
+    },
+    {
+      "modelName": "Terra",
+      "band": "medium",
+      "before": "none",
+      "after": "low",
+      "n": 55,
+      "gained": 15,
+      "lost": 4,
+      "net": 11,
+      "percentagePoints": 20
+    },
+    {
+      "modelName": "Terra",
+      "band": "medium",
+      "before": "low",
+      "after": "high",
+      "n": 55,
+      "gained": 6,
+      "lost": 4,
+      "net": 2,
+      "percentagePoints": 3.6363636363636362
+    },
+    {
+      "modelName": "Terra",
+      "band": "hard",
+      "before": "none",
+      "after": "low",
+      "n": 50,
+      "gained": 13,
+      "lost": 4,
+      "net": 9,
+      "percentagePoints": 18
+    },
+    {
+      "modelName": "Terra",
+      "band": "hard",
+      "before": "low",
+      "after": "high",
+      "n": 50,
+      "gained": 9,
+      "lost": 2,
+      "net": 7,
+      "percentagePoints": 14
+    },
+    {
+      "modelName": "Terra",
+      "band": "all",
+      "before": "none",
+      "after": "low",
+      "n": 134,
+      "gained": 34,
+      "lost": 9,
+      "net": 25,
+      "percentagePoints": 18.65671641791045
+    },
+    {
+      "modelName": "Terra",
+      "band": "all",
+      "before": "low",
+      "after": "high",
+      "n": 134,
+      "gained": 19,
+      "lost": 10,
+      "net": 9,
+      "percentagePoints": 6.7164179104477615
+    },
+    {
+      "modelName": "Sol",
+      "band": "easy",
+      "before": "none",
+      "after": "low",
+      "n": 29,
+      "gained": 5,
+      "lost": 2,
+      "net": 3,
+      "percentagePoints": 10.344827586206897
+    },
+    {
+      "modelName": "Sol",
+      "band": "easy",
+      "before": "low",
+      "after": "high",
+      "n": 29,
+      "gained": 2,
+      "lost": 3,
+      "net": -1,
+      "percentagePoints": -3.4482758620689653
+    },
+    {
+      "modelName": "Sol",
+      "band": "medium",
+      "before": "none",
+      "after": "low",
+      "n": 55,
+      "gained": 13,
+      "lost": 2,
+      "net": 11,
+      "percentagePoints": 20
+    },
+    {
+      "modelName": "Sol",
+      "band": "medium",
+      "before": "low",
+      "after": "high",
+      "n": 55,
+      "gained": 5,
+      "lost": 0,
+      "net": 5,
+      "percentagePoints": 9.090909090909092
+    },
+    {
+      "modelName": "Sol",
+      "band": "hard",
+      "before": "none",
+      "after": "low",
+      "n": 50,
+      "gained": 13,
+      "lost": 3,
+      "net": 10,
+      "percentagePoints": 20
+    },
+    {
+      "modelName": "Sol",
+      "band": "hard",
+      "before": "low",
+      "after": "high",
+      "n": 50,
+      "gained": 4,
+      "lost": 4,
+      "net": 0,
+      "percentagePoints": 0
+    },
+    {
+      "modelName": "Sol",
+      "band": "all",
+      "before": "none",
+      "after": "low",
+      "n": 134,
+      "gained": 31,
+      "lost": 7,
+      "net": 24,
+      "percentagePoints": 17.91044776119403
+    },
+    {
+      "modelName": "Sol",
+      "band": "all",
+      "before": "low",
+      "after": "high",
+      "n": 134,
+      "gained": 11,
+      "lost": 7,
+      "net": 4,
+      "percentagePoints": 2.985074626865672
+    }
+  ],
+  "sensitivities": {
+    "noInfrastructureFailure": {
+      "questions": 97,
+      "excludedQuestions": 37,
+      "bands": {
+        "hard": 29,
+        "medium": 42,
+        "easy": 26
+      },
+      "points": [
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 16,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6153846153846154,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.5571428571428572,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 22,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8461538461538461,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8333333333333334,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 26,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 1,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 1,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 18,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6923076923076923,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.6904761904761905,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 23,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8846153846153846,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8666666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 23,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8846153846153846,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8571428571428572,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 22,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8461538461538461,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8238095238095239,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 24,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9230769230769231,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.9,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 25,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9615384615384616,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.9666666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 25,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.5952380952380952,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.4958333333333334,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 36,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8571428571428571,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8541666666666666,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 40,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9523809523809523,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9666666666666666,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 31,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.7380952380952381,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.6833333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 41,
+            "model_limit": 1
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 37,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8809523809523809,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8791666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 38,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9047619047619048,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9375,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 30,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.7142857142857143,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.6958333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 38,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9047619047619048,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8958333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 40,
+          "n": 42,
+          "attempted": 42,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9523809523809523,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9333333333333332,
+          "terminalCounts": {
+            "ordinary_answer": 42
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 14,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.4827586206896552,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.4487179487179487,
+          "terminalCounts": {
+            "ordinary_answer": 29
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 19,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6551724137931034,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.6153846153846154,
+          "terminalCounts": {
+            "ordinary_answer": 29
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 24,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8275862068965517,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.7756410256410255,
+          "terminalCounts": {
+            "ordinary_answer": 26,
+            "model_limit": 3
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 17,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.5862068965517241,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.46153846153846156,
+          "terminalCounts": {
+            "ordinary_answer": 28,
+            "model_limit": 1
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 20,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6896551724137931,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.5833333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 27,
+            "model_limit": 2
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 25,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8620689655172413,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.8589743589743589,
+          "terminalCounts": {
+            "ordinary_answer": 27,
+            "model_limit": 2
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 21,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.7241379310344828,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.717948717948718,
+          "terminalCounts": {
+            "ordinary_answer": 28,
+            "model_limit": 1
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 25,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8620689655172413,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.9166666666666666,
+          "terminalCounts": {
+            "ordinary_answer": 28,
+            "model_limit": 1
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 26,
+          "n": 29,
+          "attempted": 29,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.896551724137931,
+          "complete": true,
+          "contextCount": 13,
+          "equalContextSuccessRate": 0.8782051282051282,
+          "terminalCounts": {
+            "ordinary_answer": 28,
+            "model_limit": 1
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        }
+      ],
+      "overall": [
+        {
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 55,
+          "n": 97,
+          "successRate": 0.5670103092783505,
+          "equalContextSuccessRate": 0.5356481481481481,
+          "terminalCounts": {
+            "ordinary_answer": 97
+          }
+        },
+        {
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 77,
+          "n": 97,
+          "successRate": 0.7938144329896907,
+          "equalContextSuccessRate": 0.7731150793650793,
+          "terminalCounts": {
+            "ordinary_answer": 97
+          }
+        },
+        {
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 90,
+          "n": 97,
+          "successRate": 0.9278350515463918,
+          "equalContextSuccessRate": 0.9308531746031746,
+          "terminalCounts": {
+            "ordinary_answer": 94,
+            "model_limit": 3
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 66,
+          "n": 97,
+          "successRate": 0.6804123711340206,
+          "equalContextSuccessRate": 0.6570767195767196,
+          "terminalCounts": {
+            "ordinary_answer": 95,
+            "model_limit": 2
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 80,
+          "n": 97,
+          "successRate": 0.8247422680412371,
+          "equalContextSuccessRate": 0.8068452380952381,
+          "terminalCounts": {
+            "ordinary_answer": 95,
+            "model_limit": 2
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 86,
+          "n": 97,
+          "successRate": 0.8865979381443299,
+          "equalContextSuccessRate": 0.9032076719576722,
+          "terminalCounts": {
+            "ordinary_answer": 95,
+            "model_limit": 2
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 73,
+          "n": 97,
+          "successRate": 0.7525773195876289,
+          "equalContextSuccessRate": 0.7744378306878307,
+          "terminalCounts": {
+            "ordinary_answer": 96,
+            "model_limit": 1
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 87,
+          "n": 97,
+          "successRate": 0.8969072164948454,
+          "equalContextSuccessRate": 0.9037698412698413,
+          "terminalCounts": {
+            "ordinary_answer": 96,
+            "model_limit": 1
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 91,
+          "n": 97,
+          "successRate": 0.9381443298969072,
+          "equalContextSuccessRate": 0.9447420634920637,
+          "terminalCounts": {
+            "ordinary_answer": 96,
+            "model_limit": 1
+          }
+        }
+      ],
+      "changes": [
+        {
+          "modelName": "Luna",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 7,
+          "lost": 1,
+          "net": 6,
+          "percentagePoints": 23.076923076923077
+        },
+        {
+          "modelName": "Luna",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "percentagePoints": 15.384615384615385
+        },
+        {
+          "modelName": "Luna",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 42,
+          "gained": 15,
+          "lost": 4,
+          "net": 11,
+          "percentagePoints": 26.19047619047619
+        },
+        {
+          "modelName": "Luna",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 42,
+          "gained": 5,
+          "lost": 1,
+          "net": 4,
+          "percentagePoints": 9.523809523809524
+        },
+        {
+          "modelName": "Luna",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 29,
+          "gained": 8,
+          "lost": 3,
+          "net": 5,
+          "percentagePoints": 17.24137931034483
+        },
+        {
+          "modelName": "Luna",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 29,
+          "gained": 6,
+          "lost": 1,
+          "net": 5,
+          "percentagePoints": 17.24137931034483
+        },
+        {
+          "modelName": "Luna",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 97,
+          "gained": 30,
+          "lost": 8,
+          "net": 22,
+          "percentagePoints": 22.68041237113402
+        },
+        {
+          "modelName": "Luna",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 97,
+          "gained": 15,
+          "lost": 2,
+          "net": 13,
+          "percentagePoints": 13.402061855670103
+        },
+        {
+          "modelName": "Terra",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 6,
+          "lost": 1,
+          "net": 5,
+          "percentagePoints": 19.23076923076923
+        },
+        {
+          "modelName": "Terra",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 3,
+          "lost": 3,
+          "net": 0,
+          "percentagePoints": 0
+        },
+        {
+          "modelName": "Terra",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 42,
+          "gained": 9,
+          "lost": 3,
+          "net": 6,
+          "percentagePoints": 14.285714285714286
+        },
+        {
+          "modelName": "Terra",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 42,
+          "gained": 3,
+          "lost": 2,
+          "net": 1,
+          "percentagePoints": 2.380952380952381
+        },
+        {
+          "modelName": "Terra",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 29,
+          "gained": 5,
+          "lost": 2,
+          "net": 3,
+          "percentagePoints": 10.344827586206897
+        },
+        {
+          "modelName": "Terra",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 29,
+          "gained": 5,
+          "lost": 0,
+          "net": 5,
+          "percentagePoints": 17.24137931034483
+        },
+        {
+          "modelName": "Terra",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 97,
+          "gained": 20,
+          "lost": 6,
+          "net": 14,
+          "percentagePoints": 14.43298969072165
+        },
+        {
+          "modelName": "Terra",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 97,
+          "gained": 11,
+          "lost": 5,
+          "net": 6,
+          "percentagePoints": 6.185567010309279
+        },
+        {
+          "modelName": "Sol",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 4,
+          "lost": 2,
+          "net": 2,
+          "percentagePoints": 7.6923076923076925
+        },
+        {
+          "modelName": "Sol",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 2,
+          "lost": 1,
+          "net": 1,
+          "percentagePoints": 3.8461538461538463
+        },
+        {
+          "modelName": "Sol",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 42,
+          "gained": 9,
+          "lost": 1,
+          "net": 8,
+          "percentagePoints": 19.047619047619047
+        },
+        {
+          "modelName": "Sol",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 42,
+          "gained": 2,
+          "lost": 0,
+          "net": 2,
+          "percentagePoints": 4.761904761904762
+        },
+        {
+          "modelName": "Sol",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 29,
+          "gained": 6,
+          "lost": 2,
+          "net": 4,
+          "percentagePoints": 13.793103448275861
+        },
+        {
+          "modelName": "Sol",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 29,
+          "gained": 2,
+          "lost": 1,
+          "net": 1,
+          "percentagePoints": 3.4482758620689653
+        },
+        {
+          "modelName": "Sol",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 97,
+          "gained": 19,
+          "lost": 5,
+          "net": 14,
+          "percentagePoints": 14.43298969072165
+        },
+        {
+          "modelName": "Sol",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 97,
+          "gained": 6,
+          "lost": 2,
+          "net": 4,
+          "percentagePoints": 4.123711340206185
+        }
+      ]
+    },
+    "ordinaryTerminalsOnly": {
+      "questions": 92,
+      "excludedQuestions": 42,
+      "bands": {
+        "hard": 25,
+        "medium": 41,
+        "easy": 26
+      },
+      "points": [
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 16,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6153846153846154,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.5571428571428572,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 22,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8461538461538461,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8333333333333334,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 26,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 1,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 1,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 18,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6923076923076923,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.6904761904761905,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 23,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8846153846153846,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8666666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 23,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8846153846153846,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8571428571428572,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 22,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8461538461538461,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.8238095238095239,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 24,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9230769230769231,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.9,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "easy",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 25,
+          "n": 26,
+          "attempted": 26,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9615384615384616,
+          "complete": true,
+          "contextCount": 15,
+          "equalContextSuccessRate": 0.9666666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 26
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 25,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6097560975609756,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.5041666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 35,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8536585365853658,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8541666666666666,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 39,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9512195121951219,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9666666666666666,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 31,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.7560975609756098,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.6916666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 36,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8780487804878049,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8791666666666667,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 37,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9024390243902439,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9375,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 29,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.7073170731707317,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.6958333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 37,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9024390243902439,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.8958333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "medium",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 39,
+          "n": 41,
+          "attempted": 41,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.9512195121951219,
+          "complete": true,
+          "contextCount": 20,
+          "equalContextSuccessRate": 0.9333333333333332,
+          "terminalCounts": {
+            "ordinary_answer": 41
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 12,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.48,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.4583333333333333,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 18,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.72,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.7083333333333334,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 23,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.92,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.8888888888888888,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 15,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.6,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.5138888888888888,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 20,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.8,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.701388888888889,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 24,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.96,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.9722222222222222,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 21,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.84,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.8472222222222223,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 23,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 0.92,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 0.9583333333333334,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        },
+        {
+          "band": "hard",
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 25,
+          "n": 25,
+          "attempted": 25,
+          "unadmittedOrUnresolved": 0,
+          "successRate": 1,
+          "complete": true,
+          "contextCount": 12,
+          "equalContextSuccessRate": 1,
+          "terminalCounts": {
+            "ordinary_answer": 25
+          },
+          "model": null,
+          "pending": null,
+          "runtime": null
+        }
+      ],
+      "overall": [
+        {
+          "modelName": "Luna",
+          "effort": "none",
+          "correct": 53,
+          "n": 92,
+          "successRate": 0.5760869565217391,
+          "equalContextSuccessRate": 0.5321759259259259,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Luna",
+          "effort": "low",
+          "correct": 75,
+          "n": 92,
+          "successRate": 0.8152173913043478,
+          "equalContextSuccessRate": 0.8013888888888889,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Luna",
+          "effort": "high",
+          "correct": 88,
+          "n": 92,
+          "successRate": 0.9565217391304348,
+          "equalContextSuccessRate": 0.9611111111111112,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "none",
+          "correct": 64,
+          "n": 92,
+          "successRate": 0.6956521739130435,
+          "equalContextSuccessRate": 0.6724537037037038,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "low",
+          "correct": 79,
+          "n": 92,
+          "successRate": 0.8586956521739131,
+          "equalContextSuccessRate": 0.8465277777777778,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Terra",
+          "effort": "high",
+          "correct": 84,
+          "n": 92,
+          "successRate": 0.9130434782608695,
+          "equalContextSuccessRate": 0.9314814814814816,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "none",
+          "correct": 72,
+          "n": 92,
+          "successRate": 0.782608695652174,
+          "equalContextSuccessRate": 0.8141203703703703,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "low",
+          "correct": 84,
+          "n": 92,
+          "successRate": 0.9130434782608695,
+          "equalContextSuccessRate": 0.920138888888889,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        },
+        {
+          "modelName": "Sol",
+          "effort": "high",
+          "correct": 89,
+          "n": 92,
+          "successRate": 0.967391304347826,
+          "equalContextSuccessRate": 0.9750000000000001,
+          "terminalCounts": {
+            "ordinary_answer": 92
+          }
+        }
+      ],
+      "changes": [
+        {
+          "modelName": "Luna",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 7,
+          "lost": 1,
+          "net": 6,
+          "percentagePoints": 23.076923076923077
+        },
+        {
+          "modelName": "Luna",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "percentagePoints": 15.384615384615385
+        },
+        {
+          "modelName": "Luna",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 41,
+          "gained": 14,
+          "lost": 4,
+          "net": 10,
+          "percentagePoints": 24.390243902439025
+        },
+        {
+          "modelName": "Luna",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 41,
+          "gained": 5,
+          "lost": 1,
+          "net": 4,
+          "percentagePoints": 9.75609756097561
+        },
+        {
+          "modelName": "Luna",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 25,
+          "gained": 8,
+          "lost": 2,
+          "net": 6,
+          "percentagePoints": 24
+        },
+        {
+          "modelName": "Luna",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 25,
+          "gained": 6,
+          "lost": 1,
+          "net": 5,
+          "percentagePoints": 20
+        },
+        {
+          "modelName": "Luna",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 92,
+          "gained": 29,
+          "lost": 7,
+          "net": 22,
+          "percentagePoints": 23.91304347826087
+        },
+        {
+          "modelName": "Luna",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 92,
+          "gained": 15,
+          "lost": 2,
+          "net": 13,
+          "percentagePoints": 14.130434782608695
+        },
+        {
+          "modelName": "Terra",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 6,
+          "lost": 1,
+          "net": 5,
+          "percentagePoints": 19.23076923076923
+        },
+        {
+          "modelName": "Terra",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 3,
+          "lost": 3,
+          "net": 0,
+          "percentagePoints": 0
+        },
+        {
+          "modelName": "Terra",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 41,
+          "gained": 8,
+          "lost": 3,
+          "net": 5,
+          "percentagePoints": 12.195121951219512
+        },
+        {
+          "modelName": "Terra",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 41,
+          "gained": 3,
+          "lost": 2,
+          "net": 1,
+          "percentagePoints": 2.4390243902439024
+        },
+        {
+          "modelName": "Terra",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 25,
+          "gained": 5,
+          "lost": 0,
+          "net": 5,
+          "percentagePoints": 20
+        },
+        {
+          "modelName": "Terra",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 25,
+          "gained": 4,
+          "lost": 0,
+          "net": 4,
+          "percentagePoints": 16
+        },
+        {
+          "modelName": "Terra",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 92,
+          "gained": 19,
+          "lost": 4,
+          "net": 15,
+          "percentagePoints": 16.304347826086957
+        },
+        {
+          "modelName": "Terra",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 92,
+          "gained": 10,
+          "lost": 5,
+          "net": 5,
+          "percentagePoints": 5.434782608695652
+        },
+        {
+          "modelName": "Sol",
+          "band": "easy",
+          "before": "none",
+          "after": "low",
+          "n": 26,
+          "gained": 4,
+          "lost": 2,
+          "net": 2,
+          "percentagePoints": 7.6923076923076925
+        },
+        {
+          "modelName": "Sol",
+          "band": "easy",
+          "before": "low",
+          "after": "high",
+          "n": 26,
+          "gained": 2,
+          "lost": 1,
+          "net": 1,
+          "percentagePoints": 3.8461538461538463
+        },
+        {
+          "modelName": "Sol",
+          "band": "medium",
+          "before": "none",
+          "after": "low",
+          "n": 41,
+          "gained": 9,
+          "lost": 1,
+          "net": 8,
+          "percentagePoints": 19.51219512195122
+        },
+        {
+          "modelName": "Sol",
+          "band": "medium",
+          "before": "low",
+          "after": "high",
+          "n": 41,
+          "gained": 2,
+          "lost": 0,
+          "net": 2,
+          "percentagePoints": 4.878048780487805
+        },
+        {
+          "modelName": "Sol",
+          "band": "hard",
+          "before": "none",
+          "after": "low",
+          "n": 25,
+          "gained": 4,
+          "lost": 2,
+          "net": 2,
+          "percentagePoints": 8
+        },
+        {
+          "modelName": "Sol",
+          "band": "hard",
+          "before": "low",
+          "after": "high",
+          "n": 25,
+          "gained": 2,
+          "lost": 0,
+          "net": 2,
+          "percentagePoints": 8
+        },
+        {
+          "modelName": "Sol",
+          "band": "all",
+          "before": "none",
+          "after": "low",
+          "n": 92,
+          "gained": 17,
+          "lost": 5,
+          "net": 12,
+          "percentagePoints": 13.043478260869565
+        },
+        {
+          "modelName": "Sol",
+          "band": "all",
+          "before": "low",
+          "after": "high",
+          "n": 92,
+          "gained": 6,
+          "lost": 1,
+          "net": 5,
+          "percentagePoints": 5.434782608695652
+        }
+      ]
+    }
+  },
+  "historicalOverall": [
+    {
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 22,
+      "n": 50,
+      "successRate": 0.44,
+      "equalContextSuccessRate": 0.4222222222222223,
+      "terminalCounts": {
+        "ordinary_answer": 48,
+        "infrastructure_failure": 1,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 39,
+      "n": 50,
+      "successRate": 0.78,
+      "equalContextSuccessRate": 0.711111111111111,
+      "terminalCounts": {
+        "ordinary_answer": 48,
+        "infrastructure_failure": 1,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 42,
+      "n": 50,
+      "successRate": 0.84,
+      "equalContextSuccessRate": 0.7851851851851852,
+      "terminalCounts": {
+        "ordinary_answer": 43,
+        "infrastructure_failure": 3,
+        "model_limit": 3,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 30,
+      "n": 50,
+      "successRate": 0.6,
+      "equalContextSuccessRate": 0.5472222222222222,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 1,
+        "provider_failure": 3
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 39,
+      "n": 50,
+      "successRate": 0.78,
+      "equalContextSuccessRate": 0.6629629629629629,
+      "terminalCounts": {
+        "ordinary_answer": 50
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 44,
+      "n": 50,
+      "successRate": 0.88,
+      "equalContextSuccessRate": 0.8787037037037035,
+      "terminalCounts": {
+        "ordinary_answer": 48,
+        "model_limit": 1,
+        "infrastructure_failure": 1
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 33,
+      "n": 50,
+      "successRate": 0.66,
+      "equalContextSuccessRate": 0.6444444444444444,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 4
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 42,
+      "n": 50,
+      "successRate": 0.84,
+      "equalContextSuccessRate": 0.8953703703703704,
+      "terminalCounts": {
+        "ordinary_answer": 47,
+        "infrastructure_failure": 3
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 39,
+      "n": 50,
+      "successRate": 0.78,
+      "equalContextSuccessRate": 0.724074074074074,
+      "terminalCounts": {
+        "ordinary_answer": 43,
+        "infrastructure_failure": 6,
+        "model_limit": 1
+      }
+    }
+  ],
+  "extensionOverall": [
+    {
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 41,
+      "n": 84,
+      "successRate": 0.4880952380952381,
+      "equalContextSuccessRate": 0.44189814814814815,
+      "terminalCounts": {
+        "ordinary_answer": 80,
+        "provider_failure": 3,
+        "infrastructure_failure": 1
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 63,
+      "n": 84,
+      "successRate": 0.75,
+      "equalContextSuccessRate": 0.7222222222222222,
+      "terminalCounts": {
+        "ordinary_answer": 82,
+        "infrastructure_failure": 2
+      }
+    },
+    {
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 71,
+      "n": 84,
+      "successRate": 0.8452380952380952,
+      "equalContextSuccessRate": 0.8604166666666666,
+      "terminalCounts": {
+        "ordinary_answer": 74,
+        "infrastructure_failure": 6,
+        "model_limit": 3,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 51,
+      "n": 84,
+      "successRate": 0.6071428571428571,
+      "equalContextSuccessRate": 0.5939814814814814,
+      "terminalCounts": {
+        "ordinary_answer": 71,
+        "provider_failure": 9,
+        "model_limit": 2,
+        "infrastructure_failure": 2
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 67,
+      "n": 84,
+      "successRate": 0.7976190476190477,
+      "equalContextSuccessRate": 0.8027777777777777,
+      "terminalCounts": {
+        "ordinary_answer": 79,
+        "provider_failure": 1,
+        "model_limit": 3,
+        "infrastructure_failure": 1
+      }
+    },
+    {
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 71,
+      "n": 84,
+      "successRate": 0.8452380952380952,
+      "equalContextSuccessRate": 0.8837962962962962,
+      "terminalCounts": {
+        "ordinary_answer": 78,
+        "model_limit": 1,
+        "infrastructure_failure": 4,
+        "provider_failure": 1
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 56,
+      "n": 84,
+      "successRate": 0.6666666666666666,
+      "equalContextSuccessRate": 0.6990740740740741,
+      "terminalCounts": {
+        "ordinary_answer": 78,
+        "model_limit": 2,
+        "infrastructure_failure": 4
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 71,
+      "n": 84,
+      "successRate": 0.8452380952380952,
+      "equalContextSuccessRate": 0.8597222222222222,
+      "terminalCounts": {
+        "ordinary_answer": 77,
+        "model_limit": 1,
+        "infrastructure_failure": 6
+      }
+    },
+    {
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 78,
+      "n": 84,
+      "successRate": 0.9285714285714286,
+      "equalContextSuccessRate": 0.9418981481481481,
+      "terminalCounts": {
+        "ordinary_answer": 80,
+        "model_limit": 1,
+        "infrastructure_failure": 2,
+        "model_limit_fallback_failed": 1
+      }
+    }
+  ],
+  "economicFullPoints": [
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 17,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.5862068965517241,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.4921875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.03909918,
+      "pending": 0,
+      "runtime": 1.003943260494264,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.0013482475862068965,
+      "modelCostPerCorrect": 0.002299951764705882
+    },
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.84375,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.033536750000000004,
+      "pending": 0,
+      "runtime": 0.9981281425316038,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.001156439655172414,
+      "modelCostPerCorrect": 0.0013414700000000002
+    },
+    {
+      "band": "easy",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 28,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.9655172413793104,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.9375,
+      "terminalCounts": {
+        "ordinary_answer": 28,
+        "infrastructure_failure": 1
+      },
+      "model": 0.05094788000000001,
+      "pending": 0,
+      "runtime": 1.0911472405034761,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.0017568234482758624,
+      "modelCostPerCorrect": 0.0018195671428571432
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 20,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6896551724137931,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.6796875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.35088519999999995,
+      "pending": 0,
+      "runtime": 1.0125997946384135,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.012099489655172413,
+      "modelCostPerCorrect": 0.01754426
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.84375,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.34851799999999994,
+      "pending": 0,
+      "runtime": 1.0072293531628163,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.012017862068965515,
+      "modelCostPerCorrect": 0.013940719999999997
+    },
+    {
+      "band": "easy",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.890625,
+      "terminalCounts": {
+        "ordinary_answer": 28,
+        "infrastructure_failure": 1
+      },
+      "model": 0.35175569999999995,
+      "pending": 0,
+      "runtime": 1.1205697240744024,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.012129506896551722,
+      "modelCostPerCorrect": 0.014070227999999997
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 23,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.7931034482758621,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.765625,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.45822490000000005,
+      "pending": 0,
+      "runtime": 0.9987306477901037,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.015800858620689657,
+      "modelCostPerCorrect": 0.019922821739130438
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 26,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.896551724137931,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.875,
+      "terminalCounts": {
+        "ordinary_answer": 29
+      },
+      "model": 0.4915792,
+      "pending": 0,
+      "runtime": 0.9996150650734773,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.016951006896551723,
+      "modelCostPerCorrect": 0.018906892307692307
+    },
+    {
+      "band": "easy",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 25,
+      "n": 29,
+      "attempted": 29,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8620689655172413,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8671875,
+      "terminalCounts": {
+        "infrastructure_failure": 2,
+        "ordinary_answer": 27
+      },
+      "model": 0.5582206,
+      "pending": 0,
+      "runtime": 1.2375209442354245,
+      "physicalRecords": 29,
+      "costPerQuestion": 0.01924898620689655,
+      "modelCostPerCorrect": 0.022328823999999997
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 28,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.509090909090909,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.4696969696969697,
+      "terminalCounts": {
+        "ordinary_answer": 54,
+        "provider_failure": 1
+      },
+      "model": 0.12932273,
+      "pending": 0.0251838,
+      "runtime": 2.0430031203699954,
+      "physicalRecords": 55,
+      "costPerQuestion": 0.0028092096363636363,
+      "modelCostPerCorrect": 0.005518090357142858
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 46,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8363636363636363,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8371212121212122,
+      "terminalCounts": {
+        "ordinary_answer": 55
+      },
+      "model": 0.13659279,
+      "pending": 0,
+      "runtime": 2.0476378514978,
+      "physicalRecords": 55,
+      "costPerQuestion": 0.0024835052727272726,
+      "modelCostPerCorrect": 0.0029694084782608695
+    },
+    {
+      "band": "medium",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 47,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8787878787878788,
+      "terminalCounts": {
+        "ordinary_answer": 49,
+        "infrastructure_failure": 5,
+        "model_limit": 1
+      },
+      "model": 0.21696695000000005,
+      "pending": 0,
+      "runtime": 2.589464502499215,
+      "physicalRecords": 56,
+      "costPerQuestion": 0.003944853636363637,
+      "modelCostPerCorrect": 0.004616318085106384
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 36,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.6856060606060606,
+      "terminalCounts": {
+        "ordinary_answer": 49,
+        "model_limit": 1,
+        "provider_failure": 3,
+        "infrastructure_failure": 2
+      },
+      "model": 1.1509135999999998,
+      "pending": 0.7413915,
+      "runtime": 2.322927753417728,
+      "physicalRecords": 56,
+      "costPerQuestion": 0.034405547272727266,
+      "modelCostPerCorrect": 0.05256403055555555
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 47,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8545454545454545,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.856060606060606,
+      "terminalCounts": {
+        "ordinary_answer": 54,
+        "infrastructure_failure": 1
+      },
+      "model": 1.2434442,
+      "pending": 0,
+      "runtime": 2.174245261047686,
+      "physicalRecords": 55,
+      "costPerQuestion": 0.022608076363636365,
+      "modelCostPerCorrect": 0.026456259574468087
+    },
+    {
+      "band": "medium",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 49,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8909090909090909,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.9242424242424243,
+      "terminalCounts": {
+        "ordinary_answer": 53,
+        "infrastructure_failure": 2
+      },
+      "model": 1.4200299000000003,
+      "pending": 0.2202405,
+      "runtime": 2.2284367645203695,
+      "physicalRecords": 56,
+      "costPerQuestion": 0.029823098181818188,
+      "modelCostPerCorrect": 0.03347490612244899
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 34,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.6181818181818182,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.6060606060606061,
+      "terminalCounts": {
+        "infrastructure_failure": 4,
+        "ordinary_answer": 51
+      },
+      "model": 1.4792231999999998,
+      "pending": 0,
+      "runtime": 2.209856622363472,
+      "physicalRecords": 56,
+      "costPerQuestion": 0.02689496727272727,
+      "modelCostPerCorrect": 0.04350656470588235
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 45,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.8181818181818182,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.8484848484848484,
+      "terminalCounts": {
+        "infrastructure_failure": 6,
+        "ordinary_answer": 49
+      },
+      "model": 1.4547825000000003,
+      "pending": 0,
+      "runtime": 2.1795344428968257,
+      "physicalRecords": 55,
+      "costPerQuestion": 0.026450590909090913,
+      "modelCostPerCorrect": 0.03232850000000001
+    },
+    {
+      "band": "medium",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 50,
+      "n": 55,
+      "attempted": 55,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.9090909090909091,
+      "complete": true,
+      "contextCount": 22,
+      "equalContextSuccessRate": 0.9318181818181818,
+      "terminalCounts": {
+        "infrastructure_failure": 2,
+        "ordinary_answer": 52,
+        "model_limit_fallback_failed": 1
+      },
+      "model": 2.3102357000000002,
+      "pending": 0,
+      "runtime": 2.133257493717343,
+      "physicalRecords": 55,
+      "costPerQuestion": 0.04200428545454546,
+      "modelCostPerCorrect": 0.04620471400000001
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "none",
+      "correct": 18,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.36,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.3599702380952381,
+      "terminalCounts": {
+        "ordinary_answer": 45,
+        "infrastructure_failure": 2,
+        "provider_failure": 3
+      },
+      "model": 0.15629459,
+      "pending": 0.08166365,
+      "runtime": 2.0939434327765998,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.0047591648,
+      "modelCostPerCorrect": 0.013219902222222224
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "low",
+      "correct": 31,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.62,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.5945684523809524,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 3,
+        "provider_failure": 1
+      },
+      "model": 0.20489295000000002,
+      "pending": 0.053111349999999995,
+      "runtime": 1.981325352498036,
+      "physicalRecords": 51,
+      "costPerQuestion": 0.005160086,
+      "modelCostPerCorrect": 0.00832271935483871
+    },
+    {
+      "band": "hard",
+      "modelName": "Luna",
+      "effort": "high",
+      "correct": 38,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.76,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.7075892857142857,
+      "terminalCounts": {
+        "ordinary_answer": 40,
+        "infrastructure_failure": 3,
+        "model_limit": 5,
+        "provider_failure": 2
+      },
+      "model": 0.5196913700000001,
+      "pending": 0.08935885,
+      "runtime": 2.504953298207668,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.012181004400000002,
+      "modelCostPerCorrect": 0.016027637368421055
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "none",
+      "correct": 25,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.5,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.4517113095238095,
+      "terminalCounts": {
+        "ordinary_answer": 39,
+        "infrastructure_failure": 1,
+        "provider_failure": 9,
+        "model_limit": 1
+      },
+      "model": 1.7154952999999997,
+      "pending": 2.474722,
+      "runtime": 2.018297900775792,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.08380434599999999,
+      "modelCostPerCorrect": 0.16760869199999998
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "low",
+      "correct": 34,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.68,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.5796874999999999,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "provider_failure": 1,
+        "model_limit": 3
+      },
+      "model": 2.8977052,
+      "pending": 0.254203,
+      "runtime": 2.115619913904401,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.063038164,
+      "modelCostPerCorrect": 0.09270318235294117
+    },
+    {
+      "band": "hard",
+      "modelName": "Terra",
+      "effort": "high",
+      "correct": 41,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.82,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8218005952380952,
+      "terminalCounts": {
+        "ordinary_answer": 45,
+        "model_limit": 2,
+        "infrastructure_failure": 2,
+        "provider_failure": 1
+      },
+      "model": 3.3795143999999997,
+      "pending": 0.460203,
+      "runtime": 2.369627235264839,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.076794348,
+      "modelCostPerCorrect": 0.09365164390243902
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "none",
+      "correct": 32,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.64,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.6070684523809524,
+      "terminalCounts": {
+        "ordinary_answer": 44,
+        "infrastructure_failure": 4,
+        "model_limit": 2
+      },
+      "model": 2.5821931000000005,
+      "pending": 0,
+      "runtime": 2.1468907254006964,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.05164386200000001,
+      "modelCostPerCorrect": 0.08069353437500001
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "low",
+      "correct": 42,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.84,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.8942708333333333,
+      "terminalCounts": {
+        "ordinary_answer": 46,
+        "infrastructure_failure": 3,
+        "model_limit": 1
+      },
+      "model": 2.3454272000000005,
+      "pending": 0,
+      "runtime": 2.209954042991775,
+      "physicalRecords": 51,
+      "costPerQuestion": 0.04690854400000001,
+      "modelCostPerCorrect": 0.05584350476190477
+    },
+    {
+      "band": "hard",
+      "modelName": "Sol",
+      "effort": "high",
+      "correct": 42,
+      "n": 50,
+      "attempted": 50,
+      "unadmittedOrUnresolved": 0,
+      "successRate": 0.84,
+      "complete": true,
+      "contextCount": 16,
+      "equalContextSuccessRate": 0.7708333333333334,
+      "terminalCounts": {
+        "ordinary_answer": 44,
+        "infrastructure_failure": 4,
+        "model_limit": 2
+      },
+      "model": 4.524379999999999,
+      "pending": 0,
+      "runtime": 2.271249655638162,
+      "physicalRecords": 50,
+      "costPerQuestion": 0.09048759999999997,
+      "modelCostPerCorrect": 0.10772333333333331
+    }
+  ],
+  "costTotals": {
+    "model": 30.549873090000006,
+    "pending": 4.40007765,
+    "runtime": 49.10970954229239
+  }
+}

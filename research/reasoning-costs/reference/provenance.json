@@ -1,0 +1,18 @@
+{
+  "exportDate": "2026-09-24",
+  "sourceVersion": "ba786096137a5108af11c016ad3f09cdb97beefd",
+  "sourceHashes": {
+    "results/complete134-analysis-20260924/receipt.json": "f0b8667cc10e7c147f4d16dbf79bef89438cfa44cccdb45c9ca8f53e9815011a",
+    "results/complete134-analysis-20260924/complete-question-rows.jsonl": "7a3a2a73a0df8cfbb08676b4d2608c760e873145f5e0c0f40e17d57835e9ce56",
+    "results/complete134-analysis-20260924/analysis.json": "62391b75e3d05948d5159fa7431e1a7cd9c05e959e721a5220f9cc9514ca4748",
+    "results/rebalance-closed-20260924/analysis-with-retries-and-interim.jsonl": "9a47a322bb4683b171a609c6d0e4af2d5ba8660eeb2ce49fa2f5bf43a24b5172",
+    "results/rebalance-closed-20260924/physical-generation.jsonl": "d710fef0174a9a43b9ab32d350b8cb0de375357876f8b9a06a513fcae8881245",
+    "results/rebalance-closed-20260924/physical-record-index.jsonl": "d4f10320f515f540d3aacbc48c8812ca43fff3596287d4236b3e61799fb76237",
+    "results/complete134-costs-20260924.json": "af4126e3ebea80e2817bb137564f58caf9b015349018fc79cfe5adc0ba0caf34"
+  },
+  "files": {
+    "data/results.jsonl": "513d64c2f5ca5aee6f068fb5473e1f79dd1949b5abf34e1bff66d152c53fcc29",
+    "data/costs.jsonl": "b44b228603235e699d59f1a7f4251d0f21cad5a4e802df00b6e4d545dd170eb5",
+    "reference/expected.json": "1d4f872fc9e83f2b52d98c9d61e3c6809d8a462d5aae3b86cfce0bab8d985125"
+  }
+}
