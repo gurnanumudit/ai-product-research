@@ -92,6 +92,12 @@
 .resultsDetails :global(table) { min-width: 940px; }
 .footer { max-width: 1260px; margin: 60px auto 0; border-top: 1px solid var(--line); padding: 24px 32px; display: flex; justify-content: space-between; gap: 20px; font-size: 14px; color: var(--muted); }
 .page a:focus-visible, .page summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+.appendixReturn { font:400 .875rem/1.6 var(--sans); margin:1.5rem 0 0; }
+.appendixReturn a,.references a { color:var(--blue); text-decoration:underline; text-underline-offset:3px; }
+.references { margin-top:3rem; scroll-margin-top:30px; }
+.references ol { list-style:decimal; padding-left:1.3rem; }
+.references li { font:400 1rem/1.6 var(--sans); padding-left:.3rem; margin-bottom:1rem; }
+@media(max-width:360px) { .siteHeader { flex-wrap:wrap; gap:.6rem; }.siteHeader nav { width:100%; } }
 @media (max-width: 1050px) { .layout { grid-template-columns: 195px minmax(0,1fr); gap: 32px; } }
 @media (max-width: 780px) {
   .siteHeader { padding: 19px 20px; } .siteHeader nav { font-size: 14px; gap: 16px; }

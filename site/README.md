@@ -12,7 +12,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server. Validate the production build, published article and draft protection with `npm test`.
+Open the local URL printed by the server. Validate the production build, published article and draft protection with `npm test`. Figure-preservation checks run with `node --test tests/evidence-figures.test.mjs`.
 
 ## Review draft, not deployed
 
@@ -20,10 +20,33 @@ The development homepage shows both studies. The new article is available locall
 at `/research/when-is-more-reasoning-worth-it`; the existing
 `/preview/reasoning-costs` address remains available.
 
-The article is intentionally blocked in production, and the production homepage
-does not list it yet. Publication requires owner approval, removal of the article's
-production guard, updating the homepage visibility rule and draft labels, and a
-separate Sites deployment. A GitHub push does not publish the live website.
+The article is intentionally blocked in the ordinary production build, and that
+homepage does not list it yet. `lib/research-release.ts` owns the publication gate.
+A GitHub push does not publish the live website.
+
+For phone review without development/HMR module imports:
+
+```sh
+npm run build:review
+TEST_REVIEW=1 node --test tests/rendered-html.test.mjs
+npm run start -- --hostname 0.0.0.0 --port 5173
+```
+
+This is a **local-only review build**, with both articles and noindex metadata.
+Keep it on the review machine; do not upload its output to Sites. A later ordinary
+`npm run build` resets the output to the protected production state.
+The browser review exposed a link-prefetch setup error; article navigation now uses
+ordinary anchors rather than client-router prefetching. The reported phone import
+failure could not be reproduced in the desktop browser;
+the bundled preview removes development-only imports but still needs a check on
+the user's phone.
+
+After explicit owner approval: set `reasoningPublished` to true, confirm the actual
+publication date and draft-label removal, adjust the draft-protection tests for
+the approved release, and run a fresh ordinary production build. Then use a
+separate Sites deployment and verify the public homepage and both article URLs.
+The prior authoring checkout is no longer the phone-review source; this maintained
+GitHub checkout supplies the bundled preview.
 
 ## Where to edit
 
@@ -31,6 +54,9 @@ separate Sites deployment. A GitHub push does not publish the live website.
 - `content/publication.ts`: article URL, GitHub and LinkedIn links.
 - `content/evidence-review-v3.ts`: current article and appendix.
 - `components/article/`: layout, index and data exhibits.
+- `content/evidence-figure-data.json`: presentation data for the responsive figures.
+  Estimates and intervals are checked against the published supplement and
+  original SVG figures; the research records are unchanged.
 - `app/preview/reasoning-costs/`: shared reasoning article, figures and difficulty methods.
 - `app/research/when-is-more-reasoning-worth-it/page.tsx`: planned permanent address, sharing the same article.
 - `content/reasoning-expanded.json`: frozen chart/table inputs, paired with the [offline research supplement](../research/reasoning-costs/README.md).

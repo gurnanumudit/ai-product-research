@@ -12,7 +12,8 @@
 .recommendation td strong,.recommendation td span { display:block; }
 .recommendation td strong { font-size:1.12rem;font-weight:550; }
 .recommendation td span { font-size:.9rem;color:#646b60; }
-.recommendation th,.recommendation td { overflow-wrap:anywhere; }
+.recommendation th,.recommendation td { overflow-wrap:normal; word-break:normal; }
+.recommendation tbody th { white-space:nowrap; }
 .recommendation>p { font-size:.9rem;line-height:1.6;color:#646b60;margin:1rem 0 0; }
 .impactRows { margin-top:1.4rem; }
 .impactRow { display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:1rem;padding:1.35rem 0;border-top:1px solid #dfe1d8;align-items:center; }
@@ -24,7 +25,7 @@
 .impactNumber span { display:block;font-size:.9rem;margin-top:.25rem; }
 .impactNumber small { display:block;font-size:.85rem;color:#687061;margin-top:.2rem; }
 @media(max-width:620px){.recommendation th,.recommendation td{padding:.8rem .35rem}.recommendation thead th{font-size:.875rem}.recommendation td strong{font-size:1rem}.recommendation td span{font-size:.875rem}.impactRow{grid-template-columns:1fr 1fr;gap:.8rem 1.25rem}.impactChoice{grid-column:1 / -1;display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}.impactNumber strong{font-size:1.8rem}}
-@media(max-width:380px){.recommendation th:first-child{width:26%}}
+@media(max-width:620px){.recommendation th:first-child{width:24%;padding-right:.65rem}}
 .results,.increment { width:100%; border-collapse:collapse; font:400 1rem/1.5 var(--sans); font-variant-numeric:tabular-nums; }
 .results { min-width:460px; }
 .overview { min-width:340px; }

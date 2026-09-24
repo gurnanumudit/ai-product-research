@@ -1,0 +1,265 @@
+{
+  "provenance": "Derived from the published ai-reviewers-test-evidence analysis; original cohorts and intervals retained.",
+  "failing": [
+    {
+      "model": "openai/gpt-5.6-terra",
+      "condition": "A",
+      "approvals": 2,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0.06666666666666667,
+      "interval95": [
+        0.0008382339659184779,
+        0.35653189786865125
+      ]
+    },
+    {
+      "model": "openai/gpt-5.6-terra",
+      "condition": "B",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    },
+    {
+      "model": "openai/gpt-5.6-terra",
+      "condition": "C",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "condition": "A",
+      "approvals": 3,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0.1,
+      "interval95": [
+        0.006151885823073633,
+        0.39920261026535253
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "condition": "B",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "condition": "C",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "condition": "A",
+      "approvals": 2,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0.06666666666666667,
+      "interval95": [
+        0.0008382339659184779,
+        0.35653189786865125
+      ]
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "condition": "B",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "condition": "C",
+      "approvals": 0,
+      "n_reviews": 30,
+      "n_tasks": 15,
+      "estimate": 0,
+      "interval95": [
+        0,
+        0.2533323523449217
+      ]
+    }
+  ],
+  "passing": [
+    {
+      "model": "openai/gpt-5.6-terra",
+      "condition": "C",
+      "approvals": 26,
+      "n_reviews": 36,
+      "n_tasks": 18,
+      "estimate": 0.7222222222222222,
+      "interval95": [
+        0.4343042629302054,
+        0.9165363300116953
+      ]
+    },
+    {
+      "model": "anthropic/claude-sonnet-5",
+      "condition": "C",
+      "approvals": 32,
+      "n_reviews": 36,
+      "n_tasks": 18,
+      "estimate": 0.8888888888888888,
+      "interval95": [
+        0.6191196282557914,
+        0.9904924685341168
+      ]
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "condition": "C",
+      "approvals": 17,
+      "n_reviews": 36,
+      "n_tasks": 18,
+      "estimate": 0.4722222222222222,
+      "interval95": [
+        0.22113819338499222,
+        0.7349945886937228
+      ]
+    }
+  ],
+  "source": [
+    {
+      "phase": 1,
+      "model": "openai/gpt-5.6-terra",
+      "n_tasks": 20,
+      "mean": 0.15,
+      "bootstrap_95_interval": [
+        0.05,
+        0.275
+      ],
+      "full_roster_missingness_bounds": [
+        0.15,
+        0.15
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "anthropic/claude-sonnet-5",
+      "n_tasks": 10,
+      "mean": 0.1,
+      "bootstrap_95_interval": [
+        0,
+        0.3
+      ],
+      "full_roster_missingness_bounds": [
+        -0.125,
+        0.2
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "google/gemini-3.8-flash",
+      "n_tasks": 19,
+      "mean": 0.02631578947368421,
+      "bootstrap_95_interval": [
+        -0.07894736842105263,
+        0.13157894736842105
+      ],
+      "full_roster_missingness_bounds": [
+        0,
+        0.025
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "openai/gpt-5.6-terra",
+      "n_tasks": 36,
+      "mean": 0.027777777777777776,
+      "bootstrap_95_interval": [
+        -0.041666666666666664,
+        0.1111111111111111
+      ],
+      "full_roster_missingness_bounds": [
+        -0.025,
+        0.075
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "anthropic/claude-sonnet-5",
+      "n_tasks": 32,
+      "mean": -0.046875,
+      "bootstrap_95_interval": [
+        -0.125,
+        0
+      ],
+      "full_roster_missingness_bounds": [
+        -0.1375,
+        0.025
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "google/gemini-3.8-flash",
+      "n_tasks": 35,
+      "mean": -0.014285714285714285,
+      "bootstrap_95_interval": [
+        -0.07142857142857142,
+        0.04285714285714286
+      ],
+      "full_roster_missingness_bounds": [
+        -0.05,
+        0.0625
+      ]
+    },
+    {
+      "phase": 1,
+      "model": "pooled",
+      "n_tasks": 9,
+      "mean": 0.07407407407407407,
+      "bootstrap_95_interval": [
+        0,
+        0.1851851851851852
+      ],
+      "full_roster_missingness_bounds": [
+        0.008333333333333333,
+        0.125
+      ]
+    },
+    {
+      "phase": 2,
+      "model": "pooled",
+      "n_tasks": 32,
+      "mean": -0.010416666666666666,
+      "bootstrap_95_interval": [
+        -0.046875,
+        0.026041666666666664
+      ],
+      "full_roster_missingness_bounds": [
+        -0.07083333333333333,
+        0.05416666666666667
+      ]
+    }
+  ]
+}

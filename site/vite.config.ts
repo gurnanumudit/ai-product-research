@@ -44,6 +44,9 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    define: {
+      "process.env.RESEARCH_LOCAL_REVIEW": JSON.stringify(process.env.RESEARCH_LOCAL_REVIEW === "1" ? "1" : "0"),
+    },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,

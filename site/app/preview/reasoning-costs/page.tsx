@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { showReasoningArticle, reasoningPublished, publicOrigin, localReview } from "@/lib/research-release";
 import data from "@/content/reasoning-expanded.json";
 import { ArticleIndex } from "@/components/article/article-index";
 import base from "@/components/article/page.module.css";
@@ -9,11 +9,12 @@ import { ResultsOverview, ExactResults, ExactCosts, CostSmallMultiples, Recommen
 import { DifficultyMethod, DifficultyRubricAppendix } from "./difficulty-method";
 
 export const metadata: Metadata = {
-  title: "When is more reasoning worth it? · Local draft",
-  description: "134 spreadsheet questions, three models and three reasoning settings. Where reasoning helped, and what extra effort bought.",
-  robots: { index: false, follow: false },
-  openGraph: { title: "When is more reasoning worth it?", images: [] },
-  twitter: { card: "summary", images: [] },
+  title: reasoningPublished ? "When is more reasoning worth it?" : "When is more reasoning worth it? · Review draft",
+  description: "134 analytical questions, three models and three reasoning settings. Where reasoning helped, and what extra effort bought.",
+  robots: { index: reasoningPublished && !localReview, follow: reasoningPublished && !localReview },
+  alternates: { canonical: publicOrigin + "/research/when-is-more-reasoning-worth-it" },
+  openGraph: { title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", images: [] },
+  twitter: { card: "summary", title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", images: [] },
 };
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const points: Point[] = data.points.map(p => ({ ...p, effort: cap(p.effort) }));
@@ -53,26 +54,26 @@ function SensitivityTable() {
 }
 
 export default function ReasoningArticle() {
-  if (process.env.NODE_ENV === "production") notFound();
+  if (!showReasoningArticle) notFound();
   return <div className={`${base.page} ${styles.page}`}>
     <a className={base.skip} href="#introduction">Skip to article</a>
-    <header className={base.siteHeader}><Link href="/" className={base.wordmark}>Mudit Gurnani</Link><nav aria-label="Site navigation"><Link href="/">Research</Link><a href="#appendix">Methods & results</a></nav></header>
+    <header className={base.siteHeader}><a href="/" className={base.wordmark}>Mudit Gurnani</a><nav aria-label="Site navigation"><a href="/">Research</a><a href="#appendix">Methods & results</a></nav></header>
     <main>
-      <header className={`${base.hero} ${styles.hero}`}><p className={base.eyebrow}>AI economics · Local review draft</p><h1>When is more<br />reasoning worth it?</h1><p className={base.subtitle}>The cheapest answer is not always the best choice. We tested three models at three reasoning settings to see when paying more was worthwhile.</p><p className={base.byline}>Mudit Gurnani <span>·</span> Updated September 24, 2026 <span>·</span> Unpublished</p></header>
+      <header className={`${base.hero} ${styles.hero}`}><p className={base.eyebrow}>AI economics{!reasoningPublished && " · Review draft"}</p><h1>When is more<br />reasoning worth it?</h1><p className={base.subtitle}>The cheapest answer is not always the best choice. We tested three models at three reasoning settings to see when paying more was worthwhile.</p><p className={base.byline}>Mudit Gurnani <span>·</span> Updated September 24, 2026{!reasoningPublished && <> <span>·</span> Unpublished</>}</p><p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Study code and results ↗</a></p></header>
       <figure className={base.cover}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/research-assets/reasoning-costs/reasoning-selector-cover-v2.png" width={1774} height={887} alt="A none, low and high reasoning dial links spreadsheets to branching analytical paths; coins represent cost." fetchPriority="high" />
+        <img src="/research-assets/reasoning-costs/reasoning-selector-cover-v2.webp" width={1774} height={887} alt="A none, low and high reasoning dial links spreadsheets to branching analytical paths; coins represent cost." fetchPriority="high" />
         <figcaption>How much reasoning should an analytical task receive? AI-generated editorial illustration.</figcaption>
       </figure>
       <div className={styles.studyStrip}><div><strong>134</strong><span>evaluated questions</span></div><div><strong>3 × 3</strong><span>models × reasoning settings</span></div><div><strong>1,206</strong><span>matched results</span></div></div>
       <div className={base.layout}><ArticleIndex entries={entries} /><article className={`${base.article} ${styles.article}`}>
         <section id="introduction" className={base.section}><h2>Why this research?</h2><div className="prose"><p>We wanted to understand model capabilities on analytical work beyond coding: interpreting spreadsheets, performing calculations and building forecasts. Should you use a cheaper model with more reasoning, or a more expensive model with less? Does the answer change with the complexity of the task?</p><p>On mathematical problems, <a href="https://arxiv.org/abs/2408.03314">Snell and colleagues</a> found that the benefit of additional computation depended on problem difficulty and how that computation was used. We explored a related practical question: when is it worth paying for more reasoning on analytical work?</p><p>We chose business-analysis questions from <a href="https://arxiv.org/abs/2409.07703">DSBench, a benchmark designed around realistic data-science tasks</a>. Models could use code as a tool, but we evaluated the final analytical answer—not the code itself. By testing the same questions across three models and three reasoning settings, we examined when extra reasoning improves results and whether the improvement justifies the cost. <a href="#appendix-a">Our question selection</a>.</p></div></section>
-        <section id="experiment-setup" className={base.section}><h2>How we tested reasoning</h2><div className="prose"><p>We evaluated 134 spreadsheet questions using Luna, Terra and Sol, each with reasoning set to none, low and high. Every setting faced the same questions and tools. The tasks came from <a href="#appendix-a">DSBench’s business-analysis material</a>, including operating calendars, tax calculations, financial forecasts and loan schedules.</p></div><DifficultyMethod /></section>
+        <section id="experiment-setup" className={base.section}><h2>How we tested reasoning</h2><div className="prose"><p>We evaluated 134 business-analysis questions using three OpenAI GPT-5.6 models—Luna, Terra and Sol—each with reasoning set to none, low and high. Every setting faced the same questions and tools. The tasks came from <a href="#appendix-a">DSBench’s business-analysis material</a>, including operating calendars, tax calculations, financial forecasts and loan schedules.</p></div><DifficultyMethod /></section>
         <section id="results-overview" className={base.section}><h2>The results at a glance</h2><div className="prose"><p>Success means <a href="#appendix-b">returning the correct final answer</a>; a wrong answer or no answer counts as unsuccessful.</p></div><ResultsOverview points={points} /><div className="prose"><p><a href="#appendix-c">Exact counts</a> · <a href="#appendix-f">Examples of unsuccessful answers</a> · <a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code and results on GitHub</a>.</p></div></section>
         <section id="finding-1" className={base.section}><h2>1. Reasoning helped beyond hard tasks</h2><div className="prose"><h3>Was reasoning useful on easy work?</h3><p>Yes. Some reasoning helped every model across easy, medium and hard questions. The benefit wasn’t limited to difficult work—even straightforward tasks benefited from a little reasoning. <a href="#appendix-e">Checks on operational failures</a>.</p><p>This is not a universal rule. <a href="https://arxiv.org/abs/2504.09858">Ma and colleagues</a> found that skipping explicit thinking could work well in tested reasoning models under tight token budgets. Their setup differs from ours; here, low reasoning improved success over none in every model and difficulty group.</p><h3>What this means</h3><p>Don’t switch reasoning off just because a task looks easy. Start with some reasoning; then decide whether turning it up is worth the extra cost.</p></div></section>
         <section id="finding-2" className={base.section}><h2>2. High reasoning had a conditional payoff</h2><div className="prose"><h3>When was turning it up worthwhile?</h3><p>Compared with low, high reasoning helped Luna most on easy and hard questions, with little change on medium work. Terra gained most on hard questions. Sol benefited most on medium questions.</p><p>On hard questions, Sol high solved four that low missed—but missed four that low solved. The totals tied, even though the answers differed. That is not evidence that the two settings are interchangeable. <a href="#hard-question-check">The tie and workload mix</a>.</p><p>Research by <a href="https://arxiv.org/abs/2412.21187">Chen and colleagues on overthinking</a> shows that models can spend extra computation for little benefit, particularly on simpler problems. That offers context for our mixed returns from high reasoning, but does not establish why particular answers failed in our study.</p><h3>What should you pay for?</h3><p><a href="https://arxiv.org/abs/2407.01502">Kapoor and colleagues argue for evaluating agent accuracy and cost together</a>. We use that lens below: what does an upgrade cost, and how many more correct answers does it deliver?</p><p>Pay for more correct answers, not simply a higher setting. Cost per correct answer leaves out what a wrong or missing answer costs you. Whether an upgrade is worthwhile depends on how much those failures matter in your work.</p></div>
           <DollarImpact points={economic} />
-          <div className="prose"><p>The easy-question upgrade cost very little. The medium and hard comparisons bought more correct answers at a larger premium. These comparisons cover model spending, not the full cost of running an agent; runtime can change the value calculation. <a href="#appendix-d">Full cost breakdown</a>.</p></div>
+          <div className="prose"><p>The easy-question upgrade cost very little. The medium and hard comparisons bought more correct answers at a larger premium. These figures include model charges and pending reservations, not the full cost of running an agent. Runtime and the cost of mistakes can change which option is worthwhile. <a href="#appendix-d">Full cost breakdown</a>.</p></div>
         </section>
         <section id="choosing-settings" className={base.section}><h2>How to use these findings</h2><div className="prose"><p>A cheaper model with more reasoning can be a useful alternative to a more expensive model—but only if its accuracy is sufficient for your work. The table pairs a lower-cost option with the highest-scoring setting in each group, not a single best-value choice for everyone. <a href="#configuration-choice">How we chose these options</a>.</p></div><Recommendations points={economic} /><div className="prose"><ol><li>Group your own tasks by complexity before testing, based on the work required.</li><li>Compare the same questions across candidate settings. Record correct final answers, failures and total costs.</li><li>Choose the least expensive option that meets your accuracy needs, then check it on fresh tasks before adopting it.</li></ol></div></section>
         <section id="limitations" className={base.section}><span id="appendix-g" aria-hidden="true" /><h2>What this study does—and doesn’t—tell us</h2><div className="prose"><p>Use this study to shortlist model and reasoning settings and understand when extra spending may buy better results. The findings come from selected questions, some sharing the same workbook, with difficulty labels assigned by us. We don’t know whether the models saw these public questions during training. Small differences don’t prove one setting is better, so test the options on your own work rather than treating these results as a universal ranking or a guarantee of accuracy or cost.</p></div></section>
@@ -144,6 +145,6 @@ export default function ReasoningArticle() {
           </ol>
         </section>
       </article></div>
-    </main><footer className={base.footer}><span>Local review draft · Not published</span><a href="#introduction">Back to introduction ↑</a></footer>
+    </main><footer className={base.footer}><span>{reasoningPublished ? "Independent research by Mudit Gurnani" : "Review draft · Not published"}</span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Study code and results ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
   </div>;
 }

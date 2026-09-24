@@ -33,132 +33,71 @@ if ([passingCaseStart, passingCaseEnd, failingCaseStart, missingBoundsStart].som
 const passingCase = firstFinding.slice(passingCaseStart, passingCaseEnd).trim();
 const missingResponseBounds = secondFinding.slice(missingBoundsStart).trim();
 
-export const approvalOverviewTakeaway = `### What stands out?
-
-Claude approved the largest share of patches in every scenario, Terra was in the middle, and Gemini approved the smallest share. Across the five scenarios, approval ranged from 39.5% to 48.0% for Claude, 32.9% to 39.5% for Terra, and 15.8% to 27.6% for Gemini. The ordering across reviewers stayed the same even as the evidence changed.
-
-There was no uniform rise in approval as more evidence was supplied. Compared with no report, the full, source-unspecified report had a lower approval rate for Terra and higher rates for Claude and Gemini. These descriptive differences do not establish statistical significance, or prove that the scenarios had no effect.
-
-But the overall rate leaves an important question unanswered: which patches were being approved? Similar approval rates can conceal different decisions about passing and failing patches. We therefore break the results into three findings below: the first answers our questions about supplying evidence and adding detail, the second compares reviewers, and the third examines the source label.`;
+export const approvalOverviewTakeaway = `Approval is not accuracy: approving more patches can mean accepting more good work, more faulty work, or both. These follow-up rates use all usable responses, with different denominators. The main findings instead compare matched tasks. [Metric definitions](#appendix-c).`;
 
 export const reviewSections: ReviewSection[] = [
-  { id: "introduction", title: "Introduction", body: `An AI has proposed a software fix. Before accepting it, you ask another AI to review the change. It sounds like a sensible second opinion. But what evidence does that reviewer need, and would another model make the same decision?
+  { id: "introduction", title: "Why this research?", body: `An AI proposes a software fix. Before accepting it, you ask another AI to review the change. What evidence should that reviewer receive—and would another model make the same decision?
 
-A reviewer that rejects every fix can avoid approving a faulty one, but it also prevents useful work from moving forward. To understand review quality, we need to look at both sides: which fixes a system accepts and which it leaves behind.
+We wanted to understand whether test results help AI reviewers make better acceptance decisions, whether a concise summary is enough, and whether calling the same evidence “independent” changes its influence.
 
-We studied how three AI reviewers responded to five evidence scenarios. We gave them the same software issues and proposed fixes, then varied the amount of test evidence and its stated source. This let us examine what changed when evidence was supplied, whether a full report added value beyond a summary, how reviewers differed, and whether a source label affected approval.
+A reviewer that rejects everything can avoid faulty approvals while blocking useful work. We therefore examined both sides: acceptance of patches that passed the benchmark and approval of patches that failed it. This is a study of how reviewers interpret available evidence, not whether they can discover defects independently.` },
+  { id: "experiment-setup", title: "How we tested AI reviewers", body: `We used 60 public software tasks, each with one AI-generated **patch**: a proposed code change intended to fix the reported problem. Three reviewers—GPT-5.6 Terra, Claude Sonnet 5 and Gemini 3.8 Flash—received the same issue and patch under five evidence scenarios:
 
-We measured approval decisions across the scenarios and also compared them with official benchmark outcomes. The aim was to understand how AI reviewers use evidence already available to them, not whether they can discover software defects independently.` },
-  { id: "experiment-setup", title: "Experiment setup", body: `### What is a patch?
+1. **No report:** issue and proposed fix only.
+2. **Factual summary:** a short account of recorded test results.
+3. **Full report:** the complete log, with no source label.
+4. **Patch-producing source:** the full log attributed to the system that proposed the fix.
+5. **Separate evaluator:** the identical log attributed to an evaluator that did not propose it.
 
-A **patch** is a proposed change to software intended to fix a problem. For example, a plotting tool might draw a selection handle in the wrong place. A patch changes the code responsible for positioning it. The question for a reviewer is whether to accept that change.
+The summary retained failures and warnings. The last three scenarios used identical report bodies; their source labels were explicitly hypothetical. [Evidence and selection details](#appendix-a).
 
-A **test** checks a particular behavior, such as whether the handle appears at the expected position. A **test report** records what ran, what passed, and what failed. Passing those tests is useful evidence, but it does not prove that every possible behavior is correct.
+Each reviewer was asked twice in fresh sessions, without tools, to approve, hold or abstain. Hold meant requesting more work; it did not necessarily mean the patch was wrong. The 20-task initial batch and 40-task follow-up produced 1,692 usable reviews. Repeats are not independent tasks. [Settings and missing responses](#appendix-b).
 
-In this study, the patches were previously generated AI fixes for public software tasks. We did not ask the reviewers to create patches or run new tests. We supplied the issue description, the proposed code change, and one of five evidence scenarios. [Appendix A](#appendix-a) explains how the patches and reports were selected.
+The reports came from the same benchmark evaluation used to label patches as passing or failing. “Passing” therefore means passing those tests—not independently proven correctness.` },
+  { id: "findings-at-a-glance", title: "Three findings at a glance", body: "" },
+  { id: "finding-1", title: "1. Test evidence reduced faulty approvals", body: `### Did a summary help—and did a full report help more?
 
-### Questions we investigated
+Without a test report, reviewers sometimes approved patches that failed the benchmark. With either a faithful summary or the full report, those approvals disappeared on the matched failing tasks.
 
-1. Does providing test evidence change approval decisions? We compared no report with a factual summary or full report.
-2. Does a full report add value beyond a factual summary? We compared the two evidence packages.
-3. Do different reviewers make similar decisions with the same evidence? We compared the three models under the same scenarios.
-4. Does the stated source matter when the evidence stays identical? We changed only the source label on the full report.
+![Faulty approvals across the same 15 tasks and three evidence scenarios.](/research-assets/evidence-review/v2/finding-2-evidence-content.svg)
 
-### One patch, five evidence scenarios
+The full report showed no further reduction on this measure. That makes a concise summary worth testing in a review workflow, but it does not establish that the two formats are interchangeable: they may differ in accepting passing patches or on new tasks.
 
-| Scenario | What the reviewer received | Why we included it |
-|---|---|---|
-| A. No report | Issue description and patch only | Establish decisions without test evidence |
-| B. Factual summary | The same issue and patch, plus a short account of recorded test results | Test whether a concise summary helps |
-| C. Full report | The same issue and patch, plus the complete log with no source label | Test whether more detail adds value |
-| D. Patch-producing source | The full log attributed to the system that proposed the patch | Measure decisions when evidence is described as coming from the producer |
-| E. Separate evaluator | The identical full log attributed to an evaluator that did not propose the patch | Isolate the effect of claimed independent provenance |
+**Practical takeaway:** give the reviewer concrete test evidence, including failures and warnings. Test whether a faithful summary supports the decisions you need before assuming a longer log is better. [Worked example](#appendix-f) · [Missing-response check](#appendix-d).` },
+  { id: "finding-2", title: "2. The same evidence led to different acceptance decisions", body: `### Did reviewers agree on which passing patches to accept?
 
-The report bodies in C, D, and E were identical. The source labels were explicitly **hypothetical experimental assignments**, not claims about who actually collected the evidence. The summary retained failures, warnings, and diagnostic context; it was not a favorable rewrite. Comparing the summary with the full log therefore changes both information and length.
+No. Given the same full report, Claude accepted more benchmark-passing fixes than Terra or Gemini. None approved a benchmark-failing patch on this matched task set.
 
-### Three reviewers, the same decision
+![Acceptance of passing patches under the same full report.](/research-assets/evidence-review/v2/finding-1-same-evidence.svg)
 
-We used **GPT-5.6 Terra, Claude Sonnet 5, and Gemini 3.8 Flash**. Each was asked to review each patch twice in each scenario, in fresh sessions, without tools or code execution. The repeats let us observe whether a decision was consistent; they do not turn one software task into two independent tasks.
+A withheld approval is not automatically an error. In one passing example, Gemini acknowledged the fix but requested a committed regression test and removal of a reproduction script. We did not measure whether those requests were necessary or what following them would cost. [The example and its selection rule](#appendix-f).
 
-Each reviewer chose one of three responses:
+**Practical takeaway:** evaluate what your reviewer leaves waiting as well as what it accepts. A low faulty-approval rate alone does not tell you how much useful work it blocks.
 
-- **Approve:** accept the patch without further correctness work.
-- **Hold:** request more work or evidence before accepting it.
-- **Abstain:** the supplied material does not permit a meaningful assessment.
+These are configured reviewers, not a universal ranking. Sonnet used a native structured-output constraint in the follow-up; the [configuration details](#appendix-b) matter when interpreting the comparison.` },
+  { id: "finding-3", title: "3. An “independent” label had no consistent follow-up benefit", body: `### Did changing the stated source change approval?
 
-A hold is not necessarily a claim that the patch is wrong. A model might acknowledge the fix but still request a committed regression test or another change. [Appendix C](#appendix-c) defines the decisions and metrics, and [Appendix F](#appendix-f) shows all five scenarios for one actual patch.
+The early pattern did not hold consistently. Calling an identical report the work of a separate evaluator initially increased approval on average. In the larger follow-up, the average was near zero and the individual reviewers moved in different directions.
 
-### What we compared
+![Source-label approval differences, shown separately for the initial batch and follow-up.](/research-assets/evidence-review/v2/finding-3-source-attribution.svg)
 
-The study began with **20 tasks**, followed by **40 different tasks**. With three reviewers, five scenarios, and two repeats, that gave 1,800 planned reviews. We retained 1,692 usable responses from 1,736 attempts. [Appendix B](#appendix-b) records the model settings and accounts for invalid and unattempted reviews.
+The two phases used different tasks, and Sonnet's response constraint changed before the follow-up. We keep the phases separate rather than interpreting their difference as the effect of one change. [Paired comparisons and uncertainty](#appendix-d).
 
-Overall approval rates describe how willing a reviewer was to accept a patch. Comparing those decisions with benchmark outcomes lets us distinguish approval of a passing patch from approval of a failing one. We report both, rather than treating a higher approval rate as automatically better. The analysis history is recorded in [Appendix D](#appendix-d).
+Related research shows that [surface cues can bias code judges](https://aclanthology.org/2026.findings-eacl.70/) and [authorship labels can change judgments of unchanged material](https://arxiv.org/html/2608.18091). Our finding is narrower: the claimed source of a test report did not consistently increase approval in this follow-up.
 
-The reports came from the same official evaluation that supplied those benchmark outcomes. Here, “benchmark-passing” means the candidate passed that evaluation, not that its correctness was independently established. This is a study of evidence interpretation.
+**Practical takeaway:** don't rely on the word “independent” to improve review decisions. This experiment changed a label, not the tests; it does not tell us whether genuinely independent testing would help.` },
+  { id: "application", title: "How to use these findings", body: `For an AI-assisted review workflow:
 
-The findings below use matched subsets when comparing reviewers or scenarios, so their exact task counts differ. We show those counts with each result rather than treating all 1,692 responses as independent observations.` },
-  { id: "approval-overview", title: "Approval across the five scenarios", body: `The overview below shows all usable reviews in the 40-task follow-up, with two planned reviews per task, scenario, and model. Each percentage is the share of usable reviews that approved a patch, whether it passed or failed the benchmark.
+1. Give reviewers actual test outcomes, preserving failures, warnings and relevant context.
+2. Compare concise summaries with full reports on the same work. Measure both faulty approvals and acceptance of passing fixes.
+3. Inspect withheld approvals: is the requested follow-up useful, or is it unnecessary friction? Our study identifies that question; it did not measure the answer.
+4. Test the reviewer configuration on your own tasks before using it as an acceptance gate.
 
-These are descriptive rates with different response counts, not matched estimates of scenario effects. A higher bar is not necessarily a better result. The findings that follow separate faulty approvals from acceptance of passing patches and use matched tasks for comparisons.` },
-  { id: "findings-at-a-glance", title: "Three findings at a glance", body: `1. [Test evidence reduced faulty approvals](#finding-1). A summary and full report both reduced observed faulty approvals to zero on matched failing tasks; the full report showed no further reduction.
-2. [Reviewers differed in accepting passing patches](#finding-2). The same full report led to different acceptance rates for benchmark-passing patches.
-3. [Changing the stated source did not consistently increase approval](#finding-3). The initial increase weakened in the larger follow-up.` },
-  { id: "finding-1", title: "1. Test evidence reduced faulty approvals", body: `### Does providing test evidence change approval decisions?
+Keep the test harness and human judgment in the workflow. A second model is another source of evidence, not a substitute for verifying a fix.` },
+  { id: "limitations", title: "What this study does—and doesn’t—tell us", body: `Use this study to design reviewer evaluations and decide what evidence to test in your workflow. It does not establish a universal model ranking or prove that an AI reviewer can certify software correctness. We selected public tasks, some reviews were missing, and model training exposure is unknown. The supplied reports came from the same evaluation used to label the patches. The benchmark comparisons were added after collection, and Sonnet's formatting constraint changed between phases.
 
-Yes, on the matched benchmark-failing tasks. Some reviews approved these patches without a report; none approved them with either the factual summary or full report.
-
-### Does a full report add value beyond a factual summary?
-
-We observed no further reduction in faulty approvals: both formats reached zero on this matched sample. That answers this particular metric, not whether full reports offer other benefits or whether the formats are equivalent.
-
-` + secondFinding.slice(0, failingCaseStart).trim().replace(/^[\s\S]*?\n\n/, "") + `
-
-### What this means
-
-The reviewers sometimes accepted a failing patch when they only saw the issue and code. Once they received a faithful summary of the test results, those approvals disappeared on the matched tasks. Giving them the full log did not reduce faulty approvals further in this sample.
-
-That makes a concise summary worth testing in a review workflow. It does not prove that summaries always work as well as full reports, or that either format prevents every mistake. The patch example is in [Appendix F](#appendix-f), and the check on missing responses is in [Appendix D](#appendix-d).` },
-  { id: "finding-2", title: "2. Reviewers differed in accepting passing patches", body: `### Do different reviewers make similar decisions with the same evidence?
-
-Not consistently. They differed in how often they accepted benchmark-passing patches, even when the report and tasks were the same.
-
-` + firstFinding.slice(0, passingCaseStart).trim() + `
-
-### What this means
-
-With the full, source-unspecified test report, none of the three reviewers approved a benchmark-failing patch on these matched tasks. But they did not agree on which benchmark-passing patches were ready to accept. Avoiding faulty approvals is only one part of useful review; we also need to ask how much passing work a reviewer leaves waiting.
-
-Withholding approval does not necessarily mean the reviewer thinks a fix is wrong. It can mean asking for another test or code change. Acting on those requests could take more time and, if an AI does the follow-up work, more tokens. We did not measure that additional work or determine whether it was necessary. A concrete example appears in [Appendix F](#appendix-f).
-
-These results describe the configured reviewers on this task sample, not a universal model ranking. Sonnet also used a native structured-output constraint in the follow-up. The configuration is described in [Appendix B](#appendix-b); matched samples and uncertainty are explained in [Appendix D](#appendix-d).` },
-  { id: "finding-3", title: "3. Changing the stated source did not consistently increase approval", body: `### Does the stated source matter when the evidence stays identical?
-
-The result was mixed. Attributing the report to a separate evaluator initially increased approval on average, but that increase did not hold consistently in the larger follow-up. This is not evidence that source labels can never matter.
-
-` + originalFinding(3).replace("The original primary comparison changed only", "To isolate the source-label comparison, we changed only") + `
-
-### What this means
-
-Changing who supposedly supplied an identical report did not reliably increase approval in the larger follow-up. The encouraging early pattern did not hold consistently across reviewers on the new tasks.
-
-We should not assume that calling a report “independent” makes reviewers trust it more. This experiment changed a label, not the quality or actual independence of the tests. It therefore says nothing about whether genuinely independent testing is useful. See [Appendix D](#appendix-d) for the paired comparison and [Appendix F](#appendix-f) for the exact source-label wording.` },
-  { id: "conclusion", title: "What this means for AI-assisted review", body: `The central lesson is not simply that more evidence makes AI reviewers better. These reviewers used test evidence to avoid some approvals of benchmark-failing patches, but they differed substantially in their willingness to accept benchmark-passing fixes. Calling an identical report independently sourced did not produce a consistent follow-up benefit.
-
-For someone building an AI-assisted review workflow, this suggests evaluating **both acceptance and withholding**. A low faulty-approval rate is valuable, but it does not tell you how many useful fixes the system leaves waiting. Approval rate alone cannot distinguish those outcomes either.
-
-It also suggests testing the usefulness of a concise, faithful summary before assuming that a longer report is always necessary. Our result supports that question, not a universal recommendation to discard detail. The study did not measure the cost or necessity of the additional work reviewers requested.
-
-Calling a report “independent” did not consistently increase approval in our follow-up. We changed only the report's stated source, not its contents. This result does not tell us whether genuinely independent testing would improve review quality.
-
-### What we cannot conclude
-
-This is not a universal ranking of Claude, Terra, and Gemini. We tested particular configured systems on a selected set of public tasks. Sonnet used a native structured-output constraint in the follow-up, public tasks may have appeared in training, and missing reviews limit what we can infer.
-
-Nor does a benchmark outcome certify software correctness. [Tests can miss defects](https://arxiv.org/abs/2503.15223) or [reject acceptable implementations](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/). Because the reviewers saw evidence from the evaluation used to assess their decisions, this experiment does not show that an LLM can replace a test harness or human reviewer.
-
-The next useful question is whether these patterns hold with genuinely independent evidence and a broader task sample. That remains future work, not a result of this study.
-
-The appendix below provides the supporting detail: [selection and evidence](#appendix-a), [model settings and missing reviews](#appendix-b), [metric definitions](#appendix-c), [uncertainty](#appendix-d), [full results](#full-tables), [worked examples](#appendix-f), and [interpretation limits](#appendix-g).` },
+Tests can [miss defects](https://arxiv.org/abs/2503.15223) or [reject acceptable implementations](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/). Validate these patterns on your own work; do not treat zero observed faulty approvals as zero risk. [Full limitations](#appendix-g).` },
+  { id: "conclusion", title: "The bottom line", body: `Test evidence helped these reviewers avoid faulty approvals, but it did not make their acceptance decisions interchangeable. Evaluate both the bad fixes a reviewer accepts and the good work it leaves waiting—and judge evidence by its contents, not just its stated source.` },
 ];
 
 export const appendixSections: ReviewSection[] = [

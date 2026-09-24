@@ -1,18 +1,19 @@
 import { publication } from "@/content/publication";
+import { showReasoningArticle, reasoningPublished } from "@/lib/research-release";
 import styles from "./research-home.module.css";
 
 export function ResearchHome() {
-  const showDraft = process.env.NODE_ENV !== "production";
+  const showDraft = showReasoningArticle;
   const latest = showDraft ? {
     path: "/research/when-is-more-reasoning-worth-it",
     title: "When is more reasoning worth it?",
-    image: "/research-assets/reasoning-costs/reasoning-selector-cover-v2.png",
+    image: "/research-assets/reasoning-costs/reasoning-selector-cover-v2.webp",
     alt: "A reasoning dial connects spreadsheets, analytical paths and cost.",
     category: "AI economics",
     summary: "We tested three models at three reasoning settings on analytical work. Some reasoning helped; paying for more did not always buy a better answer.",
   } : {
     path: publication.articlePath, title: publication.articleTitle,
-    image: "/research-assets/evidence-review/v3/three-lenses.png",
+    image: "/research-assets/evidence-review/v3/three-lenses.webp",
     alt: "One document seen through three lenses.", category: "AI evaluation",
     summary: "We gave three AI reviewers the same software fixes under five evidence scenarios. Test reports reduced faulty approvals on matched tasks, but reviewers still differed in which passing fixes they accepted.",
   };
@@ -36,7 +37,7 @@ export function ResearchHome() {
             <img src={latest.image} alt={latest.alt} width={1774} height={887} fetchPriority="high" />
           </a>
           <div className={styles.copy}>
-            <p className={styles.meta}>{latest.category} <span>·</span> {showDraft ? "Review draft" : <time dateTime="2026-09-13">September 13, 2026</time>}</p>
+            <p className={styles.meta}>{latest.category} <span>·</span> {showDraft ? (reasoningPublished ? "September 2026" : "Review draft") : <time dateTime="2026-09-13">September 13, 2026</time>}</p>
             <h3><a href={latest.path}>{latest.title}</a></h3>
             <p>{latest.summary}</p>
             <a href={latest.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
@@ -48,7 +49,7 @@ export function ResearchHome() {
         <article className={styles.previous}>
           <a href={publication.articlePath} className={styles.thumbnail} aria-label={`Read ${publication.articleTitle}`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/research-assets/evidence-review/v3/three-lenses.png" alt="One document seen through three lenses." width={1774} height={887} loading="lazy" />
+            <img src="/research-assets/evidence-review/v3/three-lenses.webp" alt="One document seen through three lenses." width={1774} height={887} loading="lazy" />
           </a>
           <div className={styles.copy}>
             <p className={styles.meta}>AI evaluation <span>·</span> <time dateTime="2026-09-13">September 13, 2026</time></p>

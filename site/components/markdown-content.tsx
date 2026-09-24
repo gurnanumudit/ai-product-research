@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 function normalizeHref(href: string) {
@@ -28,7 +27,7 @@ function inline(text: string, keyPrefix: string): ReactNode[] {
       const external = /^https?:\/\//.test(href);
       nodes.push(external
         ? <a key={`${keyPrefix}-a-${index}`} href={href} target="_blank" rel="noreferrer">{match[2]} ↗</a>
-        : <Link key={`${keyPrefix}-a-${index}`} href={href}>{match[2]}</Link>);
+        : <a key={`${keyPrefix}-a-${index}`} href={href}>{match[2]}</a>);
     } else if (match[4]) nodes.push(<strong key={`${keyPrefix}-b-${index}`}>{match[4]}</strong>);
     else if (match[5]) nodes.push(<code key={`${keyPrefix}-c-${index}`}>{match[5]}</code>);
     else if (match[6]) nodes.push(<em key={`${keyPrefix}-i-${index}`}>{match[6]}</em>);
