@@ -18,6 +18,13 @@
 .copy p { font: 400 1.1875rem/1.6 var(--editorial-serif); margin: 0 0 20px; }
 .read { display: inline-block; font: 400 1rem/1.5 var(--sans); text-decoration: underline; text-underline-offset: 5px; }
 .footer { border-top: 1px solid var(--line); padding: 22px 0 30px; display: flex; justify-content: space-between; gap: 20px; font: 400 .875rem/1.5 var(--sans); color: var(--muted); }
+.earlier { border-top: 1px solid var(--line); padding: 30px 0 46px; }
+.earlier h2 { font: 400 1rem/1.4 var(--sans); color: var(--muted); margin: 0 0 26px; }
+.previous { display: grid; grid-template-columns: minmax(150px, 240px) minmax(0, 1fr); gap: 34px; align-items: start; }
+.thumbnail img { display: block; width: 100%; height: auto; border-radius: 5px; }
+.previous .copy h3 { font-size: clamp(1.5rem, 2.2vw, 1.8rem); }
+.previous .copy p { max-width: 690px; }
+@media(max-width:720px) { .previous { grid-template-columns: 1fr; gap: 22px; } .thumbnail { max-width: 280px; } .earlier { padding-bottom: 32px; } }
 .page a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .page a:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
 .skip { position: absolute; top: -80px; left: 20px; padding: 12px; background: white; z-index: 20; }

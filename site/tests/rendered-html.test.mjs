@@ -24,6 +24,11 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    assert.ok(!homeHtml.includes('href="/research/when-is-more-reasoning-worth-it"'), 'draft is not listed in production');
+    for (const draftPath of ['/research/when-is-more-reasoning-worth-it', '/preview/reasoning-costs']) {
+      const draft = await fetch(`http://localhost:${port}${draftPath}`);
+      assert.equal(draft.status, 404, 'draft must stay private from the production site');
+    }
     assert.equal((homeHtml.match(new RegExp(`<a href="${articlePath}"`, 'g')) || []).length, 3);
     const article = await fetch(`http://localhost:${port}${articlePath}`);
     assert.equal(article.status, 200);

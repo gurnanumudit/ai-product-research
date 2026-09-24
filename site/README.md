@@ -1,6 +1,6 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://mudit-gurnani-research.muditgurnani.chatgpt.site/). A short introduction and one current research article.
+Source for [Mudit Gurnani's research website](https://mudit-gurnani-research.muditgurnani.chatgpt.site/). The local homepage features the new reasoning-cost study above the earlier test-evidence article.
 
 ## Run locally
 
@@ -12,7 +12,18 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server. Validate the production build and both routes with `npm test`.
+Open the local URL printed by the server. Validate the production build, published article and draft protection with `npm test`.
+
+## Review draft, not deployed
+
+The development homepage shows both studies. The new article is available locally
+at `/research/when-is-more-reasoning-worth-it`; the existing
+`/preview/reasoning-costs` address remains available.
+
+The article is intentionally blocked in production, and the production homepage
+does not list it yet. Publication requires owner approval, removal of the article's
+production guard, updating the homepage visibility rule and draft labels, and a
+separate Sites deployment. A GitHub push does not publish the live website.
 
 ## Where to edit
 
@@ -20,9 +31,12 @@ Open the local URL printed by the server. Validate the production build and both
 - `content/publication.ts`: article URL, GitHub and LinkedIn links.
 - `content/evidence-review-v3.ts`: current article and appendix.
 - `components/article/`: layout, index and data exhibits.
+- `app/preview/reasoning-costs/`: shared reasoning article, figures and difficulty methods.
+- `app/research/when-is-more-reasoning-worth-it/page.tsx`: planned permanent address, sharing the same article.
+- `content/reasoning-expanded.json`: frozen chart/table inputs, paired with the [offline research supplement](../research/reasoning-costs/README.md).
 - `public/research-assets/`: charts and illustration.
 
-Supporting article modules preserve material used in the current appendix. They are not additional published article routes.
+Supporting article modules preserve material used in the appendices. Draft routes are not additional published articles.
 
 ## Hosting
 
