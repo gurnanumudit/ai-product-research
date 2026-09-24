@@ -37,7 +37,7 @@ export function ResearchHome() {
             <img src={latest.image} alt={latest.alt} width={1774} height={887} fetchPriority="high" />
           </a>
           <div className={styles.copy}>
-            <p className={styles.meta}>{latest.category} <span>·</span> {showDraft ? (reasoningPublished ? "September 2026" : "Review draft") : <time dateTime="2026-09-13">September 13, 2026</time>}</p>
+            <p className={styles.meta}>{latest.category} <span>·</span> {showDraft ? (reasoningPublished ? <time dateTime="2026-09-24">September 24, 2026</time> : "Review draft") : <time dateTime="2026-09-13">September 13, 2026</time>}</p>
             <h3><a href={latest.path}>{latest.title}</a></h3>
             <p>{latest.summary}</p>
             <a href={latest.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>

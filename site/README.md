@@ -1,6 +1,6 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://mudit-gurnani-research.muditgurnani.chatgpt.site/). The local homepage features the new reasoning-cost study above the earlier test-evidence article.
+Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage features the reasoning-cost study above the earlier test-evidence article.
 
 ## Run locally
 
@@ -12,16 +12,16 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server. Validate the production build, published article and draft protection with `npm test`. Figure-preservation checks run with `node --test tests/evidence-figures.test.mjs`.
+Open the local URL printed by the server. Validate the production build, both articles, anchors and release metadata with `npm test`. Figure-preservation checks run from this GitHub checkout with `node --test tests/evidence-figures.test.mjs`.
 
-## Review draft, not deployed
+## Publication and local review
 
 The development homepage shows both studies. The new article is available locally
 at `/research/when-is-more-reasoning-worth-it`; the existing
 `/preview/reasoning-costs` address remains available.
 
-The article is intentionally blocked in the ordinary production build, and that
-homepage does not list it yet. `lib/research-release.ts` owns the publication gate.
+The owner approved both articles for publication on September 24, 2026.
+`lib/research-release.ts` records the release and public origin.
 A GitHub push does not publish the live website.
 
 For phone review without development/HMR module imports:
@@ -34,17 +34,15 @@ npm run start -- --hostname 0.0.0.0 --port 5173
 
 This is a **local-only review build**, with both articles and noindex metadata.
 Keep it on the review machine; do not upload its output to Sites. A later ordinary
-`npm run build` resets the output to the protected production state.
+`npm run build` resets the output to the public production state.
 The browser review exposed a link-prefetch setup error; article navigation now uses
 ordinary anchors rather than client-router prefetching. The reported phone import
-failure could not be reproduced in the desktop browser;
-the bundled preview removes development-only imports but still needs a check on
-the user's phone.
+failure could not be reproduced in the desktop browser. The bundled preview
+removes development-only imports; the owner confirmed no errors on the phone.
 
-After explicit owner approval: set `reasoningPublished` to true, confirm the actual
-publication date and draft-label removal, adjust the draft-protection tests for
-the approved release, and run a fresh ordinary production build. Then use a
-separate Sites deployment and verify the public homepage and both article URLs.
+For subsequent releases, obtain owner approval and run a fresh ordinary
+production build before the separate Sites save/deploy workflow. Do not deploy
+the noindex review build.
 The prior authoring checkout is no longer the phone-review source; this maintained
 GitHub checkout supplies the bundled preview.
 
@@ -58,7 +56,7 @@ GitHub checkout supplies the bundled preview.
   Estimates and intervals are checked against the published supplement and
   original SVG figures; the research records are unchanged.
 - `app/preview/reasoning-costs/`: shared reasoning article, figures and difficulty methods.
-- `app/research/when-is-more-reasoning-worth-it/page.tsx`: planned permanent address, sharing the same article.
+- `app/research/when-is-more-reasoning-worth-it/page.tsx`: permanent address, sharing the same article.
 - `content/reasoning-expanded.json`: frozen chart/table inputs, paired with the [offline research supplement](../research/reasoning-costs/README.md).
 - `public/research-assets/`: charts and illustration.
 

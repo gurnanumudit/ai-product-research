@@ -25,13 +25,15 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
-    assert.equal(homeHtml.includes('href="/research/when-is-more-reasoning-worth-it"'), reviewBuild, 'draft visibility follows the build mode');
+    assert.ok(homeHtml.includes('href="/research/when-is-more-reasoning-worth-it"'), 'published study is listed');
     for (const draftPath of ['/research/when-is-more-reasoning-worth-it', '/preview/reasoning-costs']) {
       const draft = await fetch(`http://localhost:${port}${draftPath}`);
-      assert.equal(draft.status, reviewBuild ? 200 : 404, 'only an explicit local review build exposes the draft');
-      if (reviewBuild) {
+      assert.equal(draft.status, 200, 'both canonical and legacy article addresses remain available');
+      {
         const draftHtml = await draft.text();
-        assert.ok(draftHtml.includes('noindex, nofollow'));
+        assert.ok(draftHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
+        assert.ok(!draftHtml.includes('Review draft') && !draftHtml.includes('Unpublished'));
+        assert.ok(draftHtml.includes('https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it'));
         assert.ok(draftHtml.includes('three OpenAI GPT-5.6 models'));
         checkAnchors(draftHtml);
         assert.ok(!draftHtml.includes('/chunks/link-'), 'static articles do not load client-router link prefetching');
