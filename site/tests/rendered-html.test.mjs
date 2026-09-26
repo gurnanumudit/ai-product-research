@@ -25,6 +25,9 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    await checkSocialPreview(port, '/', '/og-v2.png');
+    await checkSocialPreview(port, articlePath, '/research-assets/evidence-review/v3/three-lenses.png');
+    await checkSocialPreview(port, '/research/when-is-more-reasoning-worth-it', '/research-assets/reasoning-costs/reasoning-selector-cover-v2.png');
     assert.ok(homeHtml.includes('href="/research/when-is-more-reasoning-worth-it"'), 'published study is listed');
     for (const draftPath of ['/research/when-is-more-reasoning-worth-it', '/preview/reasoning-costs']) {
       const draft = await fetch(`http://localhost:${port}${draftPath}`);
@@ -70,4 +73,28 @@ test('production homepage and article render with direct study links', async () 
 function checkAnchors(html) {
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]));
   for (const [,id] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.has(id), `Missing anchor: ${id}`);
+}
+
+async function checkSocialPreview(port, path, imagePath) {
+  const response = await fetch('http://localhost:' + port + path, {
+    headers: { 'User-Agent': 'LinkedInBot/1.0' },
+  });
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  const head = html.slice(0, html.indexOf('</head>'));
+  const tags = new Map([...head.matchAll(/<meta\s+(?:property|name)="([^"]+)"\s+content="([^"]*)"[^>]*>/g)].map(m => [m[1],m[2]]));
+  for (const key of ['og:title','og:description','og:url','og:type','og:image','og:image:width','og:image:height','twitter:image']) {
+    assert.ok(tags.get(key), path + ': missing server-rendered ' + key);
+  }
+  assert.equal(new URL(tags.get('og:url')).href, new URL(path, 'https://research.muditgurnani.chatgpt.site').href);
+  assert.equal(tags.get('og:image'), 'https://research.muditgurnani.chatgpt.site' + imagePath);
+  assert.equal(tags.get('twitter:image'), tags.get('og:image'));
+  assert.ok(Number(tags.get('og:image:width')) >= 1200);
+  assert.ok(Number(tags.get('og:image:height')) >= 627);
+  const image = await fetch('http://localhost:' + port + imagePath, {headers: {'User-Agent': 'LinkedInBot/1.0'}});
+  assert.equal(image.status, 200);
+  assert.match(image.headers.get('content-type'), /image\/png/);
+  const bytes = new Uint8Array(await image.arrayBuffer());
+  assert.ok(bytes.length < 5 * 1024 * 1024);
+  assert.deepEqual([...bytes.slice(0,8)], [137,80,78,71,13,10,26,10]);
 }

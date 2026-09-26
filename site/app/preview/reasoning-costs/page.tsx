@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   description: "134 analytical questions, three models and three reasoning settings. Where reasoning helped, and what extra effort bought.",
   robots: { index: reasoningPublished && !localReview, follow: reasoningPublished && !localReview },
   alternates: { canonical: publicOrigin + "/research/when-is-more-reasoning-worth-it" },
-  openGraph: { title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", images: [] },
-  twitter: { card: "summary", title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", images: [] },
+  openGraph: { title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", type: "article", url: publicOrigin + "/research/when-is-more-reasoning-worth-it", images: [{ url: publicOrigin + "/research-assets/reasoning-costs/reasoning-selector-cover-v2.png", width: 1774, height: 887, type: "image/png", alt: "A reasoning dial connecting analytical tasks and cost" }] },
+  twitter: { card: "summary_large_image", title: "When is more reasoning worth it?", description: "An experiment on reasoning, analytical accuracy and model spending across 134 questions.", images: [publicOrigin + "/research-assets/reasoning-costs/reasoning-selector-cover-v2.png"] },
 };
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const points: Point[] = data.points.map(p => ({ ...p, effort: cap(p.effort) }));

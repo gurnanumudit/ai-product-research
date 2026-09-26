@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "Research on AI evaluation, decision-making, and the economics of AI effort.",
   robots: { index: !localReview, follow: !localReview },
   alternates: { canonical: publicOrigin + "/" },
-  openGraph: { title: "Mudit Gurnani | Research", description: "Independent experiments on AI evaluation and cost–quality trade-offs.", images: [] },
-  twitter: { card: "summary", title: "Mudit Gurnani | Research", description: "Independent experiments on AI evaluation and cost–quality trade-offs.", images: [] },
+  openGraph: { title: "Mudit Gurnani | Research", description: "Independent experiments on AI evaluation and cost–quality trade-offs.", type: "website", url: publicOrigin + "/", images: [{ url: publicOrigin + "/og-v2.png", width: 1731, height: 909, type: "image/png", alt: "Mudit Gurnani — independent AI product research" }] },
+  twitter: { card: "summary_large_image", title: "Mudit Gurnani | Research", description: "Independent experiments on AI evaluation and cost–quality trade-offs.", images: [publicOrigin + "/og-v2.png"] },
 };
 
 export default ResearchHome;
