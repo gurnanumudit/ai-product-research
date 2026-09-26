@@ -5,7 +5,7 @@ import "./globals.css";
 export async function generateMetadata(): Promise<Metadata> {
   const [siteUrl, previewUrl] = await Promise.all([requestSiteUrl(), socialPreviewUrl()]);
   const description =
-    "Independent AI product research on when evidence earns the right to change an action, judgment, or model-spend decision.";
+    "I'm starting a research journey into how AI performs on real-world tasks. Here I share experiments, findings, and code—exploring when reasoning helps, what better results cost, and how to evaluate AI beyond demos.";
 
   return {
     metadataBase: siteUrl,
@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       title: "Mudit Gurnani — Research & Writing",
       description,
-      images: [{ url: previewUrl, width: 1731, height: 909, alt: "AI products should earn trust with evidence, not demos." }],
+      images: [{ url: previewUrl, width: 1600, height: 840, alt: "Mudit Gurnani — Exploring AI through experiments. Models, reasoning, and real-world analytical work." }],
     },
     twitter: {
       card: "summary_large_image",

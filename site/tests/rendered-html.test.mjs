@@ -25,7 +25,7 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
-    await checkSocialPreview(port, '/', '/og-v2.png');
+    await checkSocialPreview(port, '/', '/og-research-journey-v1.png');
     await checkSocialPreview(port, articlePath, '/research-assets/evidence-review/v3/three-lenses.png');
     await checkSocialPreview(port, '/research/when-is-more-reasoning-worth-it', '/research-assets/reasoning-costs/reasoning-selector-cover-v2.png');
     assert.ok(homeHtml.includes('href="/research/when-is-more-reasoning-worth-it"'), 'published study is listed');
@@ -89,6 +89,11 @@ async function checkSocialPreview(port, path, imagePath) {
   assert.equal(new URL(tags.get('og:url')).href, new URL(path, 'https://research.muditgurnani.chatgpt.site').href);
   assert.equal(tags.get('og:image'), 'https://research.muditgurnani.chatgpt.site' + imagePath);
   assert.equal(tags.get('twitter:image'), tags.get('og:image'));
+  if (path === '/') {
+    assert.ok(tags.get('og:description').length >= 100, 'homepage sharing description is at least 100 characters');
+    assert.ok(tags.get('og:description').includes('research journey'));
+    assert.ok(!tags.get('og:image').includes('og-v2.png'), 'new card has a fresh cache key');
+  }
   assert.ok(Number(tags.get('og:image:width')) >= 1200);
   assert.ok(Number(tags.get('og:image:height')) >= 627);
   const image = await fetch('http://localhost:' + port + imagePath, {headers: {'User-Agent': 'LinkedInBot/1.0'}});

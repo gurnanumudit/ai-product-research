@@ -6,5 +6,5 @@ export async function requestSiteUrl() {
 }
 
 export async function socialPreviewUrl() {
-  return new URL("/og-v2.png", publicOrigin);
+  return new URL("/og-research-journey-v1.png", publicOrigin);
 }
