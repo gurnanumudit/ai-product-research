@@ -1,4 +1,4 @@
-# Optional request preflight and transport only; offline tests need no dependencies.
+# Request preflight/transport and mocked runner tests; core package tests need no dependencies.
 # Versions present in the local Stage A preparation environment.
 tiktoken==0.13.0
 requests==2.34.2
