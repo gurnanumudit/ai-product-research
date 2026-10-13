@@ -24,7 +24,7 @@ cd ..
 python3 -m unittest discover -s reproduce -v
 ```
 
-There are39 package tests,58 transport/report/version2 tests and8 portable-helper tests:105 total. Fixtures are synthetic, provider calls are mocked, and no credentials or dataset are needed. Cost messages printed by mocked transport tests are fixtures, not external spending. The optional packages for transport/preflight tests are pinned in `requirements-runner.txt`; install them in an isolated environment if needed. The tokenizer must already have its local `o200k_base` cache for the synthetic preflight test. Cache misses fail instead of downloading during preflight. No dependencies are installed by this repository's tests.
+There are39 package tests,58 transport/report/version2 tests and37 portable-helper tests:134 total. The latter include29 final-test preparation/assembly checks. Fixtures are synthetic, provider calls are mocked, and no credentials or dataset are needed. Cost messages printed by mocked transport tests are fixtures, not external spending. The optional packages for transport/preflight tests are pinned in `requirements-runner.txt`; install them in an isolated environment if needed. The tokenizer must already have its local `o200k_base` cache for the synthetic preflight test. Cache misses fail instead of downloading during preflight. No dependencies are installed by this repository's tests.
 
 The portable tests cover existing-output refusal before input reading, symlink refusal, keeping outputs outside input archives, unchanged rational arithmetic/precision, source-hash mismatch, truncated input rejection, a synthetic50-answer training replay, and preparation refusal before any network request when its destination already exists.
 
@@ -46,6 +46,32 @@ python3 reproduce/assemble_annotations.py --data-dir /absolute/path/to/existing-
 ```
 
 The training archive must contain the original50 answering inputs, saved summary and ordered response files in the historical `data/` and `runs/pilot-01/` layout. The development archive must contain200 aligned inputs, original references, selection metadata, source-first decisions, reference reconciliation and pinned source file; optional revisions remain evaluator-only. The helpers produce `training-diagnostics.json` and `annotations.json`, respectively. Existing destinations and symlink paths are refused; a failed run may leave a fresh empty directory that must not be reused automatically. Assembly leaves review status pending and does not certify its caller-supplied decisions.
+
+### Offline final-test preparation
+
+`reproduce/prepare_test.py` is a separate offline adaptation of the historical final-frame preparer. It reads an already acquired local source, supplied protocol and supplied exposure snapshot. It adds no download, credential or provider path. Its natural-frame census, eligibility, deterministic order, report/page/company flags and fixed stratified audit selection retain the historical logic; they do not impose development's equal-stratum quotas. Exact previously exposed IDs are excluded, while other questions in the same report remain eligible and flagged.
+
+```sh
+python3 reproduce/prepare_test.py --source /absolute/archive/source/test.json --protocol /absolute/archive/test-protocol.json --exposure /absolute/archive/test-exposure.json --bindings /absolute/archive/intake-bindings.json --out /absolute/new-test-preparation
+```
+
+The binding file must be a JSON object with exactly `source`, `protocol` and `exposure`, each mapped to its independently recorded lowercase SHA256. The source must also match the protocol's `source_sha256`, `source_expected_bytes` and `source_expected_n`. The protocol supplies `seed`, `strata`, `maximum_selected_n` and `independent_audit` (`seed`, `n_per_stratum`). The exposure object supplies `protocol_sha256`, `groups` of prior `ids`/`reports`/`pages`/`companies`, the sorted `excluded_exact_ids` union, its `excluded_exact_id_count` and `union_ids_sha256`. The union hash is SHA256 of compact JSON for the sorted union plus a newline. Group metadata and the union are checked against the supplied IDs. Paths mentioned inside a protocol or exposure record are not automatically opened.
+
+The four generated files separate neutral answering inputs from original evaluator-only QA, selection metadata and independent audit IDs. The source is not recopied. Output must be fresh, non-symlinked, and outside the parent directories of all supplied files. Put the supplied files in a dedicated archive, with a separate output directory. Local hash bindings verify identity, not permission, scientific approval, source completeness or reference quality.
+
+### Offline final source-first assembly
+
+```sh
+python3 reproduce/assemble_test_annotations.py --archive /absolute/existing-reviewed-test-archive --bindings /absolute/existing-reviewed-test-archive/assembly-bindings.json --expected-n 1127 --out /absolute/new-test-annotations
+```
+
+The required binding keys are the exact relative filenames `source/test.json`, `source-first-decisions.jsonl`, `SOURCE-FIRST-FREEZE.json`, `inputs.json`, `gold.json`, `selection.json`, `source-review-revisions.json` and `reference-review-notes.json`. Every value is an independently recorded SHA256. These files are supplied locally, not distributed here. An empty review-note or revision list must be explicit, not silently invented. `SOURCE-FIRST-FREEZE.json` must bind the first-pass digest. Every planned row must remain aligned; duplicate IDs, duplicate/out-of-range revision or note indices, mismatched order, altered inputs and incomplete collections are rejected.
+
+The first-pass JSONL contains ordered `i` indices and source-review decisions (`formula`, `unit`, `scale`, `reason`, `evidence` location IDs, with optional `exact_count`). Revisions are separate records `{i, decision: {...}}`, applied without altering that first pass; review notes contain `i` and `category` plus their supplied interpretation. These are independent source judgments, not outputs this code can reconstruct from released answers. The adapter preserves unresolved rows, original QA, evidence, revisions and source-review notes. It emits evaluator-only `annotations.json`, diagnostic `reference-reconciliation.json` and a local reproduction manifest into the new directory. Scoring remains separate from reference diagnostics, which never infer percent conversion by numerical closeness. Review status remains pending; no caller-supplied judgment is certified.
+
+Rational targets retain the original restricted arithmetic and precision conventions. The historical fractional-power exception remains limited to the original three reviewed row indices and exact positive five-year CAGR expression form, evaluated at80 and100 digits with agreement better than `1e-70` and rendered at60 digits. Assembly additionally requires the original first-pass/input/gold digests for these cases. The row guards contain no source values and are not a general license to apply CAGR to other records; they do not modify the operational answer checker. Synthetic tests exercise the numeric helper and rejection of unauthorized new-archive powers, not the undistributed empirical annotations.
+
+Both final helpers are explicit safe-output adaptations, not the historical executables and not new scientific policies. Their manifests record source-script and supplied-input identities; output metadata will differ from historical internal receipts. The original `freeze_test_data.py` is omitted because it embeds review/resource receipt statements, not a needed numerical algorithm. The historical `test_test_data.py` requires the undistributed archive and embeds audit counts; it is omitted rather than advertised as independently runnable. The new synthetic suite covers reusable safeguards and arithmetic, not a replay of those private archive tests. No real archive replay was used to validate this delivery, and no published efficacy claim follows from passing software tests.
 
 ## Study contract encoded in the implementation
 

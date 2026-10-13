@@ -118,8 +118,8 @@
     },
     "README.md": {
       "kind": "new_delivery_support",
-      "sha256": "ec329b0546de7a70a7adcfd1926cbf90072622cc4290f1b52bb223d0235853d3",
-      "bytes": 9183
+      "sha256": "88a03d9a8e84413a7185399f0365241b7bfa61ce4d2012c6918b9535477b75d7",
+      "bytes": 14698
     },
     "requirements-runner.txt": {
       "kind": "new_delivery_support",
@@ -130,6 +130,29 @@
       "kind": "new_delivery_support",
       "sha256": "e402a049b80777b6870af152fb1e1bfc8319a5fae093e3d7539a4f72ee443072",
       "bytes": 269
+    },
+    "reproduce/prepare_test.py": {
+      "kind": "explicit_portable_adaptation",
+      "sha256": "354e5ca03a75150018536c329ca300f7caad71e6f46e445213c57ac4d7f44f91",
+      "bytes": 7677,
+      "source_sha256": "05e1d645d6c2e61149d03a1341b423f7b55f733a02aac09e1e280252b6f3cec5"
+    },
+    "reproduce/assemble_test_annotations.py": {
+      "kind": "explicit_portable_adaptation",
+      "sha256": "a72d97600f48d13aaff417138fd7b92b5e6e498e07ccd1ebe9f906f2fcc1a368",
+      "bytes": 11297,
+      "source_sha256": "e155e88bcd5a2d118961c8c294f2500de5b582e91edd65a744cef98343b58933"
+    },
+    "reproduce/final_io.py": {
+      "kind": "new_delivery_support",
+      "sha256": "77225c894e630f896c7b8338112a8860771725ae60b78005ba90c642dd3b880f",
+      "bytes": 2249
+    },
+    "reproduce/test_final_portable.py": {
+      "kind": "new_delivery_support",
+      "sha256": "8e6dd718331bd0f1cd8118c8b166e22009588d3690ee140c8018dc6fb486e945",
+      "bytes": 15853,
+      "source_notes": "New synthetic-only tests; replaces neither the historical intake tests nor archive-dependent final-data audit."
     }
   },
   "excluded": [
@@ -141,6 +164,16 @@
     "approvals, budgets and execution markers",
     "internal coordination records",
     "reconcile_dev_references.py (embeds case-specific adjudication content)",
-    "test_dev_data.py (requires excluded local archive)"
-  ]
+    "test_dev_data.py (requires excluded local archive)",
+    "freeze_test_data.py (internal reviewer/resource receipt, not numerical algorithm)",
+    "test_test_data.py (requires excluded final archive and embeds audit counts)",
+    "historical test_test_intake.py (internal protocol/exposure dependencies; reusable mechanics covered by synthetic final tests)"
+  ],
+  "final_preparation_adaptation": {
+    "scope": "Offline already-acquired-source transformation and evaluator-only reviewed-record assembly; no acquisition or model capability added.",
+    "historical_code_preserved": true,
+    "empirical_archive_replay_performed": false,
+    "hash_bindings": "Required local caller-supplied identity checks, not approval or source qualification.",
+    "fractional_power_boundary": "Original three row-index/expression guards plus original source-first/input/gold hashes; no source values or review records included."
+  }
 }
