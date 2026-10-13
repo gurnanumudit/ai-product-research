@@ -1,0 +1,11 @@
+data/
+runs/
+*.jsonl
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+research.db*
+*-response.json
+*-request.json
