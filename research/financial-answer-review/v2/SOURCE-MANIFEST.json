@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "scope": "Source/tests/docs only; no empirical data, outcomes or execution approvals",
+  "historical_implementation_manifest_sha256": "ed4994a494325f4f508df0b76fafd7b7653b19d36a6b27297a0be665599a1446",
+  "source_pin": "FinQA 0f16e2867befa6840783e58be38c9efb9229d742",
+  "files": {
+    "implementation/package/__init__.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "17808b1afeb0c62ac94f368f20726b4788e9aaafe711709c3175674267622046",
+      "source_sha256": "17808b1afeb0c62ac94f368f20726b4788e9aaafe711709c3175674267622046",
+      "bytes": 85
+    },
+    "implementation/package/checker.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "e0d03cc1be408039b3b1c6163e81a10830969eb7d9bf4404d38bd7376212f901",
+      "source_sha256": "e0d03cc1be408039b3b1c6163e81a10830969eb7d9bf4404d38bd7376212f901",
+      "bytes": 4741
+    },
+    "implementation/package/numbers.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "1db53a55b346ad7f27a90e26f7458c251c70e26218ec61065e2f8573b7d3ea98",
+      "source_sha256": "1db53a55b346ad7f27a90e26f7458c251c70e26218ec61065e2f8573b7d3ea98",
+      "bytes": 4824
+    },
+    "implementation/package/policies.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "f5f7a500a32659b0d518315594589f7fa71db53e11f4c2d7252c88b49a1f1c64",
+      "source_sha256": "f5f7a500a32659b0d518315594589f7fa71db53e11f4c2d7252c88b49a1f1c64",
+      "bytes": 3761
+    },
+    "implementation/package/prompt.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "cd2f59bc0da6d249193e897c33500b1148720dfdfe2a210eb728fbb3e0e0c3a8",
+      "source_sha256": "cd2f59bc0da6d249193e897c33500b1148720dfdfe2a210eb728fbb3e0e0c3a8",
+      "bytes": 2964
+    },
+    "implementation/package/schema.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "a1e4434659005443a05e5283fda30e9a878057184820841d6024f9ddcef434a3",
+      "source_sha256": "a1e4434659005443a05e5283fda30e9a878057184820841d6024f9ddcef434a3",
+      "bytes": 4510
+    },
+    "implementation/package/scorer.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "d4ff889b08c0fabf127f90730b090f42c8aded9f5c69c64e846cbfdf58f7bc22",
+      "source_sha256": "d4ff889b08c0fabf127f90730b090f42c8aded9f5c69c64e846cbfdf58f7bc22",
+      "bytes": 2291
+    },
+    "implementation/runner.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "5c87e3bb85daeb353fc4e14cd55a929806fd88a43fc31e3a3f62996eeca74cae",
+      "source_sha256": "5c87e3bb85daeb353fc4e14cd55a929806fd88a43fc31e3a3f62996eeca74cae",
+      "bytes": 19927
+    },
+    "implementation/summarize_pilot.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "43382a2e3369033659788d4ddf7e0beae6cb45bf7a89fe2df512c32f28b2d4c8",
+      "source_sha256": "43382a2e3369033659788d4ddf7e0beae6cb45bf7a89fe2df512c32f28b2d4c8",
+      "bytes": 18761
+    },
+    "implementation/test_runner.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "31038f4abe7328350e2eda875fe7a4869296f0e799bc279cac6c436806e2ba4d",
+      "source_sha256": "31038f4abe7328350e2eda875fe7a4869296f0e799bc279cac6c436806e2ba4d",
+      "bytes": 8481
+    },
+    "implementation/test_summary.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "dfc49cb1a13ff5bc382ce701914f217f428782898fb44466ccbb263947973164",
+      "source_sha256": "dfc49cb1a13ff5bc382ce701914f217f428782898fb44466ccbb263947973164",
+      "bytes": 6416
+    },
+    "implementation/test_v2.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "f7562d0c3237cee7002bfd09d25719343419ddd4fed1cbf19e30bf73935dd4c2",
+      "source_sha256": "f7562d0c3237cee7002bfd09d25719343419ddd4fed1cbf19e30bf73935dd4c2",
+      "bytes": 15258
+    },
+    "implementation/tests/test_build.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "e76d7a1a0fc97741beab0a7a12e073b3c65c377eb3b6f5928536f06a032ddd63",
+      "source_sha256": "e76d7a1a0fc97741beab0a7a12e073b3c65c377eb3b6f5928536f06a032ddd63",
+      "bytes": 12648
+    },
+    "implementation/training_check.py": {
+      "kind": "unchanged_reviewed_implementation",
+      "sha256": "7a8edda93a7f01dc117396c9b695750064f805bf34314be150ce98a81387f918",
+      "source_sha256": "7a8edda93a7f01dc117396c9b695750064f805bf34314be150ce98a81387f918",
+      "bytes": 2038
+    },
+    "reproduce/prepare_dev.py": {
+      "kind": "unchanged_preparation_helper",
+      "sha256": "687217b8e474c1dc2ead6c98a8e8f4025ed9aaab59299d4b0852cf0cad9050d4",
+      "source_sha256": "687217b8e474c1dc2ead6c98a8e8f4025ed9aaab59299d4b0852cf0cad9050d4",
+      "bytes": 9270
+    },
+    "reproduce/training_check.py": {
+      "kind": "explicit_portable_adaptation",
+      "sha256": "1f81259b711bee0e170a838ddcb68e2c6de7302cfd673b2a978324897a17f0b7",
+      "source_sha256": "7a8edda93a7f01dc117396c9b695750064f805bf34314be150ce98a81387f918",
+      "bytes": 2294
+    },
+    "reproduce/assemble_annotations.py": {
+      "kind": "explicit_portable_adaptation",
+      "sha256": "70575fcbd65b61898dbe4a517354fdd0b9d43e15eb290517b0e717cb245afd6e",
+      "source_sha256": "0c6f27fb5a651460a2d67eee4bfcea00101926d77a6e4e162530cd72948d7807",
+      "bytes": 6255
+    },
+    "reproduce/safe_output.py": {
+      "kind": "new_delivery_support",
+      "sha256": "b1ae75f51395e3daaf99f82411459162c74c95894c2ab134bf0fb0f85a64d335",
+      "bytes": 575
+    },
+    "reproduce/test_portable.py": {
+      "kind": "new_delivery_support",
+      "sha256": "fd600be1e9be4df08ac2ecf400b32bfd1152a1508536dbf1ecff1688ae603db2",
+      "bytes": 7441
+    },
+    "README.md": {
+      "kind": "new_delivery_support",
+      "sha256": "ec329b0546de7a70a7adcfd1926cbf90072622cc4290f1b52bb223d0235853d3",
+      "bytes": 9183
+    },
+    "requirements-runner.txt": {
+      "kind": "new_delivery_support",
+      "sha256": "be87d85065db0756ba69b27f5597e192f12648d6a7f32e58703526aac8a511ac",
+      "bytes": 227
+    },
+    ".gitignore": {
+      "kind": "new_delivery_support",
+      "sha256": "e402a049b80777b6870af152fb1e1bfc8319a5fae093e3d7539a4f72ee443072",
+      "bytes": 269
+    }
+  },
+  "excluded": [
+    "TRAINING-DIAGNOSTICS.json",
+    "raw data and source excerpts",
+    "annotations and manual adjudication decisions",
+    "model requests and responses",
+    "empirical summaries and traces",
+    "approvals, budgets and execution markers",
+    "internal coordination records",
+    "reconcile_dev_references.py (embeds case-specific adjudication content)",
+    "test_dev_data.py (requires excluded local archive)"
+  ]
+}
