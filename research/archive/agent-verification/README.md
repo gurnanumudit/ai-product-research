@@ -1,6 +1,6 @@
 # The Test Passed. The Patch Was Still Wrong.
 
-Historical exploratory study, preserved for reference. This is a different experiment from the current [AI reviewers and test evidence study](../ai-reviewers-test-evidence/README.md); their samples and findings should not be combined.
+**Archived exploratory study — no current published article.** Preserved for reference; none of the three current production articles uses this package. This is a different experiment from the published [AI reviewers and test evidence study](../../ai-reviewers-test-evidence/README.md); their samples and findings should not be combined.
 
 Public evidence for a bounded study of whether one AI coding agent could safely approve another
 agent's patch.
@@ -42,7 +42,7 @@ was not safe as an automatic release gate.
 Run the public check with Python 3.11 or newer:
 
 ```bash
-python3 research/agent-verification/reproduce.py
+python3 research/archive/agent-verification/reproduce.py
 ```
 
 The check confirms that the article's counts and rates agree with the frozen public aggregate. It

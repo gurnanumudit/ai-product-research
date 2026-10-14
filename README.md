@@ -37,7 +37,7 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Current study: methods, derived observations, analysis, and figures |
-| [research/agent-verification/](research/agent-verification/README.md) | Preserved earlier exploratory study, separate from the current article |
+| [research/archive/agent-verification/](research/archive/agent-verification/README.md) | Historical exploratory study — no current published article |
 
 Each new study gets its own folder. Private execution logs, credentials, cached repositories and unfinished experiments are not part of this repository. Earlier website versions remain recoverable in Git history.
 

@@ -7,7 +7,7 @@ It makes no network calls and does not regenerate patches or rerun official grad
 From the repository root:
 
 ```bash
-python3 research/agent-verification/reproduce.py
+python3 research/archive/agent-verification/reproduce.py
 ```
 
 The script reads `data/confirmatory-analysis.json` and checks the reported sample size, verifier
