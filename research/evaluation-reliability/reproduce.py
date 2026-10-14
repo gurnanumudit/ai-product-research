@@ -11,6 +11,9 @@ import tempfile
 
 
 ROOT = Path(__file__).resolve().parent
+STUDY = ROOT / "study"
+DATA = ROOT / "data" / "run1"
+RESULTS = ROOT / "results"
 PROTOCOL_SHA256 = "24aa3bd8f1dbcae428dd22ab6b65c9be44b34d8d5d074d46759323a561774fef"
 
 
@@ -35,7 +38,7 @@ def verify_package():
 
 
 def verify_article(analysis):
-    article = json.loads((ROOT / "article-results.json").read_text())
+    article = json.loads((RESULTS / "article-results.json").read_text())
     worlds = {world["world_id"]: world for world in analysis["worlds"]}
     methods = ("row_fixed", "row_peek", "context_fixed", "context_peek",
                "context_adjusted", "integrity_adjusted")
@@ -68,7 +71,7 @@ def verify_article(analysis):
 
 
 def command(*args):
-    subprocess.run([sys.executable, "-B", *map(str, args)], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "-B", *map(str, args)], cwd=STUDY, check=True)
 
 
 def main():
@@ -82,23 +85,23 @@ def main():
     print("Verification output (retained):", output, flush=True)
     command("-m", "unittest", "-v", "test_simulation", "test_review")
     command("independent_reproduce.py")
-    command("summarize.py", ROOT / "run1", output / "analysis.json")
-    assert sha(output / "analysis.json") == sha(ROOT / "analysis.json"), "Saved analysis differs"
-    command("audit_saved.py", ROOT / "run1", output / "analysis.json")
+    command("summarize.py", DATA, output / "analysis.json")
+    assert sha(output / "analysis.json") == sha(RESULTS / "analysis.json"), "Saved analysis differs"
+    command("audit_saved.py", DATA, output / "analysis.json")
     command("render_tables.py", output / "analysis.json", output / "ALL-RATES.md")
-    assert sha(output / "ALL-RATES.md") == sha(ROOT / "ALL-RATES.md"), "Rendered rates differ"
+    assert sha(output / "ALL-RATES.md") == sha(RESULTS / "ALL-RATES.md"), "Rendered rates differ"
     rows = verify_article(json.loads((output / "analysis.json").read_text()))
     if args.rerun:
         run = output / "rerun"
         command("-c", "import simulation, sys; simulation.execute_study(sys.argv[1], sys.argv[2], sys.argv[3])",
-                run, ROOT / "PROTOCOL.md", PROTOCOL_SHA256)
+                run, STUDY / "PROTOCOL.md", PROTOCOL_SHA256)
         # Paths, Python version, runtime and gzip implementations can vary by host.
         # Compare the scientific JSON streams separately from those metadata.
         for name in ("ledger.jsonl.gz", "decisions.jsonl.gz"):
-            assert sha(run / name, compressed=True) == sha(ROOT / "run1" / name, compressed=True), name
-        assert sha(run / "summary.json") == sha(ROOT / "run1" / "summary.json"), "Rerun counts differ"
+            assert sha(run / name, compressed=True) == sha(DATA / name, compressed=True), name
+        assert sha(run / "summary.json") == sha(DATA / "summary.json"), "Rerun counts differ"
         command("summarize.py", run, output / "rerun-analysis.json")
-        assert sha(output / "rerun-analysis.json") == sha(ROOT / "analysis.json"), "Rerun analysis differs"
+        assert sha(output / "rerun-analysis.json") == sha(RESULTS / "analysis.json"), "Rerun analysis differs"
         command("audit_saved.py", run, output / "rerun-analysis.json")
     print(json.dumps({"status": "passed", "package_files_verified": verified,
                       "article_rows_verified": rows, "full_frozen_seed_rerun": args.rerun,
