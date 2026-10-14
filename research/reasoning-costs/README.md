@@ -1,20 +1,28 @@
 # When is more reasoning worth it?
 
-Offline analysis supplement for a study of analytical work beyond coding:
-134 DSBench questions (29 easy, 55 medium, 50 hard), three models and three
-reasoning settings. The article remains an unpublished review draft; this
-release publishes its numerical analysis materials, not the website.
+[Read the published article](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) · [All studies](../README.md)
+
+**Question:** When does extra reasoning improve analytical answers enough to justify its additional model cost?
+
+We compared three models at three reasoning settings on the same 134 DSBench data-analysis questions. This package contains the derived outcomes, recorded costs and offline analysis behind the article.
+
+## Study at a glance
+
+- **Tasks:** 134 questions from 24 source contexts, including Excel workbooks: 29 easy, 55 medium and 50 hard.
+- **Configurations:** Luna, Terra and Sol, each with none, low and high reasoning. These are historical recorded model routes, not a claim of current availability; exact identifiers are in [Methods](METHODS.md).
+- **Comparison:** correct final answers and recorded model-cost exposure across the nine configurations, using the same questions and tools.
+- **Design:** a descriptive comparison, not a randomized experiment or a validated model-routing policy. Difficulty labels were assigned by the study.
 
 ## Reproduce the numbers
 
-Python 3.10 or later, no dependencies, credentials, network access or model calls:
+From the repository root, with Python 3.10 or later. No dependencies, credentials, network access or model calls:
 
 ```sh
 python3 research/reasoning-costs/reproduce.py
 ```
 
 The script checks the exported records against frozen article results and writes
-`output/analysis.json` and `output/results.md`. It reproduces all 27
+`research/reasoning-costs/output/analysis.json` and `research/reasoning-costs/output/results.md` (ignored by Git). It reproduces all 27
 model × reasoning × difficulty result/cost cells, overall and cohort results,
 paired changes, equal-context averages, failure-filtered checks, the hard-question
 cost frontier and the illustrative dollar-impact comparisons.
@@ -47,6 +55,8 @@ Low reasoning improved success over none for each tested model and difficulty
 group. High reasoning's benefit varied by model and workload. Lower model cost
 and highest observed accuracy are different objectives; the cost of a wrong
 answer is not measured here.
+
+Cost exposure includes recorded charges and pending reservations, not settled invoices or the full cost of deployment. Selected tasks, shared source contexts and changes in execution conditions limit generalization. See [Methods](METHODS.md) for exclusions, retries and sensitivity checks.
 
 The recommendation comparisons are illustrative, not a validated routing policy.
 They use Luna low for easy/medium and Luna high for hard as lower-cost options,

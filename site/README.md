@@ -1,10 +1,10 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage features the evaluation-reliability study, followed by the reasoning-cost and test-evidence articles.
+Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage links to three published articles. Research data, methods and offline reproduction live separately in [research/](../research/README.md).
 
-## Run locally
+## Run and check locally
 
-Node.js 22.13 or later is required. Node.js 24 is recommended.
+Node.js 22.13 or later is required; Node.js 24 is recommended. From the repository root:
 
 ```sh
 cd site
@@ -12,64 +12,49 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server. Validate the production build, all three articles, anchors and release metadata with `npm test`. Figure-preservation checks run from this GitHub checkout with `node --test tests/evidence-figures.test.mjs`.
+Open the local URL printed by the server. All subsequent commands in this README run from `site/`.
 
-## Publication and local review
+```sh
+npm test
+node --test tests/evidence-figures.test.mjs
+```
 
-The homepage shows all three published studies. The evaluation-reliability article is available
-at `/research/how-to-avoid-false-confidence-in-ai-evaluations`. The reasoning article lives
-at `/research/when-is-more-reasoning-worth-it`; the existing
-`/preview/reasoning-costs` address remains available.
+`npm test` builds the production site and checks rendered pages, article navigation, anchors and release metadata. The separate figure check compares the reviewer article's presentation data with the published research supplement. Neither command runs AI models or collects research data.
 
-The owner approved the earlier articles on September 24, 2026 and the evaluation-reliability article on October 13, 2026 (display date September 30, as requested).
-`lib/research-release.ts` records the release and public origin.
-A GitHub push does not publish the live website.
+## Article-to-source map
 
-For phone review without development/HMR module imports:
+| Published article | Main presentation source | Research evidence |
+| --- | --- | --- |
+| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [evaluation-reliability](../research/evaluation-reliability/README.md) |
+| [When is more reasoning worth it?](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) | [app/preview/reasoning-costs/](app/preview/reasoning-costs/) | [reasoning-costs](../research/reasoning-costs/README.md) |
+| [How AI reviewers use test evidence](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) | [content/evidence-review-v3.ts](content/evidence-review-v3.ts) and [components/article/](components/article/) | [ai-reviewers-test-evidence](../research/ai-reviewers-test-evidence/README.md) |
+
+The permanent routes and sharing metadata are under [app/research/](app/research/). The reasoning article reuses the implementation in `app/preview/reasoning-costs/`; that older URL remains available for compatibility. It is not a fourth article. Earlier reviewer content modules are still imported by the current article and are not unused drafts.
+
+Other editing points:
+
+- [components/research-home.tsx](components/research-home.tsx): homepage introduction and article listing.
+- [lib/research-release.ts](lib/research-release.ts): publication state and canonical public origin.
+- [content/publication.ts](content/publication.ts): reviewer article's publication links.
+- [content/evaluation-reliability-results.json](content/evaluation-reliability-results.json), [content/reasoning-expanded.json](content/reasoning-expanded.json) and [content/evidence-figure-data.json](content/evidence-figure-data.json): article chart and table inputs. Changes must be checked against the corresponding research package, not edited to change a finding independently.
+- [public/research-assets/](public/research-assets/): article illustrations and chart assets.
+
+## Optional local review build
+
+For a bundled preview without development-only imports:
 
 ```sh
 npm run build:review
 TEST_REVIEW=1 node --test tests/rendered-html.test.mjs
-npm run start -- --hostname 0.0.0.0 --port 5173
+npm run start -- --hostname 127.0.0.1 --port 5173
 ```
 
-This is a **local-only review build**, with the articles and noindex metadata.
-Keep it on the review machine; do not upload its output to Sites. A later ordinary
-`npm run build` resets the output to the public production state.
-The browser review exposed a link-prefetch setup error; article navigation now uses
-ordinary anchors rather than client-router prefetching. The reported phone import
-failure could not be reproduced in the desktop browser. The bundled preview
-removes development-only imports; the owner confirmed no errors on the phone.
+This is a local-only review build with **noindex** metadata. Do not publish its output. An ordinary `npm run build` restores production output; run `npm test` before a release. To review on a phone on a trusted local network, use `--hostname 0.0.0.0` instead, which exposes the preview to that network.
 
-For subsequent releases, obtain owner approval and run a fresh ordinary
-production build before the separate Sites save/deploy workflow. Do not deploy
-the noindex review build.
-The prior authoring checkout is no longer the phone-review source; this maintained
-GitHub checkout supplies the bundled preview.
+## Hosting and release boundaries
 
-## Where to edit
+The live website is managed through OpenAI Sites. [.openai/hosting.json](.openai/hosting.json) identifies the existing project; it contains no credential and does not grant deployment permission.
 
-- `components/research-home.tsx`: homepage introduction and study listing.
-- `components/evaluation-reliability/`: evaluation-reliability article and styling.
-- `content/evaluation-reliability-results.json`: frozen simulation chart and appendix values.
-- `app/research/how-to-avoid-false-confidence-in-ai-evaluations/page.tsx`: permanent route and sharing metadata.
-- `content/publication.ts`: article URL, GitHub and LinkedIn links.
-- `content/evidence-review-v3.ts`: current article and appendix.
-- `components/article/`: layout, index and data exhibits.
-- `content/evidence-figure-data.json`: presentation data for the responsive figures.
-  Estimates and intervals are checked against the published supplement and
-  original SVG figures; the research records are unchanged.
-- `app/preview/reasoning-costs/`: shared reasoning article, figures and difficulty methods.
-- `app/research/when-is-more-reasoning-worth-it/page.tsx`: permanent address, sharing the same article.
-- `content/reasoning-expanded.json`: frozen chart/table inputs, paired with the [offline research supplement](../research/reasoning-costs/README.md).
-- `public/research-assets/`: charts and illustration.
+**A GitHub push does not deploy the website.** Publishing requires owner approval, a fresh production build, and the separate Sites save/deploy workflow. After deployment, check the homepage, all three article routes, research links and sharing metadata on the public origin.
 
-Supporting article modules preserve material used in the appendices. Draft routes are not additional published articles.
-
-## Hosting
-
-The live website is managed through OpenAI Sites. `.openai/hosting.json` identifies the existing project; it contains no credential and does not grant deployment permission. Contributors must not publish to that project without the owner's authorization.
-
-GitHub is the maintained source repository. Pushing here does **not** automatically deploy the website. The owner builds, saves and deploys reviewed source through Sites. Public deployment is distinct from local preview.
-
-Displaying the articles needs no model API key, database or paid research run. Generated build output and local credentials are excluded from Git.
+Displaying the articles needs no model API key, database or paid research run. Build output, installed dependencies and local credentials are excluded from Git. Historical publication and implementation changes remain available in Git history.

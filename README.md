@@ -4,7 +4,9 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 [Read the website](https://research.muditgurnani.chatgpt.site/)
 
-## Current research
+## Published articles
+
+Coming from an article? Its study folder is the starting point for the methods, evidence and reproduction instructions.
 
 ### How to avoid false confidence in AI evaluations
 
@@ -33,26 +35,38 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 
 | Folder | Contents |
 | --- | --- |
-| [site/](site/README.md) | Website source, article, and web assets |
+| [site/](site/README.md) | Website source, all three articles, and web assets |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
-| [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Current study: methods, derived observations, analysis, and figures |
-| [research/archive/agent-verification/](research/archive/agent-verification/README.md) | Historical exploratory study — no current published article |
+| [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Reviewer study: methods, derived observations, analysis, and figures |
+| [research/archive/](research/archive/README.md) | Historical exploratory work — not evidence for the current published articles |
 
 Each new study gets its own folder. Private execution logs, credentials, cached repositories and unfinished experiments are not part of this repository. Earlier website versions remain recoverable in Git history.
 
-## Reproduce the current results
+## Reproduce the published numbers
 
-Python 3.10 or later, no dependencies or model calls:
+Clone the repository and run these commands from its root. All three use the Python standard library, with no model calls, API keys or paid services:
 
 ```sh
 python3 research/ai-reviewers-test-evidence/reproduce.py
 python3 research/reasoning-costs/reproduce.py
-python3 research/evaluation-reliability/reproduce.py
+python3 -B research/evaluation-reliability/reproduce.py
 ```
+
+The reviewer and reasoning packages require Python 3.10 or later. The evaluation-reliability package was run with Python 3.14.3 and requires macOS, Linux or WSL; see its [environment and verification notes](research/evaluation-reliability/README.md#reproduce-the-published-results). Do not run verification with Python's `-O` option, which disables assertions.
+
+**What these commands establish:** the saved records reproduce the published numerical results. For the two model studies, they do not rerun the original models or independently regrade raw answers. The simulation package also verifies its implementation and offers a separate full replay. Each study documents what is included and what cannot be reproduced from the public release.
+
+Generated output is kept separate from frozen evidence. Start with the [research index](research/README.md) for the file guide and reproduction boundaries of each study.
 
 For website setup, see [site/README.md](site/README.md).
 
+## Questions, corrections and reuse
+
+Please [open an issue](https://github.com/gurnanumudit/ai-product-research/issues) with the article or study name, the claim or file in question, and any steps needed to reproduce the issue. Include your Python version and command output for a failed check; remove credentials and private information first.
+
+When referencing this work, link to the relevant article and credit Mudit Gurnani. For a reproducible analysis, also record the repository commit you used. Corrections should preserve the original evidence and explain any change to published numbers; do not silently overwrite frozen results.
+
 ## License and attribution
 
-Original software is covered by the existing [MIT license](LICENSE). Third-party materials retain their own rights and attribution; see the study's [provenance and release scope](research/ai-reviewers-test-evidence/PROVENANCE.md). Numerical reproduction is deliberately distinguished from end-to-end experimental reproduction.
+Original software is covered by the [MIT license](LICENSE). Third-party materials retain their own rights and attribution. See the provenance notes for [evaluation reliability](research/evaluation-reliability/PROVENANCE.md), [reasoning costs](research/reasoning-costs/PROVENANCE.md), and [AI reviewers](research/ai-reviewers-test-evidence/PROVENANCE.md) before reusing study materials.
