@@ -21,6 +21,7 @@
 .earlier { border-top: 1px solid var(--line); padding: 30px 0 46px; }
 .earlier h2 { font: 400 1rem/1.4 var(--sans); color: var(--muted); margin: 0 0 26px; }
 .previous { display: grid; grid-template-columns: minmax(150px, 240px) minmax(0, 1fr); gap: 34px; align-items: start; }
+.previous + .previous { margin-top: 34px; padding-top: 34px; border-top: 1px solid var(--line); }
 .thumbnail img { display: block; width: 100%; height: auto; border-radius: 5px; }
 .previous .copy h3 { font-size: clamp(1.5rem, 2.2vw, 1.8rem); }
 .previous .copy p { max-width: 690px; }

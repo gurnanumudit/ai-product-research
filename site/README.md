@@ -1,6 +1,6 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage features the reasoning-cost study above the earlier test-evidence article.
+Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage features the evaluation-reliability study, followed by the reasoning-cost and test-evidence articles.
 
 ## Run locally
 
@@ -12,15 +12,16 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by the server. Validate the production build, both articles, anchors and release metadata with `npm test`. Figure-preservation checks run from this GitHub checkout with `node --test tests/evidence-figures.test.mjs`.
+Open the local URL printed by the server. Validate the production build, all three articles, anchors and release metadata with `npm test`. Figure-preservation checks run from this GitHub checkout with `node --test tests/evidence-figures.test.mjs`.
 
 ## Publication and local review
 
-The development homepage shows both studies. The new article is available locally
+The homepage shows all three published studies. The evaluation-reliability article is available
+at `/research/how-to-avoid-false-confidence-in-ai-evaluations`. The reasoning article lives
 at `/research/when-is-more-reasoning-worth-it`; the existing
 `/preview/reasoning-costs` address remains available.
 
-The owner approved both articles for publication on September 24, 2026.
+The owner approved the earlier articles on September 24, 2026 and the evaluation-reliability article on October 13, 2026 (display date September 30, as requested).
 `lib/research-release.ts` records the release and public origin.
 A GitHub push does not publish the live website.
 
@@ -32,7 +33,7 @@ TEST_REVIEW=1 node --test tests/rendered-html.test.mjs
 npm run start -- --hostname 0.0.0.0 --port 5173
 ```
 
-This is a **local-only review build**, with both articles and noindex metadata.
+This is a **local-only review build**, with the articles and noindex metadata.
 Keep it on the review machine; do not upload its output to Sites. A later ordinary
 `npm run build` resets the output to the public production state.
 The browser review exposed a link-prefetch setup error; article navigation now uses
@@ -49,6 +50,9 @@ GitHub checkout supplies the bundled preview.
 ## Where to edit
 
 - `components/research-home.tsx`: homepage introduction and study listing.
+- `components/evaluation-reliability/`: evaluation-reliability article and styling.
+- `content/evaluation-reliability-results.json`: frozen simulation chart and appendix values.
+- `app/research/how-to-avoid-false-confidence-in-ai-evaluations/page.tsx`: permanent route and sharing metadata.
 - `content/publication.ts`: article URL, GitHub and LinkedIn links.
 - `content/evidence-review-v3.ts`: current article and appendix.
 - `components/article/`: layout, index and data exhibits.

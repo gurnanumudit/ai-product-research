@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-09-27T18:40:34.510241+00:00",
+  "files": {
+    "PROTOCOL.md": "24aa3bd8f1dbcae428dd22ab6b65c9be44b34d8d5d074d46759323a561774fef",
+    "simulation.py": "38698b74bf5532ebf5b6a6e8167071058a433bb9dfc7093973523346e3f48cdb",
+    "summarize.py": "21e1fef00ca3ed2470ab47dc5c8e020d6e27eb47cbef059580dadb5f42c2571b",
+    "test_simulation.py": "24236d7ecd1cd81857f704d60e6145cde193f30015944c369b52d3c373fd5156",
+    "test_review.py": "6a8c65eaa71cde0dd75526ffcb1bab691411ac38684af3c8c5215a2b4f844d15",
+    "independent_reproduce.py": "61e8b0a705d3ed6cf5c76232712bde6cb09da63bbb87fd6ed59937f3499d1813"
+  },
+  "independent_review": "32 deterministic tests,30 prescribed prefix cohorts,600 interval checks; code GO; formal Loop1 not yet started",
+  "external_spend_cap_usd": 0
+}

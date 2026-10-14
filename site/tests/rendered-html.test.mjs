@@ -6,7 +6,7 @@ import { setTimeout as delay } from 'node:timers/promises';
 test('production homepage and article render with direct study links', async () => {
   const reviewBuild = process.env.TEST_REVIEW === '1';
   const port = process.env.TEST_PORT || '3197';
-  const server = spawn('npm', ['run', 'start', '--', '--port', port], {
+  const server = spawn(process.execPath, ['node_modules/vinext/dist/cli.js', 'start', '--port', port], {
     cwd: process.cwd(), detached: process.platform !== 'win32',
     stdio: ['ignore', 'pipe', 'pipe'], env: process.env,
   });
@@ -25,6 +25,21 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    const reliabilityPath = '/research/how-to-avoid-false-confidence-in-ai-evaluations';
+    assert.equal((homeHtml.match(new RegExp(`<a href="${reliabilityPath}"`, 'g')) || []).length, 3);
+    await checkSocialPreview(port, reliabilityPath, '/research-assets/evaluation-reliability/evaluation-confidence-cover.png');
+    const reliability = await fetch(`http://localhost:${port}${reliabilityPath}`);
+    assert.equal(reliability.status, 200);
+    const reliabilityHtml = await reliability.text();
+    assert.ok(reliabilityHtml.includes('September 30, 2026'));
+    assert.ok(reliabilityHtml.includes('https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability'));
+    assert.ok(!reliabilityHtml.includes('Unpublished') && !reliabilityHtml.includes('release is not yet'));
+    assert.ok(reliabilityHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
+    assert.equal((reliabilityHtml.match(/data-switch-value=/g) || []).length, 18);
+    assert.equal((reliabilityHtml.match(/<details id="results-/g) || []).length, 15);
+    checkAnchors(reliabilityHtml);
+    const navigation = await fetch(`http://localhost:${port}/research-assets/evaluation-reliability/appendix-navigation.js`);
+    assert.equal(navigation.status, 200);
     await checkSocialPreview(port, '/', '/og-research-journey-v1.png');
     await checkSocialPreview(port, articlePath, '/research-assets/evidence-review/v3/three-lenses.png');
     await checkSocialPreview(port, '/research/when-is-more-reasoning-worth-it', '/research-assets/reasoning-costs/reasoning-selector-cover-v2.png');

@@ -1,0 +1,1189 @@
+{
+  "worlds": [
+    {
+      "id": "w00_clean_iid",
+      "name": "Independent questions, complete data",
+      "trueGain": -4,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 77,
+          "inconclusive": 23,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 75.1,
+          "correctHigh": 78.79
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0.15,
+          "falseHold": 0,
+          "correct": 82.9,
+          "inconclusive": 16.95,
+          "meanContexts": 119.3,
+          "falseShipLow": 0.05,
+          "falseShipHigh": 0.44,
+          "correctLow": 81.19,
+          "correctHigh": 84.49
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 76.7,
+          "inconclusive": 23.3,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 74.8,
+          "correctHigh": 78.5
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0.15,
+          "falseHold": 0,
+          "correct": 82.65,
+          "inconclusive": 17.2,
+          "meanContexts": 118.28,
+          "falseShipLow": 0.05,
+          "falseShipHigh": 0.44,
+          "correctLow": 80.93,
+          "correctHigh": 84.25
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 62,
+          "inconclusive": 38,
+          "meanContexts": 152.68,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 59.85,
+          "correctHigh": 64.1
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 62,
+          "inconclusive": 38,
+          "meanContexts": 152.68,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 59.85,
+          "correctHigh": 64.1
+        }
+      ]
+    },
+    {
+      "id": "w01_clean_iid",
+      "name": "Independent questions, complete data",
+      "trueGain": 2,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 2.05,
+          "falseHold": 0,
+          "correct": 3.1,
+          "inconclusive": 94.85,
+          "meanContexts": 200,
+          "falseShipLow": 1.51,
+          "falseShipHigh": 2.77,
+          "correctLow": 2.43,
+          "correctHigh": 3.95
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 7.6,
+          "falseHold": 0,
+          "correct": 8.3,
+          "inconclusive": 84.1,
+          "meanContexts": 183.08,
+          "falseShipLow": 6.52,
+          "falseShipHigh": 8.84,
+          "correctLow": 7.17,
+          "correctHigh": 9.59
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 2.25,
+          "falseHold": 0,
+          "correct": 2.9,
+          "inconclusive": 94.85,
+          "meanContexts": 200,
+          "falseShipLow": 1.69,
+          "falseShipHigh": 3,
+          "correctLow": 2.25,
+          "correctHigh": 3.73
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 7.95,
+          "falseHold": 0,
+          "correct": 8.45,
+          "inconclusive": 83.6,
+          "meanContexts": 182.12,
+          "falseShipLow": 6.84,
+          "falseShipHigh": 9.22,
+          "correctLow": 7.31,
+          "correctHigh": 9.75
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 2.55,
+          "falseHold": 0,
+          "correct": 2.35,
+          "inconclusive": 95.1,
+          "meanContexts": 195.02,
+          "falseShipLow": 1.94,
+          "falseShipHigh": 3.34,
+          "correctLow": 1.77,
+          "correctHigh": 3.11
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 2.55,
+          "falseHold": 0,
+          "correct": 2.35,
+          "inconclusive": 95.1,
+          "meanContexts": 195.02,
+          "falseShipLow": 1.94,
+          "falseShipHigh": 3.34,
+          "correctLow": 1.77,
+          "correctHigh": 3.11
+        }
+      ]
+    },
+    {
+      "id": "w02_clean_iid",
+      "name": "Independent questions, complete data",
+      "trueGain": 10,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 95.05,
+          "inconclusive": 4.95,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 94.01,
+          "correctHigh": 95.92
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 96.7,
+          "inconclusive": 3.3,
+          "meanContexts": 90.3,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 95.82,
+          "correctHigh": 97.4
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 95.05,
+          "inconclusive": 4.95,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 94.01,
+          "correctHigh": 95.92
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 96.85,
+          "inconclusive": 3.15,
+          "meanContexts": 89.72,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 95.99,
+          "correctHigh": 97.53
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 86.45,
+          "inconclusive": 13.55,
+          "meanContexts": 121.62,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 84.88,
+          "correctHigh": 87.88
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 86.45,
+          "inconclusive": 13.55,
+          "meanContexts": 121.62,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 84.88,
+          "correctHigh": 87.88
+        }
+      ]
+    },
+    {
+      "id": "w03_clustered_complete",
+      "name": "Shared contexts, complete data",
+      "trueGain": -4,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 70.3,
+          "inconclusive": 29.7,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 68.26,
+          "correctHigh": 72.26
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 1,
+          "falseHold": 0,
+          "correct": 78.2,
+          "inconclusive": 20.8,
+          "meanContexts": 114.44,
+          "falseShipLow": 0.65,
+          "falseShipHigh": 1.54,
+          "correctLow": 76.34,
+          "correctHigh": 79.95
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 53.65,
+          "inconclusive": 46.35,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 51.46,
+          "correctHigh": 55.83
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0.3,
+          "falseHold": 0,
+          "correct": 61.75,
+          "inconclusive": 37.95,
+          "meanContexts": 142.9,
+          "falseShipLow": 0.14,
+          "falseShipHigh": 0.65,
+          "correctLow": 59.6,
+          "correctHigh": 63.86
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0.05,
+          "falseHold": 0,
+          "correct": 38.5,
+          "inconclusive": 61.45,
+          "meanContexts": 171.32,
+          "falseShipLow": 0.01,
+          "falseShipHigh": 0.28,
+          "correctLow": 36.39,
+          "correctHigh": 40.65
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0.05,
+          "falseHold": 0,
+          "correct": 38.5,
+          "inconclusive": 61.45,
+          "meanContexts": 171.32,
+          "falseShipLow": 0.01,
+          "falseShipHigh": 0.28,
+          "correctLow": 36.39,
+          "correctHigh": 40.65
+        }
+      ]
+    },
+    {
+      "id": "w04_clustered_complete",
+      "name": "Shared contexts, complete data",
+      "trueGain": 2,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 6.15,
+          "falseHold": 0,
+          "correct": 6.3,
+          "inconclusive": 87.55,
+          "meanContexts": 200,
+          "falseShipLow": 5.18,
+          "falseShipHigh": 7.29,
+          "correctLow": 5.32,
+          "correctHigh": 7.45
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 17.05,
+          "falseHold": 0,
+          "correct": 16.05,
+          "inconclusive": 66.9,
+          "meanContexts": 164.16,
+          "falseShipLow": 15.47,
+          "falseShipHigh": 18.76,
+          "correctLow": 14.51,
+          "correctHigh": 17.72
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 2.55,
+          "falseHold": 0,
+          "correct": 2.5,
+          "inconclusive": 94.95,
+          "meanContexts": 200,
+          "falseShipLow": 1.94,
+          "falseShipHigh": 3.34,
+          "correctLow": 1.9,
+          "correctHigh": 3.28
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 7.2,
+          "falseHold": 0,
+          "correct": 6.95,
+          "inconclusive": 85.85,
+          "meanContexts": 185.18,
+          "falseShipLow": 6.15,
+          "falseShipHigh": 8.42,
+          "correctLow": 5.92,
+          "correctHigh": 8.15
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 1.75,
+          "falseHold": 0,
+          "correct": 1.8,
+          "inconclusive": 96.45,
+          "meanContexts": 196.26,
+          "falseShipLow": 1.26,
+          "falseShipHigh": 2.42,
+          "correctLow": 1.3,
+          "correctHigh": 2.48
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 1.75,
+          "falseHold": 0,
+          "correct": 1.8,
+          "inconclusive": 96.45,
+          "meanContexts": 196.26,
+          "falseShipLow": 1.26,
+          "falseShipHigh": 2.42,
+          "correctLow": 1.3,
+          "correctHigh": 2.48
+        }
+      ]
+    },
+    {
+      "id": "w05_clustered_complete",
+      "name": "Shared contexts, complete data",
+      "trueGain": 10,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 89.95,
+          "inconclusive": 10.05,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 88.55,
+          "correctHigh": 91.19
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0,
+          "falseHold": 0.45,
+          "correct": 93.45,
+          "inconclusive": 6.1,
+          "meanContexts": 90.24,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 92.28,
+          "correctHigh": 94.45
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 78.3,
+          "inconclusive": 21.7,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 76.44,
+          "correctHigh": 80.05
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0,
+          "falseHold": 0.1,
+          "correct": 83.65,
+          "inconclusive": 16.25,
+          "meanContexts": 116.18,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 81.96,
+          "correctHigh": 85.21
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0.05,
+          "correct": 63,
+          "inconclusive": 36.95,
+          "meanContexts": 150.98,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 60.86,
+          "correctHigh": 65.09
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0.05,
+          "correct": 63,
+          "inconclusive": 36.95,
+          "meanContexts": 150.98,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 60.86,
+          "correctHigh": 65.09
+        }
+      ]
+    },
+    {
+      "id": "w06_clustered_mcar",
+      "name": "Shared contexts, random missing outcomes",
+      "trueGain": -4,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0.1,
+          "falseHold": 0,
+          "correct": 64.1,
+          "inconclusive": 35.8,
+          "meanContexts": 200,
+          "falseShipLow": 0.03,
+          "falseShipHigh": 0.36,
+          "correctLow": 61.97,
+          "correctHigh": 66.17
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 1.25,
+          "falseHold": 0,
+          "correct": 73.3,
+          "inconclusive": 25.45,
+          "meanContexts": 124.08,
+          "falseShipLow": 0.85,
+          "falseShipHigh": 1.84,
+          "correctLow": 71.32,
+          "correctHigh": 75.19
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 46.85,
+          "inconclusive": 53.15,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 44.67,
+          "correctHigh": 49.04
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0.55,
+          "falseHold": 0,
+          "correct": 56.75,
+          "inconclusive": 42.7,
+          "meanContexts": 147.28,
+          "falseShipLow": 0.31,
+          "falseShipHigh": 0.98,
+          "correctLow": 54.57,
+          "correctHigh": 58.91
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0.05,
+          "falseHold": 0,
+          "correct": 32.6,
+          "inconclusive": 67.35,
+          "meanContexts": 175.08,
+          "falseShipLow": 0.01,
+          "falseShipHigh": 0.28,
+          "correctLow": 30.58,
+          "correctHigh": 34.69
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w07_clustered_mcar",
+      "name": "Shared contexts, random missing outcomes",
+      "trueGain": 2,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 6.1,
+          "falseHold": 0,
+          "correct": 5.8,
+          "inconclusive": 88.1,
+          "meanContexts": 200,
+          "falseShipLow": 5.13,
+          "falseShipHigh": 7.24,
+          "correctLow": 4.86,
+          "correctHigh": 6.91
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 15,
+          "falseHold": 0,
+          "correct": 15.15,
+          "inconclusive": 69.85,
+          "meanContexts": 166.76,
+          "falseShipLow": 13.5,
+          "falseShipHigh": 16.63,
+          "correctLow": 13.65,
+          "correctHigh": 16.79
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 2.7,
+          "falseHold": 0,
+          "correct": 2.6,
+          "inconclusive": 94.7,
+          "meanContexts": 200,
+          "falseShipLow": 2.08,
+          "falseShipHigh": 3.51,
+          "correctLow": 1.99,
+          "correctHigh": 3.39
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 7.4,
+          "falseHold": 0,
+          "correct": 7.3,
+          "inconclusive": 85.3,
+          "meanContexts": 184.02,
+          "falseShipLow": 6.33,
+          "falseShipHigh": 8.63,
+          "correctLow": 6.24,
+          "correctHigh": 8.52
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 2.4,
+          "falseHold": 0,
+          "correct": 2.1,
+          "inconclusive": 95.5,
+          "meanContexts": 195.46,
+          "falseShipLow": 1.81,
+          "falseShipHigh": 3.17,
+          "correctLow": 1.56,
+          "correctHigh": 2.83
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w08_clustered_mcar",
+      "name": "Shared contexts, random missing outcomes",
+      "trueGain": 10,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 84.55,
+          "inconclusive": 15.45,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 82.9,
+          "correctHigh": 86.07
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0,
+          "falseHold": 0.4,
+          "correct": 89.55,
+          "inconclusive": 10.05,
+          "meanContexts": 100.36,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 88.13,
+          "correctHigh": 90.82
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 71.75,
+          "inconclusive": 28.25,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 69.74,
+          "correctHigh": 73.68
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0,
+          "falseHold": 0.25,
+          "correct": 78.1,
+          "inconclusive": 21.65,
+          "meanContexts": 124.14,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 76.23,
+          "correctHigh": 79.86
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0.05,
+          "correct": 54.9,
+          "inconclusive": 45.05,
+          "meanContexts": 156.64,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 52.71,
+          "correctHigh": 57.07
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w09_clustered_mnar",
+      "name": "Shared contexts, selectively missing outcomes",
+      "trueGain": -4,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 55.05,
+          "falseHold": 0,
+          "correct": 0.05,
+          "inconclusive": 44.9,
+          "meanContexts": 200,
+          "falseShipLow": 52.86,
+          "falseShipHigh": 57.22,
+          "correctLow": 0.01,
+          "correctHigh": 0.28
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 66.05,
+          "falseHold": 0,
+          "correct": 1.1,
+          "inconclusive": 32.85,
+          "meanContexts": 130.78,
+          "falseShipLow": 63.95,
+          "falseShipHigh": 68.09,
+          "correctLow": 0.73,
+          "correctHigh": 1.66
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 17.9,
+          "falseHold": 0,
+          "correct": 0.25,
+          "inconclusive": 81.85,
+          "meanContexts": 200,
+          "falseShipLow": 16.28,
+          "falseShipHigh": 19.64,
+          "correctLow": 0.11,
+          "correctHigh": 0.58
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 28.9,
+          "falseHold": 0,
+          "correct": 1.4,
+          "inconclusive": 69.7,
+          "meanContexts": 169.94,
+          "falseShipLow": 26.96,
+          "falseShipHigh": 30.93,
+          "correctLow": 0.97,
+          "correctHigh": 2.02
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 11.65,
+          "falseHold": 0,
+          "correct": 0.2,
+          "inconclusive": 88.15,
+          "meanContexts": 189.92,
+          "falseShipLow": 10.32,
+          "falseShipHigh": 13.13,
+          "correctLow": 0.08,
+          "correctHigh": 0.51
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w10_clustered_mnar",
+      "name": "Shared contexts, selectively missing outcomes",
+      "trueGain": 2,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 97.85,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 2.15,
+          "meanContexts": 200,
+          "falseShipLow": 97.12,
+          "falseShipHigh": 98.4,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 98.45,
+          "falseHold": 0,
+          "correct": 0.05,
+          "inconclusive": 1.5,
+          "meanContexts": 73.24,
+          "falseShipLow": 97.81,
+          "falseShipHigh": 98.91,
+          "correctLow": 0.01,
+          "correctHigh": 0.28
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 83.05,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 16.95,
+          "meanContexts": 200,
+          "falseShipLow": 81.34,
+          "falseShipHigh": 84.63,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 87.85,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 12.15,
+          "meanContexts": 109.62,
+          "falseShipLow": 86.35,
+          "falseShipHigh": 89.21,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 70.35,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 29.65,
+          "meanContexts": 143.18,
+          "falseShipLow": 68.31,
+          "falseShipHigh": 72.31,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w11_clustered_mnar",
+      "name": "Shared contexts, selectively missing outcomes",
+      "trueGain": 10,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 45.26,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 56.5,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 99.75,
+          "inconclusive": 0.25,
+          "meanContexts": 71.98,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.42,
+          "correctHigh": 99.89
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 100,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        }
+      ]
+    },
+    {
+      "id": "w12_clustered_duplicate",
+      "name": "Shared contexts, duplicated successful outcomes",
+      "trueGain": -4,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 99.25,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 0.75,
+          "meanContexts": 200,
+          "falseShipLow": 98.77,
+          "falseShipHigh": 99.54,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 99.2,
+          "falseHold": 0,
+          "correct": 0.35,
+          "inconclusive": 0.45,
+          "meanContexts": 59.4,
+          "falseShipLow": 98.7,
+          "falseShipHigh": 99.51,
+          "correctLow": 0.17,
+          "correctHigh": 0.72
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 39.3,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 60.7,
+          "meanContexts": 200,
+          "falseShipLow": 37.18,
+          "falseShipHigh": 41.46,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 50,
+          "falseHold": 0,
+          "correct": 0.55,
+          "inconclusive": 49.45,
+          "meanContexts": 154.16,
+          "falseShipLow": 47.81,
+          "falseShipHigh": 52.19,
+          "correctLow": 0.31,
+          "correctHigh": 0.98
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 26.55,
+          "falseHold": 0,
+          "correct": 0.15,
+          "inconclusive": 73.3,
+          "meanContexts": 179.68,
+          "falseShipLow": 24.66,
+          "falseShipHigh": 28.53,
+          "correctLow": 0.05,
+          "correctHigh": 0.44
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0.1,
+          "falseHold": 0,
+          "correct": 38.3,
+          "inconclusive": 61.6,
+          "meanContexts": 172.18,
+          "falseShipLow": 0.03,
+          "falseShipHigh": 0.36,
+          "correctLow": 36.19,
+          "correctHigh": 40.45
+        }
+      ]
+    },
+    {
+      "id": "w13_clustered_duplicate",
+      "name": "Shared contexts, duplicated successful outcomes",
+      "trueGain": 2,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 100,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 0,
+          "meanContexts": 200,
+          "falseShipLow": 99.81,
+          "falseShipHigh": 100,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 100,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 0,
+          "meanContexts": 43.88,
+          "falseShipLow": 99.81,
+          "falseShipHigh": 100,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 96.7,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 3.3,
+          "meanContexts": 200,
+          "falseShipLow": 95.82,
+          "falseShipHigh": 97.4,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 97.55,
+          "falseHold": 0,
+          "correct": 0.05,
+          "inconclusive": 2.4,
+          "meanContexts": 85.12,
+          "falseShipLow": 96.78,
+          "falseShipHigh": 98.14,
+          "correctLow": 0.01,
+          "correctHigh": 0.28
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 90.45,
+          "falseHold": 0,
+          "correct": 0,
+          "inconclusive": 9.55,
+          "meanContexts": 114.72,
+          "falseShipLow": 89.08,
+          "falseShipHigh": 91.66,
+          "correctLow": 0,
+          "correctHigh": 0.19
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 1.95,
+          "falseHold": 0,
+          "correct": 1.65,
+          "inconclusive": 96.4,
+          "meanContexts": 196.6,
+          "falseShipLow": 1.43,
+          "falseShipHigh": 2.65,
+          "correctLow": 1.18,
+          "correctHigh": 2.31
+        }
+      ]
+    },
+    {
+      "id": "w14_clustered_duplicate",
+      "name": "Shared contexts, duplicated successful outcomes",
+      "trueGain": 10,
+      "rows": [
+        {
+          "method": "row_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "row_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 40.12,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_fixed",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 200,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_peek",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 48.2,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "context_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 100,
+          "inconclusive": 0,
+          "meanContexts": 57.12,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 99.81,
+          "correctHigh": 100
+        },
+        {
+          "method": "integrity_adjusted",
+          "falseShip": 0,
+          "falseHold": 0,
+          "correct": 63.4,
+          "inconclusive": 36.6,
+          "meanContexts": 149.46,
+          "falseShipLow": 0,
+          "falseShipHigh": 0.19,
+          "correctLow": 61.27,
+          "correctHigh": 65.48
+        }
+      ]
+    }
+  ]
+}

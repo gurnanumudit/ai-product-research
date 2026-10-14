@@ -2,22 +2,30 @@
 
 Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani), exploring how AI works, where it falls short, and what makes it useful in everyday work.
 
-[Read the website](https://mudit-gurnani-research.muditgurnani.chatgpt.site/)
+[Read the website](https://research.muditgurnani.chatgpt.site/)
 
 ## Current research
+
+### How to avoid false confidence in AI evaluations
+
+A higher evaluation score is not always a reason to switch. We used simulations to examine how related questions, repeated checks and missing outcomes affect that decision.
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Code, frozen results and reproduction](research/evaluation-reliability/README.md)
+
+This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The package includes 15 scenarios, 2,000 simulated evaluations per scenario, six approaches and offline verification.
 
 ### When is more reasoning worth it?
 
 We compared three models at three reasoning settings on 134 analytical questions.
 The [study code, derived results and methods](research/reasoning-costs/README.md)
 reproduce the accuracy tables, cost comparisons and sensitivity checks offline.
-The accompanying article is still an unpublished review draft.
+Read the [published article](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it).
 
 ### How AI reviewers use test evidence
 
 We gave three AI reviewers the same proposed software fixes under five evidence scenarios. Test reports reduced faulty approvals on matched tasks, while reviewers differed in which benchmark-passing fixes they accepted. Changing a report's stated source did not produce a consistent follow-up increase in approval.
 
-[Read the article](https://mudit-gurnani-research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) · [Study code, data and methods](research/ai-reviewers-test-evidence/README.md)
+[Read the article](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) · [Study code, data and methods](research/ai-reviewers-test-evidence/README.md)
 
 The study contains 60 tasks and 1,692 usable reviews. Its offline supplement reproduces the numerical results from saved classifications, not the original model experiment or independent software verification.
 
@@ -26,6 +34,7 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | Folder | Contents |
 | --- | --- |
 | [site/](site/README.md) | Website source, article, and web assets |
+| [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Current study: methods, derived observations, analysis, and figures |
 | [research/agent-verification/](research/agent-verification/README.md) | Preserved earlier exploratory study, separate from the current article |
@@ -39,6 +48,7 @@ Python 3.10 or later, no dependencies or model calls:
 ```sh
 python3 research/ai-reviewers-test-evidence/reproduce.py
 python3 research/reasoning-costs/reproduce.py
+python3 research/evaluation-reliability/reproduce.py
 ```
 
 For website setup, see [site/README.md](site/README.md).
