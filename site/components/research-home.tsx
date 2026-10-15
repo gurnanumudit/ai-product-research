@@ -33,10 +33,9 @@ export function ResearchHome() {
       <nav aria-label="Main navigation"><a href="#about">About</a><a href={publication.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a><a href={publication.repository} target="_blank" rel="noreferrer">GitHub ↗</a></nav>
     </header>
     <main id="research">
-      <section className={styles.intro} aria-labelledby="research-title">
-        <h1 id="research-title">Research</h1>
-        <div><p className={styles.draftHeadline}>Understanding AI through evidence.</p>
-        <p className={styles.note}>I use experiments and data analysis to explore what AI can do, where it falls short, and how to use it well.</p>
+      <section className={`${styles.intro} ${styles.headlineIntro}`} aria-labelledby="research-title">
+        <h1 id="research-title">Understanding AI through evidence.</h1>
+        <div><p className={styles.note}>I use experiments and data to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.</p>
         <p className={styles.focus}>Current work explores AI evaluation and economics.</p></div>
       </section>
       <section className={styles.publications} aria-labelledby="publications-title">

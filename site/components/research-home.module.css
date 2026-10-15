@@ -7,7 +7,10 @@
 .intro h1 { font: 650 clamp(2.7rem, 5vw, 3.7rem)/1.1 var(--sans); letter-spacing: -.045em; margin: 0; }
 .intro p { font: 400 1.375rem/1.5 var(--editorial-serif); margin: 0; }
 .intro .note { font: 400 1rem/1.6 var(--sans); color: var(--muted); margin-top: 18px; }
-.intro .draftHeadline { font-size: clamp(1.6rem, 2.5vw, 2rem); line-height: 1.3; }
+.intro.headlineIntro { display: block; padding-block: 54px 44px; }
+.intro.headlineIntro h1 { max-width: 850px; font: 400 clamp(2.2rem, 4.2vw, 3.25rem)/1.13 var(--editorial-serif); letter-spacing: -.025em; text-wrap: balance; }
+.intro.headlineIntro .note { max-width: 670px; margin-top: 22px; font-size: 1.0625rem; }
+@media(max-width:720px) { .intro.headlineIntro { padding-block: 32px; } }
 .intro .focus { font: 400 .875rem/1.6 var(--sans); color: var(--muted); margin-top: 16px; }
 .copy .methods { font: 400 .8125rem/1.6 var(--sans); color: var(--muted); margin: 0 0 18px; }
 .about { border-top: 1px solid var(--line); padding: 40px 0 48px; display: grid; grid-template-columns: 1fr 1.25fr; gap: 70px; scroll-margin-top: 24px; }

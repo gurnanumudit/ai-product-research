@@ -26,6 +26,9 @@ test('production homepage and article render with direct study links', async () 
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
     checkAnchors(homeHtml);
+    assert.ok(homeHtml.includes('<h1 id="research-title">Understanding AI through evidence.</h1>'));
+    assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
+    assert.ok(homeHtml.includes('I use experiments and data to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.'));
     for (const text of ['Understanding AI through evidence.', 'Current work explores AI evaluation and economics.', 'About this research', 'My background is in finance and data science', 'Review-policy evaluation', 'Simulation', 'Cost–quality analysis', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
     const financialPath = '/research/which-financial-ai-answers-should-we-review';
     assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 3);
