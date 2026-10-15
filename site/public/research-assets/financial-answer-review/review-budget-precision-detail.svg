@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" role="img" aria-labelledby="title desc">
+<title id="title">How many review slots found a numerical mismatch?</title>
+<desc id="desc">Review precision: numerical mismatches selected per 100 review slots. Zoomed vertical axis 20 to 60 percent, not zero. All twelve observed points are shown.</desc>
+<rect width="100%" height="100%" fill="#faf9f5"/><g font-family="sans-serif">
+<text x="25" y="30" font-size="20" fill="#202421">How many review slots found a numerical mismatch?</text>
+<text x="25" y="53" font-size="13" fill="#62645f">Review precision: numerical mismatches selected per 100 review slots</text>
+<line x1="70" x2="700" y1="345" y2="345" stroke="#deded5"/><text x="60" y="350" text-anchor="end" font-size="13">20%</text>
+<line x1="70" x2="700" y1="285" y2="285" stroke="#deded5"/><text x="60" y="290" text-anchor="end" font-size="13">30%</text>
+<line x1="70" x2="700" y1="225" y2="225" stroke="#deded5"/><text x="60" y="230" text-anchor="end" font-size="13">40%</text>
+<line x1="70" x2="700" y1="165" y2="165" stroke="#deded5"/><text x="60" y="170" text-anchor="end" font-size="13">50%</text>
+<line x1="70" x2="700" y1="105" y2="105" stroke="#deded5"/><text x="60" y="110" text-anchor="end" font-size="13">60%</text>
+<text x="70" y="370" text-anchor="middle" font-size="14">5%</text>
+<text x="140" y="370" text-anchor="middle" font-size="14">10%</text>
+<text x="280" y="370" text-anchor="middle" font-size="14">20%</text>
+<text x="700" y="370" text-anchor="middle" font-size="14">50%</text>
+<text x="385" y="402" text-anchor="middle" font-size="14">Share of responses sent for review</text><text x="385" y="429" text-anchor="middle" font-size="12" fill="#62645f">Zoomed vertical axis: 20–60% (does not start at zero)</text>
+<polyline data-policy="confidence" points="70.00,132.86 140.00,148.93 280.00,190.33 700.00,247.59" fill="none" stroke="#ad512e" stroke-width="2.5"/>
+<circle cx="70.00" cy="132.86" r="4" fill="#ad512e"/>
+<circle cx="140.00" cy="148.93" r="4" fill="#ad512e"/>
+<circle cx="280.00" cy="190.33" r="4" fill="#ad512e"/>
+<circle cx="700.00" cy="247.59" r="4" fill="#ad512e"/>
+<line x1="30" x2="55" y1="78" y2="78" stroke="#ad512e" stroke-width="3"/><text x="62" y="83" font-size="14">Confidence</text>
+<polyline data-policy="verification_priority" points="70.00,261.43 140.00,240.00 280.00,211.67 700.00,247.59" fill="none" stroke="#176b63" stroke-width="2.5"/>
+<circle cx="70.00" cy="261.43" r="4" fill="#176b63"/>
+<circle cx="140.00" cy="240.00" r="4" fill="#176b63"/>
+<circle cx="280.00" cy="211.67" r="4" fill="#176b63"/>
+<circle cx="700.00" cy="247.59" r="4" fill="#176b63"/>
+<line x1="265" x2="290" y1="78" y2="78" stroke="#176b63" stroke-width="3"/><text x="297" y="83" font-size="14">Verification</text>
+<polyline data-policy="random" points="70.00,282.86 140.00,277.50 280.00,286.33 700.00,267.84" fill="none" stroke="#77766e" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="70.00" cy="282.86" r="4" fill="#77766e"/>
+<circle cx="140.00" cy="277.50" r="4" fill="#77766e"/>
+<circle cx="280.00" cy="286.33" r="4" fill="#77766e"/>
+<circle cx="700.00" cy="267.84" r="4" fill="#77766e"/>
+<line x1="500" x2="525" y1="78" y2="78" stroke="#77766e" stroke-width="3" stroke-dasharray="5 4"/><text x="532" y="83" font-size="14">Random baseline</text>
+</g></svg>

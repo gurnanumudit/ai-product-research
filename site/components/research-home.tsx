@@ -10,13 +10,21 @@ export function ResearchHome() {
     category: "AI economics",
     summary: "We tested three models at three reasoning settings on analytical work. Some reasoning helped; paying for more did not always buy a better answer.",
   };
-  const latest = {
+  const reliability = {
     path: "/research/how-to-avoid-false-confidence-in-ai-evaluations",
     title: "How to avoid false confidence in AI evaluations",
     image: "/research-assets/evaluation-reliability/evaluation-confidence-cover.png",
     alt: "A magnifying glass reveals gaps in evaluation evidence.",
     category: "AI evaluation",
     summary: "A higher score is not always a reason to switch. We simulated how related questions, repeated checks and missing results affect the decision—and when safeguards leave us waiting.",
+  };
+  const latest = {
+    path: "/research/which-financial-ai-answers-should-we-review",
+    title: "Which financial AI answers should we review?",
+    image: "/research-assets/financial-answer-review/cover-v3.png",
+    alt: "A small selection of paper tiles placed in a review tray.",
+    category: "AI evaluation",
+    summary: "We compared AI confidence with rule-based verification on financial answers. Confidence found more answer-key mismatches at smaller review budgets—but neither approach caught everything.",
   };
   return <div className={styles.page}>
     <a className={styles.skip} href="#research">Skip to research</a>
@@ -38,7 +46,7 @@ export function ResearchHome() {
             <img src={latest.image} alt={latest.alt} width={1774} height={887} fetchPriority="high" />
           </a>
           <div className={styles.copy}>
-            <p className={styles.meta}>{latest.category} <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
+            <p className={styles.meta}>{latest.category} <span>·</span> <time dateTime="2026-10-14">October 14, 2026</time></p>
             <h3><a href={latest.path}>{latest.title}</a></h3>
             <p>{latest.summary}</p>
             <a href={latest.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
@@ -47,6 +55,17 @@ export function ResearchHome() {
       </section>
       <section className={styles.earlier} aria-labelledby="earlier-title">
         <h2 id="earlier-title">Earlier research</h2>
+        <article className={styles.previous}>
+          <a href={reliability.path} className={styles.thumbnail} aria-label={`Read ${reliability.title}`}>
+            <img src={reliability.image} alt={reliability.alt} width={1774} height={887} loading="lazy" />
+          </a>
+          <div className={styles.copy}>
+            <p className={styles.meta}>{reliability.category} <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
+            <h3><a href={reliability.path}>{reliability.title}</a></h3>
+            <p>{reliability.summary}</p>
+            <a href={reliability.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
         <article className={styles.previous}>
           <a href={reasoning.path} className={styles.thumbnail} aria-label={`Read ${reasoning.title}`}>
             <img src={reasoning.image} alt={reasoning.alt} width={1774} height={887} loading="lazy" />

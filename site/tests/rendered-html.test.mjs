@@ -25,6 +25,28 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    const financialPath = '/research/which-financial-ai-answers-should-we-review';
+    assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 3);
+    const financial = await fetch(`http://localhost:${port}${financialPath}`);
+    assert.equal(financial.status, 200);
+    const financialHtml = await financial.text();
+    checkAnchors(financialHtml);
+    assert.ok(financialHtml.includes('October 14, 2026'));
+    assert.ok(financialHtml.includes('article-analysis'));
+    assert.ok(financialHtml.includes('We recalculated the steps the AI provided.'));
+    assert.ok(financialHtml.includes('same automatic-review rules'));
+    assert.ok(financialHtml.includes('Mismatches caught'));
+    assert.ok(financialHtml.includes('347 model answers'));
+    assert.ok(financialHtml.includes('68–76%') && financialHtml.includes('20–60%'));
+    assert.ok(financialHtml.includes('177 versus 113'));
+    assert.ok(financialHtml.includes('In this article'));
+    for (const stale of ['Draft 4', 'not yet been added', 'saved locally', 'Local reading preview', '127.0.0.1']) assert.ok(!financialHtml.includes(stale), `Stale text: ${stale}`);
+    assert.ok(financialHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
+    for (const asset of ['review-budget-accuracy-detail.svg', 'review-budget-precision-detail.svg', 'appendix-navigation.js']) {
+      const response = await fetch(`http://localhost:${port}/research-assets/financial-answer-review/${asset}`);
+      assert.equal(response.status, 200);
+    }
+    await checkSocialPreview(port, financialPath, '/research-assets/financial-answer-review/cover-v3.png');
     const reliabilityPath = '/research/how-to-avoid-false-confidence-in-ai-evaluations';
     assert.equal((homeHtml.match(new RegExp(`<a href="${reliabilityPath}"`, 'g')) || []).length, 3);
     await checkSocialPreview(port, reliabilityPath, '/research-assets/evaluation-reliability/evaluation-confidence-cover.png');

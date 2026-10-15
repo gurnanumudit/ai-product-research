@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 450" role="img" aria-labelledby="title desc">
+<title id="title">How accurate were answers released without review?</title>
+<desc id="desc">Agreement with FinQA's answer key. Zoomed vertical axis from 68 to 76 percent, not zero. All observed points are shown. Exact figures are in the article appendix.</desc>
+<rect width="100%" height="100%" fill="#faf9f5"/>
+<g font-family="sans-serif">
+<text x="25" y="30" font-size="20" fill="#202421">How accurate were answers released without review?</text>
+<text x="25" y="53" font-size="13" fill="#62645f">Agreement with FinQA’s answer key, allowing small numerical differences</text>
+<line x1="70" x2="700" y1="345" y2="345" stroke="#deded5"/><text x="60" y="350" text-anchor="end" font-size="13">68%</text>
+<line x1="70" x2="700" y1="285" y2="285" stroke="#deded5"/><text x="60" y="290" text-anchor="end" font-size="13">70%</text>
+<line x1="70" x2="700" y1="225" y2="225" stroke="#deded5"/><text x="60" y="230" text-anchor="end" font-size="13">72%</text>
+<line x1="70" x2="700" y1="165" y2="165" stroke="#deded5"/><text x="60" y="170" text-anchor="end" font-size="13">74%</text>
+<line x1="70" x2="700" y1="105" y2="105" stroke="#deded5"/><text x="60" y="110" text-anchor="end" font-size="13">76%</text>
+<text x="70" y="370" text-anchor="middle" font-size="14">5%</text>
+<text x="140" y="370" text-anchor="middle" font-size="14">10%</text>
+<text x="280" y="370" text-anchor="middle" font-size="14">20%</text>
+<text x="700" y="370" text-anchor="middle" font-size="14">50%</text>
+<text x="385" y="402" text-anchor="middle" font-size="14">Share of responses sent for review</text>
+<text x="385" y="429" text-anchor="middle" font-size="12" fill="#62645f">Zoomed vertical axis: 68–76% (does not start at zero)</text>
+<polyline data-policy="confidence" points="70.00,270.15 140.00,236.23 280.00,196.53 700.00,145.64" fill="none" stroke="#ad512e" stroke-width="2.5"/>
+<circle cx="70.00" cy="270.15" r="4" fill="#ad512e"/>
+<circle cx="140.00" cy="236.23" r="4" fill="#ad512e"/>
+<circle cx="280.00" cy="196.53" r="4" fill="#ad512e"/>
+<circle cx="700.00" cy="145.64" r="4" fill="#ad512e"/>
+<line x1="30" x2="55" y1="78" y2="78" stroke="#ad512e" stroke-width="3"/><text x="62" y="83" font-size="14">Confidence</text>
+<polyline data-policy="verification_priority" points="70.00,303.77 140.00,286.48 280.00,223.14 700.00,145.64" fill="none" stroke="#176b63" stroke-width="2.5"/>
+<circle cx="70.00" cy="303.77" r="4" fill="#176b63"/>
+<circle cx="140.00" cy="286.48" r="4" fill="#176b63"/>
+<circle cx="280.00" cy="223.14" r="4" fill="#176b63"/>
+<circle cx="700.00" cy="145.64" r="4" fill="#176b63"/>
+<line x1="265" x2="290" y1="78" y2="78" stroke="#176b63" stroke-width="3"/><text x="297" y="83" font-size="14">Verification</text>
+<polyline data-policy="random" points="70.00,309.37 140.00,307.17 280.00,316.26 700.00,246.70" fill="none" stroke="#77766e" stroke-width="2.5" stroke-dasharray="5 4"/>
+<circle cx="70.00" cy="309.37" r="4" fill="#77766e"/>
+<circle cx="140.00" cy="307.17" r="4" fill="#77766e"/>
+<circle cx="280.00" cy="316.26" r="4" fill="#77766e"/>
+<circle cx="700.00" cy="246.70" r="4" fill="#77766e"/>
+<line x1="500" x2="525" y1="78" y2="78" stroke="#77766e" stroke-width="3" stroke-dasharray="5 4"/><text x="532" y="83" font-size="14">Random baseline</text>
+</g></svg>

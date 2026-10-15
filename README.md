@@ -8,6 +8,14 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 Coming from an article? Its study folder is the starting point for the methods, evidence and reproduction instructions.
 
+### Which financial AI answers should we review?
+
+We compared model confidence with rule-based verification on 1,127 financial answers at four review budgets. Confidence selected more answer-key mismatches at smaller budgets under the stated numerical allowance; the methods tied at 50% review.
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) · [Analysis code, aggregate results and reproduction limits](research/financial-answer-review/article-analysis/README.md)
+
+Synthetic tests run publicly with no API calls. Empirical replay requires the exact archived inputs and model responses, which are not distributed. This is a post-study scoring and review-budget analysis, not a scoring-independent confidence win.
+
 ### How to avoid false confidence in AI evaluations
 
 A higher evaluation score is not always a reason to switch. We used simulations to examine how related questions, repeated checks and missing outcomes affect that decision.
@@ -35,7 +43,8 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 
 | Folder | Contents |
 | --- | --- |
-| [site/](site/README.md) | Website source, all three articles, and web assets |
+| [site/](site/README.md) | Website source, all four articles, and web assets |
+| [research/financial-answer-review/article-analysis/](research/financial-answer-review/article-analysis/README.md) | Financial review policies: code, tests, aggregate results and empirical replay boundaries |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Reviewer study: methods, derived observations, analysis, and figures |

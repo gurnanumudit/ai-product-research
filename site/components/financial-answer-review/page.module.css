@@ -1,0 +1,33 @@
+.body p,.body li { font:400 19px/1.6 var(--article-serif); color:#30302c; }
+.body p { margin:0 0 22px; }
+.body ul,.body ol { margin:0 0 24px; padding-left:1.35em; }
+.body ul { list-style:disc; } .body ol { list-style:decimal; }
+.body li { margin-bottom:12px; }
+.body strong { font-weight:600; }
+.body a { text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+.body :global(.question),.body :global(.bottom-line) { border-left:2px solid #176b63; padding-left:22px; margin:25px 0; }
+.body :global(.question) { font:500 23px/1.45 var(--sans); }
+.body :global(#glance) { border-block:1px solid var(--line); padding:24px 0 8px; }
+.body :global(#glance li) { font:400 17px/1.55 var(--sans); }
+.body :global(.figure) { margin:28px 0; border-block:1px solid var(--line); padding:18px 0; }
+.body :global(.chart-wrap),.body :global(.table-wrap) { overflow-x:auto; max-width:100%; margin-bottom:20px; }
+.body :global(.chart-wrap img) { display:block; width:100%; min-width:620px; height:auto; }
+.body figcaption { font:400 13px/1.6 var(--sans); color:var(--muted); margin-top:10px; }
+.body table { border-collapse:collapse; width:100%; font:400 14px/1.5 var(--sans); font-variant-numeric:tabular-nums; }
+.body th,.body td { text-align:right; vertical-align:top; padding:11px 8px; border-bottom:1px solid var(--line); }
+.body th:first-child,.body td:first-child { text-align:left; }
+.body th { font-weight:600; } .body th[rowspan] { vertical-align:middle; }
+.body thead tr:last-child th:first-child { text-align:right; }
+.body caption { text-align:left; font-size:13px; color:var(--muted); margin-bottom:12px; }
+.body :global(.wide) { min-width:640px; }
+.body :global(#appendix),.body :global(#references) { border-top:1px solid var(--ink); padding-top:28px; }
+.body :global(.eyebrow) { font:500 11px/1.5 var(--sans); color:var(--muted); text-transform:uppercase; letter-spacing:.07em; }
+.body details { padding:18px 0; border-bottom:1px solid var(--line); scroll-margin-top:30px; }
+.body details>div { padding-top:22px; }
+.body details p,.body :global(#references li) { font-size:17px; }
+.body summary { font:500 17px/1.5 var(--sans); cursor:pointer; }
+.body code { font-size:.85em; }
+.body :global([id]) { scroll-margin-top:30px; }
+.body :global([tabindex]):focus-visible { outline:2px solid var(--blue); outline-offset:3px; }
+@media(max-width:780px) { .titleBreak { display:none; } .body p,.body li { font-size:18px; } }
+@media(max-width:440px) { .body :global(#capacity table) { min-width:430px; } }
