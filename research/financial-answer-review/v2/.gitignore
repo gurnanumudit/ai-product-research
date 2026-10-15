@@ -1,0 +1,22 @@
+# Code-only delivery. Local inputs and empirical results are not redistributed.
+data/
+dev-v1/
+source/
+adjudication/
+analysis/
+runs/
+local-outputs/
+*.json
+!SOURCE-MANIFEST.json
+*.jsonl
+*.json.gz
+*.zip
+*.pdf
+*.csv
+*.tsv
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+research.db*

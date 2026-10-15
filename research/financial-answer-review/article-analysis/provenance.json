@@ -1,0 +1,20 @@
+{
+  "source_input_sha256": {
+    "data/test-v1/annotations.json": "d412a9ea5785bde281804e1d57b6dea4208e87f2c0af25987d81ad0b7d83e09d",
+    "data/test-v1/inputs.json": "e34f6857ce9f41756d0d4dbb27a3b5d90895f03165177566fbd988a29cc99c06"
+  },
+  "response_hash_map_sha256": "794b6250cf77b0c250ed467c8f5f335770b3bf382a898b6c29fd5f79812d67e6",
+  "implementation_sha256": {
+    "package/schema.py": "a1e4434659005443a05e5283fda30e9a878057184820841d6024f9ddcef434a3",
+    "package/checker.py": "e0d03cc1be408039b3b1c6163e81a10830969eb7d9bf4404d38bd7376212f901",
+    "package/policies.py": "f5f7a500a32659b0d518315594589f7fa71db53e11f4c2d7252c88b49a1f1c64",
+    "package/numbers.py": "1db53a55b346ad7f27a90e26f7458c251c70e26218ec61065e2f8573b7d3ea98"
+  },
+  "historical_artifacts_sha256": {
+    "original_reference_compare.py": "0087c3f467329c4752cea4943ccd1cf1fd526ba24e77747a5c348cfc4955b408",
+    "review_budget_analyze.py": "49c83a43a3ceb85aa8f67ba83bb0445824bc16eaaa10e1918d5e2b0c9eb55c4a",
+    "original_reference_results.json": "68fe576ace37cc6fbab81c426a6751fe3af348f9664505ee8e43c5f77f6fac35",
+    "review_budget_results.json": "fc65770c8843b771c551c6695b2ba6bdad154f80cc5a9fae5c9f4831e99d0922",
+    "test_summary.json": "deb29d7e1ec5dddbac49922ac00f09777c6951d1db4aa174dba71c45cabebd6a"
+  }
+}
