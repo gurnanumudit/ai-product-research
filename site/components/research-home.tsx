@@ -46,7 +46,7 @@ export function ResearchHome() {
             <img src={latest.image} alt={latest.alt} width={1774} height={887} fetchPriority="high" />
           </a>
           <div className={styles.copy}>
-            <p className={styles.meta}>{latest.category} <span>·</span> <time dateTime="2026-10-14">October 14, 2026</time></p>
+            <p className={styles.meta}>{latest.category} <span>·</span> <time dateTime="2026-10-10">October 10, 2026</time></p>
             <h3><a href={latest.path}>{latest.title}</a></h3>
             <p>{latest.summary}</p>
             <a href={latest.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>

@@ -31,7 +31,7 @@ test('production homepage and article render with direct study links', async () 
     assert.equal(financial.status, 200);
     const financialHtml = await financial.text();
     checkAnchors(financialHtml);
-    assert.ok(financialHtml.includes('October 14, 2026'));
+    assert.ok(financialHtml.includes('October 10, 2026'));
     assert.ok(financialHtml.includes('article-analysis'));
     assert.ok(financialHtml.includes('We recalculated the steps the AI provided.'));
     assert.ok(financialHtml.includes('same automatic-review rules'));

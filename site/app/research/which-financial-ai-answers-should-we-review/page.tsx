@@ -7,7 +7,7 @@ const url = `${publicOrigin}/research/which-financial-ai-answers-should-we-revie
 const image = `${publicOrigin}/research-assets/financial-answer-review/cover-v3.png`;
 export const metadata: Metadata = {
   title, description, robots: { index: !localReview, follow: !localReview }, alternates: { canonical: url },
-  openGraph: { title, description, type: "article", url, publishedTime: "2026-10-14", authors: ["Mudit Gurnani"], images: [{ url: image, width: 1774, height: 887, type: "image/png", alt: "A small selection of paper tiles placed in a review tray." }] },
+  openGraph: { title, description, type: "article", url, publishedTime: "2026-10-10", authors: ["Mudit Gurnani"], images: [{ url: image, width: 1774, height: 887, type: "image/png", alt: "A small selection of paper tiles placed in a review tray." }] },
   twitter: { card: "summary_large_image", title, description, images: [image] },
 };
 export default function Page() { return <FinancialAnswerReviewArticle />; }

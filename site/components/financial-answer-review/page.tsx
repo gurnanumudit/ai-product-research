@@ -13,7 +13,7 @@ export function FinancialAnswerReviewArticle() {
         <p className={base.eyebrow}>AI evaluation · Financial answers</p>
         <h1>Which financial AI answers<br className={styles.titleBreak} /> should we review?</h1>
         <p className={base.subtitle}>In our experiment, asking the AI how sure it was found more numerical mistakes than our verification checks at smaller review budgets. Neither approach caught everything.</p>
-        <p className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-10-14">October 14, 2026</time></p>
+        <p className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-10-10">October 10, 2026</time></p>
         <p className={base.resourceLine}><a href={codeUrl} target="_blank" rel="noreferrer">Code, results and reproduction ↗</a><span> · </span><a href="#appendix">Methods and complete results ↓</a></p>
       </header>
       <figure className={base.cover}><img src="/research-assets/financial-answer-review/cover-v3.png" width="1774" height="887" alt="Folded paper tiles with a small selection placed in a separate tray." fetchPriority="high" /><figcaption>Choosing a few answers from many. AI-generated illustration; quantities shown are not study data.</figcaption></figure>
