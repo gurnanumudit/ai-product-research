@@ -30,13 +30,14 @@ export function ResearchHome() {
     <a className={styles.skip} href="#research">Skip to research</a>
     <header className={styles.header}>
       <a href="/" className={styles.name}>{publication.name}</a>
-      <nav aria-label="Main navigation"><a href={publication.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a><a href={publication.repository} target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href={publication.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a><a href={publication.repository} target="_blank" rel="noreferrer">GitHub ↗</a></nav>
     </header>
     <main id="research">
       <section className={styles.intro} aria-labelledby="research-title">
         <h1 id="research-title">Research</h1>
-        <div><p>How AI works, where it falls short, and when it’s worth the cost.</p>
-        <p className={styles.note}>Independent experiments by Mudit Gurnani, with the evidence and code behind the findings.</p></div>
+        <div><p className={styles.draftHeadline}>Understanding AI through evidence.</p>
+        <p className={styles.note}>I use experiments and data analysis to explore what AI can do, where it falls short, and how to use it well.</p>
+        <p className={styles.focus}>Current work explores AI evaluation and economics.</p></div>
       </section>
       <section className={styles.publications} aria-labelledby="publications-title">
         <h2 id="publications-title">Latest research</h2>
@@ -49,6 +50,7 @@ export function ResearchHome() {
             <p className={styles.meta}>{latest.category} <span>·</span> <time dateTime="2026-10-10">October 10, 2026</time></p>
             <h3><a href={latest.path}>{latest.title}</a></h3>
             <p>{latest.summary}</p>
+            <p className={styles.methods}>Review-policy evaluation · Error analysis</p>
             <a href={latest.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -63,6 +65,7 @@ export function ResearchHome() {
             <p className={styles.meta}>{reliability.category} <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
             <h3><a href={reliability.path}>{reliability.title}</a></h3>
             <p>{reliability.summary}</p>
+            <p className={styles.methods}>Simulation · Statistical decision-making</p>
             <a href={reliability.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -74,6 +77,7 @@ export function ResearchHome() {
             <p className={styles.meta}>{reasoning.category} <span>·</span> <time dateTime="2026-09-24">September 24, 2026</time></p>
             <h3><a href={reasoning.path}>{reasoning.title}</a></h3>
             <p>{reasoning.summary}</p>
+            <p className={styles.methods}>Model comparison · Cost–quality analysis</p>
             <a href={reasoning.path} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -86,9 +90,16 @@ export function ResearchHome() {
             <p className={styles.meta}>AI evaluation <span>·</span> <time dateTime="2026-09-13">September 13, 2026</time></p>
             <h3><a href={publication.articlePath}>{publication.articleTitle}</a></h3>
             <p>Test reports reduced faulty approvals, but reviewers still differed in which passing fixes they accepted.</p>
+            <p className={styles.methods}>Controlled experiments · Reviewer behavior</p>
             <a href={publication.articlePath} className={styles.read}>Read the study <span aria-hidden="true">→</span></a>
           </div>
         </article>
+      </section>
+      <section id="about" className={styles.about} aria-labelledby="about-title">
+        <h2 id="about-title">About this research</h2>
+        <div><p>I’m Mudit Gurnani. My background is in finance and data science, and I’m interested in the decisions we make as AI becomes part of our work.</p>
+        <p>This is where I explore those questions through experiments, data analysis and research. Each study explains what we tested, what we found, and what the evidence cannot tell us—with links to the methods and code.</p>
+        <p className={styles.aboutLinks}><a href={publication.linkedin} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><a href={publication.repository} target="_blank" rel="noreferrer">Explore the research code ↗</a></p></div>
       </section>
     </main>
     <footer className={styles.footer}><span>Independent research by {publication.name}</span><a href={publication.repository} target="_blank" rel="noreferrer">Research repository ↗</a></footer>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ResearchHome } from "@/components/research-home";
 import { localReview, publicOrigin } from "@/lib/research-release";
 
-const description = "I'm starting a research journey into how AI performs on real-world tasks. Here I share experiments, findings, and code—exploring when reasoning helps, what better results cost, and how to evaluate AI beyond demos.";
+const description = "Understanding AI through evidence. Independent experiments and data analysis by Mudit Gurnani, exploring what AI can do, where it falls short, and how to use it well.";
 
 export const metadata: Metadata = {
   title: { absolute: "Mudit Gurnani | Research" },

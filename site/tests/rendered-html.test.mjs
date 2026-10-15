@@ -25,6 +25,8 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    checkAnchors(homeHtml);
+    for (const text of ['Understanding AI through evidence.', 'Current work explores AI evaluation and economics.', 'About this research', 'My background is in finance and data science', 'Review-policy evaluation', 'Simulation', 'Cost–quality analysis', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
     const financialPath = '/research/which-financial-ai-answers-should-we-review';
     assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 3);
     const financial = await fetch(`http://localhost:${port}${financialPath}`);
@@ -128,7 +130,7 @@ async function checkSocialPreview(port, path, imagePath) {
   assert.equal(tags.get('twitter:image'), tags.get('og:image'));
   if (path === '/') {
     assert.ok(tags.get('og:description').length >= 100, 'homepage sharing description is at least 100 characters');
-    assert.ok(tags.get('og:description').includes('research journey'));
+    assert.ok(tags.get('og:description').includes('Understanding AI through evidence.'));
     assert.ok(!tags.get('og:image').includes('og-v2.png'), 'new card has a fresh cache key');
   }
   assert.ok(Number(tags.get('og:image:width')) >= 1200);
