@@ -12,9 +12,9 @@ Coming from an article? Its study folder is the starting point for the methods, 
 
 A higher evaluation score is not always a reason to switch. We used simulations to examine how related questions, repeated checks and missing outcomes affect that decision.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Code, frozen results and reproduction](research/evaluation-reliability/README.md)
+[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Baseline code and results](research/evaluation-reliability/README.md) · [Assumption checks and reproduction](research/evaluation-reliability-sensitivity/README.md)
 
-This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The package includes 15 scenarios, 2,000 simulated evaluations per scenario, six approaches and offline verification.
+This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The baseline includes 15 scenarios, 2,000 simulated evaluations per scenario and six approaches. A separately frozen exploratory analysis varies missing grades, relatedness and the switching requirement across 23 settings. The settings reuse outcomes or random draws, so they are not independent replications. Both packages include offline verification.
 
 ### When is more reasoning worth it?
 
@@ -37,6 +37,7 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | --- | --- |
 | [site/](site/README.md) | Website source, all three articles, and web assets |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
+| [research/evaluation-reliability-sensitivity/](research/evaluation-reliability-sensitivity/README.md) | Assumption checks supporting the same article: 23 settings, all six approaches and independent audits |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Reviewer study: methods, derived observations, analysis, and figures |
 | [research/archive/](research/archive/README.md) | Historical exploratory work — not evidence for the current published articles |
@@ -45,12 +46,13 @@ Each new study gets its own folder. Private execution logs, credentials, cached 
 
 ## Reproduce the published numbers
 
-Clone the repository and run these commands from its root. All three use the Python standard library, with no model calls, API keys or paid services:
+Clone the repository and run these commands from its root. All four use the Python standard library, with no model calls, API keys or paid services:
 
 ```sh
 python3 research/ai-reviewers-test-evidence/reproduce.py
 python3 research/reasoning-costs/reproduce.py
 python3 -B research/evaluation-reliability/reproduce.py
+python3 -B research/evaluation-reliability-sensitivity/reproduce.py
 ```
 
 The reviewer and reasoning packages require Python 3.10 or later. The evaluation-reliability package was run with Python 3.14.3 and requires macOS, Linux or WSL; see its [environment and verification notes](research/evaluation-reliability/README.md#reproduce-the-published-results). Do not run verification with Python's `-O` option, which disables assertions.

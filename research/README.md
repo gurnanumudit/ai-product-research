@@ -4,7 +4,7 @@ Each published article has a self-contained study folder. Start with its README 
 
 | Published article | Study package | What you can verify offline |
 | --- | --- | --- |
-| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [evaluation-reliability](evaluation-reliability/README.md) | Known-truth simulation, saved decisions, analysis and article tables; optional full simulation replay |
+| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [Baseline](evaluation-reliability/README.md) and [assumption checks](evaluation-reliability-sensitivity/README.md) | Known-truth simulation, saved decisions, baseline and sensitivity tables; optional full simulation replay |
 | [When is more reasoning worth it?](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) | [reasoning-costs](reasoning-costs/README.md) | Accuracy and cost comparisons from derived question-level outcomes and recorded costs |
 | [How AI reviewers use test evidence](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) | [ai-reviewers-test-evidence](ai-reviewers-test-evidence/README.md) | Numerical comparisons and figures from exported reviewer decisions and benchmark labels |
 

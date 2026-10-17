@@ -17,15 +17,19 @@ Open the local URL printed by the server. All subsequent commands in this README
 ```sh
 npm test
 node --test tests/evidence-figures.test.mjs
+node --test tests/evaluation-sensitivity.test.mjs
+node scripts/export-evaluation-sensitivity.mjs --check
 ```
 
 `npm test` builds the production site and checks rendered pages, article navigation, anchors and release metadata. The separate figure check compares the reviewer article's presentation data with the published research supplement. Neither command runs AI models or collects research data.
+
+The sensitivity test and export check verify all 23 assumption-check settings against the [audited research package](../research/evaluation-reliability-sensitivity/README.md). To include rendered-page checks, set `SENSITIVITY_REVIEW_URL` to the evaluation article's URL on a running local server. Confidence intervals remain in the appendix; the three main charts use the same 0–100% scale, with red for mistaken switches and green for correct switches.
 
 ## Article-to-source map
 
 | Published article | Main presentation source | Research evidence |
 | --- | --- | --- |
-| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [evaluation-reliability](../research/evaluation-reliability/README.md) |
+| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [Baseline](../research/evaluation-reliability/README.md) and [assumption checks](../research/evaluation-reliability-sensitivity/README.md) |
 | [When is more reasoning worth it?](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) | [app/preview/reasoning-costs/](app/preview/reasoning-costs/) | [reasoning-costs](../research/reasoning-costs/README.md) |
 | [How AI reviewers use test evidence](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) | [content/evidence-review-v3.ts](content/evidence-review-v3.ts) and [components/article/](components/article/) | [ai-reviewers-test-evidence](../research/ai-reviewers-test-evidence/README.md) |
 

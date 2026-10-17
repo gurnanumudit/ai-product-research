@@ -1,6 +1,6 @@
 # Sensitivity checks for AI evaluation decisions
 
-Local research extension to [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations), specified October 17, 2026. The original [study and published evidence](../evaluation-reliability/README.md) remain unchanged. This extension is for review before deciding whether to update the article or write a follow-up.
+Code and evidence for the assumption checks in [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations). This analysis was specified October 17, 2026. The original [study and published evidence](../evaluation-reliability/README.md) remain unchanged. Read both packages to reproduce the article's full set of results.
 
 ## What we are checking
 
@@ -10,11 +10,11 @@ Local research extension to [How to avoid false confidence in AI evaluations](ht
 
 The [design](DESIGN.md) fixes eleven missingness settings, nine threshold settings and three relatedness settings, with 2,000 evaluations per setting. Settings share outcomes or random draws; 46,000 setting-level evaluations are not 46,000 independent new experiments. All six original approaches are retained, without method tuning or a new AI model experiment.
 
-This is a post-publication exploratory extension, not a claim that these checks were part of the original preregistration. The configuration and code were frozen before executing the extension. No website update or public release is included in this work.
+This is a post-publication exploratory extension, not a claim that these checks were part of the original preregistration. The configuration and code were frozen before executing the extension. See [provenance and publication scope](PROVENANCE.md) for the distinction between the original study and these checks.
 
 ## What we found
 
-**Recommendation: make a bounded update to the existing article.** These checks preserve its practical advice, but make clear that the reported error rates depend strongly on the assumptions. They do not establish a new method or a separate empirical finding about production AI systems.
+These checks support the article's practical advice while showing how strongly the reported error rates depend on the assumptions. They do not establish a new method or a separate empirical finding about production AI systems.
 
 ### Selective missingness changes the size of the problem
 
@@ -54,15 +54,15 @@ The true +2-point case changes category altogether: worthwhile at a one-point re
 
 Approach 6 leaves every evaluation unresolved in all ten nonzero-missingness settings, even when successful and failed grades are equally likely to disappear at 5%. Its zero incorrect switches therefore do not demonstrate successful discrimination. This is an observed result in the tested settings, not a claim that the rule can never decide before later records go missing.
 
-## Suggested article update
+## Where these results appear in the article
 
-Keep the original headline results and add a short, dated robustness section. Explain that selective loss matters more than the mere presence of missing results; quantify how relatedness changes the risk; and clarify that changing the minimum worthwhile improvement changes the decision being tested. Link a compact appendix to all settings and their uncertainty. Do not frame 55.05% as a typical production failure rate or advertise a universal safe missingness gap.
+The article incorporates relatedness checks into Finding 1, missingness checks into Finding 2, and switching-requirement checks into Finding 3. Its linked appendix contains all 23 settings and their uncertainty intervals. The original three figures remain based on the baseline study. The 55.05% mistaken-switch rate describes the specified severe selective-loss scenario; it is not a typical production failure rate or evidence of a universal safe missingness gap.
 
 These checks deepen the existing story rather than justify a separate article. A follow-up would be more useful if it introduced production evidence, compared practical ways to recover missing outcomes, or answered another distinct decision question. No such follow-up has been run here.
 
 ## Results and verification
 
-- [Local review with charts and all six approaches](results/REVIEW.html)
+- [Standalone analysis report with charts and all six approaches](results/REVIEW.html)
 - [Full results](results/analysis.json) and [table data](results/table-source.json)
 - [Paired comparisons](results/paired-contrasts.json) and [compact cohort-level outcomes](results/cohort-outcomes.jsonl.gz)
 - [Missingness chart](results/missingness.svg), [switching-threshold chart](results/threshold.svg) and [relatedness chart](results/relatedness.svg)
@@ -70,7 +70,7 @@ These checks deepen the existing story rather than justify a separate article. A
 
 All five original-result anchors matched, including regenerated original ledgers. The independent audit checked 966 aggregate rates and intervals, all 18,000 threshold trajectories, 46 independently generated prefix evaluations, and 1,176 paired event comparisons. It is not an independent full regeneration of every missingness and relatedness evaluation.
 
-The main run took 173.84 seconds, used about 41.55 MB peak resident memory, and made no model calls. The original published package's verifier and nine extension tests passed. Frozen study inputs and the extension runner remained unchanged. The local HTML review was generated from the audited data; browser visual inspection was unavailable because the browser blocks local-file URLs.
+The main run took 173.84 seconds, used about 41.55 MB peak resident memory, and made no model calls. The original published package's verifier and nine extension tests passed. Frozen study inputs and the extension runner remained unchanged. The standalone HTML report was generated from the audited data. The article's integrated presentation was checked through a local web preview, including displayed values, navigation and chart direction.
 
 ## Reproduce and inspect
 
@@ -101,6 +101,7 @@ python3 -B research/evaluation-reliability-sensitivity/render.py
 | File | Purpose |
 | --- | --- |
 | [DESIGN.md](DESIGN.md) | Questions, settings, interpretation and reporting boundaries |
+| [PROVENANCE.md](PROVENANCE.md) | Research chronology, article mapping and publication verification |
 | [config.json](config.json) | Fixed grid, seeds, sample size and resource limits |
 | [FREEZE.json](FREEZE.json) | Pre-execution configuration and source/input hashes |
 | [analyze.py](analyze.py) | Reuses the original generator and evaluator; writes only new extension results |

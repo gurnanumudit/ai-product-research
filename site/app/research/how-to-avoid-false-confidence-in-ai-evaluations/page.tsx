@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title, description,
   robots: { index: !localReview, follow: !localReview },
   alternates: { canonical: url },
-  openGraph: { title, description, type: "article", url, publishedTime: "2026-09-30",
+  openGraph: { title, description, type: "article", url, publishedTime: "2026-09-30", modifiedTime: "2026-10-17",
     authors: ["Mudit Gurnani"], images: [{ url: image, width: 1774, height: 887, type: "image/png", alt: "A magnifying glass reveals gaps in evaluation evidence." }] },
   twitter: { card: "summary_large_image", title, description, images: [image] },
 };

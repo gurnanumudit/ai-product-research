@@ -16,7 +16,7 @@ export function ResearchHome() {
     image: "/research-assets/evaluation-reliability/evaluation-confidence-cover.png",
     alt: "A magnifying glass reveals gaps in evaluation evidence.",
     category: "AI evaluation",
-    summary: "A higher score is not always a reason to switch. We simulated how related questions, repeated checks and missing results affect the decision—and when safeguards leave us waiting.",
+    summary: "A higher score is not always a reason to switch. We simulated how related questions, repeated checks and missing results affect decisions, including useful improvements left unconfirmed.",
   };
   return <div className={styles.page}>
     <a className={styles.skip} href="#research">Skip to research</a>
