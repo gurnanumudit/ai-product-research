@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "checks": {
+    "aggregate_event_rates_and_intervals": 966,
+    "independent_prefix_cell_cohorts": 46,
+    "saved_threshold_cell_trajectories": 18000,
+    "independent_paired_contrast_events": 1176,
+    "unchanged_frozen_inputs_and_runner_files": 13
+  },
+  "review_scope": "All compact counts/rates/intervals and paired contrast events; all threshold decisions from frozen saved intervals; first two cell-cohorts independently generated and evaluated. Not an independent full regeneration of all missingness/dependence cohorts.",
+  "analytic_missingness": [
+    {
+      "failure_loss": 0.0,
+      "success_loss": 0.0,
+      "pooled_observed_population_mean": -0.04000000000000001,
+      "bias_vs_true_delta": -6.938893903907228e-18
+    },
+    {
+      "failure_loss": 0.05,
+      "success_loss": 0.05,
+      "pooled_observed_population_mean": -0.04000000000000001,
+      "bias_vs_true_delta": -6.938893903907228e-18
+    },
+    {
+      "failure_loss": 0.05,
+      "success_loss": 0.1,
+      "pooled_observed_population_mean": -0.05345572354211662,
+      "bias_vs_true_delta": -0.013455723542116618
+    },
+    {
+      "failure_loss": 0.1,
+      "success_loss": 0.05,
+      "pooled_observed_population_mean": -0.02651515151515154,
+      "bias_vs_true_delta": 0.01348484848484846
+    },
+    {
+      "failure_loss": 0.1,
+      "success_loss": 0.1,
+      "pooled_observed_population_mean": -0.04,
+      "bias_vs_true_delta": 0.0
+    },
+    {
+      "failure_loss": 0.2,
+      "success_loss": 0.05,
+      "pooled_observed_population_mean": 0.002866972477064191,
+      "bias_vs_true_delta": 0.04286697247706419
+    },
+    {
+      "failure_loss": 0.2,
+      "success_loss": 0.1,
+      "pooled_observed_population_mean": -0.01061320754716982,
+      "bias_vs_true_delta": 0.02938679245283018
+    },
+    {
+      "failure_loss": 0.3,
+      "success_loss": 0.05,
+      "pooled_observed_population_mean": 0.03597560975609756,
+      "bias_vs_true_delta": 0.07597560975609756
+    },
+    {
+      "failure_loss": 0.3,
+      "success_loss": 0.1,
+      "pooled_observed_population_mean": 0.022613065326633184,
+      "bias_vs_true_delta": 0.06261306532663319
+    },
+    {
+      "failure_loss": 0.4,
+      "success_loss": 0.05,
+      "pooled_observed_population_mean": 0.07356770833333333,
+      "bias_vs_true_delta": 0.11356770833333332
+    },
+    {
+      "failure_loss": 0.4,
+      "success_loss": 0.1,
+      "pooled_observed_population_mean": 0.06048387096774195,
+      "bias_vs_true_delta": 0.10048387096774195
+    }
+  ],
+  "analytic_caveat": "Population ratio for pooled observed paired differences, not the exact expectation of finite-sample ratio estimates or equal-context estimator; no empirical production calibration.",
+  "files": {
+    "independent_review.py": "db62b9aa08cc015cd41baf4e882d2d623d8cbb43103d6b9d4a0c6f016797af07",
+    "analyze.py": "6b9b38348ecdee2652dc5d5a98570e9e9700ca33317d5e33d05f8bc778be67f7",
+    "config.json": "148d214d379bb0a33259e7b332279e4db9df36c4678c7eb6ab65983318150d40",
+    "results/analysis.json": "a00cf0856cfa4acec6df09d2af2a170bd24e1078679228f2c1cf34a5abac8e51",
+    "results/cohort-outcomes.jsonl.gz": "2b3e85cb89c12f2182c95f87c740bb04e3005a8b07eeff1b1696b4d124a2e9dd"
+  }
+}

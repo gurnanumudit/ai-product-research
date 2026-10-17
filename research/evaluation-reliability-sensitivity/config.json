@@ -1,0 +1,15 @@
+{
+  "schema": "evaluation-reliability-sensitivity-config-v1",
+  "status": "exploratory post-publication sensitivity; not a prospective confirmatory study",
+  "cohorts_per_cell": 2000,
+  "methods": ["row_fixed", "row_peek", "context_fixed", "context_peek", "context_adjusted", "integrity_adjusted"],
+  "looks": [40, 80, 120, 160, 200],
+  "missingness": {"world_index": 9, "seed": 2709271809, "delta": -0.04, "h": 0.3, "tau": 0.02, "failed_grade_loss": [0.05, 0.1, 0.2, 0.3, 0.4], "successful_grade_loss": [0.05, 0.1], "include_clean_anchor": true, "original_anchor": [0.4, 0.05]},
+  "thresholds": {"world_indices": [4, 9, 5], "tau": [0.01, 0.02, 0.05], "source": "saved original ledgers; recompute complete first-crossing trajectories"},
+  "relatedness": {"world_index": 4, "seed": 2709271804, "delta": 0.02, "tau": 0.02, "h": [0.15, 0.3, 0.45], "original_anchor": 0.3},
+  "pairing": "Within a sensitivity family use identical original seeds and random draws; thresholds reuse identical saved ledgers. Different families are not independent replication samples.",
+  "limits": {"wall_seconds": 1200, "resident_memory_bytes": 1073741824, "output_bytes": 1073741824},
+  "external_spend_usd": 0,
+  "no_model_calls": true,
+  "interval_scope": "pointwise 95% Wilson Monte Carlo intervals, not simultaneous confidence or empirical generalizability"
+}

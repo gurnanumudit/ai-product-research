@@ -1,0 +1,194 @@
+[
+  {
+    "success_loss": 0.05,
+    "descriptive_rate_hurdle": 0.1,
+    "first_tested_crossing": {
+      "failure_loss": 0.3,
+      "false_switch": {
+        "estimate": 0.151,
+        "wilson95": [
+          0.13597793189773769,
+          0.16736016710457682
+        ]
+      }
+    },
+    "previous_tested_setting": {
+      "failure_loss": 0.2,
+      "false_switch": {
+        "estimate": 0.0165,
+        "wilson95": [
+          0.01177282360725337,
+          0.023080961113718216
+        ]
+      }
+    },
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.5505,
+        "wilson95": [
+          0.5286228713269154,
+          0.5721835068976779
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  },
+  {
+    "success_loss": 0.05,
+    "descriptive_rate_hurdle": 0.25,
+    "first_tested_crossing": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.5505,
+        "wilson95": [
+          0.5286228713269154,
+          0.5721835068976779
+        ]
+      }
+    },
+    "previous_tested_setting": {
+      "failure_loss": 0.3,
+      "false_switch": {
+        "estimate": 0.151,
+        "wilson95": [
+          0.13597793189773769,
+          0.16736016710457682
+        ]
+      }
+    },
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.5505,
+        "wilson95": [
+          0.5286228713269154,
+          0.5721835068976779
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  },
+  {
+    "success_loss": 0.05,
+    "descriptive_rate_hurdle": 0.5,
+    "first_tested_crossing": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.5505,
+        "wilson95": [
+          0.5286228713269154,
+          0.5721835068976779
+        ]
+      }
+    },
+    "previous_tested_setting": {
+      "failure_loss": 0.3,
+      "false_switch": {
+        "estimate": 0.151,
+        "wilson95": [
+          0.13597793189773769,
+          0.16736016710457682
+        ]
+      }
+    },
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.5505,
+        "wilson95": [
+          0.5286228713269154,
+          0.5721835068976779
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  },
+  {
+    "success_loss": 0.1,
+    "descriptive_rate_hurdle": 0.1,
+    "first_tested_crossing": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.3685,
+        "wilson95": [
+          0.3476292294659334,
+          0.389874953969036
+        ]
+      }
+    },
+    "previous_tested_setting": {
+      "failure_loss": 0.3,
+      "false_switch": {
+        "estimate": 0.0695,
+        "wilson95": [
+          0.059160340573897574,
+          0.08149023713526121
+        ]
+      }
+    },
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.3685,
+        "wilson95": [
+          0.3476292294659334,
+          0.389874953969036
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  },
+  {
+    "success_loss": 0.1,
+    "descriptive_rate_hurdle": 0.25,
+    "first_tested_crossing": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.3685,
+        "wilson95": [
+          0.3476292294659334,
+          0.389874953969036
+        ]
+      }
+    },
+    "previous_tested_setting": {
+      "failure_loss": 0.3,
+      "false_switch": {
+        "estimate": 0.0695,
+        "wilson95": [
+          0.059160340573897574,
+          0.08149023713526121
+        ]
+      }
+    },
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.3685,
+        "wilson95": [
+          0.3476292294659334,
+          0.389874953969036
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  },
+  {
+    "success_loss": 0.1,
+    "descriptive_rate_hurdle": 0.5,
+    "first_tested_crossing": null,
+    "previous_tested_setting": null,
+    "maximum_tested_setting": {
+      "failure_loss": 0.4,
+      "false_switch": {
+        "estimate": 0.3685,
+        "wilson95": [
+          0.3476292294659334,
+          0.389874953969036
+        ]
+      }
+    },
+    "scope": "Tested point estimates only; no interpolated breakpoint or universal safe cutoff."
+  }
+]
