@@ -1,0 +1,22 @@
+{
+  "scope": "Aggregate-only portable publication of an accepted exploratory same-batch follow-up",
+  "historical_generating_code_sha256": "274ea40c5edb3bb13d7930bfec46c2b1263dd5b10741fddf74acf18cb0784d50",
+  "historical_tests_sha256": "5307c93cc03b479a9cb2e62c02196bd2006262d0ce1d0163999424af0d62f566",
+  "historical_plan_sha256": "6e76ecfcc0f4b5e2ae2a7ff80480317146df044d7190690fdca89f244d429e74",
+  "historical_full_results_sha256": "2839bbf1d475e8bb0fdca128af7f216ac18c7c4407aaac558c872326dffd4b89",
+  "original_replay_code_sha256": "e2ff9148279da2473ea7a684039e1ac79038fbf66f45db08737a3291db8e9362",
+  "source_provenance": "../article-analysis/provenance.json",
+  "projection_exclusions": [
+    "replay_gate local paths",
+    "breakpoint residual detail",
+    "entered and left answer IDs",
+    "removed warning answer IDs",
+    "answer-audit.json",
+    "queues.json"
+  ],
+  "external_spend_usd": 0,
+  "new_model_execution_during_publication": false,
+  "archived_input_replay_during_publication": true,
+  "archived_replay_exact_aggregate_match": true,
+  "synthetic_tests_passed": 33
+}

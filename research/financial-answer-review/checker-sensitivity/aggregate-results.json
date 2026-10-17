@@ -1,0 +1,2410 @@
+{
+  "scope": "Exploratory same-batch follow-up, no fresh validation or financial materiality claim",
+  "N": 1127,
+  "seed": "finqa-v2-primary-20261012",
+  "external_spend_usd": 0,
+  "units": {
+    "percent": 635,
+    "usd": 337,
+    "basis points": 2,
+    "(abstention)": 15,
+    "number": 13,
+    "acres": 3,
+    "shares": 25,
+    "ratio": 71,
+    "shares/holder": 1,
+    "usd/share": 13,
+    "square feet": 4,
+    "vehicles": 1,
+    "shares outstanding": 1,
+    "barrels per day": 3,
+    "years": 2,
+    "miles": 1
+  },
+  "allowance_definition": "percent: t percentage points; ratio: t/100; other stated units: t; inclusive boundary",
+  "grid": [
+    {
+      "t_fraction": "0",
+      "t_decimal": 0.0,
+      "counts": {
+        "numeric_nonmatch": 810,
+        "match": 302,
+        "abstention": 15
+      },
+      "budgets": [
+        {
+          "review_percent": 5,
+          "policies": {
+            "confidence": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 35,
+              "released_mismatches": 775,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 19,
+              "released_accuracy": {
+                "numerator": 296,
+                "denominator": 1071,
+                "percent": 27.637721755368815
+              },
+              "review_precision_per_slot": {
+                "numerator": 35,
+                "denominator": 56,
+                "percent": 62.5
+              },
+              "numeric_answer_precision": {
+                "numerator": 35,
+                "denominator": 41,
+                "percent": 85.36585365853658
+              },
+              "error_capture": {
+                "numerator": 35,
+                "denominator": 810,
+                "percent": 4.320987654320987
+              }
+            },
+            "verification_priority": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 37,
+              "released_mismatches": 773,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 21,
+              "released_accuracy": {
+                "numerator": 298,
+                "denominator": 1071,
+                "percent": 27.824463118580766
+              },
+              "review_precision_per_slot": {
+                "numerator": 37,
+                "denominator": 56,
+                "percent": 66.07142857142857
+              },
+              "numeric_answer_precision": {
+                "numerator": 37,
+                "denominator": 41,
+                "percent": 90.2439024390244
+              },
+              "error_capture": {
+                "numerator": 37,
+                "denominator": 810,
+                "percent": 4.567901234567901
+              }
+            },
+            "random": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 34,
+              "released_mismatches": 776,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 18,
+              "released_accuracy": {
+                "numerator": 295,
+                "denominator": 1071,
+                "percent": 27.54435107376284
+              },
+              "review_precision_per_slot": {
+                "numerator": 34,
+                "denominator": 56,
+                "percent": 60.71428571428571
+              },
+              "numeric_answer_precision": {
+                "numerator": 34,
+                "denominator": 41,
+                "percent": 82.92682926829268
+              },
+              "error_capture": {
+                "numerator": 34,
+                "denominator": 810,
+                "percent": 4.197530864197531
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 10,
+          "policies": {
+            "confidence": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 76,
+              "released_mismatches": 734,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 60,
+              "released_accuracy": {
+                "numerator": 281,
+                "denominator": 1015,
+                "percent": 27.68472906403941
+              },
+              "review_precision_per_slot": {
+                "numerator": 76,
+                "denominator": 112,
+                "percent": 67.85714285714286
+              },
+              "numeric_answer_precision": {
+                "numerator": 76,
+                "denominator": 97,
+                "percent": 78.35051546391753
+              },
+              "error_capture": {
+                "numerator": 76,
+                "denominator": 810,
+                "percent": 9.382716049382717
+              }
+            },
+            "verification_priority": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 93,
+              "released_mismatches": 717,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 77,
+              "released_accuracy": {
+                "numerator": 298,
+                "denominator": 1015,
+                "percent": 29.35960591133005
+              },
+              "review_precision_per_slot": {
+                "numerator": 93,
+                "denominator": 112,
+                "percent": 83.03571428571429
+              },
+              "numeric_answer_precision": {
+                "numerator": 93,
+                "denominator": 97,
+                "percent": 95.87628865979381
+              },
+              "error_capture": {
+                "numerator": 93,
+                "denominator": 810,
+                "percent": 11.481481481481481
+              }
+            },
+            "random": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 77,
+              "released_mismatches": 733,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 61,
+              "released_accuracy": {
+                "numerator": 282,
+                "denominator": 1015,
+                "percent": 27.783251231527096
+              },
+              "review_precision_per_slot": {
+                "numerator": 77,
+                "denominator": 112,
+                "percent": 68.75
+              },
+              "numeric_answer_precision": {
+                "numerator": 77,
+                "denominator": 97,
+                "percent": 79.38144329896907
+              },
+              "error_capture": {
+                "numerator": 77,
+                "denominator": 810,
+                "percent": 9.506172839506172
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 20,
+          "policies": {
+            "confidence": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 164,
+              "released_mismatches": 646,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 148,
+              "released_accuracy": {
+                "numerator": 256,
+                "denominator": 902,
+                "percent": 28.38137472283814
+              },
+              "review_precision_per_slot": {
+                "numerator": 164,
+                "denominator": 225,
+                "percent": 72.88888888888889
+              },
+              "numeric_answer_precision": {
+                "numerator": 164,
+                "denominator": 210,
+                "percent": 78.0952380952381
+              },
+              "error_capture": {
+                "numerator": 164,
+                "denominator": 810,
+                "percent": 20.246913580246915
+              }
+            },
+            "verification_priority": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 206,
+              "released_mismatches": 604,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 190,
+              "released_accuracy": {
+                "numerator": 298,
+                "denominator": 902,
+                "percent": 33.03769401330377
+              },
+              "review_precision_per_slot": {
+                "numerator": 206,
+                "denominator": 225,
+                "percent": 91.55555555555556
+              },
+              "numeric_answer_precision": {
+                "numerator": 206,
+                "denominator": 210,
+                "percent": 98.09523809523809
+              },
+              "error_capture": {
+                "numerator": 206,
+                "denominator": 810,
+                "percent": 25.432098765432098
+              }
+            },
+            "random": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 155,
+              "released_mismatches": 655,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 139,
+              "released_accuracy": {
+                "numerator": 247,
+                "denominator": 902,
+                "percent": 27.383592017738362
+              },
+              "review_precision_per_slot": {
+                "numerator": 155,
+                "denominator": 225,
+                "percent": 68.88888888888889
+              },
+              "numeric_answer_precision": {
+                "numerator": 155,
+                "denominator": 210,
+                "percent": 73.80952380952381
+              },
+              "error_capture": {
+                "numerator": 155,
+                "denominator": 810,
+                "percent": 19.1358024691358
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 50,
+          "policies": {
+            "confidence": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 414,
+              "released_mismatches": 396,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 398,
+              "released_accuracy": {
+                "numerator": 168,
+                "denominator": 564,
+                "percent": 29.78723404255319
+              },
+              "review_precision_per_slot": {
+                "numerator": 414,
+                "denominator": 563,
+                "percent": 73.53463587921847
+              },
+              "numeric_answer_precision": {
+                "numerator": 414,
+                "denominator": 548,
+                "percent": 75.54744525547446
+              },
+              "error_capture": {
+                "numerator": 414,
+                "denominator": 810,
+                "percent": 51.11111111111111
+              }
+            },
+            "verification_priority": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 468,
+              "released_mismatches": 342,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 452,
+              "released_accuracy": {
+                "numerator": 222,
+                "denominator": 564,
+                "percent": 39.361702127659576
+              },
+              "review_precision_per_slot": {
+                "numerator": 468,
+                "denominator": 563,
+                "percent": 83.12611012433393
+              },
+              "numeric_answer_precision": {
+                "numerator": 468,
+                "denominator": 548,
+                "percent": 85.40145985401459
+              },
+              "error_capture": {
+                "numerator": 468,
+                "denominator": 810,
+                "percent": 57.77777777777777
+              }
+            },
+            "random": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 398,
+              "released_mismatches": 412,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 16,
+              "discretionary_mismatches": 382,
+              "released_accuracy": {
+                "numerator": 152,
+                "denominator": 564,
+                "percent": 26.95035460992908
+              },
+              "review_precision_per_slot": {
+                "numerator": 398,
+                "denominator": 563,
+                "percent": 70.69271758436945
+              },
+              "numeric_answer_precision": {
+                "numerator": 398,
+                "denominator": 548,
+                "percent": 72.62773722627736
+              },
+              "error_capture": {
+                "numerator": 398,
+                "denominator": 810,
+                "percent": 49.135802469135804
+              }
+            }
+          }
+        }
+      ],
+      "unit_counts": {
+        "(abstention)": {
+          "abstention": 15
+        },
+        "acres": {
+          "numeric_nonmatch": 3
+        },
+        "barrels per day": {
+          "match": 1,
+          "numeric_nonmatch": 2
+        },
+        "basis points": {
+          "match": 2
+        },
+        "miles": {
+          "match": 1
+        },
+        "number": {
+          "numeric_nonmatch": 8,
+          "match": 5
+        },
+        "percent": {
+          "numeric_nonmatch": 569,
+          "match": 66
+        },
+        "ratio": {
+          "numeric_nonmatch": 64,
+          "match": 7
+        },
+        "shares": {
+          "numeric_nonmatch": 11,
+          "match": 14
+        },
+        "shares outstanding": {
+          "match": 1
+        },
+        "shares/holder": {
+          "numeric_nonmatch": 1
+        },
+        "square feet": {
+          "numeric_nonmatch": 3,
+          "match": 1
+        },
+        "usd": {
+          "numeric_nonmatch": 137,
+          "match": 200
+        },
+        "usd/share": {
+          "numeric_nonmatch": 10,
+          "match": 3
+        },
+        "vehicles": {
+          "match": 1
+        },
+        "years": {
+          "numeric_nonmatch": 2
+        }
+      }
+    },
+    {
+      "t_fraction": "1/1000",
+      "t_decimal": 0.001,
+      "counts": {
+        "match": 672,
+        "numeric_nonmatch": 440,
+        "abstention": 15
+      },
+      "budgets": [
+        {
+          "review_percent": 5,
+          "policies": {
+            "confidence": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 31,
+              "released_mismatches": 409,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 17,
+              "released_accuracy": {
+                "numerator": 662,
+                "denominator": 1071,
+                "percent": 61.81139122315593
+              },
+              "review_precision_per_slot": {
+                "numerator": 31,
+                "denominator": 56,
+                "percent": 55.35714285714286
+              },
+              "numeric_answer_precision": {
+                "numerator": 31,
+                "denominator": 41,
+                "percent": 75.60975609756098
+              },
+              "error_capture": {
+                "numerator": 31,
+                "denominator": 440,
+                "percent": 7.045454545454545
+              }
+            },
+            "verification_priority": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 27,
+              "released_mismatches": 413,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 13,
+              "released_accuracy": {
+                "numerator": 658,
+                "denominator": 1071,
+                "percent": 61.43790849673203
+              },
+              "review_precision_per_slot": {
+                "numerator": 27,
+                "denominator": 56,
+                "percent": 48.214285714285715
+              },
+              "numeric_answer_precision": {
+                "numerator": 27,
+                "denominator": 41,
+                "percent": 65.85365853658537
+              },
+              "error_capture": {
+                "numerator": 27,
+                "denominator": 440,
+                "percent": 6.136363636363637
+              }
+            },
+            "random": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 19,
+              "released_mismatches": 421,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 5,
+              "released_accuracy": {
+                "numerator": 650,
+                "denominator": 1071,
+                "percent": 60.69094304388422
+              },
+              "review_precision_per_slot": {
+                "numerator": 19,
+                "denominator": 56,
+                "percent": 33.92857142857143
+              },
+              "numeric_answer_precision": {
+                "numerator": 19,
+                "denominator": 41,
+                "percent": 46.34146341463415
+              },
+              "error_capture": {
+                "numerator": 19,
+                "denominator": 440,
+                "percent": 4.318181818181818
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 10,
+          "policies": {
+            "confidence": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 60,
+              "released_mismatches": 380,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 46,
+              "released_accuracy": {
+                "numerator": 635,
+                "denominator": 1015,
+                "percent": 62.5615763546798
+              },
+              "review_precision_per_slot": {
+                "numerator": 60,
+                "denominator": 112,
+                "percent": 53.57142857142857
+              },
+              "numeric_answer_precision": {
+                "numerator": 60,
+                "denominator": 97,
+                "percent": 61.855670103092784
+              },
+              "error_capture": {
+                "numerator": 60,
+                "denominator": 440,
+                "percent": 13.636363636363635
+              }
+            },
+            "verification_priority": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 68,
+              "released_mismatches": 372,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 54,
+              "released_accuracy": {
+                "numerator": 643,
+                "denominator": 1015,
+                "percent": 63.34975369458128
+              },
+              "review_precision_per_slot": {
+                "numerator": 68,
+                "denominator": 112,
+                "percent": 60.71428571428571
+              },
+              "numeric_answer_precision": {
+                "numerator": 68,
+                "denominator": 97,
+                "percent": 70.10309278350515
+              },
+              "error_capture": {
+                "numerator": 68,
+                "denominator": 440,
+                "percent": 15.454545454545453
+              }
+            },
+            "random": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 42,
+              "released_mismatches": 398,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 28,
+              "released_accuracy": {
+                "numerator": 617,
+                "denominator": 1015,
+                "percent": 60.78817733990147
+              },
+              "review_precision_per_slot": {
+                "numerator": 42,
+                "denominator": 112,
+                "percent": 37.5
+              },
+              "numeric_answer_precision": {
+                "numerator": 42,
+                "denominator": 97,
+                "percent": 43.29896907216495
+              },
+              "error_capture": {
+                "numerator": 42,
+                "denominator": 440,
+                "percent": 9.545454545454547
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 20,
+          "policies": {
+            "confidence": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 107,
+              "released_mismatches": 333,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 93,
+              "released_accuracy": {
+                "numerator": 569,
+                "denominator": 902,
+                "percent": 63.08203991130821
+              },
+              "review_precision_per_slot": {
+                "numerator": 107,
+                "denominator": 225,
+                "percent": 47.55555555555556
+              },
+              "numeric_answer_precision": {
+                "numerator": 107,
+                "denominator": 210,
+                "percent": 50.95238095238095
+              },
+              "error_capture": {
+                "numerator": 107,
+                "denominator": 440,
+                "percent": 24.31818181818182
+              }
+            },
+            "verification_priority": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 152,
+              "released_mismatches": 288,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 138,
+              "released_accuracy": {
+                "numerator": 614,
+                "denominator": 902,
+                "percent": 68.07095343680709
+              },
+              "review_precision_per_slot": {
+                "numerator": 152,
+                "denominator": 225,
+                "percent": 67.55555555555556
+              },
+              "numeric_answer_precision": {
+                "numerator": 152,
+                "denominator": 210,
+                "percent": 72.38095238095238
+              },
+              "error_capture": {
+                "numerator": 152,
+                "denominator": 440,
+                "percent": 34.54545454545455
+              }
+            },
+            "random": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 79,
+              "released_mismatches": 361,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 65,
+              "released_accuracy": {
+                "numerator": 541,
+                "denominator": 902,
+                "percent": 59.97782705099778
+              },
+              "review_precision_per_slot": {
+                "numerator": 79,
+                "denominator": 225,
+                "percent": 35.11111111111111
+              },
+              "numeric_answer_precision": {
+                "numerator": 79,
+                "denominator": 210,
+                "percent": 37.61904761904762
+              },
+              "error_capture": {
+                "numerator": 79,
+                "denominator": 440,
+                "percent": 17.954545454545453
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 50,
+          "policies": {
+            "confidence": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 235,
+              "released_mismatches": 205,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 221,
+              "released_accuracy": {
+                "numerator": 359,
+                "denominator": 564,
+                "percent": 63.652482269503544
+              },
+              "review_precision_per_slot": {
+                "numerator": 235,
+                "denominator": 563,
+                "percent": 41.740674955595026
+              },
+              "numeric_answer_precision": {
+                "numerator": 235,
+                "denominator": 548,
+                "percent": 42.88321167883212
+              },
+              "error_capture": {
+                "numerator": 235,
+                "denominator": 440,
+                "percent": 53.40909090909091
+              }
+            },
+            "verification_priority": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 296,
+              "released_mismatches": 144,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 282,
+              "released_accuracy": {
+                "numerator": 420,
+                "denominator": 564,
+                "percent": 74.46808510638297
+              },
+              "review_precision_per_slot": {
+                "numerator": 296,
+                "denominator": 563,
+                "percent": 52.57548845470693
+              },
+              "numeric_answer_precision": {
+                "numerator": 296,
+                "denominator": 548,
+                "percent": 54.01459854014598
+              },
+              "error_capture": {
+                "numerator": 296,
+                "denominator": 440,
+                "percent": 67.27272727272727
+              }
+            },
+            "random": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 219,
+              "released_mismatches": 221,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 205,
+              "released_accuracy": {
+                "numerator": 343,
+                "denominator": 564,
+                "percent": 60.815602836879435
+              },
+              "review_precision_per_slot": {
+                "numerator": 219,
+                "denominator": 563,
+                "percent": 38.898756660746
+              },
+              "numeric_answer_precision": {
+                "numerator": 219,
+                "denominator": 548,
+                "percent": 39.96350364963504
+              },
+              "error_capture": {
+                "numerator": 219,
+                "denominator": 440,
+                "percent": 49.77272727272727
+              }
+            }
+          }
+        }
+      ],
+      "unit_counts": {
+        "(abstention)": {
+          "abstention": 15
+        },
+        "acres": {
+          "numeric_nonmatch": 3
+        },
+        "barrels per day": {
+          "match": 1,
+          "numeric_nonmatch": 2
+        },
+        "basis points": {
+          "match": 2
+        },
+        "miles": {
+          "match": 1
+        },
+        "number": {
+          "numeric_nonmatch": 7,
+          "match": 6
+        },
+        "percent": {
+          "match": 360,
+          "numeric_nonmatch": 275
+        },
+        "ratio": {
+          "numeric_nonmatch": 26,
+          "match": 45
+        },
+        "shares": {
+          "numeric_nonmatch": 11,
+          "match": 14
+        },
+        "shares outstanding": {
+          "match": 1
+        },
+        "shares/holder": {
+          "match": 1
+        },
+        "square feet": {
+          "match": 4
+        },
+        "usd": {
+          "numeric_nonmatch": 110,
+          "match": 227
+        },
+        "usd/share": {
+          "match": 8,
+          "numeric_nonmatch": 5
+        },
+        "vehicles": {
+          "match": 1
+        },
+        "years": {
+          "numeric_nonmatch": 1,
+          "match": 1
+        }
+      }
+    },
+    {
+      "t_fraction": "1/200",
+      "t_decimal": 0.005,
+      "counts": {
+        "match": 765,
+        "numeric_nonmatch": 347,
+        "abstention": 15
+      },
+      "budgets": [
+        {
+          "review_percent": 5,
+          "policies": {
+            "confidence": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 31,
+              "released_mismatches": 316,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 17,
+              "released_accuracy": {
+                "numerator": 755,
+                "denominator": 1071,
+                "percent": 70.49486461251168
+              },
+              "review_precision_per_slot": {
+                "numerator": 31,
+                "denominator": 56,
+                "percent": 55.35714285714286
+              },
+              "numeric_answer_precision": {
+                "numerator": 31,
+                "denominator": 41,
+                "percent": 75.60975609756098
+              },
+              "error_capture": {
+                "numerator": 31,
+                "denominator": 347,
+                "percent": 8.93371757925072
+              }
+            },
+            "verification_priority": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 19,
+              "released_mismatches": 328,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 5,
+              "released_accuracy": {
+                "numerator": 743,
+                "denominator": 1071,
+                "percent": 69.37441643323996
+              },
+              "review_precision_per_slot": {
+                "numerator": 19,
+                "denominator": 56,
+                "percent": 33.92857142857143
+              },
+              "numeric_answer_precision": {
+                "numerator": 19,
+                "denominator": 41,
+                "percent": 46.34146341463415
+              },
+              "error_capture": {
+                "numerator": 19,
+                "denominator": 347,
+                "percent": 5.475504322766571
+              }
+            },
+            "random": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 17,
+              "released_mismatches": 330,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 3,
+              "released_accuracy": {
+                "numerator": 741,
+                "denominator": 1071,
+                "percent": 69.187675070028
+              },
+              "review_precision_per_slot": {
+                "numerator": 17,
+                "denominator": 56,
+                "percent": 30.357142857142854
+              },
+              "numeric_answer_precision": {
+                "numerator": 17,
+                "denominator": 41,
+                "percent": 41.46341463414634
+              },
+              "error_capture": {
+                "numerator": 17,
+                "denominator": 347,
+                "percent": 4.899135446685879
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 10,
+          "policies": {
+            "confidence": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 59,
+              "released_mismatches": 288,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 45,
+              "released_accuracy": {
+                "numerator": 727,
+                "denominator": 1015,
+                "percent": 71.6256157635468
+              },
+              "review_precision_per_slot": {
+                "numerator": 59,
+                "denominator": 112,
+                "percent": 52.67857142857143
+              },
+              "numeric_answer_precision": {
+                "numerator": 59,
+                "denominator": 97,
+                "percent": 60.824742268041234
+              },
+              "error_capture": {
+                "numerator": 59,
+                "denominator": 347,
+                "percent": 17.002881844380404
+              }
+            },
+            "verification_priority": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 42,
+              "released_mismatches": 305,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 28,
+              "released_accuracy": {
+                "numerator": 710,
+                "denominator": 1015,
+                "percent": 69.95073891625616
+              },
+              "review_precision_per_slot": {
+                "numerator": 42,
+                "denominator": 112,
+                "percent": 37.5
+              },
+              "numeric_answer_precision": {
+                "numerator": 42,
+                "denominator": 97,
+                "percent": 43.29896907216495
+              },
+              "error_capture": {
+                "numerator": 42,
+                "denominator": 347,
+                "percent": 12.103746397694524
+              }
+            },
+            "random": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 35,
+              "released_mismatches": 312,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 21,
+              "released_accuracy": {
+                "numerator": 703,
+                "denominator": 1015,
+                "percent": 69.26108374384236
+              },
+              "review_precision_per_slot": {
+                "numerator": 35,
+                "denominator": 112,
+                "percent": 31.25
+              },
+              "numeric_answer_precision": {
+                "numerator": 35,
+                "denominator": 97,
+                "percent": 36.08247422680412
+              },
+              "error_capture": {
+                "numerator": 35,
+                "denominator": 347,
+                "percent": 10.086455331412104
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 20,
+          "policies": {
+            "confidence": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 103,
+              "released_mismatches": 244,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 89,
+              "released_accuracy": {
+                "numerator": 658,
+                "denominator": 902,
+                "percent": 72.9490022172949
+              },
+              "review_precision_per_slot": {
+                "numerator": 103,
+                "denominator": 225,
+                "percent": 45.77777777777778
+              },
+              "numeric_answer_precision": {
+                "numerator": 103,
+                "denominator": 210,
+                "percent": 49.047619047619044
+              },
+              "error_capture": {
+                "numerator": 103,
+                "denominator": 347,
+                "percent": 29.68299711815562
+              }
+            },
+            "verification_priority": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 95,
+              "released_mismatches": 252,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 81,
+              "released_accuracy": {
+                "numerator": 650,
+                "denominator": 902,
+                "percent": 72.06208425720621
+              },
+              "review_precision_per_slot": {
+                "numerator": 95,
+                "denominator": 225,
+                "percent": 42.22222222222222
+              },
+              "numeric_answer_precision": {
+                "numerator": 95,
+                "denominator": 210,
+                "percent": 45.23809523809524
+              },
+              "error_capture": {
+                "numerator": 95,
+                "denominator": 347,
+                "percent": 27.37752161383285
+              }
+            },
+            "random": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 67,
+              "released_mismatches": 280,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 53,
+              "released_accuracy": {
+                "numerator": 622,
+                "denominator": 902,
+                "percent": 68.95787139689578
+              },
+              "review_precision_per_slot": {
+                "numerator": 67,
+                "denominator": 225,
+                "percent": 29.777777777777775
+              },
+              "numeric_answer_precision": {
+                "numerator": 67,
+                "denominator": 210,
+                "percent": 31.9047619047619
+              },
+              "error_capture": {
+                "numerator": 67,
+                "denominator": 347,
+                "percent": 19.30835734870317
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 50,
+          "policies": {
+            "confidence": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 204,
+              "released_mismatches": 143,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 190,
+              "released_accuracy": {
+                "numerator": 421,
+                "denominator": 564,
+                "percent": 74.64539007092199
+              },
+              "review_precision_per_slot": {
+                "numerator": 204,
+                "denominator": 563,
+                "percent": 36.234458259325045
+              },
+              "numeric_answer_precision": {
+                "numerator": 204,
+                "denominator": 548,
+                "percent": 37.22627737226277
+              },
+              "error_capture": {
+                "numerator": 204,
+                "denominator": 347,
+                "percent": 58.789625360230545
+              }
+            },
+            "verification_priority": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 204,
+              "released_mismatches": 143,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 190,
+              "released_accuracy": {
+                "numerator": 421,
+                "denominator": 564,
+                "percent": 74.64539007092199
+              },
+              "review_precision_per_slot": {
+                "numerator": 204,
+                "denominator": 563,
+                "percent": 36.234458259325045
+              },
+              "numeric_answer_precision": {
+                "numerator": 204,
+                "denominator": 548,
+                "percent": 37.22627737226277
+              },
+              "error_capture": {
+                "numerator": 204,
+                "denominator": 347,
+                "percent": 58.789625360230545
+              }
+            },
+            "random": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 185,
+              "released_mismatches": 162,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 171,
+              "released_accuracy": {
+                "numerator": 402,
+                "denominator": 564,
+                "percent": 71.27659574468085
+              },
+              "review_precision_per_slot": {
+                "numerator": 185,
+                "denominator": 563,
+                "percent": 32.859680284191825
+              },
+              "numeric_answer_precision": {
+                "numerator": 185,
+                "denominator": 548,
+                "percent": 33.75912408759124
+              },
+              "error_capture": {
+                "numerator": 185,
+                "denominator": 347,
+                "percent": 53.31412103746398
+              }
+            }
+          }
+        }
+      ],
+      "unit_counts": {
+        "(abstention)": {
+          "abstention": 15
+        },
+        "acres": {
+          "numeric_nonmatch": 3
+        },
+        "barrels per day": {
+          "match": 1,
+          "numeric_nonmatch": 2
+        },
+        "basis points": {
+          "match": 2
+        },
+        "miles": {
+          "match": 1
+        },
+        "number": {
+          "numeric_nonmatch": 7,
+          "match": 6
+        },
+        "percent": {
+          "match": 448,
+          "numeric_nonmatch": 187
+        },
+        "ratio": {
+          "numeric_nonmatch": 24,
+          "match": 47
+        },
+        "shares": {
+          "numeric_nonmatch": 11,
+          "match": 14
+        },
+        "shares outstanding": {
+          "match": 1
+        },
+        "shares/holder": {
+          "match": 1
+        },
+        "square feet": {
+          "match": 4
+        },
+        "usd": {
+          "numeric_nonmatch": 109,
+          "match": 228
+        },
+        "usd/share": {
+          "match": 9,
+          "numeric_nonmatch": 4
+        },
+        "vehicles": {
+          "match": 1
+        },
+        "years": {
+          "match": 2
+        }
+      }
+    },
+    {
+      "t_fraction": "1/100",
+      "t_decimal": 0.01,
+      "counts": {
+        "match": 795,
+        "numeric_nonmatch": 317,
+        "abstention": 15
+      },
+      "budgets": [
+        {
+          "review_percent": 5,
+          "policies": {
+            "confidence": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 31,
+              "released_mismatches": 286,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 17,
+              "released_accuracy": {
+                "numerator": 785,
+                "denominator": 1071,
+                "percent": 73.29598506069094
+              },
+              "review_precision_per_slot": {
+                "numerator": 31,
+                "denominator": 56,
+                "percent": 55.35714285714286
+              },
+              "numeric_answer_precision": {
+                "numerator": 31,
+                "denominator": 41,
+                "percent": 75.60975609756098
+              },
+              "error_capture": {
+                "numerator": 31,
+                "denominator": 317,
+                "percent": 9.779179810725552
+              }
+            },
+            "verification_priority": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 18,
+              "released_mismatches": 299,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 4,
+              "released_accuracy": {
+                "numerator": 772,
+                "denominator": 1071,
+                "percent": 72.08216619981326
+              },
+              "review_precision_per_slot": {
+                "numerator": 18,
+                "denominator": 56,
+                "percent": 32.142857142857146
+              },
+              "numeric_answer_precision": {
+                "numerator": 18,
+                "denominator": 41,
+                "percent": 43.90243902439025
+              },
+              "error_capture": {
+                "numerator": 18,
+                "denominator": 317,
+                "percent": 5.678233438485805
+              }
+            },
+            "random": {
+              "reviewed": 56,
+              "released": 1071,
+              "reviewed_mismatches": 17,
+              "released_mismatches": 300,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 3,
+              "released_accuracy": {
+                "numerator": 771,
+                "denominator": 1071,
+                "percent": 71.98879551820728
+              },
+              "review_precision_per_slot": {
+                "numerator": 17,
+                "denominator": 56,
+                "percent": 30.357142857142854
+              },
+              "numeric_answer_precision": {
+                "numerator": 17,
+                "denominator": 41,
+                "percent": 41.46341463414634
+              },
+              "error_capture": {
+                "numerator": 17,
+                "denominator": 317,
+                "percent": 5.3627760252365935
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 10,
+          "policies": {
+            "confidence": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 59,
+              "released_mismatches": 258,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 45,
+              "released_accuracy": {
+                "numerator": 757,
+                "denominator": 1015,
+                "percent": 74.58128078817734
+              },
+              "review_precision_per_slot": {
+                "numerator": 59,
+                "denominator": 112,
+                "percent": 52.67857142857143
+              },
+              "numeric_answer_precision": {
+                "numerator": 59,
+                "denominator": 97,
+                "percent": 60.824742268041234
+              },
+              "error_capture": {
+                "numerator": 59,
+                "denominator": 317,
+                "percent": 18.61198738170347
+              }
+            },
+            "verification_priority": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 35,
+              "released_mismatches": 282,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 21,
+              "released_accuracy": {
+                "numerator": 733,
+                "denominator": 1015,
+                "percent": 72.21674876847291
+              },
+              "review_precision_per_slot": {
+                "numerator": 35,
+                "denominator": 112,
+                "percent": 31.25
+              },
+              "numeric_answer_precision": {
+                "numerator": 35,
+                "denominator": 97,
+                "percent": 36.08247422680412
+              },
+              "error_capture": {
+                "numerator": 35,
+                "denominator": 317,
+                "percent": 11.041009463722396
+              }
+            },
+            "random": {
+              "reviewed": 112,
+              "released": 1015,
+              "reviewed_mismatches": 34,
+              "released_mismatches": 283,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 20,
+              "released_accuracy": {
+                "numerator": 732,
+                "denominator": 1015,
+                "percent": 72.11822660098522
+              },
+              "review_precision_per_slot": {
+                "numerator": 34,
+                "denominator": 112,
+                "percent": 30.357142857142854
+              },
+              "numeric_answer_precision": {
+                "numerator": 34,
+                "denominator": 97,
+                "percent": 35.051546391752574
+              },
+              "error_capture": {
+                "numerator": 34,
+                "denominator": 317,
+                "percent": 10.725552050473187
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 20,
+          "policies": {
+            "confidence": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 102,
+              "released_mismatches": 215,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 88,
+              "released_accuracy": {
+                "numerator": 687,
+                "denominator": 902,
+                "percent": 76.1640798226164
+              },
+              "review_precision_per_slot": {
+                "numerator": 102,
+                "denominator": 225,
+                "percent": 45.33333333333333
+              },
+              "numeric_answer_precision": {
+                "numerator": 102,
+                "denominator": 210,
+                "percent": 48.57142857142857
+              },
+              "error_capture": {
+                "numerator": 102,
+                "denominator": 317,
+                "percent": 32.17665615141956
+              }
+            },
+            "verification_priority": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 75,
+              "released_mismatches": 242,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 61,
+              "released_accuracy": {
+                "numerator": 660,
+                "denominator": 902,
+                "percent": 73.17073170731707
+              },
+              "review_precision_per_slot": {
+                "numerator": 75,
+                "denominator": 225,
+                "percent": 33.33333333333333
+              },
+              "numeric_answer_precision": {
+                "numerator": 75,
+                "denominator": 210,
+                "percent": 35.714285714285715
+              },
+              "error_capture": {
+                "numerator": 75,
+                "denominator": 317,
+                "percent": 23.65930599369085
+              }
+            },
+            "random": {
+              "reviewed": 225,
+              "released": 902,
+              "reviewed_mismatches": 60,
+              "released_mismatches": 257,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 46,
+              "released_accuracy": {
+                "numerator": 645,
+                "denominator": 902,
+                "percent": 71.50776053215078
+              },
+              "review_precision_per_slot": {
+                "numerator": 60,
+                "denominator": 225,
+                "percent": 26.666666666666668
+              },
+              "numeric_answer_precision": {
+                "numerator": 60,
+                "denominator": 210,
+                "percent": 28.57142857142857
+              },
+              "error_capture": {
+                "numerator": 60,
+                "denominator": 317,
+                "percent": 18.92744479495268
+              }
+            }
+          }
+        },
+        {
+          "review_percent": 50,
+          "policies": {
+            "confidence": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 193,
+              "released_mismatches": 124,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 179,
+              "released_accuracy": {
+                "numerator": 440,
+                "denominator": 564,
+                "percent": 78.01418439716312
+              },
+              "review_precision_per_slot": {
+                "numerator": 193,
+                "denominator": 563,
+                "percent": 34.280639431616336
+              },
+              "numeric_answer_precision": {
+                "numerator": 193,
+                "denominator": 548,
+                "percent": 35.21897810218978
+              },
+              "error_capture": {
+                "numerator": 193,
+                "denominator": 317,
+                "percent": 60.88328075709779
+              }
+            },
+            "verification_priority": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 174,
+              "released_mismatches": 143,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 160,
+              "released_accuracy": {
+                "numerator": 421,
+                "denominator": 564,
+                "percent": 74.64539007092199
+              },
+              "review_precision_per_slot": {
+                "numerator": 174,
+                "denominator": 563,
+                "percent": 30.905861456483123
+              },
+              "numeric_answer_precision": {
+                "numerator": 174,
+                "denominator": 548,
+                "percent": 31.751824817518248
+              },
+              "error_capture": {
+                "numerator": 174,
+                "denominator": 317,
+                "percent": 54.889589905362776
+              }
+            },
+            "random": {
+              "reviewed": 563,
+              "released": 564,
+              "reviewed_mismatches": 168,
+              "released_mismatches": 149,
+              "reviewed_abstentions": 15,
+              "released_abstentions": 0,
+              "mandatory_slots": 35,
+              "mandatory_mismatches": 14,
+              "discretionary_mismatches": 154,
+              "released_accuracy": {
+                "numerator": 415,
+                "denominator": 564,
+                "percent": 73.58156028368793
+              },
+              "review_precision_per_slot": {
+                "numerator": 168,
+                "denominator": 563,
+                "percent": 29.84014209591474
+              },
+              "numeric_answer_precision": {
+                "numerator": 168,
+                "denominator": 548,
+                "percent": 30.656934306569344
+              },
+              "error_capture": {
+                "numerator": 168,
+                "denominator": 317,
+                "percent": 52.99684542586751
+              }
+            }
+          }
+        }
+      ],
+      "unit_counts": {
+        "(abstention)": {
+          "abstention": 15
+        },
+        "acres": {
+          "numeric_nonmatch": 3
+        },
+        "barrels per day": {
+          "match": 1,
+          "numeric_nonmatch": 2
+        },
+        "basis points": {
+          "match": 2
+        },
+        "miles": {
+          "match": 1
+        },
+        "number": {
+          "numeric_nonmatch": 7,
+          "match": 6
+        },
+        "percent": {
+          "match": 477,
+          "numeric_nonmatch": 158
+        },
+        "ratio": {
+          "numeric_nonmatch": 23,
+          "match": 48
+        },
+        "shares": {
+          "numeric_nonmatch": 11,
+          "match": 14
+        },
+        "shares outstanding": {
+          "match": 1
+        },
+        "shares/holder": {
+          "match": 1
+        },
+        "square feet": {
+          "match": 4
+        },
+        "usd": {
+          "numeric_nonmatch": 109,
+          "match": 228
+        },
+        "usd/share": {
+          "match": 9,
+          "numeric_nonmatch": 4
+        },
+        "vehicles": {
+          "match": 1
+        },
+        "years": {
+          "match": 2
+        }
+      }
+    }
+  ],
+  "checker_adjustment": [
+    {
+      "review_percent": 5,
+      "original": {
+        "reviewed": 56,
+        "released": 1071,
+        "reviewed_mismatches": 19,
+        "released_mismatches": 328,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 5,
+        "released_accuracy": {
+          "numerator": 743,
+          "denominator": 1071,
+          "percent": 69.37441643323996
+        },
+        "review_precision_per_slot": {
+          "numerator": 19,
+          "denominator": 56,
+          "percent": 33.92857142857143
+        },
+        "numeric_answer_precision": {
+          "numerator": 19,
+          "denominator": 41,
+          "percent": 46.34146341463415
+        },
+        "error_capture": {
+          "numerator": 19,
+          "denominator": 347,
+          "percent": 5.475504322766571
+        }
+      },
+      "adjusted": {
+        "reviewed": 56,
+        "released": 1071,
+        "reviewed_mismatches": 35,
+        "released_mismatches": 312,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 21,
+        "released_accuracy": {
+          "numerator": 759,
+          "denominator": 1071,
+          "percent": 70.86834733893558
+        },
+        "review_precision_per_slot": {
+          "numerator": 35,
+          "denominator": 56,
+          "percent": 62.5
+        },
+        "numeric_answer_precision": {
+          "numerator": 35,
+          "denominator": 41,
+          "percent": 85.36585365853658
+        },
+        "error_capture": {
+          "numerator": 35,
+          "denominator": 347,
+          "percent": 10.086455331412104
+        }
+      },
+      "confidence": {
+        "reviewed": 56,
+        "released": 1071,
+        "reviewed_mismatches": 31,
+        "released_mismatches": 316,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 17,
+        "released_accuracy": {
+          "numerator": 755,
+          "denominator": 1071,
+          "percent": 70.49486461251168
+        },
+        "review_precision_per_slot": {
+          "numerator": 31,
+          "denominator": 56,
+          "percent": 55.35714285714286
+        },
+        "numeric_answer_precision": {
+          "numerator": 31,
+          "denominator": 41,
+          "percent": 75.60975609756098
+        },
+        "error_capture": {
+          "numerator": 31,
+          "denominator": 347,
+          "percent": 8.93371757925072
+        }
+      },
+      "overlap": 39,
+      "entered_labels": {
+        "numeric_nonmatch": 17
+      },
+      "left_labels": {
+        "match": 16,
+        "numeric_nonmatch": 1
+      },
+      "entered_count": 17,
+      "left_count": 17
+    },
+    {
+      "review_percent": 10,
+      "original": {
+        "reviewed": 112,
+        "released": 1015,
+        "reviewed_mismatches": 42,
+        "released_mismatches": 305,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 28,
+        "released_accuracy": {
+          "numerator": 710,
+          "denominator": 1015,
+          "percent": 69.95073891625616
+        },
+        "review_precision_per_slot": {
+          "numerator": 42,
+          "denominator": 112,
+          "percent": 37.5
+        },
+        "numeric_answer_precision": {
+          "numerator": 42,
+          "denominator": 97,
+          "percent": 43.29896907216495
+        },
+        "error_capture": {
+          "numerator": 42,
+          "denominator": 347,
+          "percent": 12.103746397694524
+        }
+      },
+      "adjusted": {
+        "reviewed": 112,
+        "released": 1015,
+        "reviewed_mismatches": 88,
+        "released_mismatches": 259,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 74,
+        "released_accuracy": {
+          "numerator": 756,
+          "denominator": 1015,
+          "percent": 74.48275862068967
+        },
+        "review_precision_per_slot": {
+          "numerator": 88,
+          "denominator": 112,
+          "percent": 78.57142857142857
+        },
+        "numeric_answer_precision": {
+          "numerator": 88,
+          "denominator": 97,
+          "percent": 90.72164948453609
+        },
+        "error_capture": {
+          "numerator": 88,
+          "denominator": 347,
+          "percent": 25.360230547550433
+        }
+      },
+      "confidence": {
+        "reviewed": 112,
+        "released": 1015,
+        "reviewed_mismatches": 59,
+        "released_mismatches": 288,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 45,
+        "released_accuracy": {
+          "numerator": 727,
+          "denominator": 1015,
+          "percent": 71.6256157635468
+        },
+        "review_precision_per_slot": {
+          "numerator": 59,
+          "denominator": 112,
+          "percent": 52.67857142857143
+        },
+        "numeric_answer_precision": {
+          "numerator": 59,
+          "denominator": 97,
+          "percent": 60.824742268041234
+        },
+        "error_capture": {
+          "numerator": 59,
+          "denominator": 347,
+          "percent": 17.002881844380404
+        }
+      },
+      "overlap": 61,
+      "entered_labels": {
+        "numeric_nonmatch": 48,
+        "match": 3
+      },
+      "left_labels": {
+        "match": 49,
+        "numeric_nonmatch": 2
+      },
+      "entered_count": 51,
+      "left_count": 51
+    },
+    {
+      "review_percent": 20,
+      "original": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 95,
+        "released_mismatches": 252,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 81,
+        "released_accuracy": {
+          "numerator": 650,
+          "denominator": 902,
+          "percent": 72.06208425720621
+        },
+        "review_precision_per_slot": {
+          "numerator": 95,
+          "denominator": 225,
+          "percent": 42.22222222222222
+        },
+        "numeric_answer_precision": {
+          "numerator": 95,
+          "denominator": 210,
+          "percent": 45.23809523809524
+        },
+        "error_capture": {
+          "numerator": 95,
+          "denominator": 347,
+          "percent": 27.37752161383285
+        }
+      },
+      "adjusted": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 143,
+        "released_mismatches": 204,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 129,
+        "released_accuracy": {
+          "numerator": 698,
+          "denominator": 902,
+          "percent": 77.38359201773835
+        },
+        "review_precision_per_slot": {
+          "numerator": 143,
+          "denominator": 225,
+          "percent": 63.55555555555556
+        },
+        "numeric_answer_precision": {
+          "numerator": 143,
+          "denominator": 210,
+          "percent": 68.0952380952381
+        },
+        "error_capture": {
+          "numerator": 143,
+          "denominator": 347,
+          "percent": 41.210374639769455
+        }
+      },
+      "confidence": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 103,
+        "released_mismatches": 244,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 89,
+        "released_accuracy": {
+          "numerator": 658,
+          "denominator": 902,
+          "percent": 72.9490022172949
+        },
+        "review_precision_per_slot": {
+          "numerator": 103,
+          "denominator": 225,
+          "percent": 45.77777777777778
+        },
+        "numeric_answer_precision": {
+          "numerator": 103,
+          "denominator": 210,
+          "percent": 49.047619047619044
+        },
+        "error_capture": {
+          "numerator": 103,
+          "denominator": 347,
+          "percent": 29.68299711815562
+        }
+      },
+      "overlap": 115,
+      "entered_labels": {
+        "match": 47,
+        "numeric_nonmatch": 63
+      },
+      "left_labels": {
+        "match": 95,
+        "numeric_nonmatch": 15
+      },
+      "entered_count": 110,
+      "left_count": 110
+    },
+    {
+      "review_percent": 50,
+      "original": {
+        "reviewed": 563,
+        "released": 564,
+        "reviewed_mismatches": 204,
+        "released_mismatches": 143,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 190,
+        "released_accuracy": {
+          "numerator": 421,
+          "denominator": 564,
+          "percent": 74.64539007092199
+        },
+        "review_precision_per_slot": {
+          "numerator": 204,
+          "denominator": 563,
+          "percent": 36.234458259325045
+        },
+        "numeric_answer_precision": {
+          "numerator": 204,
+          "denominator": 548,
+          "percent": 37.22627737226277
+        },
+        "error_capture": {
+          "numerator": 204,
+          "denominator": 347,
+          "percent": 58.789625360230545
+        }
+      },
+      "adjusted": {
+        "reviewed": 563,
+        "released": 564,
+        "reviewed_mismatches": 211,
+        "released_mismatches": 136,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 197,
+        "released_accuracy": {
+          "numerator": 428,
+          "denominator": 564,
+          "percent": 75.88652482269504
+        },
+        "review_precision_per_slot": {
+          "numerator": 211,
+          "denominator": 563,
+          "percent": 37.47779751332149
+        },
+        "numeric_answer_precision": {
+          "numerator": 211,
+          "denominator": 548,
+          "percent": 38.503649635036496
+        },
+        "error_capture": {
+          "numerator": 211,
+          "denominator": 347,
+          "percent": 60.80691642651297
+        }
+      },
+      "confidence": {
+        "reviewed": 563,
+        "released": 564,
+        "reviewed_mismatches": 204,
+        "released_mismatches": 143,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 190,
+        "released_accuracy": {
+          "numerator": 421,
+          "denominator": 564,
+          "percent": 74.64539007092199
+        },
+        "review_precision_per_slot": {
+          "numerator": 204,
+          "denominator": 563,
+          "percent": 36.234458259325045
+        },
+        "numeric_answer_precision": {
+          "numerator": 204,
+          "denominator": 548,
+          "percent": 37.22627737226277
+        },
+        "error_capture": {
+          "numerator": 204,
+          "denominator": 347,
+          "percent": 58.789625360230545
+        }
+      },
+      "overlap": 433,
+      "entered_labels": {
+        "match": 100,
+        "numeric_nonmatch": 30
+      },
+      "left_labels": {
+        "match": 107,
+        "numeric_nonmatch": 23
+      },
+      "entered_count": 130,
+      "left_count": 130
+    }
+  ],
+  "warning_diagnostic": {
+    "original_arithmetic_count": 327,
+    "adjusted_arithmetic_count": 114,
+    "removed_count": 213,
+    "removed_labels": {
+      "match": 183,
+      "numeric_nonmatch": 30
+    },
+    "added_count": 0
+  },
+  "original_strict5_at20": {
+    "counts": {
+      "match": 629,
+      "numeric_nonmatch": 483,
+      "abstention": 15
+    },
+    "policies": {
+      "confidence": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 113,
+        "released_mismatches": 370,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 99,
+        "released_accuracy": {
+          "numerator": 532,
+          "denominator": 902,
+          "percent": 58.98004434589801
+        },
+        "review_precision_per_slot": {
+          "numerator": 113,
+          "denominator": 225,
+          "percent": 50.22222222222222
+        },
+        "numeric_answer_precision": {
+          "numerator": 113,
+          "denominator": 210,
+          "percent": 53.80952380952381
+        },
+        "error_capture": {
+          "numerator": 113,
+          "denominator": 483,
+          "percent": 23.395445134575567
+        }
+      },
+      "verification_priority": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 177,
+        "released_mismatches": 306,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 163,
+        "released_accuracy": {
+          "numerator": 596,
+          "denominator": 902,
+          "percent": 66.07538802660754
+        },
+        "review_precision_per_slot": {
+          "numerator": 177,
+          "denominator": 225,
+          "percent": 78.66666666666666
+        },
+        "numeric_answer_precision": {
+          "numerator": 177,
+          "denominator": 210,
+          "percent": 84.28571428571429
+        },
+        "error_capture": {
+          "numerator": 177,
+          "denominator": 483,
+          "percent": 36.64596273291926
+        }
+      },
+      "random": {
+        "reviewed": 225,
+        "released": 902,
+        "reviewed_mismatches": 89,
+        "released_mismatches": 394,
+        "reviewed_abstentions": 15,
+        "released_abstentions": 0,
+        "mandatory_slots": 35,
+        "mandatory_mismatches": 14,
+        "discretionary_mismatches": 75,
+        "released_accuracy": {
+          "numerator": 508,
+          "denominator": 902,
+          "percent": 56.31929046563193
+        },
+        "review_precision_per_slot": {
+          "numerator": 89,
+          "denominator": 225,
+          "percent": 39.55555555555556
+        },
+        "numeric_answer_precision": {
+          "numerator": 89,
+          "denominator": 210,
+          "percent": 42.38095238095238
+        },
+        "error_capture": {
+          "numerator": 89,
+          "denominator": 483,
+          "percent": 18.426501035196686
+        }
+      }
+    }
+  }
+}
