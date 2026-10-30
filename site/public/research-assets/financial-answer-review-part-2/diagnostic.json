@@ -1,0 +1,536 @@
+{
+  "source_sha256": "a15fa1d7d746ecb32ebfb122a54c4bbcbb878a7e8b2f76b7199d19f9b920d0be",
+  "analysis": "post-study descriptive, not preregistered; frozen queues unchanged",
+  "definitions": "Any warning means usable response with arithmetic/evidence/unused warning; mandatory unusable responses reported separately. Warning types overlap. False alarms mean answer-key matches, not proof of harmless reasoning.",
+  "external_spend_usd": 0,
+  "cells": [
+    {
+      "dataset": "finqa",
+      "model": "openai/gpt-5.4-mini",
+      "all": {
+        "total": 455,
+        "mismatches": 127,
+        "matches": 327,
+        "selected": 91,
+        "selected_mismatches": 64,
+        "selected_matches": 26
+      },
+      "mandatory": {
+        "total": 7,
+        "mismatches": 3,
+        "matches": 3,
+        "selected": 7,
+        "selected_mismatches": 3,
+        "selected_matches": 3
+      },
+      "warned": {
+        "total": 106,
+        "mismatches": 68,
+        "matches": 38,
+        "selected": 84,
+        "selected_mismatches": 61,
+        "selected_matches": 23
+      },
+      "no_warning": {
+        "total": 342,
+        "mismatches": 56,
+        "matches": 286,
+        "selected": 0,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warning_coverage_of_all_mismatches": 0.5354330708661418,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.5590551181102362,
+      "warned_mismatch_capture": 0.8970588235294118,
+      "warning_precision": 0.6415094339622641,
+      "warning_types": {
+        "arithmetic": {
+          "total": 56,
+          "mismatches": 55,
+          "matches": 1,
+          "selected": 56,
+          "selected_mismatches": 55,
+          "selected_matches": 1
+        },
+        "evidence": {
+          "total": 15,
+          "mismatches": 4,
+          "matches": 11,
+          "selected": 15,
+          "selected_mismatches": 4,
+          "selected_matches": 11
+        },
+        "unused": {
+          "total": 40,
+          "mismatches": 13,
+          "matches": 27,
+          "selected": 18,
+          "selected_mismatches": 6,
+          "selected_matches": 12
+        }
+      }
+    },
+    {
+      "dataset": "finqa",
+      "model": "openai/gpt-6.1-sol",
+      "all": {
+        "total": 455,
+        "mismatches": 73,
+        "matches": 378,
+        "selected": 91,
+        "selected_mismatches": 13,
+        "selected_matches": 74
+      },
+      "mandatory": {
+        "total": 4,
+        "mismatches": 0,
+        "matches": 0,
+        "selected": 4,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warned": {
+        "total": 7,
+        "mismatches": 2,
+        "matches": 5,
+        "selected": 7,
+        "selected_mismatches": 2,
+        "selected_matches": 5
+      },
+      "no_warning": {
+        "total": 444,
+        "mismatches": 71,
+        "matches": 373,
+        "selected": 80,
+        "selected_mismatches": 11,
+        "selected_matches": 69
+      },
+      "warning_coverage_of_all_mismatches": 0.0273972602739726,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.0273972602739726,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.2857142857142857,
+      "warning_types": {
+        "arithmetic": {
+          "total": 1,
+          "mismatches": 1,
+          "matches": 0,
+          "selected": 1,
+          "selected_mismatches": 1,
+          "selected_matches": 0
+        },
+        "evidence": {
+          "total": 6,
+          "mismatches": 1,
+          "matches": 5,
+          "selected": 6,
+          "selected_mismatches": 1,
+          "selected_matches": 5
+        },
+        "unused": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        }
+      }
+    },
+    {
+      "dataset": "finqa",
+      "model": "anthropic/claude-sonnet-5.5",
+      "all": {
+        "total": 455,
+        "mismatches": 100,
+        "matches": 351,
+        "selected": 91,
+        "selected_mismatches": 52,
+        "selected_matches": 35
+      },
+      "mandatory": {
+        "total": 5,
+        "mismatches": 1,
+        "matches": 0,
+        "selected": 5,
+        "selected_mismatches": 1,
+        "selected_matches": 0
+      },
+      "warned": {
+        "total": 71,
+        "mismatches": 47,
+        "matches": 24,
+        "selected": 71,
+        "selected_mismatches": 47,
+        "selected_matches": 24
+      },
+      "no_warning": {
+        "total": 379,
+        "mismatches": 52,
+        "matches": 327,
+        "selected": 15,
+        "selected_mismatches": 4,
+        "selected_matches": 11
+      },
+      "warning_coverage_of_all_mismatches": 0.47,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.48,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.6619718309859155,
+      "warning_types": {
+        "arithmetic": {
+          "total": 49,
+          "mismatches": 41,
+          "matches": 8,
+          "selected": 49,
+          "selected_mismatches": 41,
+          "selected_matches": 8
+        },
+        "evidence": {
+          "total": 14,
+          "mismatches": 4,
+          "matches": 10,
+          "selected": 14,
+          "selected_mismatches": 4,
+          "selected_matches": 10
+        },
+        "unused": {
+          "total": 11,
+          "mismatches": 5,
+          "matches": 6,
+          "selected": 11,
+          "selected_mismatches": 5,
+          "selected_matches": 6
+        }
+      }
+    },
+    {
+      "dataset": "finqa",
+      "model": "google/gemini-4-argon",
+      "all": {
+        "total": 455,
+        "mismatches": 67,
+        "matches": 384,
+        "selected": 91,
+        "selected_mismatches": 13,
+        "selected_matches": 74
+      },
+      "mandatory": {
+        "total": 4,
+        "mismatches": 0,
+        "matches": 0,
+        "selected": 4,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warned": {
+        "total": 18,
+        "mismatches": 4,
+        "matches": 14,
+        "selected": 18,
+        "selected_mismatches": 4,
+        "selected_matches": 14
+      },
+      "no_warning": {
+        "total": 433,
+        "mismatches": 63,
+        "matches": 370,
+        "selected": 69,
+        "selected_mismatches": 9,
+        "selected_matches": 60
+      },
+      "warning_coverage_of_all_mismatches": 0.05970149253731343,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.05970149253731343,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.2222222222222222,
+      "warning_types": {
+        "arithmetic": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        },
+        "evidence": {
+          "total": 18,
+          "mismatches": 4,
+          "matches": 14,
+          "selected": 18,
+          "selected_mismatches": 4,
+          "selected_matches": 14
+        },
+        "unused": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        }
+      }
+    },
+    {
+      "dataset": "tatqa",
+      "model": "openai/gpt-5.4-mini",
+      "all": {
+        "total": 487,
+        "mismatches": 88,
+        "matches": 398,
+        "selected": 97,
+        "selected_mismatches": 46,
+        "selected_matches": 50
+      },
+      "mandatory": {
+        "total": 5,
+        "mismatches": 3,
+        "matches": 1,
+        "selected": 5,
+        "selected_mismatches": 3,
+        "selected_matches": 1
+      },
+      "warned": {
+        "total": 118,
+        "mismatches": 45,
+        "matches": 73,
+        "selected": 92,
+        "selected_mismatches": 43,
+        "selected_matches": 49
+      },
+      "no_warning": {
+        "total": 364,
+        "mismatches": 40,
+        "matches": 324,
+        "selected": 0,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warning_coverage_of_all_mismatches": 0.5113636363636364,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.5454545454545454,
+      "warned_mismatch_capture": 0.9555555555555556,
+      "warning_precision": 0.3813559322033898,
+      "warning_types": {
+        "arithmetic": {
+          "total": 40,
+          "mismatches": 36,
+          "matches": 4,
+          "selected": 40,
+          "selected_mismatches": 36,
+          "selected_matches": 4
+        },
+        "evidence": {
+          "total": 26,
+          "mismatches": 6,
+          "matches": 20,
+          "selected": 26,
+          "selected_mismatches": 6,
+          "selected_matches": 20
+        },
+        "unused": {
+          "total": 63,
+          "mismatches": 9,
+          "matches": 54,
+          "selected": 37,
+          "selected_mismatches": 7,
+          "selected_matches": 30
+        }
+      }
+    },
+    {
+      "dataset": "tatqa",
+      "model": "openai/gpt-6.1-sol",
+      "all": {
+        "total": 487,
+        "mismatches": 42,
+        "matches": 444,
+        "selected": 97,
+        "selected_mismatches": 7,
+        "selected_matches": 89
+      },
+      "mandatory": {
+        "total": 1,
+        "mismatches": 0,
+        "matches": 0,
+        "selected": 1,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warned": {
+        "total": 26,
+        "mismatches": 3,
+        "matches": 23,
+        "selected": 26,
+        "selected_mismatches": 3,
+        "selected_matches": 23
+      },
+      "no_warning": {
+        "total": 460,
+        "mismatches": 39,
+        "matches": 421,
+        "selected": 70,
+        "selected_mismatches": 4,
+        "selected_matches": 66
+      },
+      "warning_coverage_of_all_mismatches": 0.07142857142857142,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.07142857142857142,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.11538461538461539,
+      "warning_types": {
+        "arithmetic": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        },
+        "evidence": {
+          "total": 26,
+          "mismatches": 3,
+          "matches": 23,
+          "selected": 26,
+          "selected_mismatches": 3,
+          "selected_matches": 23
+        },
+        "unused": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        }
+      }
+    },
+    {
+      "dataset": "tatqa",
+      "model": "anthropic/claude-sonnet-5.5",
+      "all": {
+        "total": 487,
+        "mismatches": 83,
+        "matches": 403,
+        "selected": 97,
+        "selected_mismatches": 51,
+        "selected_matches": 45
+      },
+      "mandatory": {
+        "total": 5,
+        "mismatches": 2,
+        "matches": 2,
+        "selected": 5,
+        "selected_mismatches": 2,
+        "selected_matches": 2
+      },
+      "warned": {
+        "total": 71,
+        "mismatches": 47,
+        "matches": 24,
+        "selected": 71,
+        "selected_mismatches": 47,
+        "selected_matches": 24
+      },
+      "no_warning": {
+        "total": 411,
+        "mismatches": 34,
+        "matches": 377,
+        "selected": 21,
+        "selected_mismatches": 2,
+        "selected_matches": 19
+      },
+      "warning_coverage_of_all_mismatches": 0.5662650602409639,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.5903614457831325,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.6619718309859155,
+      "warning_types": {
+        "arithmetic": {
+          "total": 44,
+          "mismatches": 42,
+          "matches": 2,
+          "selected": 44,
+          "selected_mismatches": 42,
+          "selected_matches": 2
+        },
+        "evidence": {
+          "total": 25,
+          "mismatches": 6,
+          "matches": 19,
+          "selected": 25,
+          "selected_mismatches": 6,
+          "selected_matches": 19
+        },
+        "unused": {
+          "total": 5,
+          "mismatches": 2,
+          "matches": 3,
+          "selected": 5,
+          "selected_mismatches": 2,
+          "selected_matches": 3
+        }
+      }
+    },
+    {
+      "dataset": "tatqa",
+      "model": "google/gemini-4-argon",
+      "all": {
+        "total": 487,
+        "mismatches": 36,
+        "matches": 450,
+        "selected": 97,
+        "selected_mismatches": 10,
+        "selected_matches": 86
+      },
+      "mandatory": {
+        "total": 1,
+        "mismatches": 0,
+        "matches": 0,
+        "selected": 1,
+        "selected_mismatches": 0,
+        "selected_matches": 0
+      },
+      "warned": {
+        "total": 24,
+        "mismatches": 3,
+        "matches": 21,
+        "selected": 24,
+        "selected_mismatches": 3,
+        "selected_matches": 21
+      },
+      "no_warning": {
+        "total": 462,
+        "mismatches": 33,
+        "matches": 429,
+        "selected": 72,
+        "selected_mismatches": 7,
+        "selected_matches": 65
+      },
+      "warning_coverage_of_all_mismatches": 0.08333333333333333,
+      "warning_or_mandatory_coverage_of_all_mismatches": 0.08333333333333333,
+      "warned_mismatch_capture": 1.0,
+      "warning_precision": 0.125,
+      "warning_types": {
+        "arithmetic": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        },
+        "evidence": {
+          "total": 24,
+          "mismatches": 3,
+          "matches": 21,
+          "selected": 24,
+          "selected_mismatches": 3,
+          "selected_matches": 21
+        },
+        "unused": {
+          "total": 0,
+          "mismatches": 0,
+          "matches": 0,
+          "selected": 0,
+          "selected_mismatches": 0,
+          "selected_matches": 0
+        }
+      }
+    }
+  ]
+}

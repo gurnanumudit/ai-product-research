@@ -1,0 +1,3492 @@
+{
+  "schemaVersion": 2,
+  "unit": "synthetic utility gain above outside option",
+  "labels": {
+    "buyers": {
+      "neutral": "Neutral",
+      "firm": "Firm",
+      "collaborative": "Collaborative",
+      "programmed": "Programmed"
+    },
+    "sellers": {
+      "early": "Early programmed seller",
+      "late": "Late programmed seller",
+      "neutral_sol": "Neutral Sol seller"
+    },
+    "categories": {
+      "tradeoffs": "Tradeoffs",
+      "narrow_zone": "Narrow agreement zone",
+      "no_zone": "No agreement zone"
+    },
+    "contrasts": {
+      "firm_minus_neutral": "Firm \u2212 neutral",
+      "collaborative_minus_neutral": "Collaborative \u2212 neutral",
+      "neutral_minus_programmed": "Neutral \u2212 programmed",
+      "firm_minus_programmed": "Firm \u2212 programmed",
+      "collaborative_minus_programmed": "Collaborative \u2212 programmed"
+    },
+    "subgroupFamilies": {
+      "seller": "Seller policy",
+      "category": "Scenario category",
+      "seller_by_category": "Scenario category \u00d7 seller policy",
+      "first_mover": "First mover"
+    },
+    "subgroupGroups": {
+      "seller": {
+        "early": "Early programmed seller",
+        "late": "Late programmed seller",
+        "neutral_sol": "Neutral Sol seller"
+      },
+      "category": {
+        "tradeoffs": "Tradeoffs",
+        "narrow_zone": "Narrow agreement zone",
+        "no_zone": "No agreement zone"
+      },
+      "seller_by_category": {
+        "tradeoffs/early": "Tradeoffs \u00d7 Early programmed seller",
+        "tradeoffs/late": "Tradeoffs \u00d7 Late programmed seller",
+        "tradeoffs/neutral_sol": "Tradeoffs \u00d7 Neutral Sol seller",
+        "narrow_zone/early": "Narrow agreement zone \u00d7 Early programmed seller",
+        "narrow_zone/late": "Narrow agreement zone \u00d7 Late programmed seller",
+        "narrow_zone/neutral_sol": "Narrow agreement zone \u00d7 Neutral Sol seller",
+        "no_zone/early": "No agreement zone \u00d7 Early programmed seller",
+        "no_zone/late": "No agreement zone \u00d7 Late programmed seller",
+        "no_zone/neutral_sol": "No agreement zone \u00d7 Neutral Sol seller"
+      },
+      "first_mover": {
+        "buyer": "Buyer moves first",
+        "seller": "Seller moves first"
+      }
+    }
+  },
+  "main": {
+    "classification": "post_interim_amended_exploratory",
+    "population": "All 180 designed scenarios \u00d7 4 buyer policies \u00d7 3 seller policies",
+    "weights": "Equal category and seller weights",
+    "scenarios": 180,
+    "episodes": 2160,
+    "complete": true,
+    "operationalFeasibility": false,
+    "confirmatory": false,
+    "practicalMargin": 5,
+    "contrastIntervals": "Copied unchanged from reviewed fixed scenario-bootstrap output; no new interval estimation.",
+    "contrasts": [
+      {
+        "id": "firm_minus_neutral",
+        "estimate": -0.09259259259259259,
+        "ci95": [
+          -0.46296296296296297,
+          0.2777777777777778
+        ],
+        "ci99": [
+          -0.5833333333333334,
+          0.37962962962962965
+        ],
+        "failureBounds": {
+          "adverse": {
+            "estimate": -1.0185185185185186,
+            "ci99": [
+              -2.5462962962962963,
+              0.018518518518518517
+            ]
+          },
+          "opposite": {
+            "estimate": 1.0,
+            "ci99": [
+              -0.2593055555555555,
+              2.7685185185185186
+            ]
+          }
+        }
+      },
+      {
+        "id": "collaborative_minus_neutral",
+        "estimate": 0.6296296296296297,
+        "ci95": [
+          0.28703703703703703,
+          0.9814814814814815
+        ],
+        "ci99": [
+          0.18518518518518517,
+          1.1018518518518519
+        ],
+        "failureBounds": {
+          "adverse": {
+            "estimate": -0.8148148148148148,
+            "ci99": [
+              -2.6203703703703702,
+              0.5925925925925926
+            ]
+          },
+          "opposite": {
+            "estimate": 2.1296296296296298,
+            "ci99": [
+              0.7129166666666666,
+              3.9814814814814814
+            ]
+          }
+        }
+      },
+      {
+        "id": "neutral_minus_programmed",
+        "estimate": 2.3796296296296298,
+        "ci95": [
+          1.712962962962963,
+          3.0555555555555554
+        ],
+        "ci99": [
+          1.4814814814814814,
+          3.259259259259259
+        ],
+        "failureBounds": {
+          "adverse": {
+            "estimate": 1.5277777777777777,
+            "ci99": [
+              -0.11124999999999986,
+              2.9166666666666665
+            ]
+          },
+          "opposite": {
+            "estimate": 3.037037037037037,
+            "ci99": [
+              1.9258796296296297,
+              4.305555555555555
+            ]
+          }
+        }
+      },
+      {
+        "id": "firm_minus_programmed",
+        "estimate": 2.287037037037037,
+        "ci95": [
+          1.5555555555555556,
+          3.009259259259259
+        ],
+        "ci99": [
+          1.324027777777778,
+          3.240740740740741
+        ],
+        "failureBounds": {
+          "adverse": {
+            "estimate": 2.0185185185185186,
+            "ci99": [
+              0.8981481481481481,
+              3.111111111111111
+            ]
+          },
+          "opposite": {
+            "estimate": 2.5277777777777777,
+            "ci99": [
+              1.5185185185185186,
+              3.537037037037037
+            ]
+          }
+        }
+      },
+      {
+        "id": "collaborative_minus_programmed",
+        "estimate": 3.009259259259259,
+        "ci95": [
+          2.3703703703703702,
+          3.6481481481481484
+        ],
+        "ci99": [
+          2.1944444444444446,
+          3.8518518518518516
+        ],
+        "failureBounds": {
+          "adverse": {
+            "estimate": 2.2222222222222223,
+            "ci99": [
+              0.7407407407407407,
+              3.4537037037037037
+            ]
+          },
+          "opposite": {
+            "estimate": 3.6574074074074074,
+            "ci99": [
+              2.6944444444444446,
+              4.712962962962963
+            ]
+          }
+        }
+      }
+    ],
+    "cells": [
+      {
+        "buyer": "neutral",
+        "seller": "early",
+        "n": 180,
+        "buyerGain": 13.083333333333334,
+        "sellerGain": 6.472222222222222,
+        "jointGain": 19.555555555555557,
+        "agreements": 109,
+        "walkaways": 69,
+        "failures": 2
+      },
+      {
+        "buyer": "neutral",
+        "seller": "late",
+        "n": 180,
+        "buyerGain": 7.666666666666667,
+        "sellerGain": 12.166666666666666,
+        "jointGain": 19.833333333333332,
+        "agreements": 105,
+        "walkaways": 74,
+        "failures": 1
+      },
+      {
+        "buyer": "neutral",
+        "seller": "neutral_sol",
+        "n": 180,
+        "buyerGain": 11.916666666666666,
+        "sellerGain": 8.972222222222221,
+        "jointGain": 20.88888888888889,
+        "agreements": 106,
+        "walkaways": 71,
+        "failures": 3
+      },
+      {
+        "buyer": "firm",
+        "seller": "early",
+        "n": 180,
+        "buyerGain": 13.25,
+        "sellerGain": 6.083333333333333,
+        "jointGain": 19.333333333333332,
+        "agreements": 108,
+        "walkaways": 72,
+        "failures": 0
+      },
+      {
+        "buyer": "firm",
+        "seller": "late",
+        "n": 180,
+        "buyerGain": 7.527777777777778,
+        "sellerGain": 12.083333333333334,
+        "jointGain": 19.61111111111111,
+        "agreements": 107,
+        "walkaways": 73,
+        "failures": 0
+      },
+      {
+        "buyer": "firm",
+        "seller": "neutral_sol",
+        "n": 180,
+        "buyerGain": 11.61111111111111,
+        "sellerGain": 9.027777777777779,
+        "jointGain": 20.63888888888889,
+        "agreements": 109,
+        "walkaways": 69,
+        "failures": 2
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "early",
+        "n": 180,
+        "buyerGain": 14.305555555555555,
+        "sellerGain": 6.527777777777778,
+        "jointGain": 20.833333333333332,
+        "agreements": 114,
+        "walkaways": 65,
+        "failures": 1
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "late",
+        "n": 180,
+        "buyerGain": 8.305555555555555,
+        "sellerGain": 12.222222222222221,
+        "jointGain": 20.52777777777778,
+        "agreements": 108,
+        "walkaways": 70,
+        "failures": 2
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "neutral_sol",
+        "n": 180,
+        "buyerGain": 11.944444444444445,
+        "sellerGain": 9.305555555555555,
+        "jointGain": 21.25,
+        "agreements": 107,
+        "walkaways": 70,
+        "failures": 3
+      },
+      {
+        "buyer": "programmed",
+        "seller": "early",
+        "n": 180,
+        "buyerGain": 11.277777777777779,
+        "sellerGain": 7.138888888888889,
+        "jointGain": 18.416666666666668,
+        "agreements": 119,
+        "walkaways": 61,
+        "failures": 0
+      },
+      {
+        "buyer": "programmed",
+        "seller": "late",
+        "n": 180,
+        "buyerGain": 5.194444444444445,
+        "sellerGain": 9.027777777777779,
+        "jointGain": 14.222222222222221,
+        "agreements": 109,
+        "walkaways": 71,
+        "failures": 0
+      },
+      {
+        "buyer": "programmed",
+        "seller": "neutral_sol",
+        "n": 180,
+        "buyerGain": 9.055555555555555,
+        "sellerGain": 10.444444444444445,
+        "jointGain": 19.5,
+        "agreements": 107,
+        "walkaways": 73,
+        "failures": 0
+      }
+    ],
+    "buyerPolicies": [
+      {
+        "buyer": "neutral",
+        "n": 540,
+        "buyerGain": 10.88888888888889,
+        "sellerGain": 9.203703703703704,
+        "jointGain": 20.09259259259259,
+        "agreements": 320,
+        "failures": 6,
+        "settledUsdPer1000": 31.73355576666667
+      },
+      {
+        "buyer": "firm",
+        "n": 540,
+        "buyerGain": 10.796296296296296,
+        "sellerGain": 9.064814814814815,
+        "jointGain": 19.86111111111111,
+        "agreements": 324,
+        "failures": 2,
+        "settledUsdPer1000": 29.529933514814818
+      },
+      {
+        "buyer": "collaborative",
+        "n": 540,
+        "buyerGain": 11.518518518518519,
+        "sellerGain": 9.351851851851851,
+        "jointGain": 20.87037037037037,
+        "agreements": 329,
+        "failures": 6,
+        "settledUsdPer1000": 33.091570553703704
+      },
+      {
+        "buyer": "programmed",
+        "n": 540,
+        "buyerGain": 8.50925925925926,
+        "sellerGain": 8.87037037037037,
+        "jointGain": 17.37962962962963,
+        "agreements": 335,
+        "failures": 0,
+        "settledUsdPer1000": 7.908485238888889
+      }
+    ],
+    "counts": {
+      "attempts": 12979,
+      "savedResponses": 12974,
+      "agreements": 1308,
+      "walkaways": 838,
+      "failures": 14,
+      "missingAssignments": 0
+    },
+    "costNano": {
+      "mainSettled": 55222314340,
+      "pilotsSettled": 7966240044,
+      "lifetimeSettled": 63188554384,
+      "unknownReserve": 188880000,
+      "lifetimeConservative": 63377434384
+    },
+    "caveats": [
+      "No confirmatory advantage, equivalence, tie or global winner is declared.",
+      "Infrastructure failures have zero operational gain; their unobserved strategic outcomes remain covered by both frozen bounds.",
+      "Seller population: two programmed policies and neutral Sol; these are not human bargaining results."
+    ],
+    "reversals": [
+      {
+        "family": "seller",
+        "group": "early",
+        "contrast": "firm_minus_neutral",
+        "pooled_estimate": -0.09259259259259259,
+        "subgroup_estimate": 0.16666666666666666
+      },
+      {
+        "family": "category",
+        "group": "tradeoffs",
+        "contrast": "firm_minus_neutral",
+        "pooled_estimate": -0.09259259259259259,
+        "subgroup_estimate": 0.3888888888888889
+      },
+      {
+        "family": "seller_by_category",
+        "group": "tradeoffs/early",
+        "contrast": "firm_minus_neutral",
+        "pooled_estimate": -0.09259259259259259,
+        "subgroup_estimate": 1.8333333333333333
+      },
+      {
+        "family": "seller_by_category",
+        "group": "tradeoffs/neutral_sol",
+        "contrast": "collaborative_minus_neutral",
+        "pooled_estimate": 0.6296296296296297,
+        "subgroup_estimate": -0.5833333333333334
+      },
+      {
+        "family": "seller_by_category",
+        "group": "narrow_zone/early",
+        "contrast": "firm_minus_programmed",
+        "pooled_estimate": 2.287037037037037,
+        "subgroup_estimate": -0.08333333333333333
+      },
+      {
+        "family": "seller_by_category",
+        "group": "narrow_zone/late",
+        "contrast": "firm_minus_neutral",
+        "pooled_estimate": -0.09259259259259259,
+        "subgroup_estimate": 0.16666666666666666
+      }
+    ],
+    "subgroups": {
+      "seller": {
+        "early": {
+          "scenarios": 180,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                -0.4166666666666667,
+                0.75
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 1.2222222222222223,
+              "ci95": [
+                0.6388888888888888,
+                1.8055555555555556
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 1.8055555555555556,
+              "ci95": [
+                0.9444444444444444,
+                2.6666666666666665
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 1.9722222222222223,
+              "ci95": [
+                1.0277777777777777,
+                2.9444444444444446
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 3.0277777777777777,
+              "ci95": [
+                2.2222222222222223,
+                3.8333333333333335
+              ]
+            }
+          }
+        },
+        "late": {
+          "scenarios": 180,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.1388888888888889,
+              "ci95": [
+                -0.7222222222222222,
+                0.4444444444444444
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.6388888888888888,
+              "ci95": [
+                -0.027777777777777776,
+                1.2777777777777777
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 2.4722222222222223,
+              "ci95": [
+                1.5277777777777777,
+                3.4444444444444446
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 2.3333333333333335,
+              "ci95": [
+                1.3611111111111112,
+                3.3055555555555554
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 3.111111111111111,
+              "ci95": [
+                2.2215277777777787,
+                4.027777777777778
+              ]
+            }
+          }
+        },
+        "neutral_sol": {
+          "scenarios": 180,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.3055555555555556,
+              "ci95": [
+                -1.0277777777777777,
+                0.3888888888888889
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.027777777777777776,
+              "ci95": [
+                -0.6388888888888888,
+                0.6944444444444444
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 2.861111111111111,
+              "ci95": [
+                2.0555555555555554,
+                3.6666666666666665
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 2.5555555555555554,
+              "ci95": [
+                1.7222222222222223,
+                3.388888888888889
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 2.888888888888889,
+              "ci95": [
+                2.0277777777777777,
+                3.75
+              ]
+            }
+          }
+        }
+      },
+      "category": {
+        "tradeoffs": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.3888888888888889,
+              "ci95": [
+                -0.5,
+                1.2222222222222223
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 1.0277777777777777,
+              "ci95": [
+                0.2777777777777778,
+                1.7777777777777777
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 5.638888888888889,
+              "ci95": [
+                3.9444444444444446,
+                7.472222222222222
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 6.027777777777778,
+              "ci95": [
+                4.166666666666667,
+                7.972222222222222
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 6.666666666666667,
+              "ci95": [
+                5.111111111111111,
+                8.305555555555555
+              ]
+            }
+          }
+        },
+        "narrow_zone": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.6666666666666666,
+              "ci95": [
+                -1.3333333333333333,
+                0.027777777777777776
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.8611111111111112,
+              "ci95": [
+                0.16597222222222285,
+                1.5833333333333333
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 1.5,
+              "ci95": [
+                0.5,
+                2.4722222222222223
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.8333333333333334,
+              "ci95": [
+                -0.2777777777777778,
+                1.8888888888888888
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 2.361111111111111,
+              "ci95": [
+                1.3611111111111112,
+                3.3333333333333335
+              ]
+            }
+          }
+        },
+        "no_zone": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "seller_by_category": {
+        "tradeoffs/early": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 1.8333333333333333,
+              "ci95": [
+                0.5833333333333334,
+                3.1666666666666665
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 2.9166666666666665,
+              "ci95": [
+                1.5,
+                4.333333333333333
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 4.166666666666667,
+              "ci95": [
+                1.8333333333333333,
+                6.583333333333333
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 6.0,
+              "ci95": [
+                3.5833333333333335,
+                8.583333333333334
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 7.083333333333333,
+              "ci95": [
+                5.0,
+                9.25
+              ]
+            }
+          }
+        },
+        "tradeoffs/late": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.5833333333333334,
+              "ci95": [
+                -2.0,
+                0.8333333333333334
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.75,
+              "ci95": [
+                -0.9166666666666666,
+                2.3333333333333335
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 7.333333333333333,
+              "ci95": [
+                5.0,
+                9.833333333333334
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 6.75,
+              "ci95": [
+                4.5,
+                9.166666666666666
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 8.083333333333334,
+              "ci95": [
+                5.916666666666667,
+                10.25
+              ]
+            }
+          }
+        },
+        "tradeoffs/neutral_sol": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.08333333333333333,
+              "ci95": [
+                -1.9166666666666667,
+                1.6666666666666667
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": -0.5833333333333334,
+              "ci95": [
+                -2.1666666666666665,
+                1.0
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 5.416666666666667,
+              "ci95": [
+                3.3333333333333335,
+                7.5
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 5.333333333333333,
+              "ci95": [
+                3.0833333333333335,
+                7.5
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 4.833333333333333,
+              "ci95": [
+                2.5833333333333335,
+                7.083333333333333
+              ]
+            }
+          }
+        },
+        "narrow_zone/early": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -1.3333333333333333,
+              "ci95": [
+                -2.5,
+                -0.16666666666666666
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.75,
+              "ci95": [
+                -0.16666666666666666,
+                1.75
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 1.25,
+              "ci95": [
+                0.0,
+                2.4166666666666665
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": -0.08333333333333333,
+              "ci95": [
+                -1.5,
+                1.25
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 2.0,
+              "ci95": [
+                0.8333333333333334,
+                3.1666666666666665
+              ]
+            }
+          }
+        },
+        "narrow_zone/late": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                -0.8333333333333334,
+                1.1666666666666667
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 1.1666666666666667,
+              "ci95": [
+                0.0,
+                2.3333333333333335
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.08333333333333333,
+              "ci95": [
+                -1.4166666666666667,
+                1.5833333333333333
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.25,
+              "ci95": [
+                -1.5,
+                2.0
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 1.25,
+              "ci95": [
+                -0.3333333333333333,
+                2.752083333333303
+              ]
+            }
+          }
+        },
+        "narrow_zone/neutral_sol": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.8333333333333334,
+              "ci95": [
+                -1.9166666666666667,
+                0.3333333333333333
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.6666666666666666,
+              "ci95": [
+                -0.5833333333333334,
+                1.9166666666666667
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 3.1666666666666665,
+              "ci95": [
+                1.9166666666666667,
+                4.416666666666667
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 2.3333333333333335,
+              "ci95": [
+                1.0,
+                3.5833333333333335
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 3.8333333333333335,
+              "ci95": [
+                2.5,
+                5.166666666666667
+              ]
+            }
+          }
+        },
+        "no_zone/early": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "no_zone/late": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "no_zone/neutral_sol": {
+          "scenarios": 60,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      },
+      "first_mover": {
+        "buyer": {
+          "scenarios": 90,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": 0.07407407407407407,
+              "ci95": [
+                -0.4749999999999999,
+                0.6372957516339863
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.5555555555555556,
+              "ci95": [
+                0.057380472350230416,
+                1.0668367294273091
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 4.444444444444445,
+              "ci95": [
+                3.5402971172365887,
+                5.386044973544974
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 4.518518518518518,
+              "ci95": [
+                3.6410593681917214,
+                5.43797907339574
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 5.0,
+              "ci95": [
+                4.127300043804211,
+                5.862272652116402
+              ]
+            }
+          }
+        },
+        "seller": {
+          "scenarios": 90,
+          "contrasts": {
+            "firm_minus_neutral": {
+              "estimate": -0.25925925925925924,
+              "ci95": [
+                -0.7694854953475643,
+                0.2006523569023564
+              ]
+            },
+            "collaborative_minus_neutral": {
+              "estimate": 0.7037037037037037,
+              "ci95": [
+                0.2202496515332537,
+                1.1940265234446266
+              ]
+            },
+            "neutral_minus_programmed": {
+              "estimate": 0.3148148148148148,
+              "ci95": [
+                -0.33719813683048977,
+                0.9808467725106218
+              ]
+            },
+            "firm_minus_programmed": {
+              "estimate": 0.05555555555555555,
+              "ci95": [
+                -0.7611785156804314,
+                0.8636318806274944
+              ]
+            },
+            "collaborative_minus_programmed": {
+              "estimate": 1.0185185185185186,
+              "ci95": [
+                0.4121863799283154,
+                1.6421713172448464
+              ]
+            }
+          }
+        }
+      }
+    },
+    "reversalCaveat": "These six exploratory point-estimate sign reversals show how pooled averages vary across the fixed seller/scenario mixture. They do not by themselves establish reliable subgroup effects; inspect the frozen 95% subgroup intervals. Subgroup results are not a newly selected confirmatory family."
+  },
+  "roleGap": {
+    "classification": "post_hoc_exploratory",
+    "population": "107 feasible scenarios with equal separate attainable buyer/seller maxima among mutually acceptable contracts; one neutral-buyer/neutral-Sol-seller episode per scenario",
+    "n": 107,
+    "categories": {
+      "narrow_zone": 59,
+      "tradeoffs": 48
+    },
+    "excluded": {
+      "noZone": 60,
+      "unequalMaxima": 13
+    },
+    "counts": {
+      "buyerHigher": 43,
+      "sellerHigher": 36,
+      "equal": 27,
+      "equalAgreements": 14,
+      "equalWalkaways": 13,
+      "failures": 1,
+      "zeroIncludingFailure": 28
+    },
+    "buyerMean": 14.672897196261681,
+    "sellerMean": 12.897196261682243,
+    "estimates": {
+      "observed": {
+        "estimate": 1.7757009345794392,
+        "ci95": [
+          -0.2336448598130841,
+          3.7850467289719627
+        ],
+        "ci99": [
+          -0.9813084112149533,
+          4.4392523364485985
+        ]
+      },
+      "adverse": {
+        "estimate": 0.514018691588785,
+        "ci95": [
+          -2.9906542056074765,
+          3.317757009345794
+        ],
+        "ci99": [
+          -4.392757009345795,
+          4.205607476635514
+        ]
+      },
+      "opposite": {
+        "estimate": 3.177570093457944,
+        "ci95": [
+          0.2336448598130841,
+          6.775700934579439
+        ],
+        "ci99": [
+          -0.4672897196261682,
+          7.990654205607477
+        ]
+      }
+    },
+    "failureBounds": [
+      -135,
+      150
+    ],
+    "rows": [
+      {
+        "scenario": "M002",
+        "episode": "M002-E03",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M003",
+        "episode": "M003-E11",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 15,
+        "seller": 35,
+        "gap": -20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M004",
+        "episode": "M004-E12",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 5,
+        "gap": 20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M005",
+        "episode": "M005-E06",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M008",
+        "episode": "M008-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M010",
+        "episode": "M010-E06",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 20,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M012",
+        "episode": "M012-E04",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M014",
+        "episode": "M014-E12",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M015",
+        "episode": "M015-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 30,
+        "seller": 45,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M016",
+        "episode": "M016-E02",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M017",
+        "episode": "M017-E06",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 30,
+        "seller": 25,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M020",
+        "episode": "M020-E06",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M024",
+        "episode": "M024-E07",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 10,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M025",
+        "episode": "M025-E01",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M027",
+        "episode": "M027-E02",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 40,
+        "seller": 5,
+        "gap": 35,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M029",
+        "episode": "M029-E08",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 35,
+        "seller": 30,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M030",
+        "episode": "M030-E10",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M033",
+        "episode": "M033-E08",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 10,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M034",
+        "episode": "M034-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 25,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M036",
+        "episode": "M036-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M037",
+        "episode": "M037-E09",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M038",
+        "episode": "M038-E09",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 30,
+        "gap": -20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M042",
+        "episode": "M042-E01",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M043",
+        "episode": "M043-E10",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M047",
+        "episode": "M047-E11",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 20,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M048",
+        "episode": "M048-E09",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M049",
+        "episode": "M049-E05",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 0,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M051",
+        "episode": "M051-E12",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 30,
+        "seller": 25,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M052",
+        "episode": "M052-E09",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M054",
+        "episode": "M054-E08",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 20,
+        "seller": 10,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M056",
+        "episode": "M056-E11",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 35,
+        "seller": 35,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M057",
+        "episode": "M057-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M058",
+        "episode": "M058-E06",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 15,
+        "seller": 15,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M060",
+        "episode": "M060-E10",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M061",
+        "episode": "M061-E03",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 15,
+        "seller": 10,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M063",
+        "episode": "M063-E03",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M064",
+        "episode": "M064-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 40,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M065",
+        "episode": "M065-E05",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 10,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M067",
+        "episode": "M067-E06",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M070",
+        "episode": "M070-E08",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M071",
+        "episode": "M071-E05",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 10,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M075",
+        "episode": "M075-E01",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M077",
+        "episode": "M077-E07",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 15,
+        "seller": 25,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M078",
+        "episode": "M078-E03",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M081",
+        "episode": "M081-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 40,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M082",
+        "episode": "M082-E10",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M083",
+        "episode": "M083-E09",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 45,
+        "seller": 30,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M086",
+        "episode": "M086-E04",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 15,
+        "seller": 0,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M087",
+        "episode": "M087-E07",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 30,
+        "seller": 15,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M088",
+        "episode": "M088-E11",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M090",
+        "episode": "M090-E02",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 20,
+        "seller": 35,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M091",
+        "episode": "M091-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M092",
+        "episode": "M092-E09",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 20,
+        "seller": 30,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M094",
+        "episode": "M094-E06",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M096",
+        "episode": "M096-E07",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 20,
+        "seller": 30,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M098",
+        "episode": "M098-E02",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M100",
+        "episode": "M100-E09",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M103",
+        "episode": "M103-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 20,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M105",
+        "episode": "M105-E03",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M106",
+        "episode": "M106-E02",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 20,
+        "seller": 10,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M107",
+        "episode": "M107-E06",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M109",
+        "episode": "M109-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 0,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M110",
+        "episode": "M110-E12",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 15,
+        "seller": 30,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M113",
+        "episode": "M113-E11",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M114",
+        "episode": "M114-E11",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 45,
+        "seller": 30,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M116",
+        "episode": "M116-E06",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M119",
+        "episode": "M119-E02",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 5,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M120",
+        "episode": "M120-E07",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 40,
+        "seller": 50,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M121",
+        "episode": "M121-E10",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M123",
+        "episode": "M123-E12",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 40,
+        "seller": 10,
+        "gap": 30,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M124",
+        "episode": "M124-E02",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 35,
+        "seller": 15,
+        "gap": 20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M126",
+        "episode": "M126-E08",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M128",
+        "episode": "M128-E08",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M129",
+        "episode": "M129-E07",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 15,
+        "seller": 25,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M130",
+        "episode": "M130-E12",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M132",
+        "episode": "M132-E09",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 10,
+        "seller": 20,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M134",
+        "episode": "M134-E04",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 30,
+        "seller": 25,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M135",
+        "episode": "M135-E02",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 15,
+        "gap": -15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M136",
+        "episode": "M136-E05",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 25,
+        "seller": 25,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M138",
+        "episode": "M138-E11",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M140",
+        "episode": "M140-E09",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M142",
+        "episode": "M142-E11",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M144",
+        "episode": "M144-E12",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 30,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M146",
+        "episode": "M146-E06",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M147",
+        "episode": "M147-E04",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 30,
+        "seller": 15,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M148",
+        "episode": "M148-E06",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 40,
+        "seller": 10,
+        "gap": 30,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M149",
+        "episode": "M149-E01",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 15,
+        "seller": 0,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M152",
+        "episode": "M152-E06",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 25,
+        "seller": 10,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M153",
+        "episode": "M153-E02",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 0,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M155",
+        "episode": "M155-E01",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M156",
+        "episode": "M156-E11",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 40,
+        "seller": 20,
+        "gap": 20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M157",
+        "episode": "M157-E01",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 10,
+        "gap": -10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M159",
+        "episode": "M159-E11",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 20,
+        "seller": 10,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M161",
+        "episode": "M161-E12",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 35,
+        "seller": 10,
+        "gap": 25,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M162",
+        "episode": "M162-E07",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M163",
+        "episode": "M163-E03",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 10,
+        "seller": 5,
+        "gap": 5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M165",
+        "episode": "M165-E04",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 30,
+        "seller": 10,
+        "gap": 20,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M166",
+        "episode": "M166-E01",
+        "category": "narrow_zone",
+        "firstMover": "buyer",
+        "buyer": 10,
+        "seller": 0,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M168",
+        "episode": "M168-E03",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 50,
+        "seller": 25,
+        "gap": 25,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M169",
+        "episode": "M169-E01",
+        "category": "tradeoffs",
+        "firstMover": "seller",
+        "buyer": 45,
+        "seller": 30,
+        "gap": 15,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M170",
+        "episode": "M170-E07",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M173",
+        "episode": "M173-E01",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "walkaway"
+      },
+      {
+        "scenario": "M174",
+        "episode": "M174-E05",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 15,
+        "seller": 20,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M176",
+        "episode": "M176-E09",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 50,
+        "seller": 40,
+        "gap": 10,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M177",
+        "episode": "M177-E03",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 5,
+        "gap": 0,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M179",
+        "episode": "M179-E10",
+        "category": "narrow_zone",
+        "firstMover": "seller",
+        "buyer": 5,
+        "seller": 10,
+        "gap": -5,
+        "failure": false,
+        "terminal_reason": "agreement"
+      },
+      {
+        "scenario": "M180",
+        "episode": "M180-E12",
+        "category": "tradeoffs",
+        "firstMover": "buyer",
+        "buyer": 0,
+        "seller": 0,
+        "gap": 0,
+        "failure": true,
+        "terminal_reason": "transport_failure"
+      }
+    ],
+    "histogram": [
+      {
+        "gap": -20,
+        "count": 2,
+        "completed": 2,
+        "failures": 0
+      },
+      {
+        "gap": -15,
+        "count": 6,
+        "completed": 6,
+        "failures": 0
+      },
+      {
+        "gap": -10,
+        "count": 11,
+        "completed": 11,
+        "failures": 0
+      },
+      {
+        "gap": -5,
+        "count": 17,
+        "completed": 17,
+        "failures": 0
+      },
+      {
+        "gap": 0,
+        "count": 28,
+        "completed": 27,
+        "failures": 1
+      },
+      {
+        "gap": 5,
+        "count": 19,
+        "completed": 19,
+        "failures": 0
+      },
+      {
+        "gap": 10,
+        "count": 6,
+        "completed": 6,
+        "failures": 0
+      },
+      {
+        "gap": 15,
+        "count": 9,
+        "completed": 9,
+        "failures": 0
+      },
+      {
+        "gap": 20,
+        "count": 4,
+        "completed": 4,
+        "failures": 0
+      },
+      {
+        "gap": 25,
+        "count": 2,
+        "completed": 2,
+        "failures": 0
+      },
+      {
+        "gap": 30,
+        "count": 2,
+        "completed": 2,
+        "failures": 0
+      },
+      {
+        "gap": 35,
+        "count": 1,
+        "completed": 1,
+        "failures": 0
+      }
+    ],
+    "histogramNote": "Exact integer buyer-minus-seller gaps. Zero bin includes 27 completed equal outcomes and one infrastructure zero; failure is separately marked.",
+    "caveats": [
+      "Distinct post-hoc subset and paired role comparison, not the main 2160-negotiation estimate.",
+      "Equal attainable maxima do not imply symmetric bargaining positions.",
+      "Observed 95% interval spans zero; no reliable buyer-role advantage or equivalence established.",
+      "The main five-unit buyer-policy margin is not a threshold for this different role-gap outcome."
+    ]
+  },
+  "example": {
+    "episode": "M090-E05",
+    "scenario": "M090",
+    "category": "tradeoffs",
+    "buyerPolicy": "collaborative",
+    "sellerPolicy": "neutral_sol",
+    "firstMover": "seller",
+    "selection": "Illustrative saved negotiation selected for explanation; not a representative sample or proof of mechanism.",
+    "publicTranscript": [
+      {
+        "slot": 1,
+        "actor": "seller",
+        "type": "OFFER",
+        "message": "$180 with rush delivery, extended support, and net60 payment.",
+        "valid": true,
+        "offer": "offer:01",
+        "contract": {
+          "contract_id": "C167",
+          "price": 180,
+          "delivery": 1,
+          "support": 1,
+          "payment": 1
+        },
+        "gains": {
+          "buyer": -25,
+          "seller": 70,
+          "joint": 45
+        }
+      },
+      {
+        "slot": 2,
+        "actor": "buyer",
+        "type": "OFFER",
+        "message": "I offer $110 for rush delivery, extended support, and standard payment. Which terms are least costly for you?",
+        "valid": true,
+        "offer": "offer:02",
+        "contract": {
+          "contract_id": "C054",
+          "price": 110,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 45,
+          "seller": 10,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 3,
+        "actor": "seller",
+        "type": "OFFER",
+        "message": "I can include rush delivery and extended support at $150 with standard payment.",
+        "valid": true,
+        "offer": "offer:03",
+        "contract": {
+          "contract_id": "C118",
+          "price": 150,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 5,
+          "seller": 50,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 4,
+        "actor": "buyer",
+        "type": "OFFER",
+        "message": "$125 for rush delivery, extended support, and standard payment. Which costs you less: rush delivery or extended support?",
+        "valid": true,
+        "offer": "offer:04",
+        "contract": {
+          "contract_id": "C078",
+          "price": 125,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 30,
+          "seller": 25,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 5,
+        "actor": "seller",
+        "type": "OFFER",
+        "message": "$140 with rush delivery, extended support, and standard payment.",
+        "valid": true,
+        "offer": "offer:05",
+        "contract": {
+          "contract_id": "C102",
+          "price": 140,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 15,
+          "seller": 40,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 6,
+        "actor": "buyer",
+        "type": "OFFER",
+        "message": "$130 for rush delivery, extended support, and standard payment. Keeping standard payment supports this price.",
+        "valid": true,
+        "offer": "offer:06",
+        "contract": {
+          "contract_id": "C086",
+          "price": 130,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 25,
+          "seller": 30,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 7,
+        "actor": "seller",
+        "type": "OFFER",
+        "message": "Let's meet at $135 with rush delivery, extended support, and standard payment.",
+        "valid": true,
+        "offer": "offer:07",
+        "contract": {
+          "contract_id": "C094",
+          "price": 135,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 20,
+          "seller": 35,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 8,
+        "actor": "buyer",
+        "type": "OFFER",
+        "message": "I can close at $130 with rush delivery, extended support, and standard payment.",
+        "valid": true,
+        "offer": "offer:08",
+        "contract": {
+          "contract_id": "C086",
+          "price": 130,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        },
+        "gains": {
+          "buyer": 25,
+          "seller": 30,
+          "joint": 55
+        }
+      },
+      {
+        "slot": 9,
+        "actor": "seller",
+        "type": "ACCEPT",
+        "message": "Agreed: $130 with rush delivery, extended support, and standard payment.",
+        "valid": true,
+        "offer": "offer:08",
+        "contract": {
+          "contract_id": "C086",
+          "price": 130,
+          "delivery": 1,
+          "support": 1,
+          "payment": 0
+        }
+      }
+    ],
+    "readerOnlyEconomics": {
+      "disclosure": "These synthetic private value/cost parameters are shown to readers after the negotiation. Each negotiator originally saw only its own private values.",
+      "issueOrder": [
+        "delivery",
+        "support",
+        "payment"
+      ],
+      "buyer": {
+        "baseValue": 110,
+        "marginalValues": [
+          25,
+          20,
+          0
+        ],
+        "outsideOption": 0
+      },
+      "seller": {
+        "baseCost": 80,
+        "marginalCosts": [
+          0,
+          0,
+          10
+        ],
+        "outsideOption": 20
+      },
+      "terms": {
+        "delivery": [
+          "standard",
+          "rush"
+        ],
+        "support": [
+          "standard",
+          "extended"
+        ],
+        "payment": [
+          "standard",
+          "net60"
+        ]
+      },
+      "accepted": {
+        "price": 130,
+        "delivery": "rush",
+        "support": "extended",
+        "payment": "standard",
+        "buyerValue": 155,
+        "sellerCost": 80,
+        "buyerUtility": 25,
+        "sellerUtility": 50,
+        "buyerGain": 25,
+        "sellerGain": 30,
+        "jointGain": 55
+      },
+      "explanation": [
+        "Buyer value: 110 + 25 for rush + 20 for extended support = 155. Paying 130 leaves utility 25; its outside option is 0, so gain is 25.",
+        "Seller cost: 80 + 0 for rush + 0 for extended support = 80. Receiving 130 leaves utility 50; subtracting its outside option of 20 leaves gain 30.",
+        "Joint gain is 25 + 30 = 55. Net60 adds no buyer value here but adds 10 seller cost.",
+        "Prices and payoffs belong to a synthetic game; API spend is a separate real-dollar accounting measure."
+      ]
+    },
+    "scores": {
+      "buyer": 25,
+      "seller": 30,
+      "joint": 55,
+      "bestFeasibleJoint": 55,
+      "efficiency": 1,
+      "terminal_reason": "agreement"
+    }
+  },
+  "sources": {
+    "summary": {
+      "file": "COMBINED-SUMMARY-v1.json",
+      "sha256": "3adf486807301ea4386fdc10c66156c4d2835bc0b0e7147dc7ea85a786aa0971"
+    },
+    "posthoc": {
+      "file": "ANALYSIS-v1.json",
+      "sha256": "a0e1e43232b399379583f552d34f6ebf25d3be41c805eb23d208734a8850c3e2"
+    },
+    "posthocPlan": {
+      "file": "ANALYSIS-PLAN-v1.json",
+      "sha256": "d8f757201a5fe21bfdddc5c01b16574d3764d3c1a3763c6087d43d0ec596a16d"
+    },
+    "posthocReview": {
+      "file": "METHODS-REVIEW-v1.md",
+      "sha256": "4f927ffcfd7bd5145783610e625cb7bd85030ed9f918f956fbeda7554ffdffd3"
+    },
+    "bundle": {
+      "file": "MAIN-BUNDLE-v1.json",
+      "sha256": "fd6578f8d8c33ca5f8a7091f5c5ff4243bb35020b1bc2f6f2763b8ebc205619b"
+    },
+    "game": {
+      "file": "game.py",
+      "sha256": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c"
+    },
+    "mainRows": [
+      {
+        "segment": "original",
+        "sha256": "3225680ae9a1e6716a06ccc524c67dc328f21fbf8651dc1050908772ff121d8a"
+      },
+      {
+        "segment": "continuation1",
+        "sha256": "ac1852a1c3507c0c1ac0c3dc6519c8736875360a2dd72325cffe8a4530c1add3"
+      },
+      {
+        "segment": "continuation2",
+        "sha256": "178236c9dfd6465398829e37f751075de6e754eb0ba2390b2ea37d95b0ff8dbe"
+      },
+      {
+        "segment": "continuation3",
+        "sha256": "15463cd704f10a15978db1749157cb53d79e8936b9e71bfe565dbb08daf6a53a"
+      },
+      {
+        "segment": "continuation4",
+        "sha256": "332f3d9464a492e48daeab8f2f3579dbbbb919e5fde0099a73d5889baad9a7d5"
+      }
+    ],
+    "exampleState": {
+      "file": "episode-90-05.state.json",
+      "sha256": "9d3090d06d9526a1387dfc95b866c5ace55c9918a5cebcb52fafd83136cba3ed"
+    },
+    "exampleResult": {
+      "file": "episode-90-05.result.json",
+      "sha256": "82076c39ccdc45c31ba59d5c20f23e894d68cb34a7273bd9b3aaac2614ec9ccb"
+    },
+    "previousChart": {
+      "file": "chart-data.json",
+      "sha256": "411dff1e8d7409b178c71d6c633fa2d7755cc0fbff8e8a06539ca82d2a299571"
+    }
+  },
+  "artifactRevision": 3,
+  "subsetSensitivity": {
+    "classification": "user_requested_post_hoc_descriptive_sensitivity",
+    "weighting": "Equal weight per retained scenario; category weights change after exclusion",
+    "criterion": "Exclude scenarios whose separate maximum buyer and seller gains differ over contracts giving both nonnegative gains",
+    "retained167": {
+      "scenarios": 167,
+      "assignments": 2004,
+      "categories": {
+        "no_zone": 60,
+        "narrow_zone": 59,
+        "tradeoffs": 48
+      },
+      "first_mover": {
+        "buyer": 81,
+        "seller": 86
+      },
+      "cells": [
+        {
+          "buyer": "neutral",
+          "seller": "early",
+          "n": 167,
+          "buyer_gain": 10.658682634730539,
+          "seller_gain": 5.62874251497006,
+          "joint_gain": 16.2874251497006,
+          "infrastructure_cases": 2
+        },
+        {
+          "buyer": "neutral",
+          "seller": "late",
+          "n": 167,
+          "buyer_gain": 6.167664670658683,
+          "seller_gain": 10.359281437125748,
+          "joint_gain": 16.526946107784433,
+          "infrastructure_cases": 1
+        },
+        {
+          "buyer": "neutral",
+          "seller": "neutral_sol",
+          "n": 167,
+          "buyer_gain": 9.401197604790418,
+          "seller_gain": 8.263473053892216,
+          "joint_gain": 17.664670658682635,
+          "infrastructure_cases": 3
+        },
+        {
+          "buyer": "firm",
+          "seller": "early",
+          "n": 167,
+          "buyer_gain": 10.748502994011975,
+          "seller_gain": 5.299401197604791,
+          "joint_gain": 16.047904191616766,
+          "infrastructure_cases": 0
+        },
+        {
+          "buyer": "firm",
+          "seller": "late",
+          "n": 167,
+          "buyer_gain": 5.958083832335329,
+          "seller_gain": 10.29940119760479,
+          "joint_gain": 16.25748502994012,
+          "infrastructure_cases": 0
+        },
+        {
+          "buyer": "firm",
+          "seller": "neutral_sol",
+          "n": 167,
+          "buyer_gain": 9.04191616766467,
+          "seller_gain": 8.41317365269461,
+          "joint_gain": 17.45508982035928,
+          "infrastructure_cases": 2
+        },
+        {
+          "buyer": "collaborative",
+          "seller": "early",
+          "n": 167,
+          "buyer_gain": 11.916167664670658,
+          "seller_gain": 5.658682634730539,
+          "joint_gain": 17.5748502994012,
+          "infrastructure_cases": 1
+        },
+        {
+          "buyer": "collaborative",
+          "seller": "late",
+          "n": 167,
+          "buyer_gain": 6.8562874251497,
+          "seller_gain": 10.538922155688622,
+          "joint_gain": 17.395209580838323,
+          "infrastructure_cases": 2
+        },
+        {
+          "buyer": "collaborative",
+          "seller": "neutral_sol",
+          "n": 167,
+          "buyer_gain": 9.341317365269461,
+          "seller_gain": 8.622754491017965,
+          "joint_gain": 17.964071856287426,
+          "infrastructure_cases": 3
+        },
+        {
+          "buyer": "programmed",
+          "seller": "early",
+          "n": 167,
+          "buyer_gain": 9.730538922155688,
+          "seller_gain": 6.317365269461078,
+          "joint_gain": 16.047904191616766,
+          "infrastructure_cases": 0
+        },
+        {
+          "buyer": "programmed",
+          "seller": "late",
+          "n": 167,
+          "buyer_gain": 4.640718562874252,
+          "seller_gain": 7.724550898203593,
+          "joint_gain": 12.365269461077844,
+          "infrastructure_cases": 0
+        },
+        {
+          "buyer": "programmed",
+          "seller": "neutral_sol",
+          "n": 167,
+          "buyer_gain": 7.18562874251497,
+          "seller_gain": 9.550898203592814,
+          "joint_gain": 16.736526946107784,
+          "infrastructure_cases": 0
+        }
+      ]
+    },
+    "neutralRoleComparison": [
+      {
+        "id": "original180",
+        "label": "Original 180 scenarios",
+        "n": 180,
+        "buyerMean": 11.916666666666666,
+        "sellerMean": 8.972222222222221,
+        "gap": 2.9444444444444446,
+        "failures": 3,
+        "categories": {
+          "no_zone": 60,
+          "narrow_zone": 60,
+          "tradeoffs": 60
+        }
+      },
+      {
+        "id": "retained167",
+        "label": "167 scenarios: 13 unequal-maxima cases removed; 60 no-zone cases retained",
+        "n": 167,
+        "buyerMean": 9.401197604790418,
+        "sellerMean": 8.263473053892216,
+        "gap": 1.1377245508982037,
+        "failures": 3,
+        "categories": {
+          "no_zone": 60,
+          "narrow_zone": 59,
+          "tradeoffs": 48
+        }
+      },
+      {
+        "id": "feasible107",
+        "label": "107 feasible equal-maxima scenarios; no-zone cases removed",
+        "n": 107,
+        "buyerMean": 14.672897196261681,
+        "sellerMean": 12.897196261682243,
+        "gap": 1.7757009345794392,
+        "failures": 1,
+        "categories": {
+          "narrow_zone": 59,
+          "tradeoffs": 48
+        }
+      }
+    ],
+    "excludedScenarios": [
+      {
+        "scenario_id": "M007",
+        "category": "tradeoffs",
+        "buyer_max": 65,
+        "seller_max": 55
+      },
+      {
+        "scenario_id": "M021",
+        "category": "tradeoffs",
+        "buyer_max": 90,
+        "seller_max": 75
+      },
+      {
+        "scenario_id": "M022",
+        "category": "tradeoffs",
+        "buyer_max": 70,
+        "seller_max": 55
+      },
+      {
+        "scenario_id": "M032",
+        "category": "tradeoffs",
+        "buyer_max": 40,
+        "seller_max": 30
+      },
+      {
+        "scenario_id": "M040",
+        "category": "tradeoffs",
+        "buyer_max": 50,
+        "seller_max": 45
+      },
+      {
+        "scenario_id": "M045",
+        "category": "tradeoffs",
+        "buyer_max": 80,
+        "seller_max": 70
+      },
+      {
+        "scenario_id": "M069",
+        "category": "tradeoffs",
+        "buyer_max": 35,
+        "seller_max": 30
+      },
+      {
+        "scenario_id": "M074",
+        "category": "tradeoffs",
+        "buyer_max": 110,
+        "seller_max": 95
+      },
+      {
+        "scenario_id": "M080",
+        "category": "narrow_zone",
+        "buyer_max": 15,
+        "seller_max": 10
+      },
+      {
+        "scenario_id": "M097",
+        "category": "tradeoffs",
+        "buyer_max": 85,
+        "seller_max": 75
+      },
+      {
+        "scenario_id": "M102",
+        "category": "tradeoffs",
+        "buyer_max": 45,
+        "seller_max": 35
+      },
+      {
+        "scenario_id": "M117",
+        "category": "tradeoffs",
+        "buyer_max": 85,
+        "seller_max": 80
+      },
+      {
+        "scenario_id": "M139",
+        "category": "tradeoffs",
+        "buyer_max": 55,
+        "seller_max": 40
+      }
+    ],
+    "notes": [
+      "The original main-study 180-scenario results remain unchanged. These are previously saved post-hoc descriptive sensitivity tables.",
+      "Each retained167 cell has 167 assigned negotiations; 12 cells total 2004 assignments.",
+      "The 167-scenario set retains 60 no-zone scenarios with no mutually acceptable agreement; it must not be called 167 feasible equal-maxima scenarios.",
+      "Equal weight per retained scenario changes category weights after exclusion. Differences between rows are not new treatment contrasts or significance tests.",
+      "The comparison rows contain one neutral-buyer/neutral-Sol-seller episode per scenario: n=180,167,107, not all buyer/seller assignments.",
+      "Gap is the exact arithmetic mean of paired buyer-minus-seller gains. The 107-row gap matches the accepted post-hoc analysis; its existing intervals remain in roleGap.estimates.",
+      "No intervals, p-values or practical-margin declarations were added for the 180/167 rows."
+    ],
+    "sources": {
+      "savedSubset": {
+        "file": "SUBSET-SENSITIVITY-v1.json",
+        "sha256": "596ad3e056ed9894eddd810e2bb414b7ddba97edfda02777c2c14141a94e43f6"
+      },
+      "posthoc": {
+        "file": "ANALYSIS-v1.json",
+        "sha256": "a0e1e43232b399379583f552d34f6ebf25d3be41c805eb23d208734a8850c3e2"
+      },
+      "bundle": {
+        "file": "MAIN-BUNDLE-v1.json",
+        "sha256": "fd6578f8d8c33ca5f8a7091f5c5ff4243bb35020b1bc2f6f2763b8ebc205619b"
+      },
+      "previousChart": {
+        "file": "chart-data-v2.json",
+        "sha256": "9d72a00fddadf7997e290cdf1bcf6a468e4784aaaeb78b8faa40776f6fe9284a"
+      },
+      "verifiedRawResultCount": 2160
+    }
+  },
+  "firstMoverCheck": {
+    "classification": "user_requested_post_hoc_exploratory",
+    "plan_sha256": "ecd1a9a3fd1318f44bbc6d6a2a29da71e3cd658adeabe6e9f849272b415accb5",
+    "input_sha256": "18b24b9b6d41c12f7edb75301fa67482fd56d96552ace3569caedc411821babe",
+    "n": 107,
+    "unadjusted": {
+      "n": 107,
+      "buyer_mean": 14.672897196261681,
+      "seller_mean": 12.897196261682243,
+      "gap": 1.7757009345794392,
+      "counts": {
+        "seller_higher": 36,
+        "buyer_higher": 43,
+        "walkaway": 13,
+        "equal_agreement": 14,
+        "failure": 1
+      },
+      "categories": {
+        "narrow_zone": 59,
+        "tradeoffs": 48
+      }
+    },
+    "raw_by_first_mover": {
+      "buyer": {
+        "n": 51,
+        "buyer_mean": 15.686274509803921,
+        "seller_mean": 11.27450980392157,
+        "gap": 4.411764705882353,
+        "counts": {
+          "buyer_higher": 25,
+          "equal_agreement": 7,
+          "walkaway": 7,
+          "seller_higher": 11,
+          "failure": 1
+        },
+        "categories": {
+          "narrow_zone": 29,
+          "tradeoffs": 22
+        }
+      },
+      "seller": {
+        "n": 56,
+        "buyer_mean": 13.75,
+        "seller_mean": 14.375,
+        "gap": -0.625,
+        "counts": {
+          "seller_higher": 25,
+          "buyer_higher": 18,
+          "walkaway": 6,
+          "equal_agreement": 7
+        },
+        "categories": {
+          "narrow_zone": 30,
+          "tradeoffs": 26
+        }
+      }
+    },
+    "strata": {
+      "tradeoffs__buyer": {
+        "n": 22,
+        "buyer_mean": 28.636363636363637,
+        "seller_mean": 21.363636363636363,
+        "gap": 7.2727272727272725,
+        "counts": {
+          "buyer_higher": 13,
+          "seller_higher": 6,
+          "equal_agreement": 2,
+          "failure": 1
+        },
+        "categories": {
+          "tradeoffs": 22
+        }
+      },
+      "tradeoffs__seller": {
+        "n": 26,
+        "buyer_mean": 25.384615384615383,
+        "seller_mean": 23.46153846153846,
+        "gap": 1.9230769230769231,
+        "counts": {
+          "seller_higher": 10,
+          "buyer_higher": 14,
+          "equal_agreement": 2
+        },
+        "categories": {
+          "tradeoffs": 26
+        }
+      },
+      "narrow_zone__buyer": {
+        "n": 29,
+        "buyer_mean": 5.862068965517241,
+        "seller_mean": 3.6206896551724137,
+        "gap": 2.2413793103448274,
+        "counts": {
+          "buyer_higher": 12,
+          "equal_agreement": 5,
+          "walkaway": 7,
+          "seller_higher": 5
+        },
+        "categories": {
+          "narrow_zone": 29
+        }
+      },
+      "narrow_zone__seller": {
+        "n": 30,
+        "buyer_mean": 3.6666666666666665,
+        "seller_mean": 6.5,
+        "gap": -2.8333333333333335,
+        "counts": {
+          "seller_higher": 15,
+          "walkaway": 6,
+          "buyer_higher": 4,
+          "equal_agreement": 5
+        },
+        "categories": {
+          "narrow_zone": 30
+        }
+      }
+    },
+    "category_weights": {
+      "tradeoffs": 0.4485981308411215,
+      "narrow_zone": 0.5514018691588785
+    },
+    "standardized_by_first_mover": {
+      "buyer": {
+        "buyer_mean": 16.078574986083847,
+        "seller_mean": 11.58014238420297,
+        "gap": 4.498432601880877
+      },
+      "seller": {
+        "buyer_mean": 13.409297867241792,
+        "seller_mean": 14.108914450035943,
+        "gap": -0.6996165827941528
+      }
+    },
+    "balanced_results": {
+      "observed": {
+        "estimate": 1.899408009543362,
+        "ci95": [
+          -0.03979513208888006,
+          3.8496244986617203
+        ],
+        "ci99": [
+          -0.6343288546237307,
+          4.465943958286853
+        ],
+        "category_standardized_gap_by_starter": {
+          "buyer": 4.498432601880877,
+          "seller": -0.6996165827941528
+        }
+      },
+      "adverse": {
+        "estimate": 0.5230273808262851,
+        "ci95": [
+          -3.2617181507932393,
+          3.4908601402357426
+        ],
+        "ci99": [
+          -4.7718061380557355,
+          4.112276246688105
+        ],
+        "category_standardized_gap_by_starter": {
+          "buyer": 1.745671344446723,
+          "seller": -0.6996165827941528
+        }
+      },
+      "opposite": {
+        "estimate": 3.4287198192290047,
+        "ci95": [
+          0.509980847919939,
+          7.199344682602819
+        ],
+        "ci99": [
+          -0.2412533917098045,
+          8.610274268378513
+        ],
+        "category_standardized_gap_by_starter": {
+          "buyer": 7.557056221252161,
+          "seller": -0.6996165827941528
+        }
+      }
+    },
+    "failed_episode": {
+      "scenario": "M180",
+      "episode": "M180-E12",
+      "category": "tradeoffs",
+      "firstMover": "buyer",
+      "buyer": 0,
+      "seller": 0,
+      "gap": 0,
+      "failure": true,
+      "terminal_reason": "transport_failure"
+    },
+    "interpretation": "Balances observed first-mover proportions and category mix descriptively, not causal control. No same-scenario role/order swap was run; other scenario attributes may differ between starter groups. Intervals conditional on post-hoc subset and chosen analysis, not selection-adjusted; no p-values, five-point threshold, repeated-run variability estimate or confirmatory claim. No-zone scenarios remain in the167 broad view and are reported separately, not discarded from overall experiment.",
+    "bootstrap": {
+      "replicates": 10000,
+      "generator": "PCG64",
+      "seed": 2026102902,
+      "unit": "whole paired scenario within category x first-mover strata, retain original stratum sizes; same indices for all failure sensitivities",
+      "intervals": [
+        0.95,
+        0.99
+      ],
+      "quantile": "linear percentile"
+    }
+  },
+  "noZoneResults": {
+    "classification": "descriptive_only_no_new_inference",
+    "scenario_count": 60,
+    "assignment_count": 720,
+    "definition": "No legal contract in the 168-contract menu gives both parties nonnegative gain above their outside options.",
+    "overall": {
+      "n": 720,
+      "agreements": 0,
+      "walkaways": 713,
+      "infrastructure_failures": 7,
+      "buyer_mean": 0.0,
+      "seller_mean": 0.0,
+      "joint_mean": 0.0,
+      "harmful_deals": 0,
+      "buyer_harming_deals": 0,
+      "seller_harming_deals": 0
+    },
+    "cells": [
+      {
+        "buyer": "neutral",
+        "seller": "early",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 59,
+        "infrastructure_failures": 1,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "neutral",
+        "seller": "late",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 59,
+        "infrastructure_failures": 1,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "neutral",
+        "seller": "neutral_sol",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 58,
+        "infrastructure_failures": 2,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "firm",
+        "seller": "early",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "firm",
+        "seller": "late",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "firm",
+        "seller": "neutral_sol",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 59,
+        "infrastructure_failures": 1,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "early",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 59,
+        "infrastructure_failures": 1,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "late",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 59,
+        "infrastructure_failures": 1,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "collaborative",
+        "seller": "neutral_sol",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "programmed",
+        "seller": "early",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "programmed",
+        "seller": "late",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      },
+      {
+        "buyer": "programmed",
+        "seller": "neutral_sol",
+        "n": 60,
+        "agreements": 0,
+        "walkaways": 60,
+        "infrastructure_failures": 0,
+        "buyer_mean": 0.0,
+        "seller_mean": 0.0,
+        "joint_mean": 0.0,
+        "harmful_deals": 0,
+        "buyer_harming_deals": 0,
+        "seller_harming_deals": 0
+      }
+    ],
+    "neutral_neutral": {
+      "n": 60,
+      "agreements": 0,
+      "walkaways": 58,
+      "infrastructure_failures": 2,
+      "buyer_mean": 0.0,
+      "seller_mean": 0.0,
+      "joint_mean": 0.0,
+      "harmful_deals": 0,
+      "buyer_harming_deals": 0,
+      "seller_harming_deals": 0,
+      "failure_episodes": [
+        "M062-E01",
+        "M076-E01"
+      ]
+    },
+    "caveats": [
+      "Infrastructure zeros are operational scoring placeholders, not observed strategic ties or chosen walkaways.",
+      "No harmful executed deals were observed; offers that would harm an opponent are not executed deals and are not counted here.",
+      "The 167-to-107 change removes 60 no-zone scenarios; it does not remove 60 failed or harmful deals. The 167 set already removed 13 unequal-maximum feasible scenarios.",
+      "This task adds counts and arithmetic means only, without inference, model calls or changes to original outcomes."
+    ]
+  },
+  "followupSources": {
+    "ANALYSIS-v1.json": {
+      "file": "ANALYSIS-v1.json",
+      "sha256": "90926870cfdf61ca943d3804cedd7459d51eceb438b9b5a3cc3769fab01ca540"
+    },
+    "ANALYSIS-PLAN-v1.json": {
+      "file": "ANALYSIS-PLAN-v1.json",
+      "sha256": "ecd1a9a3fd1318f44bbc6d6a2a29da71e3cd658adeabe6e9f849272b415accb5"
+    },
+    "NO-ZONE-RESULTS-v1.json": {
+      "file": "NO-ZONE-RESULTS-v1.json",
+      "sha256": "5d8a82607d13861e1666680a09e3cd6e40ec36f8ba8265ff593ffe990ecdf3a6"
+    }
+  }
+}

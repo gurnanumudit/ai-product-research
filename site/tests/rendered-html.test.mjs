@@ -25,6 +25,65 @@ test('production homepage and article render with direct study links', async () 
     const home = await fetch(`http://localhost:${port}/`);
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
+    checkAnchors(homeHtml);
+    const negotiationPath = '/research/how-ai-negotiates';
+    assert.ok(homeHtml.includes(negotiationPath));
+    assert.ok(homeHtml.includes('October 29, 2026'));
+    const negotiation = await fetch(`http://localhost:${port}${negotiationPath}`);
+    assert.equal(negotiation.status, 200);
+    const negotiationHtml = await negotiation.text();
+    checkAnchors(negotiationHtml);
+    for (const text of ['October 29, 2026', 'research/negotiation', '2,160', '1.90', 'Appendix', '2026-10-29']) assert.ok(negotiationHtml.includes(text), `Missing negotiation content: ${text}`);
+    for (const text of ['Not yet published', 'Unpublished review draft', 'has not yet been published there', 'Research draft · October']) assert.ok(!negotiationHtml.includes(text), `Stale negotiation copy: ${text}`);
+    assert.ok(negotiationHtml.includes('https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates'));
+    const negotiationData = await fetch(`http://localhost:${port}/research-assets/negotiation/chart-data.json`);
+    assert.equal(negotiationData.status, 200);
+    const nd = await negotiationData.json();
+    assert.equal(nd.main.episodes,2160);assert.equal(nd.roleGap.rows.length,107);
+
+    assert.ok(homeHtml.includes('<h1 id="research-title">Understanding AI through evidence.</h1>'));
+    assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
+    assert.ok(homeHtml.includes('I use experiments and data to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.'));
+    for (const text of ['Understanding AI through evidence.', 'Current work explores AI evaluation and economics.', 'About this research', 'My background is in finance and data science', 'Review-policy evaluation', 'Simulation', 'Cost–quality analysis', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    const financialPath = '/research/which-financial-ai-answers-should-we-review';
+    assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 3);
+    const financial = await fetch(`http://localhost:${port}${financialPath}`);
+    assert.equal(financial.status, 200);
+    const financialHtml = await financial.text();
+    checkAnchors(financialHtml);
+    assert.ok(financialHtml.includes('October 10, 2026'));
+    assert.ok(financialHtml.includes('article-analysis'));
+    assert.ok(financialHtml.includes('rule-based checks to recalculate the answer'));
+    assert.ok(financialHtml.includes('same automatic-review rules'));
+    assert.ok(financialHtml.includes('Mismatches caught'));
+    assert.ok(financialHtml.includes('347 answers did not match.'));
+    assert.ok(financialHtml.includes('60–100%') && financialHtml.includes('0–100%'));
+    assert.ok(financialHtml.includes('After examining the initial results'));
+    assert.ok(financialHtml.includes('exploratory, not independent validation'));
+    assert.ok(financialHtml.includes('We tested only one model: GPT-5.4 mini.'));
+    assert.ok(financialHtml.includes('143 mismatches in 225 slots'));
+    assert.ok(financialHtml.includes('In this article'));
+    assert.ok(financialHtml.includes('checker-sensitivity'));
+    assert.ok(financialHtml.includes('Updated') && financialHtml.includes('October 21, 2026'));
+    for (const stale of ['Draft 4', 'Draft note:', 'Local draft', 'Draft revision', 'not yet been added', 'saved locally', 'Local reading preview', '127.0.0.1']) assert.ok(!financialHtml.includes(stale), `Stale text: ${stale}`);
+    assert.ok(financialHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
+    for (const asset of ['review-budget-accuracy-detail.svg', 'review-budget-precision-detail.svg', 'appendix-navigation.js']) {
+      const response = await fetch(`http://localhost:${port}/research-assets/financial-answer-review/${asset}`);
+      assert.equal(response.status, 200);
+    }
+    await checkSocialPreview(port, financialPath, '/research-assets/financial-answer-review/cover-v3.png');
+    const partTwoPath = financialPath + '-part-2';
+    assert.equal((homeHtml.match(new RegExp(`<a href="${partTwoPath}"`, 'g')) || []).length,3);
+    assert.ok(financialHtml.includes(`href="${partTwoPath}"`));
+    const partTwoResponse = await fetch(`http://localhost:${port}${partTwoPath}`);
+    assert.equal(partTwoResponse.status,200);
+    const partTwoHtml = await partTwoResponse.text();checkAnchors(partTwoHtml);
+    for(const stale of ['Draft for review','Draft preparation:','/Users/','192.168.','localhost','public repository link and an export review are still needed']) assert.ok(!partTwoHtml.includes(stale),stale);
+    assert.ok(partTwoHtml.includes('October 21, 2026'));assert.ok(partTwoHtml.includes('October 17, 2026'));
+    assert.ok(partTwoHtml.includes('Better strategy'));assert.ok(partTwoHtml.includes('No clear winner'));
+    assert.ok(partTwoHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
+    await checkSocialPreview(port,partTwoPath,'/research-assets/financial-answer-review-part-2/cover-v1.png');
+    for(const [,path] of partTwoHtml.matchAll(/href="(\/research-assets\/[^"#]+)"/g))assert.equal((await fetch(`http://localhost:${port}${path}`)).status,200,path);
     const reliabilityPath = '/research/how-to-avoid-false-confidence-in-ai-evaluations';
     assert.equal((homeHtml.match(new RegExp(`<a href="${reliabilityPath}"`, 'g')) || []).length, 3);
     await checkSocialPreview(port, reliabilityPath, '/research-assets/evaluation-reliability/evaluation-confidence-cover.png');
@@ -106,7 +165,7 @@ async function checkSocialPreview(port, path, imagePath) {
   assert.equal(tags.get('twitter:image'), tags.get('og:image'));
   if (path === '/') {
     assert.ok(tags.get('og:description').length >= 100, 'homepage sharing description is at least 100 characters');
-    assert.ok(tags.get('og:description').includes('research journey'));
+    assert.ok(tags.get('og:description').includes('Understanding AI through evidence.'));
     assert.ok(!tags.get('og:image').includes('og-v2.png'), 'new card has a fresh cache key');
   }
   assert.ok(Number(tags.get('og:image:width')) >= 1200);

@@ -1,0 +1,60 @@
+{
+  "publication_date": "2026-10-29",
+  "classification": "post_interim_amended_exploratory",
+  "derived_episode_fields": [
+    "episode_id",
+    "scenario_id",
+    "category",
+    "buyer_condition",
+    "seller_condition",
+    "first_mover",
+    "terminal_reason",
+    "infrastructure_affected",
+    "executed_contract_id",
+    "buyer_gain",
+    "seller_gain",
+    "joint_gain",
+    "best_feasible_joint_gain",
+    "missing_strategic_gain_bounds",
+    "any_deal"
+  ],
+  "source_segments": [
+    {
+      "segment": 0,
+      "rows": 558,
+      "source_sha256": "3225680ae9a1e6716a06ccc524c67dc328f21fbf8651dc1050908772ff121d8a"
+    },
+    {
+      "segment": 1,
+      "rows": 179,
+      "source_sha256": "ac1852a1c3507c0c1ac0c3dc6519c8736875360a2dd72325cffe8a4530c1add3"
+    },
+    {
+      "segment": 2,
+      "rows": 168,
+      "source_sha256": "178236c9dfd6465398829e37f751075de6e754eb0ba2390b2ea37d95b0ff8dbe"
+    },
+    {
+      "segment": 3,
+      "rows": 144,
+      "source_sha256": "15463cd704f10a15978db1749157cb53d79e8936b9e71bfe565dbb08daf6a53a"
+    },
+    {
+      "segment": 4,
+      "rows": 1111,
+      "source_sha256": "332f3d9464a492e48daeab8f2f3579dbbbb919e5fde0099a73d5889baad9a7d5"
+    }
+  ],
+  "original_analysis_math_source_sha256": "a0491ec389d0268272a104df5e3463e7d1102dad6c4363c155d11de0e8c5baef",
+  "analysis_math_extraction": "Unmodified prefix before validate_frame; numerical helpers only. Historical decision flags are not used by the public verifier.",
+  "game_sha256": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c",
+  "chart_source_sha256": "e3d5848733f48718f4d14becb9c36cd68c104af17124f4d31059fec6d909912f",
+  "methods_source_sha256": "34cbd605bdfc579374e8f396071c4a079e4d652892f40c6aa5a3843cb7badeb6",
+  "omitted": [
+    "provider request identifiers and billing receipts",
+    "credentials and account state",
+    "private operational logs and research database",
+    "full model-response archive and launch controls"
+  ],
+  "no_new_collection": true
+}

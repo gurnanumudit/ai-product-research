@@ -1,0 +1,14 @@
+{
+  "publication_date": "2026-10-29",
+  "sha256": {
+    "PROVENANCE.json": "c008b991ee8fa48a2c827cf899d6df3bffe8736fd812b600be846b8aceb5d3bd",
+    "README.md": "a83ae07f8bfe26e2918f40f96fe16fe945b20591f12305d279ba9688fe728b52",
+    "code/analysis_math.py": "2d09f2e8681fb3c3a990c923426ede05b5c89a396fb81831f9ff3af3d6b6b50e",
+    "code/game.py": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c",
+    "data/episodes.json": "53063d11090492692588a666f65e8af513d1834f84a75fd23adb7ace6b48ceca",
+    "data/methods-and-scenarios.json": "34cbd605bdfc579374e8f396071c4a079e4d652892f40c6aa5a3843cb7badeb6",
+    "reference/article-results.json": "e3d5848733f48718f4d14becb9c36cd68c104af17124f4d31059fec6d909912f",
+    "reproduce.py": "2b8122daf7d954b9fd6e3db9edaeca0e814d40eb73656fa34d550cb23382ce2d",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+  }
+}

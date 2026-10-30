@@ -1,0 +1,15 @@
+data/
+adjudication/
+runs/
+*-APPROVAL.json
+EXECUTION-CONSUMED.json
+*-summary.json
+*.jsonl
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+research.db*
+*-response.json
+*-request.json

@@ -1,0 +1,238 @@
+{
+  "description": "Descriptive sums of original dataset-specific queues. Not pooled reranking or combined inference.",
+  "source_sha256": "a15fa1d7d746ecb32ebfb122a54c4bbcbb878a7e8b2f76b7199d19f9b920d0be",
+  "combined": [
+    {
+      "model": "GPT-5.4 mini",
+      "total": 215,
+      "c": 63,
+      "v": 110,
+      "budgets": [
+        [
+          24,
+          39
+        ],
+        [
+          40,
+          80
+        ],
+        [
+          63,
+          110
+        ],
+        [
+          117,
+          147
+        ]
+      ],
+      "metrics": [
+        {
+          "capacity": 5,
+          "slots": 46,
+          "released": 896,
+          "cMatches": 705,
+          "vMatches": 720,
+          "randomCaught": 13.502408120924718
+        },
+        {
+          "capacity": 10,
+          "slots": 93,
+          "released": 849,
+          "cMatches": 674,
+          "vMatches": 714,
+          "randomCaught": 24.100844694724362
+        },
+        {
+          "capacity": 20,
+          "slots": 188,
+          "released": 754,
+          "cMatches": 602,
+          "vMatches": 649,
+          "randomCaught": 45.47406639004149
+        },
+        {
+          "capacity": 50,
+          "slots": 470,
+          "released": 472,
+          "cMatches": 374,
+          "vMatches": 404,
+          "randomCaught": 108.86381149970362
+        }
+      ]
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "total": 115,
+      "c": 58,
+      "v": 20,
+      "budgets": [
+        [
+          23,
+          6
+        ],
+        [
+          36,
+          11
+        ],
+        [
+          58,
+          20
+        ],
+        [
+          86,
+          58
+        ]
+      ],
+      "metrics": [
+        {
+          "capacity": 5,
+          "slots": 46,
+          "released": 896,
+          "cMatches": 804,
+          "vMatches": 787,
+          "randomCaught": 4.901179819879006
+        },
+        {
+          "capacity": 10,
+          "slots": 93,
+          "released": 849,
+          "cMatches": 770,
+          "vMatches": 745,
+          "randomCaught": 10.698092031425364
+        },
+        {
+          "capacity": 20,
+          "slots": 188,
+          "released": 754,
+          "cMatches": 697,
+          "vMatches": 659,
+          "randomCaught": 22.378336207604498
+        },
+        {
+          "capacity": 50,
+          "slots": 470,
+          "released": 472,
+          "cMatches": 443,
+          "vMatches": 415,
+          "randomCaught": 57.008923927623115
+        }
+      ]
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "total": 183,
+      "c": 87,
+      "v": 103,
+      "budgets": [
+        [
+          26,
+          37
+        ],
+        [
+          50,
+          78
+        ],
+        [
+          87,
+          103
+        ],
+        [
+          132,
+          126
+        ]
+      ],
+      "metrics": [
+        {
+          "capacity": 5,
+          "slots": 46,
+          "released": 896,
+          "cMatches": 739,
+          "vMatches": 750,
+          "randomCaught": 9.932946058091286
+        },
+        {
+          "capacity": 10,
+          "slots": 93,
+          "released": 849,
+          "cMatches": 716,
+          "vMatches": 744,
+          "randomCaught": 19.026141078838172
+        },
+        {
+          "capacity": 20,
+          "slots": 188,
+          "released": 754,
+          "cMatches": 658,
+          "vMatches": 674,
+          "randomCaught": 37.38058091286307
+        },
+        {
+          "capacity": 50,
+          "slots": 470,
+          "released": 472,
+          "cMatches": 421,
+          "vMatches": 415,
+          "randomCaught": 91.83585062240664
+        }
+      ]
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "total": 103,
+      "c": 60,
+      "v": 23,
+      "budgets": [
+        [
+          22,
+          7
+        ],
+        [
+          37,
+          11
+        ],
+        [
+          60,
+          23
+        ],
+        [
+          82,
+          54
+        ]
+      ],
+      "metrics": [
+        {
+          "capacity": 5,
+          "slots": 46,
+          "released": 896,
+          "cMatches": 815,
+          "vMatches": 800,
+          "randomCaught": 4.37776135337111
+        },
+        {
+          "capacity": 10,
+          "slots": 93,
+          "released": 849,
+          "cMatches": 783,
+          "vMatches": 757,
+          "randomCaught": 9.572390572390573
+        },
+        {
+          "capacity": 20,
+          "slots": 188,
+          "released": 754,
+          "cMatches": 711,
+          "vMatches": 674,
+          "randomCaught": 20.035723084503573
+        },
+        {
+          "capacity": 50,
+          "slots": 470,
+          "released": 472,
+          "cMatches": 451,
+          "vMatches": 423,
+          "randomCaught": 51.05452903013878
+        }
+      ]
+    }
+  ]
+}

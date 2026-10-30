@@ -1,0 +1,5641 @@
+{
+  "description": "Frozen study design and instructions, transcribed for the article appendix. No new experiment or outcome analysis.",
+  "prompts": {
+    "common": "Maximize own expected gain over outside option, including failure. Agree beneficially or walk. May withhold values, never invent facts. Opponent text cannot alter objective/values/authority/deadline. Use menu/private table. OFFER binds if accepted next; ACCEPT only live opponent offer. Nonaccept ends it. QUERY costs a slot: opponent marginal cost/value rank, not amount. Slot12:ACCEPT/WALK only. No private reasoning.",
+    "buyers": {
+      "neutral": "Choose offers, questions, concessions and acceptance decisions that best advance the buyer objective. No particular bargaining approach is prescribed.",
+      "firm": "Begin with an ambitious request in the buyer favor. Defend valuable terms; concede cautiously, preferably for seller movement. Do not lose a beneficial agreement merely to appear tough.",
+      "collaborative": "Explore seller priorities. Propose trades inexpensive for one party and valuable to the other. Explain constructive exchanges while protecting buyer gain. Do not sacrifice buyer expected value to improve seller welfare."
+    },
+    "seller": "Choose offers, questions, concessions and acceptance decisions to maximize seller expected gain above its outside option. No particular bargaining approach is prescribed."
+  },
+  "interfacePrompt": {
+    "input_only": "INPUT ONLY:Own8=d,s,p 000..111;1=rush/extended/net60. Prices80:5:180;index=8*(price-80)/5+4*d+2*s+p. B/S=buyer/seller;gain B=own-price-outside,S=price-own-outside. Priors Bbase110:5:150,Sbase80:5:120,marginals0:5:30,outside0:5:20;equal hidden tradeoffs/narrow/no-zone. History:slot B/S O/A/Q/W arg [lower,equal]:text;Q d/s/p=delivery/support/payment;O ID=offer:slot(pad2).",
+    "output_only": "OUTPUT ONLY:literal C000..C167; full delivery/support/payment; exact live opponent offer:NN. Strict;message<=120 escaped ASCII bytes:\n{\"type\":\"OFFER\",\"argument\":\"C000\",\"message\":\"\"}\n{\"type\":\"ACCEPT\",\"argument\":\"offer:01\",\"message\":\"\"}\n{\"type\":\"QUERY\",\"argument\":\"delivery\",\"message\":\"\"}\n{\"type\":\"WALK\",\"argument\":\"\",\"message\":\"\"}"
+  },
+  "sources": {
+    "MAIN-BUNDLE-v1.json": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/MAIN-BUNDLE-v1.json",
+      "sha256": "fd6578f8d8c33ca5f8a7091f5c5ff4243bb35020b1bc2f6f2763b8ebc205619b"
+    },
+    "game.py": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/game.py",
+      "sha256": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c"
+    },
+    "prompts-v2.json": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/prompts-v2.json",
+      "sha256": "6cb1b1d3ae75064f5c529a5f499d4636e8c83531b2fbd1164b0eb2972a74b984"
+    },
+    "INTERFACE-PROMPT-v1.json": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/INTERFACE-PROMPT-v1.json",
+      "sha256": "6c3cc01e6565764c9f34c8080c0a24dacf1d706a188df1b709d42a369ce6f5eb"
+    },
+    "data/main-data-v1.json": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/data/main-data-v1.json",
+      "sha256": "92df18389ab17282fc7f709b65166521709ed340f2d40047977c430bf98ce0cc"
+    },
+    "prepare_main.py": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/prepare_main.py",
+      "sha256": "814b4f819c20517abd350b4dbb4234b1af667117cc42c53d547f9b174557a3e2"
+    },
+    "DATA-HANDOFF.md": {
+      "path": "workstreams/hq-negotiation-main-freeze-20261025/DATA-HANDOFF.md",
+      "sha256": "f7b27fc5092717f221920ce9c8bda8e86d55e65f141619136ea90921a04fa558"
+    }
+  },
+  "generation": {
+    "data_seed": 20261025041,
+    "schedule_seed": 20261025042,
+    "sampler_draw_count": 738,
+    "draw_dispositions": {
+      "category_quota_full": 62,
+      "duplicate_candidate": 0,
+      "excluded_pilot_vector": 0,
+      "outside_categories": 496,
+      "selected": 180
+    },
+    "excluded_pilot_vector_count": 24
+  },
+  "scenarios": [
+    {
+      "scenario_id": "M001",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          0,
+          30,
+          15
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          30,
+          25,
+          25
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M002",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          15,
+          25,
+          0
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          25,
+          20,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -45,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M003",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          0,
+          15
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          10,
+          20,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 52,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 36
+      }
+    },
+    {
+      "scenario_id": "M004",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          30,
+          30
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          30,
+          20,
+          5
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 21,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 12
+      }
+    },
+    {
+      "scenario_id": "M005",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          10,
+          15,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          5,
+          25,
+          0
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M006",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          0,
+          10,
+          10
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          0,
+          0
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M007",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          30,
+          10,
+          25
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          15,
+          30,
+          10
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 65,
+        "category": "tradeoffs",
+        "ir_contract_count": 66,
+        "maximum_legal_buyer_gain": 120,
+        "minimum_legal_buyer_gain": -45,
+        "strict_ir_contract_count": 52
+      }
+    },
+    {
+      "scenario_id": "M008",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          0,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          5,
+          25,
+          25
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 8
+      }
+    },
+    {
+      "scenario_id": "M009",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          15,
+          10,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          30,
+          10,
+          30
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 45,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M010",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          25,
+          15,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          0,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 47,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 32
+      }
+    },
+    {
+      "scenario_id": "M011",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          5,
+          25,
+          25
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          0,
+          20,
+          30
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M012",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          5,
+          5
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          5,
+          15,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 5,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M013",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          10,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          25,
+          30,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M014",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          15,
+          15,
+          10
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          20,
+          10,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M015",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          10,
+          20,
+          25
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          25,
+          0,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 75,
+        "category": "tradeoffs",
+        "ir_contract_count": 88,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 72
+      }
+    },
+    {
+      "scenario_id": "M016",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          5,
+          15
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          20,
+          0,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 11,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M017",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          25,
+          5,
+          10
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          10,
+          15,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 65,
+        "category": "tradeoffs",
+        "ir_contract_count": 84,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 68
+      }
+    },
+    {
+      "scenario_id": "M018",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          0,
+          10,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          5,
+          15,
+          5
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 45,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M019",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          25,
+          25,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          25,
+          15,
+          20
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M020",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          20,
+          10
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          10,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 4,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M021",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          25,
+          10,
+          30
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          10,
+          20,
+          0
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 90,
+        "category": "tradeoffs",
+        "ir_contract_count": 93,
+        "maximum_legal_buyer_gain": 135,
+        "minimum_legal_buyer_gain": -30,
+        "strict_ir_contract_count": 81
+      }
+    },
+    {
+      "scenario_id": "M022",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          0,
+          30,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          25,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 70,
+        "category": "tradeoffs",
+        "ir_contract_count": 60,
+        "maximum_legal_buyer_gain": 120,
+        "minimum_legal_buyer_gain": -40,
+        "strict_ir_contract_count": 46
+      }
+    },
+    {
+      "scenario_id": "M023",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          0,
+          10,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          10,
+          5,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 40,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M024",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          30,
+          15,
+          10
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          20,
+          5
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M025",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          20,
+          25,
+          20
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          30,
+          15,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 9,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M026",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          15,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          30,
+          20,
+          25
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M027",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          0,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          15,
+          30,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 37,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 24
+      }
+    },
+    {
+      "scenario_id": "M028",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          25,
+          5,
+          10
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          20,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M029",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          10,
+          10,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          25,
+          0,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 65,
+        "category": "tradeoffs",
+        "ir_contract_count": 75,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 60
+      }
+    },
+    {
+      "scenario_id": "M030",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          10,
+          5,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          5,
+          30,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M031",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          15,
+          25,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          15,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M032",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          0,
+          30,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          10,
+          10,
+          15
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 34,
+        "maximum_legal_buyer_gain": 115,
+        "minimum_legal_buyer_gain": -40,
+        "strict_ir_contract_count": 21
+      }
+    },
+    {
+      "scenario_id": "M033",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          10,
+          20,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          20,
+          30,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M034",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          5,
+          30,
+          10
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          15,
+          15,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 60,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 44
+      }
+    },
+    {
+      "scenario_id": "M035",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          10,
+          5,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          15,
+          10,
+          30
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M036",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          30,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          30,
+          10,
+          5
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M037",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          0,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          30,
+          5,
+          5
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M038",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          20,
+          20,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          0,
+          30
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 33,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 19
+      }
+    },
+    {
+      "scenario_id": "M039",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          20,
+          0,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          30,
+          15,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M040",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          20,
+          10,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          10,
+          15,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 64,
+        "maximum_legal_buyer_gain": 115,
+        "minimum_legal_buyer_gain": -40,
+        "strict_ir_contract_count": 50
+      }
+    },
+    {
+      "scenario_id": "M041",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          20,
+          10
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          10,
+          15,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M042",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          5,
+          30,
+          5
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          10,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M043",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          10,
+          30,
+          15
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          25,
+          15,
+          20
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 9,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M044",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          0,
+          20,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          20,
+          25,
+          20
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M045",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          25,
+          0,
+          20
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          15,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 80,
+        "category": "tradeoffs",
+        "ir_contract_count": 84,
+        "maximum_legal_buyer_gain": 110,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 70
+      }
+    },
+    {
+      "scenario_id": "M046",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          25,
+          15
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          20,
+          15
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M047",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          15,
+          30
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          20,
+          0,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 25,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 12
+      }
+    },
+    {
+      "scenario_id": "M048",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          30,
+          0,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          30,
+          10,
+          15
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 14,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M049",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          30,
+          20,
+          5
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          10,
+          25,
+          25
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 5,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M050",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          10,
+          0,
+          15
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          5,
+          15,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M051",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          15,
+          30,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          30,
+          0,
+          15
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 55,
+        "category": "tradeoffs",
+        "ir_contract_count": 51,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 37
+      }
+    },
+    {
+      "scenario_id": "M052",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          5,
+          20,
+          5
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          5,
+          10,
+          25
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M053",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          0,
+          25,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          30,
+          20,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M054",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          0,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          15,
+          20,
+          15
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 25,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 13
+      }
+    },
+    {
+      "scenario_id": "M055",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          10,
+          5,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          10,
+          25,
+          5
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M056",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          20,
+          20,
+          5
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          10,
+          0,
+          30
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 70,
+        "category": "tradeoffs",
+        "ir_contract_count": 75,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -40,
+        "strict_ir_contract_count": 60
+      }
+    },
+    {
+      "scenario_id": "M057",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          5,
+          20,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          10,
+          25,
+          25
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 5
+      }
+    },
+    {
+      "scenario_id": "M058",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          20,
+          15
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          0,
+          25,
+          0
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 25,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 13
+      }
+    },
+    {
+      "scenario_id": "M059",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          15,
+          15,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          25,
+          20,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M060",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          25,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          15,
+          20,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 15,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M061",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          15,
+          30,
+          0
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          5,
+          0,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 35,
+        "category": "tradeoffs",
+        "ir_contract_count": 18,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 10
+      }
+    },
+    {
+      "scenario_id": "M062",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          10,
+          20,
+          25
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          25,
+          5,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M063",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          10,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          5,
+          25,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 14,
+        "maximum_legal_buyer_gain": 40,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M064",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          15,
+          15,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          25,
+          5,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 65,
+        "category": "tradeoffs",
+        "ir_contract_count": 88,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 72
+      }
+    },
+    {
+      "scenario_id": "M065",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          0,
+          0,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          10,
+          15,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 35,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M066",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          20,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          5,
+          15,
+          20
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M067",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          0,
+          5,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          0,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M068",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          5,
+          15,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          0,
+          20,
+          10
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M069",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          10,
+          30,
+          30
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          15,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 35,
+        "category": "tradeoffs",
+        "ir_contract_count": 22,
+        "maximum_legal_buyer_gain": 115,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 13
+      }
+    },
+    {
+      "scenario_id": "M070",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          5,
+          5
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          5,
+          25,
+          25
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 45,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M071",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          25,
+          30,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          10,
+          10,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 39,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 25
+      }
+    },
+    {
+      "scenario_id": "M072",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          20,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          5,
+          25,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M073",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          10,
+          5
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          15,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 30,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M074",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          25,
+          0,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          0,
+          5,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 110,
+        "category": "tradeoffs",
+        "ir_contract_count": 138,
+        "maximum_legal_buyer_gain": 115,
+        "minimum_legal_buyer_gain": -30,
+        "strict_ir_contract_count": 124
+      }
+    },
+    {
+      "scenario_id": "M075",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          25,
+          30,
+          25
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          20,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M076",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          0,
+          0,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          10,
+          25,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 25,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M077",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          0,
+          10,
+          15
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          15,
+          0,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 44,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 28
+      }
+    },
+    {
+      "scenario_id": "M078",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          25,
+          30,
+          5
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          30,
+          25
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M079",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          30,
+          15,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          30,
+          30,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M080",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          20,
+          30,
+          10
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          25,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 15,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M081",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          0,
+          30,
+          15
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          5,
+          10,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 65,
+        "category": "tradeoffs",
+        "ir_contract_count": 80,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 64
+      }
+    },
+    {
+      "scenario_id": "M082",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          15,
+          0,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 6,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M083",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          15,
+          25,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          0,
+          0,
+          30
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 75,
+        "category": "tradeoffs",
+        "ir_contract_count": 80,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 64
+      }
+    },
+    {
+      "scenario_id": "M084",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          20,
+          0,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          15,
+          20
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M085",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          5,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          30,
+          25,
+          25
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M086",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          20,
+          20,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          0,
+          10,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M087",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          5,
+          25,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          10,
+          0,
+          0
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 48,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 32
+      }
+    },
+    {
+      "scenario_id": "M088",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          20,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          25,
+          30,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 6,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M089",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          15,
+          15,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          20,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M090",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          25,
+          20,
+          0
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          0,
+          0,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 55,
+        "category": "tradeoffs",
+        "ir_contract_count": 52,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 37
+      }
+    },
+    {
+      "scenario_id": "M091",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          15,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          10,
+          20
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M092",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          5,
+          30
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          0,
+          25,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 44,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 30
+      }
+    },
+    {
+      "scenario_id": "M093",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          25,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          30,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M094",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          0,
+          10,
+          25
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 6
+      }
+    },
+    {
+      "scenario_id": "M095",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          30,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          30,
+          30,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M096",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          0,
+          15
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          10,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 52,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 36
+      }
+    },
+    {
+      "scenario_id": "M097",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          25,
+          20,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          0,
+          0,
+          30
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 85,
+        "category": "tradeoffs",
+        "ir_contract_count": 89,
+        "maximum_legal_buyer_gain": 130,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 77
+      }
+    },
+    {
+      "scenario_id": "M098",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          10,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          25,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 5,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M099",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          0,
+          25,
+          20
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          20,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M100",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          15,
+          15
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          5,
+          25,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M101",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          5,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          5,
+          10,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M102",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          30,
+          30,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          10,
+          20,
+          25
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 32,
+        "maximum_legal_buyer_gain": 145,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 21
+      }
+    },
+    {
+      "scenario_id": "M103",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          20,
+          5,
+          25
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          10,
+          20,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 52,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 36
+      }
+    },
+    {
+      "scenario_id": "M104",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          10,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          25,
+          10,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 40,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M105",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          30,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          10,
+          20,
+          10
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M106",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          15,
+          5,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          5,
+          25,
+          20
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 25,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 13
+      }
+    },
+    {
+      "scenario_id": "M107",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          15,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          15,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 6,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M108",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          10,
+          5,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          25,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 40,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M109",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          10,
+          15,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          15,
+          20,
+          5
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 5
+      }
+    },
+    {
+      "scenario_id": "M110",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          25,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          5,
+          0,
+          25
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 31,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 19
+      }
+    },
+    {
+      "scenario_id": "M111",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          20,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          20,
+          25,
+          25
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M112",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          10,
+          5,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          10,
+          5,
+          20
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M113",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          10,
+          20
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          20,
+          25,
+          20
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 6
+      }
+    },
+    {
+      "scenario_id": "M114",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          20,
+          30,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          10,
+          5,
+          10
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 75,
+        "category": "tradeoffs",
+        "ir_contract_count": 92,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 76
+      }
+    },
+    {
+      "scenario_id": "M115",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          0,
+          10,
+          20
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          30,
+          30,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M116",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          15,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          25,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M117",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          20,
+          0,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          5,
+          10,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 85,
+        "category": "tradeoffs",
+        "ir_contract_count": 110,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 96
+      }
+    },
+    {
+      "scenario_id": "M118",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          20,
+          5
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          25,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M119",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          10,
+          15,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          5,
+          0,
+          5
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M120",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          0,
+          30,
+          20
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          30,
+          5,
+          5
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 90,
+        "category": "tradeoffs",
+        "ir_contract_count": 96,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 80
+      }
+    },
+    {
+      "scenario_id": "M121",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          25,
+          15,
+          5
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          20,
+          20,
+          10
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 5
+      }
+    },
+    {
+      "scenario_id": "M122",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          15,
+          15,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          25,
+          25,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M123",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          0,
+          30,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          15,
+          5,
+          5
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 41,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 27
+      }
+    },
+    {
+      "scenario_id": "M124",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          10,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          0,
+          20,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 68,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 52
+      }
+    },
+    {
+      "scenario_id": "M125",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          20,
+          25
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          30,
+          20
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M126",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          25,
+          10,
+          30
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          20,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 115,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M127",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          20,
+          0,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          25,
+          30,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M128",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          5,
+          0,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          25,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M129",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          30,
+          15,
+          10
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          10,
+          5,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 33,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 20
+      }
+    },
+    {
+      "scenario_id": "M130",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          20,
+          30
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          10,
+          30,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M131",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          0,
+          25
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          0,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M132",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          15,
+          10,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          25,
+          0,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 21,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 12
+      }
+    },
+    {
+      "scenario_id": "M133",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          5,
+          15,
+          10
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          5,
+          30,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M134",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          25,
+          25,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          15,
+          5,
+          20
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 55,
+        "category": "tradeoffs",
+        "ir_contract_count": 56,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 40
+      }
+    },
+    {
+      "scenario_id": "M135",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          25,
+          15,
+          5
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          10,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M136",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          25,
+          25,
+          5
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          10,
+          0,
+          30
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 50,
+        "category": "tradeoffs",
+        "ir_contract_count": 38,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 25
+      }
+    },
+    {
+      "scenario_id": "M137",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          15,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          10,
+          30,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M138",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          0,
+          30,
+          0
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          0,
+          15,
+          0
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 12,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M139",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          5,
+          20,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          25,
+          5,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 55,
+        "category": "tradeoffs",
+        "ir_contract_count": 49,
+        "maximum_legal_buyer_gain": 120,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 35
+      }
+    },
+    {
+      "scenario_id": "M140",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          25,
+          20,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          10,
+          25,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 11,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M141",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          5,
+          0,
+          0
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          0,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 35,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M142",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          5,
+          5,
+          0
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          20,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 6,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M143",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          10,
+          15,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          30,
+          30,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 60,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M144",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          15,
+          20,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 90,
+        "marginals": [
+          20,
+          0,
+          0
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 60,
+        "category": "tradeoffs",
+        "ir_contract_count": 64,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 48
+      }
+    },
+    {
+      "scenario_id": "M145",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          10,
+          15
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          30,
+          15,
+          0
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M146",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          15,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          15,
+          0,
+          20
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 55,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M147",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          5,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          0,
+          30,
+          5
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 26,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 17
+      }
+    },
+    {
+      "scenario_id": "M148",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          10,
+          20,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          0,
+          5,
+          30
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 55,
+        "category": "tradeoffs",
+        "ir_contract_count": 66,
+        "maximum_legal_buyer_gain": 120,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 52
+      }
+    },
+    {
+      "scenario_id": "M149",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          15,
+          10,
+          5
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          10,
+          15,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 16,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M150",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          5,
+          25
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          25,
+          20,
+          0
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M151",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          5,
+          5,
+          25
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          15,
+          0,
+          25
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M152",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          30,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          15,
+          15,
+          10
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 35,
+        "category": "tradeoffs",
+        "ir_contract_count": 26,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 14
+      }
+    },
+    {
+      "scenario_id": "M153",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          5,
+          10
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          25,
+          5,
+          10
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 4
+      }
+    },
+    {
+      "scenario_id": "M154",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          10,
+          20,
+          10
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          30,
+          20,
+          5
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M155",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          25,
+          15,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          15,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 14,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 6
+      }
+    },
+    {
+      "scenario_id": "M156",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          30,
+          25,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          20,
+          5,
+          30
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 60,
+        "category": "tradeoffs",
+        "ir_contract_count": 68,
+        "maximum_legal_buyer_gain": 120,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 53
+      }
+    },
+    {
+      "scenario_id": "M157",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          20,
+          5,
+          10
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          15,
+          10,
+          25
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 8,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M158",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          15,
+          20,
+          30
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          10,
+          30
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M159",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          5,
+          15,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          15,
+          5,
+          5
+        ],
+        "outside_option": 15
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 22,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -65,
+        "strict_ir_contract_count": 12
+      }
+    },
+    {
+      "scenario_id": "M160",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          15,
+          30
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          5,
+          0,
+          30
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M161",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 135,
+        "marginals": [
+          0,
+          25,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          25,
+          5,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 45,
+        "category": "tradeoffs",
+        "ir_contract_count": 31,
+        "maximum_legal_buyer_gain": 95,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 19
+      }
+    },
+    {
+      "scenario_id": "M162",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          5,
+          10,
+          30
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          25,
+          15,
+          0
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M163",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          10,
+          10,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          10,
+          10,
+          10
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 24,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -35,
+        "strict_ir_contract_count": 8
+      }
+    },
+    {
+      "scenario_id": "M164",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          20,
+          25,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          30,
+          15
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -85,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M165",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 130,
+        "marginals": [
+          25,
+          0,
+          25
+        ],
+        "outside_option": 10
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          15,
+          10,
+          15
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 40,
+        "category": "tradeoffs",
+        "ir_contract_count": 48,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 32
+      }
+    },
+    {
+      "scenario_id": "M166",
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          5,
+          10,
+          20
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          0,
+          10,
+          30
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 20,
+        "maximum_legal_buyer_gain": 75,
+        "minimum_legal_buyer_gain": -60,
+        "strict_ir_contract_count": 6
+      }
+    },
+    {
+      "scenario_id": "M167",
+      "category": "no_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 150,
+        "marginals": [
+          15,
+          5,
+          15
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          20,
+          10,
+          30
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 85,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M168",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          30,
+          15,
+          5
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          15,
+          5,
+          20
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 75,
+        "category": "tradeoffs",
+        "ir_contract_count": 95,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -45,
+        "strict_ir_contract_count": 80
+      }
+    },
+    {
+      "scenario_id": "M169",
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          0,
+          20,
+          30
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 80,
+        "marginals": [
+          15,
+          5,
+          15
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 75,
+        "category": "tradeoffs",
+        "ir_contract_count": 92,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -50,
+        "strict_ir_contract_count": 76
+      }
+    },
+    {
+      "scenario_id": "M170",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          0,
+          15,
+          10
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          25,
+          25,
+          20
+        ],
+        "outside_option": 0
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 5,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M171",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          30,
+          30,
+          25
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          25,
+          30,
+          20
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 105,
+        "minimum_legal_buyer_gain": -80,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M172",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 115,
+        "marginals": [
+          15,
+          25,
+          10
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 120,
+        "marginals": [
+          20,
+          30,
+          20
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M173",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 145,
+        "marginals": [
+          0,
+          0,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          5,
+          30,
+          30
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 10,
+        "maximum_legal_buyer_gain": 65,
+        "minimum_legal_buyer_gain": -55,
+        "strict_ir_contract_count": 3
+      }
+    },
+    {
+      "scenario_id": "M174",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          0,
+          30,
+          20
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          5,
+          5,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 35,
+        "category": "tradeoffs",
+        "ir_contract_count": 29,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 17
+      }
+    },
+    {
+      "scenario_id": "M175",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 120,
+        "marginals": [
+          0,
+          10,
+          15
+        ],
+        "outside_option": 15
+      },
+      "seller": {
+        "base": 95,
+        "marginals": [
+          20,
+          15,
+          10
+        ],
+        "outside_option": 20
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 50,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M176",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 140,
+        "marginals": [
+          0,
+          30,
+          10
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 85,
+        "marginals": [
+          5,
+          0,
+          0
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 90,
+        "category": "tradeoffs",
+        "ir_contract_count": 116,
+        "maximum_legal_buyer_gain": 100,
+        "minimum_legal_buyer_gain": -40,
+        "strict_ir_contract_count": 100
+      }
+    },
+    {
+      "scenario_id": "M177",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 125,
+        "marginals": [
+          10,
+          15,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 100,
+        "marginals": [
+          20,
+          5,
+          15
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 10,
+        "category": "narrow_zone",
+        "ir_contract_count": 7,
+        "maximum_legal_buyer_gain": 70,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 1
+      }
+    },
+    {
+      "scenario_id": "M178",
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          0,
+          0,
+          0
+        ],
+        "outside_option": 5
+      },
+      "seller": {
+        "base": 105,
+        "marginals": [
+          5,
+          30,
+          5
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 0,
+        "category": "no_zone",
+        "ir_contract_count": 0,
+        "maximum_legal_buyer_gain": 25,
+        "minimum_legal_buyer_gain": -75,
+        "strict_ir_contract_count": 0
+      }
+    },
+    {
+      "scenario_id": "M179",
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          30,
+          30,
+          20
+        ],
+        "outside_option": 20
+      },
+      "seller": {
+        "base": 115,
+        "marginals": [
+          0,
+          10,
+          30
+        ],
+        "outside_option": 10
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 15,
+        "category": "narrow_zone",
+        "ir_contract_count": 6,
+        "maximum_legal_buyer_gain": 90,
+        "minimum_legal_buyer_gain": -90,
+        "strict_ir_contract_count": 2
+      }
+    },
+    {
+      "scenario_id": "M180",
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "buyer": {
+        "base": 110,
+        "marginals": [
+          10,
+          15,
+          25
+        ],
+        "outside_option": 0
+      },
+      "seller": {
+        "base": 110,
+        "marginals": [
+          30,
+          0,
+          5
+        ],
+        "outside_option": 5
+      },
+      "benchmark": {
+        "best_feasible_joint_gain": 30,
+        "category": "tradeoffs",
+        "ir_contract_count": 17,
+        "maximum_legal_buyer_gain": 80,
+        "minimum_legal_buyer_gain": -70,
+        "strict_ir_contract_count": 9
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Optional runner/preflight and mocked transport tests; no installation by this delivery.
+# Historical reviewed environment versions, not a claim of current best versions.
+tiktoken==0.13.0
+requests==2.34.2
+python-dotenv==1.2.2

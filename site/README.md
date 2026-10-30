@@ -1,6 +1,6 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage links to three published articles. Research data, methods and offline reproduction live separately in [research/](../research/README.md).
+Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage links to four articles. Research data, methods and offline reproduction live separately in [research/](../research/README.md).
 
 ## Run and check locally
 
@@ -17,23 +17,22 @@ Open the local URL printed by the server. All subsequent commands in this README
 ```sh
 npm test
 node --test tests/evidence-figures.test.mjs
-node --test tests/evaluation-sensitivity.test.mjs
-node scripts/export-evaluation-sensitivity.mjs --check
 ```
 
 `npm test` builds the production site and checks rendered pages, article navigation, anchors and release metadata. The separate figure check compares the reviewer article's presentation data with the published research supplement. Neither command runs AI models or collects research data.
-
-The sensitivity test and export check verify all 23 assumption-check settings against the [audited research package](../research/evaluation-reliability-sensitivity/README.md). To include rendered-page checks, set `SENSITIVITY_REVIEW_URL` to the evaluation article's URL on a running local server. Confidence intervals remain in the appendix; the three main charts use the same 0–100% scale, with red for mistaken switches and green for correct switches.
 
 ## Article-to-source map
 
 | Published article | Main presentation source | Research evidence |
 | --- | --- | --- |
-| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [Baseline](../research/evaluation-reliability/README.md) and [assumption checks](../research/evaluation-reliability-sensitivity/README.md) |
+| [How AI negotiates](https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates) | [components/negotiation/](components/negotiation/) | [negotiation package](../research/negotiation/README.md) |
+| [Which financial AI answers should we review? Part 2](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) | [components/financial-answer-review-part-2/](components/financial-answer-review-part-2/) | Presentation data only; not a full empirical replay |
+| [Which financial AI answers should we review?](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) | [components/financial-answer-review/](components/financial-answer-review/) and [content/financial-answer-review.ts](content/financial-answer-review.ts) | [article analysis](../research/financial-answer-review/article-analysis/README.md) |
+| [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [evaluation-reliability](../research/evaluation-reliability/README.md) |
 | [When is more reasoning worth it?](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) | [app/preview/reasoning-costs/](app/preview/reasoning-costs/) | [reasoning-costs](../research/reasoning-costs/README.md) |
 | [How AI reviewers use test evidence](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) | [content/evidence-review-v3.ts](content/evidence-review-v3.ts) and [components/article/](components/article/) | [ai-reviewers-test-evidence](../research/ai-reviewers-test-evidence/README.md) |
 
-The permanent routes and sharing metadata are under [app/research/](app/research/). The reasoning article reuses the implementation in `app/preview/reasoning-costs/`; that older URL remains available for compatibility. It is not a fourth article. Earlier reviewer content modules are still imported by the current article and are not unused drafts.
+The permanent routes and sharing metadata are under [app/research/](app/research/). The reasoning article reuses the implementation in `app/preview/reasoning-costs/`; that older URL remains available for compatibility. It is not an additional article. Earlier reviewer content modules are still imported by the current article and are not unused drafts.
 
 Other editing points:
 

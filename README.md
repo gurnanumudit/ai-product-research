@@ -6,15 +6,38 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 ## Published articles
 
+### How AI negotiates
+
+We tested four buyer strategies against three seller strategies in 180 synthetic scenarios. Instruction effects were modest, and a buyer lead remained worth testing again.
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates) · [Code, all 2,160 derived outcomes, scenarios and offline reproduction](research/negotiation/README.md)
+
+Published October 29, 2026. The package reproduces the numerical comparisons and all failure-sensitivity intervals without making model calls. Results remain post-interim amended and exploratory.
+
+### Which financial AI answers should we review? Part 2
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) · [Presentation source and plotted data](site/components/financial-answer-review-part-2/)
+
+The website source includes the published October 21, 2026 article. Its presentation files are not a complete empirical replay package.
+
+
 Coming from an article? Its study folder is the starting point for the methods, evidence and reproduction instructions.
+
+### Which financial AI answers should we review?
+
+We compared model confidence with rule-based verification on 1,127 financial answers at four review budgets. Confidence selected more answer-key mismatches at smaller budgets under the stated numerical allowance; the methods tied at 50% review.
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) · [Analysis code, aggregate results and reproduction limits](research/financial-answer-review/article-analysis/README.md)
+
+Synthetic tests run publicly with no API calls. Empirical replay requires the exact archived inputs and model responses, which are not distributed. This is a post-study scoring and review-budget analysis, not a scoring-independent confidence win.
 
 ### How to avoid false confidence in AI evaluations
 
 A higher evaluation score is not always a reason to switch. We used simulations to examine how related questions, repeated checks and missing outcomes affect that decision.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Baseline code and results](research/evaluation-reliability/README.md) · [Assumption checks and reproduction](research/evaluation-reliability-sensitivity/README.md)
+[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Code, frozen results and reproduction](research/evaluation-reliability/README.md)
 
-This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The baseline includes 15 scenarios, 2,000 simulated evaluations per scenario and six approaches. A separately frozen exploratory analysis varies missing grades, relatedness and the switching requirement across 23 settings. The settings reuse outcomes or random draws, so they are not independent replications. Both packages include offline verification.
+This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The package includes 15 scenarios, 2,000 simulated evaluations per scenario, six approaches and offline verification. The [separately frozen sensitivity study](research/evaluation-reliability-sensitivity/README.md) supplies the published follow-up checks.
 
 ### When is more reasoning worth it?
 
@@ -35,9 +58,10 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 
 | Folder | Contents |
 | --- | --- |
-| [site/](site/README.md) | Website source, all three articles, and web assets |
+| [research/negotiation/](research/negotiation/README.md) | Negotiation game, scenarios, derived outcomes, analysis and offline reproduction |
+| [site/](site/README.md) | Website source, all six articles, and web assets |
+| [research/financial-answer-review/article-analysis/](research/financial-answer-review/article-analysis/README.md) | Financial review policies: code, tests, aggregate results and empirical replay boundaries |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
-| [research/evaluation-reliability-sensitivity/](research/evaluation-reliability-sensitivity/README.md) | Assumption checks supporting the same article: 23 settings, all six approaches and independent audits |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |
 | [research/ai-reviewers-test-evidence/](research/ai-reviewers-test-evidence/README.md) | Reviewer study: methods, derived observations, analysis, and figures |
 | [research/archive/](research/archive/README.md) | Historical exploratory work — not evidence for the current published articles |
@@ -46,13 +70,12 @@ Each new study gets its own folder. Private execution logs, credentials, cached 
 
 ## Reproduce the published numbers
 
-Clone the repository and run these commands from its root. All four use the Python standard library, with no model calls, API keys or paid services:
+Clone the repository and run these commands from its root. All three use the Python standard library, with no model calls, API keys or paid services:
 
 ```sh
 python3 research/ai-reviewers-test-evidence/reproduce.py
 python3 research/reasoning-costs/reproduce.py
 python3 -B research/evaluation-reliability/reproduce.py
-python3 -B research/evaluation-reliability-sensitivity/reproduce.py
 ```
 
 The reviewer and reasoning packages require Python 3.10 or later. The evaluation-reliability package was run with Python 3.14.3 and requires macOS, Linux or WSL; see its [environment and verification notes](research/evaluation-reliability/README.md#reproduce-the-published-results). Do not run verification with Python's `-O` option, which disables assertions.
