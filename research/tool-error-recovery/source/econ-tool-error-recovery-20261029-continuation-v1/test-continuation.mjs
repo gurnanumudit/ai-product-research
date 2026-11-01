@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {Accounting,LIMITS}from './accounting.mjs';import {buildPlan,SOURCE}from './continuation.mjs';
+const schedule=JSON.parse(fs.readFileSync(SOURCE+'/SCHEDULE.json'));
+function fixture(){const results=schedule.flatMap(row=>row.arms.map(arm=>({task_id:row.task_id,arm,condition:row.condition,block:row.block,observation:'missing',completion:'not_started',calls:0})));for(const r of results.slice(0,576)){r.observation='observed';r.completion='complete';r.calls=2;}Object.assign(results[576],{completion:'incomplete',calls:2,actions:[{action:'submit'},{action:'finish'}],final_candidate_path:'task-131-B-call-1.candidate.py'});return {results};}
+test('retains original prefix; exact143untouched andone finalonly',()=>{const d=fixture(),before=JSON.stringify(d);const p=buildPlan(d,schedule);assert.equal(p.length,144);assert.equal(p.filter(x=>x.old.completion==='not_started').length,143);assert.equal(JSON.stringify(d),before);assert.deepEqual([10,11,12].map(n=>p.filter(x=>x.row.block===n).length),[24,60,60]);});
+test('reject observed replacement or scatteredmissingness',()=>{const d=fixture();d.results[0].observation='missing';assert.throws(()=>buildPlan(d,schedule));});
+test('reject partial additional modelstate',()=>{const d=fixture();d.results[576].actions.at(-1).action='revise';assert.throws(()=>buildPlan(d,schedule));});
+test('reject alreadycalled allegeduntouched',()=>{const d=fixture();d.results[577].calls=1;assert.throws(()=>buildPlan(d,schedule));});
+test('forecast carries alloldreserves andnew6',()=>{const a=new Accounting();assert.equal(a.snapshot().whole_completion_projection_nano_usd,38566028025);assert.equal(a.snapshot().retained_carry_nano_usd,34560911115);assert.equal(a.snapshot().remaining_call_capacity,1233);});
+test('duplicates cannot reserve; monotone rate',()=>{const a=new Accounting();a.reserve('x');assert.throws(()=>a.reserve('x'));a.settle('x',2e6);assert.equal(a.forecastNano,4e6);a.reserve('y');a.settle('y',1);assert.equal(a.forecastNano,4e6);assert.equal(a.pendingNano,0);});
+test('unknown model charge retained andhalts',()=>{const a=new Accounting();a.reserve('x');a.hold('x',{});assert.equal(a.pendingNano,LIMITS.reserve);assert.throws(()=>a.reserve('y'));});
+test('known overreserve charge recorded beforehold',()=>{const a=new Accounting();a.reserve('x');assert.throws(()=>a.settle('x',51e6));assert.equal(a.settledNano,51e6);assert.equal(a.pendingNano,0);assert.throws(()=>a.admit());});
+test('forecast breach blocks beforedispatch',()=>{const a=new Accounting();a.forecastNano=30e6;assert.throws(()=>a.reserve('x'));assert.equal(a.calls,0);});
+test('elapsedhost andcallbudget hold',()=>{const a=new Accounting();assert.throws(()=>a.admit(LIMITS.hostMs));a.calls=572;assert.throws(()=>a.reserve('x'));});

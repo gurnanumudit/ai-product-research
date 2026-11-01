@@ -1,0 +1,241 @@
+{
+  "kind": "historical code-only archive",
+  "files": {
+    "source/econ-tool-error-recovery-20261027/actual_report.py": {
+      "sha256": "9e13c0e86eac31f6125fa564f332aa7cbf52ade5fe82b481b98ec28b1263ef5d",
+      "source": "workstreams/econ-tool-error-recovery-20261027/actual_report.py"
+    },
+    "source/econ-tool-error-recovery-20261027/analyze.py": {
+      "sha256": "bfc5fe343d634344233c2a532909b57a170180c279713f3308feb0c45693b1ed",
+      "source": "workstreams/econ-tool-error-recovery-20261027/analyze.py"
+    },
+    "source/econ-tool-error-recovery-20261027/audit-costs.mjs": {
+      "sha256": "8ba5f6b6025f58191091108d21e4d5cdefbf1ac908e63d7d00a610bb914942f0",
+      "source": "workstreams/econ-tool-error-recovery-20261027/audit-costs.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/audit-costs.test.mjs": {
+      "sha256": "fc05555dda1a23637e08bd426ffedaae693ef25a5b3bc522872fee06d4833545",
+      "source": "workstreams/econ-tool-error-recovery-20261027/audit-costs.test.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/billing-scoped.mjs": {
+      "sha256": "b2d3f9cc589d6a7366922e5ec29b4f50785362c8ae1af0d04b5cd09d79f8e4cf",
+      "source": "workstreams/econ-tool-error-recovery-20261027/billing-scoped.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/bootstrap.sh": {
+      "sha256": "b623893addcc0dd7af934fd0dee14ee4c99a471db99e07e24685686354c1ba30",
+      "source": "workstreams/econ-tool-error-recovery-20261027/bootstrap.sh"
+    },
+    "source/econ-tool-error-recovery-20261027/interaction.mjs": {
+      "sha256": "8b370935815ead72d408e717711c8e082962969cefbb76256742315630a6dec7",
+      "source": "workstreams/econ-tool-error-recovery-20261027/interaction.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/model-client.mjs": {
+      "sha256": "9e21de069568c036c3e39019755ff826d5694eac1334dc0ba44b1285e5fc8eab",
+      "source": "workstreams/econ-tool-error-recovery-20261027/model-client.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/preflight.mjs": {
+      "sha256": "cbef8cecc7cd4d605193e28844dc8274f1d9adeba136282f3a85f18e575eac73",
+      "source": "workstreams/econ-tool-error-recovery-20261027/preflight.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/prepare_dependencies.py": {
+      "sha256": "727f2fa0642590bac05f20b37ef19228015b016061bc2bd137c48e94ea4c8ef0",
+      "source": "workstreams/econ-tool-error-recovery-20261027/prepare_dependencies.py"
+    },
+    "source/econ-tool-error-recovery-20261027/prepare_sample.py": {
+      "sha256": "11f330d29e91a0fef028d4c95b87994ba9eb04eef503877a02e8fcbe3b3a913e",
+      "source": "workstreams/econ-tool-error-recovery-20261027/prepare_sample.py"
+    },
+    "source/econ-tool-error-recovery-20261027/runner.mjs": {
+      "sha256": "926cd6b212ba5df05a967add499e89d836f17f571251ea2eeab90f800d1acf76",
+      "source": "workstreams/econ-tool-error-recovery-20261027/runner.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/runtime-controls.mjs": {
+      "sha256": "119d61d9de120f2853ec246ead2df66c08813747c4a92c3810bf2f0b0ad1d29e",
+      "source": "workstreams/econ-tool-error-recovery-20261027/runtime-controls.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/runtime.synthetic.test.mjs": {
+      "sha256": "c4d86026f2f3da04ce20f093c95fe3102f77d889fc28a85cfe6e5a38e9a14bec",
+      "source": "workstreams/econ-tool-error-recovery-20261027/runtime.synthetic.test.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027/test_analysis.py": {
+      "sha256": "9fac72797835a5560781150e4e813a98b5abebe7b0260b40a3a6521def801c4b",
+      "source": "workstreams/econ-tool-error-recovery-20261027/test_analysis.py"
+    },
+    "source/econ-tool-error-recovery-20261027/test_report.py": {
+      "sha256": "e86e106f164dab6952cc7468d88c729e4d4a812517c11506a3282f0ccb3325d6",
+      "source": "workstreams/econ-tool-error-recovery-20261027/test_report.py"
+    },
+    "source/econ-tool-error-recovery-20261027/test_worker.py": {
+      "sha256": "db3d9dec0acd69115862e7504bb2b867b23d8ebe7a668832c86f9d0321bdd857",
+      "source": "workstreams/econ-tool-error-recovery-20261027/test_worker.py"
+    },
+    "source/econ-tool-error-recovery-20261027/worker.py": {
+      "sha256": "2cf0dbefaa0e656458a71192dea12a86dab74e8c3e3c27a202e38cdd26b2b298",
+      "source": "workstreams/econ-tool-error-recovery-20261027/worker.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/actual_report.py": {
+      "sha256": "7fb85f314068b43d10f204e02b34754175392f727acd17508aef5775f69bba07",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/actual_report.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/analyze.py": {
+      "sha256": "3ea47bf4cd3fb5ecbf4c0dfda2be64e82f0c6628dc0b62933d2865f0ea65f47d",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/analyze.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/audit-costs.mjs": {
+      "sha256": "8f9dba878c52d4160279c8ddb522610f31313767abc499e08e0a34a31cf94daa",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/audit-costs.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/audit-costs.test.mjs": {
+      "sha256": "4a323b5c2d548baa1551c12f37cd0b58e81e6517e9b6f0b58fdb023807c61381",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/audit-costs.test.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/billing-scoped.mjs": {
+      "sha256": "b2d3f9cc589d6a7366922e5ec29b4f50785362c8ae1af0d04b5cd09d79f8e4cf",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/billing-scoped.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/bootstrap.inherited.sh": {
+      "sha256": "b623893addcc0dd7af934fd0dee14ee4c99a471db99e07e24685686354c1ba30",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/bootstrap.inherited.sh"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/bootstrap.sh": {
+      "sha256": "baafed1bdcb371568909e402ebfd53eca2e0837c7648b5001623d0f6d7a7a42f",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/bootstrap.sh"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/interaction.mjs": {
+      "sha256": "8b370935815ead72d408e717711c8e082962969cefbb76256742315630a6dec7",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/interaction.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/main.synthetic.test.mjs": {
+      "sha256": "a72ce50d806ffe2bc0b450316483141b026a0a81a21b94ed96bc6ea20fb94aae",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/main.synthetic.test.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/model-client.mjs": {
+      "sha256": "9e21de069568c036c3e39019755ff826d5694eac1334dc0ba44b1285e5fc8eab",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/model-client.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/preflight.mjs": {
+      "sha256": "01658ab69ebecfb455a42396fcc56f7d28290be26ea7980ce5dff8ce5f18ff64",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/preflight.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/prepare_dependencies.py": {
+      "sha256": "16071e2c2e5d6b8563a50b3574ecd383a75df9b00fe4a19f130dea246818ffdb",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/prepare_dependencies.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/prepare_sample.py": {
+      "sha256": "42a4c2205173fd4b56b2a2a0618ede6169f5d6fa506589930a6728a10d28c236",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/prepare_sample.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/runner.mjs": {
+      "sha256": "06cce9514810566758fc67373cc658fa9faf97c3499df0cd03deea9e8238c5fb",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/runner.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/runtime-controls.mjs": {
+      "sha256": "75acc6a14aea49cfb9db113effb5a38a9b726bea60bbff7cb2ddbd05732ca6ef",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/runtime-controls.mjs"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/test_analysis.py": {
+      "sha256": "0adadf5a2e740a3c611f7c1020fd2f054586693c6219494f072a19ad5b82c4a1",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/test_analysis.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/test_report.py": {
+      "sha256": "ccc7a7bf80d6aa746efa8c489a97e2ae322fc225dea7d6c1dd295c761da2d054",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/test_report.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/test_worker.py": {
+      "sha256": "db3d9dec0acd69115862e7504bb2b867b23d8ebe7a668832c86f9d0321bdd857",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/test_worker.py"
+    },
+    "source/econ-tool-error-recovery-20261027-main-v1/worker.py": {
+      "sha256": "2cf0dbefaa0e656458a71192dea12a86dab74e8c3e3c27a202e38cdd26b2b298",
+      "source": "workstreams/econ-tool-error-recovery-20261027-main-v1/worker.py"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/accounting.mjs": {
+      "sha256": "1c76fe13229a727cba6682ea67060eeef29ddc5a8cf28dbc9f1439e27099fcaa",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/accounting.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/continuation.mjs": {
+      "sha256": "5ee053dfc87682868ff0d45ad1345065029ac778e5e3f4a921b7e16830e0a5cc",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/continuation.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/host.mjs": {
+      "sha256": "8e2b0182ccc6ac02a69e3487c54a75541997d828004fa4b4b0cc0206d8351f2f",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/host.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/monitor.py": {
+      "sha256": "4dc976ae949e362c4f018867b301a628429872fa9d3505f096d820473c28a3f3",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/monitor.py"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/report_continuation.py": {
+      "sha256": "240e29970c5b1b2e8f75127d6c88b96d103c0434ce2fa200f46799d05485f96f",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/report_continuation.py"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/test-continuation.mjs": {
+      "sha256": "317589cb97caae66979832ea26723d86138449726cb21171be3f9db1a4ae745b",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/test-continuation.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/test-host.mjs": {
+      "sha256": "546889cb1c6324da3790fd3eac4ce3eec34cf234e2050135852ec1eab7f550c2",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/test-host.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/test-integration.mjs": {
+      "sha256": "a2a83ae7fcbb62972b89d0c1f05c23ad453d9491aec573ec7b89791c016f0381",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/test-integration.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-continuation-v1/test_report_continuation.py": {
+      "sha256": "858ebddcd0af660681e1b7853e43835fd7f708dfea8fcf92b34105737cb79eb6",
+      "source": "workstreams/econ-tool-error-recovery-20261029-continuation-v1/test_report_continuation.py"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/accounting.mjs": {
+      "sha256": "8d8d4d23099ec4b8148ea84daa0884d31a8103834a03526a404de374ddb1467f",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/accounting.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/continuation.mjs": {
+      "sha256": "afdfd2bfd4d0a3073f12e03645b428e78d1997d7fbd0d030bdba86cc344466c5",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/continuation.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/host.mjs": {
+      "sha256": "640cae19e257b0d5868c4ad6adcbe66d2289d04925baeeebdd9bd67ae3c8bbd5",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/host.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/manifest_freeze_fixture.py": {
+      "sha256": "18913d485226ca1911bef953922d97aef62bf76b24ee8966bf5ec1853eb9c967",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/manifest_freeze_fixture.py"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/model-client.mjs": {
+      "sha256": "e322c5a0395b46a8d50b9f9df25ea58ec8a67a384a0682fa889d72d4d408b6b1",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/model-client.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/monitor.py": {
+      "sha256": "1e7b0bfd71aec1904e1a393e38d08c4ea6ae350b2487bee2568471b0600c5098",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/monitor.py"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/report_completion.py": {
+      "sha256": "a5a65efe6600ff492d8a34fecea4ee0a07bfd0d52454e8537815bd4455683d73",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/report_completion.py"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/test-client.mjs": {
+      "sha256": "0f6ff4acdaa9d1d4d0fae95bc413b34c81429c425c06764d7e00dd91701e8a58",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/test-client.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/test-collector.mjs": {
+      "sha256": "b181a28c4f043bc4f8e085125cde849f929b5ea5d051e832d371f14559744d0b",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/test-collector.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/test-host.mjs": {
+      "sha256": "9920732e490fda32b3baa37ce24d112b453dfe677c7af0865e66bdc57e1b8509",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/test-host.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/test-transport.mjs": {
+      "sha256": "a0f02191135d50481d31772e0d9444722e0f19b5403d1c5d330a52c8ed2ceded",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/test-transport.mjs"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/test_report_completion.py": {
+      "sha256": "1d5da926d66634d43e0164233ae49b794ac50028ca8678a604690ace12e5d08e",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/test_report_completion.py"
+    },
+    "source/econ-tool-error-recovery-20261029-completion-v2/transport.mjs": {
+      "sha256": "19826ab5595fdd5145f96140a07cd38e27b92a755b5514e14f9515a80037c878",
+      "source": "workstreams/econ-tool-error-recovery-20261029-completion-v2/transport.mjs"
+    }
+  }
+}
