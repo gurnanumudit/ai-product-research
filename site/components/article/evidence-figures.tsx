@@ -37,9 +37,9 @@ export function EvidenceFigure({ src }: {src:string}) {
   if (src.endsWith("finding-2-evidence-content.svg")) return <figure className={styles.figure} data-evidence-figure="failing">
     <h3>Faulty approvals fell with test evidence</h3>
     <p className={styles.subtitle}>The same 15 benchmark-failing tasks · 30 reviews per setting</p>
-    <div className={styles.threePanels}>{models.map(m => <section key={m.id}>
+    <div className={styles.threePanels}>{models.map(m => <section key={m.id} data-exhibit-panel={m.name}>
       <h4 style={{color:m.color}}>{m.name}</h4>
-      {data.failing.filter(r=>r.model===m.id).map(r=><div className={styles.row} key={r.condition} data-estimate={r.estimate}>
+      {data.failing.filter(r=>r.model===m.id).map(r=><div className={styles.row} key={r.condition} data-estimate={r.estimate} data-exhibit-value={`${m.name} · ${{A:"No report",B:"Factual summary",C:"Full report"}[r.condition]}: ${pct(r.estimate)} (${r.approvals}/${r.n_reviews} reviews); 95% interval ${pct(r.interval95[0])} to ${pct(r.interval95[1])}.`}>
         <div className={styles.rowLabel}><span>{{A:"No report",B:"Factual summary",C:"Full report"}[r.condition]}</span><strong>{pct(r.estimate)}<small>{r.approvals}/{r.n_reviews} reviews</small></strong></div>
         <Interval value={r.estimate} interval={r.interval95} color={m.color}/>
         <span className={styles.srOnly}>95% interval: {pct(r.interval95[0])} to {pct(r.interval95[1])}.</span>
@@ -51,7 +51,7 @@ export function EvidenceFigure({ src }: {src:string}) {
   if (src.endsWith("finding-1-same-evidence.svg")) return <figure className={styles.figure} data-evidence-figure="passing">
     <h3>Passing fixes were not accepted equally</h3>
     <p className={styles.subtitle}>Same full report · 18 passing tasks · 36 reviews per model</p>
-    {models.map(m=>{const r=data.passing.find(r=>r.model===m.id)!;return <div key={m.id} className={styles.row} data-estimate={r.estimate}>
+    {models.map(m=>{const r=data.passing.find(r=>r.model===m.id)!;return <div key={m.id} className={styles.row} data-estimate={r.estimate} data-exhibit-value={`${m.name}: ${pct(r.estimate)} (${r.approvals}/${r.n_reviews} reviews); 95% interval ${pct(r.interval95[0])} to ${pct(r.interval95[1])}.`}>
       <div className={styles.rowLabel}><span style={{color:m.color}}>{m.name}</span><strong>{pct(r.estimate)}<small>{r.approvals}/{r.n_reviews} reviews</small></strong></div>
       <Interval value={r.estimate} interval={r.interval95} color={m.color}/>
       <span className={styles.srOnly}>95% interval: {pct(r.interval95[0])} to {pct(r.interval95[1])}.</span>
@@ -63,9 +63,9 @@ export function EvidenceFigure({ src }: {src:string}) {
   if (src.endsWith("finding-3-source-attribution.svg")) return <figure className={styles.figure} data-evidence-figure="source">
     <h3>The early source-label pattern weakened</h3>
     <p className={styles.subtitle}>Approval change from “patch producer” to “separate evaluator.” Positive means more approvals—not necessarily better decisions.</p>
-    <div className={styles.twoPanels}>{[...models,{id:"pooled",name:"Three-model mean",color:"#373d36"}].map(m=><section key={m.id}>
+    <div className={styles.twoPanels}>{[...models,{id:"pooled",name:"Three-model mean",color:"#373d36"}].map(m=><section key={m.id} data-exhibit-panel={m.name}>
       <h4 style={{color:m.color}}>{m.name}</h4>
-      {data.source.filter(r=>r.model===m.id).map(r=><div className={styles.row} key={r.phase} data-estimate={r.mean}>
+      {data.source.filter(r=>r.model===m.id).map(r=><div className={styles.row} key={r.phase} data-estimate={r.mean} data-exhibit-value={`${m.name} · ${r.phase===1 ? "Initial batch" : "Follow-up"}: ${pp(r.mean)}; 95% interval ${pp(r.bootstrap_95_interval[0])} to ${pp(r.bootstrap_95_interval[1])}; ${r.n_tasks} matched tasks.`}>
         <div className={styles.rowLabel}><span>{r.phase===1 ? "○ Initial batch" : "■ Follow-up"}</span><strong>{pp(r.mean)}<small>{r.n_tasks} matched tasks</small></strong></div>
         <Interval source followup={r.phase===2} value={r.mean} interval={r.bootstrap_95_interval} color={m.color}/>
         <span className={styles.srOnly}>95% interval: {pp(r.bootstrap_95_interval[0])} to {pp(r.bootstrap_95_interval[1])}.</span>

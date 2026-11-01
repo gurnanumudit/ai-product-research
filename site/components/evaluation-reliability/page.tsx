@@ -1,3 +1,4 @@
+import { ExhibitEnhancements } from "@/components/article/exhibit-enhancements";
 import { ArticleNavigation } from "@/components/article/article-navigation";
 import { ArticleIndex } from "@/components/article/article-index";
 import results from "@/content/evaluation-reliability-results.json";
@@ -60,7 +61,7 @@ function DecisionFigure({ id, number, title, note }: { id: string; number: strin
           const row = scenario.rows.find(r => r.method === method.id)!;
           const value = scenario.trueGain > 2 ? row.correct : row.falseShip;
           const highlight = highlights[method.id];
-          return <tr key={method.id}><th scope="row"><strong>Approach {method.number}: {method.name}</strong><small>{method.detail}</small></th>
+          return <tr key={method.id} data-exhibit-value={`Approach ${method.number}: ${method.name}; ${pct(value)} tests recommending a switch. ${highlight?.label ?? ""}`}><th scope="row"><strong>Approach {method.number}: {method.name}</strong><small>{method.detail}</small></th>
             <td className={styles.decision0} data-switch-value={value}><span className={styles.cellValue}>{pct(value)}</span><div className={styles.barTrack} aria-hidden="true"><span className={styles.barFill} style={{width: `${value}%`}} /></div>{highlight && <span className={`${styles.rankLabel} ${highlight.tone}`}>{highlight.label}</span>}</td>
           </tr>;
         })}</tbody>
@@ -84,7 +85,7 @@ function FullResults() {
 
 export function EvaluationReliabilityArticle() {
   return <div data-research-article="" className={`${base.page} ${styles.page}`}>
-    <ArticleNavigation />
+    <ArticleNavigation /><ExhibitEnhancements />
     <a className={base.skip} href="#introduction">Skip to article</a>
     <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>

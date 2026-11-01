@@ -1,3 +1,4 @@
+import { ExhibitEnhancements } from "@/components/article/exhibit-enhancements";
 import { ArticleNavigation } from "@/components/article/article-navigation";
 import type { Metadata } from "next";
 import { MarkdownContent } from "@/components/markdown-content";
@@ -62,7 +63,7 @@ const technicalLabels: Record<string, string> = {
 
 export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
   return <div data-research-article="" className={styles.page}>
-    <ArticleNavigation />
+    <ArticleNavigation /><ExhibitEnhancements />
     <a className={styles.skip} href="#introduction">Skip to article</a>
     <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>

@@ -1,3 +1,4 @@
+import { ExhibitEnhancements } from "@/components/article/exhibit-enhancements";
 import { ArticleNavigation } from "@/components/article/article-navigation";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -57,7 +58,7 @@ function SensitivityTable() {
 export default function ReasoningArticle() {
   if (!showReasoningArticle) notFound();
   return <div data-research-article="" className={`${base.page} ${styles.page}`}>
-    <ArticleNavigation />
+    <ArticleNavigation /><ExhibitEnhancements />
     <a className={base.skip} href="#introduction">Skip to article</a>
     <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>

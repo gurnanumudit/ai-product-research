@@ -1,0 +1,128 @@
+{
+  "which-financial-ai-answers-should-we-review": {
+    "text": {
+      "count": 184,
+      "sha256": "800df4c4f6c4ee697383ac3716fa6866d399a84350800e6174883e1afe5a8192"
+    },
+    "geom": {
+      "count": 51,
+      "sha256": "213e5f1d17e7387258b49f5b1d750ecc3e39f80e034a0b0e73a33c2803253171"
+    },
+    "cells": {
+      "count": 46,
+      "sha256": "52568551078a1aed58cd673a6eae84dc2959fc0da80238087b193dcce451b592"
+    },
+    "encodings": {
+      "count": 7,
+      "sha256": "d8caa3f0ecad4f29636f55f8aa116ed66aa908e612909c5e8f39cc392492ce6b"
+    }
+  },
+  "when-a-test-report-is-wrong": {
+    "text": {
+      "count": 247,
+      "sha256": "f1eb3a8d10dc5f66b518c774ff92bb02826d908a6ff403b1edc7f1456264c191"
+    },
+    "geom": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cells": {
+      "count": 20,
+      "sha256": "e45e0d9f16332fe4ea8795676be39571cffc3e7fde7258b933b5ecd2a821405b"
+    },
+    "encodings": {
+      "count": 32,
+      "sha256": "13004021fa41b3f961af873bdbaaa3abe98ed0500320fa2e43a19bc58c1f9cf1"
+    }
+  },
+  "how-ai-negotiates": {
+    "text": {
+      "count": 1439,
+      "sha256": "c6526eb738175fd1c30691db683cd75fe1f5bd1c06dda07a297c487931c6fe1d"
+    },
+    "geom": {
+      "count": 117,
+      "sha256": "f4bfd88cea0b891f38d8e87072999839616c961af753691e4ad55171fcade164"
+    },
+    "cells": {
+      "count": 463,
+      "sha256": "0a3040eb4b899aa745ac81d1a5577b851e596da401f5f7cfe4ee9f56f7253538"
+    },
+    "encodings": {
+      "count": 311,
+      "sha256": "dfe7715a066f50702b064b5d25a881ffae062da241b2506143853ab31b4ba912"
+    }
+  },
+  "which-financial-ai-answers-should-we-review-part-2": {
+    "text": {
+      "count": 601,
+      "sha256": "ae17d578583bbd968f6acffe34f72f78b27c3db44b56f2a388335fb25d1e40e5"
+    },
+    "geom": {
+      "count": 185,
+      "sha256": "68a3cd6650e59fe1b01ab26b8665dff930d0b7cd89143ca6559b64936bb62ab6"
+    },
+    "cells": {
+      "count": 301,
+      "sha256": "8108edbb142b68c8ca3fb1ddcd05943a8e457b2ad3f63b88213484636fbdfbb2"
+    },
+    "encodings": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "when-is-more-reasoning-worth-it": {
+    "text": {
+      "count": 961,
+      "sha256": "d6df0088b113418bd3ace5c21c3544933685b91ac50f6dfdc62b82cfdeb3b790"
+    },
+    "geom": {
+      "count": 64,
+      "sha256": "c78eb6919d9e5af04b8c69b6c37fe96c83c49fe61b9976b81c3f6f550f7e31e7"
+    },
+    "cells": {
+      "count": 379,
+      "sha256": "e96f0e8cad00a49f3311de7834f0a3de22926442c30b6cfe80a474bc36b53061"
+    },
+    "encodings": {
+      "count": 39,
+      "sha256": "d473dcdaf63e482735865d7a8ff7e0748fab56d4344da41c3f269e239e2d5d6e"
+    }
+  },
+  "how-to-avoid-false-confidence-in-ai-evaluations": {
+    "text": {
+      "count": 6601,
+      "sha256": "d385580496a958247b17d5c7c581586e4dd48ff2dadc725660489a7bef84b6a5"
+    },
+    "geom": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cells": {
+      "count": 1658,
+      "sha256": "36b90a4b545fe06be118497049b447c14c4cf44168070b14ec2fa13c3ecfdff4"
+    },
+    "encodings": {
+      "count": 190,
+      "sha256": "635e84f23b469b8669b808377fda9dd06119effb6c756b05062bb95715179198"
+    }
+  },
+  "how-ai-reviewers-use-test-evidence": {
+    "text": {
+      "count": 955,
+      "sha256": "388162d589ae758456273630594aa1c88076709ee1036240abf256878376108d"
+    },
+    "geom": {
+      "count": 128,
+      "sha256": "9ed9c0bbf42e477bf0fc7b0edfb19cb8cd9843f9ca32c3c92efe86ec71b72e7f"
+    },
+    "cells": {
+      "count": 340,
+      "sha256": "15f47173faee2ada58eee1e4367b8760137de4cd402abbc52b3158b15427d159"
+    },
+    "encodings": {
+      "count": 52,
+      "sha256": "5c25303ba6344dcc2630949ec66f39e19977e28381b77d62ccf61edec53cdf72"
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { ExhibitEnhancements } from "@/components/article/exhibit-enhancements";
 import { ArticleNavigation } from "@/components/article/article-navigation";
 import { ArticleIndex } from '@/components/article/article-index';
 import { partOneUrl, sections } from '@/content/financial-answer-review-part-2';
@@ -8,7 +9,7 @@ import styles from './page.module.css';
 const entries = sections.map(({id,title})=>({id,title}));
 export function PartTwo({draft = false}: {draft?: boolean}) {
   return <div data-research-article="" className={base.page}>
-    <ArticleNavigation />
+    <ArticleNavigation /><ExhibitEnhancements />
     <a href="#why" className={base.skip}>Skip to article</a>
     <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>

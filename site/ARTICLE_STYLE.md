@@ -19,3 +19,13 @@ Use “Research code” for the existing study-specific GitHub directory. Use �
 ## Before publishing
 
 Build and run the rendered-page checks. Verify all seven pages, their internal anchors, appendix opening, interactive figures and mobile overflow. Presentation changes must preserve research text, figures, data and conclusions. Synchronize the published source with the GitHub site directory.
+
+## Interactive exhibits
+
+The five earlier articles opt into `ExhibitEnhancements`. `exhibits.css` provides shared figure frames, table typography, sticky table headers, mobile scrolling and full-screen panels. Controls progressively enhance the original published DOM; with JavaScript unavailable, the underlying figures and tables remain readable.
+
+Use `data-exhibit-panel` on whole chart panels, labeled with the existing model or difficulty name. Inspection uses an existing SVG point title or `data-exhibit-value`, derived from the same data and formatting already used by the figure. Never regenerate results, change axis limits, pool intervals or silently recalculate a chart when switching panels. All panels are visible initially. Original captions and caveats stay with the figure, including in expanded view.
+
+Table search hides matching rows only and always displays the visible/total row count plus Reset. Tables with merged body cells are not filtered, to preserve group context. Expansion keeps the original controls, traps keyboard focus, supports Escape and returns focus on closing.
+
+For presentation-only changes, run `python3 tests/check-exhibit-preservation.py --origin http://localhost:8772` against a production preview. It compares research text, table cells, SVG geometry and encoded values with the pre-formatting baseline. Update this baseline only for an explicitly approved information change, never to make a failed presentation check pass.
