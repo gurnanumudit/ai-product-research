@@ -86,8 +86,7 @@ export default function ReasoningArticle() {
           <p data-article-eyebrow="" className={base.eyebrow}>Methods and supporting material</p><h2>Appendix</h2>
           <p className={base.appendixIntro}>The evidence behind the main findings. Expand the supporting tables for exact values.</p>
           <div className="prose"><p>The <a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">research supplement</a> includes question-level outcomes, costs and instructions to reproduce the article’s numbers without paid model calls. It reproduces the analysis from saved classifications, not the original experiment or independent answer grading.</p></div>
-          <section id="appendix-a" className={base.appendixSection}>
-            <h3>A. Sample and selection</h3>
+          <details id="appendix-a" className={base.appendixSection}><summary><h3>A. Sample and selection</h3></summary>
             <div className="prose">
               <p>We used selected questions from DSBench’s public data-analysis track, derived from ModelOff business-analysis cases—not its separate modeling track. Most use Excel workbooks; some use supplied text. The <a href="https://github.com/LiqiangJing/DSBench/tree/ba786096137a5108af11c016ad3f09cdb97beefd/data_analysis">dataset version</a> was fixed before collection.</p>
               <p>The matched sample contains 29 easy, 55 medium and 50 hard questions. Five additional medium questions were excluded from all nine settings because evaluation was incomplete, not because of their scores.</p>
@@ -95,10 +94,9 @@ export default function ReasoningArticle() {
             </div>
             <details className={styles.appendixDetails}><summary>Excluded questions and coverage</summary><div className="prose"><p>Across the five excluded questions, 19 configuration runs never started and 26 finished. All 45 were kept outside the matched comparison; records and spending remain in the research archive.</p><p>{data.excludedQuestions.map((q,i) => <span key={q}>{i > 0 ? "; " : ""}<code>{q}</code></span>)}</p></div></details>
             <AppendixReturn href="#experiment-setup" label="How we tested reasoning" />
-          </section>
+          </details>
           <DifficultyRubricAppendix />
-          <section id="appendix-b" className={base.appendixSection}>
-            <h3>C. Models, tools and scoring</h3>
+          <details id="appendix-b" className={base.appendixSection}><summary><h3>C. Models, tools and scoring</h3></summary>
             <div className="prose">
               <p>We used <code>openai/gpt-5.6-luna</code>, <code>openai/gpt-5.6-terra</code> and <code>openai/gpt-5.6-sol</code> at none, low and high reasoning. Each setting received the same questions and tools; prompts, scoring and per-task limits stayed fixed across the extension.</p>
               <p>Each question/configuration has one selected result. Six budget-interrupted runs received approved retries; we used the retry outcome regardless of success, never the better answer. Costs include both attempts.</p>
@@ -106,14 +104,12 @@ export default function ReasoningArticle() {
               <p>Collection used different concurrency and operational-containment phases, with an interim review. These changed scheduling and execution handling, not questions, model settings, per-task limits or scoring. Phase comparisons are therefore descriptive, not randomized.</p>
             </div>
             <AppendixReturn href="#results-overview" label="The results at a glance" />
-          </section>
-          <section id="appendix-c" className={base.appendixSection}>
-            <h3>D. Exact results and collection cohorts</h3><ExactResults points={points} />
+          </details>
+          <details id="appendix-c" className={base.appendixSection}><summary><h3>D. Exact results and collection cohorts</h3></summary><ExactResults points={points} />
             <details className={styles.appendixDetails}><summary>How the results varied across collection cohorts</summary><div className="prose"><p>The original 50 questions included 10 easy, 10 medium and 30 hard; the additional 84 included 19, 45 and 20. Sol low → high fell from 84% to 78% in the first cohort but rose from 84.5% to 92.9% in the second. The question mix matters; this is not evidence of a change in model capability.</p></div><PhaseTable /></details>
             <AppendixReturn href="#results-overview" label="The results at a glance" />
-          </section>
-          <section id="appendix-d" className={base.appendixSection}>
-            <h3>E. Costs and the value calculation</h3>
+          </details>
+          <details id="appendix-d" className={base.appendixSection}><summary><h3>E. Costs and the value calculation</h3></summary>
             <div className="prose">
               <p>Costs cover the same 134 questions as accuracy, including failures and approved retries: 1,212 physical attempts. “Model cost” adds recorded charges and pending reservations; it is not a settled bill or a quote at one current tariff. Runtime estimates are separate.</p>
               <p id="configuration-choice">The lower-cost comparisons use Luna low for easy/medium and Luna high for hard. These are illustrative trade-offs, not an optimized routing rule. The accuracy column picks the most correct answers, then the cheaper setting if tied. Cost per correct answer favors Luna low in every band, but cannot price the harm of a wrong or missing answer.</p>
@@ -124,19 +120,17 @@ export default function ReasoningArticle() {
             <CostSmallMultiples points={economic} />
             <div className="prose"><p>A frontier point has no tested alternative that is both no more expensive and at least as successful, with one strict improvement. The hard-question frontier contains Luna none, low and high, then Sol low. Lines guide the eye; intermediate settings were not tested.</p></div>
             <AppendixReturn href="#dollar-impact" label="What does the upgrade buy?" />
-          </section>
-          <section id="appendix-e" className={base.appendixSection}>
-            <h3>F. Operational and shared-context checks</h3>
+          </details>
+          <details id="appendix-e" className={base.appendixSection}><summary><h3>F. Operational and shared-context checks</h3></summary>
             <div className="prose"><p>Removing every question affected by a provider or infrastructure failure in any setting leaves 97 questions: 26 easy, 42 medium and 29 hard. Low still beats none in all nine model/difficulty comparisons. Requiring ordinary completed answers at every setting leaves 92 questions. Both checks remove whole questions, not individual bad results.</p></div>
             <details className={styles.appendixDetails}><summary>Results with operational failures filtered out</summary><SensitivityTable /><div className="prose"><p>In the 97-question check, high’s hard-question gain over low is 17.2 percentage points for Luna and Terra and 3.4 for Sol. These checks do not replace the primary results, which retain attempted failures.</p></div></details>
             <div id="hard-question-check" className="prose"><h4>Why the Sol tie needs care</h4><p>Sol low and high each answered 42 of 50 hard questions correctly: 38 were correct at both settings, four only at low and four only at high. Both missed the remaining four.</p><p>Giving each of the 16 hard-question source contexts equal weight instead gives low 89.4% and high 77.1%. The workload mix changes the comparison; equal question-level totals do not establish equivalence.</p></div>
             <AppendixReturn href="#finding-2" label="The payoff from high reasoning" />
-          </section>
-          <section id="appendix-f" className={base.appendixSection}>
-            <h3>G. Delivery failures and worked examples</h3>
+          </details>
+          <details id="appendix-f" className={base.appendixSection}><summary><h3>G. Delivery failures and worked examples</h3></summary>
             <div className="prose"><p>The 1,206 evaluations include 899 correct deliveries and 69 provider/infrastructure failures. These failures did not consistently increase with model size or reasoning. Another 19 model-limit or fallback outcomes are separate; some returned answers.</p><p>On an easy operating-days question, Luna none calculated 92 − 17 = 75 but submitted the option for 76. Low and high submitted 75. We scored the final answer, not the calculation.</p><p>On one tax workbook, Sol timed out at every setting on both a medium calculation and a hard forecast. Six failures on one workbook are not six independent reasoning errors. These examples illustrate failure modes, not their prevalence.</p></div>
             <AppendixReturn href="#results-overview" label="How success is counted" />
-          </section>
+          </details>
         </section>
         <section id="references" className={`${base.section} ${styles.references}`} aria-labelledby="references-heading">
           <h2 id="references-heading">References</h2>

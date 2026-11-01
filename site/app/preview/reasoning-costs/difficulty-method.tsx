@@ -32,7 +32,7 @@ export function DifficultyMethod() {
 }
 
 export function DifficultyRubricAppendix() {
-  return <section id="difficulty-rubric" className={base.appendixSection}><h3>B. The difficulty rubric</h3>
+  return <details id="difficulty-rubric" className={base.appendixSection}><summary><h3>B. The difficulty rubric</h3></summary>
     <div className="prose"><p>The rubric was frozen on September 14 and rates the work required, not model performance. Four scores from 0 to 3 determine the difficulty band.</p></div>
     <div className={styles.rubricComponents}>{components.map(([code,title,description]) => <div key={code}><span>{code}</span><h3>{title}<small>0–3 points</small></h3><p>{description}</p></div>)}</div>
     <div className={styles.rubricEquation}>M + D + I + V <span>→</span> difficulty score <small>0–12 points total</small></div>
@@ -41,5 +41,5 @@ export function DifficultyRubricAppendix() {
     <div className={styles.difficultyCards}>{examples.map(example => <section key={example.band}><div className={styles.bandBadge}>{example.band}<span>{example.range} points</span></div><h4>{example.title}</h4><p>{example.task}</p><div className={styles.scoreRecipe}>{example.score.map((value,i) => <span key={i}><small>{components[i][0]}</small>{value}</span>)}<strong>= {example.score.reduce((a,b)=>a+b,0)}</strong></div><p className={styles.exampleWhy}>{example.why}</p><small>DSBench {example.id} · high rating confidence</small></section>)}</div>
     <div className="prose"><p>Thresholds are fixed: easy 0–2, medium 3–5, hard 6–8 and very hard 9–12. No very-hard questions were included, and no questions were relabelled to fill a quota. Formatting burden and operational failures do not add difficulty points.</p><p>These are single-reviewer judgments, not publisher labels or a validated scale. The reviewer was not blind to all prior familiarity, but prior model scores were not used to assign difficulty.</p></div>
     <p className={styles.appendixReturn}><a href="#difficulty-definition">Back to the simple difficulty examples ↑</a></p>
-  </section>;
+  </details>;
 }

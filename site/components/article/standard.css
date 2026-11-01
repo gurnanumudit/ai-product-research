@@ -69,3 +69,14 @@
 [data-research-article][data-research-article].toolErrorArticle>.page{padding:0;max-width:none;margin:0;font-family:var(--sans)}
 [data-research-article][data-research-article] [data-article-body]{--serif:var(--article-serif)}
 @media(max-width:760px){[data-research-article][data-research-article] nav[data-article-index]{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}[data-research-article][data-research-article] nav[data-article-index]>.kicker,[data-research-article][data-research-article] nav[data-article-index]>.download{grid-column:1/-1}}
+
+/* Appendix disclosures stay closed until a reader chooses a heading or a detail link. */
+[data-research-article][data-research-article] #appendix details{border:0;border-top:1px solid #d8dccf;border-radius:0;background:transparent;padding:0;margin:0;scroll-margin-top:30px}
+[data-research-article][data-research-article] #appendix details>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;padding:22px 0;margin:0;font:550 18px/1.4 var(--sans);color:#354c3b}
+[data-research-article][data-research-article] #appendix details>summary::-webkit-details-marker{display:none}
+[data-research-article][data-research-article] #appendix details>summary::after{content:'+';flex:none;font:400 24px/1 var(--sans);color:#287565}
+[data-research-article][data-research-article] #appendix details[open]>summary::after{content:'−'}
+[data-research-article][data-research-article] #appendix details>summary>span[aria-hidden]{display:none}
+[data-research-article][data-research-article] #appendix details>summary h3{font:inherit;letter-spacing:-.015em;margin:0}
+[data-research-article][data-research-article] #appendix details[open]{padding-bottom:22px}
+[data-research-article][data-research-article] #appendix details details>summary{font-size:16px;padding:16px 0}

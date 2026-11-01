@@ -40,7 +40,7 @@ export const reviewSections: ReviewSection[] = [
 
 We wanted to understand whether test results help AI reviewers make better acceptance decisions, whether a concise summary is enough, and whether calling the same evidence “independent” changes its influence.
 
-A reviewer that rejects everything can avoid faulty approvals while blocking useful work. We therefore examined both sides: acceptance of patches that passed the benchmark and approval of patches that failed it. This is a study of how reviewers interpret available evidence, not whether they can discover defects independently.` },
+A reviewer that rejects everything can avoid faulty approvals while blocking useful work. We therefore examined [both sides](#appendix-c): acceptance of patches that passed the benchmark and approval of patches that failed it. This is a study of how reviewers interpret available evidence, not whether they can discover defects independently.` },
   { id: "experiment-setup", title: "How we tested AI reviewers", body: `We used 60 public software tasks, each with one AI-generated **patch**: a proposed code change intended to fix the reported problem. Three reviewers—GPT-5.6 Terra, Claude Sonnet 5 and Gemini 3.8 Flash—received the same issue and patch under five evidence scenarios:
 
 1. **No report:** issue and proposed fix only.
@@ -51,7 +51,7 @@ A reviewer that rejects everything can avoid faulty approvals while blocking use
 
 The summary retained failures and warnings. The last three scenarios used identical report bodies; their source labels were explicitly hypothetical. [Evidence and selection details](#appendix-a).
 
-Each reviewer was asked twice in fresh sessions, without tools, to approve, hold or abstain. Hold meant requesting more work; it did not necessarily mean the patch was wrong. The 20-task initial batch and 40-task follow-up produced 1,692 usable reviews. Repeats are not independent tasks. [Settings and missing responses](#appendix-b).
+Each reviewer was asked twice in fresh sessions, without tools, to approve, hold or abstain. Hold meant requesting more work; it did not necessarily mean the patch was wrong. The 20-task initial batch and 40-task follow-up produced [1,692 usable reviews](#full-tables). Repeats are not independent tasks. [Settings and missing responses](#appendix-b).
 
 The reports came from the same benchmark evaluation used to label patches as passing or failing. “Passing” therefore means passing those tests—not independently proven correctness.` },
   { id: "findings-at-a-glance", title: "Three findings at a glance", body: "" },

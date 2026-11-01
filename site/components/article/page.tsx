@@ -95,8 +95,8 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
             <p data-article-eyebrow="" className={styles.eyebrow}>Methods and supporting material</p>
             <h2>Appendix</h2>
             <p className={styles.appendixIntro}>Supporting evidence for the article: how the comparisons were made, the complete results, and the actual inputs behind the examples. Use the article index to jump to a section. Long tables and technical records open on demand.</p>
-            {appendixSections.map(section => <section id={section.id} key={section.id} className={styles.appendixSection}>
-              <h3>{section.title}</h3>
+            {appendixSections.map(section => <details id={section.id} key={section.id} className={styles.appendixSection}>
+              <summary><h3>{section.title}</h3></summary>
               {section.id === "full-tables" && <div id="approval-overview"><h4>Approval across the five scenarios</h4><ApprovalOverview /><IllustratedText body={approvalOverviewTakeaway} /></div>}
               {section.id === "appendix-f" && <ScenarioWalkthrough />}
               <IllustratedText body={section.body} />
@@ -110,7 +110,7 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
                 <IllustratedText body={detail.body} />
               </details>)}
               <p className={styles.appendixReturn}><a href={section.id === "appendix-g" ? "#limitations" : section.id === "appendix-b" || section.id === "appendix-a" ? "#experiment-setup" : "#findings-at-a-glance"}>Back to the main article ↑</a></p>
-            </section>)}
+            </details>)}
           </section>
           <section id="references" className={styles.references}>
             <h2>References</h2>

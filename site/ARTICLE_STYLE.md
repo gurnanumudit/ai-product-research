@@ -29,3 +29,7 @@ Use `data-exhibit-panel` on whole chart panels, labeled with the existing model 
 Table search hides matching rows only and always displays the visible/total row count plus Reset. Tables with merged body cells are not filtered, to preserve group context. Expansion keeps the original controls, traps keyboard focus, supports Escape and returns focus on closing.
 
 For presentation-only changes, run `python3 tests/check-exhibit-preservation.py --origin http://localhost:8772` against a production preview. It compares research text, table cells, SVG geometry and encoded values with the pre-formatting baseline. Update this baseline only for an explicitly approved information change, never to make a failed presentation check pass.
+
+## Appendix navigation
+
+Each appendix topic uses native `details` with a meaningful `summary` and a stable fragment ID. Omit `open`: topics are collapsed in the initial HTML and expand only when readers choose them. Link methods, definitions, exact results and limitations from the relevant main-text passage, including links to nested topics. Shared ArticleNavigation opens only the target and its enclosing disclosures before scrolling, including direct URLs, browser back/forward and repeated clicks. Keep existing return links to the main text. Do not hide supporting evidence behind JavaScript-only controls or change its contents. Use the shared appendix styles for headings and disclosure indicators.

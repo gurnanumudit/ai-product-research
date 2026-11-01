@@ -8,12 +8,12 @@ class Audit(HTMLParser):
  def handle_starttag(self,t,attrs):
   a=dict(attrs);self.stack.append((t,self.skip,self.inbody))
   if 'data-article-body' in a:self.inbody=True
-  if t in ['script','style','title','desc']:self.skip+=1
+  if t in ['script','style','title','desc'] or 'data-appendix-navigation' in a:self.skip+=1
   if self.inbody and t in ['svg','path','line','circle','rect','polyline','polygon','ellipse']:
    keys=['viewbox','d','x','y','x1','x2','y1','y2','cx','cy','r','rx','ry','width','height','points','stroke','stroke-width','stroke-dasharray','fill','transform']
    self.geom.append((t,{k:v for k,v in a.items() if k in keys}))
   if self.inbody:
-   values={k:v for k,v in a.items() if k=='style' or k.startswith('data-') and not k.startswith(('data-exhibit','data-article'))}
+   values={k:v for k,v in a.items() if k=='style' or k.startswith('data-') and not k.startswith(('data-exhibit','data-article','data-appendix-navigation'))}
    if values:self.encodings.append((t,values))
   if self.inbody and t in ['td','th']:self.cell=[]
   if t in ['br','img','input','meta','link','hr','source','wbr']:self.stack.pop()
@@ -33,7 +33,10 @@ class Audit(HTMLParser):
 
 def fingerprint(html):
  a=Audit();a.feed(html)
- return {key:{'count':len(getattr(a,key)), 'sha256':hashlib.sha256(json.dumps(getattr(a,key),sort_keys=True,ensure_ascii=False).encode()).hexdigest()} for key in ['text','geom','cells','encodings']}
+ # Links and disclosure wrappers may split text nodes without changing the words.
+ values={key:getattr(a,key) for key in ['text','geom','cells','encodings']}
+ values['text']=re.sub(r'\s+','',''.join(a.text))
+ return {key:{'count':len(value), 'sha256':hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False).encode()).hexdigest()} for key,value in values.items()}
 
 def main():
  parser=argparse.ArgumentParser(description='Verify presentation changes preserve the published research.')

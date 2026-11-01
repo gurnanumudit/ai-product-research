@@ -1,8 +1,8 @@
 {
   "which-financial-ai-answers-should-we-review": {
     "text": {
-      "count": 184,
-      "sha256": "800df4c4f6c4ee697383ac3716fa6866d399a84350800e6174883e1afe5a8192"
+      "count": 9469,
+      "sha256": "92fbe9eb4f747d1825101b89cc671ae4aa9c2c4952f7b47c4995025253407cfb"
     },
     "geom": {
       "count": 51,
@@ -19,8 +19,8 @@
   },
   "when-a-test-report-is-wrong": {
     "text": {
-      "count": 247,
-      "sha256": "f1eb3a8d10dc5f66b518c774ff92bb02826d908a6ff403b1edc7f1456264c191"
+      "count": 16307,
+      "sha256": "9cae200ad7bf06f5dfc971f17e5fd273e5c29245f9331f4634fe763c7d0f6d9c"
     },
     "geom": {
       "count": 0,
@@ -37,8 +37,8 @@
   },
   "how-ai-negotiates": {
     "text": {
-      "count": 1439,
-      "sha256": "c6526eb738175fd1c30691db683cd75fe1f5bd1c06dda07a297c487931c6fe1d"
+      "count": 45116,
+      "sha256": "2faab35dad6ac08d98710ba8e977de680864dfe0d7a34332cb8377af3329a927"
     },
     "geom": {
       "count": 117,
@@ -55,8 +55,8 @@
   },
   "which-financial-ai-answers-should-we-review-part-2": {
     "text": {
-      "count": 601,
-      "sha256": "ae17d578583bbd968f6acffe34f72f78b27c3db44b56f2a388335fb25d1e40e5"
+      "count": 16071,
+      "sha256": "6f448cd1de05fb877fc6271a671aaa88ef7f7f2116e1130b389f0114b68fae76"
     },
     "geom": {
       "count": 185,
@@ -73,8 +73,8 @@
   },
   "when-is-more-reasoning-worth-it": {
     "text": {
-      "count": 961,
-      "sha256": "d6df0088b113418bd3ace5c21c3544933685b91ac50f6dfdc62b82cfdeb3b790"
+      "count": 17676,
+      "sha256": "2956761d1a0974a4ead89be840fe248c21a3bd395d5cf811fdd2b26949f1125b"
     },
     "geom": {
       "count": 64,
@@ -91,8 +91,8 @@
   },
   "how-to-avoid-false-confidence-in-ai-evaluations": {
     "text": {
-      "count": 6601,
-      "sha256": "d385580496a958247b17d5c7c581586e4dd48ff2dadc725660489a7bef84b6a5"
+      "count": 66389,
+      "sha256": "377122c190004180cd55e1863a54387658299ce401c76b067273c3fa9ccf9fc2"
     },
     "geom": {
       "count": 0,
@@ -109,8 +109,8 @@
   },
   "how-ai-reviewers-use-test-evidence": {
     "text": {
-      "count": 955,
-      "sha256": "388162d589ae758456273630594aa1c88076709ee1036240abf256878376108d"
+      "count": 60025,
+      "sha256": "93cfa6a26db5e2d66f0809cec6796d40510c2ed91bb9d537f6ef564098bfe6e3"
     },
     "geom": {
       "count": 128,
