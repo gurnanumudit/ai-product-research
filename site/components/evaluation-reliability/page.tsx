@@ -1,3 +1,4 @@
+import { ArticleNavigation } from "@/components/article/article-navigation";
 import { ArticleIndex } from "@/components/article/article-index";
 import results from "@/content/evaluation-reliability-results.json";
 import base from "@/components/article/page.module.css";
@@ -82,22 +83,24 @@ function FullResults() {
 }
 
 export function EvaluationReliabilityArticle() {
-  return <div className={`${base.page} ${styles.page}`}>
+  return <div data-research-article="" className={`${base.page} ${styles.page}`}>
+    <ArticleNavigation />
     <a className={base.skip} href="#introduction">Skip to article</a>
-    <header className={base.siteHeader}><a className={base.wordmark} href="/">Mudit Gurnani</a><nav aria-label="Site navigation"><a href="/">Research</a><a href="#appendix">Methods & results</a></nav></header>
+    <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>
-      <header className={base.hero}>
-        <p className={base.eyebrow}>AI evaluation · Simulation study</p>
-        <h1>How to avoid false confidence<br className={styles.titleBreak} /> in AI evaluations</h1>
-        <p className={base.subtitle}>The new AI answers more test questions correctly. Is that enough reason to switch? We used simulations to measure how often different evaluation approaches make the right decision.</p>
-        <p className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
-        <p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability" target="_blank" rel="noreferrer">Research code ↗</a><span> · </span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability-sensitivity" target="_blank" rel="noreferrer">Assumption checks ↗</a><span> · </span><a href="#appendix">Methods and complete results ↓</a></p>
-      </header>
-      <figure className={base.cover}>
+      <header data-article-hero="" className={base.hero}>
+        <p data-article-eyebrow="" className={base.eyebrow}>AI evaluation · Simulation study</p>
+        <figure data-article-cover="" className={base.cover}>
         <img src="/research-assets/evaluation-reliability/evaluation-confidence-cover.png" width="1774" height="887" alt="A magnifying glass reveals gaps among grouped pairs of marks on textured evaluation sheets." fetchPriority="high" />
         <figcaption>Looking beyond the score to examine the evidence behind it. AI-generated editorial illustration, not experimental data.</figcaption>
       </figure>
-      <div className={base.layout}><ArticleIndex entries={entries} /><article className={base.article}>
+        <h1>How to avoid false confidence<br className={styles.titleBreak} /> in AI evaluations</h1>
+        <p data-article-dek="" className={base.subtitle}>The new AI answers more test questions correctly. Is that enough reason to switch? We used simulations to measure how often different evaluation approaches make the right decision.</p>
+        <p data-article-byline="" className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
+        <p data-article-resources="" className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability" target="_blank" rel="noreferrer">Research code ↗</a><span> · </span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability-sensitivity" target="_blank" rel="noreferrer">Assumption checks ↗</a><span> · </span><a href="#appendix">Data and methods ↓</a></p>
+      </header>
+
+      <div data-article-layout="" className={base.layout}><ArticleIndex entries={entries} /><article data-article-body="" className={base.article}>
         <section id="introduction" className={base.section}><h2>More correct answers. Should we switch?</h2><div className="prose">
           <p>Imagine your team uses an AI assistant to answer customer questions. You change its instructions and test both versions on the same 100 questions.</p>
           <p>The current version answers 70 correctly; the new version answers 75. That is a five-percentage-point improvement on this test. Is it enough evidence to switch?</p>
@@ -219,7 +222,7 @@ export function EvaluationReliabilityArticle() {
           <p>Choose the approach before looking at the results. Account for related questions, plan when decisions can be made, and investigate missing records. Consider both mistaken switches and useful improvements left unconfirmed. If the test cannot resolve the choice within the agreed budget, report “not enough evidence yet.”</p>
         </div></section>
 
-        <section id="appendix" className={base.appendix}><p className={base.eyebrow}>Methods and supporting material</p><h2>Appendix</h2><p className={base.appendixIntro}>The methods and tables retain all six approaches: the 15 baseline scenarios, plus the comparisons that vary missingness, relatedness and the switching requirement. Expand only the detail you need.</p>
+        <section id="appendix" className={base.appendix}><p data-article-eyebrow="" className={base.eyebrow}>Methods and supporting material</p><h2>Appendix</h2><p className={base.appendixIntro}>The methods and tables retain all six approaches: the 15 baseline scenarios, plus the comparisons that vary missingness, relatedness and the switching requirement. Expand only the detail you need.</p>
           <details id="sensitivity-details" className={styles.details}><summary>How the findings change with the assumptions</summary><div className="prose">
             <p>Each setting contains 2,000 evaluations. Missingness comparisons reuse the same underlying outcomes and logging-loss draws; threshold comparisons reuse saved baseline outcomes; relatedness comparisons reuse the same random draws under different dependence settings. These are paired comparisons, not 46,000 independent new experiments.</p>
             <ul>
@@ -284,7 +287,6 @@ export function EvaluationReliabilityArticle() {
           <li>NIST/SEMATECH. <a href="https://www.itl.nist.gov/div898/handbook/prc/section4/prc473.htm">Bonferroni’s method</a>. The principle behind allocating error across a fixed set of checks.</li>
         </ol></section>
       </article></div>
-    </main><footer className={base.footer}><span>Independent research by Mudit Gurnani</span><a href="#introduction">Back to introduction ↑</a></footer>
-    <script src="/research-assets/evaluation-reliability/appendix-navigation.js" defer />
+    </main><footer data-article-footer="" className={base.footer}><span>Independent research by Mudit Gurnani</span><a href="#introduction">Back to introduction ↑</a></footer>
   </div>;
 }

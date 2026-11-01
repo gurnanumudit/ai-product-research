@@ -74,8 +74,7 @@ if(expand){opener=expand;const clone=expand.closest('[data-figure]').cloneNode(t
 if(e.target.closest('.modalClose'))dialog.close();
 const anchor=e.target.closest('a[href^="#"]');if(anchor){if(dialog.open)dialog.close();const target=root.querySelector(anchor.getAttribute('href'));if(target){for(let p=target;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;}}});
 listen(dialog,'close',()=>{document.body.classList.remove('modal-open');dialog.querySelector('[data-expanded]').replaceChildren();opener?.focus();});
-function followHash(){const target=root.querySelector('#'+CSS.escape(location.hash.slice(1)));if(target){for(let p=target;p;p=p.parentElement)if(p.tagName==='DETAILS')p.open=true;target.scrollIntoView({block:'start'});}}
-listen(window,'hashchange',followHash);if(location.hash)followHash();
+// Shared ArticleNavigation handles fragment links and collapsed appendices.
 const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){root.querySelectorAll('.toc a').forEach(a=>{const active=a.getAttribute('href')==='#'+entry.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}},{rootMargin:'-5% 0px -65% 0px'});root.querySelectorAll('main>section').forEach(s=>observer.observe(s));
 
 return ()=>{listeners.forEach(remove=>remove());observer.disconnect();if(dialog.open)dialog.close();document.body.classList.remove("modal-open");};

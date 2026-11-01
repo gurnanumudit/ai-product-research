@@ -1,5 +1,6 @@
 "use client";
 
+import { ArticleNavigation } from "@/components/article/article-navigation";
 import { useEffect, useRef } from "react";
 import content from "./content.json";
 import { initializeArticle } from "./interactions";
@@ -10,5 +11,5 @@ export function ToolErrorArticle() {
   useEffect(() => {
     if (root.current) return initializeArticle(root.current);
   }, []);
-  return <div className="toolErrorArticle" ref={root}><div className="page" dangerouslySetInnerHTML={{ __html: content.html }} /></div>;
+  return <div data-research-article="" className="toolErrorArticle" ref={root}><ArticleNavigation /><div className="page" dangerouslySetInnerHTML={{ __html: content.html }} /></div>;
 }

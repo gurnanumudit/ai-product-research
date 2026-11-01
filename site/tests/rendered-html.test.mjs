@@ -65,6 +65,9 @@ test('production homepage and article render with direct study links', async () 
       const page = await fetch(`http://localhost:${port}/research/${slug}`);
       assert.equal(page.status, 200, slug);
       const text = await page.text();
+      checkAnchors(text);
+      for (const role of ['research-article','article-header','article-hero','article-cover','article-dek','article-byline','article-resources','article-layout','article-body','article-index']) assert.ok(text.includes(`data-${role}=""`), `Missing standard ${role}: ${slug}`);
+      assert.ok(text.includes('Data and methods ↓'), `Missing appendix link: ${slug}`);
       assert.match(text, /<a[^>]+href="https:\/\/github\.com\/gurnanumudit\/ai-product-research\/tree\/[^" ]+"[^>]*>Research code(?: ↗)?<\/a>/, `Missing consistent research-code link: ${slug}`);
     }
     const financialPath = '/research/which-financial-ai-answers-should-we-review';

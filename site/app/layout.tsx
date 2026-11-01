@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { requestSiteUrl, socialPreviewUrl } from "@/lib/site-url";
 import "./globals.css";
+import "@/components/article/standard.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const [siteUrl, previewUrl] = await Promise.all([requestSiteUrl(), socialPreviewUrl()]);

@@ -1,3 +1,4 @@
+import { ArticleNavigation } from "@/components/article/article-navigation";
 import type { Metadata } from "next";
 import { MarkdownContent } from "@/components/markdown-content";
 import { reviewSections, conciseAppendixSections as appendixSections, technicalAppendix, resultTableSections, findingSummaries, approvalOverviewTakeaway } from "@/content/evidence-review-v3";
@@ -60,28 +61,27 @@ const technicalLabels: Record<string, string> = {
 };
 
 export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
-  return <div className={styles.page}>
+  return <div data-research-article="" className={styles.page}>
+    <ArticleNavigation />
     <a className={styles.skip} href="#introduction">Skip to article</a>
-    <header className={styles.siteHeader}>
-      <a href="/" className={styles.wordmark}>Mudit Gurnani</a>
-      <nav aria-label="Site navigation"><a href="/">Research</a><a href="#appendix">Methods & results</a></nav>
-    </header>
+    <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>
-      <header className={styles.hero}>
-        <p className={styles.eyebrow}>{review ? "Research · Review version 3" : "Research · AI evaluation"}</p>
-        <h1>How AI reviewers<br />use test evidence</h1>
-        <p className={styles.subtitle}>We gave three AI reviewers the same proposed fixes. What changed when we supplied test results, more detail, or a different source label?</p>
-        <p className={styles.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-13">September 13, 2026</time><br />Updated September 24, 2026 · Presentation and explanation; results unchanged</p>
-        <p className={styles.resourceLine}><a href={publication.articleCodeUrl ?? publication.repository} target="_blank" rel="noreferrer">Research code ↗</a>{!publication.articleCodeUrl && <span> · Study-specific code and data release pending</span>}</p>
-      </header>
-      <figure className={styles.cover}>
+      <header data-article-hero="" className={styles.hero}>
+        <p data-article-eyebrow="" className={styles.eyebrow}>{review ? "Research · Review version 3" : "Research · AI evaluation"}</p>
+        <figure data-article-cover="" className={styles.cover}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/research-assets/evidence-review/v3/three-lenses.webp" width={1774} height={887} alt="Editorial illustration of one document viewed through three optical lenses." fetchPriority="high" />
         <figcaption>One source of evidence, three perspectives. AI-generated editorial illustration, not experimental data.</figcaption>
       </figure>
-      <div className={styles.layout}>
+        <h1>How AI reviewers<br />use test evidence</h1>
+        <p data-article-dek="" className={styles.subtitle}>We gave three AI reviewers the same proposed fixes. What changed when we supplied test results, more detail, or a different source label?</p>
+        <p data-article-byline="" className={styles.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-13">September 13, 2026</time><br />Updated September 24, 2026 · Presentation and explanation; results unchanged</p>
+        <p data-article-resources="" className={styles.resourceLine}><a href={publication.articleCodeUrl ?? publication.repository} target="_blank" rel="noreferrer">Research code ↗</a>{!publication.articleCodeUrl && <span> · Study-specific code and data release pending</span>}<span> · </span><a href="#appendix">Data and methods ↓</a></p>
+      </header>
+
+      <div data-article-layout="" className={styles.layout}>
         <ArticleIndex entries={entries} />
-        <article className={styles.article}>
+        <article data-article-body="" className={styles.article}>
           {reviewSections.map(section => <section id={section.id} key={section.id} className={section.id === "findings-at-a-glance" ? styles.takeaways : styles.section}>
             <h2>{section.title}</h2>{section.id === "findings-at-a-glance" ? <ol className={styles.findingList}>
               {findingSummaries.map((finding, i) => <li key={finding.id}>
@@ -91,7 +91,7 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
             </ol> : <IllustratedText body={section.body} />}
           </section>)}
           <section id="appendix" className={styles.appendix}>
-            <p className={styles.eyebrow}>Methods and supporting material</p>
+            <p data-article-eyebrow="" className={styles.eyebrow}>Methods and supporting material</p>
             <h2>Appendix</h2>
             <p className={styles.appendixIntro}>Supporting evidence for the article: how the comparisons were made, the complete results, and the actual inputs behind the examples. Use the article index to jump to a section. Long tables and technical records open on demand.</p>
             {appendixSections.map(section => <section id={section.id} key={section.id} className={styles.appendixSection}>
@@ -123,7 +123,7 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
         </article>
       </div>
     </main>
-    <footer className={styles.footer}><span>{review ? "Local review draft · Not published" : "Independent research by Mudit Gurnani"}</span><a href={publication.repository} target="_blank" rel="noreferrer">Research code ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
+    <footer data-article-footer="" className={styles.footer}><span>{review ? "Local review draft · Not published" : "Independent research by Mudit Gurnani"}</span><a href={publication.repository} target="_blank" rel="noreferrer">Research code ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
   </div>;
 }
 

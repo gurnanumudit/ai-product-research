@@ -1,3 +1,4 @@
+import { ArticleNavigation } from "@/components/article/article-navigation";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { showReasoningArticle, reasoningPublished, publicOrigin, localReview } from "@/lib/research-release";
@@ -55,18 +56,20 @@ function SensitivityTable() {
 
 export default function ReasoningArticle() {
   if (!showReasoningArticle) notFound();
-  return <div className={`${base.page} ${styles.page}`}>
+  return <div data-research-article="" className={`${base.page} ${styles.page}`}>
+    <ArticleNavigation />
     <a className={base.skip} href="#introduction">Skip to article</a>
-    <header className={base.siteHeader}><a href="/" className={base.wordmark}>Mudit Gurnani</a><nav aria-label="Site navigation"><a href="/">Research</a><a href="#appendix">Methods & results</a></nav></header>
+    <header data-article-header=""><a href="/">Mudit Gurnani / Research</a><a href="/#research">All research ↗</a></header>
     <main>
-      <header className={`${base.hero} ${styles.hero}`}><p className={base.eyebrow}>AI economics{!reasoningPublished && " · Review draft"}</p><h1>When is more<br />reasoning worth it?</h1><p className={base.subtitle}>The cheapest answer is not always the best choice. We tested three models at three reasoning settings to see when paying more was worthwhile.</p><p className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-24">September 24, 2026</time>{!reasoningPublished && <> <span>·</span> Unpublished</>}</p><p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code ↗</a></p></header>
-      <figure className={base.cover}>
+      <header data-article-hero="" className={`${base.hero} ${styles.hero}`}><p data-article-eyebrow="" className={base.eyebrow}>AI economics{!reasoningPublished && " · Review draft"}</p><figure data-article-cover="" className={base.cover}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/research-assets/reasoning-costs/reasoning-selector-cover-v2.webp" width={1774} height={887} alt="A none, low and high reasoning dial links spreadsheets to branching analytical paths; coins represent cost." fetchPriority="high" />
         <figcaption>How much reasoning should an analytical task receive? AI-generated editorial illustration.</figcaption>
       </figure>
+        <h1>When is more<br />reasoning worth it?</h1><p data-article-dek="" className={base.subtitle}>The cheapest answer is not always the best choice. We tested three models at three reasoning settings to see when paying more was worthwhile.</p><p data-article-byline="" className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-24">September 24, 2026</time>{!reasoningPublished && <> <span>·</span> Unpublished</>}</p><p data-article-resources="" className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code ↗</a><span> · </span><a href="#appendix">Data and methods ↓</a></p></header>
+
       <div className={styles.studyStrip}><div><strong>134</strong><span>evaluated questions</span></div><div><strong>3 × 3</strong><span>models × reasoning settings</span></div><div><strong>1,206</strong><span>matched results</span></div></div>
-      <div className={base.layout}><ArticleIndex entries={entries} /><article className={`${base.article} ${styles.article}`}>
+      <div data-article-layout="" className={base.layout}><ArticleIndex entries={entries} /><article data-article-body="" className={`${base.article} ${styles.article}`}>
         <section id="introduction" className={base.section}><h2>Why this research?</h2><div className="prose"><p>We wanted to understand model capabilities on analytical work beyond coding: interpreting spreadsheets, performing calculations and building forecasts. Should you use a cheaper model with more reasoning, or a more expensive model with less? Does the answer change with the complexity of the task?</p><p>On mathematical problems, <a href="https://arxiv.org/abs/2408.03314">Snell and colleagues</a> found that the benefit of additional computation depended on problem difficulty and how that computation was used. We explored a related practical question: when is it worth paying for more reasoning on analytical work?</p><p>We chose business-analysis questions from <a href="https://arxiv.org/abs/2409.07703">DSBench, a benchmark designed around realistic data-science tasks</a>. Models could use code as a tool, but we evaluated the final analytical answer—not the code itself. By testing the same questions across three models and three reasoning settings, we examined when extra reasoning improves results and whether the improvement justifies the cost. <a href="#appendix-a">Our question selection</a>.</p></div></section>
         <section id="experiment-setup" className={base.section}><h2>How we tested reasoning</h2><div className="prose"><p>We evaluated 134 business-analysis questions using three OpenAI GPT-5.6 models—Luna, Terra and Sol—each with reasoning set to none, low and high. Every setting faced the same questions and tools. The tasks came from <a href="#appendix-a">DSBench’s business-analysis material</a>, including operating calendars, tax calculations, financial forecasts and loan schedules.</p></div><DifficultyMethod /></section>
         <section id="results-overview" className={base.section}><h2>The results at a glance</h2><div className="prose"><p>Success means <a href="#appendix-b">returning the correct final answer</a>; a wrong answer or no answer counts as unsuccessful.</p></div><ResultsOverview points={points} /><div className="prose"><p><a href="#appendix-c">Exact counts</a> · <a href="#appendix-f">Examples of unsuccessful answers</a> · <a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code</a>.</p></div></section>
@@ -79,7 +82,7 @@ export default function ReasoningArticle() {
         <section id="limitations" className={base.section}><span id="appendix-g" aria-hidden="true" /><h2>What this study does—and doesn’t—tell us</h2><div className="prose"><p>Use this study to shortlist model and reasoning settings and understand when extra spending may buy better results. The findings come from selected questions, some sharing the same workbook, with difficulty labels assigned by us. We don’t know whether the models saw these public questions during training. Small differences don’t prove one setting is better, so test the options on your own work rather than treating these results as a universal ranking or a guarantee of accuracy or cost.</p></div></section>
         <section id="conclusion" className={base.section}><h2>The bottom line</h2><div className="prose"><p>Some reasoning helped across easy, medium and hard analytical work. More reasoning was not always better, and the most expensive setting did not always return more correct answers. <strong>Choose the cheapest setting that meets the accuracy your work needs.</strong></p></div></section>
         <section id="appendix" className={base.appendix}>
-          <p className={base.eyebrow}>Methods and supporting material</p><h2>Appendix</h2>
+          <p data-article-eyebrow="" className={base.eyebrow}>Methods and supporting material</p><h2>Appendix</h2>
           <p className={base.appendixIntro}>The evidence behind the main findings. Expand the supporting tables for exact values.</p>
           <div className="prose"><p>The <a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">research supplement</a> includes question-level outcomes, costs and instructions to reproduce the article’s numbers without paid model calls. It reproduces the analysis from saved classifications, not the original experiment or independent answer grading.</p></div>
           <section id="appendix-a" className={base.appendixSection}>
@@ -145,6 +148,6 @@ export default function ReasoningArticle() {
           </ol>
         </section>
       </article></div>
-    </main><footer className={base.footer}><span>{reasoningPublished ? "Independent research by Mudit Gurnani" : "Review draft · Not published"}</span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
+    </main><footer data-article-footer="" className={base.footer}><span>{reasoningPublished ? "Independent research by Mudit Gurnani" : "Review draft · Not published"}</span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/reasoning-costs">Research code ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
   </div>;
 }
