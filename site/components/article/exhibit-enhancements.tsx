@@ -54,6 +54,9 @@ export function ExhibitEnhancements() {
           if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
           else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
         };
+        const onLink = (event: MouseEvent) => {
+          if (event.target instanceof Element && event.target.closest('a[href^="#"]')) close?.();
+        };
         close = () => {
           host.classList.remove('exhibitExpanded'); host.removeAttribute('aria-modal');
           if (oldRole === null) host.removeAttribute('role'); else host.setAttribute('role', oldRole);
@@ -61,9 +64,9 @@ export function ExhibitEnhancements() {
           b.textContent = '↗ Expand'; b.setAttribute('aria-label', `Expand ${name}`); b.setAttribute('aria-expanded', 'false');
           document.body.style.overflow = oldOverflow; backdrop.remove();
           hiddenSiblings.forEach(([node, value]) => { node.inert = value; });
-          document.removeEventListener('keydown', onKey); close = null; closeExpanded = null; previous?.focus({ preventScroll: true });
+          document.removeEventListener('keydown', onKey); host.removeEventListener('click', onLink); close = null; closeExpanded = null; previous?.focus({ preventScroll: true });
         };
-        closeExpanded = close; backdrop.addEventListener('click', close); document.addEventListener('keydown', onKey); b.focus({ preventScroll: true });
+        closeExpanded = close; host.addEventListener('click', onLink); backdrop.addEventListener('click', close); document.addEventListener('keydown', onKey); b.focus({ preventScroll: true });
       };
       listen(b, 'click', toggle); cleanups.push(() => close?.());
     };
