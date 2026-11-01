@@ -43,10 +43,25 @@ test('production homepage and article render with direct study links', async () 
 
     assert.ok(homeHtml.includes('<h1 id="research-title">Understanding AI through evidence.</h1>'));
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
-    assert.ok(homeHtml.includes('I use experiments and data to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.'));
-    for (const text of ['Understanding AI through evidence.', 'Current work explores AI evaluation and economics.', 'About this research', 'My background is in finance and data science', 'Review-policy evaluation', 'Simulation', 'Cost–quality analysis', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    assert.ok(homeHtml.includes('I use experiments, simulations and data analysis to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.'));
+    for (const text of ['Understanding AI through evidence.', 'Agent behavior', 'Economic tradeoffs', 'Featured research', 'All research', 'About this research', 'My background is in finance and data science', 'Review-policy evaluation', 'Simulation', 'Cost–quality analysis', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    const toolErrorPath = '/research/when-a-test-report-is-wrong';
+    const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
+    assert.equal(toolErrorResponse.status, reviewBuild ? 200 : 404);
+    assert.equal(homeHtml.includes(toolErrorPath), reviewBuild);
+    if (reviewBuild) {
+      const article = await toolErrorResponse.text();
+      checkAnchors(article);
+      await checkSocialPreview(port, toolErrorPath, '/research-assets/tool-error/cover.png');
+      for (const phrase of ['noindex, nofollow', '720', '27 net additional successes', 'Related research', 'Research code', 'amended completion']) assert.ok(article.includes(phrase), phrase);
+      for (const bad of ['../econ-tool-error', '/Users/', '127.0.0.1', 'localhost', '—']) assert.ok(!article.includes(bad), bad);
+      for (const asset of ['chart-data-v2.json','chart-data-v2.csv','review-summary.json']) assert.equal((await fetch(`http://localhost:${port}/research-assets/tool-error/${asset}`)).status,200,asset);
+      const data = await (await fetch(`http://localhost:${port}/research-assets/tool-error/chart-data-v2.json`)).json();
+      assert.deepEqual(Object.values(data.strata.overall.arms).map(a=>a.successes), [185,187,212]);
+      assert.equal(Object.values(data.strata).flatMap(s=>s.contrasts).length,15);
+    }
     const financialPath = '/research/which-financial-ai-answers-should-we-review';
-    assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 3);
+    assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length, 1);
     const financial = await fetch(`http://localhost:${port}${financialPath}`);
     assert.equal(financial.status, 200);
     const financialHtml = await financial.text();
@@ -73,7 +88,7 @@ test('production homepage and article render with direct study links', async () 
     }
     await checkSocialPreview(port, financialPath, '/research-assets/financial-answer-review/cover-v3.png');
     const partTwoPath = financialPath + '-part-2';
-    assert.equal((homeHtml.match(new RegExp(`<a href="${partTwoPath}"`, 'g')) || []).length,3);
+    assert.equal((homeHtml.match(new RegExp(`<a href="${partTwoPath}"`, 'g')) || []).length,1);
     assert.ok(financialHtml.includes(`href="${partTwoPath}"`));
     const partTwoResponse = await fetch(`http://localhost:${port}${partTwoPath}`);
     assert.equal(partTwoResponse.status,200);
@@ -117,7 +132,7 @@ test('production homepage and article render with direct study links', async () 
         assert.ok(!draftHtml.includes('/@vite/client') && !draftHtml.includes('virtual:vite-rsc/entry-browser'), 'review uses bundled modules, not development imports');
       }
     }
-    assert.equal((homeHtml.match(new RegExp(`<a href="${articlePath}"`, 'g')) || []).length, 3);
+    assert.equal((homeHtml.match(new RegExp(`<a href="${articlePath}"`, 'g')) || []).length, 1);
     const article = await fetch(`http://localhost:${port}${articlePath}`);
     assert.equal(article.status, 200);
     const html = await article.text();

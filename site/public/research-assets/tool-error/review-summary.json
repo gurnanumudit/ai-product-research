@@ -1,0 +1,20 @@
+{
+  "status": "Independent computational review accepted; not external academic peer review",
+  "observed_outcomes": 720,
+  "distinct_tasks": 240,
+  "earlier_outcomes_preserved": 628,
+  "comparisons_checked": 15,
+  "analysis_status": "Post-HOLD amended completion; original incomplete report retained as historical primary",
+  "review_scope": [
+    "Reproduced all paired differences and bootstrap endpoints",
+    "Checked preservation and recovery provenance",
+    "Reconciled model requests, costs and resource closure"
+  ],
+  "publication_scope": "Aggregate chart data, comparison CSV and this summary only. Operational evidence, private inputs and call-level records are not included.",
+  "source_sha256": {
+    "ANALYSIS.json": "2b9821c36b2e1b25ed60082547682e9ed2632c3a42ed4a57b22bf97ec41d7a10",
+    "REPORT.md": "774d08c8af02b80171e4895ddc577e47a293bd010a2ce04383c8d2a3dbd330c7",
+    "COMPLETION-ACTUAL-REVIEW-v1.md": "4c8e880ed1cb2a0b4bf6a3afd9cd9d49ad868c66c0289a0d8917630529e0f7ff",
+    "ROOT-COMPLETION-ACTUAL-ACCEPTANCE-v1.json": "9e8ce125029828d491d2409b50d74e42f81443509d9fe822f837ada29b6ed154"
+  }
+}

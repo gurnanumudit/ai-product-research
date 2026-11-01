@@ -1,0 +1,584 @@
+{
+  "title": "When an AI\u2019s test report is wrong",
+  "source_sha256": "2b9821c36b2e1b25ed60082547682e9ed2632c3a42ed4a57b22bf97ec41d7a10",
+  "strata": {
+    "overall": {
+      "arms": {
+        "A": {
+          "assigned": 240,
+          "successes": 185,
+          "known_failures": 55,
+          "missing": 0,
+          "success_lower": 0.7708333333333334,
+          "success_upper": 0.7708333333333334,
+          "completed": 240,
+          "completion": 1.0
+        },
+        "B": {
+          "assigned": 240,
+          "successes": 187,
+          "known_failures": 53,
+          "missing": 0,
+          "success_lower": 0.7791666666666667,
+          "success_upper": 0.7791666666666667,
+          "completed": 240,
+          "completion": 1.0
+        },
+        "C": {
+          "assigned": 240,
+          "successes": 212,
+          "known_failures": 28,
+          "missing": 0,
+          "success_lower": 0.8833333333333333,
+          "success_upper": 0.8833333333333333,
+          "completed": 240,
+          "completion": 1.0
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "B-A",
+          "assigned_pairs": 240,
+          "observed_pairs": 240,
+          "difference": 0.008333333333333333,
+          "lower": 0.008333333333333333,
+          "upper": 0.008333333333333333,
+          "discordant_hi_only": 12,
+          "discordant_lo_only": 10,
+          "bootstrap95": {
+            "lower": -0.029166666666666667,
+            "upper": 0.04583333333333333,
+            "draws": 20000,
+            "seed": 2026102807,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-A",
+          "assigned_pairs": 240,
+          "observed_pairs": 240,
+          "difference": 0.1125,
+          "lower": 0.1125,
+          "upper": 0.1125,
+          "discordant_hi_only": 32,
+          "discordant_lo_only": 5,
+          "bootstrap95": {
+            "lower": 0.06666666666666667,
+            "upper": 0.15833333333333333,
+            "draws": 20000,
+            "seed": 2026102808,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-B",
+          "assigned_pairs": 240,
+          "observed_pairs": 240,
+          "difference": 0.10416666666666667,
+          "lower": 0.10416666666666667,
+          "upper": 0.10416666666666667,
+          "discordant_hi_only": 29,
+          "discordant_lo_only": 4,
+          "bootstrap95": {
+            "lower": 0.0625,
+            "upper": 0.14583333333333334,
+            "draws": 20000,
+            "seed": 2026102809,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        }
+      ]
+    },
+    "clean": {
+      "arms": {
+        "A": {
+          "assigned": 60,
+          "successes": 53,
+          "known_failures": 7,
+          "missing": 0,
+          "success_lower": 0.8833333333333333,
+          "success_upper": 0.8833333333333333,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "B": {
+          "assigned": 60,
+          "successes": 52,
+          "known_failures": 8,
+          "missing": 0,
+          "success_lower": 0.8666666666666667,
+          "success_upper": 0.8666666666666667,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "C": {
+          "assigned": 60,
+          "successes": 55,
+          "known_failures": 5,
+          "missing": 0,
+          "success_lower": 0.9166666666666666,
+          "success_upper": 0.9166666666666666,
+          "completed": 60,
+          "completion": 1.0
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "B-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": -0.016666666666666666,
+          "lower": -0.016666666666666666,
+          "upper": -0.016666666666666666,
+          "discordant_hi_only": 2,
+          "discordant_lo_only": 3,
+          "bootstrap95": {
+            "lower": -0.1,
+            "upper": 0.05,
+            "draws": 20000,
+            "seed": 2026102817,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.03333333333333333,
+          "lower": 0.03333333333333333,
+          "upper": 0.03333333333333333,
+          "discordant_hi_only": 2,
+          "discordant_lo_only": 0,
+          "bootstrap95": {
+            "lower": 0.0,
+            "upper": 0.08333333333333333,
+            "draws": 20000,
+            "seed": 2026102818,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-B",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.05,
+          "lower": 0.05,
+          "upper": 0.05,
+          "discordant_hi_only": 3,
+          "discordant_lo_only": 0,
+          "bootstrap95": {
+            "lower": 0.0,
+            "upper": 0.11666666666666667,
+            "draws": 20000,
+            "seed": 2026102819,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        }
+      ]
+    },
+    "test-tool execution error": {
+      "arms": {
+        "A": {
+          "assigned": 60,
+          "successes": 49,
+          "known_failures": 11,
+          "missing": 0,
+          "success_lower": 0.8166666666666667,
+          "success_upper": 0.8166666666666667,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "B": {
+          "assigned": 60,
+          "successes": 50,
+          "known_failures": 10,
+          "missing": 0,
+          "success_lower": 0.8333333333333334,
+          "success_upper": 0.8333333333333334,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "C": {
+          "assigned": 60,
+          "successes": 54,
+          "known_failures": 6,
+          "missing": 0,
+          "success_lower": 0.9,
+          "success_upper": 0.9,
+          "completed": 60,
+          "completion": 1.0
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "B-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.016666666666666666,
+          "lower": 0.016666666666666666,
+          "upper": 0.016666666666666666,
+          "discordant_hi_only": 3,
+          "discordant_lo_only": 2,
+          "bootstrap95": {
+            "lower": -0.05,
+            "upper": 0.08333333333333333,
+            "draws": 20000,
+            "seed": 2026102827,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.08333333333333333,
+          "lower": 0.08333333333333333,
+          "upper": 0.08333333333333333,
+          "discordant_hi_only": 6,
+          "discordant_lo_only": 1,
+          "bootstrap95": {
+            "lower": 0.0,
+            "upper": 0.16666666666666666,
+            "draws": 20000,
+            "seed": 2026102828,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-B",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.06666666666666667,
+          "lower": 0.06666666666666667,
+          "upper": 0.06666666666666667,
+          "discordant_hi_only": 4,
+          "discordant_lo_only": 0,
+          "bootstrap95": {
+            "lower": 0.016666666666666666,
+            "upper": 0.13333333333333333,
+            "draws": 20000,
+            "seed": 2026102829,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        }
+      ]
+    },
+    "misleading success": {
+      "arms": {
+        "A": {
+          "assigned": 60,
+          "successes": 31,
+          "known_failures": 29,
+          "missing": 0,
+          "success_lower": 0.5166666666666667,
+          "success_upper": 0.5166666666666667,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "B": {
+          "assigned": 60,
+          "successes": 33,
+          "known_failures": 27,
+          "missing": 0,
+          "success_lower": 0.55,
+          "success_upper": 0.55,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "C": {
+          "assigned": 60,
+          "successes": 53,
+          "known_failures": 7,
+          "missing": 0,
+          "success_lower": 0.8833333333333333,
+          "success_upper": 0.8833333333333333,
+          "completed": 60,
+          "completion": 1.0
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "B-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.03333333333333333,
+          "lower": 0.03333333333333333,
+          "upper": 0.03333333333333333,
+          "discordant_hi_only": 4,
+          "discordant_lo_only": 2,
+          "bootstrap95": {
+            "lower": -0.05,
+            "upper": 0.11666666666666667,
+            "draws": 20000,
+            "seed": 2026102837,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.36666666666666664,
+          "lower": 0.36666666666666664,
+          "upper": 0.36666666666666664,
+          "discordant_hi_only": 23,
+          "discordant_lo_only": 1,
+          "bootstrap95": {
+            "lower": 0.23333333333333334,
+            "upper": 0.5,
+            "draws": 20000,
+            "seed": 2026102838,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-B",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.3333333333333333,
+          "lower": 0.3333333333333333,
+          "upper": 0.3333333333333333,
+          "discordant_hi_only": 20,
+          "discordant_lo_only": 0,
+          "bootstrap95": {
+            "lower": 0.21666666666666667,
+            "upper": 0.45,
+            "draws": 20000,
+            "seed": 2026102839,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        }
+      ]
+    },
+    "stale test report": {
+      "arms": {
+        "A": {
+          "assigned": 60,
+          "successes": 52,
+          "known_failures": 8,
+          "missing": 0,
+          "success_lower": 0.8666666666666667,
+          "success_upper": 0.8666666666666667,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "B": {
+          "assigned": 60,
+          "successes": 52,
+          "known_failures": 8,
+          "missing": 0,
+          "success_lower": 0.8666666666666667,
+          "success_upper": 0.8666666666666667,
+          "completed": 60,
+          "completion": 1.0
+        },
+        "C": {
+          "assigned": 60,
+          "successes": 50,
+          "known_failures": 10,
+          "missing": 0,
+          "success_lower": 0.8333333333333334,
+          "success_upper": 0.8333333333333334,
+          "completed": 60,
+          "completion": 1.0
+        }
+      },
+      "contrasts": [
+        {
+          "contrast": "B-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "discordant_hi_only": 3,
+          "discordant_lo_only": 3,
+          "bootstrap95": {
+            "lower": -0.08333333333333333,
+            "upper": 0.08333333333333333,
+            "draws": 20000,
+            "seed": 2026102847,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-A",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": -0.03333333333333333,
+          "lower": -0.03333333333333333,
+          "upper": -0.03333333333333333,
+          "discordant_hi_only": 1,
+          "discordant_lo_only": 3,
+          "bootstrap95": {
+            "lower": -0.1,
+            "upper": 0.03333333333333333,
+            "draws": 20000,
+            "seed": 2026102848,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        },
+        {
+          "contrast": "C-B",
+          "assigned_pairs": 60,
+          "observed_pairs": 60,
+          "difference": -0.03333333333333333,
+          "lower": -0.03333333333333333,
+          "upper": -0.03333333333333333,
+          "discordant_hi_only": 2,
+          "discordant_lo_only": 4,
+          "bootstrap95": {
+            "lower": -0.11666666666666667,
+            "upper": 0.05,
+            "draws": 20000,
+            "seed": 2026102849,
+            "method": "task-paired within-assigned-condition stratified percentile bootstrap"
+          }
+        }
+      ]
+    }
+  },
+  "resources": {
+    "A": {
+      "assigned": 240,
+      "successes": 185,
+      "terminal_complete": 240,
+      "missing_outcomes": 0,
+      "code_present": 240,
+      "syntax_valid": 239,
+      "syntax_invalid": 0,
+      "syntax_unknown_with_code": 1,
+      "calls": 687,
+      "revisions": 182,
+      "explicit_reruns": 56,
+      "automatic_verifications": 0,
+      "evaluator_executions": 718,
+      "evaluator_seconds": 2352.665576876003,
+      "invalid_outputs": 0,
+      "api_settled_usd": 0.18309244,
+      "api_reserved_usd": 0.0,
+      "success_per_api_usd_lower": 1010.4185623393298,
+      "success_per_api_usd_upper": 1010.4185623393298,
+      "efficiency_zero_settled_denominator": null,
+      "first_fail_final_pass": 55,
+      "first_report_differs": 149,
+      "first_verdict_differs": 125,
+      "first_grade_observed": 240,
+      "first_actual_failed": 110,
+      "first_report_comparison_unknown": 0,
+      "input_tokens": 467565,
+      "known_input_tokens": 467565,
+      "output_tokens": 282050,
+      "known_output_tokens": 282050,
+      "reasoning_tokens": 202056,
+      "known_reasoning_tokens": 202056,
+      "cached_tokens": 91204,
+      "known_cached_tokens": 91204,
+      "cache_write_tokens": 140772,
+      "known_cache_write_tokens": 140772,
+      "provider_latency_ms": 3550779,
+      "known_provider_latency_ms": 3550779,
+      "usage_known_calls": 687,
+      "usage_unknown_calls": 0,
+      "cache_write_unknown_calls": 0,
+      "latency_known_calls": 687,
+      "latency_unknown_calls": 0
+    },
+    "B": {
+      "assigned": 240,
+      "successes": 187,
+      "terminal_complete": 240,
+      "missing_outcomes": 0,
+      "code_present": 240,
+      "syntax_valid": 240,
+      "syntax_invalid": 0,
+      "syntax_unknown_with_code": 0,
+      "calls": 694,
+      "revisions": 190,
+      "explicit_reruns": 58,
+      "automatic_verifications": 0,
+      "evaluator_executions": 729,
+      "evaluator_seconds": 2513.9954879460015,
+      "invalid_outputs": 0,
+      "api_settled_usd": 0.19248972,
+      "api_reserved_usd": 0.0,
+      "success_per_api_usd_lower": 971.4804510079811,
+      "success_per_api_usd_upper": 971.4804510079811,
+      "efficiency_zero_settled_denominator": null,
+      "first_fail_final_pass": 59,
+      "first_report_differs": 147,
+      "first_verdict_differs": 121,
+      "first_grade_observed": 240,
+      "first_actual_failed": 112,
+      "first_report_comparison_unknown": 0,
+      "input_tokens": 503384,
+      "known_input_tokens": 503384,
+      "output_tokens": 294738,
+      "known_output_tokens": 294738,
+      "reasoning_tokens": 209667,
+      "known_reasoning_tokens": 209667,
+      "cached_tokens": 99877,
+      "known_cached_tokens": 99877,
+      "cache_write_tokens": 150850,
+      "known_cache_write_tokens": 150850,
+      "provider_latency_ms": 3306816,
+      "known_provider_latency_ms": 3306816,
+      "usage_known_calls": 694,
+      "usage_unknown_calls": 0,
+      "cache_write_unknown_calls": 0,
+      "latency_known_calls": 694,
+      "latency_unknown_calls": 0
+    },
+    "C": {
+      "assigned": 240,
+      "successes": 212,
+      "terminal_complete": 240,
+      "missing_outcomes": 0,
+      "code_present": 240,
+      "syntax_valid": 239,
+      "syntax_invalid": 0,
+      "syntax_unknown_with_code": 1,
+      "calls": 668,
+      "revisions": 219,
+      "explicit_reruns": 0,
+      "automatic_verifications": 240,
+      "evaluator_executions": 939,
+      "evaluator_seconds": 3024.6370259920054,
+      "invalid_outputs": 0,
+      "api_settled_usd": 0.203981885,
+      "api_reserved_usd": 0.0,
+      "success_per_api_usd_lower": 1039.3079758038318,
+      "success_per_api_usd_upper": 1039.3079758038318,
+      "efficiency_zero_settled_denominator": null,
+      "first_fail_final_pass": 76,
+      "first_report_differs": 147,
+      "first_verdict_differs": 124,
+      "first_grade_observed": 240,
+      "first_actual_failed": 104,
+      "first_report_comparison_unknown": 0,
+      "input_tokens": 539364,
+      "known_input_tokens": 539364,
+      "output_tokens": 317106,
+      "known_output_tokens": 317106,
+      "reasoning_tokens": 224857,
+      "known_reasoning_tokens": 224857,
+      "cached_tokens": 147406,
+      "known_cached_tokens": 147406,
+      "cache_write_tokens": 190361,
+      "known_cache_write_tokens": 190361,
+      "provider_latency_ms": 3943677,
+      "known_provider_latency_ms": 3943677,
+      "usage_known_calls": 668,
+      "usage_unknown_calls": 0,
+      "cache_write_unknown_calls": 0,
+      "latency_known_calls": 668,
+      "latency_unknown_calls": 0
+    }
+  },
+  "classification": "Post-HOLD amended completion; descriptive 95% intervals, unadjusted for multiplicity",
+  "main_api_usd": 0.579564045,
+  "combined_api_usd": 0.670843815,
+  "infra_reserve_usd": 38,
+  "historical_buffer_usd": 0.05,
+  "commitment_usd": 38.720843815
+}

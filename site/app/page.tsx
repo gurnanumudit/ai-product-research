@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ResearchHome } from "@/components/research-home";
 import { localReview, publicOrigin } from "@/lib/research-release";
 
-const description = "Understanding AI through evidence. Mudit Gurnani uses experiments and data to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.";
+const description = "Understanding AI through evidence. Mudit Gurnani uses experiments, simulations and data analysis to understand how AI behaves, where it succeeds or fails, and what that means for the decisions we make.";
 
 export const metadata: Metadata = {
   title: { absolute: "Mudit Gurnani | Research" },
