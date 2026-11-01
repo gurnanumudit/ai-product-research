@@ -1,6 +1,6 @@
 # Interactive article components
 
-Source for the unpublished article preview, revision 6. This directory adds presentation code only; it does not deploy or publish the article. The manuscript and chart dataset are supplied separately and are not bundled here.
+Source for the unpublished article preview, revision 7. This directory adds presentation code only; it does not deploy or publish the article. The manuscript and chart dataset are supplied separately and are not bundled here.
 
 - `article.js`: four-condition grouped success bars, a condition/workflow walkthrough, paired-interval and dollars/testing-minutes selectors, and expandable figures.
 - `article.css`: article layout and compact/mobile chart styles. The draft explains the design as a sequential narrative, without dimension panels or a sample-size matrix.
@@ -16,3 +16,5 @@ python3 research/tool-error-recovery/article-ui/build_preview.py --template /pat
 ```
 
 Open the resulting preview through a local server. Relative evidence/download links still need the corresponding separately supplied files. This is not a complete public article package.
+
+Shared writing and link conventions: [Research article style](../../ARTICLE-STYLE.md).
