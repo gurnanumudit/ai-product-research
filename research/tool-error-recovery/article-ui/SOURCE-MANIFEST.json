@@ -1,11 +1,11 @@
 {
-  "revision": 4,
+  "revision": 5,
   "scope": "presentation code only",
   "files": {
-    "article.js": "a658cb3008fac173ce48a2f6bc4be0ed0728344019c41c8dd044703b7b9ec3c9",
-    "article.css": "0d95bd17d26936ec0976bbd3640ee471cf965e9daad9af53c5454113084357de",
+    "article.js": "de20e7003e138129d5d3ce695526387368781a901e6f297bb3e3176eab253efc",
+    "article.css": "0d5e48113c293dffb9d16421fb4d998cbd4d195bc35db11230937c86e8e9a16d",
     "reference-style.css": "85e320007f4aadc8441ae5593170a27b250442458ea53dd244b56d77cab9d76f",
     "build_preview.py": "c7d59f4e4ce06881c96b61d1091c8c9c4831ef0e6269eb005cc7ac92a570831c",
-    "README.md": "b1f70fb427f0c6304848dab2e33b49d4400ced4c267ad037ca89809e511f05a4"
+    "README.md": "0a8084b16d7485689e36ce21f6172facb654180a1688cecd3ad611d5b85856fd"
   }
 }

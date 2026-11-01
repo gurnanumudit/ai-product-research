@@ -1,9 +1,9 @@
 # Interactive article components
 
-Source for the unpublished article preview, revision 4. This directory adds presentation code only; it does not deploy or publish the article. The manuscript and chart dataset are supplied separately and are not bundled here.
+Source for the unpublished article preview, revision 5. This directory adds presentation code only; it does not deploy or publish the article. The manuscript and chart dataset are supplied separately and are not bundled here.
 
-- `article.js`: four-condition grouped success bars, a condition/workflow walkthrough, paired-interval and resource selectors, and expandable figures.
-- `article.css`: article layout and compact/mobile chart styles.
+- `article.js`: four-condition grouped success bars, a condition/workflow walkthrough, paired-interval and dollars/testing-minutes selectors, and expandable figures.
+- `article.css`: article layout, equal-emphasis design panels, a 3×4 outcome matrix and compact/mobile chart styles.
 - `reference-style.css`: existing research-site visual styles reused by the preview.
 - `build_preview.py`: assembles supplied HTML/data with these assets. It has no model, grading or statistical-analysis functionality.
 
