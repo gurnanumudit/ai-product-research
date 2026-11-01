@@ -28,7 +28,7 @@ test('production homepage and article render with direct study links', async () 
     checkAnchors(homeHtml);
     const negotiationPath = '/research/how-ai-negotiates';
     assert.ok(homeHtml.includes(negotiationPath));
-    assert.ok(homeHtml.includes('October 29, 2026'));
+    assert.ok(homeHtml.includes('Oct 29, 2026'));
     const negotiation = await fetch(`http://localhost:${port}${negotiationPath}`);
     assert.equal(negotiation.status, 200);
     const negotiationHtml = await negotiation.text();
@@ -41,14 +41,15 @@ test('production homepage and article render with direct study links', async () 
     const nd = await negotiationData.json();
     assert.equal(nd.main.episodes,2160);assert.equal(nd.roleGap.rows.length,107);
 
-    assert.ok(homeHtml.includes('<h1 id="research-title">What is an AI system actually worth, and how do you know?</h1>'));
+    assert.ok(homeHtml.includes('<h1 id="research-title">Evidence for better decisions about AI.</h1>'));
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
-    assert.ok(homeHtml.includes('I measure cost, success, and decision quality'));
-    for (const text of ['What do you actually get per dollar?', 'How do you know the result is real?', 'Who captures the value?', 'Flagship', 'All published research', 'About this research', 'My background is in finance and data science', 'Prompt vs harness', 'Forthcoming conclusion', 'Simulation', 'Reviewer behavior']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    assert.ok(homeHtml.includes('I study what AI can do, what it costs and how it behaves.'));
+    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 6 published studies', 'Show article covers', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    for (const removed of ['Coming next', 'Prompt vs harness', 'Forthcoming conclusion', '—']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
     const toolErrorPath = '/research/when-a-test-report-is-wrong';
     const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
     assert.equal(toolErrorResponse.status, reviewBuild ? 200 : 404);
-    assert.equal(homeHtml.includes(toolErrorPath), reviewBuild);
+    assert.equal(homeHtml.includes(toolErrorPath), false);
     if (reviewBuild) {
       const article = await toolErrorResponse.text();
       checkAnchors(article);
@@ -180,7 +181,7 @@ async function checkSocialPreview(port, path, imagePath) {
   assert.equal(tags.get('twitter:image'), tags.get('og:image'));
   if (path === '/') {
     assert.ok(tags.get('og:description').length >= 100, 'homepage sharing description is at least 100 characters');
-    assert.ok(tags.get('og:description').includes('What is an AI system actually worth'));
+    assert.ok(tags.get('og:description').includes('Evidence for better decisions about AI.'));
     assert.ok(!tags.get('og:image').includes('og-v2.png'), 'new card has a fresh cache key');
   }
   assert.ok(Number(tags.get('og:image:width')) >= 1200);
