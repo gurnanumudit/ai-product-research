@@ -41,11 +41,11 @@ test('production homepage and article render with direct study links', async () 
     const nd = await negotiationData.json();
     assert.equal(nd.main.episodes,2160);assert.equal(nd.roleGap.rows.length,107);
 
-    assert.ok(homeHtml.includes('<h1 id="research-title">Evidence for better decisions about AI.</h1>'));
+    assert.ok(homeHtml.includes('<h1 id="research-title">What is an AI system actually worth, and how do you know? I measure cost, success, and decision quality — so a launch, a review budget, or a model switch can be judged on evidence, not a headline score.</h1>'));
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
     assert.ok(homeHtml.includes('I study what AI can do, what it costs and how it behaves.'));
     for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 7 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
-    for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion', '—']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
+    for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
     const toolErrorPath = '/research/when-a-test-report-is-wrong';
     const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
     assert.equal(toolErrorResponse.status, 200);
