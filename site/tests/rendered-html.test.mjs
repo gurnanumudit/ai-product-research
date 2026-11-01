@@ -44,12 +44,12 @@ test('production homepage and article render with direct study links', async () 
     assert.ok(homeHtml.includes('<h1 id="research-title">Evidence for better decisions about AI.</h1>'));
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
     assert.ok(homeHtml.includes('I study what AI can do, what it costs and how it behaves.'));
-    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 6 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', reviewBuild ? 'All 7 studies, including the new draft' : 'All 6 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
     for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion', '—']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
     const toolErrorPath = '/research/when-a-test-report-is-wrong';
     const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
     assert.equal(toolErrorResponse.status, reviewBuild ? 200 : 404);
-    assert.equal(homeHtml.includes(toolErrorPath), false);
+    assert.equal(homeHtml.includes(toolErrorPath), reviewBuild);
     if (reviewBuild) {
       const article = await toolErrorResponse.text();
       checkAnchors(article);
