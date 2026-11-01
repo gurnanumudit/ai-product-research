@@ -72,7 +72,7 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
         <h1>How AI reviewers<br />use test evidence</h1>
         <p className={styles.subtitle}>We gave three AI reviewers the same proposed fixes. What changed when we supplied test results, more detail, or a different source label?</p>
         <p className={styles.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-13">September 13, 2026</time><br />Updated September 24, 2026 · Presentation and explanation; results unchanged</p>
-        <p className={styles.resourceLine}><a href={publication.articleCodeUrl ?? publication.repository} target="_blank" rel="noreferrer">{publication.articleCodeUrl ? "Study code and data" : "Research repository"} ↗</a>{!publication.articleCodeUrl && <span> · Study-specific code and data release pending</span>}</p>
+        <p className={styles.resourceLine}><a href={publication.articleCodeUrl ?? publication.repository} target="_blank" rel="noreferrer">Research code ↗</a>{!publication.articleCodeUrl && <span> · Study-specific code and data release pending</span>}</p>
       </header>
       <figure className={styles.cover}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -123,7 +123,7 @@ export function EvidenceReviewArticle({ review = true }: { review?: boolean }) {
         </article>
       </div>
     </main>
-    <footer className={styles.footer}><span>{review ? "Local review draft · Not published" : "Independent research by Mudit Gurnani"}</span><a href={publication.repository} target="_blank" rel="noreferrer">GitHub ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
+    <footer className={styles.footer}><span>{review ? "Local review draft · Not published" : "Independent research by Mudit Gurnani"}</span><a href={publication.repository} target="_blank" rel="noreferrer">Research code ↗</a><a href="#introduction">Back to introduction ↑</a></footer>
   </div>;
 }
 

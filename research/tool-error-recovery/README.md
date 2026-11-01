@@ -1,6 +1,6 @@
 # Tool-error recovery: research source code
 
-Code for the study accompanying **When an AI’s test report is wrong**. The article remains an unpublished draft. This branch archives the research implementation; it does not publish the article or deploy the website.
+Research code for [When a test report is wrong, is a warning enough?](https://research.muditgurnani.chatgpt.site/research/when-a-test-report-is-wrong), published November 1, 2026. This folder archives the research implementation; the publication does not change the original frozen source files or evidence.
 
 ## What is included
 

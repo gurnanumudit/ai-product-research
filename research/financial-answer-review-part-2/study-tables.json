@@ -1,0 +1,277 @@
+{
+  "scope": "Frozen matched final comparison; primary20percent; intervals rounded to one decimal; warnings are post-study descriptive",
+  "rows": [
+    {
+      "dataset": "FinQA",
+      "model": "GPT-5.4 mini",
+      "n": 455,
+      "slots": 91,
+      "total": 127,
+      "c": 39,
+      "v": 64,
+      "warned": 68,
+      "flagged": 106,
+      "selectedWarned": 61,
+      "range": [
+        14.6,
+        46
+      ],
+      "budgets": [
+        [
+          12,
+          18
+        ],
+        [
+          23,
+          40
+        ],
+        [
+          39,
+          64
+        ],
+        [
+          72,
+          88
+        ]
+      ]
+    },
+    {
+      "dataset": "FinQA",
+      "model": "GPT-6.1 Sol",
+      "n": 455,
+      "slots": 91,
+      "total": 73,
+      "c": 38,
+      "v": 13,
+      "warned": 2,
+      "flagged": 7,
+      "selectedWarned": 2,
+      "range": [
+        -38,
+        -14.1
+      ],
+      "budgets": [
+        [
+          12,
+          3
+        ],
+        [
+          21,
+          7
+        ],
+        [
+          38,
+          13
+        ],
+        [
+          57,
+          38
+        ]
+      ]
+    },
+    {
+      "dataset": "FinQA",
+      "model": "Claude Sonnet 5.5",
+      "n": 455,
+      "slots": 91,
+      "total": 100,
+      "c": 48,
+      "v": 52,
+      "warned": 47,
+      "flagged": 71,
+      "selectedWarned": 47,
+      "range": [
+        -7.5,
+        17.3
+      ],
+      "budgets": [
+        [
+          11,
+          17
+        ],
+        [
+          24,
+          34
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          73,
+          65
+        ]
+      ]
+    },
+    {
+      "dataset": "FinQA",
+      "model": "Gemini 4 Argon",
+      "n": 455,
+      "slots": 91,
+      "total": 67,
+      "c": 36,
+      "v": 13,
+      "warned": 4,
+      "flagged": 18,
+      "selectedWarned": 4,
+      "range": [
+        -34.2,
+        -14.4
+      ],
+      "budgets": [
+        [
+          11,
+          4
+        ],
+        [
+          21,
+          8
+        ],
+        [
+          36,
+          13
+        ],
+        [
+          53,
+          36
+        ]
+      ]
+    },
+    {
+      "dataset": "TAT-QA",
+      "model": "GPT-5.4 mini",
+      "n": 487,
+      "slots": 97,
+      "total": 88,
+      "c": 24,
+      "v": 46,
+      "warned": 45,
+      "flagged": 118,
+      "selectedWarned": 43,
+      "range": [
+        10.3,
+        35.4
+      ],
+      "budgets": [
+        [
+          12,
+          21
+        ],
+        [
+          17,
+          40
+        ],
+        [
+          24,
+          46
+        ],
+        [
+          45,
+          59
+        ]
+      ]
+    },
+    {
+      "dataset": "TAT-QA",
+      "model": "GPT-6.1 Sol",
+      "n": 487,
+      "slots": 97,
+      "total": 42,
+      "c": 20,
+      "v": 7,
+      "warned": 3,
+      "flagged": 26,
+      "selectedWarned": 3,
+      "range": [
+        -22.7,
+        -5
+      ],
+      "budgets": [
+        [
+          11,
+          3
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          29,
+          20
+        ]
+      ]
+    },
+    {
+      "dataset": "TAT-QA",
+      "model": "Claude Sonnet 5.5",
+      "n": 487,
+      "slots": 97,
+      "total": 83,
+      "c": 39,
+      "v": 51,
+      "warned": 47,
+      "flagged": 71,
+      "selectedWarned": 47,
+      "range": [
+        -1,
+        24.7
+      ],
+      "budgets": [
+        [
+          15,
+          20
+        ],
+        [
+          26,
+          44
+        ],
+        [
+          39,
+          51
+        ],
+        [
+          59,
+          61
+        ]
+      ]
+    },
+    {
+      "dataset": "TAT-QA",
+      "model": "Gemini 4 Argon",
+      "n": 487,
+      "slots": 97,
+      "total": 36,
+      "c": 24,
+      "v": 10,
+      "warned": 3,
+      "flagged": 24,
+      "selectedWarned": 3,
+      "range": [
+        -24.5,
+        -8
+      ],
+      "budgets": [
+        [
+          11,
+          3
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          24,
+          10
+        ],
+        [
+          29,
+          18
+        ]
+      ]
+    }
+  ]
+}

@@ -91,7 +91,7 @@ export function EvaluationReliabilityArticle() {
         <h1>How to avoid false confidence<br className={styles.titleBreak} /> in AI evaluations</h1>
         <p className={base.subtitle}>The new AI answers more test questions correctly. Is that enough reason to switch? We used simulations to measure how often different evaluation approaches make the right decision.</p>
         <p className={base.byline}>Mudit Gurnani <span>·</span> <time dateTime="2026-09-30">September 30, 2026</time></p>
-        <p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability" target="_blank" rel="noreferrer">Baseline code and results ↗</a><span> · </span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability-sensitivity" target="_blank" rel="noreferrer">Assumption checks ↗</a><span> · </span><a href="#appendix">Methods and complete results ↓</a></p>
+        <p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability" target="_blank" rel="noreferrer">Research code ↗</a><span> · </span><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/evaluation-reliability-sensitivity" target="_blank" rel="noreferrer">Assumption checks ↗</a><span> · </span><a href="#appendix">Methods and complete results ↓</a></p>
       </header>
       <figure className={base.cover}>
         <img src="/research-assets/evaluation-reliability/evaluation-confidence-cover.png" width="1774" height="887" alt="A magnifying glass reveals gaps among grouped pairs of marks on textured evaluation sheets." fetchPriority="high" />

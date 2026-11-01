@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const data = JSON.parse(await readFile(new URL('../content/evidence-figure-data.json', import.meta.url)));
-const original = JSON.parse(await readFile(new URL('../../research/ai-reviewers-test-evidence/reference/figure-data.json', import.meta.url)));
+const original = JSON.parse(await readFile(process.env.EVIDENCE_FIGURE_REFERENCE || new URL('../../research/ai-reviewers-test-evidence/reference/figure-data.json', import.meta.url)));
 const svg = await readFile(new URL('../public/research-assets/evidence-review/v2/finding-2-evidence-content.svg',import.meta.url),'utf8');
 
 test('responsive figures preserve the published source and passing comparisons exactly', () => {

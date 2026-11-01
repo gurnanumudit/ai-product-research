@@ -44,22 +44,28 @@ test('production homepage and article render with direct study links', async () 
     assert.ok(homeHtml.includes('<h1 id="research-title">Evidence for better decisions about AI.</h1>'));
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
     assert.ok(homeHtml.includes('I study what AI can do, what it costs and how it behaves.'));
-    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', reviewBuild ? 'All 7 studies, including the new draft' : 'All 6 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 7 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
     for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion', '—']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
     const toolErrorPath = '/research/when-a-test-report-is-wrong';
     const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
-    assert.equal(toolErrorResponse.status, reviewBuild ? 200 : 404);
-    assert.equal(homeHtml.includes(toolErrorPath), reviewBuild);
-    if (reviewBuild) {
+    assert.equal(toolErrorResponse.status, 200);
+    assert.equal(homeHtml.includes(toolErrorPath), true);
+    {
       const article = await toolErrorResponse.text();
       checkAnchors(article);
       await checkSocialPreview(port, toolErrorPath, '/research-assets/tool-error/cover.png');
-      for (const phrase of ['noindex, nofollow', '720', '27 net additional successes', 'Related research', 'Research code', 'amended completion']) assert.ok(article.includes(phrase), phrase);
+      for (const phrase of [reviewBuild ? 'noindex, nofollow' : 'index, follow', '720', '27 net additional successes', 'Related research', 'Research code', 'amended completion']) assert.ok(article.includes(phrase), phrase);
       for (const bad of ['../econ-tool-error', '/Users/', '127.0.0.1', 'localhost', '—']) assert.ok(!article.includes(bad), bad);
       for (const asset of ['chart-data-v2.json','chart-data-v2.csv','review-summary.json']) assert.equal((await fetch(`http://localhost:${port}/research-assets/tool-error/${asset}`)).status,200,asset);
       const data = await (await fetch(`http://localhost:${port}/research-assets/tool-error/chart-data-v2.json`)).json();
       assert.deepEqual(Object.values(data.strata.overall.arms).map(a=>a.successes), [185,187,212]);
       assert.equal(Object.values(data.strata).flatMap(s=>s.contrasts).length,15);
+    }
+    for (const slug of ['how-ai-reviewers-use-test-evidence','when-is-more-reasoning-worth-it','how-to-avoid-false-confidence-in-ai-evaluations','which-financial-ai-answers-should-we-review','which-financial-ai-answers-should-we-review-part-2','how-ai-negotiates','when-a-test-report-is-wrong']) {
+      const page = await fetch(`http://localhost:${port}/research/${slug}`);
+      assert.equal(page.status, 200, slug);
+      const text = await page.text();
+      assert.match(text, /<a[^>]+href="https:\/\/github\.com\/gurnanumudit\/ai-product-research\/tree\/[^" ]+"[^>]*>Research code(?: ↗)?<\/a>/, `Missing consistent research-code link: ${slug}`);
     }
     const financialPath = '/research/which-financial-ai-answers-should-we-review';
     assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length >= 1, true);

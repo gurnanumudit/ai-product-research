@@ -6,6 +6,14 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 ## Published articles
 
+### When a test report is wrong, is a warning enough?
+
+Across 720 coding-task outcomes, a fixed warning changed little compared with baseline. Automatic first verification helped most when the initial report falsely claimed success. The completed result is an amended completion after operational interruptions.
+
+[Read the article](https://research.muditgurnani.chatgpt.site/research/when-a-test-report-is-wrong) · [Research code](research/tool-error-recovery/README.md)
+
+Published November 1, 2026. The source archive preserves the research implementation; it is not a self-contained results-reproduction package. The article supplies aggregate chart data and explains the limits.
+
 ### How AI negotiates
 
 We tested four buyer strategies against three seller strategies in 180 synthetic scenarios. Instruction effects were modest, and a buyer lead remained worth testing again.
@@ -16,20 +24,20 @@ Published October 29, 2026. The package reproduces the numerical comparisons and
 
 ### Which financial AI answers should we review? Part 2
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) · [Presentation source and plotted data](site/components/financial-answer-review-part-2/)
+[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) · [Research code](research/financial-answer-review-part-2/README.md)
 
-The website source includes the published October 21, 2026 article. Its presentation files are not a complete empirical replay package.
+Published October 21, 2026. The code package reproduces the saved-answer diagnostic and displayed summaries. It does not rerun model collection or the original bootstrap analysis.
 
 
 Coming from an article? Its study folder is the starting point for the methods, evidence and reproduction instructions.
 
-### Which financial AI answers should we review?
+### Which financial AI answers should we review? Part 1
 
-We compared model confidence with rule-based verification on 1,127 financial answers at four review budgets. Confidence selected more answer-key mismatches at smaller budgets under the stated numerical allowance; the methods tied at 50% review.
+We compared model confidence with rule-based verification on 1,127 financial answers at four review budgets. With the revised calculation-warning rule used in the article, verification selected more answer-key mismatches at each budget. This adjustment was made after inspecting earlier results.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) · [Analysis code, aggregate results and reproduction limits](research/financial-answer-review/article-analysis/README.md)
+[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) · [Research code](research/financial-answer-review/checker-sensitivity/README.md)
 
-Synthetic tests run publicly with no API calls. Empirical replay requires the exact archived inputs and model responses, which are not distributed. This is a post-study scoring and review-budget analysis, not a scoring-independent confidence win.
+Synthetic tests run publicly with no API calls. Empirical replay requires the exact archived inputs and model responses, which are not distributed. The original analysis remains preserved separately; the published article includes the later checker-sensitivity analysis.
 
 ### How to avoid false confidence in AI evaluations
 
@@ -59,7 +67,7 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | Folder | Contents |
 | --- | --- |
 | [research/negotiation/](research/negotiation/README.md) | Negotiation game, scenarios, derived outcomes, analysis and offline reproduction |
-| [site/](site/README.md) | Website source, all six articles, and web assets |
+| [site/](site/README.md) | Website source, all seven articles, and web assets |
 | [research/financial-answer-review/article-analysis/](research/financial-answer-review/article-analysis/README.md) | Financial review policies: code, tests, aggregate results and empirical replay boundaries |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |

@@ -1,3 +1,9 @@
+# Publication update: November 1, 2026
+
+The owner approved the homepage, new article, GitHub link consistency and publication. All seven articles now have a direct Research code link. Negotiation and reasoning are the flagships; tool-error is latest. Financial review Part 2's existing public download is also browsable in the GitHub research folder. The current hosted negotiation caveats were preserved. Tool-error historical source and aggregate chart data are unchanged. Production build checks cover all seven routes and code links.
+
+The notes below preserve the earlier preparation history. They no longer describe the release state.
+
 # Tool-error article and homepage: release preparation
 
 Status: local preview prepared for owner review. Nothing deployed or pushed by this change.

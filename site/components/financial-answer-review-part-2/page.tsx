@@ -15,7 +15,7 @@ export function PartTwo({draft = false}: {draft?: boolean}) {
         <h1>Which financial AI answers<br/> should we review?<br/><span className={styles.part}>Part 2</span></h1>
         <p className={base.subtitle}>A follow-up study comparing confidence-based and rule-based review across four AI configurations and two financial datasets.</p>
         <p className={base.byline}>Mudit Gurnani <span>·</span> {draft ? 'Draft for review' : <time dateTime="2026-10-21">October 21, 2026</time>}</p>
-        <p className={base.resourceLine}><a href={partOneUrl}>Read Part 1 ↗</a><span> · </span><a href="#appendix">Methods and study files ↓</a><span> · </span><a href="/research-assets/financial-answer-review-part-2/reproduction.zip" download>Code and data ↓</a></p>
+        <p className={base.resourceLine}><a href="https://github.com/gurnanumudit/ai-product-research/tree/main/research/financial-answer-review-part-2" target="_blank" rel="noreferrer">Research code ↗</a><span> · </span><a href={partOneUrl}>Read Part 1 ↗</a><span> · </span><a href="#appendix">Methods and study files ↓</a><span> · </span><a href="/research-assets/financial-answer-review-part-2/reproduction.zip" download>Code and data ↓</a></p>
       </header>
       <figure className={`${base.cover} ${styles.cover}`}>
         <img src="/research-assets/financial-answer-review-part-2/cover-v1.png" width="1774" height="887" alt="Terracotta and teal trays select different paper cards from the same field of answers, a companion illustration to Part 1." />

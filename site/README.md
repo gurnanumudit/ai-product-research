@@ -1,6 +1,6 @@
 # Research website
 
-Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage links to four articles. Research data, methods and offline reproduction live separately in [research/](../research/README.md).
+Source for [Mudit Gurnani's research website](https://research.muditgurnani.chatgpt.site/). The homepage links to seven articles. Research data, methods and offline reproduction live separately in [research/](../research/README.md).
 
 ## Run and check locally
 
@@ -25,9 +25,10 @@ node --test tests/evidence-figures.test.mjs
 
 | Published article | Main presentation source | Research evidence |
 | --- | --- | --- |
+| [When a test report is wrong, is a warning enough?](https://research.muditgurnani.chatgpt.site/research/when-a-test-report-is-wrong) | [components/tool-error/](components/tool-error/) | [tool-error source archive](../research/tool-error-recovery/README.md) |
 | [How AI negotiates](https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates) | [components/negotiation/](components/negotiation/) | [negotiation package](../research/negotiation/README.md) |
-| [Which financial AI answers should we review? Part 2](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) | [components/financial-answer-review-part-2/](components/financial-answer-review-part-2/) | Presentation data only; not a full empirical replay |
-| [Which financial AI answers should we review?](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) | [components/financial-answer-review/](components/financial-answer-review/) and [content/financial-answer-review.ts](content/financial-answer-review.ts) | [article analysis](../research/financial-answer-review/article-analysis/README.md) |
+| [Which financial AI answers should we review? Part 2](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) | [components/financial-answer-review-part-2/](components/financial-answer-review-part-2/) | [saved-results code package](../research/financial-answer-review-part-2/README.md); not a full empirical replay |
+| [Which financial AI answers should we review?](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) | [components/financial-answer-review/](components/financial-answer-review/) and [content/financial-answer-review-draft.ts](content/financial-answer-review-draft.ts) | [checker sensitivity analysis](../research/financial-answer-review/checker-sensitivity/README.md) |
 | [How to avoid false confidence in AI evaluations](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) | [components/evaluation-reliability/](components/evaluation-reliability/) | [evaluation-reliability](../research/evaluation-reliability/README.md) |
 | [When is more reasoning worth it?](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it) | [app/preview/reasoning-costs/](app/preview/reasoning-costs/) | [reasoning-costs](../research/reasoning-costs/README.md) |
 | [How AI reviewers use test evidence](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) | [content/evidence-review-v3.ts](content/evidence-review-v3.ts) and [components/article/](components/article/) | [ai-reviewers-test-evidence](../research/ai-reviewers-test-evidence/README.md) |
@@ -58,6 +59,6 @@ This is a local-only review build with **noindex** metadata. Do not publish its 
 
 The live website is managed through OpenAI Sites. [.openai/hosting.json](.openai/hosting.json) identifies the existing project; it contains no credential and does not grant deployment permission.
 
-**A GitHub push does not deploy the website.** Publishing requires owner approval, a fresh production build, and the separate Sites save/deploy workflow. After deployment, check the homepage, all three article routes, research links and sharing metadata on the public origin.
+**A GitHub push does not deploy the website.** Publishing requires owner approval, a fresh production build, and the separate Sites save/deploy workflow. After deployment, check the homepage, all seven article routes, research links and sharing metadata on the public origin.
 
 Displaying the articles needs no model API key, database or paid research run. Build output, installed dependencies and local credentials are excluded from Git. Historical publication and implementation changes remain available in Git history.
