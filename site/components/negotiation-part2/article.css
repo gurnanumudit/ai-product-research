@@ -71,3 +71,12 @@
 .negotiationPartTwo .mainTakeaway u{text-decoration-thickness:2px;text-underline-offset:5px}.negotiationPartTwo .appendixLinks{display:flex;gap:8px 20px;flex-wrap:wrap;font:14px/1.6 Arial,sans-serif;margin:22px 0}.negotiationPartTwo .appendixLinks a{color:#287565}
 
 .negotiationPartTwo{--buyer:#287565;--seller:#bf6347}.negotiationPartTwo .appendixChevron{display:none}.negotiationPartTwo .mainTakeaway{font-weight:600}.negotiationPartTwo .hero .openingImage{max-height:none}.negotiationPartTwo .hero .eyebrow span{width:auto;height:auto;background:none}.negotiationPartTwo [data-article-layout]{margin-bottom:50px}
+/* Keep dark-mode paint layers bounded on this long article. A single filtered
+   canvas can exceed WebKit's texture bounds and blank deep-linked sections. */
+html[data-theme="dark"] .themeCanvas:has(.negotiationPartTwo){filter:none;background:#050604}
+html[data-theme="dark"] [data-research-article].negotiationPartTwo{background:#050604}
+html[data-theme="dark"] .negotiationPartTwo > div:not([data-article-layout]),
+html[data-theme="dark"] .negotiationPartTwo [data-article-index],
+html[data-theme="dark"] .negotiationPartTwo .readingNote,
+html[data-theme="dark"] .negotiationPartTwo [data-article-body]>section:not(#appendix),
+html[data-theme="dark"] .negotiationPartTwo #appendix > *{filter:invert(1) hue-rotate(180deg)}
