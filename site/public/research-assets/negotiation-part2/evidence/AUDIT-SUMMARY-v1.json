@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "kind": "independent-actual-combined-main-terminal-reconciliation",
+  "reviewer": "/root/negotiation_plan_review",
+  "approved": true,
+  "independent": true,
+  "collector_and_launcher_absent": true,
+  "original_terminal_sha256": "0b152ecb69e7c699c7b200bf91db530fc6a0a2b932657242e50320d9c763a788",
+  "continuation_terminal_sha256": "0886dd6a66e0eda8da27b5b859eb731faa23dde8c414a43dc00f49362122d476",
+  "manifest_sha256": "fab24825734b45d1f979a08adeb140c65775e4c7af01a9d87242faa79afac8f3",
+  "source_pins_verified": 49406,
+  "actual_archive_hashes_verified": 108995,
+  "assignment_partition": {
+    "scheduled": 960,
+    "completed": 951,
+    "infrastructure_failed": 9,
+    "unattempted": 0,
+    "incomplete_started_unarchived": 0
+  },
+  "segments": [
+    {
+      "run": "actual-run-main-01",
+      "terminal_sha256": "0b152ecb69e7c699c7b200bf91db530fc6a0a2b932657242e50320d9c763a788",
+      "complete": 250,
+      "failed": 5,
+      "untouched": 705,
+      "maximum_session_failure_streak": 3,
+      "archive_hashes_verified": 28701,
+      "decimal_receipt_sum_nano": 13868658000,
+      "rounding_extra_nano": 74,
+      "failure_order": [
+        {
+          "episode_id": "MRF019-mirror-seller-R1",
+          "call_id": "MRF019-mirror-seller-R1:6",
+          "stage": "generation"
+        },
+        {
+          "episode_id": "MRF056-mirror-buyer-R1",
+          "call_id": "MRF056-mirror-buyer-R1:4",
+          "stage": "generation"
+        },
+        {
+          "episode_id": "MRF034-original-buyer-R1",
+          "call_id": "MRF034-original-buyer-R1:9",
+          "stage": "billing_lookup"
+        },
+        {
+          "episode_id": "MRF047-mirror-buyer-R1",
+          "call_id": "MRF047-mirror-buyer-R1:1",
+          "stage": "generation"
+        },
+        {
+          "episode_id": "MRF012-mirror-seller-R1",
+          "call_id": "MRF012-mirror-seller-R1:1",
+          "stage": "generation"
+        }
+      ]
+    },
+    {
+      "run": "actual-run-main-02",
+      "terminal_sha256": "0886dd6a66e0eda8da27b5b859eb731faa23dde8c414a43dc00f49362122d476",
+      "complete": 701,
+      "failed": 4,
+      "untouched": 0,
+      "maximum_session_failure_streak": 2,
+      "archive_hashes_verified": 80294,
+      "decimal_receipt_sum_nano": 39513396000,
+      "rounding_extra_nano": 226,
+      "failure_order": [
+        {
+          "episode_id": "MRF032-original-buyer-R1",
+          "call_id": "MRF032-original-buyer-R1:9",
+          "stage": "billing_lookup"
+        },
+        {
+          "episode_id": "MRF054-original-buyer-R3",
+          "call_id": "MRF054-original-buyer-R3:8",
+          "stage": "generation"
+        },
+        {
+          "episode_id": "MRF071-mirror-buyer-R3",
+          "call_id": "MRF071-mirror-buyer-R3:8",
+          "stage": "billing_lookup"
+        },
+        {
+          "episode_id": "MRF008-original-seller-R3",
+          "call_id": "MRF008-original-seller-R3:10",
+          "stage": "billing_lookup"
+        }
+      ]
+    }
+  ],
+  "transport_accounting": {
+    "kind": "independent-combined-main-transport-accounting-audit",
+    "segments": [
+      {
+        "kind": "independent-saved-main-segment-transport-accounting-audit",
+        "run": "actual-run-main-01",
+        "attempts": 2948,
+        "responses": 2944,
+        "unique_new_generation_ids": 2944,
+        "receipts": 2943,
+        "actions": 2943,
+        "valid_applied_actions": 2943,
+        "settled_nano": 13868658074,
+        "unresolved_nano": 137800000,
+        "total_commitment_nano": 14006458074,
+        "unresolved_calls": [
+          {
+            "call_id": "MRF012-mirror-seller-R1:1",
+            "stage": "generation",
+            "reserve_nano": 26360000,
+            "response_saved": false
+          },
+          {
+            "call_id": "MRF019-mirror-seller-R1:6",
+            "stage": "generation",
+            "reserve_nano": 28235000,
+            "response_saved": false
+          },
+          {
+            "call_id": "MRF034-original-buyer-R1:9",
+            "stage": "billing_lookup",
+            "reserve_nano": 29360000,
+            "response_saved": true
+          },
+          {
+            "call_id": "MRF047-mirror-buyer-R1:1",
+            "stage": "generation",
+            "reserve_nano": 26360000,
+            "response_saved": false
+          },
+          {
+            "call_id": "MRF056-mirror-buyer-R1:4",
+            "stage": "generation",
+            "reserve_nano": 27485000,
+            "response_saved": false
+          }
+        ],
+        "all_saved_steps_and_response_receipt_route_usage_checks_pass": true,
+        "all_slot_caps_and_wire_request_matches": true,
+        "network_calls": 0,
+        "game_replay_calls": 0,
+        "economic_outcomes_examined": false,
+        "terminal_sha256": "0b152ecb69e7c699c7b200bf91db530fc6a0a2b932657242e50320d9c763a788"
+      },
+      {
+        "kind": "independent-saved-main-segment-transport-accounting-audit",
+        "run": "actual-run-main-02",
+        "attempts": 8223,
+        "responses": 8222,
+        "unique_new_generation_ids": 8222,
+        "receipts": 8219,
+        "actions": 8219,
+        "valid_applied_actions": 8219,
+        "settled_nano": 39513396226,
+        "unresolved_nano": 117065000,
+        "total_commitment_nano": 39630461226,
+        "unresolved_calls": [
+          {
+            "call_id": "MRF008-original-seller-R3:10",
+            "stage": "billing_lookup",
+            "reserve_nano": 29735000,
+            "response_saved": true
+          },
+          {
+            "call_id": "MRF032-original-buyer-R1:9",
+            "stage": "billing_lookup",
+            "reserve_nano": 29360000,
+            "response_saved": true
+          },
+          {
+            "call_id": "MRF054-original-buyer-R3:8",
+            "stage": "generation",
+            "reserve_nano": 28985000,
+            "response_saved": false
+          },
+          {
+            "call_id": "MRF071-mirror-buyer-R3:8",
+            "stage": "billing_lookup",
+            "reserve_nano": 28985000,
+            "response_saved": true
+          }
+        ],
+        "all_saved_steps_and_response_receipt_route_usage_checks_pass": true,
+        "all_slot_caps_and_wire_request_matches": true,
+        "network_calls": 0,
+        "game_replay_calls": 0,
+        "economic_outcomes_examined": false,
+        "terminal_sha256": "0886dd6a66e0eda8da27b5b859eb731faa23dde8c414a43dc00f49362122d476"
+      }
+    ],
+    "unique_combined_call_ids": 11171,
+    "unique_combined_generation_ids": 11166,
+    "settled_nano": 53382054300,
+    "unresolved_nano": 254865000,
+    "total_commitment_nano": 53636919300,
+    "network_calls": 0,
+    "game_replay_calls": 0,
+    "economic_outcomes_examined": false
+  },
+  "decimal_receipt_sum_nano": 53382054000,
+  "conservative_per_receipt_ceiling_extra_nano": 300,
+  "canonical_owner_and_release_match": true,
+  "original_and_continuation_frozen_inputs_preserved": true,
+  "paid_calls": 0,
+  "network_calls": 0,
+  "game_replay_calls": 0,
+  "economic_outcome_analysis_performed": false,
+  "objections": [],
+  "limitations": [
+    "Terminal coverage is complete, but nine failed outcomes remain unknown; all-episodes-complete feasibility did not pass.",
+    "Five generation failures have no completed response; four billing-service failures have saved responses without validated billing/applied actions. All nine reserves are retained.",
+    "No remote root cause or late receipt resolution is established; no external lookup was performed.",
+    "Continuation followed owner approval after original interim reporting; disclose the prospective operational amendment and retain frozen missingness rules.",
+    "This accepts custody/accounting and permits the separately frozen offline combined analysis gate only; it does not approve restart, retry, new collection or publication.",
+    "No payoff or comparative economics was calculated in this reconciliation. Historical monitoring is checked at release, not asserted currently ACTIVE."
+  ],
+  "public_extract_note": "Public extract of the accepted audit. The host-specific source-hash map and process IDs are omitted; numerical checks and limitations are retained.",
+  "original_artifact_sha256": "e2730723ab245f7101a679cbd72c0a57369ca6277f5d7ba03597e4e4cb46db6c"
+}

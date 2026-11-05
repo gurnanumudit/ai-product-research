@@ -1,0 +1,94 @@
+{
+  "kind": "independent-combined-main-reporting-review",
+  "created_at_utc": "2026-11-04T14:32:02.743061+00:00",
+  "approved": true,
+  "independent": true,
+  "verdict": "ACCEPT_REPORT_WITH_UNKNOWN_OUTCOMES_AND_BOUND_INTERVALS",
+  "source_hashes": {
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/PRIMARY-v1.json": "2c9e3f108e8b974b90e3c6257a6b6b2704732387e00f3064fa11c15fe3f92d46",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/RESULTS-v1.json": "71b2e18c194bce59468f35e08263c33bbda85267c2ee755673811a48c2ac905c",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/REPORT-v1.txt": "00c770037187156685f82dc2272a4a9800e9db26347a3138cfbfd5d484ae5e95",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/REPORT-v2.txt": "4900b7bbe179380b0baf4f2e360be7b70e10d4f195d07b4deb59e8d9f018b055",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/SECONDARY-RESULTS-v1.json": "8dd5327ff11d12671792202805168d539e0f813be59989ddd52335fdd58657c2",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/INDEPENDENT-REPORTING-CHECK-v1.json": "e687d64a11de837a793c140149302f571dcdb0d70689ca0c70df704de9e6a3a8",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/INDEPENDENT-SECONDARY-CHECK-v1.json": "47453f8d23d4ea5e7e0a447b6e5aa72ffbfaf6f93a719764bc859e997f959f49",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/independent_reporting_check_v1.py": "5b18497219ff589477963f5a67ee637d1e14c1891a2a9a3377dd1ace4d3a7690",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/independent_secondary_check_v1.py": "2f81caf628393ba0b34ffb3f8ebeaaade67eb5eeaa665395f5097ea6f5c6c9d3",
+    "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/build_secondary_results_v1.py": "2d774d53f46bdc7ead92e7f297c4df66ad2c44c55094f1c63dd2b98d89e1fde4",
+    "workstreams/hq-negotiation-role-main-design-20261031/COMBINED-MAIN-REVIEW-v1.json": "e2730723ab245f7101a679cbd72c0a57369ca6277f5d7ba03597e4e4cb46db6c"
+  },
+  "reviewed_report": "REPORT-v2.txt",
+  "reviewed_report_sha256": "4900b7bbe179380b0baf4f2e360be7b70e10d4f195d07b4deb59e8d9f018b055",
+  "closed_reporting_objections": [
+    {
+      "id": "CR1",
+      "issue": "The initial report/data omitted required secondary category/start/orientation and family/action diagnostics.",
+      "resolution": "Additive SECONDARY-RESULTS-v1.json and REPORT-v2.txt provide every planned descriptive group and a linked appendix. Prior v1/PRIMARY/RESULTS bytes are preserved. All secondary fields were independently reproduced."
+    }
+  ],
+  "material_objections": [],
+  "independent_numerical_checks": {
+    "raw_completed_payoffs": 951,
+    "fixed_scheduled_rows": 960,
+    "unknown_service_failures": 9,
+    "untouched": 0,
+    "missing_feasible": 8,
+    "primary_point_and_ordinary_ci_suppressed": true,
+    "complete_families": 71,
+    "sample_legal_identification_bounds": [
+      -2.2430555555555554,
+      1.0
+    ],
+    "independently_integrated_population_bound_interval": [
+      -3.6941530709167205,
+      2.4213783231416715
+    ],
+    "independent_endpoint_degrees_of_freedom": [
+      50.57570109437611,
+      56.284859352404176
+    ],
+    "descriptive_group_tables": 23,
+    "family_summaries": 80,
+    "family_distribution_groups": 3,
+    "episode_action_diagnostics": 960,
+    "applied_actions": 11162,
+    "buyer_actions": 5588,
+    "seller_actions": 5574,
+    "buyer_queries": 9,
+    "seller_queries": 2,
+    "invalid_actions": 0,
+    "zero_observed_harm_is_qualified": true,
+    "settled_nano": 53382054300,
+    "unresolved_nano": 254865000,
+    "commitment_nano": 53636919300,
+    "pilot_separate_nano": 7891284039
+  },
+  "narrative_checks": [
+    "951 completed plus9unknown equals960 processed; no untouched assignments. Exit0 is distinguished from all-outcomes-complete feasibility.",
+    "Eight feasible missing outcomes suppress ordinary primary inference; legal and approximate population bound intervals are explicitly distinguished from ordinary point-estimate intervals.",
+    "Bounds admit either role direction; no equivalence claim, and4-point target is not reframed as equivalence margin.",
+    "Observed-only category denominators and zero harmful agreement qualification are accurate; no universal-safety claim.",
+    "Both original and continuation failures/reserves remain; pilot costs and outcomes are separate.",
+    "Prior3:3:2, six-byte allowance, outage rules, post-interim owner continuation, session-only streak reset, idle-sleep/cooperative stop amendment and original artifact preservation are disclosed.",
+    "Owner-reported Wi-Fi restoration is not presented as independently established root cause.",
+    "All secondary views are descriptive with no tests or promotion to primary;20no-zonefamilies distinguished from240outcomes and approximate heavy-tail limitations retained.",
+    "One-model artificial-game scope and no additional collection/retry/publication authority stated."
+  ],
+  "authorized_final_report_edit": {
+    "source": "REPORT-v2.txt",
+    "source_sha256": "4900b7bbe179380b0baf4f2e360be7b70e10d4f195d07b4deb59e8d9f018b055",
+    "replace_exact": "Reporting review pending.",
+    "replacement_exact": "Reporting review accepted: REPORTING-REVIEW-v1.json.",
+    "allowed_occurrences": 1,
+    "expected_final_sha256": "11c57bc14c2f452f17e51cab3764afb786b16fb425e625153e0a9b8d51e54bc5",
+    "all_other_report_and_data_bytes_unchanged": true,
+    "prefer_additive_final_report": true
+  },
+  "limitations": [
+    "Review independently reproduced saved payoffs and descriptive reporting, not external model correctness or real-world generalization.",
+    "Independent t-density quadrature matched frozen endpoint arithmetic within1e-9; approximate population coverage is not guaranteed by numerical agreement.",
+    "Nine outcomes remain unknown, including eight feasible; no missing-at-random assumption, imputation or ordinary primary estimate was introduced.",
+    "No model/network calls, game/action replay, production adapter rerun, new hypothesis tests, economic-outcome selection or frozen-source edits occurred.",
+    "Acceptance is for reporting only; no further collection or publication is authorized."
+  ]
+}

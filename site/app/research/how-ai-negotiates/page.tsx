@@ -7,7 +7,7 @@ const url = `${publicOrigin}/research/how-ai-negotiates`;
 const image = `${publicOrigin}/research-assets/negotiation/negotiation-hero-v1.png`;
 export const metadata: Metadata = {
  title, description, robots:{index:!localReview,follow:!localReview}, alternates:{canonical:url},
- openGraph:{title,description,type:'article',url,publishedTime:'2026-10-29',modifiedTime:'2026-10-29',authors:['Mudit Gurnani'],images:[{url:image,type:'image/png',alt:'A buyer and seller consider a contract across a table.'}]},
+ openGraph:{title,description,type:'article',url,publishedTime:'2026-10-29',modifiedTime:'2026-11-04',authors:['Mudit Gurnani'],images:[{url:image,type:'image/png',alt:'A buyer and seller consider a contract across a table.'}]},
  twitter:{card:'summary_large_image',title,description,images:[image]},
 };
 export default function Page(){return <NegotiationArticle published/>;}
