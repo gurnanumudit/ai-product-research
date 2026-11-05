@@ -1,0 +1,17 @@
+{
+  "missing_feasible_outcomes": 8,
+  "primary": null,
+  "sample_legal_identification_bounds": [
+    -2.2430555555555554,
+    1.0
+  ],
+  "approximate_population_bound_ci95": [
+    -3.694153070916615,
+    2.421378323141497
+  ],
+  "endpoint_inference_available": {
+    "lower": true,
+    "upper": true
+  },
+  "bound_interval_method": "Two97.5percent one-sided Welch endpoint limits; Bonferroni simultaneous95percent; family normal/CLT approximation, no missing-at-random assumption."
+}

@@ -1,0 +1,3842 @@
+[
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        0,
+        20,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF001",
+    "orientation": "original",
+    "scenario_id": "MRF001-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        5,
+        0,
+        5
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        5,
+        0,
+        5
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF001",
+    "orientation": "mirror",
+    "scenario_id": "MRF001-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        0,
+        20,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        25,
+        25,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF002",
+    "orientation": "original",
+    "scenario_id": "MRF002-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        15,
+        0,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        15,
+        0,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF002",
+    "orientation": "mirror",
+    "scenario_id": "MRF002-mirror",
+    "seller": {
+      "base": 75,
+      "marginals": [
+        25,
+        25,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        25,
+        20,
+        0
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF003",
+    "orientation": "original",
+    "scenario_id": "MRF003-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        15,
+        10,
+        15
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        15,
+        10,
+        15
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF003",
+    "orientation": "mirror",
+    "scenario_id": "MRF003-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        25,
+        20,
+        0
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        30,
+        5,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF004",
+    "orientation": "original",
+    "scenario_id": "MRF004-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        20,
+        30,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        20,
+        30,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF004",
+    "orientation": "mirror",
+    "scenario_id": "MRF004-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        30,
+        5,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        30,
+        5,
+        10
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF005",
+    "orientation": "original",
+    "scenario_id": "MRF005-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        15,
+        15,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        15,
+        15,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF005",
+    "orientation": "mirror",
+    "scenario_id": "MRF005-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        30,
+        5,
+        10
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        20,
+        5,
+        10
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF006",
+    "orientation": "original",
+    "scenario_id": "MRF006-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        0,
+        20,
+        0
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        0,
+        20,
+        0
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF006",
+    "orientation": "mirror",
+    "scenario_id": "MRF006-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        20,
+        5,
+        10
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        25,
+        0,
+        20
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF007",
+    "orientation": "original",
+    "scenario_id": "MRF007-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        5,
+        10,
+        5
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        5,
+        10,
+        5
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF007",
+    "orientation": "mirror",
+    "scenario_id": "MRF007-mirror",
+    "seller": {
+      "base": 65,
+      "marginals": [
+        25,
+        0,
+        20
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        25,
+        30,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF008",
+    "orientation": "original",
+    "scenario_id": "MRF008-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        5,
+        5,
+        30
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        5,
+        5,
+        30
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF008",
+    "orientation": "mirror",
+    "scenario_id": "MRF008-mirror",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        25,
+        30,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        20,
+        0,
+        25
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF009",
+    "orientation": "original",
+    "scenario_id": "MRF009-original",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        10,
+        10,
+        0
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 155,
+      "marginals": [
+        10,
+        10,
+        0
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF009",
+    "orientation": "mirror",
+    "scenario_id": "MRF009-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        20,
+        0,
+        25
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        25,
+        30,
+        5
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF010",
+    "orientation": "original",
+    "scenario_id": "MRF010-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        15,
+        10,
+        20
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        15,
+        10,
+        20
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF010",
+    "orientation": "mirror",
+    "scenario_id": "MRF010-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        25,
+        30,
+        5
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        15,
+        0,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF011",
+    "orientation": "original",
+    "scenario_id": "MRF011-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        0,
+        25,
+        15
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        0,
+        25,
+        15
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF011",
+    "orientation": "mirror",
+    "scenario_id": "MRF011-mirror",
+    "seller": {
+      "base": 75,
+      "marginals": [
+        15,
+        0,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        0,
+        25,
+        15
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF012",
+    "orientation": "original",
+    "scenario_id": "MRF012-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        5,
+        5,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 160,
+      "marginals": [
+        5,
+        5,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF012",
+    "orientation": "mirror",
+    "scenario_id": "MRF012-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        0,
+        25,
+        15
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        15,
+        10,
+        20
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF013",
+    "orientation": "original",
+    "scenario_id": "MRF013-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        5,
+        20,
+        5
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        5,
+        20,
+        5
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF013",
+    "orientation": "mirror",
+    "scenario_id": "MRF013-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        15,
+        10,
+        20
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        25,
+        0,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF014",
+    "orientation": "original",
+    "scenario_id": "MRF014-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        0,
+        20,
+        10
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        0,
+        20,
+        10
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF014",
+    "orientation": "mirror",
+    "scenario_id": "MRF014-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        25,
+        0,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        30,
+        20,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF015",
+    "orientation": "original",
+    "scenario_id": "MRF015-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        20,
+        0,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        20,
+        0,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF015",
+    "orientation": "mirror",
+    "scenario_id": "MRF015-mirror",
+    "seller": {
+      "base": 60,
+      "marginals": [
+        30,
+        20,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        25,
+        15,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF016",
+    "orientation": "original",
+    "scenario_id": "MRF016-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        10,
+        5,
+        25
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        10,
+        5,
+        25
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF016",
+    "orientation": "mirror",
+    "scenario_id": "MRF016-mirror",
+    "seller": {
+      "base": 55,
+      "marginals": [
+        25,
+        15,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        25,
+        30,
+        15
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF017",
+    "orientation": "original",
+    "scenario_id": "MRF017-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        0,
+        20,
+        20
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        0,
+        20,
+        20
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF017",
+    "orientation": "mirror",
+    "scenario_id": "MRF017-mirror",
+    "seller": {
+      "base": 75,
+      "marginals": [
+        25,
+        30,
+        15
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        0,
+        30,
+        20
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF018",
+    "orientation": "original",
+    "scenario_id": "MRF018-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        5,
+        5,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        5,
+        5,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF018",
+    "orientation": "mirror",
+    "scenario_id": "MRF018-mirror",
+    "seller": {
+      "base": 65,
+      "marginals": [
+        0,
+        30,
+        20
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        15,
+        20,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF019",
+    "orientation": "original",
+    "scenario_id": "MRF019-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        30,
+        0,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        30,
+        0,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF019",
+    "orientation": "mirror",
+    "scenario_id": "MRF019-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        15,
+        20,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        20,
+        30,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF020",
+    "orientation": "original",
+    "scenario_id": "MRF020-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        0,
+        10,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        0,
+        10,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF020",
+    "orientation": "mirror",
+    "scenario_id": "MRF020-mirror",
+    "seller": {
+      "base": 65,
+      "marginals": [
+        20,
+        30,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        20,
+        20,
+        25
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF021",
+    "orientation": "original",
+    "scenario_id": "MRF021-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        5,
+        25,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        5,
+        25,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF021",
+    "orientation": "mirror",
+    "scenario_id": "MRF021-mirror",
+    "seller": {
+      "base": 60,
+      "marginals": [
+        20,
+        20,
+        25
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        30,
+        15,
+        30
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF022",
+    "orientation": "original",
+    "scenario_id": "MRF022-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        20,
+        20,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        20,
+        20,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF022",
+    "orientation": "mirror",
+    "scenario_id": "MRF022-mirror",
+    "seller": {
+      "base": 50,
+      "marginals": [
+        30,
+        15,
+        30
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        15,
+        30,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF023",
+    "orientation": "original",
+    "scenario_id": "MRF023-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        0,
+        0,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        0,
+        0,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF023",
+    "orientation": "mirror",
+    "scenario_id": "MRF023-mirror",
+    "seller": {
+      "base": 45,
+      "marginals": [
+        15,
+        30,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        30,
+        10,
+        15
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF024",
+    "orientation": "original",
+    "scenario_id": "MRF024-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        0,
+        15,
+        5
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        0,
+        15,
+        5
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF024",
+    "orientation": "mirror",
+    "scenario_id": "MRF024-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        30,
+        10,
+        15
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        20,
+        15,
+        5
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF025",
+    "orientation": "original",
+    "scenario_id": "MRF025-original",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        10,
+        5,
+        25
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        10,
+        5,
+        25
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF025",
+    "orientation": "mirror",
+    "scenario_id": "MRF025-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        20,
+        15,
+        5
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        30,
+        15,
+        5
+      ],
+      "outside_option": 5
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF026",
+    "orientation": "original",
+    "scenario_id": "MRF026-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        20,
+        5,
+        20
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        20,
+        5,
+        20
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF026",
+    "orientation": "mirror",
+    "scenario_id": "MRF026-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        30,
+        15,
+        5
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        30,
+        5,
+        15
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF027",
+    "orientation": "original",
+    "scenario_id": "MRF027-original",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        5,
+        20,
+        0
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        5,
+        20,
+        0
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF027",
+    "orientation": "mirror",
+    "scenario_id": "MRF027-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        30,
+        5,
+        15
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        25,
+        10,
+        20
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF028",
+    "orientation": "original",
+    "scenario_id": "MRF028-original",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        5,
+        30,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        5,
+        30,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF028",
+    "orientation": "mirror",
+    "scenario_id": "MRF028-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        25,
+        10,
+        20
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        15,
+        30,
+        15
+      ],
+      "outside_option": 10
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF029",
+    "orientation": "original",
+    "scenario_id": "MRF029-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        0,
+        0,
+        30
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        0,
+        0,
+        30
+      ],
+      "outside_option": 0
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF029",
+    "orientation": "mirror",
+    "scenario_id": "MRF029-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        15,
+        30,
+        15
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        15,
+        5,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF030",
+    "orientation": "original",
+    "scenario_id": "MRF030-original",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        0,
+        25,
+        0
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 155,
+      "marginals": [
+        0,
+        25,
+        0
+      ],
+      "outside_option": 15
+    },
+    "family_category": "tradeoffs",
+    "family_id": "MRF030",
+    "orientation": "mirror",
+    "scenario_id": "MRF030-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        15,
+        5,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        5,
+        30,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF031",
+    "orientation": "original",
+    "scenario_id": "MRF031-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        25,
+        20,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 75,
+      "marginals": [
+        25,
+        20,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF031",
+    "orientation": "mirror",
+    "scenario_id": "MRF031-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        5,
+        30,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        25,
+        10,
+        20
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF032",
+    "orientation": "original",
+    "scenario_id": "MRF032-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        30,
+        10,
+        10
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        30,
+        10,
+        10
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF032",
+    "orientation": "mirror",
+    "scenario_id": "MRF032-mirror",
+    "seller": {
+      "base": 65,
+      "marginals": [
+        25,
+        10,
+        20
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        0,
+        0,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF033",
+    "orientation": "original",
+    "scenario_id": "MRF033-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        0,
+        20,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        0,
+        20,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF033",
+    "orientation": "mirror",
+    "scenario_id": "MRF033-mirror",
+    "seller": {
+      "base": 125,
+      "marginals": [
+        0,
+        0,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        15,
+        5,
+        30
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF034",
+    "orientation": "original",
+    "scenario_id": "MRF034-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        25,
+        30,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        25,
+        30,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF034",
+    "orientation": "mirror",
+    "scenario_id": "MRF034-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        15,
+        5,
+        30
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        5,
+        10,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF035",
+    "orientation": "original",
+    "scenario_id": "MRF035-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        30,
+        20,
+        15
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        30,
+        20,
+        15
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF035",
+    "orientation": "mirror",
+    "scenario_id": "MRF035-mirror",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        5,
+        10,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        25,
+        15,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF036",
+    "orientation": "original",
+    "scenario_id": "MRF036-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        30,
+        30,
+        15
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 95,
+      "marginals": [
+        30,
+        30,
+        15
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF036",
+    "orientation": "mirror",
+    "scenario_id": "MRF036-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        25,
+        15,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        15,
+        0,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF037",
+    "orientation": "original",
+    "scenario_id": "MRF037-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        20,
+        30,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 80,
+      "marginals": [
+        20,
+        30,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF037",
+    "orientation": "mirror",
+    "scenario_id": "MRF037-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        15,
+        0,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        30,
+        0,
+        20
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF038",
+    "orientation": "original",
+    "scenario_id": "MRF038-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        0,
+        25,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 95,
+      "marginals": [
+        0,
+        25,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF038",
+    "orientation": "mirror",
+    "scenario_id": "MRF038-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        30,
+        0,
+        20
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        20,
+        15,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF039",
+    "orientation": "original",
+    "scenario_id": "MRF039-original",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        15,
+        15,
+        30
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        15,
+        15,
+        30
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF039",
+    "orientation": "mirror",
+    "scenario_id": "MRF039-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        20,
+        15,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        10,
+        30,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF040",
+    "orientation": "original",
+    "scenario_id": "MRF040-original",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        30,
+        25,
+        5
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        30,
+        25,
+        5
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF040",
+    "orientation": "mirror",
+    "scenario_id": "MRF040-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        10,
+        30,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        30,
+        10,
+        0
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF041",
+    "orientation": "original",
+    "scenario_id": "MRF041-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        30,
+        0,
+        25
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 95,
+      "marginals": [
+        30,
+        0,
+        25
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF041",
+    "orientation": "mirror",
+    "scenario_id": "MRF041-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        30,
+        10,
+        0
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        5,
+        0,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF042",
+    "orientation": "original",
+    "scenario_id": "MRF042-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        20,
+        5,
+        30
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        20,
+        5,
+        30
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF042",
+    "orientation": "mirror",
+    "scenario_id": "MRF042-mirror",
+    "seller": {
+      "base": 135,
+      "marginals": [
+        5,
+        0,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 145,
+      "marginals": [
+        5,
+        15,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF043",
+    "orientation": "original",
+    "scenario_id": "MRF043-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        20,
+        10,
+        5
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        20,
+        10,
+        5
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF043",
+    "orientation": "mirror",
+    "scenario_id": "MRF043-mirror",
+    "seller": {
+      "base": 75,
+      "marginals": [
+        5,
+        15,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        20,
+        0,
+        10
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF044",
+    "orientation": "original",
+    "scenario_id": "MRF044-original",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        25,
+        20,
+        10
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        25,
+        20,
+        10
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF044",
+    "orientation": "mirror",
+    "scenario_id": "MRF044-mirror",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        20,
+        0,
+        10
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        5,
+        20,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF045",
+    "orientation": "original",
+    "scenario_id": "MRF045-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        5,
+        25,
+        0
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        5,
+        25,
+        0
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF045",
+    "orientation": "mirror",
+    "scenario_id": "MRF045-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        5,
+        20,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        10,
+        10,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF046",
+    "orientation": "original",
+    "scenario_id": "MRF046-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        0,
+        10,
+        5
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        0,
+        10,
+        5
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF046",
+    "orientation": "mirror",
+    "scenario_id": "MRF046-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        10,
+        10,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        30,
+        30,
+        5
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF047",
+    "orientation": "original",
+    "scenario_id": "MRF047-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        20,
+        0,
+        15
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 105,
+      "marginals": [
+        20,
+        0,
+        15
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF047",
+    "orientation": "mirror",
+    "scenario_id": "MRF047-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        30,
+        30,
+        5
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        5,
+        30,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF048",
+    "orientation": "original",
+    "scenario_id": "MRF048-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        30,
+        0,
+        25
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        30,
+        0,
+        25
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF048",
+    "orientation": "mirror",
+    "scenario_id": "MRF048-mirror",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        5,
+        30,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        5,
+        5,
+        25
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF049",
+    "orientation": "original",
+    "scenario_id": "MRF049-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        25,
+        0,
+        5
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        25,
+        0,
+        5
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF049",
+    "orientation": "mirror",
+    "scenario_id": "MRF049-mirror",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        5,
+        5,
+        25
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        10,
+        25,
+        0
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF050",
+    "orientation": "original",
+    "scenario_id": "MRF050-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        30,
+        15,
+        30
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 70,
+      "marginals": [
+        30,
+        15,
+        30
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF050",
+    "orientation": "mirror",
+    "scenario_id": "MRF050-mirror",
+    "seller": {
+      "base": 75,
+      "marginals": [
+        10,
+        25,
+        0
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        15,
+        15,
+        15
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF051",
+    "orientation": "original",
+    "scenario_id": "MRF051-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        5,
+        10,
+        25
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        5,
+        10,
+        25
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF051",
+    "orientation": "mirror",
+    "scenario_id": "MRF051-mirror",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        15,
+        15,
+        15
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        15,
+        25,
+        5
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF052",
+    "orientation": "original",
+    "scenario_id": "MRF052-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        10,
+        15,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        10,
+        15,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF052",
+    "orientation": "mirror",
+    "scenario_id": "MRF052-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        15,
+        25,
+        5
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        30,
+        15,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF053",
+    "orientation": "original",
+    "scenario_id": "MRF053-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        20,
+        30,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        20,
+        30,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF053",
+    "orientation": "mirror",
+    "scenario_id": "MRF053-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        30,
+        15,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        5,
+        30,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF054",
+    "orientation": "original",
+    "scenario_id": "MRF054-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        0,
+        20,
+        30
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        0,
+        20,
+        30
+      ],
+      "outside_option": 0
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF054",
+    "orientation": "mirror",
+    "scenario_id": "MRF054-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        5,
+        30,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        5,
+        5,
+        25
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF055",
+    "orientation": "original",
+    "scenario_id": "MRF055-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        20,
+        5,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        20,
+        5,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF055",
+    "orientation": "mirror",
+    "scenario_id": "MRF055-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        5,
+        5,
+        25
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        5,
+        20,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF056",
+    "orientation": "original",
+    "scenario_id": "MRF056-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        0,
+        15,
+        5
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        0,
+        15,
+        5
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF056",
+    "orientation": "mirror",
+    "scenario_id": "MRF056-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        5,
+        20,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 140,
+      "marginals": [
+        15,
+        20,
+        15
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF057",
+    "orientation": "original",
+    "scenario_id": "MRF057-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        30,
+        10,
+        25
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 75,
+      "marginals": [
+        30,
+        10,
+        25
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF057",
+    "orientation": "mirror",
+    "scenario_id": "MRF057-mirror",
+    "seller": {
+      "base": 70,
+      "marginals": [
+        15,
+        20,
+        15
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        30,
+        25,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF058",
+    "orientation": "original",
+    "scenario_id": "MRF058-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        15,
+        15,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 95,
+      "marginals": [
+        15,
+        15,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF058",
+    "orientation": "mirror",
+    "scenario_id": "MRF058-mirror",
+    "seller": {
+      "base": 65,
+      "marginals": [
+        30,
+        25,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 150,
+      "marginals": [
+        0,
+        10,
+        5
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF059",
+    "orientation": "original",
+    "scenario_id": "MRF059-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        10,
+        20,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        10,
+        20,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF059",
+    "orientation": "mirror",
+    "scenario_id": "MRF059-mirror",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        0,
+        10,
+        5
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        5,
+        15,
+        30
+      ],
+      "outside_option": 5
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF060",
+    "orientation": "original",
+    "scenario_id": "MRF060-original",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        20,
+        30,
+        15
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 105,
+      "marginals": [
+        20,
+        30,
+        15
+      ],
+      "outside_option": 15
+    },
+    "family_category": "narrow_zone",
+    "family_id": "MRF060",
+    "orientation": "mirror",
+    "scenario_id": "MRF060-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        5,
+        15,
+        30
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 120,
+      "marginals": [
+        25,
+        10,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF061",
+    "orientation": "original",
+    "scenario_id": "MRF061-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        25,
+        15,
+        15
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        25,
+        15,
+        15
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF061",
+    "orientation": "mirror",
+    "scenario_id": "MRF061-mirror",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        25,
+        10,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        0,
+        5,
+        15
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF062",
+    "orientation": "original",
+    "scenario_id": "MRF062-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        5,
+        30,
+        10
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 95,
+      "marginals": [
+        5,
+        30,
+        10
+      ],
+      "outside_option": 0
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF062",
+    "orientation": "mirror",
+    "scenario_id": "MRF062-mirror",
+    "seller": {
+      "base": 130,
+      "marginals": [
+        0,
+        5,
+        15
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        20,
+        25,
+        5
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF063",
+    "orientation": "original",
+    "scenario_id": "MRF063-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        15,
+        25,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 105,
+      "marginals": [
+        15,
+        25,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF063",
+    "orientation": "mirror",
+    "scenario_id": "MRF063-mirror",
+    "seller": {
+      "base": 85,
+      "marginals": [
+        20,
+        25,
+        5
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        25,
+        15,
+        15
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF064",
+    "orientation": "original",
+    "scenario_id": "MRF064-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        20,
+        25,
+        20
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 75,
+      "marginals": [
+        20,
+        25,
+        20
+      ],
+      "outside_option": 5
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF064",
+    "orientation": "mirror",
+    "scenario_id": "MRF064-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        25,
+        15,
+        15
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        25,
+        20,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF065",
+    "orientation": "original",
+    "scenario_id": "MRF065-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        20,
+        10,
+        5
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        20,
+        10,
+        5
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF065",
+    "orientation": "mirror",
+    "scenario_id": "MRF065-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        25,
+        20,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        15,
+        25,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF066",
+    "orientation": "original",
+    "scenario_id": "MRF066-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        25,
+        10,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 85,
+      "marginals": [
+        25,
+        10,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF066",
+    "orientation": "mirror",
+    "scenario_id": "MRF066-mirror",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        15,
+        25,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        30,
+        30,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF067",
+    "orientation": "original",
+    "scenario_id": "MRF067-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        15,
+        15,
+        20
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 90,
+      "marginals": [
+        15,
+        15,
+        20
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF067",
+    "orientation": "mirror",
+    "scenario_id": "MRF067-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        30,
+        30,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        25,
+        10,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF068",
+    "orientation": "original",
+    "scenario_id": "MRF068-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        20,
+        0,
+        25
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 105,
+      "marginals": [
+        20,
+        0,
+        25
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF068",
+    "orientation": "mirror",
+    "scenario_id": "MRF068-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        25,
+        10,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        0,
+        10,
+        0
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF069",
+    "orientation": "original",
+    "scenario_id": "MRF069-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        10,
+        30,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 80,
+      "marginals": [
+        10,
+        30,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF069",
+    "orientation": "mirror",
+    "scenario_id": "MRF069-mirror",
+    "seller": {
+      "base": 140,
+      "marginals": [
+        0,
+        10,
+        0
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        20,
+        10,
+        25
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF070",
+    "orientation": "original",
+    "scenario_id": "MRF070-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        30,
+        30,
+        15
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 70,
+      "marginals": [
+        30,
+        30,
+        15
+      ],
+      "outside_option": 0
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF070",
+    "orientation": "mirror",
+    "scenario_id": "MRF070-mirror",
+    "seller": {
+      "base": 90,
+      "marginals": [
+        20,
+        10,
+        25
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        25,
+        0,
+        0
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF071",
+    "orientation": "original",
+    "scenario_id": "MRF071-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        30,
+        30,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 55,
+      "marginals": [
+        30,
+        30,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF071",
+    "orientation": "mirror",
+    "scenario_id": "MRF071-mirror",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        25,
+        0,
+        0
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        15,
+        0,
+        10
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF072",
+    "orientation": "original",
+    "scenario_id": "MRF072-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        25,
+        10,
+        30
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 80,
+      "marginals": [
+        25,
+        10,
+        30
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF072",
+    "orientation": "mirror",
+    "scenario_id": "MRF072-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        15,
+        0,
+        10
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        0,
+        5,
+        20
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF073",
+    "orientation": "original",
+    "scenario_id": "MRF073-original",
+    "seller": {
+      "base": 105,
+      "marginals": [
+        10,
+        5,
+        5
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        10,
+        5,
+        5
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF073",
+    "orientation": "mirror",
+    "scenario_id": "MRF073-mirror",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        0,
+        5,
+        20
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 125,
+      "marginals": [
+        5,
+        20,
+        30
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF074",
+    "orientation": "original",
+    "scenario_id": "MRF074-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        30,
+        30,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 55,
+      "marginals": [
+        30,
+        30,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF074",
+    "orientation": "mirror",
+    "scenario_id": "MRF074-mirror",
+    "seller": {
+      "base": 80,
+      "marginals": [
+        5,
+        20,
+        30
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        0,
+        25,
+        25
+      ],
+      "outside_option": 10
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF075",
+    "orientation": "original",
+    "scenario_id": "MRF075-original",
+    "seller": {
+      "base": 110,
+      "marginals": [
+        15,
+        20,
+        30
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 85,
+      "marginals": [
+        15,
+        20,
+        30
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF075",
+    "orientation": "mirror",
+    "scenario_id": "MRF075-mirror",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        0,
+        25,
+        25
+      ],
+      "outside_option": 10
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        25,
+        10,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF076",
+    "orientation": "original",
+    "scenario_id": "MRF076-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        15,
+        20,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 100,
+      "marginals": [
+        15,
+        20,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF076",
+    "orientation": "mirror",
+    "scenario_id": "MRF076-mirror",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        25,
+        10,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        5,
+        10,
+        0
+      ],
+      "outside_option": 15
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF077",
+    "orientation": "original",
+    "scenario_id": "MRF077-original",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        10,
+        0,
+        0
+      ],
+      "outside_option": 0
+    }
+  },
+  {
+    "buyer": {
+      "base": 135,
+      "marginals": [
+        10,
+        0,
+        0
+      ],
+      "outside_option": 0
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF077",
+    "orientation": "mirror",
+    "scenario_id": "MRF077-mirror",
+    "seller": {
+      "base": 130,
+      "marginals": [
+        5,
+        10,
+        0
+      ],
+      "outside_option": 15
+    }
+  },
+  {
+    "buyer": {
+      "base": 115,
+      "marginals": [
+        10,
+        5,
+        10
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF078",
+    "orientation": "original",
+    "scenario_id": "MRF078-original",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        0,
+        0,
+        30
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 130,
+      "marginals": [
+        0,
+        0,
+        30
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF078",
+    "orientation": "mirror",
+    "scenario_id": "MRF078-mirror",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        10,
+        5,
+        10
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        0,
+        25,
+        10
+      ],
+      "outside_option": 5
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF079",
+    "orientation": "original",
+    "scenario_id": "MRF079-original",
+    "seller": {
+      "base": 100,
+      "marginals": [
+        20,
+        30,
+        30
+      ],
+      "outside_option": 20
+    }
+  },
+  {
+    "buyer": {
+      "base": 80,
+      "marginals": [
+        20,
+        30,
+        30
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF079",
+    "orientation": "mirror",
+    "scenario_id": "MRF079-mirror",
+    "seller": {
+      "base": 115,
+      "marginals": [
+        0,
+        25,
+        10
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 110,
+      "marginals": [
+        10,
+        30,
+        15
+      ],
+      "outside_option": 20
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF080",
+    "orientation": "original",
+    "scenario_id": "MRF080-original",
+    "seller": {
+      "base": 120,
+      "marginals": [
+        30,
+        15,
+        20
+      ],
+      "outside_option": 5
+    }
+  },
+  {
+    "buyer": {
+      "base": 75,
+      "marginals": [
+        30,
+        15,
+        20
+      ],
+      "outside_option": 5
+    },
+    "family_category": "no_zone",
+    "family_id": "MRF080",
+    "orientation": "mirror",
+    "scenario_id": "MRF080-mirror",
+    "seller": {
+      "base": 95,
+      "marginals": [
+        10,
+        30,
+        15
+      ],
+      "outside_option": 20
+    }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "status": "unpublished preview",
+  "orientation_observed_only": [
+    [
+      "Original economy",
+      "476 / 480 completed",
+      13.04,
+      9.78
+    ],
+    [
+      "Mirrored economy",
+      "475 / 480 completed",
+      8.61,
+      12.89
+    ]
+  ],
+  "category_start_observed_gaps": [
+    [
+      "Tradeoffs \u00b7 buyer starts",
+      -1.33
+    ],
+    [
+      "Tradeoffs \u00b7 seller starts",
+      -1.07
+    ],
+    [
+      "Narrow zone \u00b7 buyer starts",
+      3.34
+    ],
+    [
+      "Narrow zone \u00b7 seller starts",
+      -3.56
+    ]
+  ],
+  "sample_legal_bounds": [
+    -2.2430555555555554,
+    1.0
+  ],
+  "approximate_population_bound_interval": [
+    -3.694153070916615,
+    2.421378323141497
+  ],
+  "primary_point_estimate": null,
+  "ordinary_primary_confidence_interval": null,
+  "completed": 951,
+  "unknown": 9,
+  "sources": [
+    "evidence/PRIMARY-v1.json",
+    "evidence/SECONDARY-RESULTS-v1.json"
+  ]
+}

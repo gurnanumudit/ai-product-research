@@ -1,0 +1,21 @@
+{
+  "sha256": {
+    "PROVENANCE.json": "60d35b19bb16a6798129277798ba368bb233006ef7e5aed9b674e40766231e92",
+    "README.md": "7f4af23e6026dcba1ea8ef1c553decb73076e4d22a310e4d960f005c9e1d1cf0",
+    "code/analysis_contract.py": "96b2529434335915969a7007e3aa3c5cd7673db33bc51772ba7ec2b55ffa4ab9",
+    "code/game.py": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c",
+    "code/mirror.py": "38bcc389dba1bd6daf380ec745f741172c595b8c8ac6ff74c04116b84c35501f",
+    "code/subgroup_uncertainty.py": "60a99ff6e2a2f1e50d5f328e712d81c916cba610bebb7c7ed7acd410225ad6de",
+    "data/methods.json": "fd0e1e8824072e83377cef6c5fdd5c601bdf1bcdfbb7acef7ed8517a19481f30",
+    "data/outcomes.json": "994525ab71efee7c794c2b1ccb3f6db5d6457a09bccf5dd54d7e2ce70a2318ee",
+    "data/scenarios.json": "bb3e4f5430ac8413fa024bba53325500143ee2db65776409e79c93874e99da77",
+    "data/schedule.json": "e7f2db664566ae301ca134e94cf44bc1624fdb36a04e572433b96b7c161d5060",
+    "reference/chart-data.json": "790e7a058b37cd0e8865d79dc3dfe119174001564ff9e6dd445f8acfb7c154db",
+    "reference/distribution-data.json": "834c8a08464eb741dd99eca9a5f143f37621cf8be38eadeb2855d1cfd33e1f25",
+    "reference/primary.json": "4ee40e268ab618c84524857a989a75b9053e7e55e774f17a549dcbad3571d875",
+    "reference/secondary.json": "d7e167a67ab72a1f70701c7c9e9a52c226038f857a5b252d4e8892afeb24951c",
+    "reference/uncertainty-data.json": "89d22277f516f61322f942548affcf8bb01eb784bb854485dc3125f8eaa9907e",
+    "reproduce.py": "a84aa65ac60af18a5afd5998bd02ca802c4b4581712824107cafbee601df70aa",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+  }
+}

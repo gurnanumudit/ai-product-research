@@ -1,0 +1,2992 @@
+{
+  "all_outcomes": {
+    "assigned": 960,
+    "completed": 951,
+    "unknown": 9,
+    "observed_only_not_primary": true,
+    "agreements": 608,
+    "agreement_rate_among_completed": 0.6393270241850684,
+    "harmful_agreements": 0,
+    "harmful_agreement_rate_among_completed": 0.0,
+    "harmful_agreement_rate_among_agreements": 0.0,
+    "terminal_reasons": {
+      "agreement": 608,
+      "walkaway": 343
+    },
+    "buyer_gain": {
+      "n": 951,
+      "mean": 10.825446898002102,
+      "median": 5,
+      "min": 0,
+      "max": 65,
+      "frequency": {
+        "0": 395,
+        "5": 138,
+        "10": 107,
+        "15": 68,
+        "20": 53,
+        "25": 62,
+        "30": 42,
+        "35": 33,
+        "40": 21,
+        "45": 9,
+        "50": 11,
+        "55": 7,
+        "60": 3,
+        "65": 2
+      }
+    },
+    "seller_gain": {
+      "n": 951,
+      "mean": 11.335436382754995,
+      "median": 5,
+      "min": 0,
+      "max": 70,
+      "frequency": {
+        "0": 393,
+        "5": 132,
+        "10": 103,
+        "15": 54,
+        "20": 60,
+        "25": 63,
+        "30": 54,
+        "35": 37,
+        "40": 24,
+        "45": 9,
+        "50": 11,
+        "55": 3,
+        "60": 3,
+        "65": 4,
+        "70": 1
+      }
+    },
+    "buyer_minus_seller_gap": {
+      "n": 951,
+      "mean": -0.5099894847528917,
+      "median": 0,
+      "min": -60,
+      "max": 55,
+      "frequency": {
+        "-60": 1,
+        "-55": 1,
+        "-50": 1,
+        "-45": 1,
+        "-40": 8,
+        "-35": 3,
+        "-30": 11,
+        "-25": 13,
+        "-20": 35,
+        "-15": 43,
+        "-10": 61,
+        "-5": 87,
+        "0": 443,
+        "5": 92,
+        "10": 59,
+        "15": 28,
+        "20": 28,
+        "25": 10,
+        "30": 10,
+        "35": 9,
+        "40": 5,
+        "45": 1,
+        "55": 1
+      }
+    },
+    "slots": {
+      "n": 951,
+      "mean": 11.68769716088328,
+      "median": 12,
+      "min": 9,
+      "max": 12,
+      "frequency": {
+        "9": 2,
+        "10": 6,
+        "11": 279,
+        "12": 664
+      }
+    }
+  },
+  "category_summary": [
+    {
+      "category": "narrow_zone",
+      "assigned": 360,
+      "completed": 355,
+      "unknown": 5,
+      "observed_only_not_primary": true,
+      "agreements": 257,
+      "agreement_rate_among_completed": 0.723943661971831,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 257,
+        "walkaway": 98
+      },
+      "buyer_gain": {
+        "n": 355,
+        "mean": 4.253521126760563,
+        "median": 5,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 150,
+          "5": 120,
+          "10": 73,
+          "15": 12
+        }
+      },
+      "seller_gain": {
+        "n": 355,
+        "mean": 4.408450704225352,
+        "median": 5,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 146,
+          "5": 120,
+          "10": 74,
+          "15": 15
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 355,
+        "mean": -0.15492957746478872,
+        "median": 0,
+        "min": -15,
+        "max": 15,
+        "frequency": {
+          "-15": 15,
+          "-10": 32,
+          "-5": 47,
+          "0": 163,
+          "5": 63,
+          "10": 23,
+          "15": 12
+        }
+      },
+      "slots": {
+        "n": 355,
+        "mean": 11.954929577464789,
+        "median": 12,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 16,
+          "12": 339
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "assigned": 240,
+      "completed": 239,
+      "unknown": 1,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 239
+      },
+      "buyer_gain": {
+        "n": 239,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 239
+        }
+      },
+      "seller_gain": {
+        "n": 239,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 239
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 239,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 239
+        }
+      },
+      "slots": {
+        "n": 239,
+        "mean": 12,
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 239
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "assigned": 360,
+      "completed": 357,
+      "unknown": 3,
+      "observed_only_not_primary": true,
+      "agreements": 351,
+      "agreement_rate_among_completed": 0.9831932773109243,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 351,
+        "walkaway": 6
+      },
+      "buyer_gain": {
+        "n": 357,
+        "mean": 24.607843137254903,
+        "median": 25,
+        "min": 0,
+        "max": 65,
+        "frequency": {
+          "0": 6,
+          "5": 18,
+          "10": 34,
+          "15": 56,
+          "20": 53,
+          "25": 62,
+          "30": 42,
+          "35": 33,
+          "40": 21,
+          "45": 9,
+          "50": 11,
+          "55": 7,
+          "60": 3,
+          "65": 2
+        }
+      },
+      "seller_gain": {
+        "n": 357,
+        "mean": 25.81232492997199,
+        "median": 25,
+        "min": 0,
+        "max": 70,
+        "frequency": {
+          "0": 8,
+          "5": 12,
+          "10": 29,
+          "15": 39,
+          "20": 60,
+          "25": 63,
+          "30": 54,
+          "35": 37,
+          "40": 24,
+          "45": 9,
+          "50": 11,
+          "55": 3,
+          "60": 3,
+          "65": 4,
+          "70": 1
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 357,
+        "mean": -1.2044817927170868,
+        "median": 0,
+        "min": -60,
+        "max": 55,
+        "frequency": {
+          "-60": 1,
+          "-55": 1,
+          "-50": 1,
+          "-45": 1,
+          "-40": 8,
+          "-35": 3,
+          "-30": 11,
+          "-25": 13,
+          "-20": 35,
+          "-15": 28,
+          "-10": 29,
+          "-5": 40,
+          "0": 41,
+          "5": 29,
+          "10": 36,
+          "15": 16,
+          "20": 28,
+          "25": 10,
+          "30": 10,
+          "35": 9,
+          "40": 5,
+          "45": 1,
+          "55": 1
+        }
+      },
+      "slots": {
+        "n": 357,
+        "mean": 11.212885154061624,
+        "median": 11,
+        "min": 9,
+        "max": 12,
+        "frequency": {
+          "9": 2,
+          "10": 6,
+          "11": 263,
+          "12": 86
+        }
+      }
+    }
+  ],
+  "category_start_summary": [
+    {
+      "category": "narrow_zone",
+      "first_mover": "buyer",
+      "assigned": 180,
+      "completed": 175,
+      "unknown": 5,
+      "observed_only_not_primary": true,
+      "agreements": 137,
+      "agreement_rate_among_completed": 0.7828571428571428,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 137,
+        "walkaway": 38
+      },
+      "buyer_gain": {
+        "n": 175,
+        "mean": 6.228571428571429,
+        "median": 5,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 38,
+          "5": 68,
+          "10": 57,
+          "15": 12
+        }
+      },
+      "seller_gain": {
+        "n": 175,
+        "mean": 2.8857142857142857,
+        "median": 5,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 86,
+          "5": 77,
+          "10": 12
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 175,
+        "mean": 3.342857142857143,
+        "median": 0,
+        "min": -5,
+        "max": 15,
+        "frequency": {
+          "-5": 12,
+          "0": 81,
+          "5": 47,
+          "10": 23,
+          "15": 12
+        }
+      },
+      "slots": {
+        "n": 175,
+        "mean": 11.96,
+        "median": 12,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 7,
+          "12": 168
+        }
+      }
+    },
+    {
+      "category": "narrow_zone",
+      "first_mover": "seller",
+      "assigned": 180,
+      "completed": 180,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 120,
+      "agreement_rate_among_completed": 0.6666666666666666,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 120,
+        "walkaway": 60
+      },
+      "buyer_gain": {
+        "n": 180,
+        "mean": 2.3333333333333335,
+        "median": 0.0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 112,
+          "5": 52,
+          "10": 16
+        }
+      },
+      "seller_gain": {
+        "n": 180,
+        "mean": 5.888888888888889,
+        "median": 5.0,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 60,
+          "5": 43,
+          "10": 62,
+          "15": 15
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 180,
+        "mean": -3.5555555555555554,
+        "median": 0.0,
+        "min": -15,
+        "max": 5,
+        "frequency": {
+          "-15": 15,
+          "-10": 32,
+          "-5": 35,
+          "0": 82,
+          "5": 16
+        }
+      },
+      "slots": {
+        "n": 180,
+        "mean": 11.95,
+        "median": 12.0,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 9,
+          "12": 171
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "first_mover": "buyer",
+      "assigned": 120,
+      "completed": 119,
+      "unknown": 1,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 119
+      },
+      "buyer_gain": {
+        "n": 119,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 119
+        }
+      },
+      "seller_gain": {
+        "n": 119,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 119
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 119,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 119
+        }
+      },
+      "slots": {
+        "n": 119,
+        "mean": 12,
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 119
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "first_mover": "seller",
+      "assigned": 120,
+      "completed": 120,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 120
+      },
+      "buyer_gain": {
+        "n": 120,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 120
+        }
+      },
+      "seller_gain": {
+        "n": 120,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 120
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 120,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 120
+        }
+      },
+      "slots": {
+        "n": 120,
+        "mean": 12,
+        "median": 12.0,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 120
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "first_mover": "buyer",
+      "assigned": 180,
+      "completed": 180,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 180,
+      "agreement_rate_among_completed": 1.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 180
+      },
+      "buyer_gain": {
+        "n": 180,
+        "mean": 24.805555555555557,
+        "median": 25.0,
+        "min": 5,
+        "max": 65,
+        "frequency": {
+          "5": 12,
+          "10": 19,
+          "15": 25,
+          "20": 30,
+          "25": 28,
+          "30": 23,
+          "35": 15,
+          "40": 11,
+          "45": 4,
+          "50": 8,
+          "55": 1,
+          "60": 2,
+          "65": 2
+        }
+      },
+      "seller_gain": {
+        "n": 180,
+        "mean": 26.13888888888889,
+        "median": 25.0,
+        "min": 0,
+        "max": 70,
+        "frequency": {
+          "0": 2,
+          "5": 7,
+          "10": 13,
+          "15": 18,
+          "20": 34,
+          "25": 31,
+          "30": 27,
+          "35": 19,
+          "40": 13,
+          "45": 6,
+          "50": 6,
+          "55": 1,
+          "60": 1,
+          "65": 1,
+          "70": 1
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 180,
+        "mean": -1.3333333333333333,
+        "median": -2.5,
+        "min": -60,
+        "max": 55,
+        "frequency": {
+          "-60": 1,
+          "-55": 1,
+          "-40": 3,
+          "-35": 1,
+          "-30": 7,
+          "-25": 7,
+          "-20": 21,
+          "-15": 15,
+          "-10": 13,
+          "-5": 21,
+          "0": 13,
+          "5": 17,
+          "10": 19,
+          "15": 10,
+          "20": 13,
+          "25": 5,
+          "30": 3,
+          "35": 4,
+          "40": 5,
+          "55": 1
+        }
+      },
+      "slots": {
+        "n": 180,
+        "mean": 11.166666666666666,
+        "median": 11.0,
+        "min": 10,
+        "max": 12,
+        "frequency": {
+          "10": 5,
+          "11": 140,
+          "12": 35
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "first_mover": "seller",
+      "assigned": 180,
+      "completed": 177,
+      "unknown": 3,
+      "observed_only_not_primary": true,
+      "agreements": 171,
+      "agreement_rate_among_completed": 0.9661016949152542,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 171,
+        "walkaway": 6
+      },
+      "buyer_gain": {
+        "n": 177,
+        "mean": 24.406779661016948,
+        "median": 25,
+        "min": 0,
+        "max": 60,
+        "frequency": {
+          "0": 6,
+          "5": 6,
+          "10": 15,
+          "15": 31,
+          "20": 23,
+          "25": 34,
+          "30": 19,
+          "35": 18,
+          "40": 10,
+          "45": 5,
+          "50": 3,
+          "55": 6,
+          "60": 1
+        }
+      },
+      "seller_gain": {
+        "n": 177,
+        "mean": 25.480225988700564,
+        "median": 25,
+        "min": 0,
+        "max": 65,
+        "frequency": {
+          "0": 6,
+          "5": 5,
+          "10": 16,
+          "15": 21,
+          "20": 26,
+          "25": 32,
+          "30": 27,
+          "35": 18,
+          "40": 11,
+          "45": 3,
+          "50": 5,
+          "55": 2,
+          "60": 2,
+          "65": 3
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 177,
+        "mean": -1.073446327683616,
+        "median": 0,
+        "min": -50,
+        "max": 45,
+        "frequency": {
+          "-50": 1,
+          "-45": 1,
+          "-40": 5,
+          "-35": 2,
+          "-30": 4,
+          "-25": 6,
+          "-20": 14,
+          "-15": 13,
+          "-10": 16,
+          "-5": 19,
+          "0": 28,
+          "5": 12,
+          "10": 17,
+          "15": 6,
+          "20": 15,
+          "25": 5,
+          "30": 7,
+          "35": 5,
+          "45": 1
+        }
+      },
+      "slots": {
+        "n": 177,
+        "mean": 11.259887005649718,
+        "median": 11,
+        "min": 9,
+        "max": 12,
+        "frequency": {
+          "9": 2,
+          "10": 1,
+          "11": 123,
+          "12": 51
+        }
+      }
+    }
+  ],
+  "orientation_summary": [
+    {
+      "orientation": "mirror",
+      "assigned": 480,
+      "completed": 475,
+      "unknown": 5,
+      "observed_only_not_primary": true,
+      "agreements": 298,
+      "agreement_rate_among_completed": 0.6273684210526316,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 298,
+        "walkaway": 177
+      },
+      "buyer_gain": {
+        "n": 475,
+        "mean": 8.610526315789473,
+        "median": 5,
+        "min": 0,
+        "max": 40,
+        "frequency": {
+          "0": 201,
+          "5": 77,
+          "10": 57,
+          "15": 45,
+          "20": 33,
+          "25": 30,
+          "30": 17,
+          "35": 12,
+          "40": 3
+        }
+      },
+      "seller_gain": {
+        "n": 475,
+        "mean": 12.894736842105264,
+        "median": 5,
+        "min": 0,
+        "max": 70,
+        "frequency": {
+          "0": 202,
+          "5": 61,
+          "10": 46,
+          "15": 20,
+          "20": 16,
+          "25": 33,
+          "30": 21,
+          "35": 27,
+          "40": 20,
+          "45": 7,
+          "50": 11,
+          "55": 3,
+          "60": 3,
+          "65": 4,
+          "70": 1
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 475,
+        "mean": -4.28421052631579,
+        "median": 0,
+        "min": -60,
+        "max": 30,
+        "frequency": {
+          "-60": 1,
+          "-55": 1,
+          "-50": 1,
+          "-45": 1,
+          "-40": 8,
+          "-35": 3,
+          "-30": 9,
+          "-25": 13,
+          "-20": 28,
+          "-15": 23,
+          "-10": 33,
+          "-5": 55,
+          "0": 225,
+          "5": 36,
+          "10": 19,
+          "15": 11,
+          "20": 7,
+          "30": 1
+        }
+      },
+      "slots": {
+        "n": 475,
+        "mean": 11.707368421052632,
+        "median": 12,
+        "min": 10,
+        "max": 12,
+        "frequency": {
+          "10": 3,
+          "11": 133,
+          "12": 339
+        }
+      }
+    },
+    {
+      "orientation": "original",
+      "assigned": 480,
+      "completed": 476,
+      "unknown": 4,
+      "observed_only_not_primary": true,
+      "agreements": 310,
+      "agreement_rate_among_completed": 0.6512605042016807,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 310,
+        "walkaway": 166
+      },
+      "buyer_gain": {
+        "n": 476,
+        "mean": 13.035714285714286,
+        "median": 5.0,
+        "min": 0,
+        "max": 65,
+        "frequency": {
+          "0": 194,
+          "5": 61,
+          "10": 50,
+          "15": 23,
+          "20": 20,
+          "25": 32,
+          "30": 25,
+          "35": 21,
+          "40": 18,
+          "45": 9,
+          "50": 11,
+          "55": 7,
+          "60": 3,
+          "65": 2
+        }
+      },
+      "seller_gain": {
+        "n": 476,
+        "mean": 9.779411764705882,
+        "median": 5.0,
+        "min": 0,
+        "max": 45,
+        "frequency": {
+          "0": 191,
+          "5": 71,
+          "10": 57,
+          "15": 34,
+          "20": 44,
+          "25": 30,
+          "30": 33,
+          "35": 10,
+          "40": 4,
+          "45": 2
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 476,
+        "mean": 3.2563025210084033,
+        "median": 0.0,
+        "min": -30,
+        "max": 55,
+        "frequency": {
+          "-30": 2,
+          "-20": 7,
+          "-15": 20,
+          "-10": 28,
+          "-5": 32,
+          "0": 218,
+          "5": 56,
+          "10": 40,
+          "15": 17,
+          "20": 21,
+          "25": 10,
+          "30": 9,
+          "35": 9,
+          "40": 5,
+          "45": 1,
+          "55": 1
+        }
+      },
+      "slots": {
+        "n": 476,
+        "mean": 11.668067226890756,
+        "median": 12.0,
+        "min": 9,
+        "max": 12,
+        "frequency": {
+          "9": 2,
+          "10": 3,
+          "11": 146,
+          "12": 325
+        }
+      }
+    }
+  ],
+  "category_orientation_start_summary": [
+    {
+      "category": "narrow_zone",
+      "orientation": "mirror",
+      "first_mover": "buyer",
+      "assigned": 90,
+      "completed": 88,
+      "unknown": 2,
+      "observed_only_not_primary": true,
+      "agreements": 72,
+      "agreement_rate_among_completed": 0.8181818181818182,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 72,
+        "walkaway": 16
+      },
+      "buyer_gain": {
+        "n": 88,
+        "mean": 6.306818181818182,
+        "median": 5.0,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 16,
+          "5": 39,
+          "10": 27,
+          "15": 6
+        }
+      },
+      "seller_gain": {
+        "n": 88,
+        "mean": 3.125,
+        "median": 5.0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 41,
+          "5": 39,
+          "10": 8
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 88,
+        "mean": 3.1818181818181817,
+        "median": 0.0,
+        "min": -5,
+        "max": 15,
+        "frequency": {
+          "-5": 8,
+          "0": 40,
+          "5": 22,
+          "10": 12,
+          "15": 6
+        }
+      },
+      "slots": {
+        "n": 88,
+        "mean": 11.965909090909092,
+        "median": 12.0,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 3,
+          "12": 85
+        }
+      }
+    },
+    {
+      "category": "narrow_zone",
+      "orientation": "mirror",
+      "first_mover": "seller",
+      "assigned": 90,
+      "completed": 90,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 54,
+      "agreement_rate_among_completed": 0.6,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 54,
+        "walkaway": 36
+      },
+      "buyer_gain": {
+        "n": 90,
+        "mean": 2.0555555555555554,
+        "median": 0.0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 60,
+          "5": 23,
+          "10": 7
+        }
+      },
+      "seller_gain": {
+        "n": 90,
+        "mean": 5.333333333333333,
+        "median": 5.0,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 36,
+          "5": 18,
+          "10": 30,
+          "15": 6
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 90,
+        "mean": -3.2777777777777777,
+        "median": 0.0,
+        "min": -15,
+        "max": 5,
+        "frequency": {
+          "-15": 6,
+          "-10": 16,
+          "-5": 16,
+          "0": 45,
+          "5": 7
+        }
+      },
+      "slots": {
+        "n": 90,
+        "mean": 11.944444444444445,
+        "median": 12.0,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 5,
+          "12": 85
+        }
+      }
+    },
+    {
+      "category": "narrow_zone",
+      "orientation": "original",
+      "first_mover": "buyer",
+      "assigned": 90,
+      "completed": 87,
+      "unknown": 3,
+      "observed_only_not_primary": true,
+      "agreements": 65,
+      "agreement_rate_among_completed": 0.7471264367816092,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "walkaway": 22,
+        "agreement": 65
+      },
+      "buyer_gain": {
+        "n": 87,
+        "mean": 6.149425287356322,
+        "median": 5,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 22,
+          "5": 29,
+          "10": 30,
+          "15": 6
+        }
+      },
+      "seller_gain": {
+        "n": 87,
+        "mean": 2.6436781609195403,
+        "median": 0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 45,
+          "5": 38,
+          "10": 4
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 87,
+        "mean": 3.5057471264367814,
+        "median": 0,
+        "min": -5,
+        "max": 15,
+        "frequency": {
+          "-5": 4,
+          "0": 41,
+          "5": 25,
+          "10": 11,
+          "15": 6
+        }
+      },
+      "slots": {
+        "n": 87,
+        "mean": 11.954022988505747,
+        "median": 12,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 4,
+          "12": 83
+        }
+      }
+    },
+    {
+      "category": "narrow_zone",
+      "orientation": "original",
+      "first_mover": "seller",
+      "assigned": 90,
+      "completed": 90,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 66,
+      "agreement_rate_among_completed": 0.7333333333333333,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 66,
+        "walkaway": 24
+      },
+      "buyer_gain": {
+        "n": 90,
+        "mean": 2.611111111111111,
+        "median": 0.0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 52,
+          "5": 29,
+          "10": 9
+        }
+      },
+      "seller_gain": {
+        "n": 90,
+        "mean": 6.444444444444445,
+        "median": 5.0,
+        "min": 0,
+        "max": 15,
+        "frequency": {
+          "0": 24,
+          "5": 25,
+          "10": 32,
+          "15": 9
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 90,
+        "mean": -3.8333333333333335,
+        "median": 0.0,
+        "min": -15,
+        "max": 5,
+        "frequency": {
+          "-15": 9,
+          "-10": 16,
+          "-5": 19,
+          "0": 37,
+          "5": 9
+        }
+      },
+      "slots": {
+        "n": 90,
+        "mean": 11.955555555555556,
+        "median": 12.0,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 4,
+          "12": 86
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "orientation": "mirror",
+      "first_mover": "buyer",
+      "assigned": 60,
+      "completed": 59,
+      "unknown": 1,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 59
+      },
+      "buyer_gain": {
+        "n": 59,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 59
+        }
+      },
+      "seller_gain": {
+        "n": 59,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 59
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 59,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 59
+        }
+      },
+      "slots": {
+        "n": 59,
+        "mean": 12,
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 59
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "orientation": "mirror",
+      "first_mover": "seller",
+      "assigned": 60,
+      "completed": 60,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 60
+      },
+      "buyer_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "seller_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "slots": {
+        "n": 60,
+        "mean": 12,
+        "median": 12.0,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 60
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "orientation": "original",
+      "first_mover": "buyer",
+      "assigned": 60,
+      "completed": 60,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 60
+      },
+      "buyer_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "seller_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "slots": {
+        "n": 60,
+        "mean": 12,
+        "median": 12.0,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 60
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "orientation": "original",
+      "first_mover": "seller",
+      "assigned": 60,
+      "completed": 60,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 0,
+      "agreement_rate_among_completed": 0.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": null,
+      "terminal_reasons": {
+        "walkaway": 60
+      },
+      "buyer_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "seller_gain": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 60,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 60
+        }
+      },
+      "slots": {
+        "n": 60,
+        "mean": 12,
+        "median": 12.0,
+        "min": 12,
+        "max": 12,
+        "frequency": {
+          "12": 60
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "orientation": "mirror",
+      "first_mover": "buyer",
+      "assigned": 90,
+      "completed": 90,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 90,
+      "agreement_rate_among_completed": 1.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 90
+      },
+      "buyer_gain": {
+        "n": 90,
+        "mean": 18.77777777777778,
+        "median": 20.0,
+        "min": 5,
+        "max": 40,
+        "frequency": {
+          "5": 11,
+          "10": 15,
+          "15": 16,
+          "20": 20,
+          "25": 10,
+          "30": 10,
+          "35": 5,
+          "40": 3
+        }
+      },
+      "seller_gain": {
+        "n": 90,
+        "mean": 31,
+        "median": 30.0,
+        "min": 5,
+        "max": 70,
+        "frequency": {
+          "5": 4,
+          "10": 3,
+          "15": 5,
+          "20": 9,
+          "25": 18,
+          "30": 10,
+          "35": 15,
+          "40": 12,
+          "45": 4,
+          "50": 6,
+          "55": 1,
+          "60": 1,
+          "65": 1,
+          "70": 1
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 90,
+        "mean": -12.222222222222221,
+        "median": -15.0,
+        "min": -60,
+        "max": 30,
+        "frequency": {
+          "-60": 1,
+          "-55": 1,
+          "-40": 3,
+          "-35": 1,
+          "-30": 6,
+          "-25": 7,
+          "-20": 19,
+          "-15": 9,
+          "-10": 7,
+          "-5": 16,
+          "0": 5,
+          "5": 4,
+          "10": 5,
+          "15": 2,
+          "20": 3,
+          "30": 1
+        }
+      },
+      "slots": {
+        "n": 90,
+        "mean": 11.166666666666666,
+        "median": 11.0,
+        "min": 10,
+        "max": 12,
+        "frequency": {
+          "10": 3,
+          "11": 69,
+          "12": 18
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "orientation": "mirror",
+      "first_mover": "seller",
+      "assigned": 90,
+      "completed": 88,
+      "unknown": 2,
+      "observed_only_not_primary": true,
+      "agreements": 82,
+      "agreement_rate_among_completed": 0.9318181818181818,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 82,
+        "walkaway": 6
+      },
+      "buyer_gain": {
+        "n": 88,
+        "mean": 18.863636363636363,
+        "median": 20.0,
+        "min": 0,
+        "max": 35,
+        "frequency": {
+          "0": 6,
+          "5": 4,
+          "10": 8,
+          "15": 23,
+          "20": 13,
+          "25": 20,
+          "30": 7,
+          "35": 7
+        }
+      },
+      "seller_gain": {
+        "n": 88,
+        "mean": 29.318181818181817,
+        "median": 30.0,
+        "min": 0,
+        "max": 65,
+        "frequency": {
+          "0": 6,
+          "10": 5,
+          "15": 9,
+          "20": 7,
+          "25": 15,
+          "30": 11,
+          "35": 12,
+          "40": 8,
+          "45": 3,
+          "50": 5,
+          "55": 2,
+          "60": 2,
+          "65": 3
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 88,
+        "mean": -10.454545454545455,
+        "median": -10.0,
+        "min": -50,
+        "max": 20,
+        "frequency": {
+          "-50": 1,
+          "-45": 1,
+          "-40": 5,
+          "-35": 2,
+          "-30": 3,
+          "-25": 6,
+          "-20": 9,
+          "-15": 8,
+          "-10": 10,
+          "-5": 15,
+          "0": 16,
+          "5": 3,
+          "10": 2,
+          "15": 3,
+          "20": 4
+        }
+      },
+      "slots": {
+        "n": 88,
+        "mean": 11.363636363636363,
+        "median": 11.0,
+        "min": 11,
+        "max": 12,
+        "frequency": {
+          "11": 56,
+          "12": 32
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "orientation": "original",
+      "first_mover": "buyer",
+      "assigned": 90,
+      "completed": 90,
+      "unknown": 0,
+      "observed_only_not_primary": true,
+      "agreements": 90,
+      "agreement_rate_among_completed": 1.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 90
+      },
+      "buyer_gain": {
+        "n": 90,
+        "mean": 30.833333333333332,
+        "median": 30.0,
+        "min": 5,
+        "max": 65,
+        "frequency": {
+          "5": 1,
+          "10": 4,
+          "15": 9,
+          "20": 10,
+          "25": 18,
+          "30": 13,
+          "35": 10,
+          "40": 8,
+          "45": 4,
+          "50": 8,
+          "55": 1,
+          "60": 2,
+          "65": 2
+        }
+      },
+      "seller_gain": {
+        "n": 90,
+        "mean": 21.27777777777778,
+        "median": 20.0,
+        "min": 0,
+        "max": 45,
+        "frequency": {
+          "0": 2,
+          "5": 3,
+          "10": 10,
+          "15": 13,
+          "20": 25,
+          "25": 13,
+          "30": 17,
+          "35": 4,
+          "40": 1,
+          "45": 2
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 90,
+        "mean": 9.555555555555555,
+        "median": 10.0,
+        "min": -30,
+        "max": 55,
+        "frequency": {
+          "-30": 1,
+          "-20": 2,
+          "-15": 6,
+          "-10": 6,
+          "-5": 5,
+          "0": 8,
+          "5": 13,
+          "10": 14,
+          "15": 8,
+          "20": 10,
+          "25": 5,
+          "30": 2,
+          "35": 4,
+          "40": 5,
+          "55": 1
+        }
+      },
+      "slots": {
+        "n": 90,
+        "mean": 11.166666666666666,
+        "median": 11.0,
+        "min": 10,
+        "max": 12,
+        "frequency": {
+          "10": 2,
+          "11": 71,
+          "12": 17
+        }
+      }
+    },
+    {
+      "category": "tradeoffs",
+      "orientation": "original",
+      "first_mover": "seller",
+      "assigned": 90,
+      "completed": 89,
+      "unknown": 1,
+      "observed_only_not_primary": true,
+      "agreements": 89,
+      "agreement_rate_among_completed": 1.0,
+      "harmful_agreements": 0,
+      "harmful_agreement_rate_among_completed": 0.0,
+      "harmful_agreement_rate_among_agreements": 0.0,
+      "terminal_reasons": {
+        "agreement": 89
+      },
+      "buyer_gain": {
+        "n": 89,
+        "mean": 29.8876404494382,
+        "median": 30,
+        "min": 5,
+        "max": 60,
+        "frequency": {
+          "5": 2,
+          "10": 7,
+          "15": 8,
+          "20": 10,
+          "25": 14,
+          "30": 12,
+          "35": 11,
+          "40": 10,
+          "45": 5,
+          "50": 3,
+          "55": 6,
+          "60": 1
+        }
+      },
+      "seller_gain": {
+        "n": 89,
+        "mean": 21.685393258426966,
+        "median": 20,
+        "min": 5,
+        "max": 40,
+        "frequency": {
+          "5": 5,
+          "10": 11,
+          "15": 12,
+          "20": 19,
+          "25": 17,
+          "30": 16,
+          "35": 6,
+          "40": 3
+        }
+      },
+      "buyer_minus_seller_gap": {
+        "n": 89,
+        "mean": 8.202247191011235,
+        "median": 10,
+        "min": -30,
+        "max": 45,
+        "frequency": {
+          "-30": 1,
+          "-20": 5,
+          "-15": 5,
+          "-10": 6,
+          "-5": 4,
+          "0": 12,
+          "5": 9,
+          "10": 15,
+          "15": 3,
+          "20": 11,
+          "25": 5,
+          "30": 7,
+          "35": 5,
+          "45": 1
+        }
+      },
+      "slots": {
+        "n": 89,
+        "mean": 11.157303370786517,
+        "median": 11,
+        "min": 9,
+        "max": 12,
+        "frequency": {
+          "9": 2,
+          "10": 1,
+          "11": 67,
+          "12": 19
+        }
+      }
+    }
+  ],
+  "family_summaries": [
+    {
+      "family_id": "MRF001",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -8.333333333333334,
+      "observed_only_partial_mean_gap": -8.333333333333334,
+      "legal_lower_mean": -8.333333333333334,
+      "legal_upper_mean": -8.333333333333334
+    },
+    {
+      "family_id": "MRF002",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -1.6666666666666667,
+      "observed_only_partial_mean_gap": -1.6666666666666667,
+      "legal_lower_mean": -1.6666666666666667,
+      "legal_upper_mean": -1.6666666666666667
+    },
+    {
+      "family_id": "MRF003",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 7.5,
+      "observed_only_partial_mean_gap": 7.5,
+      "legal_lower_mean": 7.5,
+      "legal_upper_mean": 7.5
+    },
+    {
+      "family_id": "MRF004",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 3.3333333333333335,
+      "observed_only_partial_mean_gap": 3.3333333333333335,
+      "legal_lower_mean": 3.3333333333333335,
+      "legal_upper_mean": 3.3333333333333335
+    },
+    {
+      "family_id": "MRF005",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 4.583333333333333,
+      "observed_only_partial_mean_gap": 4.583333333333333,
+      "legal_lower_mean": 4.583333333333333,
+      "legal_upper_mean": 4.583333333333333
+    },
+    {
+      "family_id": "MRF006",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -3.3333333333333335,
+      "observed_only_partial_mean_gap": -3.3333333333333335,
+      "legal_lower_mean": -3.3333333333333335,
+      "legal_upper_mean": -3.3333333333333335
+    },
+    {
+      "family_id": "MRF007",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -3.3333333333333335,
+      "observed_only_partial_mean_gap": -3.3333333333333335,
+      "legal_lower_mean": -3.3333333333333335,
+      "legal_upper_mean": -3.3333333333333335
+    },
+    {
+      "family_id": "MRF008",
+      "category": "tradeoffs",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": -0.45454545454545453,
+      "legal_lower_mean": -12.916666666666666,
+      "legal_upper_mean": 11.666666666666666
+    },
+    {
+      "family_id": "MRF009",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -1.6666666666666667,
+      "observed_only_partial_mean_gap": -1.6666666666666667,
+      "legal_lower_mean": -1.6666666666666667,
+      "legal_upper_mean": -1.6666666666666667
+    },
+    {
+      "family_id": "MRF010",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 2.5,
+      "observed_only_partial_mean_gap": 2.5,
+      "legal_lower_mean": 2.5,
+      "legal_upper_mean": 2.5
+    },
+    {
+      "family_id": "MRF011",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.6666666666666667,
+      "observed_only_partial_mean_gap": 1.6666666666666667,
+      "legal_lower_mean": 1.6666666666666667,
+      "legal_upper_mean": 1.6666666666666667
+    },
+    {
+      "family_id": "MRF012",
+      "category": "tradeoffs",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": -2.727272727272727,
+      "legal_lower_mean": -13.75,
+      "legal_upper_mean": 7.083333333333333
+    },
+    {
+      "family_id": "MRF013",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -4.166666666666667,
+      "observed_only_partial_mean_gap": -4.166666666666667,
+      "legal_lower_mean": -4.166666666666667,
+      "legal_upper_mean": -4.166666666666667
+    },
+    {
+      "family_id": "MRF014",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.25,
+      "observed_only_partial_mean_gap": 1.25,
+      "legal_lower_mean": 1.25,
+      "legal_upper_mean": 1.25
+    },
+    {
+      "family_id": "MRF015",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 5.833333333333333,
+      "observed_only_partial_mean_gap": 5.833333333333333,
+      "legal_lower_mean": 5.833333333333333,
+      "legal_upper_mean": 5.833333333333333
+    },
+    {
+      "family_id": "MRF016",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 3.3333333333333335,
+      "observed_only_partial_mean_gap": 3.3333333333333335,
+      "legal_lower_mean": 3.3333333333333335,
+      "legal_upper_mean": 3.3333333333333335
+    },
+    {
+      "family_id": "MRF017",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -4.166666666666667,
+      "observed_only_partial_mean_gap": -4.166666666666667,
+      "legal_lower_mean": -4.166666666666667,
+      "legal_upper_mean": -4.166666666666667
+    },
+    {
+      "family_id": "MRF018",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.8333333333333334,
+      "observed_only_partial_mean_gap": -0.8333333333333334,
+      "legal_lower_mean": -0.8333333333333334,
+      "legal_upper_mean": -0.8333333333333334
+    },
+    {
+      "family_id": "MRF019",
+      "category": "tradeoffs",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": -10.454545454545455,
+      "legal_lower_mean": -23.333333333333332,
+      "legal_upper_mean": 1.25
+    },
+    {
+      "family_id": "MRF020",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -1.6666666666666667,
+      "observed_only_partial_mean_gap": -1.6666666666666667,
+      "legal_lower_mean": -1.6666666666666667,
+      "legal_upper_mean": -1.6666666666666667
+    },
+    {
+      "family_id": "MRF021",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 2.9166666666666665,
+      "observed_only_partial_mean_gap": 2.9166666666666665,
+      "legal_lower_mean": 2.9166666666666665,
+      "legal_upper_mean": 2.9166666666666665
+    },
+    {
+      "family_id": "MRF022",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 4.583333333333333,
+      "observed_only_partial_mean_gap": 4.583333333333333,
+      "legal_lower_mean": 4.583333333333333,
+      "legal_upper_mean": 4.583333333333333
+    },
+    {
+      "family_id": "MRF023",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -5.416666666666667,
+      "observed_only_partial_mean_gap": -5.416666666666667,
+      "legal_lower_mean": -5.416666666666667,
+      "legal_upper_mean": -5.416666666666667
+    },
+    {
+      "family_id": "MRF024",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0.8333333333333334,
+      "observed_only_partial_mean_gap": 0.8333333333333334,
+      "legal_lower_mean": 0.8333333333333334,
+      "legal_upper_mean": 0.8333333333333334
+    },
+    {
+      "family_id": "MRF025",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -7.5,
+      "observed_only_partial_mean_gap": -7.5,
+      "legal_lower_mean": -7.5,
+      "legal_upper_mean": -7.5
+    },
+    {
+      "family_id": "MRF026",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 2.0833333333333335,
+      "observed_only_partial_mean_gap": 2.0833333333333335,
+      "legal_lower_mean": 2.0833333333333335,
+      "legal_upper_mean": 2.0833333333333335
+    },
+    {
+      "family_id": "MRF027",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -7.5,
+      "observed_only_partial_mean_gap": -7.5,
+      "legal_lower_mean": -7.5,
+      "legal_upper_mean": -7.5
+    },
+    {
+      "family_id": "MRF028",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -7.5,
+      "observed_only_partial_mean_gap": -7.5,
+      "legal_lower_mean": -7.5,
+      "legal_upper_mean": -7.5
+    },
+    {
+      "family_id": "MRF029",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -4.166666666666667,
+      "observed_only_partial_mean_gap": -4.166666666666667,
+      "legal_lower_mean": -4.166666666666667,
+      "legal_upper_mean": -4.166666666666667
+    },
+    {
+      "family_id": "MRF030",
+      "category": "tradeoffs",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -2.5,
+      "observed_only_partial_mean_gap": -2.5,
+      "legal_lower_mean": -2.5,
+      "legal_upper_mean": -2.5
+    },
+    {
+      "family_id": "MRF031",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF032",
+      "category": "narrow_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": -7.916666666666667,
+      "legal_upper_mean": 17.5
+    },
+    {
+      "family_id": "MRF033",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.8333333333333334,
+      "observed_only_partial_mean_gap": -0.8333333333333334,
+      "legal_lower_mean": -0.8333333333333334,
+      "legal_upper_mean": -0.8333333333333334
+    },
+    {
+      "family_id": "MRF034",
+      "category": "narrow_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": -1.8181818181818181,
+      "legal_lower_mean": -12.5,
+      "legal_upper_mean": 13.75
+    },
+    {
+      "family_id": "MRF035",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 3.75,
+      "observed_only_partial_mean_gap": 3.75,
+      "legal_lower_mean": 3.75,
+      "legal_upper_mean": 3.75
+    },
+    {
+      "family_id": "MRF036",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF037",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -1.25,
+      "observed_only_partial_mean_gap": -1.25,
+      "legal_lower_mean": -1.25,
+      "legal_upper_mean": -1.25
+    },
+    {
+      "family_id": "MRF038",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0.8333333333333334,
+      "observed_only_partial_mean_gap": 0.8333333333333334,
+      "legal_lower_mean": 0.8333333333333334,
+      "legal_upper_mean": 0.8333333333333334
+    },
+    {
+      "family_id": "MRF039",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -2.5,
+      "observed_only_partial_mean_gap": -2.5,
+      "legal_lower_mean": -2.5,
+      "legal_upper_mean": -2.5
+    },
+    {
+      "family_id": "MRF040",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.6666666666666667,
+      "observed_only_partial_mean_gap": 1.6666666666666667,
+      "legal_lower_mean": 1.6666666666666667,
+      "legal_upper_mean": 1.6666666666666667
+    },
+    {
+      "family_id": "MRF041",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF042",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.8333333333333334,
+      "observed_only_partial_mean_gap": -0.8333333333333334,
+      "legal_lower_mean": -0.8333333333333334,
+      "legal_upper_mean": -0.8333333333333334
+    },
+    {
+      "family_id": "MRF043",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.6666666666666667,
+      "observed_only_partial_mean_gap": 1.6666666666666667,
+      "legal_lower_mean": 1.6666666666666667,
+      "legal_upper_mean": 1.6666666666666667
+    },
+    {
+      "family_id": "MRF044",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0.4166666666666667,
+      "observed_only_partial_mean_gap": 0.4166666666666667,
+      "legal_lower_mean": 0.4166666666666667,
+      "legal_upper_mean": 0.4166666666666667
+    },
+    {
+      "family_id": "MRF045",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF046",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -2.9166666666666665,
+      "observed_only_partial_mean_gap": -2.9166666666666665,
+      "legal_lower_mean": -2.9166666666666665,
+      "legal_upper_mean": -2.9166666666666665
+    },
+    {
+      "family_id": "MRF047",
+      "category": "narrow_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": 4.545454545454546,
+      "legal_lower_mean": -11.25,
+      "legal_upper_mean": 13.75
+    },
+    {
+      "family_id": "MRF048",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.4166666666666667,
+      "observed_only_partial_mean_gap": -0.4166666666666667,
+      "legal_lower_mean": -0.4166666666666667,
+      "legal_upper_mean": -0.4166666666666667
+    },
+    {
+      "family_id": "MRF049",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF050",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.25,
+      "observed_only_partial_mean_gap": 1.25,
+      "legal_lower_mean": 1.25,
+      "legal_upper_mean": 1.25
+    },
+    {
+      "family_id": "MRF051",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 2.5,
+      "observed_only_partial_mean_gap": 2.5,
+      "legal_lower_mean": 2.5,
+      "legal_upper_mean": 2.5
+    },
+    {
+      "family_id": "MRF052",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.8333333333333334,
+      "observed_only_partial_mean_gap": -0.8333333333333334,
+      "legal_lower_mean": -0.8333333333333334,
+      "legal_upper_mean": -0.8333333333333334
+    },
+    {
+      "family_id": "MRF053",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.4166666666666667,
+      "observed_only_partial_mean_gap": -0.4166666666666667,
+      "legal_lower_mean": -0.4166666666666667,
+      "legal_upper_mean": -0.4166666666666667
+    },
+    {
+      "family_id": "MRF054",
+      "category": "narrow_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": -10.416666666666666,
+      "legal_upper_mean": 15.416666666666666
+    },
+    {
+      "family_id": "MRF055",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF056",
+      "category": "narrow_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": 1.3636363636363635,
+      "legal_lower_mean": -10.833333333333334,
+      "legal_upper_mean": 11.25
+    },
+    {
+      "family_id": "MRF057",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -4.583333333333333,
+      "observed_only_partial_mean_gap": -4.583333333333333,
+      "legal_lower_mean": -4.583333333333333,
+      "legal_upper_mean": -4.583333333333333
+    },
+    {
+      "family_id": "MRF058",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 1.25,
+      "observed_only_partial_mean_gap": 1.25,
+      "legal_lower_mean": 1.25,
+      "legal_upper_mean": 1.25
+    },
+    {
+      "family_id": "MRF059",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -0.4166666666666667,
+      "observed_only_partial_mean_gap": -0.4166666666666667,
+      "legal_lower_mean": -0.4166666666666667,
+      "legal_upper_mean": -0.4166666666666667
+    },
+    {
+      "family_id": "MRF060",
+      "category": "narrow_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": -6.666666666666667,
+      "observed_only_partial_mean_gap": -6.666666666666667,
+      "legal_lower_mean": -6.666666666666667,
+      "legal_upper_mean": -6.666666666666667
+    },
+    {
+      "family_id": "MRF061",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF062",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF063",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF064",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF065",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF066",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF067",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF068",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF069",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF070",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF071",
+      "category": "no_zone",
+      "complete": false,
+      "completed": 11,
+      "unknown": 1,
+      "full_family_mean_gap": null,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": -15.833333333333334,
+      "legal_upper_mean": 10
+    },
+    {
+      "family_id": "MRF072",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF073",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF074",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF075",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF076",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF077",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF078",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF079",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    },
+    {
+      "family_id": "MRF080",
+      "category": "no_zone",
+      "complete": true,
+      "completed": 12,
+      "unknown": 0,
+      "full_family_mean_gap": 0,
+      "observed_only_partial_mean_gap": 0,
+      "legal_lower_mean": 0,
+      "legal_upper_mean": 0
+    }
+  ],
+  "family_distributions_by_category": [
+    {
+      "category": "tradeoffs",
+      "scheduled_families": 30,
+      "complete_family_means_descriptive_only": {
+        "n": 27,
+        "mean": -0.8641975308641976,
+        "median": -1.6666666666666667,
+        "min": -8.333333333333334,
+        "max": 7.5,
+        "frequency": {
+          "-8.333333333333334": 1,
+          "-7.5": 3,
+          "-5.416666666666667": 1,
+          "-4.166666666666667": 3,
+          "-3.3333333333333335": 2,
+          "-2.5": 1,
+          "-1.6666666666666667": 3,
+          "-0.8333333333333334": 1,
+          "0.8333333333333334": 1,
+          "1.25": 1,
+          "1.6666666666666667": 1,
+          "2.0833333333333335": 1,
+          "2.5": 1,
+          "2.9166666666666665": 1,
+          "3.3333333333333335": 2,
+          "4.583333333333333": 2,
+          "5.833333333333333": 1,
+          "7.5": 1
+        }
+      },
+      "observed_partial_means_descriptive_only": {
+        "n": 3,
+        "mean": -4.545454545454546,
+        "median": -2.727272727272727,
+        "min": -10.454545454545455,
+        "max": -0.45454545454545453,
+        "frequency": {
+          "-10.454545454545455": 1,
+          "-2.727272727272727": 1,
+          "-0.45454545454545453": 1
+        }
+      },
+      "legal_lower_endpoints": {
+        "n": 30,
+        "mean": -2.4444444444444446,
+        "median": -1.6666666666666667,
+        "min": -23.333333333333332,
+        "max": 7.5,
+        "frequency": {
+          "-23.333333333333332": 1,
+          "-13.75": 1,
+          "-12.916666666666666": 1,
+          "-8.333333333333334": 1,
+          "-7.5": 3,
+          "-5.416666666666667": 1,
+          "-4.166666666666667": 3,
+          "-3.3333333333333335": 2,
+          "-2.5": 1,
+          "-1.6666666666666667": 3,
+          "-0.8333333333333334": 1,
+          "0.8333333333333334": 1,
+          "1.25": 1,
+          "1.6666666666666667": 1,
+          "2.0833333333333335": 1,
+          "2.5": 1,
+          "2.9166666666666665": 1,
+          "3.3333333333333335": 2,
+          "4.583333333333333": 2,
+          "5.833333333333333": 1,
+          "7.5": 1
+        }
+      },
+      "legal_upper_endpoints": {
+        "n": 30,
+        "mean": -0.11111111111111123,
+        "median": 0.0,
+        "min": -8.333333333333334,
+        "max": 11.666666666666666,
+        "frequency": {
+          "-8.333333333333334": 1,
+          "-7.5": 3,
+          "-5.416666666666667": 1,
+          "-4.166666666666667": 3,
+          "-3.3333333333333335": 2,
+          "-2.5": 1,
+          "-1.6666666666666667": 3,
+          "-0.8333333333333334": 1,
+          "0.8333333333333334": 1,
+          "1.25": 2,
+          "1.6666666666666667": 1,
+          "2.0833333333333335": 1,
+          "2.5": 1,
+          "2.9166666666666665": 1,
+          "3.3333333333333335": 2,
+          "4.583333333333333": 2,
+          "5.833333333333333": 1,
+          "7.083333333333333": 1,
+          "7.5": 1,
+          "11.666666666666666": 1
+        }
+      }
+    },
+    {
+      "category": "narrow_zone",
+      "scheduled_families": 30,
+      "complete_family_means_descriptive_only": {
+        "n": 25,
+        "mean": -0.3333333333333333,
+        "median": 0,
+        "min": -6.666666666666667,
+        "max": 3.75,
+        "frequency": {
+          "-6.666666666666667": 1,
+          "-4.583333333333333": 1,
+          "-2.9166666666666665": 1,
+          "-2.5": 1,
+          "-1.25": 1,
+          "-0.8333333333333334": 3,
+          "-0.4166666666666667": 3,
+          "0": 6,
+          "0.4166666666666667": 1,
+          "0.8333333333333334": 1,
+          "1.25": 2,
+          "1.6666666666666667": 2,
+          "2.5": 1,
+          "3.75": 1
+        }
+      },
+      "observed_partial_means_descriptive_only": {
+        "n": 5,
+        "mean": 0.8181818181818182,
+        "median": 0,
+        "min": -1.8181818181818181,
+        "max": 4.545454545454546,
+        "frequency": {
+          "-1.8181818181818181": 1,
+          "0": 2,
+          "1.3636363636363635": 1,
+          "4.545454545454546": 1
+        }
+      },
+      "legal_lower_endpoints": {
+        "n": 30,
+        "mean": -2.0416666666666665,
+        "median": -0.4166666666666667,
+        "min": -12.5,
+        "max": 3.75,
+        "frequency": {
+          "-12.5": 1,
+          "-11.25": 1,
+          "-10.833333333333334": 1,
+          "-10.416666666666666": 1,
+          "-7.916666666666667": 1,
+          "-6.666666666666667": 1,
+          "-4.583333333333333": 1,
+          "-2.9166666666666665": 1,
+          "-2.5": 1,
+          "-1.25": 1,
+          "-0.8333333333333334": 3,
+          "-0.4166666666666667": 3,
+          "0": 6,
+          "0.4166666666666667": 1,
+          "0.8333333333333334": 1,
+          "1.25": 2,
+          "1.6666666666666667": 2,
+          "2.5": 1,
+          "3.75": 1
+        }
+      },
+      "legal_upper_endpoints": {
+        "n": 30,
+        "mean": 2.111111111111111,
+        "median": 0.0,
+        "min": -6.666666666666667,
+        "max": 17.5,
+        "frequency": {
+          "-6.666666666666667": 1,
+          "-4.583333333333333": 1,
+          "-2.9166666666666665": 1,
+          "-2.5": 1,
+          "-1.25": 1,
+          "-0.8333333333333334": 3,
+          "-0.4166666666666667": 3,
+          "0": 6,
+          "0.4166666666666667": 1,
+          "0.8333333333333334": 1,
+          "1.25": 2,
+          "1.6666666666666667": 2,
+          "2.5": 1,
+          "3.75": 1,
+          "11.25": 1,
+          "13.75": 2,
+          "15.416666666666666": 1,
+          "17.5": 1
+        }
+      }
+    },
+    {
+      "category": "no_zone",
+      "scheduled_families": 20,
+      "complete_family_means_descriptive_only": {
+        "n": 19,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 19
+        }
+      },
+      "observed_partial_means_descriptive_only": {
+        "n": 1,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "frequency": {
+          "0": 1
+        }
+      },
+      "legal_lower_endpoints": {
+        "n": 20,
+        "mean": -0.7916666666666667,
+        "median": 0.0,
+        "min": -15.833333333333334,
+        "max": 0,
+        "frequency": {
+          "-15.833333333333334": 1,
+          "0": 19
+        }
+      },
+      "legal_upper_endpoints": {
+        "n": 20,
+        "mean": 0.5,
+        "median": 0.0,
+        "min": 0,
+        "max": 10,
+        "frequency": {
+          "0": 19,
+          "10": 1
+        }
+      }
+    }
+  ]
+}

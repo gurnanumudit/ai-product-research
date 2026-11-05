@@ -1,0 +1,72 @@
+{
+  "sources": [
+    {
+      "public_file": "code/game.py",
+      "source": "workstreams/hq-negotiation-main-freeze-20261025/game.py",
+      "source_sha256": "3aa75f8990f5f8df1766e5a1e228178efc98ca2e9d2c48634777b179006af39c",
+      "transformation": "none"
+    },
+    {
+      "public_file": "code/analysis_contract.py",
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/analysis_contract_v2.py",
+      "source_sha256": "96b2529434335915969a7007e3aa3c5cd7673db33bc51772ba7ec2b55ffa4ab9",
+      "transformation": "none"
+    },
+    {
+      "public_file": "code/subgroup_uncertainty.py",
+      "source": "workstreams/hq-negotiation-part2-uncertainty-20261104/analyze.py",
+      "source_sha256": "8f96b5fb32e17122ddfb43f42da15e504caba55da63aad4394c9138b1241afa8",
+      "transformation": "Exact compute function; NumPy import and require helper retained; private adapter omitted"
+    },
+    {
+      "public_file": "code/mirror.py",
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/prepare_inputs.py",
+      "source_sha256": "db346cd87e5f5520eacccd134536c1ae18166b9892311fd857ef9572747bdef7",
+      "transformation": "Exact mirror function with copy import; generator/exclusion archive omitted"
+    },
+    {
+      "public_files": [
+        "data/scenarios.json"
+      ],
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/inputs/scenarios.json",
+      "source_sha256": "68358d3d267102459a62de8003ca26a650c3267baa16a6e439471ab13bf95fa9",
+      "transformation": "Selected fields only; outcome contract IDs joined from immutable saved episodes. Operational/provider records excluded."
+    },
+    {
+      "public_files": [
+        "data/schedule.json"
+      ],
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/inputs/schedule.json",
+      "source_sha256": "a26ab82e93405a3e4e0bb1c053a376a8e6fd115f0223dc7f2ef787ee706ae0f4",
+      "transformation": "Selected fields only; outcome contract IDs joined from immutable saved episodes. Operational/provider records excluded."
+    },
+    {
+      "public_files": [
+        "data/outcomes.json",
+        "reference/primary.json"
+      ],
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/PRIMARY-v1.json",
+      "source_sha256": "2c9e3f108e8b974b90e3c6257a6b6b2704732387e00f3064fa11c15fe3f92d46",
+      "transformation": "Selected fields only; outcome contract IDs joined from immutable saved episodes. Operational/provider records excluded."
+    },
+    {
+      "public_files": [
+        "reference/secondary.json"
+      ],
+      "source": "workstreams/hq-negotiation-role-main-design-20261031/analysis-combined-after-audit-v1/SECONDARY-RESULTS-v1.json",
+      "source_sha256": "8dd5327ff11d12671792202805168d539e0f813be59989ddd52335fdd58657c2",
+      "transformation": "Selected fields only; outcome contract IDs joined from immutable saved episodes. Operational/provider records excluded."
+    }
+  ],
+  "release_scope": "Portable offline numerical reproduction, not model collection replay. No new inference.",
+  "omitted": [
+    "credentials",
+    "provider request/response/receipt identities",
+    "full model transcripts",
+    "billing receipts",
+    "operational logs",
+    "launch controls",
+    "earlier exclusion archive"
+  ],
+  "continuation": "Original run completed250 and failed5; owner requested continuation after seeing partial results and restored connectivity. Only705 untouched assignments continued;701 completed and4failed. All9 failures remain unknown. Public prior amendment and outage/sleep guard changes are disclosed in article appendix."
+}
