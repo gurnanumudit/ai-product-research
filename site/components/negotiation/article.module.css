@@ -52,3 +52,8 @@
 
 .svgScroll:focus-visible{outline:2px solid #287565;outline-offset:3px}
 @media(max-width:760px){.svgScroll::before{content:"Swipe horizontally to see the full chart →";display:block;position:sticky;left:0;font-size:11px;line-height:1.5;color:#626b59;margin-bottom:10px}}
+
+/* Series label matches the Part 2 masthead. */
+.partNumber{font-size:.56em;letter-spacing:-.035em}
+.seriesIntro{font:400 14px/1.6 var(--sans);color:#626b59;max-width:810px;margin:0 0 26px}
+.seriesIntro a{color:#287565;text-underline-offset:4px}

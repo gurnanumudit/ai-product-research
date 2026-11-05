@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { NegotiationArticle } from '@/components/negotiation/article';
 import { localReview, publicOrigin } from '@/lib/research-release';
-const title = 'How AI negotiates';
+const title = 'How AI negotiates Part 1';
 const description = 'We tested different buyer instructions in 2,160 synthetic negotiations and measured what both sides earned.';
 const url = `${publicOrigin}/research/how-ai-negotiates`;
 const image = `${publicOrigin}/research-assets/negotiation/negotiation-hero-v1.png`;
