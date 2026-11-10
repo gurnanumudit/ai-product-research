@@ -36,12 +36,12 @@ const missingResponseBounds = secondFinding.slice(missingBoundsStart).trim();
 export const approvalOverviewTakeaway = `Approval is not accuracy: approving more patches can mean accepting more good work, more faulty work, or both. These follow-up rates use all usable responses, with different denominators. The main findings instead compare matched tasks. [Metric definitions](#appendix-c).`;
 
 export const reviewSections: ReviewSection[] = [
-  { id: "introduction", title: "Why this research?", body: `An AI proposes a software fix. Before accepting it, you ask another AI to review the change. What evidence should that reviewer receive—and would another model make the same decision?
+  { id: "introduction", title: "Why this research?", body: `An AI proposes a software fix. Before accepting it, you ask another AI to review the change. What evidence should that reviewer receive, and would another model make the same decision?
 
 We wanted to understand whether test results help AI reviewers make better acceptance decisions, whether a concise summary is enough, and whether calling the same evidence “independent” changes its influence.
 
 A reviewer that rejects everything can avoid faulty approvals while blocking useful work. We therefore examined [both sides](#appendix-c): acceptance of patches that passed the benchmark and approval of patches that failed it. This is a study of how reviewers interpret available evidence, not whether they can discover defects independently.` },
-  { id: "experiment-setup", title: "How we tested AI reviewers", body: `We used 60 public software tasks, each with one AI-generated **patch**: a proposed code change intended to fix the reported problem. Three reviewers—GPT-5.6 Terra, Claude Sonnet 5 and Gemini 3.8 Flash—received the same issue and patch under five evidence scenarios:
+  { id: "experiment-setup", title: "How we tested AI reviewers", body: `We used 60 public software tasks, each with one AI-generated **patch**: a proposed code change intended to fix the reported problem. Three reviewers received the same issue and patch under five evidence scenarios: GPT-5.6 Terra, Claude Sonnet 5 and Gemini 3.8 Flash.
 
 1. **No report:** issue and proposed fix only.
 2. **Factual summary:** a short account of recorded test results.
@@ -53,9 +53,9 @@ The summary retained failures and warnings. The last three scenarios used identi
 
 Each reviewer was asked twice in fresh sessions, without tools, to approve, hold or abstain. Hold meant requesting more work; it did not necessarily mean the patch was wrong. The 20-task initial batch and 40-task follow-up produced [1,692 usable reviews](#full-tables). Repeats are not independent tasks. [Settings and missing responses](#appendix-b).
 
-The reports came from the same benchmark evaluation used to label patches as passing or failing. “Passing” therefore means passing those tests—not independently proven correctness.` },
+The reports came from the same benchmark evaluation used to label patches as passing or failing. “Passing” therefore means passing those tests; it does not mean independently proven correctness.` },
   { id: "findings-at-a-glance", title: "Three findings at a glance", body: "" },
-  { id: "finding-1", title: "1. Test evidence reduced faulty approvals", body: `### Did a summary help—and did a full report help more?
+  { id: "finding-1", title: "1. Test evidence reduced faulty approvals", body: `### Did a summary help? Did a full report help more?
 
 Without a test report, reviewers sometimes approved patches that failed the benchmark. With either a faithful summary or the full report, those approvals disappeared on the matched failing tasks.
 
@@ -94,10 +94,10 @@ Related research shows that [surface cues can bias code judges](https://aclantho
 4. Test the reviewer configuration on your own tasks before using it as an acceptance gate.
 
 Keep the test harness and human judgment in the workflow. A second model is another source of evidence, not a substitute for verifying a fix.` },
-  { id: "limitations", title: "What this study does—and doesn’t—tell us", body: `Use this study to design reviewer evaluations and decide what evidence to test in your workflow. It does not establish a universal model ranking or prove that an AI reviewer can certify software correctness. We selected public tasks, some reviews were missing, and model training exposure is unknown. The supplied reports came from the same evaluation used to label the patches. The benchmark comparisons were added after collection, and Sonnet's formatting constraint changed between phases.
+  { id: "limitations", title: "What this study does and doesn’t tell us", body: `Use this study to design reviewer evaluations and decide what evidence to test in your workflow. It does not establish a universal model ranking or prove that an AI reviewer can certify software correctness. We selected public tasks, some reviews were missing, and model training exposure is unknown. The supplied reports came from the same evaluation used to label the patches. The benchmark comparisons were added after collection, and Sonnet's formatting constraint changed between phases.
 
 Tests can [miss defects](https://arxiv.org/abs/2503.15223) or [reject acceptable implementations](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/). Validate these patterns on your own work; do not treat zero observed faulty approvals as zero risk. [Full limitations](#appendix-g).` },
-  { id: "conclusion", title: "The bottom line", body: `Test evidence helped these reviewers avoid faulty approvals, but it did not make their acceptance decisions interchangeable. Evaluate both the bad fixes a reviewer accepts and the good work it leaves waiting—and judge evidence by its contents, not just its stated source.` },
+  { id: "conclusion", title: "The bottom line", body: `Test evidence helped these reviewers avoid faulty approvals, but it did not make their acceptance decisions interchangeable. Evaluate both the bad fixes a reviewer accepts and the good work it leaves waiting. Judge evidence by its contents, not just its stated source.` },
 ];
 
 export const appendixSections: ReviewSection[] = [

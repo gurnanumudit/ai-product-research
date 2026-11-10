@@ -39,7 +39,7 @@ const entries = [
   { id: "finding-2", title: "2. Same evidence, different decisions" },
   { id: "finding-3", title: "3. The independence label" },
   { id: "application", title: "How to use these findings" },
-  { id: "limitations", title: "What this study does—and doesn’t—tell us" },
+  { id: "limitations", title: "What this study does and doesn’t tell us" },
   { id: "conclusion", title: "The bottom line" },
   { id: "appendix", title: "Appendix" },
   ...appendixSections.map(section => ({ id: section.id, title: ({

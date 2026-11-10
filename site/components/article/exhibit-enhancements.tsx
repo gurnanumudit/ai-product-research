@@ -150,8 +150,8 @@ export function ExhibitEnhancements() {
       cleanups.push(()=>{rows.forEach(r=>{r.hidden=false;r.classList.remove('exhibitTableRow');});host.before(table);host.remove();delete table.dataset.exhibitReady;});
     };
     const scan = () => {
-      body.querySelectorAll<HTMLElement>('figure:not([data-article-cover])').forEach(enhanceFigure);
-      body.querySelectorAll<HTMLTableElement>('table').forEach(enhanceTable);
+      body.querySelectorAll<HTMLElement>('figure:not([data-article-cover])').forEach(figure => { if (!figure.closest('[data-interactive-exhibit]')) enhanceFigure(figure); });
+      body.querySelectorAll<HTMLTableElement>('table').forEach(table => { if (!table.closest('[data-interactive-exhibit]')) enhanceTable(table); });
     };
     scan();
     let frame = 0;

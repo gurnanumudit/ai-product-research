@@ -1,10 +1,6 @@
 // October 17 article revision using accepted October 15 exploratory results.
-export const followupRows = [
-  { capacity: 5, slots: 56, confidence: 31, verification: 35, random: 17 },
-  { capacity: 10, slots: 112, confidence: 59, verification: 88, random: 35 },
-  { capacity: 20, slots: 225, confidence: 103, verification: 143, random: 67 },
-  { capacity: 50, slots: 563, confidence: 204, verification: 211, random: 185 },
-];
+import { followupRows } from './financial-review-data.ts';
+export { followupRows } from './financial-review-data.ts';
 const pct = (n: number, d: number) => (100*n/d).toFixed(2)+'%';
 const metricsRows = followupRows.map(r => `<tr><th scope="row">${r.capacity}%</th><td>${1127-r.slots}</td><td>${pct(765-r.slots+r.confidence+15,1127-r.slots)} / ${pct(765-r.slots+r.verification+15,1127-r.slots)}</td><td>${pct(r.confidence,r.slots)} / ${pct(r.verification,r.slots)}</td><td>${pct(r.confidence,347)} / ${pct(r.verification,347)}</td></tr>`).join('');
 const resultRows = followupRows.map(r => `<tr><th scope="row">${r.capacity}%</th><td>${r.slots}</td><td>${r.confidence}</td><td><strong>${r.verification}</strong></td></tr>`).join('');

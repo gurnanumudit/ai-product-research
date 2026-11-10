@@ -4,6 +4,7 @@ import { ArticleIndex } from "@/components/article/article-index";
 import { financialAnswerReviewSections as sections, financialAnswerReviewCode as codeUrl } from "@/content/financial-answer-review-draft";
 import base from "@/components/article/page.module.css";
 import styles from "./page.module.css";
+import { ReviewComparison, ReviewExplorer } from './review-explorer';
 
 const entries = sections.map(({id,title}) => ({id,title}));
 export function FinancialAnswerReviewArticle() {
@@ -22,7 +23,20 @@ export function FinancialAnswerReviewArticle() {
       </header>
 
       <div data-article-layout="" className={base.layout}><ArticleIndex entries={entries} /><article data-article-body="" className={`${base.article} ${styles.body}`}>
-        {sections.map(section => <section key={section.id} id={section.id} className={base.section} dangerouslySetInnerHTML={{__html: section.html}} />)}
+        {sections.map(section => {
+          // Keep the published prose and methodology; replace only the two figure presentations.
+          if (section.id === 'capacity') return <section key={section.id} id={section.id} className={base.section}>
+            <div dangerouslySetInnerHTML={{__html: section.html.split('<div class="table-wrap"')[0]}} />
+            <ReviewComparison />
+            <div dangerouslySetInnerHTML={{__html: section.html.match(/<\/table><\/div>([\s\S]*?)<figure/)?.[1] || ''}} />
+            <ReviewExplorer />
+          </section>;
+          if (section.id === 'precision') {
+            const [before, after] = section.html.split(/<figure class="figure">[\s\S]*?<\/figure>/);
+            return <section key={section.id} id={section.id} className={base.section}><div dangerouslySetInnerHTML={{__html: before}} /><ReviewExplorer metric="precision" /><div dangerouslySetInnerHTML={{__html: after}} /></section>;
+          }
+          return <section key={section.id} id={section.id} className={base.section} dangerouslySetInnerHTML={{__html: section.html}} />;
+        })}
       </article></div>
     </main>
     <footer data-article-footer="" className={base.footer}><span>Independent research by Mudit Gurnani</span><a href="#method-limits">Code and reproducibility ↓</a><a href="#why">Back to introduction ↑</a></footer>

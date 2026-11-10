@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ToolErrorArticle } from "@/components/tool-error/article";
+import { StructuredResearchData } from "@/components/article/structured-research-data";
 import { localReview, publicOrigin } from "@/lib/research-release";
 
 const title = "When a test report is wrong, is a warning enough?";
@@ -15,5 +16,5 @@ export const metadata: Metadata = {
 
 // Publication approved by the owner on November 1, 2026.
 export default function Page() {
-  return <ToolErrorArticle />;
+  return <><StructuredResearchData title={title} description={description} path="/research/when-a-test-report-is-wrong" image="/research-assets/tool-error/cover.png" published="2026-11-01" /><ToolErrorArticle /></>;
 }

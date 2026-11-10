@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { NegotiationArticle } from '@/components/negotiation/article';
+import { StructuredResearchData } from '@/components/article/structured-research-data';
 import { localReview, publicOrigin } from '@/lib/research-release';
 const title = 'How AI negotiates Part 1';
 const description = 'We tested different buyer instructions in 2,160 synthetic negotiations and measured what both sides earned.';
@@ -10,4 +11,4 @@ export const metadata: Metadata = {
  openGraph:{title,description,type:'article',url,publishedTime:'2026-10-29',modifiedTime:'2026-11-04',authors:['Mudit Gurnani'],images:[{url:image,type:'image/png',alt:'A buyer and seller consider a contract across a table.'}]},
  twitter:{card:'summary_large_image',title,description,images:[image]},
 };
-export default function Page(){return <NegotiationArticle published/>;}
+export default function Page(){return <><StructuredResearchData title={title} description={description} path="/research/how-ai-negotiates" image="/research-assets/negotiation/negotiation-hero-v1.png" published="2026-10-29" modified="2026-11-04" /><NegotiationArticle published/></>;}

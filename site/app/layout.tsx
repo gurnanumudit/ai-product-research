@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
 import { requestSiteUrl, socialPreviewUrl } from "@/lib/site-url";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 import "@/components/article/standard.css";
+
+const themeBootScript = `(() => {
+  try {
+    const saved = localStorage.getItem("research-site-theme");
+    const theme = saved === "dark" || saved === "light" ? saved : "light";
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+    document.querySelector('meta[name="theme-color"]')?.setAttribute(
+      "content",
+      theme === "dark" ? "#05060a" : "#f7f5ef"
+    );
+  } catch (_) {
+    document.documentElement.dataset.theme = "light";
+  }
+})();`;
 
 export async function generateMetadata(): Promise<Metadata> {
   const [siteUrl, previewUrl] = await Promise.all([requestSiteUrl(), socialPreviewUrl()]);
@@ -15,6 +31,9 @@ export async function generateMetadata(): Promise<Metadata> {
       template: "%s | Mudit Gurnani",
     },
     description,
+    alternates: {
+      types: { "application/rss+xml": `${siteUrl}/feed.xml` },
+    },
     openGraph: {
       type: "website",
       title: "Mudit Gurnani | Research & Writing",
@@ -33,8 +52,15 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="theme-color" content="#f7f5ef" />
+        <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
+      </head>
+      <body>
+        <div className="themeCanvas">{children}</div>
+        <ThemeToggle />
+      </body>
     </html>
   );
 }

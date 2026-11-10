@@ -250,6 +250,107 @@ figcaption strong { color: var(--ink); }
   html { scroll-behavior: auto; }
 }
 
+/* Site-wide appearance control. The dark treatment is applied to the complete
+   editorial canvas so legacy studies, charts and one-off research components
+   inherit the mode without changing their semantic color encodings. */
+.themeCanvas {
+  min-height: 100vh;
+  background: var(--paper);
+  transition: filter 180ms ease;
+}
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background: #05060a;
+}
+
+html[data-theme="dark"] .themeCanvas {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-theme="dark"] .themeCanvas :is(img, video, iframe) {
+  filter: invert(1) hue-rotate(180deg) brightness(.86) contrast(.96);
+}
+
+.themeToggle {
+  position: absolute;
+  top: max(17px, env(safe-area-inset-top));
+  right: max(18px, env(safe-area-inset-right));
+  z-index: 100000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 9px 13px;
+  border: 1px solid rgba(23, 25, 22, .22);
+  border-radius: 999px;
+  background: rgba(255, 254, 249, .94);
+  color: #252721;
+  box-shadow: 0 7px 28px rgba(20, 24, 20, .14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font: 600 12px/1 var(--sans);
+  letter-spacing: .01em;
+  cursor: pointer;
+}
+
+/* Keep the global control in the header zone without covering each article's
+   own navigation, even though the seven study layouts use different headers. */
+.themeCanvas header {
+  padding-right: 112px !important;
+}
+
+.themeToggle:hover { transform: translateY(-1px); }
+.themeToggle:focus-visible { outline: 2px solid #287565; outline-offset: 3px; }
+.themeToggleIcon {
+  display: grid;
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+}
+.themeToggleIcon svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+html[data-theme="dark"] .themeToggle {
+  border-color: rgba(255, 255, 255, .2);
+  background: rgba(29, 31, 30, .94);
+  color: #f1f0eb;
+  box-shadow: 0 7px 28px rgba(0, 0, 0, .4);
+}
+html[data-theme="dark"] .themeToggleIcon { color: #f4c95d; }
+
+@media (max-width: 640px) {
+  .themeToggle {
+    top: max(13px, env(safe-area-inset-top));
+    right: max(12px, env(safe-area-inset-right));
+    width: 42px;
+    padding: 9px;
+    justify-content: center;
+  }
+  .themeToggle > span:last-child { display: none; }
+  .themeCanvas header { padding-right: 58px !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .themeCanvas { transition: none; }
+  .themeToggle:hover { transform: none; }
+}
+
+@media print {
+  .themeCanvas { filter: none !important; }
+  .themeToggle { display: none; }
+}
+
 /* Research program — 2026 */
 
 :root {

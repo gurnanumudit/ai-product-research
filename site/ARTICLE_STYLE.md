@@ -18,7 +18,7 @@ Use “Research code” for the existing study-specific GitHub directory. Use �
 
 ## Before publishing
 
-Build and run the rendered-page checks. Verify all seven pages, their internal anchors, appendix opening, interactive figures and mobile overflow. Presentation changes must preserve research text, figures, data and conclusions. Synchronize the published source with the GitHub site directory.
+Run `npm test` from a full repository clone. Verify all published pages, their internal anchors, appendix opening, interactive figures and mobile overflow. Presentation changes must preserve research text, figures, data and conclusions. Synchronize the published source with the GitHub site directory.
 
 ## Interactive exhibits
 
@@ -28,7 +28,7 @@ Use `data-exhibit-panel` on whole chart panels, labeled with the existing model 
 
 Table search hides matching rows only and always displays the visible/total row count plus Reset. Tables with merged body cells are not filtered, to preserve group context. Expansion keeps the original controls, traps keyboard focus, supports Escape and returns focus on closing.
 
-For presentation-only changes, run `python3 tests/check-exhibit-preservation.py --origin http://localhost:8772` against a production preview. It compares research text, table cells, SVG geometry and encoded values with the pre-formatting baseline. Update this baseline only for an explicitly approved information change, never to make a failed presentation check pass.
+`tests/check-exhibit-preservation.py` and its baseline preserve the historical pre-formatting comparison. That snapshot predates the approved financial-review interactive-chart redesign and is not a current release gate. For new presentation changes, compare against the current published source and run the numerical and rendered-page checks in `npm test`. Never replace the historical baseline simply to make a failed check pass.
 
 ## Appendix navigation
 
