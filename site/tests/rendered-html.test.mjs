@@ -26,6 +26,10 @@ test('production homepage and article render with direct study links', async () 
     assert.equal(home.status, 200);
     const homeHtml = await home.text();
     checkAnchors(homeHtml);
+    assert.ok(homeHtml.includes('research-site-theme'), 'theme preference bootstraps before paint');
+    assert.ok(!homeHtml.includes('prefers-color-scheme'), 'new visitors default to light mode instead of the device theme');
+    assert.ok(homeHtml.includes('Switch to dark mode'), 'theme toggle is rendered on every page');
+    assert.ok(homeHtml.includes('themeCanvas'), 'site content is wrapped in the shared theme surface');
     const negotiationPath = '/research/how-ai-negotiates';
     assert.ok(homeHtml.includes(negotiationPath));
     assert.ok(homeHtml.includes('Oct 29, 2026'));
@@ -35,16 +39,27 @@ test('production homepage and article render with direct study links', async () 
     checkAnchors(negotiationHtml);
     for (const text of ['October 29, 2026', 'research/negotiation', '2,160', '1.90', 'Appendix', '2026-10-29']) assert.ok(negotiationHtml.includes(text), `Missing negotiation content: ${text}`);
     for (const text of ['Not yet published', 'Unpublished review draft', 'has not yet been published there', 'Research draft · October']) assert.ok(!negotiationHtml.includes(text), `Stale negotiation copy: ${text}`);
-    assert.ok(negotiationHtml.includes('https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates'));
+    assert.ok(negotiationHtml.includes('https://research.muditgurnani.com/research/how-ai-negotiates'));
     const negotiationData = await fetch(`http://localhost:${port}/research-assets/negotiation/chart-data.json`);
     assert.equal(negotiationData.status, 200);
     const nd = await negotiationData.json();
     assert.equal(nd.main.episodes,2160);assert.equal(nd.roleGap.rows.length,107);
 
-    assert.ok(homeHtml.includes('<h1 id="research-title">Evidence for better decisions about AI.</h1>'));
+    assert.ok(homeHtml.includes('<h1 id="research-title">What is an AI system actually worth, and how do you know?</h1>'));
+    assert.ok(!homeHtml.includes('—'), 'homepage copy avoids em dashes');
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
-    assert.ok(homeHtml.includes('I study what AI can do, what it costs and how it behaves.'));
-    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 8 published studies', 'Flagship research', 'Latest article', 'My background is in finance and data science', 'The goal: help people choose AI systems']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    assert.ok(homeHtml.includes('I measure cost, success and decision quality'));
+    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 8 published studies', 'Flagship research', 'How AI negotiates', 'Featured exploration', 'How AI negotiates Part 2', 'Nov 4, 2026', 'My background is in finance and data science', 'what an AI system delivers per dollar']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    for (const text of ['Checking calculations and cited figures helped select more wrong answers', 'That advantage did not hold across models.', 'Test whether your checks catch the mistakes your AI makes.']) assert.ok(homeHtml.includes(text), `Missing flagship summary: ${text}`);
+    assert.ok(homeHtml.includes('application/ld+json'), 'homepage includes structured data');
+    assert.equal((await fetch(`http://localhost:${port}/robots.txt`)).status, 200);
+    const sitemap = await fetch(`http://localhost:${port}/sitemap.xml`);
+    assert.equal(sitemap.status, 200);
+    assert.ok((await sitemap.text()).includes('/research/how-ai-negotiates-part-2'));
+    const feed = await fetch(`http://localhost:${port}/feed.xml`);
+    assert.equal(feed.status, 200);
+    assert.match(feed.headers.get('content-type'), /application\/rss\+xml/);
+    assert.ok((await feed.text()).includes('How AI negotiates Part 2'));
     for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
     const toolErrorPath = '/research/when-a-test-report-is-wrong';
     const toolErrorResponse = await fetch(`http://localhost:${port}${toolErrorPath}`);
@@ -61,15 +76,25 @@ test('production homepage and article render with direct study links', async () 
       assert.deepEqual(Object.values(data.strata.overall.arms).map(a=>a.successes), [185,187,212]);
       assert.equal(Object.values(data.strata).flatMap(s=>s.contrasts).length,15);
     }
-    for (const slug of ['how-ai-reviewers-use-test-evidence','when-is-more-reasoning-worth-it','how-to-avoid-false-confidence-in-ai-evaluations','which-financial-ai-answers-should-we-review','which-financial-ai-answers-should-we-review-part-2','how-ai-negotiates','when-a-test-report-is-wrong']) {
+    for (const slug of ['how-ai-reviewers-use-test-evidence','when-is-more-reasoning-worth-it','how-to-avoid-false-confidence-in-ai-evaluations','which-financial-ai-answers-should-we-review','which-financial-ai-answers-should-we-review-part-2','how-ai-negotiates','how-ai-negotiates-part-2','when-a-test-report-is-wrong']) {
       const page = await fetch(`http://localhost:${port}/research/${slug}`);
       assert.equal(page.status, 200, slug);
       const text = await page.text();
       checkAnchors(text);
+      assert.ok(!text.includes('—'), `Article copy contains an em dash: ${slug}`);
+      assert.ok(text.includes('application/ld+json') && text.includes('Independent research'), `Missing article structured data: ${slug}`);
+      assert.ok(text.includes('Switch to dark mode'), `Missing theme toggle: ${slug}`);
       for (const role of ['research-article','article-header','article-hero','article-cover','article-dek','article-byline','article-resources','article-layout','article-body','article-index']) assert.ok(text.includes(`data-${role}=""`), `Missing standard ${role}: ${slug}`);
       assert.ok(text.includes('Data and methods ↓'), `Missing appendix link: ${slug}`);
       assert.match(text, /<a[^>]+href="https:\/\/github\.com\/gurnanumudit\/ai-product-research\/tree\/[^" ]+"[^>]*>Research code(?: ↗)?<\/a>/, `Missing consistent research-code link: ${slug}`);
     }
+    const negotiationTwoPath = '/research/how-ai-negotiates-part-2';
+    const negotiationTwo = await fetch(`http://localhost:${port}${negotiationTwoPath}`);
+    assert.equal(negotiationTwo.status, 200);
+    const negotiationTwoHtml = await negotiationTwo.text();
+    checkAnchors(negotiationTwoHtml);
+    for (const text of ['November 4, 2026', '960 assigned negotiations', '80 scenario families', 'Read Part 1', 'Research code']) assert.ok(negotiationTwoHtml.includes(text), `Missing negotiation Part 2 content: ${text}`);
+    await checkSocialPreview(port, negotiationTwoPath, '/research-assets/negotiation-part2/negotiation-hero-v1.png');
     const financialPath = '/research/which-financial-ai-answers-should-we-review';
     assert.equal((homeHtml.match(new RegExp(`<a href="${financialPath}"`, 'g')) || []).length >= 1, true);
     const financial = await fetch(`http://localhost:${port}${financialPath}`);
@@ -81,8 +106,14 @@ test('production homepage and article render with direct study links', async () 
     assert.ok(financialHtml.includes('rule-based checks to recalculate the answer'));
     assert.ok(financialHtml.includes('same automatic-review rules'));
     assert.ok(financialHtml.includes('Mismatches caught'));
+    assert.ok(financialHtml.includes('percentage of all 347 mismatches caught (recall)'));
+    assert.ok(financialHtml.includes('The answers left outside review also matched the answer key more often.'));
+    assert.ok(financialHtml.includes('77.4% with verification') && financialHtml.includes('72.9% with confidence'));
+    assert.ok(financialHtml.includes('data-interactive-exhibit=""'));
+    assert.ok(financialHtml.includes('mismatches selected'));
+    assert.ok(financialHtml.includes('Share of answers you can review'));
     assert.ok(financialHtml.includes('347 answers did not match.'));
-    assert.ok(financialHtml.includes('60–100%') && financialHtml.includes('0–100%'));
+    assert.ok(financialHtml.includes('60% to 100%') && financialHtml.includes('0% to 100%'));
     assert.ok(financialHtml.includes('After examining the initial results'));
     assert.ok(financialHtml.includes('exploratory, not independent validation'));
     assert.ok(financialHtml.includes('We tested only one model: GPT-5.4 mini.'));
@@ -135,7 +166,7 @@ test('production homepage and article render with direct study links', async () 
         const draftHtml = await draft.text();
         assert.ok(draftHtml.includes(reviewBuild ? 'noindex, nofollow' : 'index, follow'));
         assert.ok(!draftHtml.includes('Review draft') && !draftHtml.includes('Unpublished'));
-        assert.ok(draftHtml.includes('https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it'));
+        assert.ok(draftHtml.includes('https://research.muditgurnani.com/research/when-is-more-reasoning-worth-it'));
         assert.ok(draftHtml.includes('three OpenAI GPT-5.6 models'));
         checkAnchors(draftHtml);
         assert.ok(!draftHtml.includes('/chunks/link-'), 'static articles do not load client-router link prefetching');
@@ -185,12 +216,12 @@ async function checkSocialPreview(port, path, imagePath) {
   for (const key of ['og:title','og:description','og:url','og:type','og:image','og:image:width','og:image:height','twitter:image']) {
     assert.ok(tags.get(key), path + ': missing server-rendered ' + key);
   }
-  assert.equal(new URL(tags.get('og:url')).href, new URL(path, 'https://research.muditgurnani.chatgpt.site').href);
-  assert.equal(tags.get('og:image'), 'https://research.muditgurnani.chatgpt.site' + imagePath);
+  assert.equal(new URL(tags.get('og:url')).href, new URL(path, 'https://research.muditgurnani.com').href);
+  assert.equal(tags.get('og:image'), 'https://research.muditgurnani.com' + imagePath);
   assert.equal(tags.get('twitter:image'), tags.get('og:image'));
   if (path === '/') {
     assert.ok(tags.get('og:description').length >= 100, 'homepage sharing description is at least 100 characters');
-    assert.ok(tags.get('og:description').includes('Evidence for better decisions about AI.'));
+    assert.ok(tags.get('og:description').includes('What is an AI system actually worth'));
     assert.ok(!tags.get('og:image').includes('og-v2.png'), 'new card has a fresh cache key');
   }
   assert.ok(Number(tags.get('og:image:width')) >= 1200);

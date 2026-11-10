@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { ResearchHome } from "@/components/research-home";
+import { publication } from "@/content/publication";
+import { publishedStudies } from "@/content/research-catalog";
 import { localReview, publicOrigin } from "@/lib/research-release";
 
-const description = "Evidence for better decisions about AI. Experiments, simulations and data analysis by Mudit Gurnani on AI performance, cost, reliability and agent behavior.";
+const description = "What is an AI system actually worth, and how do you know? Independent research by Mudit Gurnani on AI cost, success, decision quality and agent behavior.";
 
 export const metadata: Metadata = {
   title: { absolute: "Mudit Gurnani | Research" },
@@ -13,4 +15,42 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Mudit Gurnani | Research", description, images: [publicOrigin + "/og-research-journey-v1.png"] },
 };
 
-export default ResearchHome;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": `${publicOrigin}/#mudit-gurnani`,
+      name: publication.name,
+      url: publicOrigin,
+      sameAs: [publication.linkedin, publication.repository],
+      knowsAbout: ["AI evaluation", "AI economics", "agent behavior", "data science"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${publicOrigin}/#website`,
+      name: "Mudit Gurnani | Research",
+      url: publicOrigin,
+      description,
+      author: { "@id": `${publicOrigin}/#mudit-gurnani` },
+    },
+    {
+      "@type": "ItemList",
+      name: "Published AI research",
+      numberOfItems: publishedStudies.length,
+      itemListElement: publishedStudies.map((study, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: `${publicOrigin}${study.path}`,
+        name: study.title,
+      })),
+    },
+  ],
+};
+
+export default function HomePage() {
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+    <ResearchHome />
+  </>;
+}

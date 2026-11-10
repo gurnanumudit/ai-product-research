@@ -2,15 +2,21 @@
 
 Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani), exploring how AI works, where it falls short, and what makes it useful in everyday work.
 
-[Read the website](https://research.muditgurnani.chatgpt.site/)
+[Read the website](https://research.muditgurnani.com/)
 
 ## Published articles
+
+### How AI negotiates Part 2
+
+[Read the article](https://research.muditgurnani.com/research/how-ai-negotiates-part-2) · [Research code, derived outcomes and offline reproduction](research/negotiation-part-2/README.md)
+
+Published November 4, 2026. The follow-up tests original and mirrored situations with both starting roles. See the study package for its methods and reproduction boundaries.
 
 ### When a test report is wrong, is a warning enough?
 
 Across 720 coding-task outcomes, a fixed warning changed little compared with baseline. Automatic first verification helped most when the initial report falsely claimed success. The completed result is an amended completion after operational interruptions.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/when-a-test-report-is-wrong) · [Research code](research/tool-error-recovery/README.md)
+[Read the article](https://research.muditgurnani.com/research/when-a-test-report-is-wrong) · [Research code](research/tool-error-recovery/README.md)
 
 Published November 1, 2026. The source archive preserves the research implementation; it is not a self-contained results-reproduction package. The article supplies aggregate chart data and explains the limits.
 
@@ -18,13 +24,13 @@ Published November 1, 2026. The source archive preserves the research implementa
 
 We tested four buyer strategies against three seller strategies in 180 synthetic scenarios. Instruction effects were modest, and a buyer lead remained worth testing again.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates) · [Code, all 2,160 derived outcomes, scenarios and offline reproduction](research/negotiation/README.md)
+[Read the article](https://research.muditgurnani.com/research/how-ai-negotiates) · [Code, all 2,160 derived outcomes, scenarios and offline reproduction](research/negotiation/README.md)
 
 Published October 29, 2026. The package reproduces the numerical comparisons and all failure-sensitivity intervals without making model calls. Results remain post-interim amended and exploratory.
 
 ### Which financial AI answers should we review? Part 2
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) · [Research code](research/financial-answer-review-part-2/README.md)
+[Read the article](https://research.muditgurnani.com/research/which-financial-ai-answers-should-we-review-part-2) · [Research code](research/financial-answer-review-part-2/README.md)
 
 Published October 21, 2026. The code package reproduces the saved-answer diagnostic and displayed summaries. It does not rerun model collection or the original bootstrap analysis.
 
@@ -35,7 +41,7 @@ Coming from an article? Its study folder is the starting point for the methods, 
 
 We compared model confidence with rule-based verification on 1,127 financial answers at four review budgets. With the revised calculation-warning rule used in the article, verification selected more answer-key mismatches at each budget. This adjustment was made after inspecting earlier results.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review) · [Research code](research/financial-answer-review/checker-sensitivity/README.md)
+[Read the article](https://research.muditgurnani.com/research/which-financial-ai-answers-should-we-review) · [Research code](research/financial-answer-review/checker-sensitivity/README.md)
 
 Synthetic tests run publicly with no API calls. Empirical replay requires the exact archived inputs and model responses, which are not distributed. The original analysis remains preserved separately; the published article includes the later checker-sensitivity analysis.
 
@@ -43,7 +49,7 @@ Synthetic tests run publicly with no API calls. Empirical replay requires the ex
 
 A higher evaluation score is not always a reason to switch. We used simulations to examine how related questions, repeated checks and missing outcomes affect that decision.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Code, frozen results and reproduction](research/evaluation-reliability/README.md)
+[Read the article](https://research.muditgurnani.com/research/how-to-avoid-false-confidence-in-ai-evaluations) · [Code, frozen results and reproduction](research/evaluation-reliability/README.md)
 
 This is a known-truth simulation of established statistical methods, not a comparison of real AI models. The package includes 15 scenarios, 2,000 simulated evaluations per scenario, six approaches and offline verification. The [separately frozen sensitivity study](research/evaluation-reliability-sensitivity/README.md) supplies the published follow-up checks.
 
@@ -52,13 +58,13 @@ This is a known-truth simulation of established statistical methods, not a compa
 We compared three models at three reasoning settings on 134 analytical questions.
 The [study code, derived results and methods](research/reasoning-costs/README.md)
 reproduce the accuracy tables, cost comparisons and sensitivity checks offline.
-Read the [published article](https://research.muditgurnani.chatgpt.site/research/when-is-more-reasoning-worth-it).
+Read the [published article](https://research.muditgurnani.com/research/when-is-more-reasoning-worth-it).
 
 ### How AI reviewers use test evidence
 
 We gave three AI reviewers the same proposed software fixes under five evidence scenarios. Test reports reduced faulty approvals on matched tasks, while reviewers differed in which benchmark-passing fixes they accepted. Changing a report's stated source did not produce a consistent follow-up increase in approval.
 
-[Read the article](https://research.muditgurnani.chatgpt.site/research/how-ai-reviewers-use-test-evidence) · [Study code, data and methods](research/ai-reviewers-test-evidence/README.md)
+[Read the article](https://research.muditgurnani.com/research/how-ai-reviewers-use-test-evidence) · [Study code, data and methods](research/ai-reviewers-test-evidence/README.md)
 
 The study contains 60 tasks and 1,692 usable reviews. Its offline supplement reproduces the numerical results from saved classifications, not the original model experiment or independent software verification.
 
@@ -67,7 +73,10 @@ The study contains 60 tasks and 1,692 usable reviews. Its offline supplement rep
 | Folder | Contents |
 | --- | --- |
 | [research/negotiation/](research/negotiation/README.md) | Negotiation game, scenarios, derived outcomes, analysis and offline reproduction |
-| [site/](site/README.md) | Website source, all seven articles, and web assets |
+| [site/](site/README.md) | Website source, published articles, and web assets |
+| [research/negotiation-part-2/](research/negotiation-part-2/README.md) | Follow-up negotiation study, derived outcomes and offline reproduction |
+| [research/financial-answer-review-part-2/](research/financial-answer-review-part-2/README.md) | Cross-model saved results, diagnostic and displayed summaries |
+| [research/tool-error-recovery/](research/tool-error-recovery/README.md) | Source archive and limitations for the test-report study |
 | [research/financial-answer-review/article-analysis/](research/financial-answer-review/article-analysis/README.md) | Financial review policies: code, tests, aggregate results and empirical replay boundaries |
 | [research/evaluation-reliability/](research/evaluation-reliability/README.md) | Evaluation decision simulation: code, tests, frozen outcomes and reproducibility |
 | [research/reasoning-costs/](research/reasoning-costs/README.md) | Analytical reasoning study: question-level outcomes, costs and offline reproduction |

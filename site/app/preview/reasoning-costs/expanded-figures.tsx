@@ -5,7 +5,7 @@ const models = ["Luna", "Terra", "Sol"];
 const efforts = ["None", "Low", "High"];
 const bands = ["easy", "medium", "hard"];
 const colors: Record<string, string> = { Luna: "#256b63", Terra: "#ad6029", Sol: "#59678e" };
-export const percent = (correct: number, n: number) => n > 0 ? `${(100 * correct / n).toFixed(1)}%` : "—";
+export const percent = (correct: number, n: number) => n > 0 ? `${(100 * correct / n).toFixed(1)}%` : "N/A";
 const title = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const cost = (p: Point) => p.model !== null && p.pending !== null && p.n > 0 ? (p.model + p.pending) / p.n : NaN;
 const rate = (p: Point) => 100 * p.correct / p.n;
@@ -76,5 +76,5 @@ export function DollarImpact({ points }: { points: Point[] }) {
       <div className={styles.impactNumber}><strong>{`+$${delta.toFixed(2)}`}</strong><span>extra model cost</span><small>${(cost(baseline)*100).toFixed(2)} to ${(cost(target)*100).toFixed(2)}</small></div>
       <div className={styles.impactNumber}><strong>+{Math.round(gain)}</strong><span>correct answers</span><small>per 100 questions</small></div>
     </div>;
-  })}</div><figcaption>Rounded comparisons scaled from the same 29 easy, 55 medium and 50 hard questions—not 100 new trials or a forecast. Costs include recorded model charges and pending reservations, but not runtime. <a href="#appendix-d">Calculation and costs</a>.</figcaption></figure>;
+  })}</div><figcaption>Rounded comparisons scaled from the same 29 easy, 55 medium and 50 hard questions. These are not 100 new trials or a forecast. Costs include recorded model charges and pending reservations, but not runtime. <a href="#appendix-d">Calculation and costs</a>.</figcaption></figure>;
 }

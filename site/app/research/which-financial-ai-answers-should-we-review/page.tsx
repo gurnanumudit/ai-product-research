@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FinancialAnswerReviewArticle } from "@/components/financial-answer-review/page";
+import { StructuredResearchData } from "@/components/article/structured-research-data";
 import { localReview, publicOrigin } from "@/lib/research-release";
 const title = "Which financial AI answers should we review? Part 1";
 const description = "On 1,127 financial answers, verification selected more answer-key mismatches than AI confidence. A study of how to prioritize limited review capacity.";
@@ -10,4 +11,4 @@ export const metadata: Metadata = {
   openGraph: { title, description, type: "article", url, publishedTime: "2026-10-10", modifiedTime: "2026-10-21", authors: ["Mudit Gurnani"], images: [{ url: image, width: 1774, height: 887, type: "image/png", alt: "A small selection of paper tiles placed in a review tray." }] },
   twitter: { card: "summary_large_image", title, description, images: [image] },
 };
-export default function Page() { return <FinancialAnswerReviewArticle />; }
+export default function Page() { return <><StructuredResearchData title={title} description={description} path="/research/which-financial-ai-answers-should-we-review" image="/research-assets/financial-answer-review/cover-v3.png" published="2026-10-10" modified="2026-10-21" /><FinancialAnswerReviewArticle /></>; }

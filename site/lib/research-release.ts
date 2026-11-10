@@ -4,4 +4,4 @@ export const reasoningPublished = true;
 // Review builds remain noindex; normal builds publish the approved study.
 export const localReview = process.env.NODE_ENV !== "production" || process.env.RESEARCH_LOCAL_REVIEW === "1";
 export const showReasoningArticle = reasoningPublished || localReview;
-export const publicOrigin = "https://research.muditgurnani.chatgpt.site";
+export const publicOrigin = "https://research.muditgurnani.com";

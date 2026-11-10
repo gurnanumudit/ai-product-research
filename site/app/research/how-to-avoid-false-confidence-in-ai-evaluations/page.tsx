@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EvaluationReliabilityArticle } from "@/components/evaluation-reliability/page";
+import { StructuredResearchData } from "@/components/article/structured-research-data";
 import { localReview, publicOrigin } from "@/lib/research-release";
 
 const title = "How to avoid false confidence in AI evaluations";
@@ -16,4 +17,4 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title, description, images: [image] },
 };
 
-export default function Page() { return <EvaluationReliabilityArticle />; }
+export default function Page() { return <><StructuredResearchData title={title} description={description} path="/research/how-to-avoid-false-confidence-in-ai-evaluations" image="/research-assets/evaluation-reliability/evaluation-confidence-cover.png" published="2026-09-30" modified="2026-10-17" /><EvaluationReliabilityArticle /></>; }

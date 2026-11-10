@@ -62,7 +62,7 @@ export function EvidenceFigure({ src }: {src:string}) {
   </figure>;
   if (src.endsWith("finding-3-source-attribution.svg")) return <figure className={styles.figure} data-evidence-figure="source">
     <h3>The early source-label pattern weakened</h3>
-    <p className={styles.subtitle}>Approval change from “patch producer” to “separate evaluator.” Positive means more approvals—not necessarily better decisions.</p>
+    <p className={styles.subtitle}>Approval change from “patch producer” to “separate evaluator.” Positive means more approvals, but not necessarily better decisions.</p>
     <div className={styles.twoPanels}>{[...models,{id:"pooled",name:"Three-model mean",color:"#373d36"}].map(m=><section key={m.id} data-exhibit-panel={m.name}>
       <h4 style={{color:m.color}}>{m.name}</h4>
       {data.source.filter(r=>r.model===m.id).map(r=><div className={styles.row} key={r.phase} data-estimate={r.mean} data-exhibit-value={`${m.name} · ${r.phase===1 ? "Initial batch" : "Follow-up"}: ${pp(r.mean)}; 95% interval ${pp(r.bootstrap_95_interval[0])} to ${pp(r.bootstrap_95_interval[1])}; ${r.n_tasks} matched tasks.`}>

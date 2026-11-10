@@ -1,5 +1,5 @@
 import { savedMetrics } from './financial-answer-review-part-2-metrics.js';
-export const partOneUrl = 'https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review';
+export const partOneUrl = 'https://research.muditgurnani.com/research/which-financial-ai-answers-should-we-review';
 export const rows = [
   { dataset:'FinQA',model:'GPT-5.4 mini',n:455,slots:91,total:127,c:39,v:64,warned:68,flagged:106,selectedWarned:61,range:[14.6,46.0],budgets:[[12,18],[23,40],[39,64],[72,88]] },
   { dataset:'FinQA',model:'GPT-6.1 Sol',n:455,slots:91,total:73,c:38,v:13,warned:2,flagged:7,selectedWarned:2,range:[-38.0,-14.1],budgets:[[12,3],[21,7],[38,13],[57,38]] },
