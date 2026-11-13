@@ -55,9 +55,9 @@ Each reviewer was asked twice in fresh sessions, without tools, to approve, hold
 
 The reports came from the same benchmark evaluation used to label patches as passing or failing. “Passing” therefore means passing those tests; it does not mean independently proven correctness.` },
   { id: "findings-at-a-glance", title: "Three findings at a glance", body: "" },
-  { id: "finding-1", title: "1. Test evidence reduced faulty approvals", body: `### Did a summary help? Did a full report help more?
+  { id: "finding-1", title: "1. Fewer faulty approvals with test evidence in this sample", body: `### Did a summary help? Did a full report help more?
 
-Without a test report, reviewers sometimes approved patches that failed the benchmark. With either a faithful summary or the full report, those approvals disappeared on the matched failing tasks.
+Without a test report, reviewers sometimes approved patches that failed the benchmark. With either a faithful summary or the full report, we observed no faulty approvals on the matched failing tasks. That does not establish zero risk on new tasks.
 
 ![Faulty approvals across the same 15 tasks and three evidence scenarios.](/research-assets/evidence-review/v2/finding-2-evidence-content.svg)
 
@@ -97,7 +97,7 @@ Keep the test harness and human judgment in the workflow. A second model is anot
   { id: "limitations", title: "What this study does and doesn’t tell us", body: `Use this study to design reviewer evaluations and decide what evidence to test in your workflow. It does not establish a universal model ranking or prove that an AI reviewer can certify software correctness. We selected public tasks, some reviews were missing, and model training exposure is unknown. The supplied reports came from the same evaluation used to label the patches. The benchmark comparisons were added after collection, and Sonnet's formatting constraint changed between phases.
 
 Tests can [miss defects](https://arxiv.org/abs/2503.15223) or [reject acceptable implementations](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/). Validate these patterns on your own work; do not treat zero observed faulty approvals as zero risk. [Full limitations](#appendix-g).` },
-  { id: "conclusion", title: "The bottom line", body: `Test evidence helped these reviewers avoid faulty approvals, but it did not make their acceptance decisions interchangeable. Evaluate both the bad fixes a reviewer accepts and the good work it leaves waiting. Judge evidence by its contents, not just its stated source.` },
+  { id: "conclusion", title: "The bottom line", body: `On these matched tasks, reviewers made fewer faulty approvals with test evidence, but their acceptance decisions still differed. No faulty approvals were observed with either a summary or full report in the matched comparison; that does not establish zero risk. Evaluate both the bad fixes a reviewer accepts and the good work it leaves waiting. Judge evidence by its contents, not just its stated source.` },
 ];
 
 export const appendixSections: ReviewSection[] = [
@@ -206,7 +206,7 @@ Neither example substitutes for the aggregate analysis. The walkthrough above us
 });
 
 export const findingSummaries = [
-  { id: "finding-1", title: "Test evidence reduced faulty approvals", summary: "Both the factual summary and full report reduced observed faulty approvals to zero on matched benchmark-failing tasks. The full report showed no further reduction, but that does not establish that the formats are equivalent." },
+  { id: "finding-1", title: "Fewer faulty approvals with test evidence in this sample", summary: "No faulty approvals were observed with either the factual summary or full report on the matched benchmark-failing tasks. This does not establish zero risk or show that the two formats are equivalent." },
   { id: "finding-2", title: "Reviewers differed in accepting passing patches", summary: "With the same full report, Claude accepted more benchmark-passing fixes than Terra or Gemini. None approved a benchmark-failing fix on that matched task set." },
   { id: "finding-3", title: "The source label had no consistent follow-up benefit", summary: "Changing the identical report's stated source to a separate evaluator did not consistently increase approval in the larger follow-up. The initial positive pattern weakened." },
 ];

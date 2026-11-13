@@ -47,7 +47,7 @@ export const publishedStudies: ResearchStudy[] = [
     date: "Nov 4, 2026",
     iso: "2026-11-04",
     method: "Negotiation · Part 2",
-    summary: "Does the buyer’s advantage last when opportunities are reversed? We tested both who starts and which side has the better opportunity.",
+    summary: "Does the observed buyer lead persist when opportunities are reversed? We tested both who starts and which side has the better opportunity.",
     image: "/research-assets/negotiation-part2/negotiation-hero-v1.png",
   },
   {
@@ -58,7 +58,7 @@ export const publishedStudies: ResearchStudy[] = [
     date: "Nov 1, 2026",
     iso: "2026-11-01",
     method: "Tool feedback experiment",
-    summary: "Warning an AI about unreliable test reports did little to help. Running the tests again helped most when the first report falsely claimed success.",
+    summary: "In this experiment, a warning did little to help. A fresh, truthful test result helped most when the first report falsely claimed success.",
     image: "/research-assets/tool-error/cover.png",
   },
   {
@@ -91,7 +91,7 @@ export const publishedStudies: ResearchStudy[] = [
     date: "Oct 29, 2026",
     iso: "2026-10-29",
     method: "Negotiation · Part 1",
-    summary: "Changing buyer instructions had modest effects in simulated negotiations. Buyers appeared to have an advantage, prompting a closer look at why.",
+    summary: "Changing buyer instructions produced modest observed differences in simulated negotiations. An uncertain buyer lead prompted a closer look at why.",
     image: "/research-assets/negotiation/negotiation-hero-v1.png",
   },
   {
@@ -124,7 +124,7 @@ export const publishedStudies: ResearchStudy[] = [
     date: "Sep 13, 2026",
     iso: "2026-09-13",
     method: "Reviewer behavior experiment",
-    summary: "Test reports helped AI reviewers reject faulty code fixes. But reviewers still differed in which fixes they accepted when tests passed.",
+    summary: "On matched tasks, reviewers made fewer faulty approvals with test reports. They still differed in which fixes they accepted when tests passed.",
     image: "/research-assets/evidence-review/v3/three-lenses.webp",
   },
 ];

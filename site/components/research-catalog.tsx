@@ -67,7 +67,7 @@ export function ResearchCatalog() {
           <article className={styles.supportingCard}>
             <p className={styles.eyebrow}>Cost and quality</p>
             <h3><a href="/research/when-is-more-reasoning-worth-it">When is more reasoning worth it?</a></h3>
-            <p>What extra reasoning buys in correct answers, and how much the improvement costs.</p>
+            <p>The observed accuracy and cost tradeoffs across the tested models and reasoning settings.</p>
             <a className={styles.textLink} href="/research/when-is-more-reasoning-worth-it">Read the study →</a>
           </article>
           <article className={styles.supportingCard}>

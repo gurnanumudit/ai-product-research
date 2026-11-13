@@ -168,6 +168,10 @@ test('production homepage and article render with direct study links', async () 
         assert.ok(!draftHtml.includes('Review draft') && !draftHtml.includes('Unpublished'));
         assert.ok(draftHtml.includes('https://research.muditgurnani.com/research/when-is-more-reasoning-worth-it'));
         assert.ok(draftHtml.includes('three OpenAI GPT-5.6 models'));
+        assert.ok(draftHtml.includes('In this sample, low reasoning returned more correct answers than none'));
+        assert.ok(draftHtml.includes('Small count differences are not dependable rankings on new tasks.'));
+        assert.ok(draftHtml.includes('then validate cost and accuracy on fresh tasks from your own work.'));
+        assert.ok(!draftHtml.includes('Start with some reasoning;'));
         checkAnchors(draftHtml);
         assert.ok(!draftHtml.includes('/chunks/link-'), 'static articles do not load client-router link prefetching');
         assert.ok(!draftHtml.includes('/@vite/client') && !draftHtml.includes('virtual:vite-rsc/entry-browser'), 'review uses bundled modules, not development imports');
@@ -177,6 +181,10 @@ test('production homepage and article render with direct study links', async () 
     const article = await fetch(`http://localhost:${port}${articlePath}`);
     assert.equal(article.status, 200);
     const html = await article.text();
+    assert.ok(html.includes('No faulty approvals were observed with either the factual summary or full report'));
+    assert.ok(html.includes('This does not establish zero risk'));
+    assert.ok(!html.includes('reduced observed faulty approvals to zero'));
+    assert.ok(!html.includes('those approvals disappeared'));
     for (const id of ['introduction', 'experiment-setup', 'finding-1', 'finding-2', 'finding-3', 'application', 'limitations', 'conclusion', 'appendix', 'references']) {
       assert.ok(html.includes(`id="${id}"`), `Missing ${id}`);
     }
