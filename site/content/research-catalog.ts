@@ -40,6 +40,17 @@ export const researchTracks: {
 
 export const publishedStudies: ResearchStudy[] = [
   {
+    id: "luna-revision",
+    track: "cost",
+    title: "When does asking AI to revise its answer help?",
+    path: "/research/when-does-asking-ai-to-revise-help",
+    date: "Nov 16, 2026",
+    iso: "2026-11-16",
+    method: "Prompt and revision experiment",
+    summary: "One revision helped Luna solve more coding problems, but cost more per success. Planning gains were uncertain, with both fixes and regressions.",
+    image: "/research-assets/luna-revision/revision-cover-v1.png",
+  },
+  {
     id: "negotiation-two",
     track: "agents",
     title: "How AI negotiates Part 2",

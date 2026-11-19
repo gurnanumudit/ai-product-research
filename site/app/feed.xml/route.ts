@@ -31,7 +31,7 @@ export function GET() {
         <link>${publicOrigin}</link>
         <description>Independent research on AI cost, success, decision quality and agent behavior.</description>
         <language>en-us</language>
-        <lastBuildDate>${new Date("2026-11-04T12:00:00Z").toUTCString()}</lastBuildDate>
+        <lastBuildDate>${new Date("2026-11-16T12:00:00Z").toUTCString()}</lastBuildDate>
         ${items}
       </channel>
     </rss>`;

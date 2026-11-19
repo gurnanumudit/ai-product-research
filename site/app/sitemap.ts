@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: `${publicOrigin}/`,
-      lastModified: new Date("2026-11-04"),
+      lastModified: new Date("2026-11-16"),
       changeFrequency: "weekly",
       priority: 1,
     },

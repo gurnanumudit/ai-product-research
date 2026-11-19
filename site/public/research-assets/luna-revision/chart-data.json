@@ -1,0 +1,1189 @@
+{
+  "primary": {
+    "coding:S-A": {
+      "n": 100,
+      "both_pass": 49,
+      "both_fail": 30,
+      "gains": 10,
+      "regressions": 11,
+      "net": -1,
+      "difference": -0.01,
+      "two_sided_p": 1.0,
+      "p_numerator": "1",
+      "p_denominator": "1",
+      "discordant": 21,
+      "holm_adjusted_p": 1.0,
+      "adjusted_numerator": "1",
+      "adjusted_denominator": "1",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.1,
+        "high": 0.08
+      },
+      "formal_improvement": false
+    },
+    "coding:R-S": {
+      "n": 100,
+      "both_pass": 59,
+      "both_fail": 31,
+      "gains": 10,
+      "regressions": 0,
+      "net": 10,
+      "difference": 0.1,
+      "two_sided_p": 0.001953125,
+      "p_numerator": "1",
+      "p_denominator": "512",
+      "discordant": 10,
+      "holm_adjusted_p": 0.0078125,
+      "adjusted_numerator": "1",
+      "adjusted_denominator": "128",
+      "reject_two_sided_at_0_05": true,
+      "bootstrap_pointwise95": {
+        "low": 0.05,
+        "high": 0.16
+      },
+      "formal_improvement": true
+    },
+    "planning:S-A": {
+      "n": 100,
+      "both_pass": 45,
+      "both_fail": 19,
+      "gains": 21,
+      "regressions": 15,
+      "net": 6,
+      "difference": 0.06,
+      "two_sided_p": 0.40503224614076316,
+      "p_numerator": "1739600251",
+      "p_denominator": "4294967296",
+      "discordant": 36,
+      "holm_adjusted_p": 0.8100644922815263,
+      "adjusted_numerator": "1739600251",
+      "adjusted_denominator": "2147483648",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.06,
+        "high": 0.18
+      },
+      "formal_improvement": false
+    },
+    "planning:R-S": {
+      "n": 100,
+      "both_pass": 56,
+      "both_fail": 16,
+      "gains": 18,
+      "regressions": 10,
+      "net": 8,
+      "difference": 0.08,
+      "two_sided_p": 0.1849333420395851,
+      "p_numerator": "24821333",
+      "p_denominator": "134217728",
+      "discordant": 28,
+      "holm_adjusted_p": 0.5548000261187553,
+      "adjusted_numerator": "74463999",
+      "adjusted_denominator": "134217728",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.02,
+        "high": 0.18
+      },
+      "formal_improvement": false
+    }
+  },
+  "domain_cells": {
+    "coding": {
+      "A": {
+        "n": 100,
+        "passed": 60,
+        "pass_rate": 0.6,
+        "validity": {
+          "valid": 60,
+          "invalid": 5,
+          "missing": 35
+        },
+        "truncation": {
+          "yes": 5,
+          "no": 95,
+          "missing": 0
+        }
+      },
+      "S": {
+        "n": 100,
+        "passed": 59,
+        "pass_rate": 0.59,
+        "validity": {
+          "valid": 59,
+          "invalid": 7,
+          "missing": 34
+        },
+        "truncation": {
+          "yes": 7,
+          "no": 93,
+          "missing": 0
+        }
+      },
+      "R": {
+        "n": 100,
+        "passed": 69,
+        "pass_rate": 0.69,
+        "validity": {
+          "valid": 69,
+          "invalid": 1,
+          "missing": 30
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      }
+    },
+    "planning": {
+      "A": {
+        "n": 100,
+        "passed": 60,
+        "pass_rate": 0.6,
+        "validity": {
+          "valid": 60,
+          "invalid": 6,
+          "missing": 34
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      },
+      "S": {
+        "n": 100,
+        "passed": 66,
+        "pass_rate": 0.66,
+        "validity": {
+          "valid": 66,
+          "invalid": 3,
+          "missing": 31
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      },
+      "R": {
+        "n": 100,
+        "passed": 74,
+        "pass_rate": 0.74,
+        "validity": {
+          "valid": 74,
+          "invalid": 1,
+          "missing": 25
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      }
+    }
+  },
+  "planning_subtypes": {
+    "graph_color": {
+      "diagnostic_only": true,
+      "cells": {
+        "A": {
+          "n": 50,
+          "passed": 40,
+          "pass_rate": 0.8,
+          "validity": {
+            "valid": 40,
+            "invalid": 1,
+            "missing": 9
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        },
+        "S": {
+          "n": 50,
+          "passed": 45,
+          "pass_rate": 0.9,
+          "validity": {
+            "valid": 45,
+            "invalid": 1,
+            "missing": 4
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        },
+        "R": {
+          "n": 50,
+          "passed": 50,
+          "pass_rate": 1.0,
+          "validity": {
+            "valid": 50,
+            "invalid": 0,
+            "missing": 0
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        }
+      },
+      "S-A": {
+        "n": 50,
+        "both_pass": 35,
+        "both_fail": 0,
+        "gains": 10,
+        "regressions": 5,
+        "net": 5,
+        "difference": 0.1,
+        "two_sided_p": 0.3017578125,
+        "p_numerator": "309",
+        "p_denominator": "1024",
+        "discordant": 15
+      },
+      "R-S": {
+        "n": 50,
+        "both_pass": 45,
+        "both_fail": 0,
+        "gains": 5,
+        "regressions": 0,
+        "net": 5,
+        "difference": 0.1,
+        "two_sided_p": 0.0625,
+        "p_numerator": "1",
+        "p_denominator": "16",
+        "discordant": 5
+      }
+    },
+    "sokoban": {
+      "diagnostic_only": true,
+      "cells": {
+        "A": {
+          "n": 50,
+          "passed": 20,
+          "pass_rate": 0.4,
+          "validity": {
+            "valid": 20,
+            "invalid": 5,
+            "missing": 25
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        },
+        "S": {
+          "n": 50,
+          "passed": 21,
+          "pass_rate": 0.42,
+          "validity": {
+            "valid": 21,
+            "invalid": 2,
+            "missing": 27
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        },
+        "R": {
+          "n": 50,
+          "passed": 24,
+          "pass_rate": 0.48,
+          "validity": {
+            "valid": 24,
+            "invalid": 1,
+            "missing": 25
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        }
+      },
+      "S-A": {
+        "n": 50,
+        "both_pass": 10,
+        "both_fail": 19,
+        "gains": 11,
+        "regressions": 10,
+        "net": 1,
+        "difference": 0.02,
+        "two_sided_p": 1.0,
+        "p_numerator": "1",
+        "p_denominator": "1",
+        "discordant": 21
+      },
+      "R-S": {
+        "n": 50,
+        "both_pass": 11,
+        "both_fail": 16,
+        "gains": 13,
+        "regressions": 10,
+        "net": 3,
+        "difference": 0.06,
+        "two_sided_p": 0.6776394844055176,
+        "p_numerator": "1421113",
+        "p_denominator": "2097152",
+        "discordant": 23
+      }
+    }
+  },
+  "standalone_workflow_by_model_domain": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 281233425,
+        "missing": 0,
+        "complete_sum": 281233425,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 64407,
+          "missing": 0,
+          "complete_sum": 64407,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 549166,
+          "missing": 0,
+          "complete_sum": 549166,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 613573,
+          "missing": 0,
+          "complete_sum": 613573,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 8389,
+          "missing": 0,
+          "complete_sum": 8389,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 499869,
+          "missing": 0,
+          "complete_sum": 499869,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7181274.73579099,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7282675.31145699,
+          "missing": 0,
+          "complete_sum": 7282675.31145699,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1250480.1515010104,
+          "missing": 0,
+          "complete_sum": 1250480.1515010104,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1377688.1667440091,
+          "missing": 0,
+          "complete_sum": 1377688.1667440091,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 3065780.4148010006,
+          "missing": 0,
+          "complete_sum": 3065780.4148010006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 200,
+      "cost_nano_usd": {
+        "known_sum": 451084430,
+        "missing": 0,
+        "complete_sum": 451084430,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 184175,
+          "missing": 0,
+          "complete_sum": 184175,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 863156,
+          "missing": 0,
+          "complete_sum": 863156,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 1047331,
+          "missing": 0,
+          "complete_sum": 1047331,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 81710,
+          "missing": 0,
+          "complete_sum": 81710,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 766608,
+          "missing": 0,
+          "complete_sum": 766608,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 12104817.223707998,
+          "missing": 0,
+          "complete_sum": 12104817.223707998,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 12104817.223707998,
+          "missing": 0,
+          "complete_sum": 12104817.223707998,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 2550967.4920480005,
+          "missing": 0,
+          "complete_sum": 2550967.4920480005,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 2801248.8959200177,
+          "missing": 0,
+          "complete_sum": 2801248.8959200177,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2929889.742837006,
+          "missing": 0,
+          "complete_sum": 2929889.742837006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 285268650,
+        "missing": 0,
+        "complete_sum": 285268650,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 66507,
+          "missing": 0,
+          "complete_sum": 66507,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 556706,
+          "missing": 0,
+          "complete_sum": 556706,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 623213,
+          "missing": 0,
+          "complete_sum": 623213,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 509782,
+          "missing": 0,
+          "complete_sum": 509782,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1295483.0973430073,
+          "missing": 0,
+          "complete_sum": 1295483.0973430073,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1425486.8413710066,
+          "missing": 0,
+          "complete_sum": 1425486.8413710066,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2795601.0390800033,
+          "missing": 0,
+          "complete_sum": 2795601.0390800033,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 288379500,
+        "missing": 0,
+        "complete_sum": 288379500,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 30730,
+          "missing": 0,
+          "complete_sum": 30730,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 570613,
+          "missing": 0,
+          "complete_sum": 570613,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 601343,
+          "missing": 0,
+          "complete_sum": 601343,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 564263,
+          "missing": 0,
+          "complete_sum": 564263,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1280492.047669003,
+          "missing": 0,
+          "complete_sum": 1280492.047669003,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1403735.6783230028,
+          "missing": 0,
+          "complete_sum": 1403735.6783230028,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 742393.7078790125,
+          "missing": 0,
+          "complete_sum": 742393.7078790125,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 200,
+      "cost_nano_usd": {
+        "known_sum": 445589700,
+        "missing": 0,
+        "complete_sum": 445589700,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 76672,
+          "missing": 0,
+          "complete_sum": 76672,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 875845,
+          "missing": 0,
+          "complete_sum": 875845,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 952517,
+          "missing": 0,
+          "complete_sum": 952517,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 861811,
+          "missing": 0,
+          "complete_sum": 861811,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 11122903.027158987,
+          "missing": 0,
+          "complete_sum": 11122903.027158987,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 11122903.027158987,
+          "missing": 0,
+          "complete_sum": 11122903.027158987,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 2615995.545797025,
+          "missing": 0,
+          "complete_sum": 2615995.545797025,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 2859392.203091995,
+          "missing": 0,
+          "complete_sum": 2859392.203091995,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 732409.8569579907,
+          "missing": 0,
+          "complete_sum": 732409.8569579907,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 272989000,
+        "missing": 0,
+        "complete_sum": 272989000,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 32830,
+          "missing": 0,
+          "complete_sum": 32830,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 539412,
+          "missing": 0,
+          "complete_sum": 539412,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 572242,
+          "missing": 0,
+          "complete_sum": 572242,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 532600,
+          "missing": 0,
+          "complete_sum": 532600,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1310505.8191630454,
+          "missing": 0,
+          "complete_sum": 1310505.8191630454,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1432854.1947129928,
+          "missing": 0,
+          "complete_sum": 1432854.1947129928,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 738936.0107909925,
+          "missing": 0,
+          "complete_sum": 738936.0107909925,
+          "n": 100
+        }
+      }
+    }
+  ],
+  "experiment_totals": {
+    "rows": 601,
+    "logical_answers": 600,
+    "physical_requests": 601,
+    "cost_nano_usd": {
+      "known_sum": 1466287055,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 601
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 355984,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "output": {
+        "known_sum": 2858780,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "total": {
+        "known_sum": 3214764,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "cached": {
+        "known_sum": 10598,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "cache_write": {
+        "known_sum": 90099,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "reasoning": {
+        "known_sum": 2692551,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 37240288.45061896,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 601
+      },
+      "physical_elapsed": {
+        "known_sum": 37341689.02628496,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "receipt_wait": {
+        "known_sum": 7697935.23701504,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "receipt_elapsed": {
+        "known_sum": 8442064.944079025,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "grading_elapsed": {
+        "known_sum": 11005010.772346005,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      }
+    }
+  },
+  "historical_totals": {
+    "rows": 397,
+    "logical_answers": 396,
+    "physical_requests": 397,
+    "cost_nano_usd": {
+      "known_sum": 2302121250,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 397
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 149611,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "output": {
+        "known_sum": 842601,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "total": {
+        "known_sum": 992212,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "cached": {
+        "known_sum": 0,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "cache_write": {
+        "known_sum": 14584,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "reasoning": {
+        "known_sum": 775737,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 17548107.326665998,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 397
+      },
+      "physical_elapsed": {
+        "known_sum": 17832903.517582,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 397
+      },
+      "receipt_wait": {
+        "known_sum": 3961573.5920639946,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "receipt_elapsed": {
+        "known_sum": 5706223.396405,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 397
+      },
+      "grading_elapsed": {
+        "known_sum": 0,
+        "missing": 397,
+        "complete_sum": null,
+        "n": 397
+      }
+    }
+  },
+  "lifetime_totals": {
+    "rows": 998,
+    "logical_answers": 996,
+    "physical_requests": 998,
+    "cost_nano_usd": {
+      "known_sum": 3768408305,
+      "missing": 2,
+      "complete_sum": null,
+      "n": 998
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 505595,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "output": {
+        "known_sum": 3701381,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "total": {
+        "known_sum": 4206976,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "cached": {
+        "known_sum": 10598,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "cache_write": {
+        "known_sum": 104683,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "reasoning": {
+        "known_sum": 3468288,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 54788395.77728496,
+        "missing": 5,
+        "complete_sum": null,
+        "n": 998
+      },
+      "physical_elapsed": {
+        "known_sum": 55174592.54386696,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 998
+      },
+      "receipt_wait": {
+        "known_sum": 11659508.829079034,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "receipt_elapsed": {
+        "known_sum": 14148288.340484025,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 998
+      },
+      "grading_elapsed": {
+        "known_sum": 11005010.772346005,
+        "missing": 398,
+        "complete_sum": null,
+        "n": 998
+      }
+    }
+  },
+  "accounting": {
+    "current_campaign_logical_answers": 600,
+    "current_campaign_physical_requests": 601,
+    "adopted_saved_answers": 279,
+    "adopted_known_nano_usd": 656755945,
+    "continuation_new_logical_answers": 321,
+    "continuation_new_physical_requests": 321,
+    "replacement_responses": 1,
+    "untouched_completed": 320,
+    "continuation_settled_nano_usd": 809531110,
+    "current_campaign_known_nano_usd": 1466287055,
+    "current_campaign_api_nano_usd": {
+      "known_sum": 1466287055,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 601
+    },
+    "current_campaign_pending_reserve_nano_usd": 591016800,
+    "additional_pending_reserve_nano_usd": 0,
+    "original_current_actual_charge_nano_usd": null,
+    "historical_logical_answers": 396,
+    "historical_physical_requests": 397,
+    "historical_known_api_nano_usd": 2302121250,
+    "historical_pending_reserve_nano_usd": 11820336000,
+    "historical_unknown_actual_charge_nano_usd": null,
+    "lifetime_logical_answers": 996,
+    "lifetime_physical_requests": 998,
+    "known_api_once_nano_usd": 3768408305,
+    "total_pending_reserve_nano_usd": 12411352800,
+    "actual_complete_api_nano_usd": null,
+    "infrastructure_commitment_nano_usd": 10000000000,
+    "infrastructure_invoice_nano_usd": null,
+    "all_in_actual_nano_usd": null,
+    "known_reserved_committed_envelope_nano_usd": 26179761105,
+    "current_campaign_cap_nano_usd": 10000000000,
+    "combined_cap_nano_usd": 60000000000,
+    "prior201_finances_included": false,
+    "original_protocol_complete": false,
+    "amended_logical_complete": true
+  },
+  "measured_phase_times": {
+    "generation_wall_ms": null,
+    "grading_wall_ms": 11044133.0,
+    "whole_campaign_wall_ms": null
+  },
+  "limitations": [
+    "Model/domain scope chosen after prior calibration; no calibration-headroom criterion is a workflow claim.",
+    "Fixed bank order with A,S,R consecutive is not randomized service-time allocation; provider alias/time variation can confound workflow differences.",
+    "Public coding sources may be in training; finite history/family exclusions do not establish uncontamination.",
+    "Coding95 older-cohort plus5 recent reserves; stored-case/reference consistency is not universal program correctness or an official TACO score.",
+    "Authored graph/Sokoban certificates establish the stated finite checks, not general planning ability or guaranteed target-model difficulty.",
+    "One stochastic A/S/R trajectory per family; no equal-compute control, best-of-S/R choice, equivalence claim, broad-model generalization or publication authority.",
+    "Pointwise percentile intervals have no simultaneous95percent coverage guarantee; family independence and bootstrap approximation remain assumptions.",
+    "No outcome-based exclusion/refill; invalid and truncated endpoints count as failures. Operationally unresolved outcomes block full-run inference.",
+    "Output includes reasoning; cached/cache-write details are input subsets. Detail token columns are never added to total tokens.",
+    "Summed measured request durations are not campaign wall time, pure inference time, or time-to-correct-answer; missing values remain null.",
+    "Actual experiment generates S once. Standalone R consumes S+R; standalone cost tables overlap and must not be summed as experiment spend.",
+    "Historical original charge remains null with11820336000nanoUSD reserve;10000000000nanoUSD infrastructure commitment is not spend/invoice. Prior201 finances excluded.",
+    "Owner-authorized continuation adopts279 saved responses, replaces one unrecovered original A request with the exact same wire body, and completes320 untouched slots. This is amended completion, not completion under the original no-retry protocol.",
+    "No original response or settlement was available for adoption under the pinned replacement disposition. This does not establish that recovery is impossible or that remote completion or charge was absent. The original is a separate physical-only row, not a 601st scientific endpoint or an imputed failure; replacement_authority records whether lookup was completed or the owner directed replacement without completed lookup.",
+    "The original current charge and full elapsed time remain null;591016800nanoUSD is reserved. Its observed transport segment is separately labeled, never substituted for a full duration. Replacement logical elapsed is null; physical duration is measured separately.",
+    "The interruption and later replacement add time/provider drift to the fixed A/S/R order. Same wire body does not guarantee the same provider state or stochastic response.",
+    "All600 logical endpoints must be resolved and settled; the only permitted pending charges are the two explicitly inherited unknown physical requests. No partial inference or outcome-driven replacement is allowed."
+  ],
+  "source_summary_sha256": "3d842e5b4e47266d5c7c7eeddd726bab30cc9ff957c2ab639d5eedb1dcb58cea",
+  "article_descriptive_cost_per_success": {
+    "definition": "Settled standalone workflow API cost across all 100 tasks in each domain, including failures, divided by tasks passing the stored tests. R includes S plus revision. Excludes infrastructure and unresolved orphan charges; descriptive, not a forecast or retry-until-success estimate.",
+    "domains": {
+      "coding": {
+        "S": {
+          "cost_nano_usd_all_100_tasks": 285268650,
+          "successful_tasks": 59,
+          "usd_per_successful_task": 0.0048350618644067795,
+          "cents_per_successful_task": 0.483506186440678
+        },
+        "R": {
+          "cost_nano_usd_all_100_tasks": 451084430,
+          "successful_tasks": 69,
+          "usd_per_successful_task": 0.006537455507246376,
+          "cents_per_successful_task": 0.6537455507246377
+        }
+      },
+      "planning": {
+        "S": {
+          "cost_nano_usd_all_100_tasks": 272989000,
+          "successful_tasks": 66,
+          "usd_per_successful_task": 0.004136196969696969,
+          "cents_per_successful_task": 0.41361969696969697
+        },
+        "R": {
+          "cost_nano_usd_all_100_tasks": 445589700,
+          "successful_tasks": 74,
+          "usd_per_successful_task": 0.006021482432432432,
+          "cents_per_successful_task": 0.6021482432432432
+        }
+      }
+    }
+  }
+}
