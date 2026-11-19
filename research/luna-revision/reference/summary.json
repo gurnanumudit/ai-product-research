@@ -1,0 +1,5814 @@
+{
+  "primary": {
+    "coding:S-A": {
+      "n": 100,
+      "both_pass": 49,
+      "both_fail": 30,
+      "gains": 10,
+      "regressions": 11,
+      "net": -1,
+      "difference": -0.01,
+      "two_sided_p": 1.0,
+      "p_numerator": "1",
+      "p_denominator": "1",
+      "discordant": 21,
+      "holm_adjusted_p": 1.0,
+      "adjusted_numerator": "1",
+      "adjusted_denominator": "1",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.1,
+        "high": 0.08
+      },
+      "formal_improvement": false
+    },
+    "coding:R-S": {
+      "n": 100,
+      "both_pass": 59,
+      "both_fail": 31,
+      "gains": 10,
+      "regressions": 0,
+      "net": 10,
+      "difference": 0.1,
+      "two_sided_p": 0.001953125,
+      "p_numerator": "1",
+      "p_denominator": "512",
+      "discordant": 10,
+      "holm_adjusted_p": 0.0078125,
+      "adjusted_numerator": "1",
+      "adjusted_denominator": "128",
+      "reject_two_sided_at_0_05": true,
+      "bootstrap_pointwise95": {
+        "low": 0.05,
+        "high": 0.16
+      },
+      "formal_improvement": true
+    },
+    "planning:S-A": {
+      "n": 100,
+      "both_pass": 45,
+      "both_fail": 19,
+      "gains": 21,
+      "regressions": 15,
+      "net": 6,
+      "difference": 0.06,
+      "two_sided_p": 0.40503224614076316,
+      "p_numerator": "1739600251",
+      "p_denominator": "4294967296",
+      "discordant": 36,
+      "holm_adjusted_p": 0.8100644922815263,
+      "adjusted_numerator": "1739600251",
+      "adjusted_denominator": "2147483648",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.06,
+        "high": 0.18
+      },
+      "formal_improvement": false
+    },
+    "planning:R-S": {
+      "n": 100,
+      "both_pass": 56,
+      "both_fail": 16,
+      "gains": 18,
+      "regressions": 10,
+      "net": 8,
+      "difference": 0.08,
+      "two_sided_p": 0.1849333420395851,
+      "p_numerator": "24821333",
+      "p_denominator": "134217728",
+      "discordant": 28,
+      "holm_adjusted_p": 0.5548000261187553,
+      "adjusted_numerator": "74463999",
+      "adjusted_denominator": "134217728",
+      "reject_two_sided_at_0_05": false,
+      "bootstrap_pointwise95": {
+        "low": -0.02,
+        "high": 0.18
+      },
+      "formal_improvement": false
+    }
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 20261111,
+    "rng": "Python random.Random MT19937 randrange; runtime pinned",
+    "resample_index_stream_sha256": "28922f32c580f3627f13c1864c15311c8615a291063704246f38a6f9ae02cc24",
+    "stratum_sizes": {
+      "coding": 100,
+      "graph_color": 50,
+      "sokoban": 50
+    },
+    "interval_method": "pointwise95percent percentile, linear interpolation type7; not simultaneous",
+    "intervals": {
+      "coding:S-A": {
+        "low": -0.1,
+        "high": 0.08
+      },
+      "coding:R-S": {
+        "low": 0.05,
+        "high": 0.16
+      },
+      "planning:S-A": {
+        "low": -0.06,
+        "high": 0.18
+      },
+      "planning:R-S": {
+        "low": -0.02,
+        "high": 0.18
+      }
+    }
+  },
+  "domain_cells": {
+    "coding": {
+      "A": {
+        "n": 100,
+        "passed": 60,
+        "pass_rate": 0.6,
+        "validity": {
+          "valid": 60,
+          "invalid": 5,
+          "missing": 35
+        },
+        "truncation": {
+          "yes": 5,
+          "no": 95,
+          "missing": 0
+        }
+      },
+      "S": {
+        "n": 100,
+        "passed": 59,
+        "pass_rate": 0.59,
+        "validity": {
+          "valid": 59,
+          "invalid": 7,
+          "missing": 34
+        },
+        "truncation": {
+          "yes": 7,
+          "no": 93,
+          "missing": 0
+        }
+      },
+      "R": {
+        "n": 100,
+        "passed": 69,
+        "pass_rate": 0.69,
+        "validity": {
+          "valid": 69,
+          "invalid": 1,
+          "missing": 30
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      }
+    },
+    "planning": {
+      "A": {
+        "n": 100,
+        "passed": 60,
+        "pass_rate": 0.6,
+        "validity": {
+          "valid": 60,
+          "invalid": 6,
+          "missing": 34
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      },
+      "S": {
+        "n": 100,
+        "passed": 66,
+        "pass_rate": 0.66,
+        "validity": {
+          "valid": 66,
+          "invalid": 3,
+          "missing": 31
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      },
+      "R": {
+        "n": 100,
+        "passed": 74,
+        "pass_rate": 0.74,
+        "validity": {
+          "valid": 74,
+          "invalid": 1,
+          "missing": 25
+        },
+        "truncation": {
+          "yes": 1,
+          "no": 99,
+          "missing": 0
+        }
+      }
+    }
+  },
+  "planning_subtypes": {
+    "graph_color": {
+      "diagnostic_only": true,
+      "cells": {
+        "A": {
+          "n": 50,
+          "passed": 40,
+          "pass_rate": 0.8,
+          "validity": {
+            "valid": 40,
+            "invalid": 1,
+            "missing": 9
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        },
+        "S": {
+          "n": 50,
+          "passed": 45,
+          "pass_rate": 0.9,
+          "validity": {
+            "valid": 45,
+            "invalid": 1,
+            "missing": 4
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        },
+        "R": {
+          "n": 50,
+          "passed": 50,
+          "pass_rate": 1.0,
+          "validity": {
+            "valid": 50,
+            "invalid": 0,
+            "missing": 0
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        }
+      },
+      "S-A": {
+        "n": 50,
+        "both_pass": 35,
+        "both_fail": 0,
+        "gains": 10,
+        "regressions": 5,
+        "net": 5,
+        "difference": 0.1,
+        "two_sided_p": 0.3017578125,
+        "p_numerator": "309",
+        "p_denominator": "1024",
+        "discordant": 15
+      },
+      "R-S": {
+        "n": 50,
+        "both_pass": 45,
+        "both_fail": 0,
+        "gains": 5,
+        "regressions": 0,
+        "net": 5,
+        "difference": 0.1,
+        "two_sided_p": 0.0625,
+        "p_numerator": "1",
+        "p_denominator": "16",
+        "discordant": 5
+      }
+    },
+    "sokoban": {
+      "diagnostic_only": true,
+      "cells": {
+        "A": {
+          "n": 50,
+          "passed": 20,
+          "pass_rate": 0.4,
+          "validity": {
+            "valid": 20,
+            "invalid": 5,
+            "missing": 25
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        },
+        "S": {
+          "n": 50,
+          "passed": 21,
+          "pass_rate": 0.42,
+          "validity": {
+            "valid": 21,
+            "invalid": 2,
+            "missing": 27
+          },
+          "truncation": {
+            "yes": 0,
+            "no": 50,
+            "missing": 0
+          }
+        },
+        "R": {
+          "n": 50,
+          "passed": 24,
+          "pass_rate": 0.48,
+          "validity": {
+            "valid": 24,
+            "invalid": 1,
+            "missing": 25
+          },
+          "truncation": {
+            "yes": 1,
+            "no": 49,
+            "missing": 0
+          }
+        }
+      },
+      "S-A": {
+        "n": 50,
+        "both_pass": 10,
+        "both_fail": 19,
+        "gains": 11,
+        "regressions": 10,
+        "net": 1,
+        "difference": 0.02,
+        "two_sided_p": 1.0,
+        "p_numerator": "1",
+        "p_denominator": "1",
+        "discordant": 21
+      },
+      "R-S": {
+        "n": 50,
+        "both_pass": 11,
+        "both_fail": 16,
+        "gains": 13,
+        "regressions": 10,
+        "net": 3,
+        "difference": 0.06,
+        "two_sided_p": 0.6776394844055176,
+        "p_numerator": "1421113",
+        "p_denominator": "2097152",
+        "discordant": 23
+      }
+    }
+  },
+  "experiment_by_model_domain_workflow": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 101,
+      "logical_answers": 100,
+      "physical_requests": 101,
+      "cost_nano_usd": {
+        "known_sum": 281233425,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 101
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 64407,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "output": {
+          "known_sum": 549166,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "total": {
+          "known_sum": 613573,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "cache_write": {
+          "known_sum": 8389,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "reasoning": {
+          "known_sum": 499869,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7181274.73579099,
+          "missing": 2,
+          "complete_sum": null,
+          "n": 101
+        },
+        "physical_elapsed": {
+          "known_sum": 7282675.31145699,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "receipt_wait": {
+          "known_sum": 1250480.1515010104,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "receipt_elapsed": {
+          "known_sum": 1377688.1667440091,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        },
+        "grading_elapsed": {
+          "known_sum": 3065780.4148010006,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 101
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 165815780,
+        "missing": 0,
+        "complete_sum": 165815780,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 117668,
+          "missing": 0,
+          "complete_sum": 117668,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 306450,
+          "missing": 0,
+          "complete_sum": 306450,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 424118,
+          "missing": 0,
+          "complete_sum": 424118,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 71112,
+          "missing": 0,
+          "complete_sum": 71112,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 256826,
+          "missing": 0,
+          "complete_sum": 256826,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4642945.253086996,
+          "missing": 0,
+          "complete_sum": 4642945.253086996,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 4642945.253086996,
+          "missing": 0,
+          "complete_sum": 4642945.253086996,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1255484.3947049933,
+          "missing": 0,
+          "complete_sum": 1255484.3947049933,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1375762.0545490114,
+          "missing": 0,
+          "complete_sum": 1375762.0545490114,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2929889.742837006,
+          "missing": 0,
+          "complete_sum": 2929889.742837006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 285268650,
+        "missing": 0,
+        "complete_sum": 285268650,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 66507,
+          "missing": 0,
+          "complete_sum": 66507,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 556706,
+          "missing": 0,
+          "complete_sum": 556706,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 623213,
+          "missing": 0,
+          "complete_sum": 623213,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 509782,
+          "missing": 0,
+          "complete_sum": 509782,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1295483.0973430073,
+          "missing": 0,
+          "complete_sum": 1295483.0973430073,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1425486.8413710066,
+          "missing": 0,
+          "complete_sum": 1425486.8413710066,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2795601.0390800033,
+          "missing": 0,
+          "complete_sum": 2795601.0390800033,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 288379500,
+        "missing": 0,
+        "complete_sum": 288379500,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 30730,
+          "missing": 0,
+          "complete_sum": 30730,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 570613,
+          "missing": 0,
+          "complete_sum": 570613,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 601343,
+          "missing": 0,
+          "complete_sum": 601343,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 564263,
+          "missing": 0,
+          "complete_sum": 564263,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1280492.047669003,
+          "missing": 0,
+          "complete_sum": 1280492.047669003,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1403735.6783230028,
+          "missing": 0,
+          "complete_sum": 1403735.6783230028,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 742393.7078790125,
+          "missing": 0,
+          "complete_sum": 742393.7078790125,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 172600700,
+        "missing": 0,
+        "complete_sum": 172600700,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 43842,
+          "missing": 0,
+          "complete_sum": 43842,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 336433,
+          "missing": 0,
+          "complete_sum": 336433,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 380275,
+          "missing": 0,
+          "complete_sum": 380275,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 329211,
+          "missing": 0,
+          "complete_sum": 329211,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4606566.857157987,
+          "missing": 0,
+          "complete_sum": 4606566.857157987,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 4606566.857157987,
+          "missing": 0,
+          "complete_sum": 4606566.857157987,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1305489.7266339797,
+          "missing": 0,
+          "complete_sum": 1305489.7266339797,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1426538.0083790023,
+          "missing": 0,
+          "complete_sum": 1426538.0083790023,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 732409.8569579907,
+          "missing": 0,
+          "complete_sum": 732409.8569579907,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 272989000,
+        "missing": 0,
+        "complete_sum": 272989000,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 32830,
+          "missing": 0,
+          "complete_sum": 32830,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 539412,
+          "missing": 0,
+          "complete_sum": 539412,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 572242,
+          "missing": 0,
+          "complete_sum": 572242,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 532600,
+          "missing": 0,
+          "complete_sum": 532600,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1310505.8191630454,
+          "missing": 0,
+          "complete_sum": 1310505.8191630454,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1432854.1947129928,
+          "missing": 0,
+          "complete_sum": 1432854.1947129928,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 738936.0107909925,
+          "missing": 0,
+          "complete_sum": 738936.0107909925,
+          "n": 100
+        }
+      }
+    }
+  ],
+  "experiment_by_planning_subtype_workflow": [
+    {
+      "stratum": "graph_color",
+      "workflow": "A",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 144090400,
+        "missing": 0,
+        "complete_sum": 144090400,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 22524,
+          "missing": 0,
+          "complete_sum": 22524,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 283676,
+          "missing": 0,
+          "complete_sum": 283676,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 306200,
+          "missing": 0,
+          "complete_sum": 306200,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 278331,
+          "missing": 0,
+          "complete_sum": 278331,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3355857.2879179968,
+          "missing": 0,
+          "complete_sum": 3355857.2879179968,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 3355857.2879179968,
+          "missing": 0,
+          "complete_sum": 3355857.2879179968,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 645233.3659610006,
+          "missing": 0,
+          "complete_sum": 645233.3659610006,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 704176.3493700011,
+          "missing": 0,
+          "complete_sum": 704176.3493700011,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 382340.89221300744,
+          "missing": 0,
+          "complete_sum": 382340.89221300744,
+          "n": 50
+        }
+      }
+    },
+    {
+      "stratum": "graph_color",
+      "workflow": "R",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 30382500,
+        "missing": 0,
+        "complete_sum": 30382500,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 31375,
+          "missing": 0,
+          "complete_sum": 31375,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 54490,
+          "missing": 0,
+          "complete_sum": 54490,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 85865,
+          "missing": 0,
+          "complete_sum": 85865,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 48332,
+          "missing": 0,
+          "complete_sum": 48332,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1228683.9270779989,
+          "missing": 0,
+          "complete_sum": 1228683.9270779989,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 1228683.9270779989,
+          "missing": 0,
+          "complete_sum": 1228683.9270779989,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 670244.1184269998,
+          "missing": 0,
+          "complete_sum": 670244.1184269998,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 729869.2414179996,
+          "missing": 0,
+          "complete_sum": 729869.2414179996,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 376590.8081269935,
+          "missing": 0,
+          "complete_sum": 376590.8081269935,
+          "n": 50
+        }
+      }
+    },
+    {
+      "stratum": "graph_color",
+      "workflow": "S",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 138114900,
+        "missing": 0,
+        "complete_sum": 138114900,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 23574,
+          "missing": 0,
+          "complete_sum": 23574,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 271515,
+          "missing": 0,
+          "complete_sum": 271515,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 295089,
+          "missing": 0,
+          "complete_sum": 295089,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 265820,
+          "missing": 0,
+          "complete_sum": 265820,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3221138.418083001,
+          "missing": 0,
+          "complete_sum": 3221138.418083001,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 3221138.418083001,
+          "missing": 0,
+          "complete_sum": 3221138.418083001,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 640237.3177530062,
+          "missing": 0,
+          "complete_sum": 640237.3177530062,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 699169.2835439965,
+          "missing": 0,
+          "complete_sum": 699169.2835439965,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 381316.55874999054,
+          "missing": 0,
+          "complete_sum": 381316.55874999054,
+          "n": 50
+        }
+      }
+    },
+    {
+      "stratum": "sokoban",
+      "workflow": "A",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 144289100,
+        "missing": 0,
+        "complete_sum": 144289100,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 8206,
+          "missing": 0,
+          "complete_sum": 8206,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 286937,
+          "missing": 0,
+          "complete_sum": 286937,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 295143,
+          "missing": 0,
+          "complete_sum": 295143,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 285932,
+          "missing": 0,
+          "complete_sum": 285932,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3475436.1760429908,
+          "missing": 0,
+          "complete_sum": 3475436.1760429908,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 3475436.1760429908,
+          "missing": 0,
+          "complete_sum": 3475436.1760429908,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 635258.6817080025,
+          "missing": 0,
+          "complete_sum": 635258.6817080025,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 699559.3289530016,
+          "missing": 0,
+          "complete_sum": 699559.3289530016,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 360052.815666005,
+          "missing": 0,
+          "complete_sum": 360052.815666005,
+          "n": 50
+        }
+      }
+    },
+    {
+      "stratum": "sokoban",
+      "workflow": "R",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 142218200,
+        "missing": 0,
+        "complete_sum": 142218200,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 12467,
+          "missing": 0,
+          "complete_sum": 12467,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 281943,
+          "missing": 0,
+          "complete_sum": 281943,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 294410,
+          "missing": 0,
+          "complete_sum": 294410,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 280879,
+          "missing": 0,
+          "complete_sum": 280879,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3377882.9300799873,
+          "missing": 0,
+          "complete_sum": 3377882.9300799873,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 3377882.9300799873,
+          "missing": 0,
+          "complete_sum": 3377882.9300799873,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 635245.6082069799,
+          "missing": 0,
+          "complete_sum": 635245.6082069799,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 696668.7669610027,
+          "missing": 0,
+          "complete_sum": 696668.7669610027,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 355819.0488309972,
+          "missing": 0,
+          "complete_sum": 355819.0488309972,
+          "n": 50
+        }
+      }
+    },
+    {
+      "stratum": "sokoban",
+      "workflow": "S",
+      "rows": 50,
+      "logical_answers": 50,
+      "physical_requests": 50,
+      "cost_nano_usd": {
+        "known_sum": 134874100,
+        "missing": 0,
+        "complete_sum": 134874100,
+        "n": 50
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 9256,
+          "missing": 0,
+          "complete_sum": 9256,
+          "n": 50
+        },
+        "output": {
+          "known_sum": 267897,
+          "missing": 0,
+          "complete_sum": 267897,
+          "n": 50
+        },
+        "total": {
+          "known_sum": 277153,
+          "missing": 0,
+          "complete_sum": 277153,
+          "n": 50
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 50
+        },
+        "reasoning": {
+          "known_sum": 266780,
+          "missing": 0,
+          "complete_sum": 266780,
+          "n": 50
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3295197.7519179992,
+          "missing": 0,
+          "complete_sum": 3295197.7519179992,
+          "n": 50
+        },
+        "physical_elapsed": {
+          "known_sum": 3295197.7519179992,
+          "missing": 0,
+          "complete_sum": 3295197.7519179992,
+          "n": 50
+        },
+        "receipt_wait": {
+          "known_sum": 670268.5014100391,
+          "missing": 0,
+          "complete_sum": 670268.5014100391,
+          "n": 50
+        },
+        "receipt_elapsed": {
+          "known_sum": 733684.9111689962,
+          "missing": 0,
+          "complete_sum": 733684.9111689962,
+          "n": 50
+        },
+        "grading_elapsed": {
+          "known_sum": 357619.452041002,
+          "missing": 0,
+          "complete_sum": 357619.452041002,
+          "n": 50
+        }
+      }
+    }
+  ],
+  "experiment_totals": {
+    "rows": 601,
+    "logical_answers": 600,
+    "physical_requests": 601,
+    "cost_nano_usd": {
+      "known_sum": 1466287055,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 601
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 355984,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "output": {
+        "known_sum": 2858780,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "total": {
+        "known_sum": 3214764,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "cached": {
+        "known_sum": 10598,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "cache_write": {
+        "known_sum": 90099,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "reasoning": {
+        "known_sum": 2692551,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 37240288.45061896,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 601
+      },
+      "physical_elapsed": {
+        "known_sum": 37341689.02628496,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "receipt_wait": {
+        "known_sum": 7697935.23701504,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "receipt_elapsed": {
+        "known_sum": 8442064.944079025,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      },
+      "grading_elapsed": {
+        "known_sum": 11005010.772346005,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 601
+      }
+    }
+  },
+  "standalone_workflow_by_model_domain": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 281233425,
+        "missing": 0,
+        "complete_sum": 281233425,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 64407,
+          "missing": 0,
+          "complete_sum": 64407,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 549166,
+          "missing": 0,
+          "complete_sum": 549166,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 613573,
+          "missing": 0,
+          "complete_sum": 613573,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 8389,
+          "missing": 0,
+          "complete_sum": 8389,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 499869,
+          "missing": 0,
+          "complete_sum": 499869,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7181274.73579099,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7282675.31145699,
+          "missing": 0,
+          "complete_sum": 7282675.31145699,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1250480.1515010104,
+          "missing": 0,
+          "complete_sum": 1250480.1515010104,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1377688.1667440091,
+          "missing": 0,
+          "complete_sum": 1377688.1667440091,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 3065780.4148010006,
+          "missing": 0,
+          "complete_sum": 3065780.4148010006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 200,
+      "cost_nano_usd": {
+        "known_sum": 451084430,
+        "missing": 0,
+        "complete_sum": 451084430,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 184175,
+          "missing": 0,
+          "complete_sum": 184175,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 863156,
+          "missing": 0,
+          "complete_sum": 863156,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 1047331,
+          "missing": 0,
+          "complete_sum": 1047331,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 81710,
+          "missing": 0,
+          "complete_sum": 81710,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 766608,
+          "missing": 0,
+          "complete_sum": 766608,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 12104817.223707998,
+          "missing": 0,
+          "complete_sum": 12104817.223707998,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 12104817.223707998,
+          "missing": 0,
+          "complete_sum": 12104817.223707998,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 2550967.4920480005,
+          "missing": 0,
+          "complete_sum": 2550967.4920480005,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 2801248.8959200177,
+          "missing": 0,
+          "complete_sum": 2801248.8959200177,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2929889.742837006,
+          "missing": 0,
+          "complete_sum": 2929889.742837006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 285268650,
+        "missing": 0,
+        "complete_sum": 285268650,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 66507,
+          "missing": 0,
+          "complete_sum": 66507,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 556706,
+          "missing": 0,
+          "complete_sum": 556706,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 623213,
+          "missing": 0,
+          "complete_sum": 623213,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 509782,
+          "missing": 0,
+          "complete_sum": 509782,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1295483.0973430073,
+          "missing": 0,
+          "complete_sum": 1295483.0973430073,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1425486.8413710066,
+          "missing": 0,
+          "complete_sum": 1425486.8413710066,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2795601.0390800033,
+          "missing": 0,
+          "complete_sum": 2795601.0390800033,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 288379500,
+        "missing": 0,
+        "complete_sum": 288379500,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 30730,
+          "missing": 0,
+          "complete_sum": 30730,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 570613,
+          "missing": 0,
+          "complete_sum": 570613,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 601343,
+          "missing": 0,
+          "complete_sum": 601343,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 564263,
+          "missing": 0,
+          "complete_sum": 564263,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1280492.047669003,
+          "missing": 0,
+          "complete_sum": 1280492.047669003,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1403735.6783230028,
+          "missing": 0,
+          "complete_sum": 1403735.6783230028,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 742393.7078790125,
+          "missing": 0,
+          "complete_sum": 742393.7078790125,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 200,
+      "cost_nano_usd": {
+        "known_sum": 445589700,
+        "missing": 0,
+        "complete_sum": 445589700,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 76672,
+          "missing": 0,
+          "complete_sum": 76672,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 875845,
+          "missing": 0,
+          "complete_sum": 875845,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 952517,
+          "missing": 0,
+          "complete_sum": 952517,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 861811,
+          "missing": 0,
+          "complete_sum": 861811,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 11122903.027158987,
+          "missing": 0,
+          "complete_sum": 11122903.027158987,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 11122903.027158987,
+          "missing": 0,
+          "complete_sum": 11122903.027158987,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 2615995.545797025,
+          "missing": 0,
+          "complete_sum": 2615995.545797025,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 2859392.203091995,
+          "missing": 0,
+          "complete_sum": 2859392.203091995,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 732409.8569579907,
+          "missing": 0,
+          "complete_sum": 732409.8569579907,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 272989000,
+        "missing": 0,
+        "complete_sum": 272989000,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 32830,
+          "missing": 0,
+          "complete_sum": 32830,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 539412,
+          "missing": 0,
+          "complete_sum": 539412,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 572242,
+          "missing": 0,
+          "complete_sum": 572242,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 532600,
+          "missing": 0,
+          "complete_sum": 532600,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1310505.8191630454,
+          "missing": 0,
+          "complete_sum": 1310505.8191630454,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1432854.1947129928,
+          "missing": 0,
+          "complete_sum": 1432854.1947129928,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 738936.0107909925,
+          "missing": 0,
+          "complete_sum": 738936.0107909925,
+          "n": 100
+        }
+      }
+    }
+  ],
+  "standalone_constituent_calls": {
+    "A": 200,
+    "S": 200,
+    "R": 400
+  },
+  "historical_by_model_domain_workflow": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 144940100,
+        "missing": 0,
+        "complete_sum": 144940100,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 31239,
+          "missing": 0,
+          "complete_sum": 31239,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 283500,
+          "missing": 0,
+          "complete_sum": 283500,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 314739,
+          "missing": 0,
+          "complete_sum": 314739,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 2648,
+          "missing": 0,
+          "complete_sum": 2648,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 259345,
+          "missing": 0,
+          "complete_sum": 259345,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 3887092.052458994,
+          "missing": 0,
+          "complete_sum": 3887092.052458994,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 3887092.052458994,
+          "missing": 0,
+          "complete_sum": 3887092.052458994,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 530216.3118299977,
+          "missing": 0,
+          "complete_sum": 530216.3118299977,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 823055.3613310019,
+          "missing": 0,
+          "complete_sum": 823055.3613310019,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 4659750,
+        "missing": 0,
+        "complete_sum": 4659750,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 6451,
+          "missing": 0,
+          "complete_sum": 6451,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 7790,
+          "missing": 0,
+          "complete_sum": 7790,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 14241,
+          "missing": 0,
+          "complete_sum": 14241,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 4786,
+          "missing": 0,
+          "complete_sum": 4786,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 4884,
+          "missing": 0,
+          "complete_sum": 4884,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 167731.84420800023,
+          "missing": 0,
+          "complete_sum": 167731.84420800023,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 167731.84420800023,
+          "missing": 0,
+          "complete_sum": 167731.84420800023,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 80031.85212599952,
+          "missing": 0,
+          "complete_sum": 80031.85212599952,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 86988.7811260001,
+          "missing": 0,
+          "complete_sum": 86988.7811260001,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 8545900,
+        "missing": 0,
+        "complete_sum": 8545900,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 3304,
+          "missing": 0,
+          "complete_sum": 3304,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 16431,
+          "missing": 0,
+          "complete_sum": 16431,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 19735,
+          "missing": 0,
+          "complete_sum": 19735,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 13536,
+          "missing": 0,
+          "complete_sum": 13536,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 262075.06887499982,
+          "missing": 0,
+          "complete_sum": 262075.06887499982,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 262075.06887499982,
+          "missing": 0,
+          "complete_sum": 262075.06887499982,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 75027.85970700081,
+          "missing": 0,
+          "complete_sum": 75027.85970700081,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 81992.35704099986,
+          "missing": 0,
+          "complete_sum": 81992.35704099986,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 45662900,
+        "missing": 0,
+        "complete_sum": 45662900,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 10954,
+          "missing": 0,
+          "complete_sum": 10954,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 89135,
+          "missing": 0,
+          "complete_sum": 89135,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 100089,
+          "missing": 0,
+          "complete_sum": 100089,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 88406,
+          "missing": 0,
+          "complete_sum": 88406,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1901716.0352920077,
+          "missing": 0,
+          "complete_sum": 1901716.0352920077,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1901716.0352920077,
+          "missing": 0,
+          "complete_sum": 1901716.0352920077,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 485189.5050410027,
+          "missing": 0,
+          "complete_sum": 485189.5050410027,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 741792.0499519971,
+          "missing": 0,
+          "complete_sum": 741792.0499519971,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 7950100,
+        "missing": 0,
+        "complete_sum": 7950100,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1536,
+          "missing": 0,
+          "complete_sum": 1536,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 15593,
+          "missing": 0,
+          "complete_sum": 15593,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 17129,
+          "missing": 0,
+          "complete_sum": 17129,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 15515,
+          "missing": 0,
+          "complete_sum": 15515,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 257683.16966799938,
+          "missing": 0,
+          "complete_sum": 257683.16966799938,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 257683.16966799938,
+          "missing": 0,
+          "complete_sum": 257683.16966799938,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 80030.05579200026,
+          "missing": 0,
+          "complete_sum": 80030.05579200026,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 87431.17991599988,
+          "missing": 0,
+          "complete_sum": 87431.17991599988,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 13017600,
+        "missing": 0,
+        "complete_sum": 13017600,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1206,
+          "missing": 0,
+          "complete_sum": 1206,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 25794,
+          "missing": 0,
+          "complete_sum": 25794,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 27000,
+          "missing": 0,
+          "complete_sum": 27000,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 25716,
+          "missing": 0,
+          "complete_sum": 25716,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 348581.3410839999,
+          "missing": 0,
+          "complete_sum": 348581.3410839999,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 348581.3410839999,
+          "missing": 0,
+          "complete_sum": 348581.3410839999,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70025.50920500024,
+          "missing": 0,
+          "complete_sum": 70025.50920500024,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 76689.34116700012,
+          "missing": 0,
+          "complete_sum": 76689.34116700012,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 103766600,
+        "missing": 0,
+        "complete_sum": 103766600,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 16191,
+          "missing": 0,
+          "complete_sum": 16191,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 204295,
+          "missing": 0,
+          "complete_sum": 204295,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 220486,
+          "missing": 0,
+          "complete_sum": 220486,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 201026,
+          "missing": 0,
+          "complete_sum": 201026,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 2899431.6134990007,
+          "missing": 0,
+          "complete_sum": 2899431.6134990007,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 2899431.6134990007,
+          "missing": 0,
+          "complete_sum": 2899431.6134990007,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 495192.04908399924,
+          "missing": 0,
+          "complete_sum": 495192.04908399924,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 784220.1172500007,
+          "missing": 0,
+          "complete_sum": 784220.1172500007,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 4350600,
+        "missing": 0,
+        "complete_sum": 4350600,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 2351,
+          "missing": 0,
+          "complete_sum": 2351,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 8231,
+          "missing": 0,
+          "complete_sum": 8231,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 10582,
+          "missing": 0,
+          "complete_sum": 10582,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 7914,
+          "missing": 0,
+          "complete_sum": 7914,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 162446.54054100008,
+          "missing": 0,
+          "complete_sum": 162446.54054100008,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 162446.54054100008,
+          "missing": 0,
+          "complete_sum": 162446.54054100008,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70024.18670700025,
+          "missing": 0,
+          "complete_sum": 70024.18670700025,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 76074.59754000022,
+          "missing": 0,
+          "complete_sum": 76074.59754000022,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 5548700,
+        "missing": 0,
+        "complete_sum": 5548700,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1782,
+          "missing": 0,
+          "complete_sum": 1782,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 10741,
+          "missing": 0,
+          "complete_sum": 10741,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 12523,
+          "missing": 0,
+          "complete_sum": 12523,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 10424,
+          "missing": 0,
+          "complete_sum": 10424,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 181277.4313339999,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 181277.4313339999,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70025.24054000032,
+          "missing": 0,
+          "complete_sum": 70025.24054000032,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 77019.07591600006,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 875272000,
+        "missing": 0,
+        "complete_sum": 875272000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 31239,
+          "missing": 0,
+          "complete_sum": 31239,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 81147,
+          "missing": 0,
+          "complete_sum": 81147,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 112386,
+          "missing": 0,
+          "complete_sum": 112386,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 2648,
+          "missing": 0,
+          "complete_sum": 2648,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 58916,
+          "missing": 0,
+          "complete_sum": 58916,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 2999286.6673329975,
+          "missing": 0,
+          "complete_sum": 2999286.6673329975,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 2999286.6673329975,
+          "missing": 0,
+          "complete_sum": 2999286.6673329975,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 505202.97678699985,
+          "missing": 0,
+          "complete_sum": 505202.97678699985,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 813527.858541,
+          "missing": 0,
+          "complete_sum": 813527.858541,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 46629000,
+        "missing": 0,
+        "complete_sum": 46629000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 6024,
+          "missing": 0,
+          "complete_sum": 6024,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3233,
+          "missing": 0,
+          "complete_sum": 3233,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 9257,
+          "missing": 0,
+          "complete_sum": 9257,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 4502,
+          "missing": 0,
+          "complete_sum": 4502,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 793,
+          "missing": 0,
+          "complete_sum": 793,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 124904.9014590003,
+          "missing": 0,
+          "complete_sum": 124904.9014590003,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 124904.9014590003,
+          "missing": 0,
+          "complete_sum": 124904.9014590003,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70026.34629300074,
+          "missing": 0,
+          "complete_sum": 70026.34629300074,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 76325.91000100016,
+          "missing": 0,
+          "complete_sum": 76325.91000100016,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 66248000,
+        "missing": 0,
+        "complete_sum": 66248000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 3304,
+          "missing": 0,
+          "complete_sum": 3304,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 5964,
+          "missing": 0,
+          "complete_sum": 5964,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 9268,
+          "missing": 0,
+          "complete_sum": 9268,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3496,
+          "missing": 0,
+          "complete_sum": 3496,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 221509.64541700028,
+          "missing": 0,
+          "complete_sum": 221509.64541700028,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 221509.64541700028,
+          "missing": 0,
+          "complete_sum": 221509.64541700028,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 80030.72028999985,
+          "missing": 0,
+          "complete_sum": 80030.72028999985,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 87825.24333300022,
+          "missing": 0,
+          "complete_sum": 87825.24333300022,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 283618000,
+        "missing": 0,
+        "complete_sum": 283618000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 10954,
+          "missing": 0,
+          "complete_sum": 10954,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 26171,
+          "missing": 0,
+          "complete_sum": 26171,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 37125,
+          "missing": 0,
+          "complete_sum": 37125,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 25442,
+          "missing": 0,
+          "complete_sum": 25442,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1688300.4068339989,
+          "missing": 0,
+          "complete_sum": 1688300.4068339989,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1688300.4068339989,
+          "missing": 0,
+          "complete_sum": 1688300.4068339989,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 530219.4070359963,
+          "missing": 0,
+          "complete_sum": 530219.4070359963,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 769134.7514559987,
+          "missing": 0,
+          "complete_sum": 769134.7514559987,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 36002000,
+        "missing": 0,
+        "complete_sum": 36002000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1536,
+          "missing": 0,
+          "complete_sum": 1536,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3293,
+          "missing": 0,
+          "complete_sum": 3293,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 4829,
+          "missing": 0,
+          "complete_sum": 4829,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3215,
+          "missing": 0,
+          "complete_sum": 3215,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 143106.55696000007,
+          "missing": 0,
+          "complete_sum": 143106.55696000007,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 143106.55696000007,
+          "missing": 0,
+          "complete_sum": 143106.55696000007,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 60023.608249000274,
+          "missing": 0,
+          "complete_sum": 60023.608249000274,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 66198.52408199984,
+          "missing": 0,
+          "complete_sum": 66198.52408199984,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "S",
+      "rows": 7,
+      "logical_answers": 6,
+      "physical_requests": 7,
+      "cost_nano_usd": {
+        "known_sum": 127792000,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 7
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1206,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "output": {
+          "known_sum": 12538,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "total": {
+          "known_sum": 13744,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "reasoning": {
+          "known_sum": 12460,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 121876.60670799995,
+          "missing": 2,
+          "complete_sum": null,
+          "n": 7
+        },
+        "physical_elapsed": {
+          "known_sum": 406672.79762399994,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "receipt_wait": {
+          "known_sum": 80033.65212700024,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "receipt_elapsed": {
+          "known_sum": 87385.79170899992,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 7,
+          "complete_sum": null,
+          "n": 7
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 465942000,
+        "missing": 0,
+        "complete_sum": 465942000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 16191,
+          "missing": 0,
+          "complete_sum": 16191,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 43356,
+          "missing": 0,
+          "complete_sum": 43356,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 59547,
+          "missing": 0,
+          "complete_sum": 59547,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 39914,
+          "missing": 0,
+          "complete_sum": 39914,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1909902.6674549992,
+          "missing": 0,
+          "complete_sum": 1909902.6674549992,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1909902.6674549992,
+          "missing": 0,
+          "complete_sum": 1909902.6674549992,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 520213.46104099695,
+          "missing": 0,
+          "complete_sum": 520213.46104099695,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 796324.393377001,
+          "missing": 0,
+          "complete_sum": 796324.393377001,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 24372000,
+        "missing": 0,
+        "complete_sum": 24372000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 2361,
+          "missing": 0,
+          "complete_sum": 2361,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 1965,
+          "missing": 0,
+          "complete_sum": 1965,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 4326,
+          "missing": 0,
+          "complete_sum": 4326,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 1638,
+          "missing": 0,
+          "complete_sum": 1638,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 121841.27804100025,
+          "missing": 0,
+          "complete_sum": 121841.27804100025,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 121841.27804100025,
+          "missing": 0,
+          "complete_sum": 121841.27804100025,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 85033.6226669997,
+          "missing": 0,
+          "complete_sum": 85033.6226669997,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 92287.52683300036,
+          "missing": 0,
+          "complete_sum": 92287.52683300036,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 37804000,
+        "missing": 0,
+        "complete_sum": 37804000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1782,
+          "missing": 0,
+          "complete_sum": 1782,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3424,
+          "missing": 0,
+          "complete_sum": 3424,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 5206,
+          "missing": 0,
+          "complete_sum": 5206,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3097,
+          "missing": 0,
+          "complete_sum": 3097,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 149343.4994989998,
+          "missing": 0,
+          "complete_sum": 149343.4994989998,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 149343.4994989998,
+          "missing": 0,
+          "complete_sum": 149343.4994989998,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 75027.22754199931,
+          "missing": 0,
+          "complete_sum": 75027.22754199931,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 81950.53583400045,
+          "missing": 0,
+          "complete_sum": 81950.53583400045,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    }
+  ],
+  "historical_totals": {
+    "rows": 397,
+    "logical_answers": 396,
+    "physical_requests": 397,
+    "cost_nano_usd": {
+      "known_sum": 2302121250,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 397
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 149611,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "output": {
+        "known_sum": 842601,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "total": {
+        "known_sum": 992212,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "cached": {
+        "known_sum": 0,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "cache_write": {
+        "known_sum": 14584,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "reasoning": {
+        "known_sum": 775737,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 17548107.326665998,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 397
+      },
+      "physical_elapsed": {
+        "known_sum": 17832903.517582,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 397
+      },
+      "receipt_wait": {
+        "known_sum": 3961573.5920639946,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 397
+      },
+      "receipt_elapsed": {
+        "known_sum": 5706223.396405,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 397
+      },
+      "grading_elapsed": {
+        "known_sum": 0,
+        "missing": 397,
+        "complete_sum": null,
+        "n": 397
+      }
+    }
+  },
+  "lifetime_by_model_domain_workflow": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 155,
+      "logical_answers": 154,
+      "physical_requests": 155,
+      "cost_nano_usd": {
+        "known_sum": 426173525,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 155
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 95646,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "output": {
+          "known_sum": 832666,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "total": {
+          "known_sum": 928312,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "cache_write": {
+          "known_sum": 11037,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "reasoning": {
+          "known_sum": 759214,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 11068366.788249984,
+          "missing": 2,
+          "complete_sum": null,
+          "n": 155
+        },
+        "physical_elapsed": {
+          "known_sum": 11169767.363915984,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "receipt_wait": {
+          "known_sum": 1780696.463331008,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "receipt_elapsed": {
+          "known_sum": 2200743.528075011,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 155
+        },
+        "grading_elapsed": {
+          "known_sum": 3065780.4148010006,
+          "missing": 55,
+          "complete_sum": null,
+          "n": 155
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 106,
+      "logical_answers": 106,
+      "physical_requests": 106,
+      "cost_nano_usd": {
+        "known_sum": 170475530,
+        "missing": 0,
+        "complete_sum": 170475530,
+        "n": 106
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 124119,
+          "missing": 0,
+          "complete_sum": 124119,
+          "n": 106
+        },
+        "output": {
+          "known_sum": 314240,
+          "missing": 0,
+          "complete_sum": 314240,
+          "n": 106
+        },
+        "total": {
+          "known_sum": 438359,
+          "missing": 0,
+          "complete_sum": 438359,
+          "n": 106
+        },
+        "cached": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 106
+        },
+        "cache_write": {
+          "known_sum": 75898,
+          "missing": 0,
+          "complete_sum": 75898,
+          "n": 106
+        },
+        "reasoning": {
+          "known_sum": 261710,
+          "missing": 0,
+          "complete_sum": 261710,
+          "n": 106
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4810677.0972949965,
+          "missing": 0,
+          "complete_sum": 4810677.0972949965,
+          "n": 106
+        },
+        "physical_elapsed": {
+          "known_sum": 4810677.0972949965,
+          "missing": 0,
+          "complete_sum": 4810677.0972949965,
+          "n": 106
+        },
+        "receipt_wait": {
+          "known_sum": 1335516.2468309929,
+          "missing": 0,
+          "complete_sum": 1335516.2468309929,
+          "n": 106
+        },
+        "receipt_elapsed": {
+          "known_sum": 1462750.8356750114,
+          "missing": 0,
+          "complete_sum": 1462750.8356750114,
+          "n": 106
+        },
+        "grading_elapsed": {
+          "known_sum": 2929889.742837006,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 106
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 106,
+      "logical_answers": 106,
+      "physical_requests": 106,
+      "cost_nano_usd": {
+        "known_sum": 293814550,
+        "missing": 0,
+        "complete_sum": 293814550,
+        "n": 106
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 69811,
+          "missing": 0,
+          "complete_sum": 69811,
+          "n": 106
+        },
+        "output": {
+          "known_sum": 573137,
+          "missing": 0,
+          "complete_sum": 573137,
+          "n": 106
+        },
+        "total": {
+          "known_sum": 642948,
+          "missing": 0,
+          "complete_sum": 642948,
+          "n": 106
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 106
+        },
+        "cache_write": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 106
+        },
+        "reasoning": {
+          "known_sum": 523318,
+          "missing": 0,
+          "complete_sum": 523318,
+          "n": 106
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7723947.039496002,
+          "missing": 0,
+          "complete_sum": 7723947.039496002,
+          "n": 106
+        },
+        "physical_elapsed": {
+          "known_sum": 7723947.039496002,
+          "missing": 0,
+          "complete_sum": 7723947.039496002,
+          "n": 106
+        },
+        "receipt_wait": {
+          "known_sum": 1370510.9570500082,
+          "missing": 0,
+          "complete_sum": 1370510.9570500082,
+          "n": 106
+        },
+        "receipt_elapsed": {
+          "known_sum": 1507479.1984120063,
+          "missing": 0,
+          "complete_sum": 1507479.1984120063,
+          "n": 106
+        },
+        "grading_elapsed": {
+          "known_sum": 2795601.0390800033,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 106
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 45662900,
+        "missing": 0,
+        "complete_sum": 45662900,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 10954,
+          "missing": 0,
+          "complete_sum": 10954,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 89135,
+          "missing": 0,
+          "complete_sum": 89135,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 100089,
+          "missing": 0,
+          "complete_sum": 100089,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 88406,
+          "missing": 0,
+          "complete_sum": 88406,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1901716.0352920077,
+          "missing": 0,
+          "complete_sum": 1901716.0352920077,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1901716.0352920077,
+          "missing": 0,
+          "complete_sum": 1901716.0352920077,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 485189.5050410027,
+          "missing": 0,
+          "complete_sum": 485189.5050410027,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 741792.0499519971,
+          "missing": 0,
+          "complete_sum": 741792.0499519971,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 7950100,
+        "missing": 0,
+        "complete_sum": 7950100,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1536,
+          "missing": 0,
+          "complete_sum": 1536,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 15593,
+          "missing": 0,
+          "complete_sum": 15593,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 17129,
+          "missing": 0,
+          "complete_sum": 17129,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 15515,
+          "missing": 0,
+          "complete_sum": 15515,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 257683.16966799938,
+          "missing": 0,
+          "complete_sum": 257683.16966799938,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 257683.16966799938,
+          "missing": 0,
+          "complete_sum": 257683.16966799938,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 80030.05579200026,
+          "missing": 0,
+          "complete_sum": 80030.05579200026,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 87431.17991599988,
+          "missing": 0,
+          "complete_sum": 87431.17991599988,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "mathematics",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 13017600,
+        "missing": 0,
+        "complete_sum": 13017600,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1206,
+          "missing": 0,
+          "complete_sum": 1206,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 25794,
+          "missing": 0,
+          "complete_sum": 25794,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 27000,
+          "missing": 0,
+          "complete_sum": 27000,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 25716,
+          "missing": 0,
+          "complete_sum": 25716,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 348581.3410839999,
+          "missing": 0,
+          "complete_sum": 348581.3410839999,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 348581.3410839999,
+          "missing": 0,
+          "complete_sum": 348581.3410839999,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70025.50920500024,
+          "missing": 0,
+          "complete_sum": 70025.50920500024,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 76689.34116700012,
+          "missing": 0,
+          "complete_sum": 76689.34116700012,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 154,
+      "logical_answers": 154,
+      "physical_requests": 154,
+      "cost_nano_usd": {
+        "known_sum": 392146100,
+        "missing": 0,
+        "complete_sum": 392146100,
+        "n": 154
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 46921,
+          "missing": 0,
+          "complete_sum": 46921,
+          "n": 154
+        },
+        "output": {
+          "known_sum": 774908,
+          "missing": 0,
+          "complete_sum": 774908,
+          "n": 154
+        },
+        "total": {
+          "known_sum": 821829,
+          "missing": 0,
+          "complete_sum": 821829,
+          "n": 154
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 154
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 154
+        },
+        "reasoning": {
+          "known_sum": 765289,
+          "missing": 0,
+          "complete_sum": 765289,
+          "n": 154
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 9730725.07745999,
+          "missing": 0,
+          "complete_sum": 9730725.07745999,
+          "n": 154
+        },
+        "physical_elapsed": {
+          "known_sum": 9730725.07745999,
+          "missing": 0,
+          "complete_sum": 9730725.07745999,
+          "n": 154
+        },
+        "receipt_wait": {
+          "known_sum": 1775684.0967530024,
+          "missing": 0,
+          "complete_sum": 1775684.0967530024,
+          "n": 154
+        },
+        "receipt_elapsed": {
+          "known_sum": 2187955.7955730036,
+          "missing": 0,
+          "complete_sum": 2187955.7955730036,
+          "n": 154
+        },
+        "grading_elapsed": {
+          "known_sum": 742393.7078790125,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 154
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 106,
+      "logical_answers": 106,
+      "physical_requests": 106,
+      "cost_nano_usd": {
+        "known_sum": 176951300,
+        "missing": 0,
+        "complete_sum": 176951300,
+        "n": 106
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 46193,
+          "missing": 0,
+          "complete_sum": 46193,
+          "n": 106
+        },
+        "output": {
+          "known_sum": 344664,
+          "missing": 0,
+          "complete_sum": 344664,
+          "n": 106
+        },
+        "total": {
+          "known_sum": 390857,
+          "missing": 0,
+          "complete_sum": 390857,
+          "n": 106
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 106
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 106
+        },
+        "reasoning": {
+          "known_sum": 337125,
+          "missing": 0,
+          "complete_sum": 337125,
+          "n": 106
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4769013.397698986,
+          "missing": 0,
+          "complete_sum": 4769013.397698986,
+          "n": 106
+        },
+        "physical_elapsed": {
+          "known_sum": 4769013.397698986,
+          "missing": 0,
+          "complete_sum": 4769013.397698986,
+          "n": 106
+        },
+        "receipt_wait": {
+          "known_sum": 1375513.91334098,
+          "missing": 0,
+          "complete_sum": 1375513.91334098,
+          "n": 106
+        },
+        "receipt_elapsed": {
+          "known_sum": 1502612.6059190026,
+          "missing": 0,
+          "complete_sum": 1502612.6059190026,
+          "n": 106
+        },
+        "grading_elapsed": {
+          "known_sum": 732409.8569579907,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 106
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 106,
+      "logical_answers": 106,
+      "physical_requests": 106,
+      "cost_nano_usd": {
+        "known_sum": 278537700,
+        "missing": 0,
+        "complete_sum": 278537700,
+        "n": 106
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 34612,
+          "missing": 0,
+          "complete_sum": 34612,
+          "n": 106
+        },
+        "output": {
+          "known_sum": 550153,
+          "missing": 0,
+          "complete_sum": 550153,
+          "n": 106
+        },
+        "total": {
+          "known_sum": 584765,
+          "missing": 0,
+          "complete_sum": 584765,
+          "n": 106
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 106
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 106
+        },
+        "reasoning": {
+          "known_sum": 543024,
+          "missing": 0,
+          "complete_sum": 543024,
+          "n": 106
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6697613.601335,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 106
+        },
+        "physical_elapsed": {
+          "known_sum": 6697613.601335,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 106
+        },
+        "receipt_wait": {
+          "known_sum": 1380531.0597030458,
+          "missing": 0,
+          "complete_sum": 1380531.0597030458,
+          "n": 106
+        },
+        "receipt_elapsed": {
+          "known_sum": 1509873.270628993,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 106
+        },
+        "grading_elapsed": {
+          "known_sum": 738936.0107909925,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 106
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 875272000,
+        "missing": 0,
+        "complete_sum": 875272000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 31239,
+          "missing": 0,
+          "complete_sum": 31239,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 81147,
+          "missing": 0,
+          "complete_sum": 81147,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 112386,
+          "missing": 0,
+          "complete_sum": 112386,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 2648,
+          "missing": 0,
+          "complete_sum": 2648,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 58916,
+          "missing": 0,
+          "complete_sum": 58916,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 2999286.6673329975,
+          "missing": 0,
+          "complete_sum": 2999286.6673329975,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 2999286.6673329975,
+          "missing": 0,
+          "complete_sum": 2999286.6673329975,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 505202.97678699985,
+          "missing": 0,
+          "complete_sum": 505202.97678699985,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 813527.858541,
+          "missing": 0,
+          "complete_sum": 813527.858541,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 46629000,
+        "missing": 0,
+        "complete_sum": 46629000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 6024,
+          "missing": 0,
+          "complete_sum": 6024,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3233,
+          "missing": 0,
+          "complete_sum": 3233,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 9257,
+          "missing": 0,
+          "complete_sum": 9257,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 4502,
+          "missing": 0,
+          "complete_sum": 4502,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 793,
+          "missing": 0,
+          "complete_sum": 793,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 124904.9014590003,
+          "missing": 0,
+          "complete_sum": 124904.9014590003,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 124904.9014590003,
+          "missing": 0,
+          "complete_sum": 124904.9014590003,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 70026.34629300074,
+          "missing": 0,
+          "complete_sum": 70026.34629300074,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 76325.91000100016,
+          "missing": 0,
+          "complete_sum": 76325.91000100016,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 66248000,
+        "missing": 0,
+        "complete_sum": 66248000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 3304,
+          "missing": 0,
+          "complete_sum": 3304,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 5964,
+          "missing": 0,
+          "complete_sum": 5964,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 9268,
+          "missing": 0,
+          "complete_sum": 9268,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3496,
+          "missing": 0,
+          "complete_sum": 3496,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 221509.64541700028,
+          "missing": 0,
+          "complete_sum": 221509.64541700028,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 221509.64541700028,
+          "missing": 0,
+          "complete_sum": 221509.64541700028,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 80030.72028999985,
+          "missing": 0,
+          "complete_sum": 80030.72028999985,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 87825.24333300022,
+          "missing": 0,
+          "complete_sum": 87825.24333300022,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 283618000,
+        "missing": 0,
+        "complete_sum": 283618000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 10954,
+          "missing": 0,
+          "complete_sum": 10954,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 26171,
+          "missing": 0,
+          "complete_sum": 26171,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 37125,
+          "missing": 0,
+          "complete_sum": 37125,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 25442,
+          "missing": 0,
+          "complete_sum": 25442,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1688300.4068339989,
+          "missing": 0,
+          "complete_sum": 1688300.4068339989,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1688300.4068339989,
+          "missing": 0,
+          "complete_sum": 1688300.4068339989,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 530219.4070359963,
+          "missing": 0,
+          "complete_sum": 530219.4070359963,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 769134.7514559987,
+          "missing": 0,
+          "complete_sum": 769134.7514559987,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 36002000,
+        "missing": 0,
+        "complete_sum": 36002000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1536,
+          "missing": 0,
+          "complete_sum": 1536,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3293,
+          "missing": 0,
+          "complete_sum": 3293,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 4829,
+          "missing": 0,
+          "complete_sum": 4829,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3215,
+          "missing": 0,
+          "complete_sum": 3215,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 143106.55696000007,
+          "missing": 0,
+          "complete_sum": 143106.55696000007,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 143106.55696000007,
+          "missing": 0,
+          "complete_sum": 143106.55696000007,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 60023.608249000274,
+          "missing": 0,
+          "complete_sum": 60023.608249000274,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 66198.52408199984,
+          "missing": 0,
+          "complete_sum": 66198.52408199984,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "mathematics",
+      "workflow": "S",
+      "rows": 7,
+      "logical_answers": 6,
+      "physical_requests": 7,
+      "cost_nano_usd": {
+        "known_sum": 127792000,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 7
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1206,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "output": {
+          "known_sum": 12538,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "total": {
+          "known_sum": 13744,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "reasoning": {
+          "known_sum": 12460,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 121876.60670799995,
+          "missing": 2,
+          "complete_sum": null,
+          "n": 7
+        },
+        "physical_elapsed": {
+          "known_sum": 406672.79762399994,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "receipt_wait": {
+          "known_sum": 80033.65212700024,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "receipt_elapsed": {
+          "known_sum": 87385.79170899992,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 7
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 7,
+          "complete_sum": null,
+          "n": 7
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 54,
+      "logical_answers": 54,
+      "physical_requests": 54,
+      "cost_nano_usd": {
+        "known_sum": 465942000,
+        "missing": 0,
+        "complete_sum": 465942000,
+        "n": 54
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 16191,
+          "missing": 0,
+          "complete_sum": 16191,
+          "n": 54
+        },
+        "output": {
+          "known_sum": 43356,
+          "missing": 0,
+          "complete_sum": 43356,
+          "n": 54
+        },
+        "total": {
+          "known_sum": 59547,
+          "missing": 0,
+          "complete_sum": 59547,
+          "n": 54
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 54
+        },
+        "reasoning": {
+          "known_sum": 39914,
+          "missing": 0,
+          "complete_sum": 39914,
+          "n": 54
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 1909902.6674549992,
+          "missing": 0,
+          "complete_sum": 1909902.6674549992,
+          "n": 54
+        },
+        "physical_elapsed": {
+          "known_sum": 1909902.6674549992,
+          "missing": 0,
+          "complete_sum": 1909902.6674549992,
+          "n": 54
+        },
+        "receipt_wait": {
+          "known_sum": 520213.46104099695,
+          "missing": 0,
+          "complete_sum": 520213.46104099695,
+          "n": 54
+        },
+        "receipt_elapsed": {
+          "known_sum": 796324.393377001,
+          "missing": 0,
+          "complete_sum": 796324.393377001,
+          "n": 54
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 54,
+          "complete_sum": null,
+          "n": 54
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 24372000,
+        "missing": 0,
+        "complete_sum": 24372000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 2361,
+          "missing": 0,
+          "complete_sum": 2361,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 1965,
+          "missing": 0,
+          "complete_sum": 1965,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 4326,
+          "missing": 0,
+          "complete_sum": 4326,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 1638,
+          "missing": 0,
+          "complete_sum": 1638,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 121841.27804100025,
+          "missing": 0,
+          "complete_sum": 121841.27804100025,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 121841.27804100025,
+          "missing": 0,
+          "complete_sum": 121841.27804100025,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 85033.6226669997,
+          "missing": 0,
+          "complete_sum": 85033.6226669997,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 92287.52683300036,
+          "missing": 0,
+          "complete_sum": 92287.52683300036,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6.1-sol",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 6,
+      "logical_answers": 6,
+      "physical_requests": 6,
+      "cost_nano_usd": {
+        "known_sum": 37804000,
+        "missing": 0,
+        "complete_sum": 37804000,
+        "n": 6
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 1782,
+          "missing": 0,
+          "complete_sum": 1782,
+          "n": 6
+        },
+        "output": {
+          "known_sum": 3424,
+          "missing": 0,
+          "complete_sum": 3424,
+          "n": 6
+        },
+        "total": {
+          "known_sum": 5206,
+          "missing": 0,
+          "complete_sum": 5206,
+          "n": 6
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 6
+        },
+        "reasoning": {
+          "known_sum": 3097,
+          "missing": 0,
+          "complete_sum": 3097,
+          "n": 6
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 149343.4994989998,
+          "missing": 0,
+          "complete_sum": 149343.4994989998,
+          "n": 6
+        },
+        "physical_elapsed": {
+          "known_sum": 149343.4994989998,
+          "missing": 0,
+          "complete_sum": 149343.4994989998,
+          "n": 6
+        },
+        "receipt_wait": {
+          "known_sum": 75027.22754199931,
+          "missing": 0,
+          "complete_sum": 75027.22754199931,
+          "n": 6
+        },
+        "receipt_elapsed": {
+          "known_sum": 81950.53583400045,
+          "missing": 0,
+          "complete_sum": 81950.53583400045,
+          "n": 6
+        },
+        "grading_elapsed": {
+          "known_sum": 0,
+          "missing": 6,
+          "complete_sum": null,
+          "n": 6
+        }
+      }
+    }
+  ],
+  "lifetime_totals": {
+    "rows": 998,
+    "logical_answers": 996,
+    "physical_requests": 998,
+    "cost_nano_usd": {
+      "known_sum": 3768408305,
+      "missing": 2,
+      "complete_sum": null,
+      "n": 998
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 505595,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "output": {
+        "known_sum": 3701381,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "total": {
+        "known_sum": 4206976,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "cached": {
+        "known_sum": 10598,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "cache_write": {
+        "known_sum": 104683,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "reasoning": {
+        "known_sum": 3468288,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 54788395.77728496,
+        "missing": 5,
+        "complete_sum": null,
+        "n": 998
+      },
+      "physical_elapsed": {
+        "known_sum": 55174592.54386696,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 998
+      },
+      "receipt_wait": {
+        "known_sum": 11659508.829079034,
+        "missing": 2,
+        "complete_sum": null,
+        "n": 998
+      },
+      "receipt_elapsed": {
+        "known_sum": 14148288.340484025,
+        "missing": 3,
+        "complete_sum": null,
+        "n": 998
+      },
+      "grading_elapsed": {
+        "known_sum": 11005010.772346005,
+        "missing": 398,
+        "complete_sum": null,
+        "n": 998
+      }
+    }
+  },
+  "accounting": {
+    "current_campaign_logical_answers": 600,
+    "current_campaign_physical_requests": 601,
+    "adopted_saved_answers": 279,
+    "adopted_known_nano_usd": 656755945,
+    "continuation_new_logical_answers": 321,
+    "continuation_new_physical_requests": 321,
+    "replacement_responses": 1,
+    "untouched_completed": 320,
+    "continuation_settled_nano_usd": 809531110,
+    "current_campaign_known_nano_usd": 1466287055,
+    "current_campaign_api_nano_usd": {
+      "known_sum": 1466287055,
+      "missing": 1,
+      "complete_sum": null,
+      "n": 601
+    },
+    "current_campaign_pending_reserve_nano_usd": 591016800,
+    "additional_pending_reserve_nano_usd": 0,
+    "original_current_actual_charge_nano_usd": null,
+    "historical_logical_answers": 396,
+    "historical_physical_requests": 397,
+    "historical_known_api_nano_usd": 2302121250,
+    "historical_pending_reserve_nano_usd": 11820336000,
+    "historical_unknown_actual_charge_nano_usd": null,
+    "lifetime_logical_answers": 996,
+    "lifetime_physical_requests": 998,
+    "known_api_once_nano_usd": 3768408305,
+    "total_pending_reserve_nano_usd": 12411352800,
+    "actual_complete_api_nano_usd": null,
+    "infrastructure_commitment_nano_usd": 10000000000,
+    "infrastructure_invoice_nano_usd": null,
+    "all_in_actual_nano_usd": null,
+    "known_reserved_committed_envelope_nano_usd": 26179761105,
+    "current_campaign_cap_nano_usd": 10000000000,
+    "combined_cap_nano_usd": 60000000000,
+    "prior201_finances_included": false,
+    "original_protocol_complete": false,
+    "amended_logical_complete": true
+  },
+  "measured_phase_times": {
+    "generation_wall_ms": null,
+    "grading_wall_ms": 11044133.0,
+    "whole_campaign_wall_ms": null
+  },
+  "calibration_headroom_gate_applied": false,
+  "publication_authorized": false,
+  "limitations": [
+    "Model/domain scope chosen after prior calibration; no calibration-headroom criterion is a workflow claim.",
+    "Fixed bank order with A,S,R consecutive is not randomized service-time allocation; provider alias/time variation can confound workflow differences.",
+    "Public coding sources may be in training; finite history/family exclusions do not establish uncontamination.",
+    "Coding95 older-cohort plus5 recent reserves; stored-case/reference consistency is not universal program correctness or an official TACO score.",
+    "Authored graph/Sokoban certificates establish the stated finite checks, not general planning ability or guaranteed target-model difficulty.",
+    "One stochastic A/S/R trajectory per family; no equal-compute control, best-of-S/R choice, equivalence claim, broad-model generalization or publication authority.",
+    "Pointwise percentile intervals have no simultaneous95percent coverage guarantee; family independence and bootstrap approximation remain assumptions.",
+    "No outcome-based exclusion/refill; invalid and truncated endpoints count as failures. Operationally unresolved outcomes block full-run inference.",
+    "Output includes reasoning; cached/cache-write details are input subsets. Detail token columns are never added to total tokens.",
+    "Summed measured request durations are not campaign wall time, pure inference time, or time-to-correct-answer; missing values remain null.",
+    "Actual experiment generates S once. Standalone R consumes S+R; standalone cost tables overlap and must not be summed as experiment spend.",
+    "Historical original charge remains null with11820336000nanoUSD reserve;10000000000nanoUSD infrastructure commitment is not spend/invoice. Prior201 finances excluded.",
+    "Owner-authorized continuation adopts279 saved responses, replaces one unrecovered original A request with the exact same wire body, and completes320 untouched slots. This is amended completion, not completion under the original no-retry protocol.",
+    "No original response or settlement was available for adoption under the pinned replacement disposition. This does not establish that recovery is impossible or that remote completion or charge was absent. The original is a separate physical-only row, not a 601st scientific endpoint or an imputed failure; replacement_authority records whether lookup was completed or the owner directed replacement without completed lookup.",
+    "The original current charge and full elapsed time remain null;591016800nanoUSD is reserved. Its observed transport segment is separately labeled, never substituted for a full duration. Replacement logical elapsed is null; physical duration is measured separately.",
+    "The interruption and later replacement add time/provider drift to the fixed A/S/R order. Same wire body does not guarantee the same provider state or stochastic response.",
+    "All600 logical endpoints must be resolved and settled; the only permitted pending charges are the two explicitly inherited unknown physical requests. No partial inference or outcome-driven replacement is allowed."
+  ],
+  "usable_response_totals": {
+    "rows": 600,
+    "logical_answers": 600,
+    "physical_requests": 600,
+    "cost_nano_usd": {
+      "known_sum": 1466287055,
+      "missing": 0,
+      "complete_sum": 1466287055,
+      "n": 600
+    },
+    "tokens": {
+      "input": {
+        "known_sum": 355984,
+        "missing": 0,
+        "complete_sum": 355984,
+        "n": 600
+      },
+      "output": {
+        "known_sum": 2858780,
+        "missing": 0,
+        "complete_sum": 2858780,
+        "n": 600
+      },
+      "total": {
+        "known_sum": 3214764,
+        "missing": 0,
+        "complete_sum": 3214764,
+        "n": 600
+      },
+      "cached": {
+        "known_sum": 10598,
+        "missing": 0,
+        "complete_sum": 10598,
+        "n": 600
+      },
+      "cache_write": {
+        "known_sum": 90099,
+        "missing": 0,
+        "complete_sum": 90099,
+        "n": 600
+      },
+      "reasoning": {
+        "known_sum": 2692551,
+        "missing": 0,
+        "complete_sum": 2692551,
+        "n": 600
+      }
+    },
+    "times_ms": {
+      "logical_elapsed": {
+        "known_sum": 37240288.45061896,
+        "missing": 1,
+        "complete_sum": null,
+        "n": 600
+      },
+      "physical_elapsed": {
+        "known_sum": 37341689.02628496,
+        "missing": 0,
+        "complete_sum": 37341689.02628496,
+        "n": 600
+      },
+      "receipt_wait": {
+        "known_sum": 7697935.23701504,
+        "missing": 0,
+        "complete_sum": 7697935.23701504,
+        "n": 600
+      },
+      "receipt_elapsed": {
+        "known_sum": 8442064.944079025,
+        "missing": 0,
+        "complete_sum": 8442064.944079025,
+        "n": 600
+      },
+      "grading_elapsed": {
+        "known_sum": 11005010.772346005,
+        "missing": 0,
+        "complete_sum": 11005010.772346005,
+        "n": 600
+      }
+    }
+  },
+  "usable_response_by_model_domain_workflow": [
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 281233425,
+        "missing": 0,
+        "complete_sum": 281233425,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 64407,
+          "missing": 0,
+          "complete_sum": 64407,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 549166,
+          "missing": 0,
+          "complete_sum": 549166,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 613573,
+          "missing": 0,
+          "complete_sum": 613573,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 8389,
+          "missing": 0,
+          "complete_sum": 8389,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 499869,
+          "missing": 0,
+          "complete_sum": 499869,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7181274.73579099,
+          "missing": 1,
+          "complete_sum": null,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7282675.31145699,
+          "missing": 0,
+          "complete_sum": 7282675.31145699,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1250480.1515010104,
+          "missing": 0,
+          "complete_sum": 1250480.1515010104,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1377688.1667440091,
+          "missing": 0,
+          "complete_sum": 1377688.1667440091,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 3065780.4148010006,
+          "missing": 0,
+          "complete_sum": 3065780.4148010006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 165815780,
+        "missing": 0,
+        "complete_sum": 165815780,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 117668,
+          "missing": 0,
+          "complete_sum": 117668,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 306450,
+          "missing": 0,
+          "complete_sum": 306450,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 424118,
+          "missing": 0,
+          "complete_sum": 424118,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 71112,
+          "missing": 0,
+          "complete_sum": 71112,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 256826,
+          "missing": 0,
+          "complete_sum": 256826,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4642945.253086996,
+          "missing": 0,
+          "complete_sum": 4642945.253086996,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 4642945.253086996,
+          "missing": 0,
+          "complete_sum": 4642945.253086996,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1255484.3947049933,
+          "missing": 0,
+          "complete_sum": 1255484.3947049933,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1375762.0545490114,
+          "missing": 0,
+          "complete_sum": 1375762.0545490114,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2929889.742837006,
+          "missing": 0,
+          "complete_sum": 2929889.742837006,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "coding",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 285268650,
+        "missing": 0,
+        "complete_sum": 285268650,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 66507,
+          "missing": 0,
+          "complete_sum": 66507,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 556706,
+          "missing": 0,
+          "complete_sum": 556706,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 623213,
+          "missing": 0,
+          "complete_sum": 623213,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 10598,
+          "missing": 0,
+          "complete_sum": 10598,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 509782,
+          "missing": 0,
+          "complete_sum": 509782,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 7461871.970621002,
+          "missing": 0,
+          "complete_sum": 7461871.970621002,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1295483.0973430073,
+          "missing": 0,
+          "complete_sum": 1295483.0973430073,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1425486.8413710066,
+          "missing": 0,
+          "complete_sum": 1425486.8413710066,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 2795601.0390800033,
+          "missing": 0,
+          "complete_sum": 2795601.0390800033,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "A",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 288379500,
+        "missing": 0,
+        "complete_sum": 288379500,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 30730,
+          "missing": 0,
+          "complete_sum": 30730,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 570613,
+          "missing": 0,
+          "complete_sum": 570613,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 601343,
+          "missing": 0,
+          "complete_sum": 601343,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 564263,
+          "missing": 0,
+          "complete_sum": 564263,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6831293.4639609875,
+          "missing": 0,
+          "complete_sum": 6831293.4639609875,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1280492.047669003,
+          "missing": 0,
+          "complete_sum": 1280492.047669003,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1403735.6783230028,
+          "missing": 0,
+          "complete_sum": 1403735.6783230028,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 742393.7078790125,
+          "missing": 0,
+          "complete_sum": 742393.7078790125,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "R",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 172600700,
+        "missing": 0,
+        "complete_sum": 172600700,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 43842,
+          "missing": 0,
+          "complete_sum": 43842,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 336433,
+          "missing": 0,
+          "complete_sum": 336433,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 380275,
+          "missing": 0,
+          "complete_sum": 380275,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 329211,
+          "missing": 0,
+          "complete_sum": 329211,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 4606566.857157987,
+          "missing": 0,
+          "complete_sum": 4606566.857157987,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 4606566.857157987,
+          "missing": 0,
+          "complete_sum": 4606566.857157987,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1305489.7266339797,
+          "missing": 0,
+          "complete_sum": 1305489.7266339797,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1426538.0083790023,
+          "missing": 0,
+          "complete_sum": 1426538.0083790023,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 732409.8569579907,
+          "missing": 0,
+          "complete_sum": 732409.8569579907,
+          "n": 100
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "domain": "planning",
+      "workflow": "S",
+      "rows": 100,
+      "logical_answers": 100,
+      "physical_requests": 100,
+      "cost_nano_usd": {
+        "known_sum": 272989000,
+        "missing": 0,
+        "complete_sum": 272989000,
+        "n": 100
+      },
+      "tokens": {
+        "input": {
+          "known_sum": 32830,
+          "missing": 0,
+          "complete_sum": 32830,
+          "n": 100
+        },
+        "output": {
+          "known_sum": 539412,
+          "missing": 0,
+          "complete_sum": 539412,
+          "n": 100
+        },
+        "total": {
+          "known_sum": 572242,
+          "missing": 0,
+          "complete_sum": 572242,
+          "n": 100
+        },
+        "cached": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "cache_write": {
+          "known_sum": 0,
+          "missing": 0,
+          "complete_sum": 0,
+          "n": 100
+        },
+        "reasoning": {
+          "known_sum": 532600,
+          "missing": 0,
+          "complete_sum": 532600,
+          "n": 100
+        }
+      },
+      "times_ms": {
+        "logical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "physical_elapsed": {
+          "known_sum": 6516336.170001,
+          "missing": 0,
+          "complete_sum": 6516336.170001,
+          "n": 100
+        },
+        "receipt_wait": {
+          "known_sum": 1310505.8191630454,
+          "missing": 0,
+          "complete_sum": 1310505.8191630454,
+          "n": 100
+        },
+        "receipt_elapsed": {
+          "known_sum": 1432854.1947129928,
+          "missing": 0,
+          "complete_sum": 1432854.1947129928,
+          "n": 100
+        },
+        "grading_elapsed": {
+          "known_sum": 738936.0107909925,
+          "missing": 0,
+          "complete_sum": 738936.0107909925,
+          "n": 100
+        }
+      }
+    }
+  ],
+  "standalone_accounting_scope": "Usable endpoint calls only: A once, S once, R=S+R. The unresolved original A attempt is additional operational exposure in campaign physical tables; full operational A cost is unknown. Never sum overlapping standalone tables as spend."
+}

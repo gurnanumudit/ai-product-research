@@ -4,6 +4,7 @@ Each published article links to its study code. The packages differ in how much 
 
 | Published article | Study package | What you can verify offline |
 | --- | --- | --- |
+| [When does asking AI to revise its answer help?](https://research.muditgurnani.com/research/when-does-asking-ai-to-revise-help) | [luna-revision](luna-revision/README.md) | Four planned paired comparisons and cost summaries from 600 derived outcomes; no model calls or independent regrading |
 | [When a test report is wrong, is a warning enough?](https://research.muditgurnani.chatgpt.site/research/when-a-test-report-is-wrong) | [tool-error-recovery](tool-error-recovery/README.md) | Historical source integrity; no self-contained experiment or result replay |
 | [Which financial AI answers should we review? Part 2](https://research.muditgurnani.chatgpt.site/research/which-financial-ai-answers-should-we-review-part-2) | [financial-answer-review-part-2](financial-answer-review-part-2/README.md) | Saved-answer diagnostic and displayed summaries; no model or original bootstrap replay |
 | [How AI negotiates, Part 2](https://research.muditgurnani.chatgpt.site/research/how-ai-negotiates-part-2) | [negotiation-part-2](negotiation-part-2/README.md) | All 960 assignments, exact mirrors, saved scores, missing-outcome bounds, four exploratory intervals and six distributions; no model or provider replay |

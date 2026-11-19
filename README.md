@@ -6,6 +6,12 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 ## Published articles
 
+### When does asking AI to revise its answer help?
+
+[Read the article](https://research.muditgurnani.com/research/when-does-asking-ai-to-revise-help) · [Research code and offline reproduction](research/luna-revision/README.md)
+
+Article date: November 16, 2026. On 100 coding problems, one revision raised success from 59% to 69%. Planning gains were uncertain, and revisions sometimes broke correct answers. The package checks reported comparisons from saved task-level outcomes without making model calls or regrading answers.
+
 ### How AI negotiates Part 2
 
 [Read the article](https://research.muditgurnani.com/research/how-ai-negotiates-part-2) · [Research code, derived outcomes and offline reproduction](research/negotiation-part-2/README.md)

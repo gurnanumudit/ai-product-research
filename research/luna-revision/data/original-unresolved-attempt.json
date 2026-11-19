@@ -1,0 +1,25 @@
+{
+  "model": "openai/gpt-6-luna",
+  "domain": "coding",
+  "stratum": "VERY_HARD",
+  "workflow": "A",
+  "logical_answer": false,
+  "cost_nano_usd": null,
+  "pending_reserve_nano_usd": 591016800,
+  "tokens": {
+    "input": null,
+    "output": null,
+    "total": null,
+    "cached": null,
+    "cache_write": null,
+    "reasoning": null
+  },
+  "times_ms": {
+    "logical_elapsed": null,
+    "physical_elapsed": null,
+    "receipt_wait": null,
+    "receipt_elapsed": null,
+    "grading_elapsed": null
+  },
+  "transport_segment_elapsed_ms": 340103.64287500083
+}

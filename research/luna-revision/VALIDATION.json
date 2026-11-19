@@ -1,0 +1,64 @@
+{
+  "schema": "public-release-validation-v1",
+  "validated_at_utc": "2026-11-19T08:26:36.233475+00:00",
+  "python": "3.14.3",
+  "unit_tests": {
+    "passed": 15,
+    "failed": 0,
+    "command": "python3 -E -s -S -B -m unittest -v test_reproduce.py"
+  },
+  "full_offline_reproduction": {
+    "all_four_comparisons": true,
+    "exact_p_values_and_holm": true,
+    "all200_pairs": true,
+    "all600_outcomes": true,
+    "bootstrap_draws": 20000,
+    "bootstrap_seed": 20261111,
+    "index_stream_sha256": "28922f32c580f3627f13c1864c15311c8615a291063704246f38a6f9ae02cc24",
+    "domain_and_diagnostic_subtype_cells": true,
+    "usable_and_physical_current_accounting": true,
+    "standalone_S_plus_R_accounting": true,
+    "historical_aggregate_arithmetic_only": true,
+    "statistics_integers_nulls_exact": true,
+    "time_sum_roundoff_tolerance_ms": 1e-06
+  },
+  "export_checks": {
+    "source_commitments_unchanged": 12,
+    "aggregate_projection_exact": true,
+    "endpoint_allowlist_fields_exact": true,
+    "pure_functions_verbatim": 12,
+    "byte_exact_generic_prompts": true,
+    "no_raw_benchmark_or_response_material": true,
+    "typed_allowlist_and_text_scan": true,
+    "scanned_files": [
+      "DATA_DICTIONARY.md",
+      "LICENSE",
+      "reproduce.py",
+      "PROVENANCE.md",
+      "README.md",
+      "test_reproduce.py",
+      "METHODS.md",
+      ".gitignore",
+      "computation.py",
+      "protocol/STUDY.json",
+      "protocol/PROMPTS.json",
+      "data/original-unresolved-attempt.json",
+      "data/outcomes.jsonl",
+      "reference/summary.json",
+      "reference/pairs.json",
+      "reference/PROVENANCE.json"
+    ],
+    "import_allowlist_no_network_or_launcher": true
+  },
+  "canonical_report_generation_grading_executed": false,
+  "independent_export_review": "pending",
+  "isolated_package_cli_checks": {
+    "self_contained_copy_from_different_cwd": true,
+    "only_manifested_files_copied": true,
+    "help_no_analysis_or_output": true,
+    "full_cli_replay_matches_saved_targets": true,
+    "optional_output_created_only_in_copy": true,
+    "tampered_input_rejected_before_analysis": true,
+    "canonical_report_not_imported_or_executed": true
+  }
+}

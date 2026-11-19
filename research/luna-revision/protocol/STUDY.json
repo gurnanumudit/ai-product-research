@@ -1,0 +1,74 @@
+{
+  "schema": "luna-revision-public-protocol-v1",
+  "original_protocol_sha256": "c29b20efd4ffc4b943e9237f0bdf91604190b7c0a2c47691bc6487013f359cc4",
+  "prompt_sha256": "ffdacccc71543ede022c14b8f5180b6533f3d8a5cb82bac0e0539eca2c71afca",
+  "settings": {
+    "model": "openai/gpt-6-luna",
+    "reasoning_effort": "medium",
+    "max_output_tokens": 16384,
+    "tasks": {
+      "coding": 100,
+      "graph_color": 50,
+      "sokoban": 50
+    },
+    "workflows": {
+      "A": "Original straightforward prompt",
+      "S": "Original fixed structured checklist",
+      "R": "One original neutral review/revision of exact saved visible S answer; always requested, no best-of choice"
+    },
+    "whole_answer_freeze_before_grading": true,
+    "private_model_input_forbidden": [
+      "test_cases",
+      "expected_answers",
+      "reference_programs",
+      "solution_witnesses",
+      "checker_feedback",
+      "qualification_diagnostics"
+    ],
+    "primary_comparisons": [
+      "coding:S-A",
+      "coding:R-S",
+      "planning:S-A",
+      "planning:R-S"
+    ],
+    "analysis": {
+      "bootstrap_draws": 20000,
+      "bootstrap_seed": 20261111,
+      "resampling_unit": "canonical task family with all A/S/R endpoints together",
+      "planning_stratification": "50 graph_color and 50 sokoban; fixed50:50combined",
+      "interval": "pointwise95percent paired percentile bootstrap; no simultaneous coverage claim",
+      "formal_improvement": "Exact two-sided paired McNemar with Holm across all4 primary comparisons; direction must be positive",
+      "all_outcomes": true,
+      "subtypes": "planning diagnostic separately; coding all VERY_HARD, no invented12/12split"
+    },
+    "cost_convention": {
+      "experiment": "Every physical call charged exactly once; S generated once",
+      "standalone_R": "S plus R call cost and measured times; missing remainsnull"
+    },
+    "schedule_order": "Accepted200-task bank order; A,S,R consecutively within each task; R follows itsownS withoutoutcomecondition",
+    "limitations": [
+      "Model and domain scope chosen after calibration",
+      "Public-source contamination and finite exposure/family exclusions",
+      "Coding source passes establish stored-test consistency, not universal truth;95oldercohort+5recent",
+      "Fresh bank does not guarantee calibration headroom",
+      "One stochastic trajectory per task; no equal-compute control",
+      "100tasks/domain provides limited precision; null is not equivalence",
+      "Fixed request order is not a randomized service-time experiment; provider alias or latency changes over collection may affect observations"
+    ]
+  },
+  "amendment": {
+    "adopted_saved_answers": 279,
+    "untouched_completed": 320,
+    "same_body_replacement": 1,
+    "logical_endpoints": 600,
+    "physical_requests": 601,
+    "owner_directed": true,
+    "lookup_complete": false,
+    "provider_recovery_exhausted": false,
+    "original_actual_charge_nano_usd": null,
+    "original_reserve_nano_usd": 591016800,
+    "logical_elapsed_replacement_ms": null,
+    "original_no_retry_protocol_complete": false
+  },
+  "scope": "Historical study settings, not a current model availability or pricing claim. No live launchers included."
+}

@@ -1,0 +1,20 @@
+{
+  "status": "draft_for_development_validation_not_frozen",
+  "shared_system": "Solve the task using only the information provided. Follow the requested answer format.",
+  "assembly": "Same task text and format contract in A and S. S adds only the domain checklist. Do not include source difficulty, algorithm tags, solutions, checker output or grading references. R continues S with the saved visible assistant answer and revision instruction. S is never told that a later revision will occur.",
+  "baseline_instruction": "Solve the following task and provide your final answer in the required format.",
+  "structured_checklists": {
+    "coding": "Before finalizing, identify the input/output requirements, choose an approach that fits the constraints, and check boundary cases and implementation details. Return the final program in the required format.",
+    "mathematics": "Before finalizing, identify what is given and what must be found, check the assumptions and algebra, and verify that your answer satisfies the original conditions. Return the final answer in the required format.",
+    "planning": "Before finalizing, identify all constraints, construct a complete assignment or action sequence, and check each constraint and the required final state. Return the final solution in the required format."
+  },
+  "revision_instruction": "Review your previous answer against the original task and requirements. It may already be correct. Correct any errors you identify; otherwise retain it. Return one complete final answer in the same required format.",
+  "output_contracts": {
+    "coding": "Return a single complete Python 3 program in one python code block, with the interface specified by the task.",
+    "mathematics": "Return your final answer inside one <answer>...</answer> block, using the mathematical notation allowed by the task.",
+    "graph_coloring": "Return only one JSON object mapping every vertex ID to an allowed integer color.",
+    "sokoban": "Return only a sequence of U, D, L and R moves as defined in the task."
+  },
+  "reasoning_disclosure": "No request for hidden chain of thought. Visible responses and provider usage are archived as returned.",
+  "changes_allowed_before_freeze": "One documented clarification pass on development for interface or wording defects, no automated prompt search or selection on evaluation outcomes. New paid reruns need an amended call budget."
+}

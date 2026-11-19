@@ -1,0 +1,108 @@
+{
+  "schema": "public-offline-provenance-v1",
+  "created_date": "2026-11-19",
+  "planned_publication_date": "2026-11-16",
+  "planned_publication_weekday": "Monday",
+  "article_route": "/research/when-does-asking-ai-to-revise-help",
+  "intended_package": "research/luna-revision",
+  "published_by_this_package_build": false,
+  "source_commitments": {
+    "canonical_summary": {
+      "sha256": "3d842e5b4e47266d5c7c7eeddd726bab30cc9ff957c2ab639d5eedb1dcb58cea",
+      "bytes": 6732800
+    },
+    "canonical_completion": {
+      "sha256": "f273b86f6350ddafd4b045d4341de539be9889fa0a489dba0529295f5053b107",
+      "bytes": 412
+    },
+    "frozen_final_report": {
+      "sha256": "4c412eeae9d755918987cce4d75ec841202001d5a78f76f8d78dd751a91c27f7",
+      "bytes": 10774
+    },
+    "final_report_review": {
+      "sha256": "126731ed9a302cb1b82d9165285e385ed73966a06275c7a5eac1111447d27820",
+      "bytes": 7269172
+    },
+    "independent_actual_results_review": {
+      "sha256": "92e5b2dfad8ec2df7c04610ecc6696119666c7268458e07c7ad26425b0b88225",
+      "bytes": 7272698
+    },
+    "frozen_computation_engine": {
+      "sha256": "450f05468a03eb11763edbad4f3ba128737505c88522907bb57746807e3901e2",
+      "bytes": 17698
+    },
+    "original_protocol": {
+      "sha256": "c29b20efd4ffc4b943e9237f0bdf91604190b7c0a2c47691bc6487013f359cc4",
+      "bytes": 4204
+    },
+    "request_assembly_source": {
+      "sha256": "cdcb67e0467ec29b2c2ee9c59135926d0938fee897c1a6cee4de59ce4d2f22e2",
+      "bytes": 8108
+    },
+    "generic_prompts": {
+      "sha256": "ffdacccc71543ede022c14b8f5180b6533f3d8a5cb82bac0e0539eca2c71afca",
+      "bytes": 2414
+    },
+    "bank_manifest": {
+      "sha256": "dc60091860cb3f0baeb8429ab62827635e1f1f77287764eed7ee9de39b865c2f",
+      "bytes": 3562
+    },
+    "bank_report": {
+      "sha256": "af64974a4ac07e5a9a81dbc1912007266e915d9f0a788b9aede101835e2506c2",
+      "bytes": 4742
+    },
+    "coding_source_provenance": {
+      "sha256": "dc2fe39c41fa1b2bcf60c12a8257cf1c09e36a92d644f520fce80aad27271846",
+      "bytes": 6809
+    }
+  },
+  "exact_aggregate_projection_keys": [
+    "primary",
+    "bootstrap",
+    "domain_cells",
+    "planning_subtypes",
+    "experiment_by_model_domain_workflow",
+    "experiment_by_planning_subtype_workflow",
+    "experiment_totals",
+    "standalone_workflow_by_model_domain",
+    "standalone_constituent_calls",
+    "historical_by_model_domain_workflow",
+    "historical_totals",
+    "lifetime_by_model_domain_workflow",
+    "lifetime_totals",
+    "accounting",
+    "measured_phase_times",
+    "calibration_headroom_gate_applied",
+    "publication_authorized",
+    "limitations",
+    "usable_response_totals",
+    "usable_response_by_model_domain_workflow",
+    "standalone_accounting_scope"
+  ],
+  "extracted_unchanged_functions": [
+    "need",
+    "integer",
+    "measurement",
+    "metric",
+    "quantile",
+    "exact_mcnemar",
+    "holm",
+    "pair_table",
+    "paired_bootstrap",
+    "validate_tokens",
+    "rollup",
+    "standalone_rows"
+  ],
+  "family_id_mapping": "Within each stratum, sort original canonical family IDs ascending; replace with coding-001..100, graph-001..050, sokoban-001..050. Original within-stratum bootstrap order retained. No source-identifying map released.",
+  "omitted": [
+    "private custody paths and audit pin map",
+    "provider/receipt/request identifiers",
+    "benchmark questions and cases",
+    "source references and solutions",
+    "raw model responses",
+    "owner receipts",
+    "live launchers"
+  ],
+  "canonical_summary_not_redistributed": "summary.json preserves selected original numerical/aggregate JSON values exactly, not the private canonical file bytes. Source SHA256 commits to the original.",
+  "independent_public_package_review": "pending; prior source-study review is not review of this export"
+}

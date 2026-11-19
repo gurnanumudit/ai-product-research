@@ -1,0 +1,2402 @@
+[
+  {
+    "family_id": "coding-001",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-002",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-003",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-004",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-005",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-006",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-007",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-008",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-009",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-010",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-011",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-012",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-013",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-014",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-015",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-016",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-017",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-018",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-019",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-020",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-021",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-022",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-023",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-024",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-025",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-026",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-027",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-028",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-029",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-030",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-031",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-032",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-033",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-034",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-035",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-036",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-037",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-038",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-039",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-040",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-041",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-042",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-043",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-044",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-045",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-046",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-047",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-048",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-049",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-050",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-051",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-052",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-053",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-054",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-055",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-056",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-057",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-058",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-059",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-060",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-061",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-062",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-063",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-064",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-065",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-066",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-067",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-068",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-069",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-070",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-071",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-072",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-073",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-074",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-075",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-076",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-077",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-078",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-079",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-080",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-081",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-082",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-083",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-084",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-085",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-086",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "coding-087",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-088",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-089",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-090",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-091",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-092",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-093",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-094",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-095",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-096",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-097",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-098",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-099",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "coding-100",
+    "domain": "coding",
+    "stratum": "VERY_HARD",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-001",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-002",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-003",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-004",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-005",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-006",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-007",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-008",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "graph-009",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-010",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-011",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-012",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-013",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-014",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-015",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-016",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-017",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-018",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-019",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-020",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "graph-021",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-022",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-023",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-024",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-025",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-026",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-027",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-028",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-029",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "graph-030",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-031",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-032",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-033",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-034",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "graph-035",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-036",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-037",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-038",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-039",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-040",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-041",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-042",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-043",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "graph-044",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-045",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-046",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-047",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-048",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-049",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "graph-050",
+    "domain": "planning",
+    "stratum": "graph_color",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-001",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 1,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-002",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-003",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-004",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-005",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-006",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-007",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-008",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-009",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-010",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-011",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-012",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-013",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-014",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-015",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-016",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-017",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-018",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-019",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-020",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-021",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-022",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-023",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-024",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-025",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-026",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-027",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 1,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-028",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-029",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-030",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 1,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-031",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-032",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-033",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 1,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-034",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-035",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-036",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-037",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-038",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-039",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-040",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-041",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": true,
+      "R": false
+    },
+    "S_minus_A": 1,
+    "R_minus_S": -1
+  },
+  {
+    "family_id": "sokoban-042",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-043",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-044",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-045",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-046",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-047",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": true,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-048",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": true
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 1
+  },
+  {
+    "family_id": "sokoban-049",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": false,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": 0,
+    "R_minus_S": 0
+  },
+  {
+    "family_id": "sokoban-050",
+    "domain": "planning",
+    "stratum": "sokoban",
+    "passed": {
+      "A": true,
+      "S": false,
+      "R": false
+    },
+    "S_minus_A": -1,
+    "R_minus_S": 0
+  }
+]
