@@ -32,8 +32,8 @@ The reviewer and reasoning studies release derived records, not the full origina
 
 Website presentation code lives in [site/](../site/README.md). Return to the [repository overview](../README.md) for correction, citation and license guidance.
 
-## Article in review
+## CooperBench teamwork study
 
-[When does an AI team beat one agent? — private review draft](https://research.muditgurnani.com/research/when-does-an-ai-team-beat-one-agent) · [cooperbench-teamwork code and reproduction](cooperbench-teamwork/README.md)
+[When does an AI team beat one agent?](https://research.muditgurnani.com/research/when-does-an-ai-team-beat-one-agent) · [cooperbench-teamwork code and reproduction](cooperbench-teamwork/README.md)
 
-All 333 assignments, 327 derived outcomes, six missing runs, equal-task missing bounds, costs and coordination metrics. Offline numerical replay only; no model calls, grading or private evidence. The review link requires the owner's ChatGPT sign-in.
+All 333 assignments, 327 derived outcomes, six missing runs, equal-task missing bounds, costs and coordination metrics. Offline numerical replay only; no model calls, grading or private evidence. Published November 21, 2026.
