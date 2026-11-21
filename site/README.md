@@ -26,6 +26,7 @@ For a quick type check, run `npm run typecheck`. The Python exhibit-preservation
 
 | Published article | Main presentation source | Research evidence |
 | --- | --- | --- |
+| [When does an AI team beat one agent?](https://research.muditgurnani.com/research/when-does-an-ai-team-beat-one-agent) | [components/teamwork/](components/teamwork/) | [CooperBench teamwork](../research/cooperbench-teamwork/README.md) |
 | [How AI negotiates Part 2](https://research.muditgurnani.com/research/how-ai-negotiates-part-2) | [components/negotiation-part2/](components/negotiation-part2/) | [negotiation Part 2 package](../research/negotiation-part-2/README.md) |
 | [When a test report is wrong, is a warning enough?](https://research.muditgurnani.com/research/when-a-test-report-is-wrong) | [components/tool-error/](components/tool-error/) | [tool-error source archive](../research/tool-error-recovery/README.md) |
 | [How AI negotiates](https://research.muditgurnani.com/research/how-ai-negotiates) | [components/negotiation/](components/negotiation/) | [negotiation package](../research/negotiation/README.md) |

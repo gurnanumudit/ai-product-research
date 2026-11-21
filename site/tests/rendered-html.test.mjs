@@ -49,7 +49,7 @@ test('production homepage and article render with direct study links', async () 
     assert.ok(!homeHtml.includes('—'), 'homepage copy avoids em dashes');
     assert.ok(!homeHtml.includes('<h1 id="research-title">Research</h1>'));
     assert.ok(homeHtml.includes('I measure cost, success and decision quality'));
-    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent decisions', 'All 9 published studies', 'Flagship research', 'How AI negotiates', 'Featured exploration', 'How AI negotiates Part 2', 'Nov 4, 2026', 'My background is in finance and data science', 'what an AI system delivers per dollar']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
+    for (const text of ['Three questions guide the work', 'Cost and quality', 'Trust and review', 'Agent behavior', 'All 10 published studies', 'Flagship research', 'How AI negotiates', 'Featured exploration', 'How AI negotiates Part 2', 'Nov 4, 2026', 'My background is in finance and data science', 'what an AI system delivers per dollar']) assert.ok(homeHtml.includes(text), `Missing homepage content: ${text}`);
     for (const text of ['Checking calculations and cited figures helped select more wrong answers', 'That advantage did not hold across models.', 'Test whether your checks catch the mistakes your AI makes.']) assert.ok(homeHtml.includes(text), `Missing flagship summary: ${text}`);
     assert.ok(homeHtml.includes('application/ld+json'), 'homepage includes structured data');
     assert.equal((await fetch(`http://localhost:${port}/robots.txt`)).status, 200);
@@ -61,6 +61,17 @@ test('production homepage and article render with direct study links', async () 
     assert.match(feed.headers.get('content-type'), /application\/rss\+xml/);
     assert.ok((await feed.text()).includes('How AI negotiates Part 2'));
     for (const removed of ['Show article covers', 'Coming next', 'Prompt vs harness', 'Forthcoming conclusion']) assert.ok(!homeHtml.includes(removed), `Unwanted homepage content: ${removed}`);
+    const teamworkPath='/research/when-does-an-ai-team-beat-one-agent';
+    assert.ok(homeHtml.includes(teamworkPath));
+    assert.ok(!homeHtml.includes('Agent decisions'));
+    const teamworkResponse=await fetch(`http://localhost:${port}${teamworkPath}`);
+    assert.equal(teamworkResponse.status,200);
+    const teamworkHtml=await teamworkResponse.text();checkAnchors(teamworkHtml);
+    for(const text of ['November 21, 2026','Agent behavior','327 completed runs','59 of 110 runs','36 of 108 runs','53 of 109 runs','research/cooperbench-teamwork','appendix-call-budget','appendix-coordination']) assert.ok(teamworkHtml.includes(text),`Missing teamwork content: ${text}`);
+    for(const text of ['Private review draft','Review draft','has not yet been published']) assert.ok(!teamworkHtml.includes(text));
+    assert.ok(teamworkHtml.includes(reviewBuild?'noindex, nofollow':'index, follow'));
+    await checkSocialPreview(port,teamworkPath,'/research-assets/teamwork/teamwork-hero.png');
+    assert.equal((await fetch(`http://localhost:${port}/research-assets/teamwork/study-report.txt`)).status,200);
     const lunaPath = '/research/when-does-asking-ai-to-revise-help';
     assert.ok(homeHtml.includes(lunaPath));
     const lunaResponse = await fetch(`http://localhost:${port}${lunaPath}`);

@@ -1,0 +1,385 @@
+# CooperBench broader comparison
+
+Graded 327 of333planned assignments:37featurepairs across24underlying tasks and11repositories; threeapproaches, threerepetitions, Luna medium (openai/gpt-6-luna),32calls/team. Previously used code and previously unrun bases are distinguished. Historical results are not pooled.
+Evaluation policy: final grading uses the unchanged uniform360-second outer ceiling; native inner limits remain unchanged, including existing300-second limits. Qualification is exact positive evidence carry only:7 qualification-backends-v1 witnesses observed at180seconds,6 qualification-48pair-v1 witnesses at360seconds,58 eligibility-screen-v1 witnesses at360seconds. No requalification. Historical180-second studies differ in effective evaluation budget and their outcomes are not pooled. Worker/model budgets remain unchanged.
+Owner decision355 approves exactly37 eligible pairs/24bases/11repositories from the independently accepted92-suite screen. Screening retained74positive/4negative/14ambiguous witnesses across the48pair candidate inventory; only71positive features are needed here, and3positive orphan features are unused. Selection reflects this pinned technical setup, not agent performance or a causal diagnosis of excluded tasks. All earlier HOLDs/negative/ambiguous records remain preserved. Original sparse indices, block and arm order, role features and integrators are unchanged; no replacements or prior scientific outcomes are pooled. Results describe the37-pair eligible sample, not the original50 or general software work.
+Setup amendment394: source staging used60seconds in original/recovery-v1/v2/v3 and300seconds in recovery-v4 (existing hostwrapper315). Only this worker preparation ceiling changed; source operations/images/resources/model shell60/nativeinner/outergrade360 unchanged. The diagnostic did not reproduce the failure or prove300 necessary/sufficient. Raw inclusive run and phase walltime is preserved; setup/evaluation components are not retrospectively invented. Timing comparisons across epochs therefore have different setup ceilings.
+Same-study recovery under owner394 approving proposal393:27 original,3 recovery-v1,26 recovery-v2 and192 recovery-v3 completions carried (248total). Six interrupted assignments permanently missing;79 untouched authorized once:initial t49-r2-STRUCTURED singleton,then26wholeblocks. Original817requests cost0.465951840USD;v1 117cost0.059903775USD;v2 767requests include766settled costing0.387249980USD and1unknown/.05reserve;v3 5672settled cost3.033659305USD,setupfailures0POST. Retain10.40USD unused (4.80original+.40v1+.40v2+4.80v3),distinct from same-studyunknown.05. InterruptedSTRUCTURED24settled/.009782820 andSIMPLE23settled/.007795810+1unknown/.05 have no outcome. Previous HOLDs remain HOLD. Existing5allowance counted once. Scoped reclamation andstorage unchanged;powerinformational. At most327of333 outcomes: no complete-dataCI/bootstrap. Earlier4unknown/.20 plussame-study1unknown/.05 are separate fromnewpending; unknownactualcharges notzero. Localinfraunmetered.
+
+| Approach | Both pass / observed | Features / observed team | Features / agent | All-assigned known API | API per success |
+|---|---:|---:|---:|---:|---:|
+| SOLO | 59/110 | 1.4182 | 1.4182 | $1.985411 | 0.0337 |
+| SIMPLE | 36/108 | 0.7593 | 0.3796 | $1.645560 | 0.0457 |
+| STRUCTURED | 53/109 | 1.3303 | 0.6651 | $1.619191 | 0.0306 |
+
+The table is raw descriptive output. Primary estimates weight underlying tasks equally after averaging repetitions and pairs, so they may differ from raw run rates.
+
+## Missing outcomes
+
+Full assigned111slots/arm remain in the denominator. These bounds concern missing outcomes, not sampling uncertainty.
+- SOLO: rawsuccessbounds [0.5315315315315315, 0.5405405405405406]; baseweightedsuccessbounds [0.5277777777777778, 0.5347222222222222].
+- SIMPLE: rawsuccessbounds [0.32432432432432434, 0.35135135135135137]; baseweightedsuccessbounds [0.3125, 0.3402777777777778].
+- STRUCTURED: rawsuccessbounds [0.4774774774774775, 0.4954954954954955]; baseweightedsuccessbounds [0.4791666666666667, 0.4930555555555555].
+
+## Exposure strata
+
+unrun_bases: 10 underlying tasks, 19 pairs, 57 assigned slots per approach.
+- SOLO: 56 observed / 1 missing; 33 both-pass; descriptive observed rate 0.5893; features/team 1.5536, features/agent 1.5536; base-weighted success bounds [0.5833333333333333, 0.6]; feature bounds [1.5166666666666666, 1.55].
+- SIMPLE: 54 observed / 3 missing; 16 both-pass; descriptive observed rate 0.2963; features/team 0.6111, features/agent 0.3056; base-weighted success bounds [0.26666666666666666, 0.3333333333333333]; feature bounds [0.55, 0.6833333333333333].
+- STRUCTURED: 55 observed / 2 missing; 28 both-pass; descriptive observed rate 0.5091; features/team 1.4727, features/agent 0.7364; base-weighted success bounds [0.5, 0.5333333333333333]; feature bounds [1.4166666666666665, 1.4833333333333334].
+Contrast missing bounds: {'STRUCTURED minus SOLO': [-0.09999999999999998, -0.04999999999999993], 'STRUCTURED minus SIMPLE': [0.16666666666666669, 0.26666666666666666]}
+previously_run_bases: 14 underlying tasks, 18 pairs, 54 assigned slots per approach.
+- SOLO: 54 observed / 0 missing; 26 both-pass; descriptive observed rate 0.4815; features/team 1.2778, features/agent 1.2778; base-weighted success bounds [0.4880952380952381, 0.4880952380952381]; feature bounds [1.2976190476190477, 1.2976190476190477].
+- SIMPLE: 54 observed / 0 missing; 20 both-pass; descriptive observed rate 0.3704; features/team 0.9074, features/agent 0.4537; base-weighted success bounds [0.34523809523809523, 0.34523809523809523]; feature bounds [0.8928571428571428, 0.8928571428571428].
+- STRUCTURED: 54 observed / 0 missing; 25 both-pass; descriptive observed rate 0.4630; features/team 1.1852, features/agent 0.5926; base-weighted success bounds [0.4642857142857143, 0.4642857142857143]; feature bounds [1.2142857142857142, 1.2142857142857142].
+Contrast missing bounds: {'STRUCTURED minus SOLO': [-0.02380952380952378, -0.02380952380952378], 'STRUCTURED minus SIMPLE': [0.11904761904761907, 0.11904761904761907]}
+
+Collection incomplete: no complete-data bootstrap or sampling confidence claim. Completed-only means are descriptive.
+{'STRUCTURED minus SOLO': [-0.055555555555555525, -0.034722222222222265], 'STRUCTURED minus SIMPLE': [0.1388888888888889, 0.18055555555555552]}
+
+## Spending and coordination
+
+Same-study known API $5.250162005; prior knownAPI $2.530064665; cumulativeknownAPI $7.780226670. Retain prior19allowances,0.20unknownliability and6.25unusedreserve, plus retained old same-study unused reserve $10.40 plus same-study unknown reserve $0.05 and the existing5allowance within this30incremental allocation (no additional5). Combinedcommitment $48.680226670. New30incrementalcap/57.980064665combined. Allowances/reserves are not invoices. Localhardware/electricity/human/Codex costs unmetered, notzero. Fivehistorical unknownrequests/$0.25reserve remain separate; no newpending. Historical costs are not allocated to newarms. The existing5USD allowance has two separate sensitivities: assigned-arm allocation gives5/3USD perarm; observed-share allocation gives5USD times each arm's share of observed assignments. These differ when observed arm counts are unequal, including the recovery singleton and maximum327 outcomes; neither adds a new allowance. Full machine-readable sensitivity andundefinedratio counts in ANALYSIS.json.
+
+| Approach | Phase | Calls | API USD | Messages saved/delivered | Summed phase minutes |
+|---|---|---:|---:|---:|---:|
+| SOLO | solo | 3079 | 1.985411 | 0/0 | 972.77 |
+| SIMPLE | simple | 3195 | 1.637764 | 493/461 | 581.02 |
+| STRUCTURED | plan | 436 | 0.137712 | 180/177 | 69.11 |
+| STRUCTURED | build | 2158 | 0.977230 | 275/263 | 378.61 |
+| STRUCTURED | integrate | 868 | 0.494466 | 0/0 | 284.00 |
+
+All-assigned arm API and per-success cost ratios include interrupted settled calls as well as completed rows. SIMPLE also retains one unknown request/$0.05reserve; machine-readable cost sensitivity adds this reserve without calling it a charge. Missing outcomes are not scored as failures; zero-success ratios remain undefined. Phase tables describe completed rows only.
+Summed times overlap and do not establish speedup. STRUCTURED remains two logical agents; native merge status solo for its integrated patch does not mean oneagent. SIMPLE fallback and native featurecredits are delivery-policy dependent. Wholeworkflow allocation/contextreset comparison cannot isolate planning orintegration. One model,24underlyingtasks/11repos,publicbenchmark exposure and reusedcode limit generalisation;333runs are not333independenttasks. No publication authorized. Independent actual review is recorded separately.
+
+## Every observed outcome
+
+| Pair index | Repository/base | Features | Repetition | Approach | Both pass | Feature credits | API USD |
+|---|---|---|---:|---|---:|---:|---:|
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 1 | SIMPLE | 0 | 0 | 0.016161 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 1 | SOLO | 1 | 2 | 0.019308 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 1 | STRUCTURED | 1 | 2 | 0.014801 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 2 | SIMPLE | 0 | 0 | 0.014511 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 2 | SOLO | 1 | 2 | 0.019007 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 2 | STRUCTURED | 1 | 2 | 0.014249 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 3 | SIMPLE | 0 | 0 | 0.014590 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 3 | SOLO | 1 | 2 | 0.019927 |
+| 0 | dottxt_ai_outlines_task/1371 | [2, 3] | 3 | STRUCTURED | 1 | 2 | 0.015230 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 1 | SIMPLE | 0 | 0 | 0.016328 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 1 | SOLO | 0 | 1 | 0.020174 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 1 | STRUCTURED | 0 | 1 | 0.015258 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 2 | SIMPLE | 0 | 0 | 0.016822 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 2 | SOLO | 0 | 1 | 0.020710 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 2 | STRUCTURED | 0 | 1 | 0.014663 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 3 | SIMPLE | 0 | 0 | 0.018416 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 3 | SOLO | 0 | 1 | 0.017453 |
+| 1 | dottxt_ai_outlines_task/1371 | [2, 4] | 3 | STRUCTURED | 0 | 1 | 0.017967 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 1 | SIMPLE | 1 | 2 | 0.006567 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 1 | SOLO | 1 | 2 | 0.011948 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 1 | STRUCTURED | 1 | 2 | 0.012591 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 2 | SIMPLE | 1 | 2 | 0.006555 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 2 | SOLO | 1 | 2 | 0.006463 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 2 | STRUCTURED | 1 | 2 | 0.010738 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 3 | SIMPLE | 1 | 2 | 0.007970 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 3 | SOLO | 1 | 2 | 0.008541 |
+| 2 | dottxt_ai_outlines_task/1655 | [2, 7] | 3 | STRUCTURED | 1 | 2 | 0.010406 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 1 | SIMPLE | 1 | 2 | 0.008452 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 1 | SOLO | 1 | 2 | 0.003933 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 1 | STRUCTURED | 1 | 2 | 0.009093 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 2 | SIMPLE | 1 | 2 | 0.008862 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 2 | SOLO | 1 | 2 | 0.006040 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 2 | STRUCTURED | 1 | 2 | 0.012106 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 3 | SIMPLE | 1 | 2 | 0.008506 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 3 | SOLO | 1 | 2 | 0.007070 |
+| 3 | dottxt_ai_outlines_task/1655 | [1, 8] | 3 | STRUCTURED | 1 | 2 | 0.011536 |
+| 6 | dspy_task/8394 | [1, 3] | 1 | SIMPLE | 0 | 0 | 0.015545 |
+| 6 | dspy_task/8394 | [1, 3] | 1 | SOLO | 1 | 2 | 0.019880 |
+| 6 | dspy_task/8394 | [1, 3] | 1 | STRUCTURED | 1 | 2 | 0.017480 |
+| 6 | dspy_task/8394 | [1, 3] | 2 | SIMPLE | 1 | 2 | 0.015584 |
+| 6 | dspy_task/8394 | [1, 3] | 2 | SOLO | 1 | 2 | 0.020004 |
+| 6 | dspy_task/8394 | [1, 3] | 2 | STRUCTURED | 1 | 2 | 0.016953 |
+| 6 | dspy_task/8394 | [1, 3] | 3 | SIMPLE | 1 | 2 | 0.018202 |
+| 6 | dspy_task/8394 | [1, 3] | 3 | SOLO | 1 | 2 | 0.022557 |
+| 6 | dspy_task/8394 | [1, 3] | 3 | STRUCTURED | 1 | 2 | 0.018095 |
+| 7 | dspy_task/8394 | [4, 5] | 1 | SIMPLE | 0 | 0 | 0.021153 |
+| 7 | dspy_task/8394 | [4, 5] | 1 | SOLO | 0 | 1 | 0.021403 |
+| 7 | dspy_task/8394 | [4, 5] | 1 | STRUCTURED | 0 | 0 | 0.016070 |
+| 7 | dspy_task/8394 | [4, 5] | 2 | SIMPLE | 0 | 0 | 0.018981 |
+| 7 | dspy_task/8394 | [4, 5] | 2 | SOLO | 0 | 1 | 0.023623 |
+| 7 | dspy_task/8394 | [4, 5] | 2 | STRUCTURED | 0 | 1 | 0.018828 |
+| 7 | dspy_task/8394 | [4, 5] | 3 | SIMPLE | 0 | 0 | 0.018874 |
+| 7 | dspy_task/8394 | [4, 5] | 3 | SOLO | 0 | 1 | 0.025426 |
+| 7 | dspy_task/8394 | [4, 5] | 3 | STRUCTURED | 0 | 0 | 0.015358 |
+| 8 | dspy_task/8563 | [1, 2] | 1 | SIMPLE | 0 | 1 | 0.014334 |
+| 8 | dspy_task/8563 | [1, 2] | 1 | SOLO | 0 | 1 | 0.020110 |
+| 8 | dspy_task/8563 | [1, 2] | 1 | STRUCTURED | 0 | 1 | 0.015772 |
+| 8 | dspy_task/8563 | [1, 2] | 2 | SIMPLE | 0 | 1 | 0.014169 |
+| 8 | dspy_task/8563 | [1, 2] | 2 | SOLO | 0 | 1 | 0.020436 |
+| 8 | dspy_task/8563 | [1, 2] | 2 | STRUCTURED | 0 | 0 | 0.014794 |
+| 8 | dspy_task/8563 | [1, 2] | 3 | SIMPLE | 0 | 1 | 0.012563 |
+| 8 | dspy_task/8563 | [1, 2] | 3 | SOLO | 0 | 1 | 0.017533 |
+| 8 | dspy_task/8563 | [1, 2] | 3 | STRUCTURED | 0 | 0 | 0.014247 |
+| 11 | dspy_task/8635 | [3, 4] | 1 | SIMPLE | 0 | 0 | 0.014733 |
+| 11 | dspy_task/8635 | [3, 4] | 1 | SOLO | 0 | 1 | 0.009712 |
+| 11 | dspy_task/8635 | [3, 4] | 1 | STRUCTURED | 1 | 2 | 0.014518 |
+| 11 | dspy_task/8635 | [3, 4] | 2 | SIMPLE | 0 | 0 | 0.012859 |
+| 11 | dspy_task/8635 | [3, 4] | 2 | SOLO | 0 | 1 | 0.018731 |
+| 11 | dspy_task/8635 | [3, 4] | 2 | STRUCTURED | 0 | 1 | 0.015283 |
+| 11 | dspy_task/8635 | [3, 4] | 3 | SIMPLE | 0 | 0 | 0.017329 |
+| 11 | dspy_task/8635 | [3, 4] | 3 | SOLO | 0 | 1 | 0.022845 |
+| 11 | dspy_task/8635 | [3, 4] | 3 | STRUCTURED | 0 | 1 | 0.015055 |
+| 12 | dspy_task/8635 | [1, 5] | 1 | SIMPLE | 1 | 2 | 0.011430 |
+| 12 | dspy_task/8635 | [1, 5] | 1 | SOLO | 1 | 2 | 0.020784 |
+| 12 | dspy_task/8635 | [1, 5] | 1 | STRUCTURED | 1 | 2 | 0.014171 |
+| 12 | dspy_task/8635 | [1, 5] | 2 | SIMPLE | 1 | 2 | 0.015945 |
+| 12 | dspy_task/8635 | [1, 5] | 2 | SOLO | 1 | 2 | 0.020106 |
+| 12 | dspy_task/8635 | [1, 5] | 2 | STRUCTURED | 1 | 2 | 0.014168 |
+| 12 | dspy_task/8635 | [1, 5] | 3 | SIMPLE | 1 | 2 | 0.013327 |
+| 12 | dspy_task/8635 | [1, 5] | 3 | SOLO | 1 | 2 | 0.017699 |
+| 12 | dspy_task/8635 | [1, 5] | 3 | STRUCTURED | 1 | 2 | 0.014000 |
+| 15 | go_chi_task/27 | [1, 2] | 1 | SIMPLE | 1 | 2 | 0.014083 |
+| 15 | go_chi_task/27 | [1, 2] | 1 | SOLO | 1 | 2 | 0.016866 |
+| 15 | go_chi_task/27 | [1, 2] | 1 | STRUCTURED | 1 | 2 | 0.016977 |
+| 15 | go_chi_task/27 | [1, 2] | 2 | SIMPLE | 1 | 2 | 0.013232 |
+| 15 | go_chi_task/27 | [1, 2] | 2 | SOLO | 1 | 2 | 0.008124 |
+| 15 | go_chi_task/27 | [1, 2] | 2 | STRUCTURED | 1 | 2 | 0.014575 |
+| 15 | go_chi_task/27 | [1, 2] | 3 | SIMPLE | 1 | 2 | 0.015132 |
+| 15 | go_chi_task/27 | [1, 2] | 3 | SOLO | 1 | 2 | 0.021734 |
+| 15 | go_chi_task/27 | [1, 2] | 3 | STRUCTURED | 1 | 2 | 0.014767 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 1 | SIMPLE | 0 | 1 | 0.018263 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 1 | SOLO | 0 | 0 | 0.019647 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 1 | STRUCTURED | 0 | 0 | 0.015648 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 2 | SIMPLE | 0 | 0 | 0.017459 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 2 | SOLO | 0 | 0 | 0.020394 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 2 | STRUCTURED | 0 | 1 | 0.017147 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 3 | SIMPLE | 0 | 0 | 0.015405 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 3 | SOLO | 0 | 1 | 0.019195 |
+| 19 | huggingface_datasets_task/3997 | [2, 4] | 3 | STRUCTURED | 0 | 0 | 0.013145 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 1 | SIMPLE | 1 | 2 | 0.009020 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 1 | SOLO | 0 | 1 | 0.017787 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 1 | STRUCTURED | 1 | 2 | 0.010654 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 2 | SIMPLE | 0 | 0 | 0.012651 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 2 | SOLO | 1 | 2 | 0.014304 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 2 | STRUCTURED | 1 | 2 | 0.013338 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 3 | SIMPLE | 1 | 2 | 0.013336 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 3 | SOLO | 1 | 2 | 0.010606 |
+| 20 | huggingface_datasets_task/6252 | [3, 6] | 3 | STRUCTURED | 1 | 2 | 0.014249 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 1 | SIMPLE | 1 | 2 | 0.014305 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 1 | SOLO | 1 | 2 | 0.016494 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 1 | STRUCTURED | 1 | 2 | 0.013712 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 2 | SIMPLE | 1 | 2 | 0.015376 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 2 | SOLO | 1 | 2 | 0.021180 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 2 | STRUCTURED | 1 | 2 | 0.016420 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 3 | SIMPLE | 1 | 2 | 0.015423 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 3 | SOLO | 1 | 2 | 0.018843 |
+| 21 | huggingface_datasets_task/6252 | [1, 5] | 3 | STRUCTURED | 1 | 2 | 0.015098 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 1 | SIMPLE | 0 | 0 | 0.014924 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 1 | SOLO | 1 | 2 | 0.017408 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 1 | STRUCTURED | 1 | 2 | 0.014883 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 2 | SOLO | 0 | 0 | 0.017326 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 2 | STRUCTURED | 0 | 0 | 0.013499 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 3 | SIMPLE | 0 | 0 | 0.015947 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 3 | SOLO | 1 | 2 | 0.016613 |
+| 22 | huggingface_datasets_task/7309 | [1, 2] | 3 | STRUCTURED | 1 | 2 | 0.015130 |
+| 23 | llama_index_task/17070 | [1, 2] | 1 | SIMPLE | 1 | 2 | 0.014206 |
+| 23 | llama_index_task/17070 | [1, 2] | 1 | SOLO | 1 | 2 | 0.020950 |
+| 23 | llama_index_task/17070 | [1, 2] | 1 | STRUCTURED | 0 | 1 | 0.012813 |
+| 23 | llama_index_task/17070 | [1, 2] | 2 | SIMPLE | 1 | 2 | 0.011740 |
+| 23 | llama_index_task/17070 | [1, 2] | 2 | SOLO | 1 | 2 | 0.011623 |
+| 23 | llama_index_task/17070 | [1, 2] | 2 | STRUCTURED | 1 | 2 | 0.015571 |
+| 23 | llama_index_task/17070 | [1, 2] | 3 | SIMPLE | 1 | 2 | 0.016848 |
+| 23 | llama_index_task/17070 | [1, 2] | 3 | SOLO | 0 | 0 | 0.021997 |
+| 23 | llama_index_task/17070 | [1, 2] | 3 | STRUCTURED | 0 | 1 | 0.013331 |
+| 24 | llama_index_task/17070 | [2, 3] | 1 | SIMPLE | 1 | 2 | 0.013097 |
+| 24 | llama_index_task/17070 | [2, 3] | 1 | SOLO | 1 | 2 | 0.022038 |
+| 24 | llama_index_task/17070 | [2, 3] | 1 | STRUCTURED | 1 | 2 | 0.016586 |
+| 24 | llama_index_task/17070 | [2, 3] | 2 | SIMPLE | 1 | 2 | 0.014587 |
+| 24 | llama_index_task/17070 | [2, 3] | 2 | SOLO | 1 | 2 | 0.018476 |
+| 24 | llama_index_task/17070 | [2, 3] | 2 | STRUCTURED | 0 | 1 | 0.014135 |
+| 24 | llama_index_task/17070 | [2, 3] | 3 | SIMPLE | 1 | 2 | 0.015663 |
+| 24 | llama_index_task/17070 | [2, 3] | 3 | SOLO | 1 | 2 | 0.014939 |
+| 24 | llama_index_task/17070 | [2, 3] | 3 | STRUCTURED | 1 | 2 | 0.015610 |
+| 25 | llama_index_task/17244 | [1, 6] | 1 | SIMPLE | 0 | 0 | 0.011895 |
+| 25 | llama_index_task/17244 | [1, 6] | 1 | SOLO | 1 | 2 | 0.004839 |
+| 25 | llama_index_task/17244 | [1, 6] | 1 | STRUCTURED | 1 | 2 | 0.013730 |
+| 25 | llama_index_task/17244 | [1, 6] | 2 | SIMPLE | 0 | 0 | 0.014054 |
+| 25 | llama_index_task/17244 | [1, 6] | 2 | SOLO | 1 | 2 | 0.006770 |
+| 25 | llama_index_task/17244 | [1, 6] | 2 | STRUCTURED | 1 | 2 | 0.010477 |
+| 25 | llama_index_task/17244 | [1, 6] | 3 | SIMPLE | 0 | 0 | 0.010677 |
+| 25 | llama_index_task/17244 | [1, 6] | 3 | SOLO | 1 | 2 | 0.007692 |
+| 25 | llama_index_task/17244 | [1, 6] | 3 | STRUCTURED | 1 | 2 | 0.011119 |
+| 26 | llama_index_task/17244 | [2, 3] | 1 | SIMPLE | 0 | 0 | 0.012857 |
+| 26 | llama_index_task/17244 | [2, 3] | 1 | SOLO | 1 | 2 | 0.008324 |
+| 26 | llama_index_task/17244 | [2, 3] | 1 | STRUCTURED | 1 | 2 | 0.011435 |
+| 26 | llama_index_task/17244 | [2, 3] | 2 | SIMPLE | 0 | 0 | 0.011296 |
+| 26 | llama_index_task/17244 | [2, 3] | 2 | SOLO | 1 | 2 | 0.006737 |
+| 26 | llama_index_task/17244 | [2, 3] | 2 | STRUCTURED | 1 | 2 | 0.014305 |
+| 26 | llama_index_task/17244 | [2, 3] | 3 | SIMPLE | 0 | 0 | 0.010582 |
+| 26 | llama_index_task/17244 | [2, 3] | 3 | SOLO | 1 | 2 | 0.010283 |
+| 26 | llama_index_task/17244 | [2, 3] | 3 | STRUCTURED | 1 | 2 | 0.012148 |
+| 31 | pallets_click_task/2068 | [2, 11] | 1 | SIMPLE | 1 | 2 | 0.015345 |
+| 31 | pallets_click_task/2068 | [2, 11] | 1 | SOLO | 1 | 2 | 0.017244 |
+| 31 | pallets_click_task/2068 | [2, 11] | 1 | STRUCTURED | 1 | 2 | 0.011891 |
+| 31 | pallets_click_task/2068 | [2, 11] | 2 | SIMPLE | 0 | 0 | 0.016705 |
+| 31 | pallets_click_task/2068 | [2, 11] | 2 | SOLO | 1 | 2 | 0.014924 |
+| 31 | pallets_click_task/2068 | [2, 11] | 2 | STRUCTURED | 1 | 2 | 0.014236 |
+| 31 | pallets_click_task/2068 | [2, 11] | 3 | SIMPLE | 0 | 0 | 0.017415 |
+| 31 | pallets_click_task/2068 | [2, 11] | 3 | SOLO | 1 | 2 | 0.018826 |
+| 31 | pallets_click_task/2068 | [2, 11] | 3 | STRUCTURED | 1 | 2 | 0.014949 |
+| 32 | pallets_click_task/2800 | [1, 5] | 1 | SIMPLE | 0 | 1 | 0.015555 |
+| 32 | pallets_click_task/2800 | [1, 5] | 1 | SOLO | 0 | 1 | 0.018152 |
+| 32 | pallets_click_task/2800 | [1, 5] | 1 | STRUCTURED | 0 | 1 | 0.016597 |
+| 32 | pallets_click_task/2800 | [1, 5] | 2 | SIMPLE | 1 | 2 | 0.017044 |
+| 32 | pallets_click_task/2800 | [1, 5] | 2 | SOLO | 1 | 2 | 0.020254 |
+| 32 | pallets_click_task/2800 | [1, 5] | 2 | STRUCTURED | 1 | 2 | 0.014685 |
+| 32 | pallets_click_task/2800 | [1, 5] | 3 | SIMPLE | 0 | 1 | 0.015738 |
+| 32 | pallets_click_task/2800 | [1, 5] | 3 | SOLO | 0 | 1 | 0.020225 |
+| 32 | pallets_click_task/2800 | [1, 5] | 3 | STRUCTURED | 0 | 1 | 0.014960 |
+| 33 | pallets_click_task/2956 | [5, 8] | 1 | SIMPLE | 0 | 0 | 0.019477 |
+| 33 | pallets_click_task/2956 | [5, 8] | 1 | SOLO | 0 | 0 | 0.025371 |
+| 33 | pallets_click_task/2956 | [5, 8] | 1 | STRUCTURED | 0 | 0 | 0.017662 |
+| 33 | pallets_click_task/2956 | [5, 8] | 2 | SIMPLE | 0 | 0 | 0.016930 |
+| 33 | pallets_click_task/2956 | [5, 8] | 2 | SOLO | 0 | 1 | 0.024822 |
+| 33 | pallets_click_task/2956 | [5, 8] | 2 | STRUCTURED | 0 | 0 | 0.016867 |
+| 33 | pallets_click_task/2956 | [5, 8] | 3 | SIMPLE | 0 | 0 | 0.017693 |
+| 33 | pallets_click_task/2956 | [5, 8] | 3 | SOLO | 0 | 0 | 0.022165 |
+| 33 | pallets_click_task/2956 | [5, 8] | 3 | STRUCTURED | 0 | 0 | 0.018990 |
+| 34 | pallets_click_task/2956 | [2, 6] | 1 | SIMPLE | 1 | 2 | 0.017674 |
+| 34 | pallets_click_task/2956 | [2, 6] | 1 | SOLO | 0 | 1 | 0.022120 |
+| 34 | pallets_click_task/2956 | [2, 6] | 1 | STRUCTURED | 0 | 0 | 0.016431 |
+| 34 | pallets_click_task/2956 | [2, 6] | 2 | SIMPLE | 0 | 0 | 0.016468 |
+| 34 | pallets_click_task/2956 | [2, 6] | 2 | SOLO | 0 | 0 | 0.018007 |
+| 34 | pallets_click_task/2956 | [2, 6] | 2 | STRUCTURED | 0 | 0 | 0.016420 |
+| 34 | pallets_click_task/2956 | [2, 6] | 3 | SIMPLE | 0 | 0 | 0.017765 |
+| 34 | pallets_click_task/2956 | [2, 6] | 3 | SOLO | 0 | 0 | 0.021432 |
+| 34 | pallets_click_task/2956 | [2, 6] | 3 | STRUCTURED | 0 | 0 | 0.017625 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 1 | SIMPLE | 0 | 0 | 0.016451 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 1 | SOLO | 1 | 2 | 0.014756 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 1 | STRUCTURED | 1 | 2 | 0.014309 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 2 | SIMPLE | 0 | 0 | 0.017218 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 2 | SOLO | 1 | 2 | 0.012357 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 2 | STRUCTURED | 1 | 2 | 0.016849 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 3 | SIMPLE | 0 | 0 | 0.018434 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 3 | SOLO | 1 | 2 | 0.021170 |
+| 35 | pallets_jinja_task/1465 | [1, 8] | 3 | STRUCTURED | 1 | 2 | 0.015781 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 1 | SIMPLE | 0 | 1 | 0.018567 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 1 | SOLO | 1 | 2 | 0.021442 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 1 | STRUCTURED | 1 | 2 | 0.016421 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 2 | SIMPLE | 1 | 2 | 0.015849 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 2 | SOLO | 0 | 1 | 0.019258 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 2 | STRUCTURED | 0 | 1 | 0.015673 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 3 | SIMPLE | 1 | 2 | 0.017719 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 3 | SOLO | 1 | 2 | 0.019667 |
+| 36 | pallets_jinja_task/1559 | [2, 9] | 3 | STRUCTURED | 0 | 0 | 0.015662 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 1 | SIMPLE | 1 | 2 | 0.015939 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 1 | SOLO | 1 | 2 | 0.016177 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 1 | STRUCTURED | 1 | 2 | 0.010815 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 2 | SIMPLE | 1 | 2 | 0.014407 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 2 | SOLO | 1 | 2 | 0.011807 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 2 | STRUCTURED | 1 | 2 | 0.012577 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 3 | SIMPLE | 1 | 2 | 0.012566 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 3 | SOLO | 1 | 2 | 0.012589 |
+| 37 | pallets_jinja_task/1621 | [2, 3] | 3 | STRUCTURED | 0 | 1 | 0.011779 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 1 | SIMPLE | 0 | 1 | 0.015643 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 1 | SOLO | 0 | 0 | 0.020143 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 1 | STRUCTURED | 0 | 1 | 0.014970 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 2 | SIMPLE | 0 | 0 | 0.015614 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 2 | SOLO | 0 | 1 | 0.016503 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 2 | STRUCTURED | 0 | 0 | 0.014425 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 3 | SIMPLE | 0 | 0 | 0.015598 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 3 | SOLO | 0 | 0 | 0.019430 |
+| 38 | pallets_jinja_task/1621 | [4, 9] | 3 | STRUCTURED | 0 | 1 | 0.015708 |
+| 39 | pillow_task/25 | [1, 2] | 1 | SIMPLE | 1 | 2 | 0.012318 |
+| 39 | pillow_task/25 | [1, 2] | 1 | SOLO | 1 | 2 | 0.021112 |
+| 39 | pillow_task/25 | [1, 2] | 1 | STRUCTURED | 1 | 2 | 0.013675 |
+| 39 | pillow_task/25 | [1, 2] | 2 | SIMPLE | 1 | 2 | 0.012700 |
+| 39 | pillow_task/25 | [1, 2] | 2 | SOLO | 1 | 2 | 0.019608 |
+| 39 | pillow_task/25 | [1, 2] | 2 | STRUCTURED | 1 | 2 | 0.011809 |
+| 39 | pillow_task/25 | [1, 2] | 3 | SIMPLE | 0 | 0 | 0.012935 |
+| 39 | pillow_task/25 | [1, 2] | 3 | SOLO | 1 | 2 | 0.019385 |
+| 39 | pillow_task/25 | [1, 2] | 3 | STRUCTURED | 1 | 2 | 0.010262 |
+| 40 | pillow_task/290 | [3, 4] | 1 | SIMPLE | 0 | 0 | 0.018177 |
+| 40 | pillow_task/290 | [3, 4] | 1 | SOLO | 0 | 0 | 0.022060 |
+| 40 | pillow_task/290 | [3, 4] | 1 | STRUCTURED | 0 | 1 | 0.013986 |
+| 40 | pillow_task/290 | [3, 4] | 2 | SIMPLE | 0 | 0 | 0.017265 |
+| 40 | pillow_task/290 | [3, 4] | 2 | SOLO | 0 | 0 | 0.028223 |
+| 40 | pillow_task/290 | [3, 4] | 2 | STRUCTURED | 0 | 1 | 0.015455 |
+| 40 | pillow_task/290 | [3, 4] | 3 | SIMPLE | 0 | 0 | 0.022327 |
+| 40 | pillow_task/290 | [3, 4] | 3 | SOLO | 0 | 0 | 0.024685 |
+| 40 | pillow_task/290 | [3, 4] | 3 | STRUCTURED | 0 | 0 | 0.017654 |
+| 41 | pillow_task/68 | [1, 4] | 1 | SIMPLE | 0 | 0 | 0.016292 |
+| 41 | pillow_task/68 | [1, 4] | 1 | SOLO | 0 | 1 | 0.021792 |
+| 41 | pillow_task/68 | [1, 4] | 1 | STRUCTURED | 0 | 1 | 0.016037 |
+| 41 | pillow_task/68 | [1, 4] | 2 | SIMPLE | 0 | 0 | 0.013924 |
+| 41 | pillow_task/68 | [1, 4] | 2 | SOLO | 0 | 1 | 0.025215 |
+| 41 | pillow_task/68 | [1, 4] | 2 | STRUCTURED | 0 | 1 | 0.015637 |
+| 41 | pillow_task/68 | [1, 4] | 3 | SIMPLE | 0 | 0 | 0.016173 |
+| 41 | pillow_task/68 | [1, 4] | 3 | SOLO | 0 | 1 | 0.022921 |
+| 41 | pillow_task/68 | [1, 4] | 3 | STRUCTURED | 0 | 1 | 0.016958 |
+| 42 | pillow_task/68 | [2, 5] | 1 | SIMPLE | 0 | 0 | 0.017876 |
+| 42 | pillow_task/68 | [2, 5] | 1 | SOLO | 0 | 1 | 0.022819 |
+| 42 | pillow_task/68 | [2, 5] | 1 | STRUCTURED | 0 | 1 | 0.016727 |
+| 42 | pillow_task/68 | [2, 5] | 2 | SIMPLE | 0 | 0 | 0.014693 |
+| 42 | pillow_task/68 | [2, 5] | 2 | SOLO | 0 | 1 | 0.022427 |
+| 42 | pillow_task/68 | [2, 5] | 2 | STRUCTURED | 0 | 1 | 0.018611 |
+| 42 | pillow_task/68 | [2, 5] | 3 | SIMPLE | 0 | 1 | 0.014031 |
+| 42 | pillow_task/68 | [2, 5] | 3 | SOLO | 0 | 1 | 0.022287 |
+| 42 | pillow_task/68 | [2, 5] | 3 | STRUCTURED | 0 | 1 | 0.015225 |
+| 43 | react_hook_form_task/153 | [1, 5] | 1 | SIMPLE | 0 | 0 | 0.015267 |
+| 43 | react_hook_form_task/153 | [1, 5] | 1 | SOLO | 0 | 1 | 0.014744 |
+| 43 | react_hook_form_task/153 | [1, 5] | 1 | STRUCTURED | 0 | 1 | 0.012658 |
+| 43 | react_hook_form_task/153 | [1, 5] | 2 | SIMPLE | 0 | 0 | 0.017143 |
+| 43 | react_hook_form_task/153 | [1, 5] | 2 | SOLO | 0 | 1 | 0.021790 |
+| 43 | react_hook_form_task/153 | [1, 5] | 2 | STRUCTURED | 0 | 1 | 0.015457 |
+| 43 | react_hook_form_task/153 | [1, 5] | 3 | SIMPLE | 0 | 0 | 0.015617 |
+| 43 | react_hook_form_task/153 | [1, 5] | 3 | SOLO | 0 | 1 | 0.013409 |
+| 43 | react_hook_form_task/153 | [1, 5] | 3 | STRUCTURED | 0 | 1 | 0.012075 |
+| 44 | react_hook_form_task/153 | [3, 5] | 1 | SIMPLE | 0 | 0 | 0.013322 |
+| 44 | react_hook_form_task/153 | [3, 5] | 1 | SOLO | 0 | 1 | 0.020169 |
+| 44 | react_hook_form_task/153 | [3, 5] | 1 | STRUCTURED | 0 | 1 | 0.015473 |
+| 44 | react_hook_form_task/153 | [3, 5] | 2 | SIMPLE | 0 | 0 | 0.012817 |
+| 44 | react_hook_form_task/153 | [3, 5] | 2 | SOLO | 0 | 1 | 0.017375 |
+| 44 | react_hook_form_task/153 | [3, 5] | 2 | STRUCTURED | 0 | 1 | 0.012886 |
+| 44 | react_hook_form_task/153 | [3, 5] | 3 | SIMPLE | 0 | 0 | 0.014158 |
+| 44 | react_hook_form_task/153 | [3, 5] | 3 | SOLO | 0 | 1 | 0.018458 |
+| 44 | react_hook_form_task/153 | [3, 5] | 3 | STRUCTURED | 0 | 1 | 0.014184 |
+| 45 | react_hook_form_task/85 | [2, 4] | 1 | SIMPLE | 0 | 0 | 0.018520 |
+| 45 | react_hook_form_task/85 | [2, 4] | 1 | SOLO | 1 | 2 | 0.020199 |
+| 45 | react_hook_form_task/85 | [2, 4] | 1 | STRUCTURED | 0 | 1 | 0.014404 |
+| 45 | react_hook_form_task/85 | [2, 4] | 2 | SIMPLE | 0 | 0 | 0.018195 |
+| 45 | react_hook_form_task/85 | [2, 4] | 2 | SOLO | 1 | 2 | 0.020100 |
+| 45 | react_hook_form_task/85 | [2, 4] | 2 | STRUCTURED | 0 | 1 | 0.016932 |
+| 45 | react_hook_form_task/85 | [2, 4] | 3 | SIMPLE | 0 | 0 | 0.018367 |
+| 45 | react_hook_form_task/85 | [2, 4] | 3 | SOLO | 1 | 2 | 0.021531 |
+| 45 | react_hook_form_task/85 | [2, 4] | 3 | STRUCTURED | 1 | 2 | 0.019250 |
+| 46 | react_hook_form_task/85 | [1, 3] | 1 | SIMPLE | 0 | 0 | 0.017280 |
+| 46 | react_hook_form_task/85 | [1, 3] | 1 | SOLO | 0 | 1 | 0.018063 |
+| 46 | react_hook_form_task/85 | [1, 3] | 1 | STRUCTURED | 0 | 1 | 0.015815 |
+| 46 | react_hook_form_task/85 | [1, 3] | 2 | SIMPLE | 0 | 0 | 0.015555 |
+| 46 | react_hook_form_task/85 | [1, 3] | 2 | SOLO | 0 | 1 | 0.020695 |
+| 46 | react_hook_form_task/85 | [1, 3] | 2 | STRUCTURED | 0 | 1 | 0.016286 |
+| 46 | react_hook_form_task/85 | [1, 3] | 3 | SIMPLE | 0 | 0 | 0.015699 |
+| 46 | react_hook_form_task/85 | [1, 3] | 3 | SOLO | 0 | 1 | 0.021968 |
+| 46 | react_hook_form_task/85 | [1, 3] | 3 | STRUCTURED | 0 | 1 | 0.017141 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 1 | SIMPLE | 0 | 0 | 0.016834 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 1 | SOLO | 0 | 1 | 0.020003 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 1 | STRUCTURED | 0 | 1 | 0.016297 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 2 | SIMPLE | 0 | 0 | 0.018423 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 2 | SOLO | 0 | 1 | 0.022391 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 2 | STRUCTURED | 0 | 1 | 0.016746 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 3 | SIMPLE | 0 | 1 | 0.018473 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 3 | SOLO | 0 | 1 | 0.021281 |
+| 47 | samuelcolvin_dirty_equals_task/43 | [6, 7] | 3 | STRUCTURED | 0 | 1 | 0.018492 |
+| 48 | typst_task/6554 | [2, 9] | 1 | SIMPLE | 0 | 0 | 0.016533 |
+| 48 | typst_task/6554 | [2, 9] | 1 | SOLO | 1 | 2 | 0.021155 |
+| 48 | typst_task/6554 | [2, 9] | 1 | STRUCTURED | 1 | 2 | 0.012489 |
+| 48 | typst_task/6554 | [2, 9] | 2 | SIMPLE | 0 | 0 | 0.014916 |
+| 48 | typst_task/6554 | [2, 9] | 2 | SOLO | 1 | 2 | 0.021705 |
+| 48 | typst_task/6554 | [2, 9] | 2 | STRUCTURED | 1 | 2 | 0.013086 |
+| 48 | typst_task/6554 | [2, 9] | 3 | SOLO | 1 | 2 | 0.016366 |
+| 49 | typst_task/6554 | [1, 7] | 1 | SIMPLE | 1 | 2 | 0.015189 |
+| 49 | typst_task/6554 | [1, 7] | 1 | SOLO | 1 | 2 | 0.018566 |
+| 49 | typst_task/6554 | [1, 7] | 2 | SIMPLE | 0 | 0 | 0.018105 |
+| 49 | typst_task/6554 | [1, 7] | 2 | SOLO | 1 | 2 | 0.021453 |
+| 49 | typst_task/6554 | [1, 7] | 2 | STRUCTURED | 1 | 2 | 0.012462 |
+| 49 | typst_task/6554 | [1, 7] | 3 | STRUCTURED | 0 | 0 | 0.015023 |

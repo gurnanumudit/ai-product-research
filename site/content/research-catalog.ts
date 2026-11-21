@@ -32,13 +32,24 @@ export const researchTracks: {
   },
   {
     id: "agents",
-    name: "Agent decisions",
-    question: "What shapes an AI agent’s decisions?",
-    description: "Study how instructions, roles and incentives affect behavior when AI agents interact.",
+    name: "Agent behavior",
+    question: "How do AI agents behave?",
+    description: "Study how instructions, roles and coordination shape what AI agents do.",
   },
 ];
 
 export const publishedStudies: ResearchStudy[] = [
+  {
+    id: "teamwork",
+    track: "agents",
+    title: "When does an AI team beat one agent?",
+    path: "/research/when-does-an-ai-team-beat-one-agent",
+    date: "Nov 21, 2026",
+    iso: "2026-11-21",
+    method: "Coding workflow experiment",
+    summary: "Solo finished more jobs than either team workflow. Structured teamwork improved on simple teamwork and had a small model-cost advantage per success.",
+    image: "/research-assets/teamwork/teamwork-hero.png",
+  },
   {
     id: "luna-revision",
     track: "cost",

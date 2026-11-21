@@ -4,15 +4,13 @@ Independent research by [Mudit Gurnani](https://www.linkedin.com/in/muditgurnani
 
 [Read the website](https://research.muditgurnani.com/)
 
-## Code accompanying an article in review
+## Published articles
 
 ### When does an AI team beat one agent?
 
-[Research code and offline reproduction](research/cooperbench-teamwork/README.md) · [Private article review draft](https://mudit-ai-teamwork-review.muditgurnani.chatgpt.site) (owner sign-in required)
+[Research code and offline reproduction](research/cooperbench-teamwork/README.md) · [Read the article](https://research.muditgurnani.com/research/when-does-an-ai-team-beat-one-agent)
 
-37 feature pairs across 24 underlying tasks and 11 repositories; 327 observed results from 333 planned runs. The package reproduces the saved analysis, missing-outcome bounds and cost comparisons without model calls or regrading. Code is public; the article is not yet published to the research website.
-
-## Published articles
+37 feature pairs across 24 underlying tasks and 11 repositories; 327 observed results from 333 planned runs. The package reproduces the saved analysis, missing-outcome bounds and cost comparisons without model calls or regrading. Published November 21, 2026.
 
 ### When does asking AI to revise its answer help?
 

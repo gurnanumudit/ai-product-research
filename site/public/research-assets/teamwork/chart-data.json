@@ -1,0 +1,332 @@
+{
+  "complete": false,
+  "assigned": 333,
+  "observed": 327,
+  "missing": 6,
+  "arms": {
+    "SOLO": {
+      "assigned": 111,
+      "observed": 110,
+      "successes": 59,
+      "features": 156,
+      "missing": 1,
+      "raw_success_bounds": [
+        0.5315315315315315,
+        0.5405405405405406
+      ],
+      "base_weighted_success_bounds": [
+        0.5277777777777778,
+        0.5347222222222222
+      ],
+      "base_weighted_feature_bounds": [
+        1.3888888888888888,
+        1.4027777777777777
+      ],
+      "completed_only_rate": 0.5363636363636364,
+      "completed_only_features_per_team": 1.4181818181818182,
+      "completed_only_features_per_agent": 1.4181818181818182,
+      "api_usd": 1.985411395,
+      "completed_api_usd": 1.985411395,
+      "interrupted_api_usd": 0.0,
+      "interrupted_calls": 0,
+      "unknown_requests": 0,
+      "unknown_reserve_usd": 0.0,
+      "api_plus_unknown_reserve_per_observed_success": 0.03365104059322034,
+      "api_per_observed_success": 0.03365104059322034,
+      "api_plus_assigned_allowance_per_observed_success": 0.06189962816384181,
+      "api_plus_observed_allowance_per_observed_success": 0.06215878951770072,
+      "phases": {
+        "solo": {
+          "calls": 3079,
+          "api_usd": 1.9854113949999994,
+          "wall_seconds": 58366.018000000004,
+          "shell_actions": 3007,
+          "messages": 0,
+          "messages_delivered": 0
+        }
+      },
+      "calls": 3079,
+      "messages": 0,
+      "messages_delivered": 0,
+      "summed_team_seconds": 59229.036,
+      "merge_status_counts": {
+        "single_patch": 110
+      },
+      "integration_status_counts": {
+        "null": 110
+      }
+    },
+    "SIMPLE": {
+      "assigned": 111,
+      "observed": 108,
+      "successes": 36,
+      "features": 82,
+      "missing": 3,
+      "raw_success_bounds": [
+        0.32432432432432434,
+        0.35135135135135137
+      ],
+      "base_weighted_success_bounds": [
+        0.3125,
+        0.3402777777777778
+      ],
+      "base_weighted_feature_bounds": [
+        0.75,
+        0.8055555555555556
+      ],
+      "completed_only_rate": 0.3333333333333333,
+      "completed_only_features_per_team": 0.7592592592592593,
+      "completed_only_features_per_agent": 0.37962962962962965,
+      "api_usd": 1.645559865,
+      "completed_api_usd": 1.637764055,
+      "interrupted_api_usd": 0.00779581,
+      "interrupted_calls": 23,
+      "unknown_requests": 1,
+      "unknown_reserve_usd": 0.05,
+      "api_plus_unknown_reserve_per_observed_success": 0.047098885138888893,
+      "api_per_observed_success": 0.04570999625,
+      "api_plus_assigned_allowance_per_observed_success": 0.0920062925462963,
+      "api_plus_observed_allowance_per_observed_success": 0.09158155588302752,
+      "phases": {
+        "simple": {
+          "calls": 3195,
+          "api_usd": 1.6377640549999997,
+          "wall_seconds": 34861.44699999999,
+          "shell_actions": 3053,
+          "messages": 493,
+          "messages_delivered": 461
+        }
+      },
+      "calls": 3195,
+      "messages": 493,
+      "messages_delivered": 461,
+      "summed_team_seconds": 36363.736,
+      "merge_status_counts": {
+        "conflicts": 52,
+        "clean": 50,
+        "missing_input": 6
+      },
+      "integration_status_counts": {
+        "null": 108
+      }
+    },
+    "STRUCTURED": {
+      "assigned": 111,
+      "observed": 109,
+      "successes": 53,
+      "features": 145,
+      "missing": 2,
+      "raw_success_bounds": [
+        0.4774774774774775,
+        0.4954954954954955
+      ],
+      "base_weighted_success_bounds": [
+        0.4791666666666667,
+        0.4930555555555555
+      ],
+      "base_weighted_feature_bounds": [
+        1.2986111111111112,
+        1.3263888888888888
+      ],
+      "completed_only_rate": 0.48623853211009177,
+      "completed_only_features_per_team": 1.3302752293577982,
+      "completed_only_features_per_agent": 0.6651376146788991,
+      "api_usd": 1.619190745,
+      "completed_api_usd": 1.609407925,
+      "interrupted_api_usd": 0.00978282,
+      "interrupted_calls": 24,
+      "unknown_requests": 0,
+      "unknown_reserve_usd": 0.0,
+      "api_plus_unknown_reserve_per_observed_success": 0.030550768773584907,
+      "api_per_observed_success": 0.030550768773584907,
+      "api_plus_assigned_allowance_per_observed_success": 0.061997309654088055,
+      "api_plus_observed_allowance_per_observed_success": 0.061997309654088055,
+      "phases": {
+        "plan": {
+          "calls": 436,
+          "api_usd": 0.1377124349999999,
+          "wall_seconds": 4146.774999999999,
+          "shell_actions": 428,
+          "messages": 180,
+          "messages_delivered": 177
+        },
+        "build": {
+          "calls": 2158,
+          "api_usd": 0.9772298000000001,
+          "wall_seconds": 22716.682999999997,
+          "shell_actions": 2087,
+          "messages": 275,
+          "messages_delivered": 263
+        },
+        "integrate": {
+          "calls": 868,
+          "api_usd": 0.49446568999999996,
+          "wall_seconds": 17039.923999999995,
+          "shell_actions": 842,
+          "messages": 0,
+          "messages_delivered": 0
+        }
+      },
+      "calls": 3462,
+      "messages": 455,
+      "messages_delivered": 440,
+      "summed_team_seconds": 45403.898,
+      "merge_status_counts": {
+        "single_patch": 109
+      },
+      "integration_status_counts": {
+        "applied": 107,
+        "empty": 2
+      }
+    }
+  },
+  "base_weighted_contrast_missing_bounds": {
+    "STRUCTURED minus SOLO": [
+      -0.055555555555555525,
+      -0.034722222222222265
+    ],
+    "STRUCTURED minus SIMPLE": [
+      0.1388888888888889,
+      0.18055555555555552
+    ]
+  },
+  "strata": {
+    "unrun_bases": {
+      "base_tasks": 10,
+      "pairs": 19,
+      "assigned_per_arm": 57,
+      "arms": {
+        "SOLO": {
+          "observed": 56,
+          "missing": 1,
+          "successes": 33,
+          "features": 87,
+          "completed_only_rate": 0.5892857142857143,
+          "completed_only_features_per_team": 1.5535714285714286,
+          "completed_only_features_per_agent": 1.5535714285714286,
+          "base_weighted_success_bounds": [
+            0.5833333333333333,
+            0.6
+          ],
+          "base_weighted_feature_bounds": [
+            1.5166666666666666,
+            1.55
+          ]
+        },
+        "SIMPLE": {
+          "observed": 54,
+          "missing": 3,
+          "successes": 16,
+          "features": 33,
+          "completed_only_rate": 0.2962962962962963,
+          "completed_only_features_per_team": 0.6111111111111112,
+          "completed_only_features_per_agent": 0.3055555555555556,
+          "base_weighted_success_bounds": [
+            0.26666666666666666,
+            0.3333333333333333
+          ],
+          "base_weighted_feature_bounds": [
+            0.55,
+            0.6833333333333333
+          ]
+        },
+        "STRUCTURED": {
+          "observed": 55,
+          "missing": 2,
+          "successes": 28,
+          "features": 81,
+          "completed_only_rate": 0.509090909090909,
+          "completed_only_features_per_team": 1.4727272727272727,
+          "completed_only_features_per_agent": 0.7363636363636363,
+          "base_weighted_success_bounds": [
+            0.5,
+            0.5333333333333333
+          ],
+          "base_weighted_feature_bounds": [
+            1.4166666666666665,
+            1.4833333333333334
+          ]
+        }
+      },
+      "contrast_missing_bounds": {
+        "STRUCTURED minus SOLO": [
+          -0.09999999999999998,
+          -0.04999999999999993
+        ],
+        "STRUCTURED minus SIMPLE": [
+          0.16666666666666669,
+          0.26666666666666666
+        ]
+      }
+    },
+    "previously_run_bases": {
+      "base_tasks": 14,
+      "pairs": 18,
+      "assigned_per_arm": 54,
+      "arms": {
+        "SOLO": {
+          "observed": 54,
+          "missing": 0,
+          "successes": 26,
+          "features": 69,
+          "completed_only_rate": 0.48148148148148145,
+          "completed_only_features_per_team": 1.2777777777777777,
+          "completed_only_features_per_agent": 1.2777777777777777,
+          "base_weighted_success_bounds": [
+            0.4880952380952381,
+            0.4880952380952381
+          ],
+          "base_weighted_feature_bounds": [
+            1.2976190476190477,
+            1.2976190476190477
+          ]
+        },
+        "SIMPLE": {
+          "observed": 54,
+          "missing": 0,
+          "successes": 20,
+          "features": 49,
+          "completed_only_rate": 0.37037037037037035,
+          "completed_only_features_per_team": 0.9074074074074074,
+          "completed_only_features_per_agent": 0.4537037037037037,
+          "base_weighted_success_bounds": [
+            0.34523809523809523,
+            0.34523809523809523
+          ],
+          "base_weighted_feature_bounds": [
+            0.8928571428571428,
+            0.8928571428571428
+          ]
+        },
+        "STRUCTURED": {
+          "observed": 54,
+          "missing": 0,
+          "successes": 25,
+          "features": 64,
+          "completed_only_rate": 0.46296296296296297,
+          "completed_only_features_per_team": 1.1851851851851851,
+          "completed_only_features_per_agent": 0.5925925925925926,
+          "base_weighted_success_bounds": [
+            0.4642857142857143,
+            0.4642857142857143
+          ],
+          "base_weighted_feature_bounds": [
+            1.2142857142857142,
+            1.2142857142857142
+          ]
+        }
+      },
+      "contrast_missing_bounds": {
+        "STRUCTURED minus SOLO": [
+          -0.02380952380952378,
+          -0.02380952380952378
+        ],
+        "STRUCTURED minus SIMPLE": [
+          0.11904761904761907,
+          0.11904761904761907
+        ]
+      }
+    }
+  },
+  "resampling": null
+}

@@ -71,7 +71,7 @@ export function ResearchCatalog() {
             <a className={styles.textLink} href="/research/when-is-more-reasoning-worth-it">Read the study →</a>
           </article>
           <article className={styles.supportingCard}>
-            <p className={styles.eyebrow}>Featured exploration · Agent decisions</p>
+            <p className={styles.eyebrow}>Featured exploration · Agent behavior</p>
             <h3><a href="/research/how-ai-negotiates">How AI negotiates</a></h3>
             <p>A two-part exploration of how instructions, starting roles and economic opportunities shaped simulated negotiations.</p>
             <a className={styles.textLink} href="/research/how-ai-negotiates">Start with Part 1 →</a>

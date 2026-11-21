@@ -2,9 +2,9 @@
 
 Research code and offline numerical reproduction for Mudit Gurnani's CooperBench teamwork comparison.
 
-[Review the article draft](https://mudit-ai-teamwork-review.muditgurnani.chatgpt.site) (owner-private; ChatGPT sign-in required) · [Published research website](https://research.muditgurnani.com/)
+[Read the article](https://research.muditgurnani.com/research/when-does-an-ai-team-beat-one-agent) · [Published research website](https://research.muditgurnani.com/)
 
-The code package is public. The accompanying article remains a private review draft, not a published research-site article.
+Published November 21, 2026. The source for the article is in [site/components/teamwork](../../site/components/teamwork/).
 
 ## What was tested
 

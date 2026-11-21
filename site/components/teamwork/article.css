@@ -1,0 +1,36 @@
+.teamworkArticle{--paper:#faf9f5;--ink:#252721;--muted:#61665d;--line:#d9ddd2;--green:#287565;--ochre:#ad7139;--indigo:#5b658f;--wash:#efeee7}
+.teamworkArticle .teamworkSkip{position:absolute;left:-10000px}.teamworkArticle .teamworkSkip:focus{left:20px;top:10px;background:var(--paper);padding:12px;z-index:20}
+.teamworkArticle[data-research-article] .teamworkHero{margin-top:30px}
+.teamworkArticle[data-research-article] .teamworkHero h1{font-size:clamp(36px,5vw,64px);margin:22px 0 18px;max-width:960px}
+.teamworkArticle[data-research-article] .teamworkHero img{max-height:360px;object-fit:cover}
+.teamworkArticle .heroLinks{display:flex;gap:12px;flex-wrap:wrap}
+.teamworkArticle .kicker{text-transform:uppercase;letter-spacing:.1em;font:600 12px/1.5 var(--sans);color:var(--muted)}
+.teamworkArticle .note{font:15px/1.55 var(--sans);color:var(--muted)}
+.teamworkArticle .workflows{margin:24px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:800px}
+.teamworkArticle .workflows>div{background:var(--wash);border-top:2px solid #8a9b8c;padding:20px 18px}
+.teamworkArticle .workflows h3{font:500 19px/1.3 var(--sans);margin:14px 0 10px}
+.teamworkArticle .workflows p{font:16px/1.45 var(--sans);margin:0}
+.teamworkArticle .chart{margin:22px 0;padding:24px;border:1px solid var(--line);max-width:800px}
+.teamworkArticle .chart h3{font:500 24px/1.3 var(--sans);margin:8px 0 22px}
+.teamworkArticle .bars{display:flex;flex-direction:column;gap:20px}
+.teamworkArticle .barrow{display:grid;grid-template-columns:1fr 64px;gap:6px 14px;align-items:center}
+.teamworkArticle .barrow>div:first-child{grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:8px;font-size:16px}
+.teamworkArticle .barrow span{font-size:14px;color:var(--muted)}
+.teamworkArticle .track{background:var(--wash);height:18px;overflow:hidden}.teamworkArticle .track i{display:block;height:100%}
+.teamworkArticle .barrow b{font-size:17px;font-weight:500;font-variant-numeric:tabular-nums}
+.teamworkArticle .axis{display:flex;justify-content:space-between;margin:7px 78px 0 0;font-size:13px;color:var(--muted)}
+.teamworkArticle .stack{display:flex;height:24px;gap:3px;margin:18px 0}
+.teamworkArticle .mergeLegend{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.teamworkArticle .mergeLegend div{display:flex;flex-direction:column}.teamworkArticle .mergeLegend b{font-size:32px;line-height:1.3;font-weight:500}.teamworkArticle .mergeLegend span{font-size:15px}.teamworkArticle .mergeLegend small{font-size:13px;color:var(--muted);margin-top:3px}
+.teamworkArticle .tableWrap{overflow:auto;margin:20px 0;border-block:1px solid var(--line);max-width:100%}
+.teamworkArticle table{width:100%;border-collapse:collapse;font:15px/1.6 var(--sans);text-align:left;font-variant-numeric:tabular-nums}
+.teamworkArticle caption{text-align:left;font-size:14px;padding:10px 0;color:var(--muted)}
+.teamworkArticle th,.teamworkArticle td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.teamworkArticle th:first-child,.teamworkArticle td:first-child{padding-left:0}.teamworkArticle thead{font-size:14px;color:var(--muted)}.teamworkArticle tbody th{font-weight:500}.teamworkArticle td{white-space:nowrap}
+.teamworkArticle .takeaways li::marker{color:var(--green)}
+.teamworkArticle details p{font:17px/1.6 var(--article-serif);max-width:720px;margin:10px 0}
+.teamworkArticle details h3{font:500 20px/1.3 var(--sans);margin:22px 0 10px}
+.teamworkArticle code{font:14px/1.5 monospace;overflow-wrap:anywhere}
+.teamworkArticle details .returnLink{font:14px/1.5 var(--sans);margin:18px 0 0}
+.teamworkArticle #appendix-design td{white-space:normal}
+@media(max-width:760px){.teamworkArticle .workflows{grid-template-columns:1fr}.teamworkArticle .workflows>div{padding:16px 18px}.teamworkArticle .workflows h3{margin:8px 0}.teamworkArticle .chart{padding:18px 15px}.teamworkArticle .chart h3{font-size:22px}.teamworkArticle .barrow>div:first-child{font-size:15px}.teamworkArticle .barrow span{font-size:13px}.teamworkArticle .mergeLegend{gap:9px}.teamworkArticle .mergeLegend b{font-size:29px}.teamworkArticle .mergeLegend span{font-size:14px}.teamworkArticle .mergeLegend small{font-size:12px}.teamworkArticle table{font-size:14px}.teamworkArticle th,.teamworkArticle td{padding:10px 8px}.teamworkArticle .heroLinks{gap:8px 11px}}
