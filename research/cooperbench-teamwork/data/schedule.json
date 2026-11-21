@@ -1,0 +1,6329 @@
+[
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r0-SOLO",
+    "block_id": "t07-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r0-SIMPLE",
+    "block_id": "t07-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r0-STRUCTURED",
+    "block_id": "t07-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r0-STRUCTURED",
+    "block_id": "t32-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r0-SIMPLE",
+    "block_id": "t32-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r0-SOLO",
+    "block_id": "t32-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t24-r1-SIMPLE",
+    "block_id": "t24-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t24-r1-STRUCTURED",
+    "block_id": "t24-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t24-r1-SOLO",
+    "block_id": "t24-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r2-SOLO",
+    "block_id": "t23-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r2-STRUCTURED",
+    "block_id": "t23-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r2-SIMPLE",
+    "block_id": "t23-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t23-r1-STRUCTURED",
+    "block_id": "t23-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t23-r1-SIMPLE",
+    "block_id": "t23-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t23-r1-SOLO",
+    "block_id": "t23-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r0-SIMPLE",
+    "block_id": "t33-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r0-SOLO",
+    "block_id": "t33-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r0-STRUCTURED",
+    "block_id": "t33-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r0-STRUCTURED",
+    "block_id": "t24-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r0-SOLO",
+    "block_id": "t24-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r0-SIMPLE",
+    "block_id": "t24-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r2-SIMPLE",
+    "block_id": "t32-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r2-STRUCTURED",
+    "block_id": "t32-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t32-r2-SOLO",
+    "block_id": "t32-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r0-SOLO",
+    "block_id": "t19-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r0-STRUCTURED",
+    "block_id": "t19-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r0-SIMPLE",
+    "block_id": "t19-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r2-SIMPLE",
+    "block_id": "t48-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r2-STRUCTURED",
+    "block_id": "t48-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r2-SOLO",
+    "block_id": "t48-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r0-SOLO",
+    "block_id": "t49-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r0-SIMPLE",
+    "block_id": "t49-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r0-STRUCTURED",
+    "block_id": "t49-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r2-SIMPLE",
+    "block_id": "t12-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r2-STRUCTURED",
+    "block_id": "t12-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r2-SOLO",
+    "block_id": "t12-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t03-r1-SIMPLE",
+    "block_id": "t03-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t03-r1-STRUCTURED",
+    "block_id": "t03-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t03-r1-SOLO",
+    "block_id": "t03-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r2-SIMPLE",
+    "block_id": "t19-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r2-STRUCTURED",
+    "block_id": "t19-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t19-r2-SOLO",
+    "block_id": "t19-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r0-STRUCTURED",
+    "block_id": "t12-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r0-SIMPLE",
+    "block_id": "t12-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t12-r0-SOLO",
+    "block_id": "t12-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r2-SOLO",
+    "block_id": "t25-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r2-SIMPLE",
+    "block_id": "t25-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r2-STRUCTURED",
+    "block_id": "t25-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r2-SIMPLE",
+    "block_id": "t00-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r2-SOLO",
+    "block_id": "t00-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r2-STRUCTURED",
+    "block_id": "t00-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r2-SIMPLE",
+    "block_id": "t44-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r2-SOLO",
+    "block_id": "t44-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r2-STRUCTURED",
+    "block_id": "t44-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r0-SIMPLE",
+    "block_id": "t36-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r0-SOLO",
+    "block_id": "t36-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r0-STRUCTURED",
+    "block_id": "t36-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t22-r1-STRUCTURED",
+    "block_id": "t22-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t22-r1-SOLO",
+    "block_id": "t22-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t22-r1-SIMPLE",
+    "block_id": "t22-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      6
+    ],
+    "key": "t25-r1-SIMPLE",
+    "block_id": "t25-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      6
+    ],
+    "key": "t25-r1-SOLO",
+    "block_id": "t25-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      6
+    ],
+    "key": "t25-r1-STRUCTURED",
+    "block_id": "t25-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r0-STRUCTURED",
+    "block_id": "t03-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r0-SIMPLE",
+    "block_id": "t03-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r0-SOLO",
+    "block_id": "t03-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r0-STRUCTURED",
+    "block_id": "t39-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r0-SIMPLE",
+    "block_id": "t39-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r0-SOLO",
+    "block_id": "t39-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r2-SOLO",
+    "block_id": "t33-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r2-SIMPLE",
+    "block_id": "t33-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      8,
+      5
+    ],
+    "key": "t33-r2-STRUCTURED",
+    "block_id": "t33-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r2-STRUCTURED",
+    "block_id": "t08-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r2-SOLO",
+    "block_id": "t08-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r2-SIMPLE",
+    "block_id": "t08-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t39-r1-SOLO",
+    "block_id": "t39-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t39-r1-STRUCTURED",
+    "block_id": "t39-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t39-r1-SIMPLE",
+    "block_id": "t39-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      7,
+      2
+    ],
+    "key": "t02-r1-SIMPLE",
+    "block_id": "t02-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      7,
+      2
+    ],
+    "key": "t02-r1-SOLO",
+    "block_id": "t02-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      7,
+      2
+    ],
+    "key": "t02-r1-STRUCTURED",
+    "block_id": "t02-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t00-r1-SOLO",
+    "block_id": "t00-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t00-r1-SIMPLE",
+    "block_id": "t00-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t00-r1-STRUCTURED",
+    "block_id": "t00-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r0-STRUCTURED",
+    "block_id": "t25-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r0-SOLO",
+    "block_id": "t25-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      1,
+      6
+    ],
+    "previously_run_base": false,
+    "ti": 25,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      6,
+      1
+    ],
+    "key": "t25-r0-SIMPLE",
+    "block_id": "t25-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r2-STRUCTURED",
+    "block_id": "t24-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r2-SOLO",
+    "block_id": "t24-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 24,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t24-r2-SIMPLE",
+    "block_id": "t24-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      6,
+      3
+    ],
+    "key": "t20-r1-STRUCTURED",
+    "block_id": "t20-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      6,
+      3
+    ],
+    "key": "t20-r1-SOLO",
+    "block_id": "t20-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      6,
+      3
+    ],
+    "key": "t20-r1-SIMPLE",
+    "block_id": "t20-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r2-STRUCTURED",
+    "block_id": "t39-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r2-SOLO",
+    "block_id": "t39-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 25,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 39,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t39-r2-SIMPLE",
+    "block_id": "t39-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t21-r1-STRUCTURED",
+    "block_id": "t21-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t21-r1-SOLO",
+    "block_id": "t21-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t21-r1-SIMPLE",
+    "block_id": "t21-r1"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r0-STRUCTURED",
+    "block_id": "t47-r0"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r0-SIMPLE",
+    "block_id": "t47-r0"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r0-SOLO",
+    "block_id": "t47-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r0-STRUCTURED",
+    "block_id": "t48-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r0-SOLO",
+    "block_id": "t48-r0"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t48-r0-SIMPLE",
+    "block_id": "t48-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r2-STRUCTURED",
+    "block_id": "t11-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r2-SIMPLE",
+    "block_id": "t11-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r2-SOLO",
+    "block_id": "t11-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r2-STRUCTURED",
+    "block_id": "t41-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r2-SOLO",
+    "block_id": "t41-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r2-SIMPLE",
+    "block_id": "t41-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      9,
+      4
+    ],
+    "key": "t38-r1-SOLO",
+    "block_id": "t38-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      9,
+      4
+    ],
+    "key": "t38-r1-STRUCTURED",
+    "block_id": "t38-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      9,
+      4
+    ],
+    "key": "t38-r1-SIMPLE",
+    "block_id": "t38-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r0-SIMPLE",
+    "block_id": "t42-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r0-SOLO",
+    "block_id": "t42-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r0-STRUCTURED",
+    "block_id": "t42-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      6,
+      2
+    ],
+    "key": "t34-r1-SOLO",
+    "block_id": "t34-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      6,
+      2
+    ],
+    "key": "t34-r1-SIMPLE",
+    "block_id": "t34-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      6,
+      2
+    ],
+    "key": "t34-r1-STRUCTURED",
+    "block_id": "t34-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r0-SOLO",
+    "block_id": "t43-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r0-STRUCTURED",
+    "block_id": "t43-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r0-SIMPLE",
+    "block_id": "t43-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r0-SIMPLE",
+    "block_id": "t38-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r0-STRUCTURED",
+    "block_id": "t38-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r0-SOLO",
+    "block_id": "t38-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r0-SOLO",
+    "block_id": "t34-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r0-SIMPLE",
+    "block_id": "t34-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r0-STRUCTURED",
+    "block_id": "t34-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r2-SIMPLE",
+    "block_id": "t36-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r2-SOLO",
+    "block_id": "t36-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      9
+    ],
+    "key": "t36-r2-STRUCTURED",
+    "block_id": "t36-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      4
+    ],
+    "key": "t41-r1-SIMPLE",
+    "block_id": "t41-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      4
+    ],
+    "key": "t41-r1-STRUCTURED",
+    "block_id": "t41-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      4
+    ],
+    "key": "t41-r1-SOLO",
+    "block_id": "t41-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r2-SIMPLE",
+    "block_id": "t07-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r2-SOLO",
+    "block_id": "t07-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      4
+    ],
+    "key": "t07-r2-STRUCTURED",
+    "block_id": "t07-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t40-r1-STRUCTURED",
+    "block_id": "t40-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t40-r1-SOLO",
+    "block_id": "t40-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t40-r1-SIMPLE",
+    "block_id": "t40-r1"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r2-SOLO",
+    "block_id": "t15-r2"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r2-STRUCTURED",
+    "block_id": "t15-r2"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r2-SIMPLE",
+    "block_id": "t15-r2"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      6,
+      7
+    ],
+    "key": "t47-r1-SOLO",
+    "block_id": "t47-r1"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      6,
+      7
+    ],
+    "key": "t47-r1-STRUCTURED",
+    "block_id": "t47-r1"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      6,
+      7
+    ],
+    "key": "t47-r1-SIMPLE",
+    "block_id": "t47-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r2-SOLO",
+    "block_id": "t45-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r2-STRUCTURED",
+    "block_id": "t45-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r2-SIMPLE",
+    "block_id": "t45-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r2-STRUCTURED",
+    "block_id": "t20-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r2-SOLO",
+    "block_id": "t20-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r2-SIMPLE",
+    "block_id": "t20-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r2-SOLO",
+    "block_id": "t40-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r2-SIMPLE",
+    "block_id": "t40-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r2-STRUCTURED",
+    "block_id": "t40-r2"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r2-STRUCTURED",
+    "block_id": "t47-r2"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r2-SIMPLE",
+    "block_id": "t47-r2"
+  },
+  {
+    "repo": "samuelcolvin_dirty_equals_task",
+    "task_id": 43,
+    "features": [
+      6,
+      7
+    ],
+    "previously_run_base": true,
+    "ti": 47,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      7,
+      6
+    ],
+    "key": "t47-r2-SOLO",
+    "block_id": "t47-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r0-SOLO",
+    "block_id": "t31-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r0-STRUCTURED",
+    "block_id": "t31-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r0-SIMPLE",
+    "block_id": "t31-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r2-SOLO",
+    "block_id": "t01-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r2-STRUCTURED",
+    "block_id": "t01-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r2-SIMPLE",
+    "block_id": "t01-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r2-STRUCTURED",
+    "block_id": "t22-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r2-SIMPLE",
+    "block_id": "t22-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r2-SOLO",
+    "block_id": "t22-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t32-r1-SOLO",
+    "block_id": "t32-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t32-r1-SIMPLE",
+    "block_id": "t32-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2800,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 32,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t32-r1-STRUCTURED",
+    "block_id": "t32-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r0-SOLO",
+    "block_id": "t21-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r0-SIMPLE",
+    "block_id": "t21-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r0-STRUCTURED",
+    "block_id": "t21-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t12-r1-SIMPLE",
+    "block_id": "t12-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t12-r1-SOLO",
+    "block_id": "t12-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 12,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t12-r1-STRUCTURED",
+    "block_id": "t12-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r2-STRUCTURED",
+    "block_id": "t03-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r2-SIMPLE",
+    "block_id": "t03-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": false,
+    "ti": 3,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t03-r2-SOLO",
+    "block_id": "t03-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t46-r1-STRUCTURED",
+    "block_id": "t46-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t46-r1-SIMPLE",
+    "block_id": "t46-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t46-r1-SOLO",
+    "block_id": "t46-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r0-SIMPLE",
+    "block_id": "t40-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r0-STRUCTURED",
+    "block_id": "t40-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 290,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 40,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t40-r0-SOLO",
+    "block_id": "t40-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t19-r1-SIMPLE",
+    "block_id": "t19-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t19-r1-STRUCTURED",
+    "block_id": "t19-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 3997,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": true,
+    "ti": 19,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t19-r1-SOLO",
+    "block_id": "t19-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r0-STRUCTURED",
+    "block_id": "t41-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r0-SIMPLE",
+    "block_id": "t41-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      1,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 41,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      1
+    ],
+    "key": "t41-r0-SOLO",
+    "block_id": "t41-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t36-r1-SOLO",
+    "block_id": "t36-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t36-r1-SIMPLE",
+    "block_id": "t36-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1559,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 36,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t36-r1-STRUCTURED",
+    "block_id": "t36-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r0-STRUCTURED",
+    "block_id": "t22-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r0-SIMPLE",
+    "block_id": "t22-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 7309,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 22,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t22-r0-SOLO",
+    "block_id": "t22-r0"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r2-STRUCTURED",
+    "block_id": "t34-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r2-SOLO",
+    "block_id": "t34-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      2,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 34,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      6
+    ],
+    "key": "t34-r2-SIMPLE",
+    "block_id": "t34-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r2-SOLO",
+    "block_id": "t02-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r2-SIMPLE",
+    "block_id": "t02-r2"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r2-STRUCTURED",
+    "block_id": "t02-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      8
+    ],
+    "key": "t33-r1-SOLO",
+    "block_id": "t33-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      8
+    ],
+    "key": "t33-r1-SIMPLE",
+    "block_id": "t33-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2956,
+    "features": [
+      5,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 33,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      8
+    ],
+    "key": "t33-r1-STRUCTURED",
+    "block_id": "t33-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t37-r1-SIMPLE",
+    "block_id": "t37-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t37-r1-STRUCTURED",
+    "block_id": "t37-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t37-r1-SOLO",
+    "block_id": "t37-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t35-r1-STRUCTURED",
+    "block_id": "t35-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t35-r1-SIMPLE",
+    "block_id": "t35-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      8
+    ],
+    "key": "t35-r1-SOLO",
+    "block_id": "t35-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r0-STRUCTURED",
+    "block_id": "t06-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r0-SIMPLE",
+    "block_id": "t06-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r0-SOLO",
+    "block_id": "t06-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r2-SOLO",
+    "block_id": "t43-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r2-STRUCTURED",
+    "block_id": "t43-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t43-r2-SIMPLE",
+    "block_id": "t43-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r0-SIMPLE",
+    "block_id": "t44-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r0-SOLO",
+    "block_id": "t44-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      5
+    ],
+    "key": "t44-r0-STRUCTURED",
+    "block_id": "t44-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r2-SOLO",
+    "block_id": "t42-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r2-SIMPLE",
+    "block_id": "t42-r2"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      5
+    ],
+    "key": "t42-r2-STRUCTURED",
+    "block_id": "t42-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r2-SIMPLE",
+    "block_id": "t37-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r2-STRUCTURED",
+    "block_id": "t37-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r2-SOLO",
+    "block_id": "t37-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r2-SOLO",
+    "block_id": "t26-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r2-STRUCTURED",
+    "block_id": "t26-r2"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r2-SIMPLE",
+    "block_id": "t26-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      5,
+      3
+    ],
+    "key": "t44-r1-STRUCTURED",
+    "block_id": "t44-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      3
+    ],
+    "key": "t44-r1-SOLO",
+    "block_id": "t44-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      3,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 44,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      3
+    ],
+    "key": "t44-r1-SIMPLE",
+    "block_id": "t44-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t26-r1-SIMPLE",
+    "block_id": "t26-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t26-r1-STRUCTURED",
+    "block_id": "t26-r1"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t26-r1-SOLO",
+    "block_id": "t26-r1"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r0-SOLO",
+    "block_id": "t20-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r0-SIMPLE",
+    "block_id": "t20-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      3,
+      6
+    ],
+    "previously_run_base": true,
+    "ti": 20,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      6
+    ],
+    "key": "t20-r0-STRUCTURED",
+    "block_id": "t20-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r0-SIMPLE",
+    "block_id": "t23-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r0-STRUCTURED",
+    "block_id": "t23-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17070,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": false,
+    "ti": 23,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t23-r0-SOLO",
+    "block_id": "t23-r0"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t15-r1-SOLO",
+    "block_id": "t15-r1"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t15-r1-SIMPLE",
+    "block_id": "t15-r1"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t15-r1-STRUCTURED",
+    "block_id": "t15-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t01-r1-SIMPLE",
+    "block_id": "t01-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t01-r1-SOLO",
+    "block_id": "t01-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t01-r1-STRUCTURED",
+    "block_id": "t01-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r2-SIMPLE",
+    "block_id": "t38-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r2-SOLO",
+    "block_id": "t38-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      4,
+      9
+    ],
+    "previously_run_base": true,
+    "ti": 38,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      9
+    ],
+    "key": "t38-r2-STRUCTURED",
+    "block_id": "t38-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r2-SOLO",
+    "block_id": "t49-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r2-SIMPLE",
+    "block_id": "t49-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      7,
+      1
+    ],
+    "key": "t49-r2-STRUCTURED",
+    "block_id": "t49-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      11
+    ],
+    "key": "t31-r1-SOLO",
+    "block_id": "t31-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      11
+    ],
+    "key": "t31-r1-STRUCTURED",
+    "block_id": "t31-r1"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      11
+    ],
+    "key": "t31-r1-SIMPLE",
+    "block_id": "t31-r1"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r0-SOLO",
+    "block_id": "t35-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r0-SIMPLE",
+    "block_id": "t35-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r0-STRUCTURED",
+    "block_id": "t35-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t06-r1-SIMPLE",
+    "block_id": "t06-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t06-r1-STRUCTURED",
+    "block_id": "t06-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      1
+    ],
+    "key": "t06-r1-SOLO",
+    "block_id": "t06-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t45-r1-SIMPLE",
+    "block_id": "t45-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t45-r1-SOLO",
+    "block_id": "t45-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      4
+    ],
+    "key": "t45-r1-STRUCTURED",
+    "block_id": "t45-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r2-SIMPLE",
+    "block_id": "t06-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r2-STRUCTURED",
+    "block_id": "t06-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 6,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t06-r2-SOLO",
+    "block_id": "t06-r2"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t48-r1-STRUCTURED",
+    "block_id": "t48-r1"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t48-r1-SIMPLE",
+    "block_id": "t48-r1"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      2,
+      9
+    ],
+    "previously_run_base": false,
+    "ti": 48,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      9,
+      2
+    ],
+    "key": "t48-r1-SOLO",
+    "block_id": "t48-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r0-STRUCTURED",
+    "block_id": "t46-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r0-SOLO",
+    "block_id": "t46-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r0-SIMPLE",
+    "block_id": "t46-r0"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r0-SIMPLE",
+    "block_id": "t15-r0"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r0-STRUCTURED",
+    "block_id": "t15-r0"
+  },
+  {
+    "repo": "go_chi_task",
+    "task_id": 27,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 15,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t15-r0-SOLO",
+    "block_id": "t15-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t43-r1-STRUCTURED",
+    "block_id": "t43-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t43-r1-SIMPLE",
+    "block_id": "t43-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 153,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 43,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      5
+    ],
+    "key": "t43-r1-SOLO",
+    "block_id": "t43-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r0-STRUCTURED",
+    "block_id": "t00-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r0-SIMPLE",
+    "block_id": "t00-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 0,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t00-r0-SOLO",
+    "block_id": "t00-r0"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r2-STRUCTURED",
+    "block_id": "t21-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r2-SIMPLE",
+    "block_id": "t21-r2"
+  },
+  {
+    "repo": "huggingface_datasets_task",
+    "task_id": 6252,
+    "features": [
+      1,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 21,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      1
+    ],
+    "key": "t21-r2-SOLO",
+    "block_id": "t21-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r0-STRUCTURED",
+    "block_id": "t11-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r0-SOLO",
+    "block_id": "t11-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      3
+    ],
+    "key": "t11-r0-SIMPLE",
+    "block_id": "t11-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r0-STRUCTURED",
+    "block_id": "t08-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r0-SIMPLE",
+    "block_id": "t08-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      2
+    ],
+    "key": "t08-r0-SOLO",
+    "block_id": "t08-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      5
+    ],
+    "key": "t07-r1-SIMPLE",
+    "block_id": "t07-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      4,
+      5
+    ],
+    "key": "t07-r1-STRUCTURED",
+    "block_id": "t07-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8394,
+    "features": [
+      4,
+      5
+    ],
+    "previously_run_base": true,
+    "ti": 7,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      5
+    ],
+    "key": "t07-r1-SOLO",
+    "block_id": "t07-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r0-STRUCTURED",
+    "block_id": "t01-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r0-SOLO",
+    "block_id": "t01-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1371,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 1,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t01-r0-SIMPLE",
+    "block_id": "t01-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r2-SIMPLE",
+    "block_id": "t46-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r2-SOLO",
+    "block_id": "t46-r2"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      1,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 46,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      3
+    ],
+    "key": "t46-r2-STRUCTURED",
+    "block_id": "t46-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r0-STRUCTURED",
+    "block_id": "t37-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r0-SIMPLE",
+    "block_id": "t37-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1621,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": true,
+    "ti": 37,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      2
+    ],
+    "key": "t37-r0-SOLO",
+    "block_id": "t37-r0"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      5,
+      2
+    ],
+    "key": "t42-r1-SOLO",
+    "block_id": "t42-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      5,
+      2
+    ],
+    "key": "t42-r1-STRUCTURED",
+    "block_id": "t42-r1"
+  },
+  {
+    "repo": "pillow_task",
+    "task_id": 68,
+    "features": [
+      2,
+      5
+    ],
+    "previously_run_base": false,
+    "ti": 42,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      5,
+      2
+    ],
+    "key": "t42-r1-SIMPLE",
+    "block_id": "t42-r1"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      1,
+      7
+    ],
+    "key": "t49-r1-SIMPLE",
+    "block_id": "t49-r1"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      1,
+      7
+    ],
+    "key": "t49-r1-SOLO",
+    "block_id": "t49-r1"
+  },
+  {
+    "repo": "typst_task",
+    "task_id": 6554,
+    "features": [
+      1,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 49,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      1,
+      7
+    ],
+    "key": "t49-r1-STRUCTURED",
+    "block_id": "t49-r1"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r0-SIMPLE",
+    "block_id": "t02-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r0-STRUCTURED",
+    "block_id": "t02-r0"
+  },
+  {
+    "repo": "dottxt_ai_outlines_task",
+    "task_id": 1655,
+    "features": [
+      2,
+      7
+    ],
+    "previously_run_base": false,
+    "ti": 2,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      7
+    ],
+    "key": "t02-r0-SOLO",
+    "block_id": "t02-r0"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r2-SIMPLE",
+    "block_id": "t35-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r2-STRUCTURED",
+    "block_id": "t35-r2"
+  },
+  {
+    "repo": "pallets_jinja_task",
+    "task_id": 1465,
+    "features": [
+      1,
+      8
+    ],
+    "previously_run_base": true,
+    "ti": 35,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      8,
+      1
+    ],
+    "key": "t35-r2-SOLO",
+    "block_id": "t35-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 2,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r2-SIMPLE",
+    "block_id": "t31-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 2,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r2-STRUCTURED",
+    "block_id": "t31-r2"
+  },
+  {
+    "repo": "pallets_click_task",
+    "task_id": 2068,
+    "features": [
+      2,
+      11
+    ],
+    "previously_run_base": true,
+    "ti": 31,
+    "rep": 2,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      11,
+      2
+    ],
+    "key": "t31-r2-SOLO",
+    "block_id": "t31-r2"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t08-r1-STRUCTURED",
+    "block_id": "t08-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t08-r1-SIMPLE",
+    "block_id": "t08-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8563,
+    "features": [
+      1,
+      2
+    ],
+    "previously_run_base": true,
+    "ti": 8,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      1
+    ],
+    "key": "t08-r1-SOLO",
+    "block_id": "t08-r1"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r0-SOLO",
+    "block_id": "t45-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r0-SIMPLE",
+    "block_id": "t45-r0"
+  },
+  {
+    "repo": "react_hook_form_task",
+    "task_id": 85,
+    "features": [
+      2,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 45,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 0,
+    "role_features": [
+      4,
+      2
+    ],
+    "key": "t45-r0-STRUCTURED",
+    "block_id": "t45-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 0,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r0-STRUCTURED",
+    "block_id": "t26-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 0,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r0-SOLO",
+    "block_id": "t26-r0"
+  },
+  {
+    "repo": "llama_index_task",
+    "task_id": 17244,
+    "features": [
+      2,
+      3
+    ],
+    "previously_run_base": false,
+    "ti": 26,
+    "rep": 0,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      2,
+      3
+    ],
+    "key": "t26-r0-SIMPLE",
+    "block_id": "t26-r0"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 1,
+    "arm": "SIMPLE",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t11-r1-SIMPLE",
+    "block_id": "t11-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 1,
+    "arm": "SOLO",
+    "integrator": null,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t11-r1-SOLO",
+    "block_id": "t11-r1"
+  },
+  {
+    "repo": "dspy_task",
+    "task_id": 8635,
+    "features": [
+      3,
+      4
+    ],
+    "previously_run_base": false,
+    "ti": 11,
+    "rep": 1,
+    "arm": "STRUCTURED",
+    "integrator": 1,
+    "role_features": [
+      3,
+      4
+    ],
+    "key": "t11-r1-STRUCTURED",
+    "block_id": "t11-r1"
+  }
+]

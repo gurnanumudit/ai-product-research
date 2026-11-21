@@ -1,0 +1,18 @@
+{
+  "DATA_DICTIONARY.md": "fe54b8f540bb2d223061a25a0e6808414e339e824754217b65a5e6efdc5d6c44",
+  "LICENSE": "00cfdeb09297b48ccd91983796f0a499a04a2422d1577d12a41bdaafe18a01f7",
+  "METHODS.md": "aeaae8f73688967ac6adfa580a9f4937fa430f5920bc3a34f31a4d6e041c2739",
+  "PROVENANCE.md": "b4509350f4252b49fbf5ce51cd99fda651cff191d9bb5703ca79798f4567e5a9",
+  "README.md": "9399c682c9757fe035e307b256b0d9c46201a294336abcd19424273166774b55",
+  "analysis.py": "e8b5d17124242eb287c3e351a17c30fca9c1f3d9c44939246fded669a09cb537",
+  "data/interrupted-costs.json": "6b4d0768c8be6c5d0ee49d84b74976901a50f8e9ff58f1d8dd55b989b358b882",
+  "data/missing-keys.json": "7ac9ffb6f30a237f6c8eae61a7fab98941cc84f32bbdbb824d3c7cb81a19fa88",
+  "data/outcomes.json": "c91748e1f4e191e5bf935598596e2fb7bcc9a0bb43a44c86e31e5b98663c5a42",
+  "data/schedule.json": "957947d56791e1ea470d94e55f47c1d19ed1f9aefdc5bcd0e1136c4359bef103",
+  "reference/analysis.json": "0b1736dcdae80ee18610c2dd7221a592dfff24a59e01f8471f929127b91f52c6",
+  "reference/source-provenance.json": "616551eb6b5f813cc2e71115358a9376c34f27e2051e82cd9086a19bf5d58168",
+  "reproduce.py": "8b0ccef5a2c1da3fb6197858f9a7f3cbc701aeae873a837d7f33162af15e478d",
+  "source-excerpts/prompts-and-phases.mjs.txt": "e130898307c07ec1d2c10fda9026c8ff17150511dea359a9ecc408fee8e3559d",
+  "source-excerpts/run-team.mjs.txt": "50a6126c1ea94eec90b3749e9f9676e3ed94a2cdfc31d002f91315af75bc8d1a",
+  "test_reproduce.py": "b69922d7e69dc5f07308238d740939e007cef8a4637b9ae537e860b994fc0c62"
+}

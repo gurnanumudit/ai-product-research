@@ -31,3 +31,9 @@ The reviewer and reasoning studies release derived records, not the full origina
 [archive/](archive/README.md) preserves a separate exploratory study. It is not used by the current articles and should not be combined with their samples or findings.
 
 Website presentation code lives in [site/](../site/README.md). Return to the [repository overview](../README.md) for correction, citation and license guidance.
+
+## Article in review
+
+[When does an AI team beat one agent? — private review draft](https://mudit-ai-teamwork-review.muditgurnani.chatgpt.site) · [cooperbench-teamwork code and reproduction](cooperbench-teamwork/README.md)
+
+All 333 assignments, 327 derived outcomes, six missing runs, equal-task missing bounds, costs and coordination metrics. Offline numerical replay only; no model calls, grading or private evidence. The review link requires the owner's ChatGPT sign-in.

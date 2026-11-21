@@ -1,0 +1,27 @@
+{
+  "study": "CooperBench broader comparison, recovery-v4",
+  "study_completed": "2026-11-19",
+  "publication_authorization": "Owner request 2026-11-20: ensure code is on GitHub and link the article",
+  "original_sources_sha256": {
+    "report.py": "37867372ebd76ee0e973a7929c072ef095b00d870c387dbf7556ffe6134d6eec",
+    "contract.mjs": "8cb25254b41e9791d6eff6fd1fe42fbddc48e2f61c6aa7d8ded0d19acb3a3798",
+    "collect.mjs": "e0190799a2a05827791f66e346ec702d478153f90caf235aa9e3c70b0741d6a4",
+    "ACTUAL-AUDIT.json": "e1afe665d4abbe5cd65b02d506caa757121b87117f7060eba1ca8a1b30de1cfe",
+    "ANALYSIS.json": "0b1736dcdae80ee18610c2dd7221a592dfff24a59e01f8471f929127b91f52c6"
+  },
+  "exact_function_sha256": {
+    "ratio": "cec7d4abf4f9d48e9c72224e7020345d3c9760d236490efcc4685224e6cb6bbe",
+    "percentile": "8166dad7733064861501a346d979690cf4ba649791e189f0cbfe523145384792",
+    "interval": "5157edb47cbbfbb408fda1d9b859b5141720975c729dd9ca55eb57b70c81b25e",
+    "base_id": "3fc4e15b520b59e5203703dcca38b0a193b1927e17ebb59e7a345727205a1ff2",
+    "mean": "98a5962cad953f97943f3ab23a1457a41872bb7605190ce3c85ab82873b1dbdd",
+    "validate_rows": "b1bf436f7e6371afc530fa7ed80b098838bdba0a30a4d28c36370380d6e5dfcf",
+    "weighted_summary": "433ff95f203203ee19b33c5e4c3bdf24d8de9bbf3aedc4a57458afb3ec9040d2",
+    "complete_stratum": "e21b56c88088e1bf50c78cb06f19a5a962b50f589e523c3d04c4a9b0579e8118",
+    "analyze": "9493afa27c3cd2d0f25b418d41d94990f83d5f82ee700e1ba00084ca54b0e2d2"
+  },
+  "actual_review_accepted": true,
+  "review_objections": 0,
+  "root_verified_bindings": 204466,
+  "private_evidence_included": false
+}

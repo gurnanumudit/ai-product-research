@@ -1,0 +1,58 @@
+export async function runTeam(run,deps){
+ const {rpc:remote,call,stopped,stop,admit}=deps,now=deps.now??Date.now;
+ const dir=HOME+'/collection/'+run.key;fs.mkdirSync(dir);save(dir+'/ASSIGNMENT.json',run);
+ const started=now(),owned=[],closures=[],phases={};let build=[],final=[],result;
+ const admitWorker=async(index,role)=>{admit();need(!stopped(),'stopped_before_container');const w={...await remote({op:'create',image:run.image}),index,role,closed:false};owned.push(w);save(dir+'/'+(role==='integration'?'integration':`worker-${index}`)+'-container.json',w);return w;};
+ const closeWorkers=async workers=>{const receipts=await Promise.allSettled(workers.filter(w=>!w.closed).map(async w=>{const value=await remote({op:'close',container_id:w.container_id});need(value.removed===true&&value.container_id===w.container_id,'cleanup receipt');w.closed=true;return value;}));let j=0;for(const w of workers){if(w.closeRecorded)continue;const r=receipts[j++];closures.push({worker:w.index,role:w.role,status:r.status,...(r.status==='fulfilled'?{value:r.value}:{reason:String(r.reason)})});w.closeRecorded=true;}need(receipts.every(r=>r.status==='fulfilled'),'cleanup_failure');};
+ const extract=async(w,name)=>{need(!stopped(),'stopped_before_extract');const r=await remote({op:'patch',container_id:w.container_id,base:w.base});save(dir+'/'+name.replace('.patch','-extract.json'),r);need(r.exitCode===0,'patch_extract_failed');fs.writeFileSync(dir+'/'+name,r.stdout,{flag:'wx'});return {file:name,sha256:sha(fs.readFileSync(dir+'/'+name))};};
+ const extractPair=async(workers,prefix)=>{const results=await Promise.allSettled(workers.map(w=>extract(w,`${prefix}${w.index}.patch`)));const bad=results.find(r=>r.status==='rejected');if(bad)throw bad.reason;return results.map(r=>r.value);};
+ try{
+  const workers=[await admitWorker(0,'build')];if(run.arm!=='SOLO')workers.push(await admitWorker(1,'build'));
+  for(const spec of phaseSpec(run)){
+   need(!stopped(),'stopped_between_phases');const phaseStart=now();let active=workers,stage=null;
+   if(spec.phase==='INTEGRATE'){
+    await closeWorkers(workers);save(dir+'/BUILD-CLOSURES.json',closures);
+    need(!stopped(),'stopped_before_integration');const w=await admitWorker(run.integrator,'integration');active=[w];need(!stopped(),'stopped_before_stage');
+    save(dir+'/integration-messages.json',messageSnapshot(dir,['PLAN','BUILD']));
+    const names=['build-worker-0.patch','build-worker-1.patch','integration-messages.json'];
+    const input={op:'stage',container_id:w.container_id,run_key:run.key,seed_worker:run.integrator,inputs:names.map((name,i)=>({file:dir+'/'+name,sha256:sha(fs.readFileSync(dir+'/'+name)),container_path:i<2?`/integration/worker-${i}.patch`:'/integration/messages.json'}))};
+    save(dir+'/STAGE-INPUT.json',input);stage=await remote(input);save(dir+'/STAGE.json',stage);
+    need(['applied','failed','empty'].includes(stage.status),'stage status');
+   }
+   const planning=spec.phase==='BUILD'?messageSnapshot(dir,['PLAN']):[];
+   const ws=active.map(w=>({...w,history:[],ids:new Set(),done:false,calls:0,invalidStreak:0,initial:instruction(run,w.index,spec.phase,planning,stage)}));
+   for(let turn=0;turn<spec.limit&&ws.some(w=>!w.done);turn++){
+    need(!stopped(),'stopped_between_rounds');
+    const actions=await Promise.allSettled(ws.map(async w=>{
+     if(w.done)return null;const id=`${run.key}-${spec.phase}-w${w.index}-c${turn}`;
+     if(!w.history.length)w.history.push({role:'user',content:'Begin this phase by inspecting the available workspace and task.'});
+     // Prepare metadata before dispatch; an admitted failure remains preserved.
+     save(dir+'/'+id+'-meta.json',{run_key:run.key,phase:spec.phase,worker:w.index,turn,limit:spec.limit});
+     const response=await call(context(w.initial,w.history),id);w.calls++;
+     need(!response.action_call_id||!w.ids.has(response.action_call_id),'duplicate_action_call_id');if(response.action_call_id)w.ids.add(response.action_call_id);
+     w.history.push({role:'assistant',content:response.text||'[No usable response]',...(response.assistant_state?{assistant_state:response.assistant_state}:{})});
+     let action;try{action=parseAction(response);}catch(e){const observation={error:'Invalid action: '+e.message};w.history.push({role:'user',content:JSON.stringify(observation),...(response.action_call_id?{call_id:response.action_call_id}:{})});save(dir+'/'+id+'-action.json',{valid:false,observation});need(++w.invalidStreak<3,'repeated_unusable_interface');return null;}
+     w.invalidStreak=0;save(dir+'/'+id+'-action.json',{valid:true,action});need(!stopped(),'stopped_before_tool');
+     const o=action.command.trim()?await remote({op:'exec',container_id:w.container_id,command:action.command}):{exitCode:0,stdout:'No command.',stderr:'',seconds:0};
+     if(action.command.trim())save(dir+'/'+id+'-command.json',o);
+     const feedback={exitCode:o.exitCode,stdout:o.stdout.slice(0,8000),stderr:o.stderr.slice(0,2000),seconds:o.seconds,remaining_calls:spec.limit-turn-1};if(o.stdout.length>8000||o.stderr.length>2000)feedback.truncated=true;
+     save(dir+'/'+id+'-feedback.json',feedback);w.history.push({role:'user',content:JSON.stringify(feedback),...(response.action_call_id?{call_id:response.action_call_id}:{})});w.done=action.done;
+     let message='';if(action.kind==='shell'&&['SIMPLE','PLAN','BUILD'].includes(spec.phase)){const box=await remote({op:'mailbox',container_id:w.container_id});save(dir+'/'+id+'-outbox.json',box);need(box.exitCode===0,'outbox_read_failed');message=box.stdout.slice(0,4000);}
+     return {sender:w.index,message};
+    }).map(p=>p.catch(e=>{stop('phase_hold:'+e.message);throw e;})));
+    const rejected=actions.find(a=>a.status==='rejected');if(rejected)throw rejected.reason;
+    for(const a of actions){const m=a.value;if(m?.message){const receiver=ws.find(w=>w.index!==m.sender);const payload={phase:spec.phase,turn,...m,receiver:receiver.index,receiver_finished:receiver.done};save(dir+`/message-${spec.phase}-${turn}-${m.sender}.json`,payload);if(!receiver.done)receiver.history.at(-1).content+='\nPeer message: '+m.message;}}
+   }
+   const record={...spec,initial_by_worker:Object.fromEntries(ws.map(w=>[w.index,w.initial])),calls:ws.map(w=>w.calls),finished:ws.map(w=>w.done),wall_seconds:(now()-phaseStart)/1000};save(dir+'/'+spec.phase+'.json',record);phases[spec.phase]=record;
+   if(['SOLO','SIMPLE'].includes(spec.phase))final=await extractPair(workers,'worker-');
+   if(spec.phase==='BUILD')build=await extractPair(workers,'build-worker-');
+   if(spec.phase==='INTEGRATE')final=[await extract(active[0],'integrated.patch')];
+  }
+  result={run_key:run.key,completed:true,final_patches:final,build_patches:build,phases,wall_seconds:(now()-started)/1000};
+ }catch(e){stop('team_hold:'+e.message);result={run_key:run.key,completed:false,error:e.message,final_patches:final,build_patches:build,phases,wall_seconds:(now()-started)/1000};}
+ finally{
+  try{await closeWorkers(owned.filter(w=>!w.closeRecorded));}catch(e){stop('cleanup_failure');result.completed=false;result.error??=e.message;}
+  save(dir+'/CLOSURES.json',closures);
+ }
+ save(dir+'/RESULT.json',result);return result;
+}
