@@ -12,3 +12,6 @@
 
 
 .lunaRevision table.lunaCostTable{min-width:0;table-layout:fixed}.lunaRevision .lunaCostTable th,.lunaRevision .lunaCostTable td{white-space:normal;padding:12px 6px;line-height:1.5;vertical-align:top}.lunaRevision .lunaCostTable th:first-child{width:32%;padding-left:0}.lunaRevision .lunaCostTable th span{font-weight:400}.lunaRevision .lunaCostTable td{font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* Appendix tables stay readable and scroll within the article on phones. */
+.lunaRevision #appendix table,.lunaRevision #appendix table caption{font-size:14px}
